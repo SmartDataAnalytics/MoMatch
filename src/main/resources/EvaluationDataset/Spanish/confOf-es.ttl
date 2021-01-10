@@ -1,0 +1,631 @@
+@prefix : <http://confOf_es#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://confOf_es> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+:op-1210522-1630009 a owl:ObjectProperty , owl:TransitiveProperty ;
+	rdfs:label "sigue a"@es ;
+	rdfs:domain :c-1845828-3821554 ;
+	rdfs:range :c-1845828-3821554 .
+
+:op-1405644-9304557 a owl:ObjectProperty ;
+	rdfs:label "escrito por"@es ;
+	rdfs:domain :c-3387665-6944566 ;
+	rdfs:range :c-6499258-4069928 .
+
+:op-2431905-5717620 a owl:ObjectProperty ;
+	rdfs:label "tiene acontencimiento administrativo"@es ;
+	rdfs:range :c-1845828-3821554 ;
+	rdfs:domain :c-4691160-7847323 .
+
+:op-2440065-2184043 a owl:ObjectProperty ;
+	rdfs:label "escribe"@es ;
+	rdfs:range :c-3387665-6944566 ;
+	rdfs:domain :c-6499258-4069928 ;
+	owl:inverseOf :op-1405644-9304557 .
+
+:op-2635217-8760109 a owl:ObjectProperty ;
+	rdfs:label "experto en"@es ;
+	rdfs:domain :c-4474834-7724641 ;
+	rdfs:range :c-6618244-9280256 .
+
+:op-2977516-3686716 a owl:ObjectProperty ;
+	rdfs:label "tiene ciudad"@es ;
+	rdfs:range :c-3280752-9223019 ;
+	rdfs:domain _:node1e05bjp5jx1 .
+
+_:node1e05bjp5jx1 a owl:Class ;
+	owl:unionOf _:node1e05bjp5jx2 .
+
+_:node1e05bjp5jx2 rdf:first :c-4813590-0378569 ;
+	rdf:rest _:node1e05bjp5jx3 .
+
+_:node1e05bjp5jx3 rdf:first :c-9342034-1799800 ;
+	rdf:rest rdf:nil .
+
+:op-3218017-8880017 a owl:ObjectProperty ;
+	rdfs:label "contratado por"@es ;
+	rdfs:domain :c-4813590-0378569 ;
+	rdfs:range :c-9342034-1799800 .
+
+:op-3427051-0259693 a owl:ObjectProperty ;
+	rdfs:label "trata de"@es ;
+	rdfs:domain :c-3387665-6944566 ;
+	rdfs:range :c-6618244-9280256 .
+
+:op-4045866-6865686 a owl:ObjectProperty ;
+	rdfs:label "revisa"@es ;
+	rdfs:range :c-3387665-6944566 ;
+	rdfs:domain :c-4474834-7724641 .
+
+:op-4721470-3780400 a owl:ObjectProperty ;
+	rdfs:label "estudia en"@es ;
+	rdfs:range :c-5111600-7111703 ;
+	rdfs:domain :c-6721353-3672322 .
+
+:op-5666003-8051336 a owl:ObjectProperty , owl:SymmetricProperty ;
+	rdfs:label "paralelo a"@es ;
+	rdfs:range :c-1845828-3821554 ;
+	rdfs:domain :c-1845828-3821554 ;
+	owl:inverseOf :op-5666003-8051336 .
+
+:op-7406638-7606951 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "tiene país"@es ;
+	rdfs:range :c-8482162-5849106 ;
+	rdfs:domain _:node1e05bjp5jx4 .
+
+_:node1e05bjp5jx4 a owl:Class ;
+	owl:unionOf _:node1e05bjp5jx5 .
+
+_:node1e05bjp5jx5 rdf:first :c-4813590-0378569 ;
+	rdf:rest _:node1e05bjp5jx6 .
+
+_:node1e05bjp5jx6 rdf:first :c-9342034-1799800 ;
+	rdf:rest rdf:nil .
+
+:op-9906931-9273238 a owl:ObjectProperty ;
+	rdfs:label "tiene tema"@es ;
+	rdfs:domain :c-4691160-7847323 ;
+	rdfs:range :c-6618244-9280256 .
+
+:ent-1528597-6104289 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "empieza en"@es ;
+	rdfs:domain :c-9969781-3984826 ;
+	rdfs:range xsd:string .
+
+:ent-2009588-6420357 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "tiene nombre"@es ;
+	rdfs:domain :c-4813590-0378569 ;
+	rdfs:range xsd:string .
+
+:ent-2040897-8852844 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "selección máxima"@es ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:domain _:node1e05bjp5jx7 .
+
+_:node1e05bjp5jx7 a owl:Class ;
+	owl:unionOf _:node1e05bjp5jx8 .
+
+_:node1e05bjp5jx8 rdf:first :c-4691160-7847323 ;
+	rdf:rest _:node1e05bjp5jx9 .
+
+_:node1e05bjp5jx9 rdf:first :c-9166750-2422405 ;
+	rdf:rest rdf:nil .
+
+:ent-2154972-6872522 a owl:DatatypeProperty ;
+	rdfs:label "tiene palabra clave"@es ;
+	rdfs:domain :c-3387665-6944566 ;
+	rdfs:range xsd:string .
+
+:ent-2574919-6276028 a owl:DatatypeProperty ;
+	rdfs:label "tiene calle"@es ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bjp5jx10 .
+
+_:node1e05bjp5jx10 a owl:Class ;
+	owl:unionOf _:node1e05bjp5jx11 .
+
+_:node1e05bjp5jx11 rdf:first :c-4813590-0378569 ;
+	rdf:rest _:node1e05bjp5jx12 .
+
+_:node1e05bjp5jx12 rdf:first :c-9342034-1799800 ;
+	rdf:rest rdf:nil .
+
+:ent-2753365-9954539 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "inscripción anticipada"@es ;
+	rdfs:domain :c-4827125-7394638 ;
+	rdfs:range xsd:boolean .
+
+:ent-2940569-1023900 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "tiene IVA"@es ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bjp5jx13 .
+
+_:node1e05bjp5jx13 a owl:Class ;
+	owl:unionOf _:node1e05bjp5jx14 .
+
+_:node1e05bjp5jx14 rdf:first :c-4691160-7847323 ;
+	rdf:rest _:node1e05bjp5jx15 .
+
+_:node1e05bjp5jx15 rdf:first :c-9166750-2422405 ;
+	rdf:rest rdf:nil .
+
+:ent-3815099-4234334 a owl:DatatypeProperty ;
+	rdfs:label "comentario"@es ;
+	rdfs:domain :c-3387665-6944566 ;
+	rdfs:range xsd:string .
+
+:ent-3899564-1778675 a owl:DatatypeProperty ;
+	rdfs:label "lugar"@es ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bjp5jx16 .
+
+_:node1e05bjp5jx16 a owl:Class ;
+	owl:unionOf _:node1e05bjp5jx17 .
+
+_:node1e05bjp5jx17 rdf:first :c-4691160-7847323 ;
+	rdf:rest _:node1e05bjp5jx18 .
+
+_:node1e05bjp5jx18 rdf:first :c-9166750-2422405 ;
+	rdf:rest rdf:nil .
+
+:ent-4292464-1868917 a owl:DatatypeProperty ;
+	rdfs:label "tiene correo electrónico"@es ;
+	rdfs:domain :c-4813590-0378569 ;
+	rdfs:range xsd:string .
+
+:ent-4686981-4512187 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "elección por defecto"@es ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:domain _:node1e05bjp5jx19 .
+
+_:node1e05bjp5jx19 a owl:Class ;
+	owl:unionOf _:node1e05bjp5jx20 .
+
+_:node1e05bjp5jx20 rdf:first :c-4691160-7847323 ;
+	rdf:rest _:node1e05bjp5jx21 .
+
+_:node1e05bjp5jx21 rdf:first :c-9166750-2422405 ;
+	rdf:rest rdf:nil .
+
+:ent-4717731-9295525 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "tiene apellidos"@es ;
+	rdfs:domain :c-4813590-0378569 ;
+	rdfs:range xsd:string .
+
+:ent-5980450-7892324 a owl:DatatypeProperty ;
+	rdfs:label "tiene página web"@es ;
+	rdfs:domain :c-4813590-0378569 ;
+	rdfs:range xsd:string .
+
+:ent-6215362-3964570 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "tiene título"@es ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bjp5jx22 .
+
+_:node1e05bjp5jx22 a owl:Class ;
+	owl:unionOf _:node1e05bjp5jx23 .
+
+_:node1e05bjp5jx23 rdf:first :c-4691160-7847323 ;
+	rdf:rest _:node1e05bjp5jx24 .
+
+_:node1e05bjp5jx24 rdf:first :c-9166750-2422405 ;
+	rdf:rest rdf:nil .
+
+:ent-6623795-7856790 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "tiene título"@es ;
+	rdfs:domain :c-3387665-6944566 ;
+	rdfs:range xsd:string .
+
+:ent-6699363-9919416 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "finaliza en"@es ;
+	rdfs:domain :c-9969781-3984826 ;
+	rdfs:range xsd:string .
+
+:ent-6750252-2721370 a owl:DatatypeProperty ;
+	rdfs:label "tiene fax"@es ;
+	rdfs:domain :c-4813590-0378569 ;
+	rdfs:range xsd:string .
+
+:ent-7727277-6146684 a owl:DatatypeProperty ;
+	rdfs:label "tiene teléfono"@es ;
+	rdfs:domain :c-4813590-0378569 ;
+	rdfs:range xsd:string .
+
+:ent-9060962-9088293 a owl:DatatypeProperty ;
+	rdfs:label "tiene código postal"@es ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bjp5jx25 .
+
+_:node1e05bjp5jx25 a owl:Class ;
+	owl:unionOf _:node1e05bjp5jx26 .
+
+_:node1e05bjp5jx26 rdf:first :c-4813590-0378569 ;
+	rdf:rest _:node1e05bjp5jx27 .
+
+_:node1e05bjp5jx27 rdf:first :c-9342034-1799800 ;
+	rdf:rest rdf:nil .
+
+:ent-9184098-4956483 a owl:DatatypeProperty ;
+	rdfs:label "selección mínima"@es ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:domain _:node1e05bjp5jx28 .
+
+_:node1e05bjp5jx28 a owl:Class ;
+	owl:unionOf _:node1e05bjp5jx29 .
+
+_:node1e05bjp5jx29 rdf:first :c-4691160-7847323 ;
+	rdf:rest _:node1e05bjp5jx30 .
+
+_:node1e05bjp5jx30 rdf:first :c-9166750-2422405 ;
+	rdf:rest rdf:nil .
+
+:ent-9565676-5505339 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "resumen"@es ;
+	rdfs:domain :c-3387665-6944566 ;
+	rdfs:range xsd:string .
+
+:ent-9718575-4422511 a owl:DatatypeProperty ;
+	rdfs:label "correo electrónico de contacto"@es ;
+	rdfs:domain :c-3387665-6944566 ;
+	rdfs:range xsd:string .
+
+:ent-9762463-9195442 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "tiene título corto"@es ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bjp5jx31 .
+
+_:node1e05bjp5jx31 a owl:Class ;
+	owl:unionOf _:node1e05bjp5jx32 .
+
+_:node1e05bjp5jx32 rdf:first :c-4691160-7847323 ;
+	rdf:rest _:node1e05bjp5jx33 .
+
+_:node1e05bjp5jx33 rdf:first :c-9166750-2422405 ;
+	rdf:rest rdf:nil .
+
+:c-0271999-3544719 a owl:Class ;
+	rdfs:label "taller"@es ;
+	rdfs:subClassOf :c-4691160-7847323 ;
+	owl:disjointWith :c-0478215-2231160 , :c-8420754-9322703 .
+
+:c-0478215-2231160 a owl:Class ;
+	rdfs:label "tutorial"@es ;
+	rdfs:subClassOf :c-4691160-7847323 ;
+	owl:disjointWith :c-8420754-9322703 .
+
+:c-1069736-1186279 a owl:Class ;
+	rdfs:label "empresa"@es ;
+	rdfs:subClassOf :c-9342034-1799800 ;
+	owl:disjointWith :c-5111600-7111703 .
+
+:c-1845828-3821554 a owl:Class ;
+	rdfs:label "acontecimiento administrativo"@es ;
+	rdfs:subClassOf :c-9969781-3984826 ;
+	owl:disjointWith :c-4691160-7847323 , :c-9166750-2422405 .
+
+:c-2503460-7331243 a owl:Class ;
+	rdfs:label "cena de gala"@es ;
+	rdfs:subClassOf :c-9166750-2422405 ;
+	owl:disjointWith :c-5948631-2733235 , :c-8395786-8930226 .
+
+:c-2624249-5249212 a owl:Class ;
+	rdfs:label "socio"@es ;
+	rdfs:subClassOf :c-4827125-7394638 .
+
+:c-2633016-6227368 a owl:Class ;
+	rdfs:label "estudiante"@es ;
+	rdfs:subClassOf :c-4827125-7394638 .
+
+:c-3280752-9223019 a owl:Class ;
+	rdfs:label "ciudad"@es ;
+	owl:disjointWith :c-3387665-6944566 , :c-4813590-0378569 , :c-6618244-9280256 , :c-9342034-1799800 , :c-9969781-3984826 .
+
+:c-3387665-6944566 a owl:Class ;
+	rdfs:label "contribución"@es ;
+	rdfs:subClassOf owl:Thing , _:node1e05bjp5jx34 .
+
+_:node1e05bjp5jx34 a owl:Restriction ;
+	owl:onProperty :ent-9718575-4422511 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-3387665-6944566 rdfs:subClassOf _:node1e05bjp5jx35 .
+
+_:node1e05bjp5jx35 a owl:Restriction ;
+	owl:onProperty :op-3427051-0259693 ;
+	owl:allValuesFrom :c-6618244-9280256 .
+
+:c-3387665-6944566 rdfs:subClassOf _:node1e05bjp5jx36 .
+
+_:node1e05bjp5jx36 a owl:Restriction ;
+	owl:onProperty :ent-9565676-5505339 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-3387665-6944566 rdfs:subClassOf _:node1e05bjp5jx37 .
+
+_:node1e05bjp5jx37 a owl:Restriction ;
+	owl:onProperty :ent-6623795-7856790 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-3387665-6944566 rdfs:subClassOf _:node1e05bjp5jx38 .
+
+_:node1e05bjp5jx38 a owl:Restriction ;
+	owl:onProperty :op-3427051-0259693 ;
+	owl:someValuesFrom :c-6618244-9280256 .
+
+:c-3387665-6944566 rdfs:subClassOf _:node1e05bjp5jx39 .
+
+_:node1e05bjp5jx39 a owl:Restriction ;
+	owl:onProperty :ent-2154972-6872522 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-3387665-6944566 owl:disjointWith :c-4813590-0378569 , :c-6618244-9280256 , :c-8482162-5849106 , :c-9342034-1799800 , :c-9969781-3984826 .
+
+:c-3742597-2871435 a owl:Class ;
+	rdfs:label "envío de contribuciones"@es ;
+	rdfs:subClassOf :c-1845828-3821554 ;
+	owl:disjointWith :c-3776028-5092657 , :c-3974607-3348573 , :c-8490686-0072482 , :c-9924626-5439135 .
+
+:c-3776028-5092657 a owl:Class ;
+	rdfs:label "registro de participantes"@es ;
+	rdfs:subClassOf :c-1845828-3821554 ;
+	owl:disjointWith :c-3974607-3348573 , :c-8490686-0072482 , :c-9924626-5439135 .
+
+:c-3974607-3348573 a owl:Class ;
+	rdfs:label "envío de versión definitiva"@es ;
+	rdfs:subClassOf :c-1845828-3821554 ;
+	owl:disjointWith :c-8490686-0072482 , :c-9924626-5439135 .
+
+:c-4474834-7724641 a owl:Class ;
+	rdfs:label "miembro del comité de programa"@es ;
+	rdfs:subClassOf :c-4813590-0378569 , _:node1e05bjp5jx40 .
+
+_:node1e05bjp5jx40 a owl:Restriction ;
+	owl:onProperty :op-2635217-8760109 ;
+	owl:allValuesFrom :c-6618244-9280256 .
+
+:c-4474834-7724641 rdfs:subClassOf _:node1e05bjp5jx41 .
+
+_:node1e05bjp5jx41 a owl:Restriction ;
+	owl:onProperty :op-4045866-6865686 ;
+	owl:allValuesFrom :c-3387665-6944566 .
+
+:c-4474834-7724641 rdfs:subClassOf _:node1e05bjp5jx42 .
+
+_:node1e05bjp5jx42 a owl:Restriction ;
+	owl:onProperty :op-2635217-8760109 ;
+	owl:someValuesFrom :c-6618244-9280256 .
+
+:c-4474834-7724641 rdfs:subClassOf _:node1e05bjp5jx43 .
+
+_:node1e05bjp5jx43 a owl:Restriction ;
+	owl:onProperty :op-4045866-6865686 ;
+	owl:someValuesFrom :c-3387665-6944566 .
+
+:c-4691160-7847323 a owl:Class ;
+	rdfs:label "evento científico"@es ;
+	rdfs:subClassOf :c-9969781-3984826 , _:node1e05bjp5jx44 .
+
+_:node1e05bjp5jx44 a owl:Restriction ;
+	owl:onProperty :ent-6215362-3964570 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4691160-7847323 rdfs:subClassOf _:node1e05bjp5jx45 .
+
+_:node1e05bjp5jx45 a owl:Restriction ;
+	owl:onProperty :op-9906931-9273238 ;
+	owl:someValuesFrom :c-6618244-9280256 .
+
+:c-4691160-7847323 rdfs:subClassOf _:node1e05bjp5jx46 .
+
+_:node1e05bjp5jx46 a owl:Restriction ;
+	owl:onProperty :ent-3899564-1778675 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4691160-7847323 rdfs:subClassOf _:node1e05bjp5jx47 .
+
+_:node1e05bjp5jx47 a owl:Restriction ;
+	owl:onProperty :ent-4686981-4512187 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4691160-7847323 rdfs:subClassOf _:node1e05bjp5jx48 .
+
+_:node1e05bjp5jx48 a owl:Restriction ;
+	owl:onProperty :op-9906931-9273238 ;
+	owl:allValuesFrom :c-6618244-9280256 .
+
+:c-4691160-7847323 owl:disjointWith :c-9166750-2422405 .
+
+:c-4813590-0378569 a owl:Class ;
+	rdfs:label "persona"@es ;
+	rdfs:subClassOf owl:Thing , _:node1e05bjp5jx49 .
+
+_:node1e05bjp5jx49 a owl:Restriction ;
+	owl:onProperty :ent-2574919-6276028 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4813590-0378569 rdfs:subClassOf _:node1e05bjp5jx50 .
+
+_:node1e05bjp5jx50 a owl:Restriction ;
+	owl:onProperty :ent-2009588-6420357 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4813590-0378569 rdfs:subClassOf _:node1e05bjp5jx51 .
+
+_:node1e05bjp5jx51 a owl:Restriction ;
+	owl:onProperty :ent-9060962-9088293 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4813590-0378569 rdfs:subClassOf _:node1e05bjp5jx52 .
+
+_:node1e05bjp5jx52 a owl:Restriction ;
+	owl:onProperty :ent-4717731-9295525 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4813590-0378569 rdfs:subClassOf _:node1e05bjp5jx53 .
+
+_:node1e05bjp5jx53 a owl:Restriction ;
+	owl:onProperty :op-3218017-8880017 ;
+	owl:someValuesFrom :c-9342034-1799800 .
+
+:c-4813590-0378569 rdfs:subClassOf _:node1e05bjp5jx54 .
+
+_:node1e05bjp5jx54 a owl:Restriction ;
+	owl:onProperty :ent-4292464-1868917 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4813590-0378569 rdfs:subClassOf _:node1e05bjp5jx55 .
+
+_:node1e05bjp5jx55 a owl:Restriction ;
+	owl:onProperty :op-2977516-3686716 ;
+	owl:someValuesFrom :c-3280752-9223019 .
+
+:c-4813590-0378569 rdfs:subClassOf _:node1e05bjp5jx56 .
+
+_:node1e05bjp5jx56 a owl:Restriction ;
+	owl:onProperty :op-7406638-7606951 ;
+	owl:someValuesFrom :c-8482162-5849106 .
+
+:c-4813590-0378569 rdfs:subClassOf _:node1e05bjp5jx57 .
+
+_:node1e05bjp5jx57 a owl:Restriction ;
+	owl:onProperty :op-3218017-8880017 ;
+	owl:allValuesFrom :c-9342034-1799800 .
+
+:c-4813590-0378569 owl:disjointWith :c-6618244-9280256 , :c-8482162-5849106 , :c-9342034-1799800 , :c-9969781-3984826 .
+
+:c-4827125-7394638 a owl:Class ;
+	rdfs:label "participante"@es ;
+	rdfs:subClassOf :c-4813590-0378569 .
+
+:c-5056901-2172776 a owl:Class ;
+	rdfs:label "póster"@es ;
+	rdfs:subClassOf :c-3387665-6944566 ;
+	owl:disjointWith :c-5790942-6578321 , :c-7653501-3941563 .
+
+:c-5111600-7111703 a owl:Class ;
+	rdfs:label "universidad"@es ;
+	rdfs:subClassOf :c-9342034-1799800 .
+
+:c-5449275-3402936 a owl:Class ;
+	rdfs:label "No_miembro"@es ;
+	rdfs:subClassOf :c-4827125-7394638 .
+
+:c-5790942-6578321 a owl:Class ;
+	rdfs:label "artículo corto"@es ;
+	rdfs:subClassOf :c-3387665-6944566 ;
+	owl:disjointWith :c-7653501-3941563 .
+
+:c-5948631-2733235 a owl:Class ;
+	rdfs:label "recepción"@es ;
+	rdfs:subClassOf :c-9166750-2422405 ;
+	owl:disjointWith :c-8395786-8930226 .
+
+:c-6280017-8608459 a owl:Class ;
+	rdfs:label "voluntario"@es ;
+	rdfs:subClassOf :c-4813590-0378569 .
+
+:c-6499258-4069928 a owl:Class ;
+	rdfs:label "autor"@es ;
+	rdfs:subClassOf :c-4813590-0378569 , _:node1e05bjp5jx58 .
+
+_:node1e05bjp5jx58 a owl:Restriction ;
+	owl:onProperty :op-2440065-2184043 ;
+	owl:someValuesFrom :c-3387665-6944566 .
+
+:c-6499258-4069928 rdfs:subClassOf _:node1e05bjp5jx59 .
+
+_:node1e05bjp5jx59 a owl:Restriction ;
+	owl:onProperty :op-2440065-2184043 ;
+	owl:allValuesFrom :c-3387665-6944566 .
+
+:c-6618244-9280256 a owl:Class ;
+	rdfs:label "tema"@es ;
+	owl:disjointWith :c-8482162-5849106 , :c-9342034-1799800 , :c-9969781-3984826 .
+
+:c-6721353-3672322 a owl:Class ;
+	rdfs:label "becario"@es ;
+	rdfs:subClassOf :c-4813590-0378569 , _:node1e05bjp5jx60 .
+
+_:node1e05bjp5jx60 a owl:Restriction ;
+	owl:onProperty :op-4721470-3780400 ;
+	owl:someValuesFrom :c-5111600-7111703 .
+
+:c-6721353-3672322 rdfs:subClassOf _:node1e05bjp5jx61 .
+
+_:node1e05bjp5jx61 a owl:Restriction ;
+	owl:onProperty :op-4721470-3780400 ;
+	owl:allValuesFrom :c-5111600-7111703 .
+
+:c-7653501-3941563 a owl:Class ;
+	rdfs:label "artículo"@es ;
+	rdfs:subClassOf :c-3387665-6944566 .
+
+:c-8395786-8930226 a owl:Class ;
+	rdfs:label "excursión"@es ;
+	rdfs:subClassOf :c-9166750-2422405 .
+
+:c-8420754-9322703 a owl:Class ;
+	rdfs:label "conferencia"@es ;
+	rdfs:subClassOf :c-4691160-7847323 .
+
+:c-8482162-5849106 a owl:Class ;
+	rdfs:label "país"@es ;
+	owl:disjointWith :c-9342034-1799800 , :c-9969781-3984826 .
+
+:c-8490686-0072482 a owl:Class ;
+	rdfs:label "proceso de revisión de resultados"@es ;
+	rdfs:subClassOf :c-1845828-3821554 ;
+	owl:disjointWith :c-9924626-5439135 .
+
+:c-8773241-1370454 a owl:Class ;
+	rdfs:label "administrador"@es ;
+	rdfs:subClassOf :c-4813590-0378569 .
+
+:c-8817386-4488894 a owl:Class ;
+	rdfs:label "científico"@es ;
+	rdfs:subClassOf :c-4813590-0378569 .
+
+:c-9166750-2422405 a owl:Class ;
+	rdfs:label "programa_social"@es ;
+	rdfs:subClassOf :c-9969781-3984826 , _:node1e05bjp5jx62 .
+
+_:node1e05bjp5jx62 a owl:Restriction ;
+	owl:onProperty :ent-6215362-3964570 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-9166750-2422405 rdfs:subClassOf _:node1e05bjp5jx63 .
+
+_:node1e05bjp5jx63 a owl:Restriction ;
+	owl:onProperty :ent-3899564-1778675 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-9166750-2422405 rdfs:subClassOf _:node1e05bjp5jx64 .
+
+_:node1e05bjp5jx64 a owl:Restriction ;
+	owl:onProperty :ent-4686981-4512187 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-9340084-4171357 a owl:Class ;
+	rdfs:label "asistente"@es ;
+	rdfs:subClassOf :c-4813590-0378569 .
+
+:c-9342034-1799800 a owl:Class ;
+	rdfs:label "organización"@es ;
+	owl:disjointWith :c-9969781-3984826 .
+
+:c-9495248-1562496 a owl:Class ;
+	rdfs:label "presidente del comité de programa"@es ;
+	rdfs:subClassOf :c-4813590-0378569 .
+
+:c-9924626-5439135 a owl:Class ;
+	rdfs:label "proceso de revisión"@es ;
+	rdfs:subClassOf :c-1845828-3821554 .
+
+:c-9969781-3984826 a owl:Class ;
+	rdfs:label "acontecimiento"@es .

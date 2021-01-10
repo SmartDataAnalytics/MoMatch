@@ -1,0 +1,42 @@
+est fait jusqu'à,is made up to
+est conçu pour,is designed to
+est visité par,is visited by
+est présent,is this
+occupe,deals
+prépare,prepares
+a lieu après,takes place after
+est occupé par,is occupied by
+donne,gives
+est signé par,is signed by
+a lieu dans,takes place in
+est donné à,is given to
+est payé pour,is paid for
+est préparé par,is prepared by
+est envoyé après,is sent after
+a besoin de,needs
+est payé avec,is paid with
+est équipé par,is equipped with
+est écrit par,is written by
+est envoyé avant,is sent before
+écrit,written
+est donné par,is given by
+est situé dans,is located in
+parle à,talk to
+est nécessaire pour,is necessary for
+obtient,gets
+est fait à partir de,is made from
+est payé à,is paid to
+est daté du,is dated
+est connecté à,is connected to
+signe,sign
+passe par,pass by
+paie,pay
+est payé par,is paid by
+a quantité de,a quantity of
+a lieu avant,takes place before
+est utilisé pour,is used for
+envoie,sends
+AnnotationProperty,AnnotationProperty
+est envoyé par,is sent by
+est utilisé par,is used by
+est présent à,is this to

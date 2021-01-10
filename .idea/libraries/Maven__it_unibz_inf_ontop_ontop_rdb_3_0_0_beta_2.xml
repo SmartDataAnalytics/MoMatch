@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: it.unibz.inf.ontop:ontop-rdb:3.0.0-beta-2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/it/unibz/inf/ontop/ontop-rdb/3.0.0-beta-2/ontop-rdb-3.0.0-beta-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/it/unibz/inf/ontop/ontop-rdb/3.0.0-beta-2/ontop-rdb-3.0.0-beta-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/it/unibz/inf/ontop/ontop-rdb/3.0.0-beta-2/ontop-rdb-3.0.0-beta-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

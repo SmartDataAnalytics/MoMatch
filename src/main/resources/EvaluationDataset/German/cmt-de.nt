@@ -1,0 +1,394 @@
+<http://cmt_de> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://cmt_de#op-0065286-3503316> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-0065286-3503316> <http://www.w3.org/2000/01/rdf-schema#label> "zugewiesen zu"@de .
+<http://cmt_de#op-0065286-3503316> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-0065286-3503316> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#op-0136947-6585575> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-0136947-6585575> <http://www.w3.org/2000/01/rdf-schema#label> "virtuelles Treffen veranlasst von"@de .
+<http://cmt_de#op-0136947-6585575> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-0136947-6585575> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-0603706-6484397> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-0603706-6484397> <http://www.w3.org/2000/01/rdf-schema#label> "zugewiesen von Administrator"@de .
+<http://cmt_de#op-0603706-6484397> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-0603706-6484397> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#op-0995455-0619369> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-0995455-0619369> <http://www.w3.org/2000/01/rdf-schema#label> "hat Kriterien zu Gutachten eingef\u00FCgt"@de .
+<http://cmt_de#op-0995455-0619369> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-0995455-0619369> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-1108172-2047481> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-1108172-2047481> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_de#op-1108172-2047481> <http://www.w3.org/2000/01/rdf-schema#label> "hat Gutachten geschrieben"@de .
+<http://cmt_de#op-1108172-2047481> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2036030-6478102> .
+<http://cmt_de#op-1108172-2047481> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#op-1123568-3504213> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-1123568-3504213> <http://www.w3.org/2000/01/rdf-schema#label> "Beitragszuordnung abgeschlossen von"@de .
+<http://cmt_de#op-1123568-3504213> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-1123568-3504213> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-1333090-2653926> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-1333090-2653926> <http://www.w3.org/2000/01/rdf-schema#label> "hat Interessenskonflikt in Bezug auf"@de .
+<http://cmt_de#op-1333090-2653926> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-3386094-8929437> .
+<http://cmt_de#op-1333090-2653926> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#op-1511461-8135444> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-1511461-8135444> <http://www.w3.org/2000/01/rdf-schema#label> "hat Mitglied"@de .
+<http://cmt_de#op-1511461-8135444> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-3554876-1135672> .
+<http://cmt_de#op-1511461-8135444> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-4872876-3932965> .
+<http://cmt_de#op-1511461-8135444> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-5563137-2349843> .
+<http://cmt_de#op-1671215-9946432> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-1671215-9946432> <http://www.w3.org/2000/01/rdf-schema#label> "druckt Papierausdruck des Mailing-Manifests"@de .
+<http://cmt_de#op-1671215-9946432> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-1671215-9946432> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-2010665-6629499> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-2010665-6629499> <http://www.w3.org/2000/01/rdf-schema#label> "hat die Zuordnung der Beitr\u00E4ge abgeschlossen"@de .
+<http://cmt_de#op-2010665-6629499> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-2010665-6629499> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-2010665-6629499> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-1123568-3504213> .
+<http://cmt_de#op-2369093-6627419> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-2369093-6627419> <http://www.w3.org/2000/01/rdf-schema#label> "Gebotsphase gestartet von"@de .
+<http://cmt_de#op-2369093-6627419> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-2369093-6627419> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-2406368-4587748> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-2406368-4587748> <http://www.w3.org/2000/01/rdf-schema#label> "bestimme maximale Anzahl an zugewiesenen Beitr\u00E4gen"@de .
+<http://cmt_de#op-2406368-4587748> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-2406368-4587748> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-4872876-3932965> .
+<http://cmt_de#op-2666186-7725287> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-2666186-7725287> <http://www.w3.org/2000/01/rdf-schema#label> "hat die Zeit des Begutachtens beendet"@de .
+<http://cmt_de#op-2666186-7725287> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2036030-6478102> .
+<http://cmt_de#op-2666186-7725287> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7606498-1774261> .
+<http://cmt_de#op-2707356-6407444> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-2707356-6407444> <http://www.w3.org/2000/01/rdf-schema#label> "Teilnehmer von"@de .
+<http://cmt_de#op-2707356-6407444> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-2707356-6407444> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-8082317-4346619> .
+<http://cmt_de#op-2899154-8812515> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-2899154-8812515> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#op-2899154-8812515> <http://www.w3.org/2000/01/rdf-schema#label> "gelesen von Meta-Gutachter"@de .
+<http://cmt_de#op-2899154-8812515> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-2899154-8812515> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-5336831-3519560> .
+<http://cmt_de#op-3286624-6409948> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-3286624-6409948> <http://www.w3.org/2000/01/rdf-schema#label> "hat Gegenstandsbereich"@de .
+<http://cmt_de#op-3286624-6409948> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-3286624-6409948> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-7221579-7498183> .
+<http://cmt_de#op-3324750-0695052> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-3324750-0695052> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#op-3324750-0695052> <http://www.w3.org/2000/01/rdf-schema#label> "hinzugef\u00FCgt von"@de .
+<http://cmt_de#op-3324750-0695052> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-3324750-0695052> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-4872876-3932965> .
+<http://cmt_de#op-3324750-0695052> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-3728281-3703353> .
+<http://cmt_de#op-3382350-0510939> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-3382350-0510939> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#op-3382350-0510939> <http://www.w3.org/2000/01/rdf-schema#label> "geschrieben von"@de .
+<http://cmt_de#op-3382350-0510939> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-3382350-0510939> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-7511748-5827387> .
+<http://cmt_de#op-3382350-0510939> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-7761501-2770581> .
+<http://cmt_de#op-3385838-2265419> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-3385838-2265419> <http://www.w3.org/2000/01/rdf-schema#label> "hat Teilnehmer"@de .
+<http://cmt_de#op-3385838-2265419> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-3385838-2265419> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-8082317-4346619> .
+<http://cmt_de#op-3385838-2265419> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-2707356-6407444> .
+<http://cmt_de#op-3728281-3703353> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-3728281-3703353> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_de#op-3728281-3703353> <http://www.w3.org/2000/01/rdf-schema#label> "hat hinzugef\u00FCgt"@de .
+<http://cmt_de#op-3728281-3703353> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-3728281-3703353> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-4872876-3932965> .
+<http://cmt_de#op-4119782-8661590> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-4119782-8661590> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#op-4119782-8661590> <http://www.w3.org/2000/01/rdf-schema#label> "geschrieben von"@de .
+<http://cmt_de#op-4119782-8661590> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2036030-6478102> .
+<http://cmt_de#op-4119782-8661590> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#op-4119782-8661590> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-1108172-2047481> .
+<http://cmt_de#op-4243914-3706839> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-4243914-3706839> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#op-4243914-3706839> <http://www.w3.org/2000/01/rdf-schema#label> "ist entschieden worden als"@de .
+<http://cmt_de#op-4243914-3706839> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-4243914-3706839> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-1092336-2330592> .
+<http://cmt_de#op-4267478-9907556> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-4267478-9907556> <http://www.w3.org/2000/01/rdf-schema#label> "steht in Interessen-Konflikt mit Beitrag"@de .
+<http://cmt_de#op-4267478-9907556> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-4369028-9162599> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-4369028-9162599> <http://www.w3.org/2000/01/rdf-schema#label> "hat Beitrag mitverfasst"@de .
+<http://cmt_de#op-4369028-9162599> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-4369028-9162599> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-5403940-4193578> .
+<http://cmt_de#op-4385319-7522274> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-4385319-7522274> <http://www.w3.org/2000/01/rdf-schema#label> "hat die Beitrags-Zuordnungssoftware ausgef\u00FChrt"@de .
+<http://cmt_de#op-4385319-7522274> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-4385319-7522274> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-4385319-7522274> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-4513167-2261392> .
+<http://cmt_de#op-4513167-2261392> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-4513167-2261392> <http://www.w3.org/2000/01/rdf-schema#label> "Beitragszuordnungs-Software ausgef\u00FChrt von"@de .
+<http://cmt_de#op-4513167-2261392> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-4513167-2261392> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-5317809-8410933> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-5317809-8410933> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#op-5317809-8410933> <http://www.w3.org/2000/01/rdf-schema#label> "abgewiesen von"@de .
+<http://cmt_de#op-5317809-8410933> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-5317809-8410933> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-5367618-4635788> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-5367618-4635788> <http://www.w3.org/2000/01/rdf-schema#label> "Papierausdruck des Mailing-Manifests gedruckt von"@de .
+<http://cmt_de#op-5367618-4635788> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-5367618-4635788> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-5367618-4635788> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-1671215-9946432> .
+<http://cmt_de#op-5563137-2349843> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-5563137-2349843> <http://www.w3.org/2000/01/rdf-schema#label> "ist Mitglied des Programm-Komitees"@de .
+<http://cmt_de#op-5563137-2349843> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-3554876-1135672> .
+<http://cmt_de#op-5563137-2349843> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-4872876-3932965> .
+<http://cmt_de#op-5585072-3196242> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-5585072-3196242> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#op-5585072-3196242> <http://www.w3.org/2000/01/rdf-schema#label> "abgeglichen von"@de .
+<http://cmt_de#op-5585072-3196242> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2636048-9047841> .
+<http://cmt_de#op-5585072-3196242> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#op-5588430-7223994> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-5588430-7223994> <http://www.w3.org/2000/01/rdf-schema#label> "hat Beitrag eingesendet"@de .
+<http://cmt_de#op-5588430-7223994> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-5588430-7223994> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7511748-5827387> .
+<http://cmt_de#op-5944487-2995547> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-5944487-2995547> <http://www.w3.org/2000/01/rdf-schema#label> "hat zugewiesen"@de .
+<http://cmt_de#op-5944487-2995547> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-5944487-2995547> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#op-5944487-2995547> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-0603706-6484397> .
+<http://cmt_de#op-6570223-6428235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-6570223-6428235> <http://www.w3.org/2000/01/rdf-schema#label> "Details eingef\u00FCgt von"@de .
+<http://cmt_de#op-6570223-6428235> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-6570223-6428235> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-6662152-2690641> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-6662152-2690641> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_de#op-6662152-2690641> <http://www.w3.org/2000/01/rdf-schema#label> "hat Gebot erhalten"@de .
+<http://cmt_de#op-6662152-2690641> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-6662152-2690641> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2636048-9047841> .
+<http://cmt_de#op-6688188-2661083> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-6688188-2661083> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_de#op-6688188-2661083> <http://www.w3.org/2000/01/rdf-schema#label> "hat abgeglichen"@de .
+<http://cmt_de#op-6688188-2661083> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2636048-9047841> .
+<http://cmt_de#op-6688188-2661083> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#op-6688188-2661083> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-5585072-3196242> .
+<http://cmt_de#op-6806056-6808473> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-6806056-6808473> <http://www.w3.org/2000/01/rdf-schema#label> "Kriterien zu Gutachten eingef\u00FCgt von"@de .
+<http://cmt_de#op-6806056-6808473> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-6806056-6808473> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-6806056-6808473> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-0995455-0619369> .
+<http://cmt_de#op-6999775-8658617> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-6999775-8658617> <http://www.w3.org/2000/01/rdf-schema#label> "hat Papier gelesen"@de .
+<http://cmt_de#op-6999775-8658617> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-6999775-8658617> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#op-6999775-8658617> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-8860290-4901047> .
+<http://cmt_de#op-7066350-8155982> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-7066350-8155982> <http://www.w3.org/2000/01/rdf-schema#label> "mitverfasst von"@de .
+<http://cmt_de#op-7066350-8155982> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-7066350-8155982> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-5403940-4193578> .
+<http://cmt_de#op-7066350-8155982> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-4369028-9162599> .
+<http://cmt_de#op-7181260-5606687> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-7181260-5606687> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#op-7181260-5606687> <http://www.w3.org/2000/01/rdf-schema#label> "zugewiesen von Gutachter"@de .
+<http://cmt_de#op-7181260-5606687> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#op-7181260-5606687> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-5888543-5318130> .
+<http://cmt_de#op-7181260-5606687> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-8350630-9441009> .
+<http://cmt_de#op-7391170-1595630> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-7391170-1595630> <http://www.w3.org/2000/01/rdf-schema#label> "hat Details eingef\u00FCgt in Bezug auf"@de .
+<http://cmt_de#op-7391170-1595630> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-7391170-1595630> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-7391170-1595630> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-6570223-6428235> .
+<http://cmt_de#op-7761501-2770581> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-7761501-2770581> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_de#op-7761501-2770581> <http://www.w3.org/2000/01/rdf-schema#label> "hat Beitrag geschrieben"@de .
+<http://cmt_de#op-7761501-2770581> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-7761501-2770581> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7511748-5827387> .
+<http://cmt_de#op-7851598-8792255> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-7851598-8792255> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#op-7851598-8792255> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_de#op-7851598-8792255> <http://www.w3.org/2000/01/rdf-schema#label> "akzeptiert von"@de .
+<http://cmt_de#op-7851598-8792255> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-7851598-8792255> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-8350630-9441009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-8350630-9441009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_de#op-8350630-9441009> <http://www.w3.org/2000/01/rdf-schema#label> "hat zugewiesen"@de .
+<http://cmt_de#op-8350630-9441009> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#op-8350630-9441009> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-5888543-5318130> .
+<http://cmt_de#op-8743766-4367043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-8743766-4367043> <http://www.w3.org/2000/01/rdf-schema#label> "hat die Gebotsphase gestartet"@de .
+<http://cmt_de#op-8743766-4367043> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-8743766-4367043> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-8743766-4367043> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-2369093-6627419> .
+<http://cmt_de#op-8860290-4901047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-8860290-4901047> <http://www.w3.org/2000/01/rdf-schema#label> "gelesen von Gutachter"@de .
+<http://cmt_de#op-8860290-4901047> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-8860290-4901047> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#op-9131907-0871491> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-9131907-0871491> <http://www.w3.org/2000/01/rdf-schema#label> "ist zugeordnet worden"@de .
+<http://cmt_de#op-9131907-0871491> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-9131907-0871491> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#op-9131907-0871491> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-0065286-3503316> .
+<http://cmt_de#op-9262861-2168864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-9262861-2168864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#op-9262861-2168864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_de#op-9262861-2168864> <http://www.w3.org/2000/01/rdf-schema#label> "hat akzeptiert"@de .
+<http://cmt_de#op-9262861-2168864> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-9262861-2168864> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-9262861-2168864> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-7851598-8792255> .
+<http://cmt_de#op-9668399-9499203> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-9668399-9499203> <http://www.w3.org/2000/01/rdf-schema#label> "hat virtuelles Treffen veranlasst"@de .
+<http://cmt_de#op-9668399-9499203> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-9668399-9499203> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#op-9668399-9499203> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-0136947-6585575> .
+<http://cmt_de#op-9724235-4357611> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_de#op-9724235-4357611> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_de#op-9724235-4357611> <http://www.w3.org/2000/01/rdf-schema#label> "hat Papier abgelehnt"@de .
+<http://cmt_de#op-9724235-4357611> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#op-9724235-4357611> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-2600954-3812137> .
+<http://cmt_de#op-9724235-4357611> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_de#op-5317809-8410933> .
+<http://cmt_de#ent-2502906-5126965> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_de#ent-2502906-5126965> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#ent-2502906-5126965> <http://www.w3.org/2000/01/rdf-schema#label> "Gutachten pro Beitrag"@de .
+<http://cmt_de#ent-2502906-5126965> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#ent-2502906-5126965> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://cmt_de#ent-3421629-9074086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_de#ent-3421629-9074086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#ent-3421629-9074086> <http://www.w3.org/2000/01/rdf-schema#label> "akzeptiert Hardcopy-Einsendungen"@de .
+<http://cmt_de#ent-3421629-9074086> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#ent-3421629-9074086> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://cmt_de#ent-3493763-1822072> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_de#ent-3493763-1822072> <http://www.w3.org/2000/01/rdf-schema#label> "hat Datum"@de .
+<http://cmt_de#ent-3493763-1822072> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#ent-3493763-1822072> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://cmt_de#ent-4152612-5306614> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_de#ent-4152612-5306614> <http://www.w3.org/2000/01/rdf-schema#label> "hat Email"@de .
+<http://cmt_de#ent-4152612-5306614> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#ent-4152612-5306614> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://cmt_de#ent-5017088-6756639> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_de#ent-5017088-6756639> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#ent-5017088-6756639> <http://www.w3.org/2000/01/rdf-schema#label> "hat Webseite an URL"@de .
+<http://cmt_de#ent-5017088-6756639> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#ent-5017088-6756639> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://cmt_de#ent-6414249-7356026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_de#ent-6414249-7356026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#ent-6414249-7356026> <http://www.w3.org/2000/01/rdf-schema#label> "hat ID"@de .
+<http://cmt_de#ent-6414249-7356026> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#ent-6414249-7356026> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#unsignedLong> .
+<http://cmt_de#ent-7027114-8569150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_de#ent-7027114-8569150> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#ent-7027114-8569150> <http://www.w3.org/2000/01/rdf-schema#label> "maximale Anzahl an zugewiesenen Beitr\u00E4gen"@de .
+<http://cmt_de#ent-7027114-8569150> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-4872876-3932965> .
+<http://cmt_de#ent-7027114-8569150> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://cmt_de#ent-7086815-3431611> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_de#ent-7086815-3431611> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#ent-7086815-3431611> <http://www.w3.org/2000/01/rdf-schema#label> "hat Logo an URL"@de .
+<http://cmt_de#ent-7086815-3431611> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#ent-7086815-3431611> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://cmt_de#ent-7525433-8535515> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_de#ent-7525433-8535515> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#ent-7525433-8535515> <http://www.w3.org/2000/01/rdf-schema#label> "hat Titel"@de .
+<http://cmt_de#ent-7525433-8535515> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#ent-7525433-8535515> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://cmt_de#ent-7649389-3921230> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_de#ent-7649389-3921230> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_de#ent-7649389-3921230> <http://www.w3.org/2000/01/rdf-schema#label> "hat Namen"@de .
+<http://cmt_de#ent-7649389-3921230> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://cmt_de#c-0277212-8406046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-0277212-8406046> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenzbeitrag"@de .
+<http://cmt_de#c-0277212-8406046> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-3386094-8929437> .
+<http://cmt_de#c-0277212-8406046> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-2036030-6478102> .
+<http://cmt_de#c-1092336-2330592> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-1092336-2330592> <http://www.w3.org/2000/01/rdf-schema#label> "Entscheidung"@de .
+<http://cmt_de#c-1092336-2330592> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-2636048-9047841> .
+<http://cmt_de#c-1092336-2330592> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-3386094-8929437> .
+<http://cmt_de#c-1092336-2330592> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-3554876-1135672> .
+<http://cmt_de#c-1092336-2330592> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-6476451-2581059> .
+<http://cmt_de#c-1092336-2330592> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#c-1092336-2330592> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#c-1105419-5848060> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-1105419-5848060> <http://www.w3.org/2000/01/rdf-schema#label> "Zur\u00FCckweisung"@de .
+<http://cmt_de#c-1105419-5848060> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-1092336-2330592> .
+<http://cmt_de#c-1105419-5848060> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-2310106-7377133> .
+<http://cmt_de#c-1253837-4887221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-1253837-4887221> <http://www.w3.org/2000/01/rdf-schema#label> "vollst\u00E4ndiger Konferenzbeitrag"@de .
+<http://cmt_de#c-1253837-4887221> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#c-2036030-6478102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-2036030-6478102> <http://www.w3.org/2000/01/rdf-schema#label> "Gutachten"@de .
+<http://cmt_de#c-2036030-6478102> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-3386094-8929437> .
+<http://cmt_de#c-2276280-7516043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-2276280-7516043> <http://www.w3.org/2000/01/rdf-schema#label> "Vorsitzender"@de .
+<http://cmt_de#c-2276280-7516043> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#c-2310106-7377133> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-2310106-7377133> <http://www.w3.org/2000/01/rdf-schema#label> "Akzeptanz"@de .
+<http://cmt_de#c-2310106-7377133> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-1092336-2330592> .
+<http://cmt_de#c-2600954-3812137> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-2600954-3812137> <http://www.w3.org/2000/01/rdf-schema#label> "Administrator"@de .
+<http://cmt_de#c-2600954-3812137> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-5325416-2794476> .
+<http://cmt_de#c-2636048-9047841> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-2636048-9047841> <http://www.w3.org/2000/01/rdf-schema#label> "Gebot"@de .
+<http://cmt_de#c-2636048-9047841> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-3386094-8929437> .
+<http://cmt_de#c-2636048-9047841> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-3554876-1135672> .
+<http://cmt_de#c-2636048-9047841> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-6476451-2581059> .
+<http://cmt_de#c-2636048-9047841> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#c-2636048-9047841> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#c-3386094-8929437> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-3386094-8929437> <http://www.w3.org/2000/01/rdf-schema#label> "Dokument"@de .
+<http://cmt_de#c-3386094-8929437> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-3554876-1135672> .
+<http://cmt_de#c-3386094-8929437> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-6476451-2581059> .
+<http://cmt_de#c-3386094-8929437> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#c-3386094-8929437> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#c-3554876-1135672> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-3554876-1135672> <http://www.w3.org/2000/01/rdf-schema#label> "Programm-Komitee"@de .
+<http://cmt_de#c-3554876-1135672> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-6476451-2581059> .
+<http://cmt_de#c-3554876-1135672> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#c-3554876-1135672> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#c-4575828-4677716> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-4575828-4677716> <http://www.w3.org/2000/01/rdf-schema#label> "Verfasser, der kein Gutachter ist"@de .
+<http://cmt_de#c-4575828-4677716> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-7511748-5827387> .
+<http://cmt_de#c-4575828-4677716> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-4872876-3932965> .
+<http://cmt_de#c-4575828-4677716> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#c-4872876-3932965> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-4872876-3932965> <http://www.w3.org/2000/01/rdf-schema#label> "Mitglied des Programm-Komitees"@de .
+<http://cmt_de#c-4872876-3932965> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-8082317-4346619> .
+<http://cmt_de#c-4872876-3932965> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#c-5062955-9564132> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-5062955-9564132> <http://www.w3.org/2000/01/rdf-schema#label> "Gutachter"@de .
+<http://cmt_de#c-5062955-9564132> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-5325416-2794476> .
+<http://cmt_de#c-5062955-9564132> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-8082317-4346619> .
+<http://cmt_de#c-5062955-9564132> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-5888543-5318130> .
+<http://cmt_de#c-5325416-2794476> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-5325416-2794476> <http://www.w3.org/2000/01/rdf-schema#label> "Benutzer"@de .
+<http://cmt_de#c-5325416-2794476> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#c-5336831-3519560> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-5336831-3519560> <http://www.w3.org/2000/01/rdf-schema#label> "Meta-Gutachater (Gutachter der Gutachten begutachtet)"@de .
+<http://cmt_de#c-5336831-3519560> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-5062955-9564132> .
+<http://cmt_de#c-5356419-0853732> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-5356419-0853732> <http://www.w3.org/2000/01/rdf-schema#label> "Vorsitzender der Konferenz"@de .
+<http://cmt_de#c-5356419-0853732> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-8082317-4346619> .
+<http://cmt_de#c-5356419-0853732> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-9309131-3067692> .
+<http://cmt_de#c-5403940-4193578> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-5403940-4193578> <http://www.w3.org/2000/01/rdf-schema#label> "Mitverfasser"@de .
+<http://cmt_de#c-5403940-4193578> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-7511748-5827387> .
+<http://cmt_de#c-5888543-5318130> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-5888543-5318130> <http://www.w3.org/2000/01/rdf-schema#label> "externer Gutachter"@de .
+<http://cmt_de#c-5888543-5318130> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#c-6476451-2581059> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-6476451-2581059> <http://www.w3.org/2000/01/rdf-schema#label> "Pr\u00E4ferenz"@de .
+<http://cmt_de#c-6476451-2581059> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-7914897-1988765> .
+<http://cmt_de#c-6476451-2581059> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#c-7221579-7498183> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-7221579-7498183> <http://www.w3.org/2000/01/rdf-schema#label> "Gegenstandsbereich"@de .
+<http://cmt_de#c-7511748-5827387> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-7511748-5827387> <http://www.w3.org/2000/01/rdf-schema#label> "Verfasser"@de .
+<http://cmt_de#c-7511748-5827387> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-5325416-2794476> .
+<http://cmt_de#c-7511748-5827387> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-8082317-4346619> .
+<http://cmt_de#c-7606498-1774261> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-7606498-1774261> <http://www.w3.org/2000/01/rdf-schema#label> "Vorsitzender des Programm-Komitees"@de .
+<http://cmt_de#c-7606498-1774261> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-4872876-3932965> .
+<http://cmt_de#c-7914897-1988765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-7914897-1988765> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenz"@de .
+<http://cmt_de#c-7914897-1988765> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://cmt_de#c-7914897-1988765> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#c-8082317-4346619> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-8082317-4346619> <http://www.w3.org/2000/01/rdf-schema#label> "Teilnehmer einer Konferenz"@de .
+<http://cmt_de#c-8082317-4346619> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-9804348-4921383> .
+<http://cmt_de#c-8330184-9824066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-8330184-9824066> <http://www.w3.org/2000/01/rdf-schema#label> "Meta-Gutachten (Gutachten \u00FCber ein Gutachten)"@de .
+<http://cmt_de#c-8330184-9824066> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-2036030-6478102> .
+<http://cmt_de#c-8450582-0542304> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-8450582-0542304> <http://www.w3.org/2000/01/rdf-schema#label> "Zusammenfassung eines Konferenzbeitrags"@de .
+<http://cmt_de#c-8450582-0542304> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-0277212-8406046> .
+<http://cmt_de#c-9309131-3067692> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-9309131-3067692> <http://www.w3.org/2000/01/rdf-schema#label> "stellvertretender Vorsitz"@de .
+<http://cmt_de#c-9309131-3067692> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_de#c-8082317-4346619> .
+<http://cmt_de#c-9804348-4921383> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_de#c-9804348-4921383> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@de .

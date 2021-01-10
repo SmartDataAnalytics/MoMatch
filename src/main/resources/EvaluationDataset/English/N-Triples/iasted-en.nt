@@ -1,0 +1,580 @@
+<http://iasted_en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://iasted_en#op-0698539-0922439> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-0698539-0922439> <http://www.w3.org/2000/01/rdf-schema#label> "is used for"@en .
+<http://iasted_en#op-0698539-0922439> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-1296071-2287446> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-1296071-2287446> <http://www.w3.org/2000/01/rdf-schema#label> "is sent by"@en .
+<http://iasted_en#op-1296071-2287446> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-1296071-2287446> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-1301961-3228494> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-1301961-3228494> <http://www.w3.org/2000/01/rdf-schema#label> "writes"@en .
+<http://iasted_en#op-1301961-3228494> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-1301961-3228494> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-1301961-3228494> <http://www.w3.org/2002/07/owl#inverseOf> <http://iasted_en#op-9679978-8775089> .
+<http://iasted_en#op-1416989-2591607> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-1416989-2591607> <http://www.w3.org/2000/01/rdf-schema#label> "is held before"@en .
+<http://iasted_en#op-1416989-2591607> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2475930-4019930> .
+<http://iasted_en#op-1416989-2591607> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6174362-9247294> .
+<http://iasted_en#op-1567823-7909896> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-1567823-7909896> <http://www.w3.org/2000/01/rdf-schema#label> "is paid with"@en .
+<http://iasted_en#op-1567823-7909896> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6436231-2373312> .
+<http://iasted_en#op-1567823-7909896> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-1657852-5105987> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-1657852-5105987> <http://www.w3.org/2000/01/rdf-schema#label> "is designed for"@en .
+<http://iasted_en#op-1839406-4997846> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-1839406-4997846> <http://www.w3.org/2000/01/rdf-schema#label> "is sent before"@en .
+<http://iasted_en#op-1839406-4997846> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2475930-4019930> .
+<http://iasted_en#op-1839406-4997846> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-1877374-3703970> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-1877374-3703970> <http://www.w3.org/2000/01/rdf-schema#label> "is prepared by"@en .
+<http://iasted_en#op-1877374-3703970> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-1877374-3703970> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-1925199-5689484> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-1925199-5689484> <http://www.w3.org/2000/01/rdf-schema#label> "is held after"@en .
+<http://iasted_en#op-1925199-5689484> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2475930-4019930> .
+<http://iasted_en#op-1925199-5689484> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6174362-9247294> .
+<http://iasted_en#op-2094694-9885925> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-2094694-9885925> <http://www.w3.org/2000/01/rdf-schema#label> "needs"@en .
+<http://iasted_en#op-2094694-9885925> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-2094694-9885925> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-2375314-8429528> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-2375314-8429528> <http://www.w3.org/2000/01/rdf-schema#label> "is equipped for"@en .
+<http://iasted_en#op-2375314-8429528> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-3616860-0256541> .
+<http://iasted_en#op-2375314-8429528> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-2551551-7258727> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-2551551-7258727> <http://www.w3.org/2000/01/rdf-schema#label> "sends"@en .
+<http://iasted_en#op-2551551-7258727> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-2551551-7258727> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-2551551-7258727> <http://www.w3.org/2002/07/owl#inverseOf> <http://iasted_en#op-1296071-2287446> .
+<http://iasted_en#op-2639233-5068303> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-2639233-5068303> <http://www.w3.org/2000/01/rdf-schema#label> "is paid by"@en .
+<http://iasted_en#op-2639233-5068303> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-2639233-5068303> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6436231-2373312> .
+<http://iasted_en#op-2639233-5068303> <http://www.w3.org/2002/07/owl#inverseOf> <http://iasted_en#op-3835473-5069161> .
+<http://iasted_en#op-2682327-4170204> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-2682327-4170204> <http://www.w3.org/2000/01/rdf-schema#label> "is needed for"@en .
+<http://iasted_en#op-2682327-4170204> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-2682327-4170204> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-2682327-4170204> <http://www.w3.org/2002/07/owl#inverseOf> <http://iasted_en#op-2094694-9885925> .
+<http://iasted_en#op-2748109-6619640> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-2748109-6619640> <http://www.w3.org/2000/01/rdf-schema#label> "is present in time"@en .
+<http://iasted_en#op-2748109-6619640> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-2748109-6619640> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2475930-4019930> .
+<http://iasted_en#op-2931757-0516502> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-2931757-0516502> <http://www.w3.org/2000/01/rdf-schema#label> "is used by"@en .
+<http://iasted_en#op-2931757-0516502> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-2931757-0516502> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-3273484-0242238> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-3273484-0242238> <http://www.w3.org/2000/01/rdf-schema#label> "is locally situated in"@en .
+<http://iasted_en#op-3835473-5069161> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-3835473-5069161> <http://www.w3.org/2000/01/rdf-schema#label> "pays"@en .
+<http://iasted_en#op-3835473-5069161> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-3835473-5069161> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-6436231-2373312> .
+<http://iasted_en#op-3952168-3896732> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-3952168-3896732> <http://www.w3.org/2000/01/rdf-schema#label> "is sent after"@en .
+<http://iasted_en#op-3952168-3896732> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2475930-4019930> .
+<http://iasted_en#op-3952168-3896732> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-3965265-4296618> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-3965265-4296618> <http://www.w3.org/2000/01/rdf-schema#label> "is signed by"@en .
+<http://iasted_en#op-3965265-4296618> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-3965265-4296618> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-3965265-4296618> <http://www.w3.org/2002/07/owl#inverseOf> <http://iasted_en#op-8570815-5355417> .
+<http://iasted_en#op-4286880-7828101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-4286880-7828101> <http://www.w3.org/2000/01/rdf-schema#label> "is made from"@en .
+<http://iasted_en#op-4286880-7828101> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-4286880-7828101> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-4305343-7164639> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-4305343-7164639> <http://www.w3.org/2000/01/rdf-schema#label> "prepares"@en .
+<http://iasted_en#op-4305343-7164639> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-4305343-7164639> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-4305343-7164639> <http://www.w3.org/2002/07/owl#inverseOf> <http://iasted_en#op-1877374-3703970> .
+<http://iasted_en#op-4770542-4818491> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-4770542-4818491> <http://www.w3.org/2000/01/rdf-schema#label> "is visited by"@en .
+<http://iasted_en#op-4770542-4818491> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-4864199-4462640> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-4864199-4462640> <http://www.w3.org/2000/01/rdf-schema#label> "is connected with"@en .
+<http://iasted_en#op-5062506-9744171> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-5062506-9744171> <http://www.w3.org/2000/01/rdf-schema#label> "goes through"@en .
+<http://iasted_en#op-5062506-9744171> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-6174362-9247294> .
+<http://iasted_en#op-5062506-9744171> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-5395177-6138398> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-5395177-6138398> <http://www.w3.org/2000/01/rdf-schema#label> "is present in time or space"@en .
+<http://iasted_en#op-5395177-6138398> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-5551010-0533591> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-5551010-0533591> <http://www.w3.org/2000/01/rdf-schema#label> "is given by"@en .
+<http://iasted_en#op-5551010-0533591> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-5551010-0533591> <http://www.w3.org/2002/07/owl#inverseOf> <http://iasted_en#op-7611549-5965933> .
+<http://iasted_en#op-5949915-0266078> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-5949915-0266078> <http://www.w3.org/2000/01/rdf-schema#label> "is given to"@en .
+<http://iasted_en#op-5949915-0266078> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-5949915-0266078> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-6081690-8054157> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-6081690-8054157> <http://www.w3.org/2000/01/rdf-schema#label> "is held in"@en .
+<http://iasted_en#op-6081690-8054157> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6174362-9247294> .
+<http://iasted_en#op-6395108-7018915> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-6395108-7018915> <http://www.w3.org/2000/01/rdf-schema#label> "speaks at time or in place"@en .
+<http://iasted_en#op-6395108-7018915> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-7611549-5965933> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-7611549-5965933> <http://www.w3.org/2000/01/rdf-schema#label> "gives"@en .
+<http://iasted_en#op-7611549-5965933> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-7676471-2591482> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-7676471-2591482> <http://www.w3.org/2000/01/rdf-schema#label> "is occupied by"@en .
+<http://iasted_en#op-7676471-2591482> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-7676471-2591482> <http://www.w3.org/2002/07/owl#inverseOf> <http://iasted_en#op-8409919-6125708> .
+<http://iasted_en#op-8316675-9596933> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-8316675-9596933> <http://www.w3.org/2000/01/rdf-schema#label> "is paid for"@en .
+<http://iasted_en#op-8316675-9596933> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6436231-2373312> .
+<http://iasted_en#op-8409919-6125708> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-8409919-6125708> <http://www.w3.org/2000/01/rdf-schema#label> "occupies (lives, resides)"@en .
+<http://iasted_en#op-8409919-6125708> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-8570815-5355417> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-8570815-5355417> <http://www.w3.org/2000/01/rdf-schema#label> "signs"@en .
+<http://iasted_en#op-8570815-5355417> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-8570815-5355417> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-9266015-7047005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-9266015-7047005> <http://www.w3.org/2000/01/rdf-schema#label> "obtains"@en .
+<http://iasted_en#op-9266015-7047005> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-9266015-7047005> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#op-9347375-6118171> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-9347375-6118171> <http://www.w3.org/2000/01/rdf-schema#label> "is paid in"@en .
+<http://iasted_en#op-9347375-6118171> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-3422362-1433264> .
+<http://iasted_en#op-9347375-6118171> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6436231-2373312> .
+<http://iasted_en#op-9679978-8775089> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://iasted_en#op-9679978-8775089> <http://www.w3.org/2000/01/rdf-schema#label> "is written by"@en .
+<http://iasted_en#op-9679978-8775089> <http://www.w3.org/2000/01/rdf-schema#range> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#op-9679978-8775089> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#ent-0709927-2922893> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://iasted_en#ent-0709927-2922893> <http://www.w3.org/2000/01/rdf-schema#label> "has amount of"@en .
+<http://iasted_en#ent-0709927-2922893> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6436231-2373312> .
+<http://iasted_en#ent-0709927-2922893> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://iasted_en#ent-2268143-8537869> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://iasted_en#ent-2268143-8537869> <http://www.w3.org/2000/01/rdf-schema#label> "is dated on"@en .
+<http://iasted_en#ent-2268143-8537869> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-6174362-9247294> .
+<http://iasted_en#ent-2268143-8537869> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://iasted_en#ent-6120875-2823827> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://iasted_en#ent-6120875-2823827> <http://www.w3.org/2000/01/rdf-schema#label> "to be done till"@en .
+<http://iasted_en#ent-6120875-2823827> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iasted_en#c-3110153-2691987> .
+<http://iasted_en#ent-6120875-2823827> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://iasted_en#c-0043803-8472799> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0043803-8472799> <http://www.w3.org/2000/01/rdf-schema#label> "cheque"@en .
+<http://iasted_en#c-0043803-8472799> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-4177590-0761750> .
+<http://iasted_en#c-0121520-3873813> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0121520-3873813> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee paid by an attending author for receiving proceedings as cd"@en .
+<http://iasted_en#c-0121520-3873813> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9595802-8962494> .
+<http://iasted_en#c-0201298-3231355> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0201298-3231355> <http://www.w3.org/2000/01/rdf-schema#label> "any kind of document"@en .
+<http://iasted_en#c-0201298-3231355> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#c-0235524-1676194> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0235524-1676194> <http://www.w3.org/2000/01/rdf-schema#label> "speaker giving a lecture in front of the plenum"@en .
+<http://iasted_en#c-0235524-1676194> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-7587641-3301519> .
+<http://iasted_en#c-0289821-9990873> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0289821-9990873> <http://www.w3.org/2000/01/rdf-schema#label> "overhead projector"@en .
+<http://iasted_en#c-0289821-9990873> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-1651781-8710944> .
+<http://iasted_en#c-0347561-8984406> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0347561-8984406> <http://www.w3.org/2000/01/rdf-schema#label> "full day tour"@en .
+<http://iasted_en#c-0347561-8984406> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9530580-6482208> .
+<http://iasted_en#c-0409829-5411561> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0409829-5411561> <http://www.w3.org/2000/01/rdf-schema#label> "deadline for notification of acceptance"@en .
+<http://iasted_en#c-0409829-5411561> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3110153-2691987> .
+<http://iasted_en#c-0434817-0369309> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0434817-0369309> <http://www.w3.org/2000/01/rdf-schema#label> "worker who is not a speaker"@en .
+<http://iasted_en#c-0434817-0369309> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-7705854-6281452> .
+<http://iasted_en#c-0507566-2089493> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0507566-2089493> <http://www.w3.org/2000/01/rdf-schema#label> "sponzorship"@en .
+<http://iasted_en#c-0507566-2089493> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6436231-2373312> .
+<http://iasted_en#c-0531925-8203664> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0531925-8203664> <http://www.w3.org/2000/01/rdf-schema#label> "departure"@en .
+<http://iasted_en#c-0531925-8203664> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9530580-6482208> .
+<http://iasted_en#c-0567768-1811310> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0567768-1811310> <http://www.w3.org/2000/01/rdf-schema#label> "hotel presenter"@en .
+<http://iasted_en#c-0567768-1811310> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3300599-6865154> .
+<http://iasted_en#c-0579327-2823478> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0579327-2823478> <http://www.w3.org/2000/01/rdf-schema#label> "state"@en .
+<http://iasted_en#c-0810403-3160253> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0810403-3160253> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee a non author"@en .
+<http://iasted_en#c-0810403-3160253> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9595802-8962494> .
+<http://iasted_en#c-0863620-0869812> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0863620-0869812> <http://www.w3.org/2000/01/rdf-schema#label> "state of the sponsor"@en .
+<http://iasted_en#c-0863620-0869812> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0579327-2823478> .
+<http://iasted_en#c-0887025-3124194> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0887025-3124194> <http://www.w3.org/2000/01/rdf-schema#label> "submission"@en .
+<http://iasted_en#c-0887025-3124194> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0201298-3231355> .
+<http://iasted_en#c-0900148-1015051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0900148-1015051> <http://www.w3.org/2000/01/rdf-schema#label> "conference registration form"@en .
+<http://iasted_en#c-0900148-1015051> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3336428-2571907> .
+<http://iasted_en#c-0995110-2084431> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0995110-2084431> <http://www.w3.org/2000/01/rdf-schema#label> "main office"@en .
+<http://iasted_en#c-0995110-2084431> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3616860-0256541> .
+<http://iasted_en#c-0999620-6234504> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-0999620-6234504> <http://www.w3.org/2000/01/rdf-schema#label> "activity taking place before conference"@en .
+<http://iasted_en#c-0999620-6234504> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6174362-9247294> .
+<http://iasted_en#c-1215775-9702989> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-1215775-9702989> <http://www.w3.org/2000/01/rdf-schema#label> "video presentation"@en .
+<http://iasted_en#c-1215775-9702989> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-4103718-6937056> .
+<http://iasted_en#c-1224734-0734636> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-1224734-0734636> <http://www.w3.org/2000/01/rdf-schema#label> "session"@en .
+<http://iasted_en#c-1224734-0734636> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9602441-1001976> .
+<http://iasted_en#c-1280963-6659499> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-1280963-6659499> <http://www.w3.org/2000/01/rdf-schema#label> "conference hiker"@en .
+<http://iasted_en#c-1280963-6659499> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3300599-6865154> .
+<http://iasted_en#c-1378568-8785028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-1378568-8785028> <http://www.w3.org/2000/01/rdf-schema#label> "transport vehicle"@en .
+<http://iasted_en#c-1378568-8785028> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#c-1476405-6307065> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-1476405-6307065> <http://www.w3.org/2000/01/rdf-schema#label> "deadline for submitting the camera ready script"@en .
+<http://iasted_en#c-1476405-6307065> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3110153-2691987> .
+<http://iasted_en#c-1651781-8710944> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-1651781-8710944> <http://www.w3.org/2000/01/rdf-schema#label> "audiovisual equipment"@en .
+<http://iasted_en#c-1651781-8710944> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#c-1768813-5901538> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-1768813-5901538> <http://www.w3.org/2000/01/rdf-schema#label> "car"@en .
+<http://iasted_en#c-1768813-5901538> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-1378568-8785028> .
+<http://iasted_en#c-1801050-0460418> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-1801050-0460418> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee paid by an attending author for receiving proceedings as book"@en .
+<http://iasted_en#c-1801050-0460418> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9595802-8962494> .
+<http://iasted_en#c-1873801-1221522> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-1873801-1221522> <http://www.w3.org/2000/01/rdf-schema#label> "final manuscript"@en .
+<http://iasted_en#c-1873801-1221522> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0887025-3124194> .
+<http://iasted_en#c-1915235-7447973> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-1915235-7447973> <http://www.w3.org/2000/01/rdf-schema#label> "deadline for submiting"@en .
+<http://iasted_en#c-1915235-7447973> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3110153-2691987> .
+<http://iasted_en#c-2174181-3520068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2174181-3520068> <http://www.w3.org/2000/01/rdf-schema#label> "reviewer"@en .
+<http://iasted_en#c-2174181-3520068> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-4700670-6960019> .
+<http://iasted_en#c-2201470-4672121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2201470-4672121> <http://www.w3.org/2000/01/rdf-schema#label> "tax"@en .
+<http://iasted_en#c-2201470-4672121> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6436231-2373312> .
+<http://iasted_en#c-2231352-6188872> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2231352-6188872> <http://www.w3.org/2000/01/rdf-schema#label> "hotel room"@en .
+<http://iasted_en#c-2231352-6188872> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3616860-0256541> .
+<http://iasted_en#c-2235022-8613665> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2235022-8613665> <http://www.w3.org/2000/01/rdf-schema#label> "presenter who presents only on one day"@en .
+<http://iasted_en#c-2235022-8613665> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3300599-6865154> .
+<http://iasted_en#c-2284339-2085594> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2284339-2085594> <http://www.w3.org/2000/01/rdf-schema#label> "powerpoint presentation"@en .
+<http://iasted_en#c-2284339-2085594> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-4103718-6937056> .
+<http://iasted_en#c-2297379-6540044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2297379-6540044> <http://www.w3.org/2000/01/rdf-schema#label> "tutorial"@en .
+<http://iasted_en#c-2297379-6540044> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9602441-1001976> .
+<http://iasted_en#c-2390779-9889151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2390779-9889151> <http://www.w3.org/2000/01/rdf-schema#label> "activity of receiving a manuscript"@en .
+<http://iasted_en#c-2390779-9889151> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0999620-6234504> .
+<http://iasted_en#c-2395432-1675191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2395432-1675191> <http://www.w3.org/2000/01/rdf-schema#label> "activity of simulating"@en .
+<http://iasted_en#c-2395432-1675191> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9362556-8487981> .
+<http://iasted_en#c-2396070-5020573> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2396070-5020573> <http://www.w3.org/2000/01/rdf-schema#label> "person"@en .
+<http://iasted_en#c-2419712-7655134> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2419712-7655134> <http://www.w3.org/2000/01/rdf-schema#label> "conference days"@en .
+<http://iasted_en#c-2419712-7655134> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2475930-4019930> .
+<http://iasted_en#c-2467529-3634240> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2467529-3634240> <http://www.w3.org/2000/01/rdf-schema#label> "social activity"@en .
+<http://iasted_en#c-2467529-3634240> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2980826-1784096> .
+<http://iasted_en#c-2475930-4019930> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2475930-4019930> <http://www.w3.org/2000/01/rdf-schema#label> "time"@en .
+<http://iasted_en#c-2611846-6023589> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2611846-6023589> <http://www.w3.org/2000/01/rdf-schema#label> "time zone"@en .
+<http://iasted_en#c-2674588-6535785> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2674588-6535785> <http://www.w3.org/2000/01/rdf-schema#label> "technical committee"@en .
+<http://iasted_en#c-2674588-6535785> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3300599-6865154> .
+<http://iasted_en#c-2737904-9363523> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2737904-9363523> <http://www.w3.org/2000/01/rdf-schema#label> "city where a sponzor comes from"@en .
+<http://iasted_en#c-2737904-9363523> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-5688901-6766233> .
+<http://iasted_en#c-2847659-1887400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2847659-1887400> <http://www.w3.org/2000/01/rdf-schema#label> "van"@en .
+<http://iasted_en#c-2847659-1887400> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-1378568-8785028> .
+<http://iasted_en#c-2980826-1784096> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-2980826-1784096> <http://www.w3.org/2000/01/rdf-schema#label> "activity taking place during conference"@en .
+<http://iasted_en#c-2980826-1784096> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6174362-9247294> .
+<http://iasted_en#c-3040603-0556543> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3040603-0556543> <http://www.w3.org/2000/01/rdf-schema#label> "cd proceeding"@en .
+<http://iasted_en#c-3040603-0556543> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6088495-8861567> .
+<http://iasted_en#c-3048174-0754573> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3048174-0754573> <http://www.w3.org/2000/01/rdf-schema#label> "activity of modelling"@en .
+<http://iasted_en#c-3048174-0754573> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9362556-8487981> .
+<http://iasted_en#c-3110153-2691987> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3110153-2691987> <http://www.w3.org/2000/01/rdf-schema#label> "deadline"@en .
+<http://iasted_en#c-3110153-2691987> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2475930-4019930> .
+<http://iasted_en#c-3148550-8048516> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3148550-8048516> <http://www.w3.org/2000/01/rdf-schema#label> "conference hotel"@en .
+<http://iasted_en#c-3148550-8048516> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3422362-1433264> .
+<http://iasted_en#c-3199643-5367907> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3199643-5367907> <http://www.w3.org/2000/01/rdf-schema#label> "computer"@en .
+<http://iasted_en#c-3199643-5367907> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-1651781-8710944> .
+<http://iasted_en#c-3209052-7566386> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3209052-7566386> <http://www.w3.org/2000/01/rdf-schema#label> "value added tax"@en .
+<http://iasted_en#c-3209052-7566386> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2201470-4672121> .
+<http://iasted_en#c-3300599-6865154> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3300599-6865154> <http://www.w3.org/2000/01/rdf-schema#label> "delegate (person registering and visiting the conference)"@en .
+<http://iasted_en#c-3300599-6865154> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#c-3326309-1255096> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3326309-1255096> <http://www.w3.org/2000/01/rdf-schema#label> "brief introduction for session chair"@en .
+<http://iasted_en#c-3326309-1255096> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0201298-3231355> .
+<http://iasted_en#c-3336428-2571907> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3336428-2571907> <http://www.w3.org/2000/01/rdf-schema#label> "form"@en .
+<http://iasted_en#c-3336428-2571907> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0201298-3231355> .
+<http://iasted_en#c-3390147-9518013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3390147-9518013> <http://www.w3.org/2000/01/rdf-schema#label> "conference hall"@en .
+<http://iasted_en#c-3390147-9518013> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3616860-0256541> .
+<http://iasted_en#c-3422362-1433264> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3422362-1433264> <http://www.w3.org/2000/01/rdf-schema#label> "building"@en .
+<http://iasted_en#c-3422362-1433264> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3616860-0256541> .
+<http://iasted_en#c-3433144-4931823> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3433144-4931823> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee for a non member"@en .
+<http://iasted_en#c-3433144-4931823> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9595802-8962494> .
+<http://iasted_en#c-3478123-7266885> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3478123-7266885> <http://www.w3.org/2000/01/rdf-schema#label> "author who will receive proceedings as cd"@en .
+<http://iasted_en#c-3478123-7266885> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-7587641-3301519> .
+<http://iasted_en#c-3616860-0256541> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3616860-0256541> <http://www.w3.org/2000/01/rdf-schema#label> "place"@en .
+<http://iasted_en#c-3616860-0256541> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://iasted_en#c-3686523-4526492> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3686523-4526492> <http://www.w3.org/2000/01/rdf-schema#label> "listener"@en .
+<http://iasted_en#c-3686523-4526492> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3300599-6865154> .
+<http://iasted_en#c-3859730-3648319> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-3859730-3648319> <http://www.w3.org/2000/01/rdf-schema#label> "initial manuscipt"@en .
+<http://iasted_en#c-3859730-3648319> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0887025-3124194> .
+<http://iasted_en#c-4037244-8450135> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-4037244-8450135> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee for a member"@en .
+<http://iasted_en#c-4037244-8450135> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9595802-8962494> .
+<http://iasted_en#c-4043564-4710049> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-4043564-4710049> <http://www.w3.org/2000/01/rdf-schema#label> "deadline for registration"@en .
+<http://iasted_en#c-4043564-4710049> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3110153-2691987> .
+<http://iasted_en#c-4103718-6937056> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-4103718-6937056> <http://www.w3.org/2000/01/rdf-schema#label> "presentation"@en .
+<http://iasted_en#c-4103718-6937056> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2980826-1784096> .
+<http://iasted_en#c-4162004-2124556> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-4162004-2124556> <http://www.w3.org/2000/01/rdf-schema#label> "credit card"@en .
+<http://iasted_en#c-4162004-2124556> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9207837-5562219> .
+<http://iasted_en#c-4177590-0761750> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-4177590-0761750> <http://www.w3.org/2000/01/rdf-schema#label> "payment document"@en .
+<http://iasted_en#c-4177590-0761750> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0201298-3231355> .
+<http://iasted_en#c-4237692-1364753> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-4237692-1364753> <http://www.w3.org/2000/01/rdf-schema#label> "book proceeding"@en .
+<http://iasted_en#c-4237692-1364753> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6088495-8861567> .
+<http://iasted_en#c-4310103-5004187> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-4310103-5004187> <http://www.w3.org/2000/01/rdf-schema#label> "activity of accepting a manuscript"@en .
+<http://iasted_en#c-4310103-5004187> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0999620-6234504> .
+<http://iasted_en#c-4610399-1117516> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-4610399-1117516> <http://www.w3.org/2000/01/rdf-schema#label> "author who will receive proceedings as book"@en .
+<http://iasted_en#c-4610399-1117516> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-7587641-3301519> .
+<http://iasted_en#c-4646685-6576496> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-4646685-6576496> <http://www.w3.org/2000/01/rdf-schema#label> "review"@en .
+<http://iasted_en#c-4646685-6576496> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0201298-3231355> .
+<http://iasted_en#c-4700670-6960019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-4700670-6960019> <http://www.w3.org/2000/01/rdf-schema#label> "speaker"@en .
+<http://iasted_en#c-4700670-6960019> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3300599-6865154> .
+<http://iasted_en#c-4700670-6960019> <http://www.w3.org/2002/07/owl#disjointWith> <http://iasted_en#c-7705854-6281452> .
+<http://iasted_en#c-4711487-9849078> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-4711487-9849078> <http://www.w3.org/2000/01/rdf-schema#label> "city which is the location for a trip"@en .
+<http://iasted_en#c-4711487-9849078> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-5688901-6766233> .
+<http://iasted_en#c-4813826-7779652> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-4813826-7779652> <http://www.w3.org/2000/01/rdf-schema#label> "hotel registration form"@en .
+<http://iasted_en#c-4813826-7779652> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3336428-2571907> .
+<http://iasted_en#c-5040174-4868103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5040174-4868103> <http://www.w3.org/2000/01/rdf-schema#label> "lecture given by a speaker"@en .
+<http://iasted_en#c-5040174-4868103> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-1224734-0734636> .
+<http://iasted_en#c-5042951-8302750> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5042951-8302750> <http://www.w3.org/2000/01/rdf-schema#label> "house of a company being a sponsor"@en .
+<http://iasted_en#c-5042951-8302750> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3422362-1433264> .
+<http://iasted_en#c-5056757-1847493> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5056757-1847493> <http://www.w3.org/2000/01/rdf-schema#label> "viza"@en .
+<http://iasted_en#c-5056757-1847493> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0201298-3231355> .
+<http://iasted_en#c-5071843-9957942> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5071843-9957942> <http://www.w3.org/2000/01/rdf-schema#label> "not member of iasted"@en .
+<http://iasted_en#c-5071843-9957942> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3300599-6865154> .
+<http://iasted_en#c-5074238-7594931> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5074238-7594931> <http://www.w3.org/2000/01/rdf-schema#label> "bank transfer"@en .
+<http://iasted_en#c-5074238-7594931> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-4177590-0761750> .
+<http://iasted_en#c-5235449-0739105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5235449-0739105> <http://www.w3.org/2000/01/rdf-schema#label> "conference airport"@en .
+<http://iasted_en#c-5235449-0739105> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3422362-1433264> .
+<http://iasted_en#c-5538650-5614171> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5538650-5614171> <http://www.w3.org/2000/01/rdf-schema#label> "invitation letter"@en .
+<http://iasted_en#c-5538650-5614171> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0201298-3231355> .
+<http://iasted_en#c-5583697-3367252> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5583697-3367252> <http://www.w3.org/2000/01/rdf-schema#label> "university of a presenter"@en .
+<http://iasted_en#c-5583697-3367252> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3422362-1433264> .
+<http://iasted_en#c-5588553-6263947> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5588553-6263947> <http://www.w3.org/2000/01/rdf-schema#label> "coffee break"@en .
+<http://iasted_en#c-5588553-6263947> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2980826-1784096> .
+<http://iasted_en#c-5688901-6766233> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5688901-6766233> <http://www.w3.org/2000/01/rdf-schema#label> "city"@en .
+<http://iasted_en#c-5688901-6766233> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://iasted_en#c-5693345-0089883> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5693345-0089883> <http://www.w3.org/2000/01/rdf-schema#label> "mailing list"@en .
+<http://iasted_en#c-5693345-0089883> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0201298-3231355> .
+<http://iasted_en#c-5810296-5194443> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5810296-5194443> <http://www.w3.org/2000/01/rdf-schema#label> "one conference day"@en .
+<http://iasted_en#c-5810296-5194443> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2419712-7655134> .
+<http://iasted_en#c-5834904-0037516> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5834904-0037516> <http://www.w3.org/2000/01/rdf-schema#label> "overhead transparency"@en .
+<http://iasted_en#c-5834904-0037516> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0201298-3231355> .
+<http://iasted_en#c-5985478-2794400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-5985478-2794400> <http://www.w3.org/2000/01/rdf-schema#label> "student lecturer"@en .
+<http://iasted_en#c-5985478-2794400> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-8587941-4778765> .
+<http://iasted_en#c-6088495-8861567> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6088495-8861567> <http://www.w3.org/2000/01/rdf-schema#label> "publication"@en .
+<http://iasted_en#c-6088495-8861567> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#c-6174362-9247294> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6174362-9247294> <http://www.w3.org/2000/01/rdf-schema#label> "activity"@en .
+<http://iasted_en#c-6206306-4799431> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6206306-4799431> <http://www.w3.org/2000/01/rdf-schema#label> "house of a presenter"@en .
+<http://iasted_en#c-6206306-4799431> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3422362-1433264> .
+<http://iasted_en#c-6321088-6874200> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6321088-6874200> <http://www.w3.org/2000/01/rdf-schema#label> "author information form"@en .
+<http://iasted_en#c-6321088-6874200> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3336428-2571907> .
+<http://iasted_en#c-6436231-2373312> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6436231-2373312> <http://www.w3.org/2000/01/rdf-schema#label> "amount of money"@en .
+<http://iasted_en#c-6440895-5517624> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6440895-5517624> <http://www.w3.org/2000/01/rdf-schema#label> "conference building"@en .
+<http://iasted_en#c-6440895-5517624> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3422362-1433264> .
+<http://iasted_en#c-6477155-7340247> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6477155-7340247> <http://www.w3.org/2000/01/rdf-schema#label> "plenary lecture"@en .
+<http://iasted_en#c-6477155-7340247> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9602441-1001976> .
+<http://iasted_en#c-6599880-2928575> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6599880-2928575> <http://www.w3.org/2000/01/rdf-schema#label> "record of attendance"@en .
+<http://iasted_en#c-6599880-2928575> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0201298-3231355> .
+<http://iasted_en#c-6625125-6317753> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6625125-6317753> <http://www.w3.org/2000/01/rdf-schema#label> "item (in general)"@en .
+<http://iasted_en#c-6696592-0636720> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6696592-0636720> <http://www.w3.org/2000/01/rdf-schema#label> "video cassette player"@en .
+<http://iasted_en#c-6696592-0636720> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-1651781-8710944> .
+<http://iasted_en#c-6699217-8827140> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6699217-8827140> <http://www.w3.org/2000/01/rdf-schema#label> "dinner banquet"@en .
+<http://iasted_en#c-6699217-8827140> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2467529-3634240> .
+<http://iasted_en#c-6701443-6917880> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6701443-6917880> <http://www.w3.org/2000/01/rdf-schema#label> "city where the conference takes place"@en .
+<http://iasted_en#c-6701443-6917880> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-5688901-6766233> .
+<http://iasted_en#c-6845272-4951822> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6845272-4951822> <http://www.w3.org/2000/01/rdf-schema#label> "conference restaurant"@en .
+<http://iasted_en#c-6845272-4951822> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3422362-1433264> .
+<http://iasted_en#c-6874398-0202856> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6874398-0202856> <http://www.w3.org/2000/01/rdf-schema#label> "member of IASTED"@en .
+<http://iasted_en#c-6874398-0202856> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3300599-6865154> .
+<http://iasted_en#c-6928152-7381829> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-6928152-7381829> <http://www.w3.org/2000/01/rdf-schema#label> "day assigned for a trip"@en .
+<http://iasted_en#c-6928152-7381829> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2475930-4019930> .
+<http://iasted_en#c-7163848-4992275> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-7163848-4992275> <http://www.w3.org/2000/01/rdf-schema#label> "state where the conference takes place"@en .
+<http://iasted_en#c-7163848-4992275> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0579327-2823478> .
+<http://iasted_en#c-7217600-9512624> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-7217600-9512624> <http://www.w3.org/2000/01/rdf-schema#label> "tip"@en .
+<http://iasted_en#c-7217600-9512624> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6436231-2373312> .
+<http://iasted_en#c-7284235-3461811> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-7284235-3461811> <http://www.w3.org/2000/01/rdf-schema#label> "activity of refusing a manuscript"@en .
+<http://iasted_en#c-7284235-3461811> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0999620-6234504> .
+<http://iasted_en#c-7289258-8213427> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-7289258-8213427> <http://www.w3.org/2000/01/rdf-schema#label> "double hotel room"@en .
+<http://iasted_en#c-7289258-8213427> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2231352-6188872> .
+<http://iasted_en#c-7402508-2992097> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-7402508-2992097> <http://www.w3.org/2000/01/rdf-schema#label> "hotel fee"@en .
+<http://iasted_en#c-7402508-2992097> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-7464317-0926432> .
+<http://iasted_en#c-7459754-5987217> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-7459754-5987217> <http://www.w3.org/2000/01/rdf-schema#label> "LCD projector"@en .
+<http://iasted_en#c-7459754-5987217> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-1651781-8710944> .
+<http://iasted_en#c-7464317-0926432> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-7464317-0926432> <http://www.w3.org/2000/01/rdf-schema#label> "fee"@en .
+<http://iasted_en#c-7464317-0926432> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6436231-2373312> .
+<http://iasted_en#c-7587641-3301519> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-7587641-3301519> <http://www.w3.org/2000/01/rdf-schema#label> "author"@en .
+<http://iasted_en#c-7587641-3301519> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-4700670-6960019> .
+<http://iasted_en#c-7668907-4202016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-7668907-4202016> <http://www.w3.org/2000/01/rdf-schema#label> "student who is not a speaker"@en .
+<http://iasted_en#c-7668907-4202016> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-7705854-6281452> .
+<http://iasted_en#c-7705854-6281452> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-7705854-6281452> <http://www.w3.org/2000/01/rdf-schema#label> "non speaker"@en .
+<http://iasted_en#c-7705854-6281452> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3300599-6865154> .
+<http://iasted_en#c-8365044-0502126> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-8365044-0502126> <http://www.w3.org/2000/01/rdf-schema#label> "technical activity"@en .
+<http://iasted_en#c-8365044-0502126> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2980826-1784096> .
+<http://iasted_en#c-8423769-0880844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-8423769-0880844> <http://www.w3.org/2000/01/rdf-schema#label> "session room"@en .
+<http://iasted_en#c-8423769-0880844> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3616860-0256541> .
+<http://iasted_en#c-8492013-9025860> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-8492013-9025860> <http://www.w3.org/2000/01/rdf-schema#label> "welcome speech"@en .
+<http://iasted_en#c-8492013-9025860> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2980826-1784096> .
+<http://iasted_en#c-8542206-4079455> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-8542206-4079455> <http://www.w3.org/2000/01/rdf-schema#label> "single hotel room"@en .
+<http://iasted_en#c-8542206-4079455> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2231352-6188872> .
+<http://iasted_en#c-8587941-4778765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-8587941-4778765> <http://www.w3.org/2000/01/rdf-schema#label> "lecturer"@en .
+<http://iasted_en#c-8587941-4778765> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-7587641-3301519> .
+<http://iasted_en#c-8600112-6635929> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-8600112-6635929> <http://www.w3.org/2000/01/rdf-schema#label> "introduction of speaker"@en .
+<http://iasted_en#c-8600112-6635929> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9104564-7791606> .
+<http://iasted_en#c-8718316-8931937> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-8718316-8931937> <http://www.w3.org/2000/01/rdf-schema#label> "city where a presenter comes from"@en .
+<http://iasted_en#c-8718316-8931937> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-5688901-6766233> .
+<http://iasted_en#c-8723910-5601078> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-8723910-5601078> <http://www.w3.org/2000/01/rdf-schema#label> "worker lecturer"@en .
+<http://iasted_en#c-8723910-5601078> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-8587941-4778765> .
+<http://iasted_en#c-8889798-1079873> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-8889798-1079873> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee for a student"@en .
+<http://iasted_en#c-8889798-1079873> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-9595802-8962494> .
+<http://iasted_en#c-8950037-9879125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-8950037-9879125> <http://www.w3.org/2000/01/rdf-schema#label> "deadline for the hotel reservation"@en .
+<http://iasted_en#c-8950037-9879125> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3110153-2691987> .
+<http://iasted_en#c-8969069-8654695> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-8969069-8654695> <http://www.w3.org/2000/01/rdf-schema#label> "speaker who presents a tutorial"@en .
+<http://iasted_en#c-8969069-8654695> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-7587641-3301519> .
+<http://iasted_en#c-9052783-8865030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9052783-8865030> <http://www.w3.org/2000/01/rdf-schema#label> "fee for extra trip"@en .
+<http://iasted_en#c-9052783-8865030> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-7464317-0926432> .
+<http://iasted_en#c-9104564-7791606> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9104564-7791606> <http://www.w3.org/2000/01/rdf-schema#label> "introduction"@en .
+<http://iasted_en#c-9104564-7791606> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2980826-1784096> .
+<http://iasted_en#c-9123004-2171579> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9123004-2171579> <http://www.w3.org/2000/01/rdf-schema#label> "departure tax"@en .
+<http://iasted_en#c-9123004-2171579> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2201470-4672121> .
+<http://iasted_en#c-9164726-0071093> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9164726-0071093> <http://www.w3.org/2000/01/rdf-schema#label> "state of the presenter"@en .
+<http://iasted_en#c-9164726-0071093> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0579327-2823478> .
+<http://iasted_en#c-9169874-5166910> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9169874-5166910> <http://www.w3.org/2000/01/rdf-schema#label> "currency"@en .
+<http://iasted_en#c-9193120-6084737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9193120-6084737> <http://www.w3.org/2000/01/rdf-schema#label> "coctail reception"@en .
+<http://iasted_en#c-9193120-6084737> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2980826-1784096> .
+<http://iasted_en#c-9205213-3099363> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9205213-3099363> <http://www.w3.org/2000/01/rdf-schema#label> "taxi"@en .
+<http://iasted_en#c-9205213-3099363> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-1378568-8785028> .
+<http://iasted_en#c-9207837-5562219> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9207837-5562219> <http://www.w3.org/2000/01/rdf-schema#label> "card"@en .
+<http://iasted_en#c-9207837-5562219> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6625125-6317753> .
+<http://iasted_en#c-9258778-1383131> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9258778-1383131> <http://www.w3.org/2000/01/rdf-schema#label> "registration"@en .
+<http://iasted_en#c-9258778-1383131> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2980826-1784096> .
+<http://iasted_en#c-9325916-8938991> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9325916-8938991> <http://www.w3.org/2000/01/rdf-schema#label> "session chair"@en .
+<http://iasted_en#c-9325916-8938991> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-3300599-6865154> .
+<http://iasted_en#c-9362556-8487981> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9362556-8487981> <http://www.w3.org/2000/01/rdf-schema#label> "research activity"@en .
+<http://iasted_en#c-9362556-8487981> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0999620-6234504> .
+<http://iasted_en#c-9530580-6482208> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9530580-6482208> <http://www.w3.org/2000/01/rdf-schema#label> "activity taking place after conference"@en .
+<http://iasted_en#c-9530580-6482208> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-6174362-9247294> .
+<http://iasted_en#c-9595802-8962494> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9595802-8962494> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee"@en .
+<http://iasted_en#c-9595802-8962494> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-7464317-0926432> .
+<http://iasted_en#c-9602441-1001976> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9602441-1001976> <http://www.w3.org/2000/01/rdf-schema#label> "lecture"@en .
+<http://iasted_en#c-9602441-1001976> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2980826-1784096> .
+<http://iasted_en#c-9677685-8341994> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9677685-8341994> <http://www.w3.org/2000/01/rdf-schema#label> "sponsor"@en .
+<http://iasted_en#c-9677685-8341994> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-2396070-5020573> .
+<http://iasted_en#c-9799943-5219462> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9799943-5219462> <http://www.w3.org/2000/01/rdf-schema#label> "shuttle bus"@en .
+<http://iasted_en#c-9799943-5219462> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-1378568-8785028> .
+<http://iasted_en#c-9860394-8122747> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iasted_en#c-9860394-8122747> <http://www.w3.org/2000/01/rdf-schema#label> "activity of renting a car"@en .
+<http://iasted_en#c-9860394-8122747> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iasted_en#c-0999620-6234504> .
+<http://iasted#Cancun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iasted#Cancun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iasted_en#c-6701443-6917880> .
+<http://iasted#Chichen_Itza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iasted#Chichen_Itza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iasted_en#c-4711487-9849078> .
+<http://iasted#Mexico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iasted#Mexico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iasted_en#c-7163848-4992275> .
+<http://iasted#peso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iasted#peso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iasted_en#c-9169874-5166910> .

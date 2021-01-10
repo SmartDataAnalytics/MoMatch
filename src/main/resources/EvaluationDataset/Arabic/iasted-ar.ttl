@@ -1,0 +1,1686 @@
+@prefix : <http://iasted_ar#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iasted: <http://iasted#> .
+
+<http://iasted_ar> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+:op-0114927-6821940 a owl:ObjectProperty ;
+	rdfs:label "تم دفعه مع"@ar ;
+	rdfs:range :c-2117305-6442125 ;
+	rdfs:domain :c-8330790-3106474 .
+
+:op-0431063-4825654 a owl:ObjectProperty ;
+	rdfs:label "تم إرساله بعد"@ar ;
+	rdfs:domain :c-2117305-6442125 ;
+	rdfs:range :c-2628238-5831385 .
+
+:op-0487182-5459328 a owl:ObjectProperty ;
+	rdfs:label "تم صنعه من"@ar ;
+	rdfs:range :c-2117305-6442125 ;
+	rdfs:domain :c-2117305-6442125 .
+
+:op-0813802-2580466 a owl:ObjectProperty ;
+	rdfs:label "تم اعطاءه ل/ من اجل"@ar ;
+	rdfs:domain :c-2117305-6442125 ;
+	rdfs:range :c-7495328-9898304 .
+
+:op-1071334-8408441 a owl:ObjectProperty ;
+	rdfs:label "تم انعقاده في"@ar ;
+	rdfs:domain :c-9734507-1022781 ;
+	rdfs:range _:node1e059uvnrx1 .
+
+_:node1e059uvnrx1 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx2 .
+
+_:node1e059uvnrx2 rdf:first :c-2628238-5831385 ;
+	rdf:rest _:node1e059uvnrx3 .
+
+_:node1e059uvnrx3 rdf:first :c-7610450-7841576 ;
+	rdf:rest rdf:nil .
+
+:op-1072474-4200859 a owl:ObjectProperty ;
+	rdfs:label "يوقع"@ar ;
+	rdfs:range :c-2117305-6442125 ;
+	rdfs:domain :c-7495328-9898304 .
+
+:op-1390377-1894067 a owl:ObjectProperty ;
+	rdfs:label "تم انعقاده بعد"@ar ;
+	rdfs:range :c-2628238-5831385 ;
+	rdfs:domain :c-9734507-1022781 .
+
+:op-1675425-5224671 a owl:ObjectProperty ;
+	rdfs:label "تم اعداده من قبل"@ar ;
+	rdfs:domain :c-2117305-6442125 ;
+	rdfs:range :c-7495328-9898304 .
+
+:op-1991225-3192135 a owl:ObjectProperty ;
+	rdfs:label "تم إرساله قبل"@ar ;
+	rdfs:domain :c-2117305-6442125 ;
+	rdfs:range :c-2628238-5831385 .
+
+:op-2106903-0172649 a owl:ObjectProperty ;
+	rdfs:label "تم دفعه في"@ar ;
+	rdfs:domain :c-8330790-3106474 ;
+	rdfs:range :c-9360261-6735126 .
+
+:op-2209893-4447258 a owl:ObjectProperty ;
+	rdfs:label "يكتب"@ar ;
+	rdfs:range :c-2117305-6442125 ;
+	rdfs:domain :c-7495328-9898304 ;
+	owl:inverseOf :op-3340023-4103685 .
+
+:op-2565948-6314851 a owl:ObjectProperty ;
+	rdfs:label "تم تصميمه من اجل"@ar ;
+	rdfs:domain _:node1e059uvnrx4 .
+
+_:node1e059uvnrx4 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx5 .
+
+_:node1e059uvnrx5 rdf:first :c-2628238-5831385 ;
+	rdf:rest _:node1e059uvnrx6 .
+
+_:node1e059uvnrx6 rdf:first :c-8330790-3106474 ;
+	rdf:rest _:node1e059uvnrx7 .
+
+_:node1e059uvnrx7 rdf:first :c-9734507-1022781 ;
+	rdf:rest rdf:nil .
+
+:op-2565948-6314851 rdfs:range _:node1e059uvnrx8 .
+
+_:node1e059uvnrx8 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx9 .
+
+_:node1e059uvnrx9 rdf:first :c-7495328-9898304 ;
+	rdf:rest _:node1e059uvnrx10 .
+
+_:node1e059uvnrx10 rdf:first :c-9734507-1022781 ;
+	rdf:rest rdf:nil .
+
+:op-2867462-7341315 a owl:ObjectProperty ;
+	rdfs:label "تم حاجة من اجل"@ar ;
+	rdfs:domain :c-2117305-6442125 ;
+	rdfs:range :c-7495328-9898304 ;
+	owl:inverseOf :op-4440624-4030749 .
+
+:op-2934030-6684229 a owl:ObjectProperty ;
+	rdfs:label "تم اعطاءه من قبل"@ar ;
+	rdfs:range :c-7495328-9898304 ;
+	owl:inverseOf :op-4894274-2500891 ;
+	rdfs:domain _:node1e059uvnrx11 .
+
+_:node1e059uvnrx11 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx12 .
+
+_:node1e059uvnrx12 rdf:first :c-2117305-6442125 ;
+	rdf:rest _:node1e059uvnrx13 .
+
+_:node1e059uvnrx13 rdf:first :c-9734507-1022781 ;
+	rdf:rest rdf:nil .
+
+:op-3107535-2611713 a owl:ObjectProperty ;
+	rdfs:label "(يشغل (يعيش، يقيم"@ar ;
+	rdfs:domain :c-7495328-9898304 ;
+	rdfs:range _:node1e059uvnrx14 .
+
+_:node1e059uvnrx14 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx15 .
+
+_:node1e059uvnrx15 rdf:first :c-1906460-1027087 ;
+	rdf:rest _:node1e059uvnrx16 .
+
+_:node1e059uvnrx16 rdf:first :c-4747047-4417848 ;
+	rdf:rest _:node1e059uvnrx17 .
+
+_:node1e059uvnrx17 rdf:first :c-9360261-6735126 ;
+	rdf:rest rdf:nil .
+
+:op-3128289-0377224 a owl:ObjectProperty ;
+	rdfs:label "يتحدث في وقت أو في مكان"@ar ;
+	rdfs:domain :c-7495328-9898304 ;
+	rdfs:range _:node1e059uvnrx18 .
+
+_:node1e059uvnrx18 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx19 .
+
+_:node1e059uvnrx19 rdf:first :c-2628238-5831385 ;
+	rdf:rest _:node1e059uvnrx20 .
+
+_:node1e059uvnrx20 rdf:first :c-7610450-7841576 ;
+	rdf:rest rdf:nil .
+
+:op-3266094-7971529 a owl:ObjectProperty ;
+	rdfs:label "يقع محليا في"@ar ;
+	rdfs:domain _:node1e059uvnrx21 .
+
+_:node1e059uvnrx21 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx22 .
+
+_:node1e059uvnrx22 rdf:first :c-4747047-4417848 ;
+	rdf:rest _:node1e059uvnrx23 .
+
+_:node1e059uvnrx23 rdf:first :c-7610450-7841576 ;
+	rdf:rest _:node1e059uvnrx24 .
+
+_:node1e059uvnrx24 rdf:first :c-9360261-6735126 ;
+	rdf:rest rdf:nil .
+
+:op-3266094-7971529 rdfs:range _:node1e059uvnrx25 .
+
+_:node1e059uvnrx25 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx26 .
+
+_:node1e059uvnrx26 rdf:first :c-1906460-1027087 ;
+	rdf:rest _:node1e059uvnrx27 .
+
+_:node1e059uvnrx27 rdf:first :c-4747047-4417848 ;
+	rdf:rest _:node1e059uvnrx28 .
+
+_:node1e059uvnrx28 rdf:first :c-7610450-7841576 ;
+	rdf:rest _:node1e059uvnrx29 .
+
+_:node1e059uvnrx29 rdf:first :c-9360261-6735126 ;
+	rdf:rest rdf:nil .
+
+:op-3340023-4103685 a owl:ObjectProperty ;
+	rdfs:label "تم كتابته من قبل"@ar ;
+	rdfs:domain :c-2117305-6442125 ;
+	rdfs:range :c-7495328-9898304 .
+
+:op-4440624-4030749 a owl:ObjectProperty ;
+	rdfs:label "يحتاج"@ar ;
+	rdfs:range :c-2117305-6442125 ;
+	rdfs:domain :c-7495328-9898304 .
+
+:op-4707899-0716753 a owl:ObjectProperty ;
+	rdfs:label "يحصل"@ar ;
+	rdfs:range :c-2117305-6442125 ;
+	rdfs:domain :c-7495328-9898304 .
+
+:op-4894274-2500891 a owl:ObjectProperty ;
+	rdfs:label "يعطي"@ar ;
+	rdfs:domain :c-7495328-9898304 ;
+	rdfs:range _:node1e059uvnrx30 .
+
+_:node1e059uvnrx30 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx31 .
+
+_:node1e059uvnrx31 rdf:first :c-2117305-6442125 ;
+	rdf:rest _:node1e059uvnrx32 .
+
+_:node1e059uvnrx32 rdf:first :c-9734507-1022781 ;
+	rdf:rest rdf:nil .
+
+:op-4922006-1374661 a owl:ObjectProperty ;
+	rdfs:label "تم توقيعه من قبل"@ar ;
+	rdfs:domain :c-2117305-6442125 ;
+	rdfs:range :c-7495328-9898304 ;
+	owl:inverseOf :op-1072474-4200859 .
+
+:op-4982952-0877025 a owl:ObjectProperty ;
+	rdfs:label "موجود في الوقت"@ar ;
+	rdfs:range :c-2628238-5831385 ;
+	rdfs:domain :c-7495328-9898304 .
+
+:op-5415847-0359774 a owl:ObjectProperty ;
+	rdfs:label "تم دفعه من قبل"@ar ;
+	rdfs:range :c-7495328-9898304 ;
+	rdfs:domain :c-8330790-3106474 ;
+	owl:inverseOf :op-5443332-4868186 .
+
+:op-5443332-4868186 a owl:ObjectProperty ;
+	rdfs:label "يدفع"@ar ;
+	rdfs:domain :c-7495328-9898304 ;
+	rdfs:range :c-8330790-3106474 .
+
+:op-6397580-3066613 a owl:ObjectProperty ;
+	rdfs:label "تم إرساله من قبل"@ar ;
+	rdfs:domain :c-2117305-6442125 ;
+	rdfs:range :c-7495328-9898304 .
+
+:op-6534540-6714299 a owl:ObjectProperty ;
+	rdfs:label "تستعد / يعد"@ar ;
+	rdfs:range :c-2117305-6442125 ;
+	rdfs:domain :c-7495328-9898304 ;
+	owl:inverseOf :op-1675425-5224671 .
+
+:op-6785285-7831174 a owl:ObjectProperty ;
+	rdfs:label "تم تشغيله من قبل"@ar ;
+	rdfs:range :c-7495328-9898304 ;
+	owl:inverseOf :op-3107535-2611713 ;
+	rdfs:domain _:node1e059uvnrx33 .
+
+_:node1e059uvnrx33 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx34 .
+
+_:node1e059uvnrx34 rdf:first :c-1906460-1027087 ;
+	rdf:rest _:node1e059uvnrx35 .
+
+_:node1e059uvnrx35 rdf:first :c-4747047-4417848 ;
+	rdf:rest _:node1e059uvnrx36 .
+
+_:node1e059uvnrx36 rdf:first :c-9360261-6735126 ;
+	rdf:rest rdf:nil .
+
+:op-6975733-1042553 a owl:ObjectProperty ;
+	rdfs:label "تم دفعه من اجل"@ar ;
+	rdfs:domain :c-8330790-3106474 ;
+	rdfs:range _:node1e059uvnrx37 .
+
+_:node1e059uvnrx37 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx38 .
+
+_:node1e059uvnrx38 rdf:first :c-2117305-6442125 ;
+	rdf:rest _:node1e059uvnrx39 .
+
+_:node1e059uvnrx39 rdf:first :c-9734507-1022781 ;
+	rdf:rest rdf:nil .
+
+:op-7309446-5277500 a owl:ObjectProperty ;
+	rdfs:label "تم استخدامه من اجل"@ar ;
+	rdfs:domain :c-2117305-6442125 ;
+	rdfs:range _:node1e059uvnrx40 .
+
+_:node1e059uvnrx40 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx41 .
+
+_:node1e059uvnrx41 rdf:first :c-8330790-3106474 ;
+	rdf:rest _:node1e059uvnrx42 .
+
+_:node1e059uvnrx42 rdf:first :c-9734507-1022781 ;
+	rdf:rest rdf:nil .
+
+:op-7688139-1680885 a owl:ObjectProperty ;
+	rdfs:label "تم استخدامه من قبل"@ar ;
+	rdfs:domain :c-2117305-6442125 ;
+	rdfs:range :c-7495328-9898304 .
+
+:op-8055937-4178822 a owl:ObjectProperty ;
+	rdfs:label "تم تجهيزه من اجل"@ar ;
+	rdfs:range :c-2117305-6442125 ;
+	rdfs:domain :c-7610450-7841576 .
+
+:op-8804584-1930279 a owl:ObjectProperty ;
+	rdfs:label "يمر عبر"@ar ;
+	rdfs:domain :c-2117305-6442125 ;
+	rdfs:range :c-9734507-1022781 .
+
+:op-8877435-3029007 a owl:ObjectProperty ;
+	rdfs:label "موجود في زمان أو مكان"@ar ;
+	rdfs:domain :c-7495328-9898304 ;
+	rdfs:range _:node1e059uvnrx43 .
+
+_:node1e059uvnrx43 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx44 .
+
+_:node1e059uvnrx44 rdf:first :c-2628238-5831385 ;
+	rdf:rest _:node1e059uvnrx45 .
+
+_:node1e059uvnrx45 rdf:first :c-7610450-7841576 ;
+	rdf:rest rdf:nil .
+
+:op-9301905-1099209 a owl:ObjectProperty ;
+	rdfs:label "تم انعقاده قبل"@ar ;
+	rdfs:range :c-2628238-5831385 ;
+	rdfs:domain :c-9734507-1022781 .
+
+:op-9446762-6687141 a owl:ObjectProperty ;
+	rdfs:label "تم ارتباطه مع"@ar ;
+	rdfs:range _:node1e059uvnrx46 .
+
+_:node1e059uvnrx46 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx47 .
+
+_:node1e059uvnrx47 rdf:first :c-2117305-6442125 ;
+	rdf:rest _:node1e059uvnrx48 .
+
+_:node1e059uvnrx48 rdf:first :c-7610450-7841576 ;
+	rdf:rest rdf:nil .
+
+:op-9446762-6687141 rdfs:domain _:node1e059uvnrx49 .
+
+_:node1e059uvnrx49 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx50 .
+
+_:node1e059uvnrx50 rdf:first :c-7495328-9898304 ;
+	rdf:rest _:node1e059uvnrx51 .
+
+_:node1e059uvnrx51 rdf:first :c-9734507-1022781 ;
+	rdf:rest rdf:nil .
+
+:op-9497800-8396001 a owl:ObjectProperty ;
+	rdfs:label "يرسل"@ar ;
+	rdfs:range :c-2117305-6442125 ;
+	rdfs:domain :c-7495328-9898304 ;
+	owl:inverseOf :op-6397580-3066613 .
+
+:op-9827922-6624577 a owl:ObjectProperty ;
+	rdfs:label "تم زيارته من قبل"@ar ;
+	rdfs:range :c-7495328-9898304 ;
+	rdfs:domain _:node1e059uvnrx52 .
+
+_:node1e059uvnrx52 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx53 .
+
+_:node1e059uvnrx53 rdf:first :c-1906460-1027087 ;
+	rdf:rest _:node1e059uvnrx54 .
+
+_:node1e059uvnrx54 rdf:first :c-4747047-4417848 ;
+	rdf:rest _:node1e059uvnrx55 .
+
+_:node1e059uvnrx55 rdf:first :c-9360261-6735126 ;
+	rdf:rest rdf:nil .
+
+:ent-3043070-7016845 a owl:DatatypeProperty ;
+	rdfs:label "لديه قدر من"@ar ;
+	rdfs:domain :c-8330790-3106474 ;
+	rdfs:range xsd:int .
+
+:ent-3800922-9656157 a owl:DatatypeProperty ;
+	rdfs:label "تم بتاريخ"@ar ;
+	rdfs:domain :c-9734507-1022781 ;
+	rdfs:range xsd:dateTime .
+
+:ent-8469759-2011986 a owl:DatatypeProperty ;
+	rdfs:label "يتعين القيام به حتى"@ar ;
+	rdfs:domain :c-6802365-6090141 ;
+	rdfs:range xsd:date .
+
+:c-0007967-7033593 a owl:Class ;
+	rdfs:label "كلمة ترحيبية"@ar ;
+	rdfs:subClassOf :c-1374445-6980813 .
+
+:c-0096805-5137076 a owl:Class ;
+	rdfs:label "مراجعة"@ar ;
+	rdfs:subClassOf :c-1272337-3260943 , _:node1e059uvnrx56 .
+
+_:node1e059uvnrx56 a owl:Restriction ;
+	owl:onProperty :op-3340023-4103685 ;
+	owl:someValuesFrom :c-7237384-5029852 .
+
+:c-0178036-0872830 a owl:Class ;
+	rdfs:label "منزل شركة كونها الراعي"@ar ;
+	rdfs:subClassOf :c-9360261-6735126 , _:node1e059uvnrx57 .
+
+_:node1e059uvnrx57 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-7645937-5712518 .
+
+:c-0178036-0872830 rdfs:subClassOf _:node1e059uvnrx58 .
+
+_:node1e059uvnrx58 a owl:Restriction ;
+	owl:onProperty :op-6785285-7831174 ;
+	owl:someValuesFrom :c-2257603-7365584 .
+
+:c-0178036-0872830 rdfs:subClassOf _:node1e059uvnrx59 .
+
+_:node1e059uvnrx59 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-1509656-7190644 .
+
+:c-0229067-2462173 a owl:Class ;
+	rdfs:label "الكاتب الذي سيستلم محضر الابحاث على شكل قرص"@ar ;
+	rdfs:subClassOf :c-8524806-1584249 , _:node1e059uvnrx60 .
+
+_:node1e059uvnrx60 a owl:Restriction ;
+	owl:onProperty :op-4707899-0716753 ;
+	owl:someValuesFrom :c-9457045-7675113 .
+
+:c-0232352-0281286 a owl:Class ;
+	rdfs:label "مؤتمر في يوم واحد"@ar ;
+	rdfs:subClassOf :c-3027609-0357962 .
+
+:c-0410571-1368603 a owl:Class ;
+	rdfs:label "الحاسوب"@ar ;
+	rdfs:subClassOf :c-6259610-4303723 .
+
+:c-0420902-9582031 a owl:Class ;
+	rdfs:label "استراحة القهوة"@ar ;
+	rdfs:subClassOf :c-1374445-6980813 , _:node1e059uvnrx61 .
+
+_:node1e059uvnrx61 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-0445217-5235046 a owl:Class ;
+	rdfs:label "مقدمة موجزة لرئيس الجلسة"@ar ;
+	rdfs:subClassOf :c-1272337-3260943 , _:node1e059uvnrx62 .
+
+_:node1e059uvnrx62 a owl:Restriction ;
+	owl:onProperty :op-2934030-6684229 ;
+	owl:someValuesFrom :c-8524806-1584249 .
+
+:c-0445217-5235046 rdfs:subClassOf _:node1e059uvnrx63 .
+
+_:node1e059uvnrx63 a owl:Restriction ;
+	owl:onProperty :op-0813802-2580466 ;
+	owl:someValuesFrom :c-2133137-2741616 .
+
+:c-0481764-6932669 a owl:Class ;
+	rdfs:label "نشاط يجري بعد مؤتمر"@ar ;
+	rdfs:subClassOf :c-9734507-1022781 , _:node1e059uvnrx64 .
+
+_:node1e059uvnrx64 a owl:Restriction ;
+	owl:onProperty :op-1390377-1894067 ;
+	owl:someValuesFrom :c-3027609-0357962 .
+
+:c-0537126-2617188 a owl:Class ;
+	rdfs:label "نشاط رفض مخطوطة"@ar ;
+	rdfs:subClassOf :c-0653399-3994975 .
+
+:c-0653399-3994975 a owl:Class ;
+	rdfs:label "نشاط يجري قبل مؤتمر"@ar ;
+	rdfs:subClassOf :c-9734507-1022781 , _:node1e059uvnrx65 .
+
+_:node1e059uvnrx65 a owl:Restriction ;
+	owl:onProperty :op-9301905-1099209 ;
+	owl:someValuesFrom :c-3027609-0357962 .
+
+:c-0666509-1136761 a owl:Class ;
+	rdfs:label "التسجيل"@ar ;
+	rdfs:subClassOf :c-1374445-6980813 , _:node1e059uvnrx66 .
+
+_:node1e059uvnrx66 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-0698124-9752862 a owl:Class ;
+	rdfs:label "ضريبة المغادرة"@ar ;
+	rdfs:subClassOf :c-1945750-2737575 , _:node1e059uvnrx67 .
+
+_:node1e059uvnrx67 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-2981835-6381765 .
+
+:c-0785971-0385449 a owl:Class ;
+	rdfs:label "الرعاية"@ar ;
+	owl:equivalentClass _:node1e059uvnrx68 .
+
+_:node1e059uvnrx68 a owl:Restriction ;
+	owl:onProperty :op-5415847-0359774 ;
+	owl:someValuesFrom :c-2257603-7365584 .
+
+:c-0785971-0385449 rdfs:subClassOf :c-8330790-3106474 .
+
+:c-1083054-0977274 a owl:Class ;
+	rdfs:label "فندق المؤتمر"@ar ;
+	rdfs:subClassOf :c-9360261-6735126 , _:node1e059uvnrx69 .
+
+_:node1e059uvnrx69 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-4988957-3112983 .
+
+:c-1083054-0977274 rdfs:subClassOf _:node1e059uvnrx70 .
+
+_:node1e059uvnrx70 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-7706972-1723925 .
+
+:c-1083054-0977274 rdfs:subClassOf _:node1e059uvnrx71 .
+
+_:node1e059uvnrx71 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-5075421-2537332 .
+
+:c-1089557-0139951 a owl:Class ;
+	rdfs:label "رسوم التسجيل مدفوعة من قبل الكاتب الحاضر مقابل استلام محضر الابحاث على شكل قرص"@ar ;
+	rdfs:subClassOf :c-3562971-9248149 , _:node1e059uvnrx72 .
+
+_:node1e059uvnrx72 a owl:Restriction ;
+	owl:onProperty :op-6975733-1042553 ;
+	owl:someValuesFrom :c-9457045-7675113 .
+
+:c-1135751-0315612 a owl:Class ;
+	rdfs:label "المتحدث الذي يقدم البرنامج التعليمي"@ar ;
+	owl:equivalentClass _:node1e059uvnrx73 .
+
+_:node1e059uvnrx73 a owl:Restriction ;
+	owl:onProperty :op-4894274-2500891 ;
+	owl:someValuesFrom :c-1143337-4191398 .
+
+:c-1135751-0315612 rdfs:subClassOf :c-8524806-1584249 , _:node1e059uvnrx74 .
+
+_:node1e059uvnrx74 a owl:Restriction ;
+	owl:onProperty :op-3128289-0377224 ;
+	owl:someValuesFrom :c-8256506-0197020 .
+
+:c-1143337-4191398 a owl:Class ;
+	rdfs:label "محاضرة العامة"@ar ;
+	owl:equivalentClass _:node1e059uvnrx75 .
+
+_:node1e059uvnrx75 a owl:Restriction ;
+	owl:onProperty :op-2934030-6684229 ;
+	owl:someValuesFrom :c-7779799-9625767 .
+
+:c-1143337-4191398 rdfs:subClassOf :c-6642225-2449403 .
+
+:c-1153527-2178736 a owl:Class ;
+	rdfs:label "غرفة الجلسة"@ar ;
+	rdfs:subClassOf :c-7610450-7841576 , _:node1e059uvnrx76 .
+
+_:node1e059uvnrx76 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-3355069-9402169 .
+
+:c-1153527-2178736 rdfs:subClassOf _:node1e059uvnrx77 .
+
+_:node1e059uvnrx77 a owl:Restriction ;
+	owl:onProperty :op-8055937-4178822 ;
+	owl:someValuesFrom :c-6259610-4303723 .
+
+:c-1206252-5148523 a owl:Class ;
+	rdfs:label "مركبة النقل"@ar ;
+	rdfs:subClassOf :c-2117305-6442125 , _:node1e059uvnrx78 .
+
+_:node1e059uvnrx78 a owl:Restriction ;
+	owl:onProperty :op-7688139-1680885 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-1270060-4788524 a owl:Class ;
+	rdfs:label "الصك"@ar ;
+	rdfs:subClassOf :c-2296249-1455178 .
+
+:c-1272337-3260943 a owl:Class ;
+	rdfs:label "أي نوع من وثيقة"@ar ;
+	rdfs:subClassOf :c-2117305-6442125 .
+
+:c-1345787-0589381 a owl:Class ;
+	rdfs:label "مأدبة عشاء"@ar ;
+	rdfs:subClassOf :c-7695923-3143306 , _:node1e059uvnrx79 .
+
+_:node1e059uvnrx79 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom _:node1e059uvnrx80 .
+
+_:node1e059uvnrx80 a owl:Class ;
+	owl:complementOf :c-5779447-4279499 .
+
+:c-1374445-6980813 a owl:Class ;
+	rdfs:label "نشاط يحدث خلال المؤتمر"@ar ;
+	rdfs:subClassOf :c-9734507-1022781 , _:node1e059uvnrx81 .
+
+_:node1e059uvnrx81 a owl:Restriction ;
+	owl:onProperty :op-1071334-8408441 ;
+	owl:someValuesFrom :c-3027609-0357962 .
+
+:c-1374445-6980813 rdfs:subClassOf _:node1e059uvnrx82 .
+
+_:node1e059uvnrx82 a owl:Restriction ;
+	owl:onProperty :op-1071334-8408441 ;
+	owl:someValuesFrom :c-4988957-3112983 .
+
+:c-1478383-0310840 a owl:Class ;
+	rdfs:label "جهاز عرض الإسقاط الضوئي شاشات الكريستال السائل"@ar ;
+	rdfs:subClassOf :c-6259610-4303723 .
+
+:c-1509656-7190644 a owl:Class ;
+	rdfs:label "الدولة الراعي"@ar ;
+	rdfs:subClassOf :c-1906460-1027087 .
+
+:c-1705386-7628472 a owl:Class ;
+	rdfs:label "مطارالمؤتمر"@ar ;
+	rdfs:subClassOf :c-9360261-6735126 , _:node1e059uvnrx83 .
+
+_:node1e059uvnrx83 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-7706972-1723925 .
+
+:c-1705386-7628472 rdfs:subClassOf _:node1e059uvnrx84 .
+
+_:node1e059uvnrx84 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-4988957-3112983 .
+
+:c-1906460-1027087 a owl:Class ;
+	rdfs:label "الدولة"@ar .
+
+:c-1908942-1034897 a owl:Class ;
+	rdfs:label "رسوم"@ar ;
+	rdfs:subClassOf :c-8330790-3106474 , _:node1e059uvnrx85 .
+
+_:node1e059uvnrx85 a owl:Restriction ;
+	owl:onProperty :op-0114927-6821940 ;
+	owl:someValuesFrom _:node1e059uvnrx86 .
+
+_:node1e059uvnrx86 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx87 .
+
+_:node1e059uvnrx87 rdf:first :c-2296249-1455178 ;
+	rdf:rest _:node1e059uvnrx88 .
+
+_:node1e059uvnrx88 rdf:first :c-9459514-3027432 ;
+	rdf:rest rdf:nil .
+
+:c-1945750-2737575 a owl:Class ;
+	rdfs:label "الضرائب"@ar ;
+	rdfs:subClassOf :c-8330790-3106474 .
+
+:c-2015831-8588846 a owl:Class ;
+	rdfs:label "سيارة"@ar ;
+	rdfs:subClassOf :c-1206252-5148523 .
+
+:c-2100517-5831052 a owl:Class ;
+	rdfs:label "المكتب الرئيسي"@ar ;
+	rdfs:subClassOf :c-7610450-7841576 .
+
+:c-2117305-6442125 a owl:Class ;
+	rdfs:label "البند (بشكل عام)"@ar .
+
+:c-2133137-2741616 a owl:Class ;
+	rdfs:label "رئيس الجلسة"@ar ;
+	owl:equivalentClass _:node1e059uvnrx89 .
+
+_:node1e059uvnrx89 a owl:Restriction ;
+	owl:onProperty :op-8804584-1930279 ;
+	owl:someValuesFrom :c-3414306-5551762 .
+
+:c-2133137-2741616 rdfs:subClassOf :c-7839478-1348524 , _:node1e059uvnrx90 .
+
+_:node1e059uvnrx90 a owl:Restriction ;
+	owl:onProperty :op-4707899-0716753 ;
+	owl:someValuesFrom :c-0445217-5235046 .
+
+:c-2144849-8447283 a owl:Class ;
+	rdfs:label "مقدمة"@ar ;
+	rdfs:subClassOf :c-1374445-6980813 .
+
+:c-2257603-7365584 a owl:Class ;
+	rdfs:label "الراعي"@ar ;
+	owl:equivalentClass _:node1e059uvnrx91 .
+
+_:node1e059uvnrx91 a owl:Restriction ;
+	owl:onProperty :op-4894274-2500891 ;
+	owl:someValuesFrom :c-0785971-0385449 .
+
+:c-2257603-7365584 rdfs:subClassOf :c-7495328-9898304 , _:node1e059uvnrx92 .
+
+_:node1e059uvnrx92 a owl:Restriction ;
+	owl:onProperty :op-3107535-2611713 ;
+	owl:someValuesFrom :c-1509656-7190644 .
+
+:c-2257603-7365584 rdfs:subClassOf _:node1e059uvnrx93 .
+
+_:node1e059uvnrx93 a owl:Restriction ;
+	owl:onProperty :op-3107535-2611713 ;
+	owl:someValuesFrom :c-7645937-5712518 .
+
+:c-2257603-7365584 rdfs:subClassOf _:node1e059uvnrx94 .
+
+_:node1e059uvnrx94 a owl:Restriction ;
+	owl:onProperty :op-3107535-2611713 ;
+	owl:someValuesFrom :c-0178036-0872830 .
+
+:c-2296249-1455178 a owl:Class ;
+	rdfs:label "وثيقة الدفع"@ar ;
+	rdfs:subClassOf :c-1272337-3260943 , _:node1e059uvnrx95 .
+
+_:node1e059uvnrx95 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom _:node1e059uvnrx96 .
+
+_:node1e059uvnrx96 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx97 .
+
+_:node1e059uvnrx97 rdf:first :c-1908942-1034897 ;
+	rdf:rest _:node1e059uvnrx98 .
+
+_:node1e059uvnrx98 rdf:first :c-1945750-2737575 ;
+	rdf:rest rdf:nil .
+
+:c-2300155-6240282 a owl:Class ;
+	rdfs:label "بطاقة"@ar ;
+	rdfs:subClassOf :c-2117305-6442125 .
+
+:c-2348887-6643414 a owl:Class ;
+	rdfs:label "فندق استمارة التسجيل"@ar ;
+	rdfs:subClassOf :c-6957850-7255088 , _:node1e059uvnrx99 .
+
+_:node1e059uvnrx99 a owl:Restriction ;
+	owl:onProperty :op-1991225-3192135 ;
+	owl:someValuesFrom :c-9832284-1706443 .
+
+:c-2454598-3839326 a owl:Class ;
+	rdfs:label "المؤلف الذي سيستلم إجراءات وكتاب"@ar ;
+	rdfs:subClassOf :c-8524806-1584249 , _:node1e059uvnrx100 .
+
+_:node1e059uvnrx100 a owl:Restriction ;
+	owl:onProperty :op-4707899-0716753 ;
+	owl:someValuesFrom :c-6710251-2653749 .
+
+:c-2484295-2591142 a owl:Class ;
+	rdfs:label "سيارات الأجرة"@ar ;
+	rdfs:subClassOf :c-1206252-5148523 .
+
+:c-2615428-9674723 a owl:Class ;
+	rdfs:label "دولة المقدم"@ar ;
+	rdfs:subClassOf :c-1906460-1027087 , _:node1e059uvnrx101 .
+
+_:node1e059uvnrx101 a owl:Restriction ;
+	owl:onProperty :op-6785285-7831174 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-2628238-5831385 a owl:Class ;
+	rdfs:label "الساعة"@ar .
+
+:c-2791036-8924661 a owl:Class ;
+	rdfs:label "كوكتيل الاستقبال"@ar ;
+	rdfs:subClassOf :c-1374445-6980813 , _:node1e059uvnrx102 .
+
+_:node1e059uvnrx102 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-2815832-4578186 a owl:Class ;
+	rdfs:label "العملة"@ar .
+
+:c-2981835-6381765 a owl:Class ;
+	rdfs:label "مغادرة"@ar ;
+	rdfs:subClassOf :c-0481764-6932669 .
+
+:c-3027609-0357962 a owl:Class ;
+	rdfs:label "أيام المؤتمر"@ar ;
+	rdfs:subClassOf :c-2628238-5831385 , _:node1e059uvnrx103 .
+
+_:node1e059uvnrx103 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-3289133-2524074 a owl:Class ;
+	rdfs:label "تحويل مصرفي"@ar ;
+	rdfs:subClassOf :c-2296249-1455178 .
+
+:c-3301904-5411224 a owl:Class ;
+	rdfs:label "طالب  غير متحدث"@ar ;
+	owl:equivalentClass _:node1e059uvnrx104 .
+
+_:node1e059uvnrx104 a owl:Restriction ;
+	owl:onProperty :op-5443332-4868186 ;
+	owl:someValuesFrom :c-3387222-0014577 .
+
+:c-3301904-5411224 rdfs:subClassOf :c-3707691-3090333 .
+
+:c-3329669-6447330 a owl:Class ;
+	rdfs:label "غرف الفندق المزدوجة"@ar ;
+	rdfs:subClassOf :c-4814110-7142658 .
+
+:c-3355069-9402169 a owl:Class ;
+	rdfs:label "مبنى المؤتمرات"@ar ;
+	rdfs:subClassOf :c-9360261-6735126 , _:node1e059uvnrx105 .
+
+_:node1e059uvnrx105 a owl:Restriction ;
+	owl:onProperty :op-6785285-7831174 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-3355069-9402169 rdfs:subClassOf _:node1e059uvnrx106 .
+
+_:node1e059uvnrx106 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-7706972-1723925 .
+
+:c-3355069-9402169 rdfs:subClassOf _:node1e059uvnrx107 .
+
+_:node1e059uvnrx107 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-4988957-3112983 .
+
+:c-3387222-0014577 a owl:Class ;
+	rdfs:label "رسوم التسجيل للطالب"@ar ;
+	rdfs:subClassOf :c-3562971-9248149 , _:node1e059uvnrx108 .
+
+_:node1e059uvnrx108 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom _:node1e059uvnrx109 .
+
+_:node1e059uvnrx109 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx110 .
+
+_:node1e059uvnrx110 rdf:first :c-3301904-5411224 ;
+	rdf:rest _:node1e059uvnrx111 .
+
+_:node1e059uvnrx111 rdf:first :c-4479498-8776271 ;
+	rdf:rest rdf:nil .
+
+:c-3404415-7141875 a owl:Class ;
+	rdfs:label "عضو في IASTED"@ar ;
+	owl:equivalentClass _:node1e059uvnrx112 .
+
+_:node1e059uvnrx112 a owl:Restriction ;
+	owl:onProperty :op-5443332-4868186 ;
+	owl:someValuesFrom :c-9647689-2199458 .
+
+:c-3404415-7141875 rdfs:subClassOf :c-7839478-1348524 .
+
+:c-3414306-5551762 a owl:Class ;
+	rdfs:label "مقدمة المتحدث"@ar ;
+	rdfs:subClassOf :c-2144849-8447283 .
+
+:c-3414599-1614496 a owl:Class ;
+	rdfs:label "رسوم التسجيل من غير الكاتب"@ar ;
+	rdfs:subClassOf :c-3562971-9248149 , _:node1e059uvnrx113 .
+
+_:node1e059uvnrx113 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-3707691-3090333 .
+
+:c-3439921-9419415 a owl:Class ;
+	rdfs:label "رسوم التسجيل مدفوعة من قبل الكاتب الحاضر من اجل استلام محضر الابحاث على شكل كتاب"@ar ;
+	rdfs:subClassOf :c-3562971-9248149 , _:node1e059uvnrx114 .
+
+_:node1e059uvnrx114 a owl:Restriction ;
+	owl:onProperty :op-6975733-1042553 ;
+	owl:someValuesFrom :c-6710251-2653749 .
+
+:c-3562971-9248149 a owl:Class ;
+	rdfs:label "رسوم التسجيل"@ar ;
+	rdfs:subClassOf :c-1908942-1034897 , _:node1e059uvnrx115 .
+
+_:node1e059uvnrx115 a owl:Restriction ;
+	owl:onProperty :op-6975733-1042553 ;
+	owl:someValuesFrom :c-1374445-6980813 .
+
+:c-3562971-9248149 rdfs:subClassOf _:node1e059uvnrx116 .
+
+_:node1e059uvnrx116 a owl:Restriction ;
+	owl:onProperty :op-5415847-0359774 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-3570655-1275256 a owl:Class ;
+	rdfs:label "عرض باور بوينت"@ar ;
+	rdfs:subClassOf :c-8038950-3294907 .
+
+:c-3707691-3090333 a owl:Class ;
+	rdfs:label "غير المتحدث"@ar ;
+	rdfs:subClassOf :c-7839478-1348524 ;
+	owl:disjointWith :c-8557254-6925353 .
+
+:c-3737044-1743660 a owl:Class ;
+	rdfs:label "آخر موعد لإخطار القبول"@ar ;
+	rdfs:subClassOf :c-6802365-6090141 .
+
+:c-3864380-5521170 a owl:Class ;
+	rdfs:label "المخطوط النهائي"@ar ;
+	rdfs:subClassOf :c-9043782-3488269 , _:node1e059uvnrx117 .
+
+_:node1e059uvnrx117 a owl:Restriction ;
+	owl:onProperty :op-8804584-1930279 ;
+	owl:someValuesFrom :c-5917467-6076111 .
+
+:c-4112442-4111172 a owl:Class ;
+	rdfs:label "المخطوطة الأولية"@ar ;
+	rdfs:subClassOf :c-9043782-3488269 , _:node1e059uvnrx118 .
+
+_:node1e059uvnrx118 a owl:Restriction ;
+	owl:onProperty :op-8804584-1930279 ;
+	owl:someValuesFrom :c-0537126-2617188 .
+
+:c-4118053-9833638 a owl:Class ;
+	rdfs:label "آخر موعد للتسجيل"@ar ;
+	rdfs:subClassOf :c-6802365-6090141 .
+
+:c-4185600-2566755 a owl:Class ;
+	rdfs:label "جامعة المقدم"@ar ;
+	rdfs:subClassOf :c-9360261-6735126 , _:node1e059uvnrx119 .
+
+_:node1e059uvnrx119 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-5149732-2777974 .
+
+:c-4185600-2566755 rdfs:subClassOf _:node1e059uvnrx120 .
+
+_:node1e059uvnrx120 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-2615428-9674723 .
+
+:c-4240550-9515072 a owl:Class ;
+	rdfs:label "حافلات مكوكية"@ar ;
+	rdfs:subClassOf :c-1206252-5148523 .
+
+:c-4288079-0745247 a owl:Class ;
+	rdfs:label "البرنامج التعليمي"@ar ;
+	owl:equivalentClass _:node1e059uvnrx121 .
+
+_:node1e059uvnrx121 a owl:Restriction ;
+	owl:onProperty :op-2934030-6684229 ;
+	owl:someValuesFrom :c-1135751-0315612 .
+
+:c-4288079-0745247 rdfs:subClassOf :c-6642225-2449403 .
+
+:c-4479498-8776271 a owl:Class ;
+	rdfs:label "طالب المحاضر"@ar ;
+	rdfs:subClassOf :c-9517517-2411566 .
+
+:c-4506929-2635761 a owl:Class ;
+	rdfs:label "شاحنة صغيرة"@ar ;
+	rdfs:subClassOf :c-1206252-5148523 .
+
+:c-4747047-4417848 a owl:Class ;
+	rdfs:label "المدينة"@ar ;
+	rdfs:subClassOf :c-9803057-0865391 , _:node1e059uvnrx122 .
+
+_:node1e059uvnrx122 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-1906460-1027087 .
+
+:c-4803632-5630014 a owl:Class ;
+	rdfs:label "جولة ليوم كامل"@ar ;
+	rdfs:subClassOf :c-0481764-6932669 , _:node1e059uvnrx123 .
+
+_:node1e059uvnrx123 a owl:Restriction ;
+	owl:onProperty :op-1071334-8408441 ;
+	owl:someValuesFrom :c-7904334-7629504 .
+
+:c-4803632-5630014 rdfs:subClassOf _:node1e059uvnrx124 .
+
+_:node1e059uvnrx124 a owl:Restriction ;
+	owl:onProperty :op-1071334-8408441 ;
+	owl:someValuesFrom :c-7397025-5345675 .
+
+:c-4803632-5630014 rdfs:subClassOf _:node1e059uvnrx125 .
+
+_:node1e059uvnrx125 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-4814110-7142658 a owl:Class ;
+	rdfs:label "غرفة الفندق"@ar ;
+	rdfs:subClassOf :c-7610450-7841576 , _:node1e059uvnrx126 .
+
+_:node1e059uvnrx126 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-5075421-2537332 .
+
+:c-4814110-7142658 rdfs:subClassOf _:node1e059uvnrx127 .
+
+_:node1e059uvnrx127 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-1083054-0977274 .
+
+:c-4925840-9791742 a owl:Class ;
+	rdfs:label "قيمة المضافة للضرائب"@ar ;
+	rdfs:subClassOf :c-1945750-2737575 .
+
+:c-4988957-3112983 a owl:Class ;
+	rdfs:label "الدولة حيث ينعقد المؤتمر"@ar ;
+	rdfs:subClassOf :c-1906460-1027087 , _:node1e059uvnrx128 .
+
+_:node1e059uvnrx128 a owl:Restriction ;
+	owl:onProperty :op-9827922-6624577 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-5075421-2537332 a owl:Class ;
+	rdfs:label "فندق المقدم"@ar ;
+	rdfs:subClassOf :c-7839478-1348524 , _:node1e059uvnrx129 .
+
+_:node1e059uvnrx129 a owl:Class ;
+	owl:intersectionOf _:node1e059uvnrx131 .
+
+_:node1e059uvnrx131 rdf:first _:node1e059uvnrx130 .
+
+_:node1e059uvnrx130 a owl:Restriction ;
+	owl:onProperty :op-3107535-2611713 ;
+	owl:someValuesFrom :c-1083054-0977274 .
+
+_:node1e059uvnrx131 rdf:rest _:node1e059uvnrx133 .
+
+_:node1e059uvnrx133 rdf:first _:node1e059uvnrx132 .
+
+_:node1e059uvnrx132 a owl:Restriction ;
+	owl:onProperty :op-5443332-4868186 ;
+	owl:someValuesFrom :c-8734489-8762851 .
+
+_:node1e059uvnrx133 rdf:rest rdf:nil .
+
+:c-5127300-9561764 a owl:Class ;
+	rdfs:label "جلسة"@ar ;
+	rdfs:subClassOf :c-6642225-2449403 , _:node1e059uvnrx134 .
+
+_:node1e059uvnrx134 a owl:Restriction ;
+	owl:onProperty :op-1071334-8408441 ;
+	owl:someValuesFrom :c-1153527-2178736 .
+
+:c-5127300-9561764 rdfs:subClassOf _:node1e059uvnrx135 .
+
+_:node1e059uvnrx135 a owl:Restriction ;
+	owl:onProperty :op-2934030-6684229 ;
+	owl:someValuesFrom _:node1e059uvnrx136 .
+
+_:node1e059uvnrx136 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx137 .
+
+_:node1e059uvnrx137 rdf:first :c-2133137-2741616 ;
+	rdf:rest _:node1e059uvnrx138 .
+
+_:node1e059uvnrx138 rdf:first :c-8524806-1584249 ;
+	rdf:rest rdf:nil .
+
+:c-5149340-1624447 a owl:Class ;
+	rdfs:label "متنزه المؤتمر"@ar ;
+	owl:equivalentClass _:node1e059uvnrx139 .
+
+_:node1e059uvnrx139 a owl:Restriction ;
+	owl:onProperty :op-8804584-1930279 ;
+	owl:someValuesFrom :c-4803632-5630014 .
+
+:c-5149340-1624447 rdfs:subClassOf :c-7839478-1348524 .
+
+:c-5149732-2777974 a owl:Class ;
+	rdfs:label "المدينة حيث يأتي منها المقدم"@ar ;
+	rdfs:subClassOf :c-4747047-4417848 , _:node1e059uvnrx140 .
+
+_:node1e059uvnrx140 a owl:Restriction ;
+	owl:onProperty :op-6785285-7831174 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-5368651-0392892 a owl:Class ;
+	rdfs:label "بيت المقدم"@ar ;
+	rdfs:subClassOf :c-9360261-6735126 , _:node1e059uvnrx141 .
+
+_:node1e059uvnrx141 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-5149732-2777974 .
+
+:c-5368651-0392892 rdfs:subClassOf _:node1e059uvnrx142 .
+
+_:node1e059uvnrx142 a owl:Restriction ;
+	owl:onProperty :op-6785285-7831174 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-5368651-0392892 rdfs:subClassOf _:node1e059uvnrx143 .
+
+_:node1e059uvnrx143 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-2615428-9674723 .
+
+:c-5405470-6040042 a owl:Class ;
+	rdfs:label "الشفافية العامة"@ar ;
+	rdfs:subClassOf :c-1272337-3260943 , _:node1e059uvnrx144 .
+
+_:node1e059uvnrx144 a owl:Restriction ;
+	owl:onProperty :op-1675425-5224671 ;
+	owl:someValuesFrom :c-8557254-6925353 .
+
+:c-5571039-3138445 a owl:Class ;
+	rdfs:label "آخر موعد للارسال"@ar ;
+	rdfs:subClassOf :c-6802365-6090141 .
+
+:c-5592838-7410631 a owl:Class ;
+	rdfs:label "غيض"@ar ;
+	rdfs:subClassOf :c-8330790-3106474 , _:node1e059uvnrx145 .
+
+_:node1e059uvnrx145 a owl:Restriction ;
+	owl:onProperty :op-2106903-0172649 ;
+	owl:someValuesFrom :c-5932018-6268536 .
+
+:c-5595069-4722468 a owl:Class ;
+	rdfs:label "رسالة الدعوة"@ar ;
+	rdfs:subClassOf :c-1272337-3260943 , _:node1e059uvnrx146 .
+
+_:node1e059uvnrx146 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-5718864-1984191 a owl:Class ;
+	rdfs:label "نشاط استلام مخطوطة"@ar ;
+	rdfs:subClassOf :c-0653399-3994975 .
+
+:c-5779447-4279499 a owl:Class ;
+	rdfs:label "المقدم الذي يقدم فقط في يوم واحد"@ar ;
+	owl:equivalentClass _:node1e059uvnrx147 .
+
+_:node1e059uvnrx147 a owl:Restriction ;
+	owl:onProperty :op-4982952-0877025 ;
+	owl:onClass :c-9803057-0865391 ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5779447-4279499 rdfs:subClassOf :c-7839478-1348524 .
+
+:c-5911777-1322999 a owl:Class ;
+	rdfs:label "الفيديوعرض التقديمي"@ar ;
+	rdfs:subClassOf :c-8038950-3294907 .
+
+:c-5917467-6076111 a owl:Class ;
+	rdfs:label "نشاط القبول مخطوطة"@ar ;
+	rdfs:subClassOf :c-0653399-3994975 .
+
+:c-5932018-6268536 a owl:Class ;
+	rdfs:label "مطعم المؤتمر"@ar ;
+	rdfs:subClassOf :c-9360261-6735126 , _:node1e059uvnrx148 .
+
+_:node1e059uvnrx148 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-7706972-1723925 .
+
+:c-5932018-6268536 rdfs:subClassOf _:node1e059uvnrx149 .
+
+_:node1e059uvnrx149 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-4988957-3112983 .
+
+:c-5932018-6268536 rdfs:subClassOf _:node1e059uvnrx150 .
+
+_:node1e059uvnrx150 a owl:Restriction ;
+	owl:onProperty :op-6785285-7831174 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-5951313-1277172 a owl:Class ;
+	rdfs:label "استمارة المعلومات الكاتب"@ar ;
+	rdfs:subClassOf :c-6957850-7255088 , _:node1e059uvnrx151 .
+
+_:node1e059uvnrx151 a owl:Restriction ;
+	owl:onProperty :op-0431063-4825654 ;
+	owl:someValuesFrom :c-3737044-1743660 .
+
+:c-6230513-3399663 a owl:Class ;
+	rdfs:label "المستمع"@ar ;
+	rdfs:subClassOf :c-7839478-1348524 , _:node1e059uvnrx152 .
+
+_:node1e059uvnrx152 a owl:Restriction ;
+	owl:onProperty :op-8877435-3029007 ;
+	owl:someValuesFrom _:node1e059uvnrx153 .
+
+_:node1e059uvnrx153 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx154 .
+
+_:node1e059uvnrx154 rdf:first :c-1153527-2178736 ;
+	rdf:rest _:node1e059uvnrx155 .
+
+_:node1e059uvnrx155 rdf:first :c-8256506-0197020 ;
+	rdf:rest rdf:nil .
+
+:c-6230513-3399663 rdfs:subClassOf _:node1e059uvnrx156 .
+
+_:node1e059uvnrx156 a owl:Restriction ;
+	owl:onProperty :op-1072474-4200859 ;
+	owl:someValuesFrom :c-8566185-0571325 .
+
+:c-6259610-4303723 a owl:Class ;
+	rdfs:label "المعدات السمعية والبصرية"@ar ;
+	rdfs:subClassOf :c-2117305-6442125 , _:node1e059uvnrx157 .
+
+_:node1e059uvnrx157 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-1153527-2178736 .
+
+:c-6259610-4303723 rdfs:subClassOf _:node1e059uvnrx158 .
+
+_:node1e059uvnrx158 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-6230513-3399663 .
+
+:c-6259610-4303723 rdfs:subClassOf _:node1e059uvnrx159 .
+
+_:node1e059uvnrx159 a owl:Restriction ;
+	owl:onProperty :op-7688139-1680885 ;
+	owl:someValuesFrom :c-8557254-6925353 .
+
+:c-6268511-0589224 a owl:Class ;
+	rdfs:label "نشاط النمذجة"@ar ;
+	rdfs:subClassOf :c-7811356-1517344 .
+
+:c-6326066-2553522 a owl:Class ;
+	rdfs:label "مشغل شريط فيديو"@ar ;
+	rdfs:subClassOf :c-6259610-4303723 .
+
+:c-6328900-7685861 a owl:Class ;
+	rdfs:label "اللجنة التقنية"@ar ;
+	rdfs:subClassOf :c-7839478-1348524 , _:node1e059uvnrx160 .
+
+_:node1e059uvnrx160 a owl:Restriction ;
+	owl:onProperty :op-8804584-1930279 ;
+	owl:someValuesFrom :c-9475966-8122245 .
+
+:c-6642225-2449403 a owl:Class ;
+	rdfs:label "محاضرة"@ar ;
+	rdfs:subClassOf :c-1374445-6980813 , _:node1e059uvnrx161 .
+
+_:node1e059uvnrx161 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-6230513-3399663 .
+
+:c-6710251-2653749 a owl:Class ;
+	rdfs:label "كتابر المحضر"@ar ;
+	rdfs:subClassOf :c-9208741-7977774 .
+
+:c-6802365-6090141 a owl:Class ;
+	rdfs:label "آخر موعد"@ar ;
+	rdfs:subClassOf :c-2628238-5831385 , _:node1e059uvnrx162 .
+
+_:node1e059uvnrx162 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-6957850-7255088 a owl:Class ;
+	rdfs:label "استمارة"@ar ;
+	rdfs:subClassOf :c-1272337-3260943 , _:node1e059uvnrx163 .
+
+_:node1e059uvnrx163 a owl:Restriction ;
+	owl:onProperty :op-0813802-2580466 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-7237384-5029852 a owl:Class ;
+	rdfs:label "المراجع"@ar ;
+	owl:equivalentClass _:node1e059uvnrx164 .
+
+_:node1e059uvnrx164 a owl:Restriction ;
+	owl:onProperty :op-4894274-2500891 ;
+	owl:someValuesFrom :c-0096805-5137076 .
+
+:c-7237384-5029852 rdfs:subClassOf :c-8557254-6925353 .
+
+:c-7397025-5345675 a owl:Class ;
+	rdfs:label "المدينة التي هي مكان من أجل الرحلة"@ar ;
+	rdfs:subClassOf :c-4747047-4417848 , _:node1e059uvnrx165 .
+
+_:node1e059uvnrx165 a owl:Restriction ;
+	owl:onProperty :op-9827922-6624577 ;
+	owl:someValuesFrom :c-5149340-1624447 .
+
+:c-7401025-3924904 a owl:Class ;
+	rdfs:label "جهاز عرض ضوئي"@ar ;
+	rdfs:subClassOf :c-6259610-4303723 .
+
+:c-7426236-4762463 a owl:Class ;
+	rdfs:label "استمارة التسجيل المؤتمر"@ar ;
+	rdfs:subClassOf :c-6957850-7255088 , _:node1e059uvnrx166 .
+
+_:node1e059uvnrx166 a owl:Restriction ;
+	owl:onProperty :op-6397580-3066613 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-7426236-4762463 rdfs:subClassOf _:node1e059uvnrx167 .
+
+_:node1e059uvnrx167 a owl:Restriction ;
+	owl:onProperty :op-1991225-3192135 ;
+	owl:someValuesFrom :c-4118053-9833638 .
+
+:c-7469639-8956972 a owl:Class ;
+	rdfs:label "غرف الفندق المفردة"@ar ;
+	rdfs:subClassOf :c-4814110-7142658 .
+
+:c-7495328-9898304 a owl:Class ;
+	rdfs:label "شخص"@ar .
+
+:c-7598893-3066158 a owl:Class ;
+	rdfs:label "تأشيرة"@ar ;
+	rdfs:subClassOf :c-1272337-3260943 , _:node1e059uvnrx168 .
+
+_:node1e059uvnrx168 a owl:Restriction ;
+	owl:onProperty :op-2867462-7341315 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-7610450-7841576 a owl:Class ;
+	rdfs:label "مكان"@ar ;
+	rdfs:subClassOf :c-9803057-0865391 , _:node1e059uvnrx169 .
+
+_:node1e059uvnrx169 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-7706972-1723925 .
+
+:c-7610450-7841576 rdfs:subClassOf _:node1e059uvnrx170 .
+
+_:node1e059uvnrx170 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-4988957-3112983 .
+
+:c-7645937-5712518 a owl:Class ;
+	rdfs:label "المدينة حيث يأتي منها الراعي"@ar ;
+	rdfs:subClassOf :c-4747047-4417848 , _:node1e059uvnrx171 .
+
+_:node1e059uvnrx171 a owl:Restriction ;
+	owl:onProperty :op-6785285-7831174 ;
+	owl:someValuesFrom :c-2257603-7365584 .
+
+:c-7695923-3143306 a owl:Class ;
+	rdfs:label "النشاط الاجتماعي"@ar ;
+	rdfs:subClassOf :c-1374445-6980813 , _:node1e059uvnrx172 .
+
+_:node1e059uvnrx172 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-7706972-1723925 a owl:Class ;
+	rdfs:label "المدينة حيث ينعقد المؤتمر"@ar ;
+	rdfs:subClassOf :c-4747047-4417848 , _:node1e059uvnrx173 .
+
+_:node1e059uvnrx173 a owl:Restriction ;
+	owl:onProperty :op-9827922-6624577 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-7779799-9625767 a owl:Class ;
+	rdfs:label "المتحدث إعطاء محاضرة أمام الكنيست"@ar ;
+	owl:equivalentClass _:node1e059uvnrx174 .
+
+_:node1e059uvnrx174 a owl:Restriction ;
+	owl:onProperty :op-4894274-2500891 ;
+	owl:someValuesFrom :c-4288079-0745247 .
+
+:c-7779799-9625767 rdfs:subClassOf :c-8524806-1584249 , _:node1e059uvnrx175 .
+
+_:node1e059uvnrx175 a owl:Restriction ;
+	owl:onProperty :op-3128289-0377224 ;
+	owl:someValuesFrom :c-8256506-0197020 .
+
+:c-7811356-1517344 a owl:Class ;
+	rdfs:label "النشاط البحثي"@ar ;
+	rdfs:subClassOf :c-0653399-3994975 .
+
+:c-7839478-1348524 a owl:Class ;
+	rdfs:label "(مندوب (شخص يسجيل ويزور المؤتمر"@ar ;
+	owl:equivalentClass _:node1e059uvnrx176 .
+
+_:node1e059uvnrx176 a owl:Class ;
+	owl:intersectionOf _:node1e059uvnrx178 .
+
+_:node1e059uvnrx178 rdf:first _:node1e059uvnrx177 .
+
+_:node1e059uvnrx177 a owl:Restriction ;
+	owl:onProperty :op-8804584-1930279 ;
+	owl:someValuesFrom :c-0666509-1136761 .
+
+_:node1e059uvnrx178 rdf:rest _:node1e059uvnrx180 .
+
+_:node1e059uvnrx180 rdf:first _:node1e059uvnrx179 .
+
+_:node1e059uvnrx179 a owl:Restriction ;
+	owl:onProperty :op-8877435-3029007 ;
+	owl:someValuesFrom :c-3027609-0357962 .
+
+_:node1e059uvnrx180 rdf:rest _:node1e059uvnrx182 .
+
+_:node1e059uvnrx182 rdf:first _:node1e059uvnrx181 .
+
+_:node1e059uvnrx181 a owl:Restriction ;
+	owl:onProperty :op-8877435-3029007 ;
+	owl:someValuesFrom :c-3355069-9402169 .
+
+_:node1e059uvnrx182 rdf:rest rdf:nil .
+
+:c-7839478-1348524 rdfs:subClassOf :c-7495328-9898304 , _:node1e059uvnrx183 .
+
+_:node1e059uvnrx183 a owl:Restriction ;
+	owl:onProperty :op-4707899-0716753 ;
+	owl:someValuesFrom :c-5595069-4722468 .
+
+:c-7839478-1348524 rdfs:subClassOf _:node1e059uvnrx184 .
+
+_:node1e059uvnrx184 a owl:Restriction ;
+	owl:onProperty :op-3107535-2611713 ;
+	owl:someValuesFrom :c-5368651-0392892 .
+
+:c-7839478-1348524 rdfs:subClassOf _:node1e059uvnrx185 .
+
+_:node1e059uvnrx185 a owl:Restriction ;
+	owl:onProperty :op-5443332-4868186 ;
+	owl:someValuesFrom :c-3562971-9248149 .
+
+:c-7839478-1348524 rdfs:subClassOf _:node1e059uvnrx186 .
+
+_:node1e059uvnrx186 a owl:Restriction ;
+	owl:onProperty :op-4440624-4030749 ;
+	owl:someValuesFrom :c-7598893-3066158 .
+
+:c-7839478-1348524 rdfs:subClassOf _:node1e059uvnrx187 .
+
+_:node1e059uvnrx187 a owl:Restriction ;
+	owl:onProperty :op-9497800-8396001 ;
+	owl:someValuesFrom :c-7426236-4762463 .
+
+:c-7839478-1348524 rdfs:subClassOf _:node1e059uvnrx188 .
+
+_:node1e059uvnrx188 a owl:Restriction ;
+	owl:onProperty :op-3107535-2611713 ;
+	owl:someValuesFrom :c-5149732-2777974 .
+
+:c-7839478-1348524 rdfs:subClassOf _:node1e059uvnrx189 .
+
+_:node1e059uvnrx189 a owl:Restriction ;
+	owl:onProperty :op-3107535-2611713 ;
+	owl:someValuesFrom :c-2615428-9674723 .
+
+:c-7904334-7629504 a owl:Class ;
+	rdfs:label "اليوم المسندة من أجل رحلة"@ar ;
+	rdfs:subClassOf :c-2628238-5831385 , _:node1e059uvnrx190 .
+
+_:node1e059uvnrx190 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-8038950-3294907 a owl:Class ;
+	rdfs:label "العرض التقديمي"@ar ;
+	rdfs:subClassOf :c-1374445-6980813 .
+
+:c-8256506-0197020 a owl:Class ;
+	rdfs:label "قاعة المؤتمر"@ar ;
+	rdfs:subClassOf :c-7610450-7841576 , _:node1e059uvnrx191 .
+
+_:node1e059uvnrx191 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-3355069-9402169 .
+
+:c-8330790-3106474 a owl:Class ;
+	rdfs:label "مبلغ من المال"@ar .
+
+:c-8404042-2132319 a owl:Class ;
+	rdfs:label "العامل الغير المتحدث"@ar ;
+	owl:equivalentClass _:node1e059uvnrx192 .
+
+_:node1e059uvnrx192 a owl:Restriction ;
+	owl:onProperty :op-5443332-4868186 ;
+	owl:someValuesFrom :c-3414599-1614496 .
+
+:c-8404042-2132319 rdfs:subClassOf :c-3707691-3090333 .
+
+:c-8524806-1584249 a owl:Class ;
+	rdfs:label "الكاتب"@ar ;
+	rdfs:subClassOf :c-8557254-6925353 , _:node1e059uvnrx193 .
+
+_:node1e059uvnrx193 a owl:Restriction ;
+	owl:onProperty :op-6534540-6714299 ;
+	owl:someValuesFrom :c-5405470-6040042 .
+
+:c-8524806-1584249 rdfs:subClassOf _:node1e059uvnrx194 .
+
+_:node1e059uvnrx194 a owl:Restriction ;
+	owl:onProperty :op-4894274-2500891 ;
+	owl:someValuesFrom :c-0445217-5235046 .
+
+:c-8557254-6925353 a owl:Class ;
+	rdfs:label "المتحدث"@ar ;
+	rdfs:subClassOf :c-7839478-1348524 , _:node1e059uvnrx195 .
+
+_:node1e059uvnrx195 a owl:Restriction ;
+	owl:onProperty :op-2209893-4447258 ;
+	owl:someValuesFrom :c-3864380-5521170 .
+
+:c-8557254-6925353 rdfs:subClassOf _:node1e059uvnrx196 .
+
+_:node1e059uvnrx196 a owl:Restriction ;
+	owl:onProperty :op-4894274-2500891 ;
+	owl:someValuesFrom :c-6642225-2449403 .
+
+:c-8560080-0641511 a owl:Class ;
+	rdfs:label "قائمة البريد الالكتروني"@ar ;
+	rdfs:subClassOf :c-1272337-3260943 , _:node1e059uvnrx197 .
+
+_:node1e059uvnrx197 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-7839478-1348524 .
+
+:c-8566185-0571325 a owl:Class ;
+	rdfs:label "سجل الحضور"@ar ;
+	rdfs:subClassOf :c-1272337-3260943 , _:node1e059uvnrx198 .
+
+_:node1e059uvnrx198 a owl:Restriction ;
+	owl:onProperty :op-4922006-1374661 ;
+	owl:someValuesFrom :c-6230513-3399663 .
+
+:c-8566185-0571325 rdfs:subClassOf _:node1e059uvnrx199 .
+
+_:node1e059uvnrx199 a owl:Restriction ;
+	owl:onProperty :op-3266094-7971529 ;
+	owl:someValuesFrom :c-1153527-2178736 .
+
+:c-8692958-0454606 a owl:Class ;
+	rdfs:label "محاضرة ملقاة من قبل متحدث"@ar ;
+	rdfs:subClassOf :c-5127300-9561764 .
+
+:c-8730523-2716104 a owl:Class ;
+	rdfs:label "الموعد النهائي لتقديم النصي الكاميرا جاهزة"@ar ;
+	rdfs:subClassOf :c-6802365-6090141 .
+
+:c-8734489-8762851 a owl:Class ;
+	rdfs:label "رسوم فندق"@ar ;
+	rdfs:subClassOf :c-1908942-1034897 , _:node1e059uvnrx200 .
+
+_:node1e059uvnrx200 a owl:Restriction ;
+	owl:onProperty :op-5415847-0359774 ;
+	owl:someValuesFrom :c-5075421-2537332 .
+
+:c-9001506-0445347 a owl:Class ;
+	rdfs:label "رسوم التسجيل لغير عضو"@ar ;
+	rdfs:subClassOf :c-3562971-9248149 , _:node1e059uvnrx201 .
+
+_:node1e059uvnrx201 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-9184802-2535793 .
+
+:c-9043782-3488269 a owl:Class ;
+	rdfs:label "الارسال"@ar ;
+	rdfs:subClassOf :c-1272337-3260943 , _:node1e059uvnrx202 .
+
+_:node1e059uvnrx202 a owl:Restriction ;
+	owl:onProperty :op-3340023-4103685 ;
+	owl:someValuesFrom :c-8557254-6925353 .
+
+:c-9083024-2093900 a owl:Class ;
+	rdfs:label "نشاط المحاكاة"@ar ;
+	rdfs:subClassOf :c-7811356-1517344 .
+
+:c-9184802-2535793 a owl:Class ;
+	rdfs:label "ليس عضوا في IASTED"@ar ;
+	owl:equivalentClass _:node1e059uvnrx203 .
+
+_:node1e059uvnrx203 a owl:Restriction ;
+	owl:onProperty :op-5443332-4868186 ;
+	owl:someValuesFrom :c-9001506-0445347 .
+
+:c-9184802-2535793 rdfs:subClassOf :c-7839478-1348524 .
+
+:c-9208741-7977774 a owl:Class ;
+	rdfs:label "نشر"@ar ;
+	rdfs:subClassOf :c-2117305-6442125 , _:node1e059uvnrx204 .
+
+_:node1e059uvnrx204 a owl:Restriction ;
+	owl:onProperty :op-0487182-5459328 ;
+	owl:someValuesFrom :c-3864380-5521170 .
+
+:c-9316767-9860153 a owl:Class ;
+	rdfs:label "رسم لرحلة اضافية"@ar ;
+	rdfs:subClassOf :c-1908942-1034897 , _:node1e059uvnrx205 .
+
+_:node1e059uvnrx205 a owl:Restriction ;
+	owl:onProperty :op-6975733-1042553 ;
+	owl:someValuesFrom :c-4803632-5630014 .
+
+:c-9316767-9860153 rdfs:subClassOf _:node1e059uvnrx206 .
+
+_:node1e059uvnrx206 a owl:Restriction ;
+	owl:onProperty :op-5415847-0359774 ;
+	owl:someValuesFrom :c-5149340-1624447 .
+
+:c-9360261-6735126 a owl:Class ;
+	rdfs:label "المبنى"@ar ;
+	rdfs:subClassOf :c-7610450-7841576 .
+
+:c-9395281-6343376 a owl:Class ;
+	rdfs:label "العامل المحاضر"@ar ;
+	rdfs:subClassOf :c-9517517-2411566 .
+
+:c-9457045-7675113 a owl:Class ;
+	rdfs:label "قرص المتابعة"@ar ;
+	rdfs:subClassOf :c-9208741-7977774 .
+
+:c-9459514-3027432 a owl:Class ;
+	rdfs:label "بطاقة الائتمان"@ar ;
+	rdfs:subClassOf :c-2300155-6240282 , _:node1e059uvnrx207 .
+
+_:node1e059uvnrx207 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom _:node1e059uvnrx208 .
+
+_:node1e059uvnrx208 a owl:Class ;
+	owl:unionOf _:node1e059uvnrx209 .
+
+_:node1e059uvnrx209 rdf:first :c-0785971-0385449 ;
+	rdf:rest _:node1e059uvnrx210 .
+
+_:node1e059uvnrx210 rdf:first :c-1908942-1034897 ;
+	rdf:rest _:node1e059uvnrx211 .
+
+_:node1e059uvnrx211 rdf:first :c-1945750-2737575 ;
+	rdf:rest rdf:nil .
+
+:c-9475966-8122245 a owl:Class ;
+	rdfs:label "النشاط الفني"@ar ;
+	rdfs:subClassOf :c-1374445-6980813 , _:node1e059uvnrx212 .
+
+_:node1e059uvnrx212 a owl:Restriction ;
+	owl:onProperty :op-2934030-6684229 ;
+	owl:someValuesFrom :c-6328900-7685861 .
+
+:c-9517517-2411566 a owl:Class ;
+	rdfs:label "محاضر"@ar ;
+	owl:equivalentClass _:node1e059uvnrx213 .
+
+_:node1e059uvnrx213 a owl:Restriction ;
+	owl:onProperty :op-4894274-2500891 ;
+	owl:someValuesFrom :c-5127300-9561764 .
+
+:c-9517517-2411566 rdfs:subClassOf :c-8524806-1584249 , _:node1e059uvnrx214 .
+
+_:node1e059uvnrx214 a owl:Restriction ;
+	owl:onProperty :op-3128289-0377224 ;
+	owl:someValuesFrom :c-1153527-2178736 .
+
+:c-9641892-8294838 a owl:Class ;
+	rdfs:label "منطقة زمنية"@ar .
+
+:c-9647689-2199458 a owl:Class ;
+	rdfs:label "رسوم التسجيل للعضو"@ar ;
+	rdfs:subClassOf :c-3562971-9248149 , _:node1e059uvnrx215 .
+
+_:node1e059uvnrx215 a owl:Restriction ;
+	owl:onProperty :op-2565948-6314851 ;
+	owl:someValuesFrom :c-3404415-7141875 .
+
+:c-9734507-1022781 a owl:Class ;
+	rdfs:label "نشاط"@ar .
+
+:c-9803057-0865391 a owl:Class ;
+	rdfs:label "لاشيئ"@ar .
+
+:c-9832284-1706443 a owl:Class ;
+	rdfs:label "الموعد النهائي لحجز الفنادق"@ar ;
+	rdfs:subClassOf :c-6802365-6090141 .
+
+:c-9954729-9347919 a owl:Class ;
+	rdfs:label "نشاط تأجير سيارة"@ar ;
+	rdfs:subClassOf :c-0653399-3994975 , _:node1e059uvnrx216 .
+
+_:node1e059uvnrx216 a owl:Restriction ;
+	owl:onProperty :op-9446762-6687141 ;
+	owl:someValuesFrom :c-2015831-8588846 .
+
+iasted:Cancun a owl:NamedIndividual , :c-7706972-1723925 .
+
+iasted:Chichen_Itza a owl:NamedIndividual , :c-7397025-5345675 .
+
+iasted:Mexico a owl:NamedIndividual , :c-4988957-3112983 .
+
+iasted:peso a owl:NamedIndividual , :c-2815832-4578186 .

@@ -1,0 +1,936 @@
+@prefix : <http://conference_ar#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://conference_ar> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+:op-0050931-1620309 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "تم تسنيد افضلية المراجعة"@ar ;
+	rdfs:range :c-6051142-3591148 ;
+	rdfs:domain _:node1e059t7iex1 .
+
+_:node1e059t7iex1 a owl:Class ;
+	owl:unionOf _:node1e059t7iex2 .
+
+_:node1e059t7iex2 rdf:first :c-3316438-2919803 ;
+	rdf:rest _:node1e059t7iex3 .
+
+_:node1e059t7iex3 rdf:first :c-4142413-0988847 ;
+	rdf:rest rdf:nil .
+
+:op-0667227-0310406 a owl:ObjectProperty ;
+	rdfs:label "لديه ورشة عمل"@ar ;
+	rdfs:domain :c-4229534-4677341 ;
+	rdfs:range :c-9936103-5863237 ;
+	rdfs:subPropertyOf :op-4569759-6954882 .
+
+:op-0859830-8472153 a owl:ObjectProperty ;
+	rdfs:label "لديه الكاتب"@ar ;
+	rdfs:domain :c-0125934-1416375 ;
+	rdfs:range :c-3019441-0237831 .
+
+:op-1163452-6459433 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه موضوع أو مساهمة مرسلة"@ar ;
+	rdfs:domain :c-6051142-3591148 ;
+	owl:inverseOf :op-0050931-1620309 ;
+	rdfs:range _:node1e059t7iex4 .
+
+_:node1e059t7iex4 a owl:Class ;
+	owl:unionOf _:node1e059t7iex5 .
+
+_:node1e059t7iex5 rdf:first :c-3316438-2919803 ;
+	rdf:rest _:node1e059t7iex6 .
+
+_:node1e059t7iex6 rdf:first :c-4142413-0988847 ;
+	rdf:rest rdf:nil .
+
+:op-1651550-2110707 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "هو رئيس الجنة"@ar ;
+	rdfs:range :c-4325776-1848358 ;
+	rdfs:domain :c-7365880-4475104 ;
+	rdfs:subPropertyOf :op-8895466-6130272 .
+
+:op-1672380-3140089 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه رئيس اللجنة"@ar ;
+	rdfs:domain :c-4325776-1848358 ;
+	rdfs:range :c-7365880-4475104 ;
+	owl:inverseOf :op-1651550-2110707 ;
+	rdfs:subPropertyOf :op-8097490-8567916 .
+
+:op-1723042-5136628 a owl:ObjectProperty ;
+	rdfs:label "لديه موضوع ورشة عمل"@ar ;
+	rdfs:range :c-4142413-0988847 ;
+	rdfs:domain :c-9908694-8119394 ;
+	owl:inverseOf :op-7611313-9367283 .
+
+:op-1795460-4732678 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "الجنة العلمية للمؤتمرهي"@ar ;
+	rdfs:range :c-3698535-6373807 ;
+	rdfs:domain :c-4229534-4677341 ;
+	rdfs:subPropertyOf :op-6553737-6316116 .
+
+:op-2010713-7748951 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "ينشر"@ar ;
+	rdfs:domain :c-2516973-9440788 ;
+	rdfs:range :c-3759244-0340516 .
+
+:op-2067232-5525126 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "هو الجزء الأول من"@ar ;
+	rdfs:domain :c-8113141-9235245 ;
+	rdfs:range _:node1e059t7iex7 .
+
+_:node1e059t7iex7 a owl:Class ;
+	owl:unionOf _:node1e059t7iex8 .
+
+_:node1e059t7iex8 rdf:first :c-0706106-6101935 ;
+	rdf:rest _:node1e059t7iex9 .
+
+_:node1e059t7iex9 rdf:first :c-8219515-5240767 ;
+	rdf:rest _:node1e059t7iex10 .
+
+_:node1e059t7iex10 rdf:first :c-8611158-0499105 ;
+	rdf:rest rdf:nil .
+
+:op-2261816-9778569 a owl:ObjectProperty ;
+	rdfs:label "مقدم من قبل"@ar ;
+	rdfs:range :c-1296813-5502022 ;
+	rdfs:domain :c-8219515-5240767 .
+
+:op-2332354-7970500 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "مساهمة المراجعة"@ar ;
+	rdfs:range :c-4457351-3163362 ;
+	rdfs:domain :c-7340991-9297285 .
+
+:op-2899663-3780809 a owl:ObjectProperty ;
+	rdfs:label "لديه رئيس مشترك لللجنة"@ar ;
+	rdfs:range :c-2288869-8161021 ;
+	rdfs:domain :c-4325776-1848358 ;
+	owl:inverseOf :op-7672386-9690720 ;
+	rdfs:subPropertyOf :op-8097490-8567916 .
+
+:op-2975099-0121934 a owl:ObjectProperty ;
+	rdfs:label "يساهم في المؤتمر"@ar ;
+	rdfs:range :c-0125934-1416375 ;
+	rdfs:domain :c-3019441-0237831 ;
+	owl:inverseOf :op-0859830-8472153 .
+
+:op-3207435-7197794 a owl:ObjectProperty ;
+	rdfs:label "افضلية أو خبرة المراجعة هي"@ar ;
+	rdfs:domain :c-0175211-8599567 ;
+	rdfs:range _:node1e059t7iex11 .
+
+_:node1e059t7iex11 a owl:Class ;
+	owl:unionOf _:node1e059t7iex12 .
+
+_:node1e059t7iex12 rdf:first :c-6051142-3591148 ;
+	rdf:rest _:node1e059t7iex13 .
+
+_:node1e059t7iex13 rdf:first :c-9575593-9258464 ;
+	rdf:rest rdf:nil .
+
+:op-3345621-1490145 a owl:ObjectProperty ;
+	rdfs:label "مدعو من المراجع"@ar ;
+	rdfs:domain :c-0175211-8599567 ;
+	rdfs:range :c-0175211-8599567 .
+
+:op-3425417-4240485 a owl:ObjectProperty ;
+	rdfs:label "يجعل العرض التقديمي"@ar ;
+	rdfs:domain :c-1296813-5502022 ;
+	rdfs:range :c-8219515-5240767 ;
+	owl:inverseOf :op-2261816-9778569 .
+
+:op-3455971-7016912 a owl:ObjectProperty ;
+	rdfs:label "لديه البرنامج التعليمي"@ar ;
+	rdfs:domain :c-4229534-4677341 ;
+	rdfs:range :c-8032682-8401452 ;
+	rdfs:subPropertyOf :op-4569759-6954882 .
+
+:op-3505736-6968438 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "منشر المحضر هو"@ar ;
+	rdfs:range :c-2516973-9440788 ;
+	rdfs:domain :c-3759244-0340516 ;
+	owl:inverseOf :op-2010713-7748951 .
+
+:op-3547840-6311017 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "اللجنة المنظمة للمؤتمر هي"@ar ;
+	rdfs:range :c-1265118-1481631 ;
+	rdfs:domain :c-4229534-4677341 ;
+	rdfs:subPropertyOf :op-6553737-6316116 .
+
+:op-3572034-2129979 a owl:ObjectProperty ;
+	rdfs:label "هي لجنة المؤتمر"@ar ;
+	rdfs:range :c-4229534-4677341 ;
+	rdfs:domain :c-4325776-1848358 .
+
+:op-4569759-6954882 a owl:ObjectProperty ;
+	rdfs:label "لديه جزء"@ar ;
+	rdfs:domain :c-4229534-4677341 ;
+	rdfs:range :c-9908694-8119394 ;
+	owl:inverseOf :op-7005478-3016968 .
+
+:op-4805438-4994817 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "تاريخ مهم من سلسلة المؤتمر"@ar ;
+	rdfs:domain :c-4056763-7951670 ;
+	rdfs:range :c-4229534-4677341 .
+
+:op-5451558-8820481 a owl:ObjectProperty ;
+	rdfs:label "مرسلة إلى"@ar ;
+	rdfs:range :c-4229534-4677341 ;
+	rdfs:domain :c-7923834-2744803 ;
+	owl:inverseOf :op-9425392-9049736 .
+
+:op-5621006-3207504 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "لديه خبرة المراجعة"@ar ;
+	rdfs:domain :c-3316438-2919803 ;
+	rdfs:range :c-9575593-9258464 .
+
+:op-5677063-1514601 a owl:ObjectProperty ;
+	rdfs:label "لديه المسار"@ar ;
+	rdfs:domain :c-4229534-4677341 ;
+	rdfs:range :c-6863092-2727817 ;
+	rdfs:subPropertyOf :op-4569759-6954882 .
+
+:op-5834938-9210422 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه مساهمة مرسلة"@ar ;
+	rdfs:range :c-3316438-2919803 ;
+	rdfs:domain :c-9575593-9258464 ;
+	owl:inverseOf :op-5621006-3207504 .
+
+:op-6104063-3007414 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "اللجنة التوجيهية للمؤتمر هي"@ar ;
+	rdfs:domain :c-4229534-4677341 ;
+	rdfs:range :c-4961675-7251726 ;
+	rdfs:subPropertyOf :op-6553737-6316116 ;
+	owl:inverseOf :op-7465433-8972767 .
+
+:op-6194664-1059537 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه ملخص"@ar ;
+	rdfs:range :c-8113141-9235245 ;
+	owl:inverseOf :op-2067232-5525126 ;
+	rdfs:domain _:node1e059t7iex14 .
+
+_:node1e059t7iex14 a owl:Class ;
+	owl:unionOf _:node1e059t7iex15 .
+
+_:node1e059t7iex15 rdf:first :c-0706106-6101935 ;
+	rdf:rest _:node1e059t7iex16 .
+
+_:node1e059t7iex16 rdf:first :c-8219515-5240767 ;
+	rdf:rest _:node1e059t7iex17 .
+
+_:node1e059t7iex17 rdf:first :c-8611158-0499105 ;
+	rdf:rest rdf:nil .
+
+:op-6237011-0204548 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "انها اللجنة العلمية للمؤتمر"@ar ;
+	rdfs:domain :c-3698535-6373807 ;
+	rdfs:range :c-4229534-4677341 ;
+	owl:inverseOf :op-1795460-4732678 ;
+	rdfs:subPropertyOf :op-3572034-2129979 .
+
+:op-6279377-5941054 a owl:ObjectProperty ;
+	rdfs:label "يدعو المراجع المشترك"@ar ;
+	rdfs:range :c-0175211-8599567 ;
+	rdfs:domain :c-0175211-8599567 ;
+	owl:inverseOf :op-3345621-1490145 .
+
+:op-6314258-3896989 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "لديه مراجعة"@ar ;
+	rdfs:domain :c-4457351-3163362 ;
+	rdfs:range :c-7340991-9297285 ;
+	owl:inverseOf :op-2332354-7970500 .
+
+:op-6553737-6316116 a owl:ObjectProperty ;
+	rdfs:label "لجنة المؤتمر هي"@ar ;
+	rdfs:domain :c-4229534-4677341 ;
+	rdfs:range :c-4325776-1848358 ;
+	owl:inverseOf :op-3572034-2129979 .
+
+:op-7005478-3016968 a owl:ObjectProperty ;
+	rdfs:label "جزء من المؤتمر"@ar ;
+	rdfs:range :c-4229534-4677341 ;
+	rdfs:domain :c-9908694-8119394 .
+
+:op-7465433-8972767 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "اللجنة التوجيهية للمؤتمر"@ar ;
+	rdfs:range :c-4229534-4677341 ;
+	rdfs:domain :c-4961675-7251726 ;
+	rdfs:subPropertyOf :op-3572034-2129979 .
+
+:op-7611313-9367283 a owl:ObjectProperty ;
+	rdfs:label "موضوع هو جزء من مؤتمر"@ar ;
+	rdfs:domain :c-4142413-0988847 ;
+	rdfs:range :c-9908694-8119394 .
+
+:op-7667085-9739663 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "اللجنة المنظمة للمؤتمر"@ar ;
+	rdfs:domain :c-1265118-1481631 ;
+	rdfs:range :c-4229534-4677341 ;
+	owl:inverseOf :op-3547840-6311017 ;
+	rdfs:subPropertyOf :op-3572034-2129979 .
+
+:op-7672386-9690720 a owl:ObjectProperty ;
+	rdfs:label "هو الرئيس المشترك للجنة"@ar ;
+	rdfs:domain :c-2288869-8161021 ;
+	rdfs:range :c-4325776-1848358 ;
+	rdfs:subPropertyOf :op-8895466-6130272 .
+
+:op-7940649-7890478 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "انه رئيس ورشة عمل ل"@ar ;
+	rdfs:domain :c-9079156-2235573 ;
+	rdfs:range :c-9908694-8119394 ;
+	owl:inverseOf :op-8393063-5114199 .
+
+:op-8097490-8567916 a owl:ObjectProperty ;
+	rdfs:label "لديه عضو"@ar ;
+	rdfs:domain :c-4325776-1848358 ;
+	rdfs:range :c-9955100-5659862 ;
+	owl:inverseOf :op-8895466-6130272 .
+
+:op-8393063-5114199 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه رئيس ورشة عمل"@ar ;
+	rdfs:range :c-9079156-2235573 ;
+	rdfs:domain :c-9908694-8119394 .
+
+:op-8826018-1765852 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه تاريخ مهم"@ar ;
+	rdfs:range :c-4056763-7951670 ;
+	rdfs:domain :c-4229534-4677341 ;
+	owl:inverseOf :op-4805438-4994817 .
+
+:op-8830219-5799635 a owl:ObjectProperty ;
+	rdfs:label "أفضلية أو خبرة المراجع"@ar ;
+	rdfs:range :c-0175211-8599567 ;
+	owl:inverseOf :op-3207435-7197794 ;
+	rdfs:domain _:node1e059t7iex18 .
+
+_:node1e059t7iex18 a owl:Class ;
+	owl:unionOf _:node1e059t7iex19 .
+
+_:node1e059t7iex19 rdf:first :c-6051142-3591148 ;
+	rdf:rest _:node1e059t7iex20 .
+
+_:node1e059t7iex20 rdf:first :c-9575593-9258464 ;
+	rdf:rest rdf:nil .
+
+:op-8895466-6130272 a owl:ObjectProperty ;
+	rdfs:label "هو عضو في"@ar ;
+	rdfs:range :c-4325776-1848358 ;
+	rdfs:domain :c-9955100-5659862 .
+
+:op-9425392-9049736 a owl:ObjectProperty ;
+	rdfs:label "لديه مساهمة"@ar ;
+	rdfs:domain :c-4229534-4677341 ;
+	rdfs:range :c-7923834-2744803 .
+
+:op-9793859-8957410 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "موضوع مرتبط بافضلية المراجعة"@ar ;
+	rdfs:domain :c-4142413-0988847 ;
+	rdfs:range :c-6051142-3591148 .
+
+:ent-1251799-3558908 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "ISBN محضر"@ar ;
+	rdfs:domain :c-3759244-0340516 ;
+	rdfs:range xsd:string .
+
+:ent-2005464-5472532 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه اللقب"@ar ;
+	rdfs:domain :c-3019441-0237831 ;
+	rdfs:range xsd:string .
+
+:ent-2279361-3817737 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "اليوم محطة"@ar ;
+	rdfs:domain :c-4056763-7951670 ;
+	rdfs:range xsd:date .
+
+:ent-2605863-3716532 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "درجة تفضيل مراجعة"@ar ;
+	rdfs:domain :c-6051142-3591148 ;
+	rdfs:range xsd:int .
+
+:ent-2819966-8261113 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "تاريخ الارسال بعد إجراء التعديل"@ar ;
+	rdfs:domain :c-4056763-7951670 ;
+	rdfs:range xsd:date .
+
+:ent-2908810-3077969 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "تاريخ ارسال البحث كامل"@ar ;
+	rdfs:domain :c-4056763-7951670 ;
+	rdfs:range xsd:date .
+
+:ent-4154865-2227806 a owl:DatatypeProperty ;
+	rdfs:label "لديه الاسم الأول"@ar ;
+	rdfs:domain :c-3019441-0237831 ;
+	rdfs:range xsd:string .
+
+:ent-4490299-5270072 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "موقع شبكة الإنترنت العنكبوتية للمؤتمرهو"@ar ;
+	rdfs:domain :c-2970345-8474794 ;
+	rdfs:range xsd:string .
+
+:ent-4676496-8517549 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه الجنس"@ar ;
+	rdfs:domain :c-3019441-0237831 ;
+	rdfs:range _:node1e059t7iex21 .
+
+_:node1e059t7iex21 a rdfs:Datatype ;
+	owl:oneOf _:node1e059t7iex22 .
+
+_:node1e059t7iex22 a rdf:List ;
+	rdf:first "female"^^xsd:string ;
+	rdf:rest _:node1e059t7iex23 .
+
+_:node1e059t7iex23 a rdf:List ;
+	rdf:first "male"^^xsd:string ;
+	rdf:rest rdf:nil .
+
+:ent-5192793-6682628 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "رقم حجم المحضر"@ar ;
+	rdfs:domain :c-3759244-0340516 ;
+	rdfs:range xsd:int .
+
+:ent-5814274-0172653 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "درجة خبرة المراجع"@ar ;
+	rdfs:domain :c-9575593-9258464 ;
+	rdfs:range _:node1e059t7iex24 .
+
+_:node1e059t7iex24 a rdfs:Datatype ;
+	owl:oneOf _:node1e059t7iex25 .
+
+_:node1e059t7iex25 a rdf:List ;
+	rdf:first "high"^^xsd:string ;
+	rdf:rest _:node1e059t7iex26 .
+
+_:node1e059t7iex26 a rdf:List ;
+	rdf:first "low"^^xsd:string ;
+	rdf:rest _:node1e059t7iex27 .
+
+_:node1e059t7iex27 a rdf:List ;
+	rdf:first "medium"^^xsd:string ;
+	rdf:rest _:node1e059t7iex28 .
+
+_:node1e059t7iex28 a rdf:List ;
+	rdf:first "very high"^^xsd:string ;
+	rdf:rest rdf:nil .
+
+:ent-6126131-1575836 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه اسم"@ar ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e059t7iex29 .
+
+_:node1e059t7iex29 a owl:Class ;
+	owl:unionOf _:node1e059t7iex30 .
+
+_:node1e059t7iex30 rdf:first :c-2516973-9440788 ;
+	rdf:rest _:node1e059t7iex31 .
+
+_:node1e059t7iex31 rdf:first :c-3759244-0340516 ;
+	rdf:rest _:node1e059t7iex32 .
+
+_:node1e059t7iex32 rdf:first :c-4142413-0988847 ;
+	rdf:rest _:node1e059t7iex33 .
+
+_:node1e059t7iex33 rdf:first :c-9851284-7234772 ;
+	rdf:rest _:node1e059t7iex34 .
+
+_:node1e059t7iex34 rdf:first :c-9908694-8119394 ;
+	rdf:rest rdf:nil .
+
+:ent-6420032-7417077 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "تاريخ ارسال الملخصات"@ar ;
+	rdfs:domain :c-4056763-7951670 ;
+	rdfs:range xsd:date .
+
+:ent-7051573-7621990 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "تاريخ البداية"@ar ;
+	rdfs:domain :c-4056763-7951670 ;
+	rdfs:range xsd:date .
+
+:ent-7147486-5449161 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "نشرت بتاريخ"@ar ;
+	rdfs:domain :c-0125934-1416375 ;
+	rdfs:range xsd:date .
+
+:ent-7568172-8708051 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "تاريخ إخطار القبول"@ar ;
+	rdfs:domain :c-4056763-7951670 ;
+	rdfs:range xsd:date .
+
+:ent-8214430-7029779 a owl:DatatypeProperty ;
+	rdfs:label "موقع المؤتمر"@ar ;
+	rdfs:domain :c-4229534-4677341 ;
+	rdfs:range xsd:string .
+
+:ent-9864620-1948853 a owl:DatatypeProperty ;
+	rdfs:label "لديه بريد الكتروني"@ar ;
+	rdfs:domain :c-3019441-0237831 ;
+	rdfs:range xsd:string .
+
+:c-0125934-1416375 a owl:Class ;
+	rdfs:label "وثيقة المؤتمر"@ar .
+
+:c-0175211-8599567 a owl:Class ;
+	rdfs:label "المراجع"@ar ;
+	rdfs:subClassOf :c-3019441-0237831 .
+
+:c-0626471-1797386 a owl:Class ;
+	rdfs:label "نسخة جاهزة للتصوير مساهمة"@ar ;
+	rdfs:subClassOf :c-2337113-9613630 .
+
+:c-0706106-6101935 a owl:Class ;
+	rdfs:label "ملصق"@ar ;
+	rdfs:subClassOf :c-7923834-2744803 ;
+	owl:disjointWith :c-3327332-2902048 , :c-4992494-1216173 .
+
+:c-0764813-4496194 a owl:Class ;
+	rdfs:label "منظم"@ar ;
+	rdfs:subClassOf :c-6138490-3576322 , _:node1e059t7iex35 .
+
+_:node1e059t7iex35 a owl:Class ;
+	owl:unionOf _:node1e059t7iex36 .
+
+_:node1e059t7iex36 rdf:first :c-9046016-5621296 ;
+	rdf:rest _:node1e059t7iex37 .
+
+_:node1e059t7iex37 rdf:first :c-9955100-5659862 ;
+	rdf:rest rdf:nil .
+
+:c-1265118-1481631 a owl:Class ;
+	rdfs:label "اللجنة المنظمة"@ar ;
+	rdfs:subClassOf :c-4325776-1848358 ;
+	owl:disjointWith :c-3698535-6373807 , :c-4961675-7251726 .
+
+:c-1296813-5502022 a owl:Class ;
+	rdfs:label "مشارك ايجابي في المؤتمر"@ar ;
+	rdfs:subClassOf :c-2718436-5859788 , :c-9580737-0090816 , _:node1e059t7iex38 .
+
+_:node1e059t7iex38 a owl:Class ;
+	owl:unionOf _:node1e059t7iex39 .
+
+_:node1e059t7iex39 rdf:first :c-1807363-8312901 ;
+	rdf:rest _:node1e059t7iex40 .
+
+_:node1e059t7iex40 rdf:first :c-5529754-6192352 ;
+	rdf:rest rdf:nil .
+
+:c-1296813-5502022 owl:disjointWith :c-4150917-3972000 .
+
+:c-1803328-8133276 a owl:Class ;
+	rdfs:label "لاشيء"@ar .
+
+:c-1807363-8312901 a owl:Class ;
+	rdfs:label "متحدث المدعو"@ar ;
+	owl:equivalentClass _:node1e059t7iex41 .
+
+_:node1e059t7iex41 a owl:Restriction ;
+	owl:onProperty :op-2975099-0121934 ;
+	owl:someValuesFrom :c-4992494-1216173 .
+
+:c-1807363-8312901 rdfs:subClassOf :c-2718436-5859788 .
+
+:c-2288869-8161021 a owl:Class ;
+	rdfs:label "الرئيس المشترك"@ar ;
+	owl:equivalentClass _:node1e059t7iex42 .
+
+_:node1e059t7iex42 a owl:Restriction ;
+	owl:onProperty :op-7672386-9690720 ;
+	owl:someValuesFrom :c-4325776-1848358 .
+
+:c-2288869-8161021 rdfs:subClassOf :c-9955100-5659862 .
+
+:c-2304544-3010010 a owl:Class ;
+	rdfs:label "معلومات للمشاركين"@ar ;
+	rdfs:subClassOf :c-0125934-1416375 .
+
+:c-2337113-9613630 a owl:Class ;
+	rdfs:label "مساهمة مقبولة"@ar ;
+	rdfs:subClassOf :c-4457351-3163362 ;
+	owl:disjointWith :c-9000252-9592999 .
+
+:c-2516973-9440788 a owl:Class ;
+	rdfs:label "الناشر"@ar .
+
+:c-2664096-5719860 a owl:Class ;
+	rdfs:label "المؤلف الأول للمساهمة"@ar ;
+	rdfs:subClassOf :c-5529754-6192352 ;
+	owl:disjointWith :c-5866013-1545087 .
+
+:c-2696383-8112981 a owl:Class ;
+	rdfs:label "مساهمة خطية"@ar ;
+	rdfs:subClassOf :c-7923834-2744803 , _:node1e059t7iex43 .
+
+_:node1e059t7iex43 a owl:Class ;
+	owl:unionOf _:node1e059t7iex44 .
+
+_:node1e059t7iex44 rdf:first :c-0706106-6101935 ;
+	rdf:rest _:node1e059t7iex45 .
+
+_:node1e059t7iex45 rdf:first :c-3327332-2902048 ;
+	rdf:rest rdf:nil .
+
+:c-2718436-5859788 a owl:Class ;
+	rdfs:label "مساهمة للمؤتمر"@ar ;
+	rdfs:subClassOf :c-3019441-0237831 .
+
+:c-2967846-2281939 a owl:Class ;
+	rdfs:label "مقدم الطلب مسجل"@ar ;
+	rdfs:subClassOf :c-8991961-5349722 .
+
+:c-2970345-8474794 a owl:Class ;
+	rdfs:label "شبكة الإنترنت العنكبوتية للمؤتمر"@ar ;
+	rdfs:subClassOf :c-0125934-1416375 .
+
+:c-3019441-0237831 a owl:Class ;
+	rdfs:label "شخص"@ar .
+
+:c-3316438-2919803 a owl:Class ;
+	rdfs:label "مساهمة مرسلة"@ar ;
+	rdfs:subClassOf :c-2696383-8112981 , _:node1e059t7iex46 .
+
+_:node1e059t7iex46 a owl:Class ;
+	owl:unionOf _:node1e059t7iex47 .
+
+_:node1e059t7iex47 rdf:first :c-0706106-6101935 ;
+	rdf:rest _:node1e059t7iex48 .
+
+_:node1e059t7iex48 rdf:first :c-3327332-2902048 ;
+	rdf:rest rdf:nil .
+
+:c-3327332-2902048 a owl:Class ;
+	rdfs:label "مساهمة منتظمة"@ar ;
+	owl:equivalentClass _:node1e059t7iex49 .
+
+_:node1e059t7iex49 a owl:Class ;
+	owl:unionOf _:node1e059t7iex50 .
+
+_:node1e059t7iex50 rdf:first :c-3902476-0824732 ;
+	rdf:rest _:node1e059t7iex51 .
+
+_:node1e059t7iex51 rdf:first :c-8611158-0499105 ;
+	rdf:rest rdf:nil .
+
+:c-3327332-2902048 rdfs:subClassOf :c-2696383-8112981 ;
+	owl:disjointWith :c-4992494-1216173 .
+
+:c-3698535-6373807 a owl:Class ;
+	rdfs:label "اللجنة العلمية"@ar ;
+	rdfs:subClassOf :c-4325776-1848358 ;
+	owl:disjointWith :c-4961675-7251726 .
+
+:c-3759244-0340516 a owl:Class ;
+	rdfs:label "محضر المؤتمر"@ar .
+
+:c-3902476-0824732 a owl:Class ;
+	rdfs:label "ملخص موسع"@ar ;
+	rdfs:subClassOf :c-3327332-2902048 ;
+	owl:disjointWith :c-8611158-0499105 .
+
+:c-4056763-7951670 a owl:Class ;
+	rdfs:label "تاريخ مهم"@ar .
+
+:c-4142413-0988847 a owl:Class ;
+	rdfs:label "الموضوع"@ar .
+
+:c-4150917-3972000 a owl:Class ;
+	rdfs:label "مشارك السلبي في المؤتمر"@ar ;
+	rdfs:subClassOf :c-9580737-0090816 .
+
+:c-4229534-4677341 a owl:Class ;
+	rdfs:label "سلسله المؤتمر"@ar ;
+	rdfs:subClassOf :c-9851284-7234772 .
+
+:c-4325776-1848358 a owl:Class ;
+	rdfs:label "اللجنة"@ar ;
+	owl:equivalentClass _:node1e059t7iex52 .
+
+_:node1e059t7iex52 a owl:Class ;
+	owl:unionOf _:node1e059t7iex53 .
+
+_:node1e059t7iex53 rdf:first :c-1265118-1481631 ;
+	rdf:rest _:node1e059t7iex54 .
+
+_:node1e059t7iex54 rdf:first :c-3698535-6373807 ;
+	rdf:rest _:node1e059t7iex55 .
+
+_:node1e059t7iex55 rdf:first :c-4961675-7251726 ;
+	rdf:rest rdf:nil .
+
+:c-4457351-3163362 a owl:Class ;
+	rdfs:label "مساهمة مراجعة"@ar ;
+	owl:equivalentClass _:node1e059t7iex56 .
+
+_:node1e059t7iex56 a owl:Class ;
+	owl:unionOf _:node1e059t7iex57 .
+
+_:node1e059t7iex57 rdf:first :c-2337113-9613630 ;
+	rdf:rest _:node1e059t7iex58 .
+
+_:node1e059t7iex58 rdf:first :c-9000252-9592999 ;
+	rdf:rest rdf:nil .
+
+:c-4457351-3163362 rdfs:subClassOf :c-3316438-2919803 .
+
+:c-4961675-7251726 a owl:Class ;
+	rdfs:label "اللجنة التوجيهية"@ar ;
+	rdfs:subClassOf :c-4325776-1848358 .
+
+:c-4992494-1216173 a owl:Class ;
+	rdfs:label "دعت الحديث"@ar ;
+	rdfs:subClassOf :c-8219515-5240767 .
+
+:c-5529754-6192352 a owl:Class ;
+	rdfs:label "كاتب المساهمة"@ar ;
+	owl:equivalentClass _:node1e059t7iex59 .
+
+_:node1e059t7iex59 a owl:Class ;
+	owl:intersectionOf _:node1e059t7iex61 .
+
+_:node1e059t7iex61 rdf:first _:node1e059t7iex60 .
+
+_:node1e059t7iex60 a owl:Class ;
+	owl:unionOf _:node1e059t7iex62 .
+
+_:node1e059t7iex62 rdf:first :c-2664096-5719860 ;
+	rdf:rest _:node1e059t7iex63 .
+
+_:node1e059t7iex63 rdf:first :c-5866013-1545087 ;
+	rdf:rest rdf:nil .
+
+_:node1e059t7iex61 rdf:rest _:node1e059t7iex65 .
+
+_:node1e059t7iex65 rdf:first _:node1e059t7iex64 .
+
+_:node1e059t7iex64 a owl:Restriction ;
+	owl:onProperty :op-2975099-0121934 ;
+	owl:someValuesFrom :c-7923834-2744803 .
+
+_:node1e059t7iex65 rdf:rest rdf:nil .
+
+:c-5529754-6192352 rdfs:subClassOf :c-2718436-5859788 .
+
+:c-5777648-3042243 a owl:Class ;
+	rdfs:label "رسوم من اجل المؤتمر"@ar .
+
+:c-5866013-1545087 a owl:Class ;
+	rdfs:label "الكاتب المشرك في المساهمة"@ar ;
+	rdfs:subClassOf :c-5529754-6192352 .
+
+:c-5964669-0394892 a owl:Class ;
+	rdfs:label "إعلان المؤتمر"@ar ;
+	rdfs:subClassOf :c-0125934-1416375 .
+
+:c-6051142-3591148 a owl:Class ;
+	rdfs:label "افضلية المراجع"@ar ;
+	rdfs:subClassOf :c-6138490-3576322 , _:node1e059t7iex66 .
+
+_:node1e059t7iex66 a owl:Restriction ;
+	owl:onProperty :op-1163452-6459433 ;
+	owl:someValuesFrom _:node1e059t7iex67 .
+
+_:node1e059t7iex67 a owl:Class ;
+	owl:unionOf _:node1e059t7iex68 .
+
+_:node1e059t7iex68 rdf:first :c-3316438-2919803 ;
+	rdf:rest _:node1e059t7iex69 .
+
+_:node1e059t7iex69 rdf:first :c-4142413-0988847 ;
+	rdf:rest rdf:nil .
+
+:c-6051142-3591148 rdfs:subClassOf _:node1e059t7iex70 .
+
+_:node1e059t7iex70 a owl:Restriction ;
+	owl:onProperty :op-8830219-5799635 ;
+	owl:someValuesFrom :c-0175211-8599567 .
+
+:c-6138490-3576322 a owl:Class ;
+	rdfs:label "لاشيء"@ar .
+
+:c-6736337-6165561 a owl:Class ;
+	rdfs:label "طلب مقدم للمؤتمر الذي دفع مؤخرا رسوم المؤتمر"@ar ;
+	rdfs:subClassOf :c-8727034-9492569 ;
+	owl:disjointWith :c-9492774-9575375 .
+
+:c-6863092-2727817 a owl:Class ;
+	rdfs:label "مسار المؤتمر"@ar ;
+	rdfs:subClassOf :c-9908694-8119394 ;
+	owl:disjointWith :c-8032682-8401452 , :c-9936103-5863237 .
+
+:c-7203821-2802871 a owl:Class ;
+	rdfs:label "دعوة للمشاركة"@ar ;
+	rdfs:subClassOf :c-0125934-1416375 .
+
+:c-7340991-9297285 a owl:Class ;
+	rdfs:label "مراجعة"@ar ;
+	rdfs:subClassOf :c-0125934-1416375 , _:node1e059t7iex71 .
+
+_:node1e059t7iex71 a owl:Restriction ;
+	owl:onProperty :op-0859830-8472153 ;
+	owl:allValuesFrom :c-0175211-8599567 .
+
+:c-7365880-4475104 a owl:Class ;
+	rdfs:label "رئيس"@ar ;
+	owl:equivalentClass _:node1e059t7iex72 .
+
+_:node1e059t7iex72 a owl:Restriction ;
+	owl:onProperty :op-1651550-2110707 ;
+	owl:someValuesFrom :c-4325776-1848358 .
+
+:c-7365880-4475104 rdfs:subClassOf :c-9955100-5659862 .
+
+:c-7572666-5228878 a owl:Class ;
+	rdfs:label "الدعوة لتقديم الأبحاث"@ar ;
+	rdfs:subClassOf :c-0125934-1416375 .
+
+:c-7923834-2744803 a owl:Class ;
+	rdfs:label "مساهمة المؤتمر"@ar ;
+	owl:equivalentClass _:node1e059t7iex73 .
+
+_:node1e059t7iex73 a owl:Class ;
+	owl:unionOf _:node1e059t7iex74 .
+
+_:node1e059t7iex74 rdf:first :c-2696383-8112981 ;
+	rdf:rest _:node1e059t7iex75 .
+
+_:node1e059t7iex75 rdf:first :c-8219515-5240767 ;
+	rdf:rest rdf:nil .
+
+:c-7923834-2744803 owl:equivalentClass _:node1e059t7iex76 .
+
+_:node1e059t7iex76 a owl:Class ;
+	owl:unionOf _:node1e059t7iex77 .
+
+_:node1e059t7iex77 rdf:first :c-0706106-6101935 ;
+	rdf:rest _:node1e059t7iex78 .
+
+_:node1e059t7iex78 rdf:first :c-3327332-2902048 ;
+	rdf:rest _:node1e059t7iex79 .
+
+_:node1e059t7iex79 rdf:first :c-4992494-1216173 ;
+	rdf:rest rdf:nil .
+
+:c-7923834-2744803 rdfs:subClassOf :c-0125934-1416375 .
+
+:c-8032682-8401452 a owl:Class ;
+	rdfs:label "البرنامج التعليمي"@ar ;
+	rdfs:subClassOf :c-9908694-8119394 ;
+	owl:disjointWith :c-9936103-5863237 .
+
+:c-8113141-9235245 a owl:Class ;
+	rdfs:label "الملخص"@ar ;
+	rdfs:subClassOf :c-3902476-0824732 .
+
+:c-8219515-5240767 a owl:Class ;
+	rdfs:label "العرض التقديمي"@ar ;
+	rdfs:subClassOf :c-7923834-2744803 .
+
+:c-8611158-0499105 a owl:Class ;
+	rdfs:label "البحث"@ar ;
+	rdfs:subClassOf :c-3327332-2902048 .
+
+:c-8727034-9492569 a owl:Class ;
+	rdfs:label "طلب مقدم للمؤتمر الذين دفعوا رسوم المؤتمر"@ar ;
+	owl:equivalentClass _:node1e059t7iex80 .
+
+_:node1e059t7iex80 a owl:Class ;
+	owl:unionOf _:node1e059t7iex81 .
+
+_:node1e059t7iex81 rdf:first :c-6736337-6165561 ;
+	rdf:rest _:node1e059t7iex82 .
+
+_:node1e059t7iex82 rdf:first :c-9492774-9575375 ;
+	rdf:rest rdf:nil .
+
+:c-8727034-9492569 rdfs:subClassOf :c-2967846-2281939 .
+
+:c-8991961-5349722 a owl:Class ;
+	rdfs:label "طلب مقدم للمؤتمر"@ar ;
+	rdfs:subClassOf :c-3019441-0237831 .
+
+:c-9000252-9592999 a owl:Class ;
+	rdfs:label "مساهمة مرفوضة"@ar ;
+	rdfs:subClassOf :c-4457351-3163362 .
+
+:c-9046016-5621296 a owl:Class ;
+	rdfs:label "المنظمة"@ar .
+
+:c-9079156-2235573 a owl:Class ;
+	rdfs:label "رئيس مسار ورشة العمل"@ar ;
+	owl:equivalentClass _:node1e059t7iex83 .
+
+_:node1e059t7iex83 a owl:Restriction ;
+	owl:onProperty :op-7940649-7890478 ;
+	owl:someValuesFrom _:node1e059t7iex84 .
+
+_:node1e059t7iex84 a owl:Class ;
+	owl:unionOf _:node1e059t7iex85 .
+
+_:node1e059t7iex85 rdf:first :c-6863092-2727817 ;
+	rdf:rest _:node1e059t7iex86 .
+
+_:node1e059t7iex86 rdf:first :c-9936103-5863237 ;
+	rdf:rest rdf:nil .
+
+:c-9079156-2235573 rdfs:subClassOf :c-3019441-0237831 .
+
+:c-9492774-9575375 a owl:Class ;
+	rdfs:label "مقدم الطلب المؤتمر الذي دفع في وقت مبكر رسوم المؤتمر"@ar ;
+	rdfs:subClassOf :c-8727034-9492569 .
+
+:c-9575593-9258464 a owl:Class ;
+	rdfs:label "خبرة المراجع"@ar ;
+	rdfs:subClassOf :c-6138490-3576322 , _:node1e059t7iex87 .
+
+_:node1e059t7iex87 a owl:Restriction ;
+	owl:onProperty :op-5834938-9210422 ;
+	owl:someValuesFrom :c-3316438-2919803 .
+
+:c-9575593-9258464 rdfs:subClassOf _:node1e059t7iex88 .
+
+_:node1e059t7iex88 a owl:Restriction ;
+	owl:onProperty :op-8830219-5799635 ;
+	owl:someValuesFrom :c-0175211-8599567 .
+
+:c-9580737-0090816 a owl:Class ;
+	rdfs:label "المشارك في المؤتمر"@ar ;
+	owl:equivalentClass _:node1e059t7iex89 .
+
+_:node1e059t7iex89 a owl:Class ;
+	owl:unionOf _:node1e059t7iex90 .
+
+_:node1e059t7iex90 rdf:first :c-1296813-5502022 ;
+	rdf:rest _:node1e059t7iex91 .
+
+_:node1e059t7iex91 rdf:first :c-4150917-3972000 ;
+	rdf:rest rdf:nil .
+
+:c-9580737-0090816 rdfs:subClassOf :c-3019441-0237831 .
+
+:c-9851284-7234772 a owl:Class ;
+	rdfs:label "المؤتمر"@ar .
+
+:c-9908694-8119394 a owl:Class ;
+	rdfs:label "جزء من المؤتمر"@ar .
+
+:c-9936103-5863237 a owl:Class ;
+	rdfs:label "ورشة عمل"@ar ;
+	rdfs:subClassOf :c-9908694-8119394 .
+
+:c-9955100-5659862 a owl:Class ;
+	rdfs:label "عضو  في اللجنة"@ar ;
+	owl:equivalentClass _:node1e059t7iex92 .
+
+_:node1e059t7iex92 a owl:Restriction ;
+	owl:onProperty :op-8895466-6130272 ;
+	owl:someValuesFrom :c-4325776-1848358 .
+
+:c-9955100-5659862 rdfs:subClassOf :c-3019441-0237831 .
+
+_:node1e059t7iex93 a :c-1803328-8133276 .
+
+_:node1e059t7iex94 a :c-1803328-8133276 .

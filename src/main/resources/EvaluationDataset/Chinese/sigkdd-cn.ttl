@@ -1,0 +1,419 @@
+@prefix : <http://sigkdd_cn#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://sigkdd_cn> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+:op-0804511-9975279 a owl:ObjectProperty ;
+	rdfs:label "颁奖给"@zh ;
+	rdfs:range :c-9139351-1088451 .
+
+:op-1878293-6952850 a owl:ObjectProperty ;
+	rdfs:label "获奖"@zh ;
+	rdfs:range :c-9139351-1088451 ;
+	rdfs:domain :c-9473695-7319406 .
+
+:op-2614526-9682933 a owl:ObjectProperty ;
+	rdfs:label "承办"@zh ;
+	rdfs:range :c-7544224-7669738 ;
+	rdfs:domain :c-9866774-4029623 .
+
+:op-2729959-9585866 a owl:ObjectProperty ;
+	rdfs:label "由之付费"@zh ;
+	rdfs:range :c-8538442-7237948 ;
+	rdfs:domain :c-9866777-8245519 .
+
+:op-3868745-8681803 a owl:ObjectProperty ;
+	rdfs:label "投稿截止于"@zh ;
+	rdfs:domain :c-1760238-2026128 ;
+	rdfs:range :c-3108779-7650884 .
+
+:op-4120315-9708961 a owl:ObjectProperty ;
+	rdfs:label "直到录用通知日期"@zh ;
+	rdfs:range :c-1201323-4205665 ;
+	rdfs:domain :c-9473695-7319406 .
+
+:op-4418298-6882606 a owl:ObjectProperty ;
+	rdfs:label "制定"@zh ;
+	rdfs:range :c-3108779-7650884 ;
+	rdfs:domain :c-9866774-4029623 .
+
+:op-4674158-2729130 a owl:ObjectProperty ;
+	rdfs:label "投稿"@zh ;
+	rdfs:range :c-1958152-1036217 ;
+	rdfs:domain :c-9473695-7319406 .
+
+:op-4681913-4064138 a owl:ObjectProperty ;
+	rdfs:label "报告"@zh ;
+	rdfs:domain :c-0888882-5885833 ;
+	rdfs:range :c-1760238-2026128 .
+
+:op-4998224-3697653 a owl:ObjectProperty ;
+	rdfs:label "由之承办"@zh ;
+	rdfs:domain :c-7544224-7669738 ;
+	rdfs:range :c-9866774-4029623 ;
+	owl:inverseOf :op-2614526-9682933 .
+
+:op-6311545-9692167 a owl:ObjectProperty ;
+	rdfs:label "制定于"@zh ;
+	rdfs:domain :c-3108779-7650884 ;
+	rdfs:range :c-9866774-4029623 ;
+	owl:inverseOf :op-4418298-6882606 .
+
+:op-6319070-6863545 a owl:ObjectProperty ;
+	rdfs:label "获奖于"@zh ;
+	rdfs:domain :c-9139351-1088451 ;
+	owl:inverseOf :op-0804511-9975279 .
+
+:op-6559092-2778775 a owl:ObjectProperty ;
+	rdfs:label "可位于"@zh ;
+	rdfs:range :c-0166946-2149544 ;
+	rdfs:domain :c-8538442-7237948 .
+
+:op-6652170-8937768 a owl:ObjectProperty ;
+	rdfs:label "付费"@zh ;
+	rdfs:domain :c-8538442-7237948 ;
+	rdfs:range :c-9866777-8245519 ;
+	owl:inverseOf :op-2729959-9585866 .
+
+:op-7151372-9022348 a owl:ObjectProperty ;
+	rdfs:label "寻找"@zh ;
+	rdfs:range :c-6208503-8067001 ;
+	rdfs:domain :c-9866774-4029623 ;
+	owl:inverseOf :op-9287100-6451485 .
+
+:op-9287100-6451485 a owl:ObjectProperty ;
+	rdfs:label "由之寻找"@zh ;
+	rdfs:domain :c-6208503-8067001 ;
+	rdfs:range :c-9866774-4029623 .
+
+:op-9761422-7962942 a owl:ObjectProperty ;
+	rdfs:label "由之作报告"@zh ;
+	rdfs:range :c-0888882-5885833 ;
+	rdfs:domain :c-1760238-2026128 ;
+	owl:inverseOf :op-4681913-4064138 .
+
+:ent-3572091-7276563 a owl:DatatypeProperty ;
+	rdfs:label "赞助者名称"@zh ;
+	rdfs:domain :c-6208503-8067001 ;
+	rdfs:range xsd:string .
+
+:ent-3848181-2696836 a owl:DatatypeProperty ;
+	rdfs:label "会议结束日期"@zh ;
+	rdfs:domain :c-7544224-7669738 ;
+	rdfs:range xsd:dateTime .
+
+:ent-4491082-3867579 a owl:DatatypeProperty ;
+	rdfs:label "日期"@zh ;
+	rdfs:domain :c-3108779-7650884 ;
+	rdfs:range xsd:dateTime .
+
+:ent-5034429-1613349 a owl:DatatypeProperty ;
+	rdfs:label "会议城市"@zh ;
+	rdfs:domain :c-7544224-7669738 ;
+	rdfs:range xsd:string .
+
+:ent-5695074-0269403 a owl:DatatypeProperty ;
+	rdfs:label "价格"@zh ;
+	rdfs:domain :c-9866777-8245519 ;
+	rdfs:range xsd:int .
+
+:ent-5699613-9037229 a owl:DatatypeProperty ;
+	rdfs:label "姓名"@zh ;
+	rdfs:domain :c-8538442-7237948 ;
+	rdfs:range xsd:string .
+
+:ent-5796782-4305642 a owl:DatatypeProperty ;
+	rdfs:label "会议开始日期"@zh ;
+	rdfs:domain :c-7544224-7669738 ;
+	rdfs:range xsd:dateTime .
+
+:ent-7367555-9410533 a owl:DatatypeProperty ;
+	rdfs:label "国籍"@zh ;
+	rdfs:domain :c-8538442-7237948 ;
+	rdfs:range xsd:string .
+
+:ent-8386629-8831499 a owl:DatatypeProperty ;
+	rdfs:label "电子信件"@zh ;
+	rdfs:domain :c-8538442-7237948 ;
+	rdfs:range xsd:string .
+
+:ent-8585056-0959482 a owl:DatatypeProperty ;
+	rdfs:label "货币"@zh ;
+	rdfs:domain :c-9866777-8245519 ;
+	rdfs:range xsd:string .
+
+:ent-9128258-1426932 a owl:DatatypeProperty ;
+	rdfs:label "会议名称"@zh ;
+	rdfs:domain :c-7544224-7669738 ;
+	rdfs:range xsd:string .
+
+:c-0102157-9204021 a owl:Class ;
+	rdfs:label "赞助费"@zh ;
+	rdfs:subClassOf :c-4763597-0840150 .
+
+:c-0166946-2149544 a owl:Class ;
+	rdfs:label "场所"@zh .
+
+:c-0323835-5465307 a owl:Class ;
+	rdfs:label "组织委员会"@zh ;
+	rdfs:subClassOf :c-5857644-6198591 .
+
+:c-0619221-5106131 a owl:Class ;
+	rdfs:label "白金级赞助者"@zh ;
+	rdfs:subClassOf :c-6208503-8067001 .
+
+:c-0888882-5885833 a owl:Class ;
+	rdfs:label "报告人"@zh ;
+	owl:equivalentClass _:node1e05a550qx1 .
+
+_:node1e05a550qx1 a owl:Restriction ;
+	owl:onProperty :op-4681913-4064138 ;
+	owl:someValuesFrom :c-1760238-2026128 .
+
+:c-0888882-5885833 rdfs:subClassOf :c-8538442-7237948 .
+
+:c-1201323-4205665 a owl:Class ;
+	rdfs:label "录用论文作者通知截止日期"@zh ;
+	rdfs:subClassOf :c-3108779-7650884 .
+
+:c-1332914-3538677 a owl:Class ;
+	rdfs:label "网站管理员"@zh ;
+	rdfs:subClassOf :c-2250002-9536900 .
+
+:c-1760238-2026128 a owl:Class ;
+	rdfs:label "文件"@zh .
+
+:c-1958152-1036217 a owl:Class ;
+	rdfs:label "论文"@zh ;
+	owl:equivalentClass _:node1e05a550qx2 .
+
+_:node1e05a550qx2 a owl:Restriction ;
+	owl:onProperty :op-3868745-8681803 ;
+	owl:someValuesFrom :c-2970361-5284654 .
+
+:c-1958152-1036217 rdfs:subClassOf :c-1760238-2026128 .
+
+:c-2066563-8344853 a owl:Class ;
+	rdfs:label "论文作者"@zh ;
+	rdfs:subClassOf :c-9473695-7319406 , _:node1e05a550qx3 .
+
+_:node1e05a550qx3 a owl:Restriction ;
+	owl:onProperty :op-0804511-9975279 ;
+	owl:someValuesFrom :c-7276768-4508167 .
+
+:c-2066563-8344853 rdfs:subClassOf _:node1e05a550qx4 .
+
+_:node1e05a550qx4 a owl:Restriction ;
+	owl:onProperty :op-0804511-9975279 ;
+	owl:someValuesFrom :c-6560241-7801494 .
+
+:c-2169037-6676373 a owl:Class ;
+	rdfs:label "宾馆"@zh ;
+	rdfs:subClassOf :c-0166946-2149544 .
+
+:c-2208034-6676549 a owl:Class ;
+	rdfs:label "程序委员会成员"@zh ;
+	rdfs:subClassOf :c-2250002-9536900 .
+
+:c-2250002-9536900 a owl:Class ;
+	rdfs:label "组织者"@zh ;
+	rdfs:subClassOf :c-8538442-7237948 .
+
+:c-2746851-0911960 a owl:Class ;
+	rdfs:label "SIGMOD成员注册费"@zh ;
+	rdfs:subClassOf :c-9866777-8245519 .
+
+:c-2856234-5129725 a owl:Class ;
+	rdfs:label "特邀报告人"@zh ;
+	rdfs:subClassOf :c-0888882-5885833 .
+
+:c-2970361-5284654 a owl:Class ;
+	rdfs:label "全文截稿日期"@zh ;
+	rdfs:subClassOf :c-3108779-7650884 .
+
+:c-3038381-9883065 a owl:Class ;
+	rdfs:label "程序委员会"@zh ;
+	rdfs:subClassOf :c-5857644-6198591 .
+
+:c-3108779-7650884 a owl:Class ;
+	rdfs:label "截稿日期"@zh .
+
+:c-3182544-7987268 a owl:Class ;
+	rdfs:label "大会主席"@zh ;
+	rdfs:subClassOf :c-2250002-9536900 .
+
+:c-3208331-4403784 a owl:Class ;
+	rdfs:label "组织委员会成员"@zh ;
+	rdfs:subClassOf :c-2250002-9536900 .
+
+:c-3613798-3149473 a owl:Class ;
+	rdfs:label "总办事处"@zh ;
+	rdfs:subClassOf :c-0166946-2149544 .
+
+:c-4112288-1078286 a owl:Class ;
+	rdfs:label "审稿意见"@zh ;
+	rdfs:subClassOf :c-1760238-2026128 .
+
+:c-4508537-7163475 a owl:Class ;
+	rdfs:label "程序委员会主席"@zh ;
+	rdfs:subClassOf :c-2250002-9536900 .
+
+:c-4608770-5471079 a owl:Class ;
+	rdfs:label "铜牌级赞助者"@zh ;
+	rdfs:subClassOf :c-6208503-8067001 .
+
+:c-4717498-6460752 a owl:Class ;
+	rdfs:label "SIGKDD成员注册费"@zh ;
+	rdfs:subClassOf :c-9866777-8245519 .
+
+:c-4763597-0840150 a owl:Class ;
+	rdfs:label "费用"@zh .
+
+:c-5217150-1751172 a owl:Class ;
+	rdfs:label "听众"@zh ;
+	rdfs:subClassOf :c-8538442-7237948 .
+
+:c-5323657-0516700 a owl:Class ;
+	rdfs:label "摘要"@zh ;
+	owl:equivalentClass _:node1e05a550qx5 .
+
+_:node1e05a550qx5 a owl:Restriction ;
+	owl:onProperty :op-3868745-8681803 ;
+	owl:someValuesFrom :c-5706678-7832501 .
+
+:c-5323657-0516700 rdfs:subClassOf :c-1760238-2026128 .
+
+:c-5488080-0202626 a owl:Class ;
+	rdfs:label "最佳论文奖委员会"@zh ;
+	rdfs:subClassOf :c-5857644-6198591 .
+
+:c-5706678-7832501 a owl:Class ;
+	rdfs:label "摘要截稿日期"@zh ;
+	rdfs:subClassOf :c-3108779-7650884 .
+
+:c-5755036-5488572 a owl:Class ;
+	rdfs:label "学生论文作者"@zh ;
+	rdfs:subClassOf :c-9473695-7319406 , _:node1e05a550qx6 .
+
+_:node1e05a550qx6 a owl:Restriction ;
+	owl:onProperty :op-0804511-9975279 ;
+	owl:someValuesFrom :c-8114668-9620527 .
+
+:c-5857644-6198591 a owl:Class ;
+	rdfs:label "委员会"@zh .
+
+:c-6208503-8067001 a owl:Class ;
+	rdfs:label "赞助者"@zh ;
+	owl:equivalentClass _:node1e05a550qx7 .
+
+_:node1e05a550qx7 a owl:Restriction ;
+	owl:onProperty :op-6652170-8937768 ;
+	owl:someValuesFrom :c-0102157-9204021 .
+
+:c-6560241-7801494 a owl:Class ;
+	rdfs:label "最佳应用论文奖"@zh ;
+	rdfs:subClassOf :c-9139351-1088451 .
+
+:c-6849317-0742471 a owl:Class ;
+	rdfs:label "金牌纪赞助者"@zh ;
+	rdfs:subClassOf :c-6208503-8067001 .
+
+:c-6999210-9120468 a owl:Class ;
+	rdfs:label "银牌级赞助者"@zh ;
+	rdfs:subClassOf :c-6208503-8067001 .
+
+:c-7250001-1234798 a owl:Class ;
+	rdfs:label "参展者"@zh ;
+	rdfs:subClassOf :c-6208503-8067001 .
+
+:c-7276768-4508167 a owl:Class ;
+	rdfs:label "最佳研究论文奖"@zh ;
+	rdfs:subClassOf :c-9139351-1088451 .
+
+:c-7544224-7669738 a owl:Class ;
+	rdfs:label "会议"@zh .
+
+:c-8114668-9620527 a owl:Class ;
+	rdfs:label "最佳学生论文奖"@zh ;
+	rdfs:subClassOf :c-9139351-1088451 .
+
+:c-8304045-5381707 a owl:Class ;
+	rdfs:label "学生注册费"@zh ;
+	rdfs:subClassOf :c-9866777-8245519 .
+
+:c-8538442-7237948 a owl:Class ;
+	rdfs:label "人员"@zh ;
+	owl:equivalentClass _:node1e05a550qx8 .
+
+_:node1e05a550qx8 a owl:Restriction ;
+	owl:onProperty :op-6652170-8937768 ;
+	owl:someValuesFrom :c-9866777-8245519 .
+
+:c-8538442-7237948 rdfs:subClassOf owl:Thing , _:node1e05a550qx9 .
+
+_:node1e05a550qx9 a owl:Restriction ;
+	owl:onProperty :op-6559092-2778775 ;
+	owl:someValuesFrom :c-2169037-6676373 .
+
+:c-8697109-3141767 a owl:Class ;
+	rdfs:label "会议大厅"@zh ;
+	rdfs:subClassOf :c-0166946-2149544 .
+
+:c-8909794-6088853 a owl:Class ;
+	rdfs:label "非成员注册费"@zh ;
+	rdfs:subClassOf :c-9866777-8245519 .
+
+:c-9043656-1996506 a owl:Class ;
+	rdfs:label "最佳学生论文赞助者"@zh ;
+	rdfs:subClassOf :c-6208503-8067001 .
+
+:c-9139351-1088451 a owl:Class ;
+	rdfs:label "奖"@zh ;
+	owl:equivalentClass _:node1e05a550qx10 .
+
+_:node1e05a550qx10 a owl:Restriction ;
+	owl:onProperty :op-6319070-6863545 ;
+	owl:someValuesFrom :c-2250002-9536900 .
+
+:c-9473695-7319406 a owl:Class ;
+	rdfs:label "作者"@zh ;
+	owl:equivalentClass _:node1e05a550qx11 .
+
+_:node1e05a550qx11 a owl:Restriction ;
+	owl:onProperty :op-4674158-2729130 ;
+	owl:someValuesFrom :c-1958152-1036217 .
+
+:c-9473695-7319406 rdfs:subClassOf :c-0888882-5885833 , _:node1e05a550qx12 .
+
+_:node1e05a550qx12 a owl:Restriction ;
+	owl:onProperty :op-4120315-9708961 ;
+	owl:someValuesFrom :c-1201323-4205665 .
+
+:c-9866774-4029623 a owl:Class ;
+	rdfs:label "计算机协会知识发现和数据挖掘会议"@zh ;
+	rdfs:subClassOf owl:Thing , _:node1e05a550qx13 .
+
+_:node1e05a550qx13 a owl:Restriction ;
+	owl:onProperty :op-7151372-9022348 ;
+	owl:someValuesFrom :c-6208503-8067001 .
+
+:c-9866774-4029623 rdfs:subClassOf _:node1e05a550qx14 .
+
+_:node1e05a550qx14 a owl:Restriction ;
+	owl:onProperty :op-4418298-6882606 ;
+	owl:someValuesFrom :c-3108779-7650884 .
+
+:c-9866774-4029623 rdfs:subClassOf _:node1e05a550qx15 .
+
+_:node1e05a550qx15 a owl:Restriction ;
+	owl:onProperty :op-2614526-9682933 ;
+	owl:someValuesFrom :c-7544224-7669738 .
+
+:c-9866777-8245519 a owl:Class ;
+	rdfs:label "注册费"@zh ;
+	rdfs:subClassOf :c-4763597-0840150 .

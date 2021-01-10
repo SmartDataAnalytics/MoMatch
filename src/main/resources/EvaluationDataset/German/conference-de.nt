@@ -1,0 +1,503 @@
+<http://conference_de> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://conference_de#op-0128946-6794641> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-0128946-6794641> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#op-0128946-6794641> <http://www.w3.org/2000/01/rdf-schema#label> "hat Beitrag eingereicht"@de .
+<http://conference_de#op-0128946-6794641> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-0436446-0249443> .
+<http://conference_de#op-0128946-6794641> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-2731220-6600456> .
+<http://conference_de#op-0128946-6794641> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-8125573-9330488> .
+<http://conference_de#op-0498445-3013448> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-0498445-3013448> <http://www.w3.org/2000/01/rdf-schema#label> "hat Workshop"@de .
+<http://conference_de#op-0498445-3013448> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-5236249-1093814> .
+<http://conference_de#op-0498445-3013448> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-0498445-3013448> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-1669973-2810125> .
+<http://conference_de#op-1069821-7365209> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-1069821-7365209> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#op-1069821-7365209> <http://www.w3.org/2000/01/rdf-schema#label> "Organisationsausschuss der Konferenz ist"@de .
+<http://conference_de#op-1069821-7365209> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-1521137-1761392> .
+<http://conference_de#op-1069821-7365209> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-1069821-7365209> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-5497197-2593751> .
+<http://conference_de#op-1316026-1460819> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-1316026-1460819> <http://www.w3.org/2000/01/rdf-schema#label> "ist ein pr\u00E4feriertes Thema oder Fachgebiet eines Gutachters"@de .
+<http://conference_de#op-1316026-1460819> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-2365620-6793184> .
+<http://conference_de#op-1316026-1460819> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-6793370-1481860> .
+<http://conference_de#op-1669973-2810125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-1669973-2810125> <http://www.w3.org/2000/01/rdf-schema#label> "hat Abschnitt"@de .
+<http://conference_de#op-1669973-2810125> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-1669973-2810125> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-9365621-4628022> .
+<http://conference_de#op-1669973-2810125> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-3660173-8702227> .
+<http://conference_de#op-1806324-3972847> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-1806324-3972847> <http://www.w3.org/2000/01/rdf-schema#label> "h\u00E4lt Pr\u00E4sentation"@de .
+<http://conference_de#op-1806324-3972847> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-2883309-0508630> .
+<http://conference_de#op-1806324-3972847> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-3407738-8040996> .
+<http://conference_de#op-1806324-3972847> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-6034483-9201945> .
+<http://conference_de#op-1922736-2120081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-1922736-2120081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://conference_de#op-1922736-2120081> <http://www.w3.org/2000/01/rdf-schema#label> "ist Vorsitzender des Ausschusses"@de .
+<http://conference_de#op-1922736-2120081> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-7158328-5483937> .
+<http://conference_de#op-1922736-2120081> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-9625814-4995879> .
+<http://conference_de#op-1922736-2120081> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-3608848-8208296> .
+<http://conference_de#op-1945545-2946293> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-1945545-2946293> <http://www.w3.org/2000/01/rdf-schema#label> "eingeladen von Gutachter"@de .
+<http://conference_de#op-1945545-2946293> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-2365620-6793184> .
+<http://conference_de#op-1945545-2946293> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-2365620-6793184> .
+<http://conference_de#op-1989814-5525228> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-1989814-5525228> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://conference_de#op-1989814-5525228> <http://www.w3.org/2000/01/rdf-schema#label> "ist Steuerungsausschuss der Konferenz"@de .
+<http://conference_de#op-1989814-5525228> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-2493179-8478854> .
+<http://conference_de#op-1989814-5525228> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-1989814-5525228> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-4809969-8849082> .
+<http://conference_de#op-2178632-6743715> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-2178632-6743715> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://conference_de#op-2178632-6743715> <http://www.w3.org/2000/01/rdf-schema#label> "ist Programmausschuss der Konferenz"@de .
+<http://conference_de#op-2178632-6743715> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-2178632-6743715> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-8195847-6754106> .
+<http://conference_de#op-2178632-6743715> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-4422038-8332792> .
+<http://conference_de#op-2178632-6743715> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-4809969-8849082> .
+<http://conference_de#op-2359998-9048620> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-2359998-9048620> <http://www.w3.org/2000/01/rdf-schema#label> "hat Abfolge"@de .
+<http://conference_de#op-2359998-9048620> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-5636031-1076429> .
+<http://conference_de#op-2359998-9048620> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-2359998-9048620> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-1669973-2810125> .
+<http://conference_de#op-2585333-8630311> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-2585333-8630311> <http://www.w3.org/2000/01/rdf-schema#label> "hat Tutorium"@de .
+<http://conference_de#op-2585333-8630311> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-1479504-0321675> .
+<http://conference_de#op-2585333-8630311> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-2585333-8630311> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-1669973-2810125> .
+<http://conference_de#op-2618351-5385365> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-2618351-5385365> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://conference_de#op-2618351-5385365> <http://www.w3.org/2000/01/rdf-schema#label> "ist Organisationsausschuss der Konferenz"@de .
+<http://conference_de#op-2618351-5385365> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-1521137-1761392> .
+<http://conference_de#op-2618351-5385365> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-2618351-5385365> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-1069821-7365209> .
+<http://conference_de#op-2618351-5385365> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-4809969-8849082> .
+<http://conference_de#op-2922778-5582937> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-2922778-5582937> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#op-2922778-5582937> <http://www.w3.org/2000/01/rdf-schema#label> "hat Workshop-Leitung"@de .
+<http://conference_de#op-2922778-5582937> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-9365621-4628022> .
+<http://conference_de#op-2922778-5582937> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-9605590-3026126> .
+<http://conference_de#op-3103572-2221087> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-3103572-2221087> <http://www.w3.org/2000/01/rdf-schema#label> "hat stellvertretenden Ausschussvorsitzender"@de .
+<http://conference_de#op-3103572-2221087> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-2773011-0249106> .
+<http://conference_de#op-3103572-2221087> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-9625814-4995879> .
+<http://conference_de#op-3103572-2221087> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-9352775-5356677> .
+<http://conference_de#op-3103572-2221087> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-9692725-1776210> .
+<http://conference_de#op-3310517-8704360> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-3310517-8704360> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#op-3310517-8704360> <http://www.w3.org/2000/01/rdf-schema#label> "hat Ausschussvorsitzender"@de .
+<http://conference_de#op-3310517-8704360> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-7158328-5483937> .
+<http://conference_de#op-3310517-8704360> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-9625814-4995879> .
+<http://conference_de#op-3310517-8704360> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-1922736-2120081> .
+<http://conference_de#op-3310517-8704360> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-9692725-1776210> .
+<http://conference_de#op-3608848-8208296> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-3608848-8208296> <http://www.w3.org/2000/01/rdf-schema#label> "ist Mitglied von"@de .
+<http://conference_de#op-3608848-8208296> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-4650867-2477948> .
+<http://conference_de#op-3608848-8208296> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-9625814-4995879> .
+<http://conference_de#op-3660173-8702227> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-3660173-8702227> <http://www.w3.org/2000/01/rdf-schema#label> "ist Teil der Konferenzreihe"@de .
+<http://conference_de#op-3660173-8702227> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-3660173-8702227> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-9365621-4628022> .
+<http://conference_de#op-3684524-3597938> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-3684524-3597938> <http://www.w3.org/2000/01/rdf-schema#label> "ist Thema ein Konferenzabschnittes"@de .
+<http://conference_de#op-3684524-3597938> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-4756237-0913680> .
+<http://conference_de#op-3684524-3597938> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-9365621-4628022> .
+<http://conference_de#op-4229248-7694544> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-4229248-7694544> <http://www.w3.org/2000/01/rdf-schema#label> "ist eingereicht f\u00FCr"@de .
+<http://conference_de#op-4229248-7694544> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-4229248-7694544> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-8115832-0092831> .
+<http://conference_de#op-4229248-7694544> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-5377559-5806030> .
+<http://conference_de#op-4321693-3900519> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-4321693-3900519> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#op-4321693-3900519> <http://www.w3.org/2000/01/rdf-schema#label> "hat Thema oder Beitrag eingereicht"@de .
+<http://conference_de#op-4321693-3900519> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-6828546-9901709> .
+<http://conference_de#op-4321693-3900519> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-6051861-5180291> .
+<http://conference_de#op-4324524-0658713> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-4324524-0658713> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://conference_de#op-4324524-0658713> <http://www.w3.org/2000/01/rdf-schema#label> "ist der erst Teil von"@de .
+<http://conference_de#op-4324524-0658713> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-6600254-2450629> .
+<http://conference_de#op-4422038-8332792> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-4422038-8332792> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#op-4422038-8332792> <http://www.w3.org/2000/01/rdf-schema#label> "Programmausschuss der Konferenz ist"@de .
+<http://conference_de#op-4422038-8332792> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-4422038-8332792> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-8195847-6754106> .
+<http://conference_de#op-4422038-8332792> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-5497197-2593751> .
+<http://conference_de#op-4621167-8649272> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-4621167-8649272> <http://www.w3.org/2000/01/rdf-schema#label> "l\u00E4dt Mitgutachter ein"@de .
+<http://conference_de#op-4621167-8649272> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-2365620-6793184> .
+<http://conference_de#op-4621167-8649272> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-2365620-6793184> .
+<http://conference_de#op-4621167-8649272> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-1945545-2946293> .
+<http://conference_de#op-4737759-4638811> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-4737759-4638811> <http://www.w3.org/2000/01/rdf-schema#label> "hat Workshop-Thema"@de .
+<http://conference_de#op-4737759-4638811> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-4756237-0913680> .
+<http://conference_de#op-4737759-4638811> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-9365621-4628022> .
+<http://conference_de#op-4737759-4638811> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-3684524-3597938> .
+<http://conference_de#op-4809969-8849082> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-4809969-8849082> <http://www.w3.org/2000/01/rdf-schema#label> "ist Ausschuss der Konferenz"@de .
+<http://conference_de#op-4809969-8849082> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-4809969-8849082> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-9625814-4995879> .
+<http://conference_de#op-5214051-3470114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-5214051-3470114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://conference_de#op-5214051-3470114> <http://www.w3.org/2000/01/rdf-schema#label> "hat Gutachten"@de .
+<http://conference_de#op-5214051-3470114> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-5562180-9263139> .
+<http://conference_de#op-5214051-3470114> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-6508590-8109709> .
+<http://conference_de#op-5214051-3470114> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-9868857-5526574> .
+<http://conference_de#op-5377559-5806030> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-5377559-5806030> <http://www.w3.org/2000/01/rdf-schema#label> "hat Beitrag"@de .
+<http://conference_de#op-5377559-5806030> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-5377559-5806030> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-8115832-0092831> .
+<http://conference_de#op-5497197-2593751> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-5497197-2593751> <http://www.w3.org/2000/01/rdf-schema#label> "Ausschuss der Konferenz ist"@de .
+<http://conference_de#op-5497197-2593751> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-5497197-2593751> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-9625814-4995879> .
+<http://conference_de#op-5497197-2593751> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-4809969-8849082> .
+<http://conference_de#op-5642484-4870984> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-5642484-4870984> <http://www.w3.org/2000/01/rdf-schema#label> "liefert Konferenzbeitrag"@de .
+<http://conference_de#op-5642484-4870984> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-2807153-3693543> .
+<http://conference_de#op-5642484-4870984> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-7521012-9493261> .
+<http://conference_de#op-5642484-4870984> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-6576828-0504843> .
+<http://conference_de#op-6034483-9201945> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-6034483-9201945> <http://www.w3.org/2000/01/rdf-schema#label> "pr\u00E4sentiert von"@de .
+<http://conference_de#op-6034483-9201945> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-2883309-0508630> .
+<http://conference_de#op-6034483-9201945> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-3407738-8040996> .
+<http://conference_de#op-6051861-5180291> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-6051861-5180291> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://conference_de#op-6051861-5180291> <http://www.w3.org/2000/01/rdf-schema#label> "hat eine zugewiesene Gutachterpr\u00E4ferenz"@de .
+<http://conference_de#op-6051861-5180291> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-6828546-9901709> .
+<http://conference_de#op-6068254-8048160> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-6068254-8048160> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://conference_de#op-6068254-8048160> <http://www.w3.org/2000/01/rdf-schema#label> "ist ein wichtiges Datum einer Konferenzreihe"@de .
+<http://conference_de#op-6068254-8048160> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-0268486-3322572> .
+<http://conference_de#op-6068254-8048160> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-6312998-0325865> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-6312998-0325865> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://conference_de#op-6312998-0325865> <http://www.w3.org/2000/01/rdf-schema#label> "ist ein pr\u00E4feriertes Thema eines Gutachters"@de .
+<http://conference_de#op-6312998-0325865> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-4756237-0913680> .
+<http://conference_de#op-6312998-0325865> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-6828546-9901709> .
+<http://conference_de#op-6576828-0504843> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-6576828-0504843> <http://www.w3.org/2000/01/rdf-schema#label> "hat Author"@de .
+<http://conference_de#op-6576828-0504843> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-2807153-3693543> .
+<http://conference_de#op-6576828-0504843> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-7521012-9493261> .
+<http://conference_de#op-6793370-1481860> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-6793370-1481860> <http://www.w3.org/2000/01/rdf-schema#label> "Pr\u00E4ferenz oder Fachgebiet des Gutachters ist"@de .
+<http://conference_de#op-6793370-1481860> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-2365620-6793184> .
+<http://conference_de#op-7531097-2137005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-7531097-2137005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://conference_de#op-7531097-2137005> <http://www.w3.org/2000/01/rdf-schema#label> "ist Leiter des Workshops"@de .
+<http://conference_de#op-7531097-2137005> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-9365621-4628022> .
+<http://conference_de#op-7531097-2137005> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-9605590-3026126> .
+<http://conference_de#op-7531097-2137005> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-2922778-5582937> .
+<http://conference_de#op-7940821-6078131> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-7940821-6078131> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#op-7940821-6078131> <http://www.w3.org/2000/01/rdf-schema#label> "hat Zusammenfassung"@de .
+<http://conference_de#op-7940821-6078131> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-6600254-2450629> .
+<http://conference_de#op-7940821-6078131> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-4324524-0658713> .
+<http://conference_de#op-8125573-9330488> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-8125573-9330488> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://conference_de#op-8125573-9330488> <http://www.w3.org/2000/01/rdf-schema#label> "hat Fachgutachten"@de .
+<http://conference_de#op-8125573-9330488> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-0436446-0249443> .
+<http://conference_de#op-8125573-9330488> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-2731220-6600456> .
+<http://conference_de#op-8738966-6560487> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-8738966-6560487> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#op-8738966-6560487> <http://www.w3.org/2000/01/rdf-schema#label> "Verleger des Konferenzfortschritts ist"@de .
+<http://conference_de#op-8738966-6560487> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-1450635-6067268> .
+<http://conference_de#op-8738966-6560487> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-7349366-5598642> .
+<http://conference_de#op-8738966-6560487> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-9561953-5139312> .
+<http://conference_de#op-9251692-2958376> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-9251692-2958376> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#op-9251692-2958376> <http://www.w3.org/2000/01/rdf-schema#label> "hat wichtiges Datum"@de .
+<http://conference_de#op-9251692-2958376> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-0268486-3322572> .
+<http://conference_de#op-9251692-2958376> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-9251692-2958376> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-6068254-8048160> .
+<http://conference_de#op-9352775-5356677> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-9352775-5356677> <http://www.w3.org/2000/01/rdf-schema#label> "ist stellvertretender Vorsitzender des Ausschusses"@de .
+<http://conference_de#op-9352775-5356677> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-2773011-0249106> .
+<http://conference_de#op-9352775-5356677> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-9625814-4995879> .
+<http://conference_de#op-9352775-5356677> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-3608848-8208296> .
+<http://conference_de#op-9513224-3178621> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-9513224-3178621> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#op-9513224-3178621> <http://www.w3.org/2000/01/rdf-schema#label> "Steuerungsausschuss der Konferenz ist"@de .
+<http://conference_de#op-9513224-3178621> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-2493179-8478854> .
+<http://conference_de#op-9513224-3178621> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#op-9513224-3178621> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-1989814-5525228> .
+<http://conference_de#op-9513224-3178621> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://conference_de#op-5497197-2593751> .
+<http://conference_de#op-9561953-5139312> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-9561953-5139312> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://conference_de#op-9561953-5139312> <http://www.w3.org/2000/01/rdf-schema#label> "ver\u00F6ffentlicht"@de .
+<http://conference_de#op-9561953-5139312> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-1450635-6067268> .
+<http://conference_de#op-9561953-5139312> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-7349366-5598642> .
+<http://conference_de#op-9692725-1776210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-9692725-1776210> <http://www.w3.org/2000/01/rdf-schema#label> "hat Mitglieder"@de .
+<http://conference_de#op-9692725-1776210> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-4650867-2477948> .
+<http://conference_de#op-9692725-1776210> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-9625814-4995879> .
+<http://conference_de#op-9692725-1776210> <http://www.w3.org/2002/07/owl#inverseOf> <http://conference_de#op-3608848-8208296> .
+<http://conference_de#op-9868857-5526574> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://conference_de#op-9868857-5526574> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#op-9868857-5526574> <http://www.w3.org/2000/01/rdf-schema#label> "begutachtet Beitrag"@de .
+<http://conference_de#op-9868857-5526574> <http://www.w3.org/2000/01/rdf-schema#range> <http://conference_de#c-5562180-9263139> .
+<http://conference_de#op-9868857-5526574> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-6508590-8109709> .
+<http://conference_de#ent-0234330-4162477> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-0234330-4162477> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-0234330-4162477> <http://www.w3.org/2000/01/rdf-schema#label> "Grad der Gutachterpr\u00E4ferenz"@de .
+<http://conference_de#ent-0234330-4162477> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-6828546-9901709> .
+<http://conference_de#ent-0234330-4162477> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://conference_de#ent-0456757-4338876> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-0456757-4338876> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-0456757-4338876> <http://www.w3.org/2000/01/rdf-schema#label> "URL der Konferenz ist"@de .
+<http://conference_de#ent-0456757-4338876> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-4730732-9118818> .
+<http://conference_de#ent-0456757-4338876> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://conference_de#ent-3147113-3527757> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-3147113-3527757> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-3147113-3527757> <http://www.w3.org/2000/01/rdf-schema#label> "Datum der Einreichung des kompletten Beitrags ist"@de .
+<http://conference_de#ent-3147113-3527757> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-0268486-3322572> .
+<http://conference_de#ent-3147113-3527757> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://conference_de#ent-3965541-6558239> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-3965541-6558239> <http://www.w3.org/2000/01/rdf-schema#label> "hat Vornamen"@de .
+<http://conference_de#ent-3965541-6558239> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-2807153-3693543> .
+<http://conference_de#ent-3965541-6558239> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://conference_de#ent-4148970-9878776> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-4148970-9878776> <http://www.w3.org/2000/01/rdf-schema#label> "Ort der Konferenz"@de .
+<http://conference_de#ent-4148970-9878776> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-5694210-3113803> .
+<http://conference_de#ent-4148970-9878776> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://conference_de#ent-4663562-1593340> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-4663562-1593340> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-4663562-1593340> <http://www.w3.org/2000/01/rdf-schema#label> "ist am folgenden Datum ver\u00F6ffentlicht worden"@de .
+<http://conference_de#ent-4663562-1593340> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-7521012-9493261> .
+<http://conference_de#ent-4663562-1593340> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://conference_de#ent-4771576-9028029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-4771576-9028029> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-4771576-9028029> <http://www.w3.org/2000/01/rdf-schema#label> "hat Nachnamen"@de .
+<http://conference_de#ent-4771576-9028029> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-2807153-3693543> .
+<http://conference_de#ent-4771576-9028029> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://conference_de#ent-4829687-0686812> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-4829687-0686812> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-4829687-0686812> <http://www.w3.org/2000/01/rdf-schema#label> "ist Enddatum"@de .
+<http://conference_de#ent-4829687-0686812> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-0268486-3322572> .
+<http://conference_de#ent-4829687-0686812> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://conference_de#ent-5299945-7988874> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-5299945-7988874> <http://www.w3.org/2000/01/rdf-schema#label> "hat E-Mailadresse"@de .
+<http://conference_de#ent-5299945-7988874> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-2807153-3693543> .
+<http://conference_de#ent-5299945-7988874> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://conference_de#ent-6301306-0729008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-6301306-0729008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-6301306-0729008> <http://www.w3.org/2000/01/rdf-schema#label> "Datum der Akzeptanz-Mitteilung ist"@de .
+<http://conference_de#ent-6301306-0729008> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-0268486-3322572> .
+<http://conference_de#ent-6301306-0729008> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://conference_de#ent-6425295-0748069> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-6425295-0748069> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-6425295-0748069> <http://www.w3.org/2000/01/rdf-schema#label> "Anzahl der Fortschritte der Konferenz"@de .
+<http://conference_de#ent-6425295-0748069> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-1450635-6067268> .
+<http://conference_de#ent-6425295-0748069> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://conference_de#ent-6593972-9853022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-6593972-9853022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-6593972-9853022> <http://www.w3.org/2000/01/rdf-schema#label> "Grad des Fachgebiets des Gutachters ist"@de .
+<http://conference_de#ent-6593972-9853022> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-0436446-0249443> .
+<http://conference_de#ent-6918273-8967644> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-6918273-8967644> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-6918273-8967644> <http://www.w3.org/2000/01/rdf-schema#label> "ist Anfangsdatum"@de .
+<http://conference_de#ent-6918273-8967644> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-0268486-3322572> .
+<http://conference_de#ent-6918273-8967644> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://conference_de#ent-6952853-8144557> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-6952853-8144557> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-6952853-8144557> <http://www.w3.org/2000/01/rdf-schema#label> "ISBN der Fortschritte ist"@de .
+<http://conference_de#ent-6952853-8144557> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-1450635-6067268> .
+<http://conference_de#ent-6952853-8144557> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://conference_de#ent-7411600-0492184> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-7411600-0492184> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-7411600-0492184> <http://www.w3.org/2000/01/rdf-schema#label> "Datum der druckfertigen Einreichung ist"@de .
+<http://conference_de#ent-7411600-0492184> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-0268486-3322572> .
+<http://conference_de#ent-7411600-0492184> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://conference_de#ent-7582393-1837786> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-7582393-1837786> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-7582393-1837786> <http://www.w3.org/2000/01/rdf-schema#label> "hat Name"@de .
+<http://conference_de#ent-7582393-1837786> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://conference_de#ent-7681251-4727105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-7681251-4727105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-7681251-4727105> <http://www.w3.org/2000/01/rdf-schema#label> "hat Geschlecht"@de .
+<http://conference_de#ent-7681251-4727105> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-2807153-3693543> .
+<http://conference_de#ent-9741712-1074484> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://conference_de#ent-9741712-1074484> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://conference_de#ent-9741712-1074484> <http://www.w3.org/2000/01/rdf-schema#label> "Datum der Einreichung des Zusammenfassungen"@de .
+<http://conference_de#ent-9741712-1074484> <http://www.w3.org/2000/01/rdf-schema#domain> <http://conference_de#c-0268486-3322572> .
+<http://conference_de#ent-9741712-1074484> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://conference_de#c-0268486-3322572> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-0268486-3322572> <http://www.w3.org/2000/01/rdf-schema#label> "wichtiges Datum"@de .
+<http://conference_de#c-0369442-7501730> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-0369442-7501730> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenzbeitrag"@de .
+<http://conference_de#c-0369442-7501730> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-2225732-5117501> .
+<http://conference_de#c-0369442-7501730> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-1810344-8487780> .
+<http://conference_de#c-0436446-0249443> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-0436446-0249443> <http://www.w3.org/2000/01/rdf-schema#label> "Fachgebiet des Gutachters"@de .
+<http://conference_de#c-0436446-0249443> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://conference_de#c-1025534-8292294> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-1025534-8292294> <http://www.w3.org/2000/01/rdf-schema#label> "geschriebener Beitrag"@de .
+<http://conference_de#c-1025534-8292294> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-8115832-0092831> .
+<http://conference_de#c-1178842-2732173> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-1178842-2732173> <http://www.w3.org/2000/01/rdf-schema#label> "Mitverfasser eines Beitrags"@de .
+<http://conference_de#c-1178842-2732173> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-2852856-4092117> .
+<http://conference_de#c-1178842-2732173> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-9185334-5782431> .
+<http://conference_de#c-1308924-1537645> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-1308924-1537645> <http://www.w3.org/2000/01/rdf-schema#label> "passiver Konferenzteilnehmer"@de .
+<http://conference_de#c-1308924-1537645> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-8237344-7989230> .
+<http://conference_de#c-1308924-1537645> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-2883309-0508630> .
+<http://conference_de#c-1450635-6067268> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-1450635-6067268> <http://www.w3.org/2000/01/rdf-schema#label> "Fortschritte der Konferenz"@de .
+<http://conference_de#c-1479504-0321675> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-1479504-0321675> <http://www.w3.org/2000/01/rdf-schema#label> "Tutorium"@de .
+<http://conference_de#c-1479504-0321675> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-9365621-4628022> .
+<http://conference_de#c-1479504-0321675> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-5236249-1093814> .
+<http://conference_de#c-1479504-0321675> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-5636031-1076429> .
+<http://conference_de#c-1521137-1761392> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-1521137-1761392> <http://www.w3.org/2000/01/rdf-schema#label> "Organisationsausschuss"@de .
+<http://conference_de#c-1521137-1761392> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-9625814-4995879> .
+<http://conference_de#c-1521137-1761392> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-2493179-8478854> .
+<http://conference_de#c-1521137-1761392> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-8195847-6754106> .
+<http://conference_de#c-1810344-8487780> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-1810344-8487780> <http://www.w3.org/2000/01/rdf-schema#label> "erweitertes Zusammenfassung"@de .
+<http://conference_de#c-1810344-8487780> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-2225732-5117501> .
+<http://conference_de#c-1859422-0439299> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-1859422-0439299> <http://www.w3.org/2000/01/rdf-schema#label> "Aushang"@de .
+<http://conference_de#c-1859422-0439299> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-8115832-0092831> .
+<http://conference_de#c-1859422-0439299> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-2225732-5117501> .
+<http://conference_de#c-1859422-0439299> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-7357618-1642646> .
+<http://conference_de#c-1859458-4041433> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-1859458-4041433> <http://www.w3.org/2000/01/rdf-schema#label> "Organisator"@de .
+<http://conference_de#c-1859458-4041433> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://conference_de#c-2225732-5117501> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-2225732-5117501> <http://www.w3.org/2000/01/rdf-schema#label> "regul\u00E4rer Beitrag"@de .
+<http://conference_de#c-2225732-5117501> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-1025534-8292294> .
+<http://conference_de#c-2225732-5117501> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-7357618-1642646> .
+<http://conference_de#c-2326730-6671120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-2326730-6671120> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenzbewerber früh gezahlt hat"@de .
+<http://conference_de#c-2326730-6671120> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-3096259-3019685> .
+<http://conference_de#c-2326730-6671120> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-9664517-5940464> .
+<http://conference_de#c-2365620-6793184> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-2365620-6793184> <http://www.w3.org/2000/01/rdf-schema#label> "Gutachter"@de .
+<http://conference_de#c-2365620-6793184> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-2807153-3693543> .
+<http://conference_de#c-2493179-8478854> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-2493179-8478854> <http://www.w3.org/2000/01/rdf-schema#label> "Steuerungsausschuss"@de .
+<http://conference_de#c-2493179-8478854> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-9625814-4995879> .
+<http://conference_de#c-2493179-8478854> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-8195847-6754106> .
+<http://conference_de#c-2731220-6600456> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-2731220-6600456> <http://www.w3.org/2000/01/rdf-schema#label> "eingereichter Beitrag"@de .
+<http://conference_de#c-2731220-6600456> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-1025534-8292294> .
+<http://conference_de#c-2734491-0275940> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-2734491-0275940> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation"@de .
+<http://conference_de#c-2773011-0249106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-2773011-0249106> <http://www.w3.org/2000/01/rdf-schema#label> "stellvertretender Vorsitzender"@de .
+<http://conference_de#c-2773011-0249106> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-4650867-2477948> .
+<http://conference_de#c-2807153-3693543> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-2807153-3693543> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@de .
+<http://conference_de#c-2852856-4092117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-2852856-4092117> <http://www.w3.org/2000/01/rdf-schema#label> "Author eines regul\u00E4ren Beitrags"@de .
+<http://conference_de#c-2852856-4092117> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-4615338-8666561> .
+<http://conference_de#c-2883309-0508630> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-2883309-0508630> <http://www.w3.org/2000/01/rdf-schema#label> "aktiver Konferenzteilnehmer"@de .
+<http://conference_de#c-2883309-0508630> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-4615338-8666561> .
+<http://conference_de#c-2883309-0508630> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-8237344-7989230> .
+<http://conference_de#c-3040625-6424461> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-3040625-6424461> <http://www.w3.org/2000/01/rdf-schema#label> "eingeladener Referent"@de .
+<http://conference_de#c-3040625-6424461> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-4615338-8666561> .
+<http://conference_de#c-3096259-3019685> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-3096259-3019685> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenzbewerber gezahlt hat"@de .
+<http://conference_de#c-3096259-3019685> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-5035120-4059294> .
+<http://conference_de#c-3407738-8040996> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-3407738-8040996> <http://www.w3.org/2000/01/rdf-schema#label> "Pr\u00E4sentation"@de .
+<http://conference_de#c-3407738-8040996> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-8115832-0092831> .
+<http://conference_de#c-3560304-9366401> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-3560304-9366401> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenz"@de .
+<http://conference_de#c-4481836-1173835> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-4481836-1173835> <http://www.w3.org/2000/01/rdf-schema#label> "abgelehnter Beitrag"@de .
+<http://conference_de#c-4481836-1173835> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-5562180-9263139> .
+<http://conference_de#c-4481836-1173835> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-8071281-1290388> .
+<http://conference_de#c-4615338-8666561> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-4615338-8666561> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenzteilnehmer Beitrag hat"@de .
+<http://conference_de#c-4615338-8666561> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-2807153-3693543> .
+<http://conference_de#c-4650867-2477948> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-4650867-2477948> <http://www.w3.org/2000/01/rdf-schema#label> "Angeh\u00F6rige des Ausschusses"@de .
+<http://conference_de#c-4650867-2477948> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-2807153-3693543> .
+<http://conference_de#c-4730732-9118818> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-4730732-9118818> <http://www.w3.org/2000/01/rdf-schema#label> "Internet der Konferenz"@de .
+<http://conference_de#c-4730732-9118818> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-7521012-9493261> .
+<http://conference_de#c-4756237-0913680> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-4756237-0913680> <http://www.w3.org/2000/01/rdf-schema#label> "Thema"@de .
+<http://conference_de#c-5035120-4059294> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-5035120-4059294> <http://www.w3.org/2000/01/rdf-schema#label> "registrierter Bewerber"@de .
+<http://conference_de#c-5035120-4059294> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-6776566-6732274> .
+<http://conference_de#c-5236249-1093814> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-5236249-1093814> <http://www.w3.org/2000/01/rdf-schema#label> "Workshop"@de .
+<http://conference_de#c-5236249-1093814> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-9365621-4628022> .
+<http://conference_de#c-5236249-1093814> <http://www.w3.org/2002/07/owl#disjointWith> <http://conference_de#c-5636031-1076429> .
+<http://conference_de#c-5548459-1019906> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-5548459-1019906> <http://www.w3.org/2000/01/rdf-schema#label> "Aufruf f\u00FCr Beitr\u00E4ge"@de .
+<http://conference_de#c-5548459-1019906> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-7521012-9493261> .
+<http://conference_de#c-5562180-9263139> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-5562180-9263139> <http://www.w3.org/2000/01/rdf-schema#label> "begutachteter Beitrag"@de .
+<http://conference_de#c-5562180-9263139> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-2731220-6600456> .
+<http://conference_de#c-5636031-1076429> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-5636031-1076429> <http://www.w3.org/2000/01/rdf-schema#label> "Ablauf der Konferenz"@de .
+<http://conference_de#c-5636031-1076429> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-9365621-4628022> .
+<http://conference_de#c-5694210-3113803> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-5694210-3113803> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenzreihe"@de .
+<http://conference_de#c-5694210-3113803> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-3560304-9366401> .
+<http://conference_de#c-6041715-6986615> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-6041715-6986615> <http://www.w3.org/2000/01/rdf-schema#label> "druckfertiger Beitrag"@de .
+<http://conference_de#c-6041715-6986615> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-8071281-1290388> .
+<http://conference_de#c-6508590-8109709> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-6508590-8109709> <http://www.w3.org/2000/01/rdf-schema#label> "Gutachten"@de .
+<http://conference_de#c-6508590-8109709> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-7521012-9493261> .
+<http://conference_de#c-6598246-0855085> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-6598246-0855085> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenzank\u00FCndigung"@de .
+<http://conference_de#c-6598246-0855085> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-7521012-9493261> .
+<http://conference_de#c-6600254-2450629> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-6600254-2450629> <http://www.w3.org/2000/01/rdf-schema#label> "Zusammenfassung"@de .
+<http://conference_de#c-6600254-2450629> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-1810344-8487780> .
+<http://conference_de#c-6776566-6732274> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-6776566-6732274> <http://www.w3.org/2000/01/rdf-schema#label> "Koferenzbewerber"@de .
+<http://conference_de#c-6776566-6732274> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-2807153-3693543> .
+<http://conference_de#c-6804730-6814876> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-6804730-6814876> <http://www.w3.org/2000/01/rdf-schema#label> "Informationen f\u00FCr Teilnehmer"@de .
+<http://conference_de#c-6804730-6814876> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-7521012-9493261> .
+<http://conference_de#c-6828546-9901709> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-6828546-9901709> <http://www.w3.org/2000/01/rdf-schema#label> "Pr\u00E4ferenz des Gutachters"@de .
+<http://conference_de#c-6828546-9901709> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://conference_de#c-7096317-3412127> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-7096317-3412127> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenzgeb\u00FChren"@de .
+<http://conference_de#c-7158328-5483937> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-7158328-5483937> <http://www.w3.org/2000/01/rdf-schema#label> "Vorsitzender"@de .
+<http://conference_de#c-7158328-5483937> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-4650867-2477948> .
+<http://conference_de#c-7349366-5598642> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-7349366-5598642> <http://www.w3.org/2000/01/rdf-schema#label> "Herausgeber"@de .
+<http://conference_de#c-7357618-1642646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-7357618-1642646> <http://www.w3.org/2000/01/rdf-schema#label> "eingeladener Vortrag"@de .
+<http://conference_de#c-7357618-1642646> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-3407738-8040996> .
+<http://conference_de#c-7521012-9493261> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-7521012-9493261> <http://www.w3.org/2000/01/rdf-schema#label> "Koferenzdokument"@de .
+<http://conference_de#c-8071281-1290388> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-8071281-1290388> <http://www.w3.org/2000/01/rdf-schema#label> "angenommener Beitrag"@de .
+<http://conference_de#c-8071281-1290388> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-5562180-9263139> .
+<http://conference_de#c-8115832-0092831> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-8115832-0092831> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenzbeteiligung"@de .
+<http://conference_de#c-8115832-0092831> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-7521012-9493261> .
+<http://conference_de#c-8195847-6754106> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-8195847-6754106> <http://www.w3.org/2000/01/rdf-schema#label> "Programmausschuss"@de .
+<http://conference_de#c-8195847-6754106> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-9625814-4995879> .
+<http://conference_de#c-8237344-7989230> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-8237344-7989230> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenzteilnehmer"@de .
+<http://conference_de#c-8237344-7989230> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-2807153-3693543> .
+<http://conference_de#c-8573778-5851296> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-8573778-5851296> <http://www.w3.org/2000/01/rdf-schema#label> "Aufruf zu Teilnahme"@de .
+<http://conference_de#c-8573778-5851296> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-7521012-9493261> .
+<http://conference_de#c-9185334-5782431> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-9185334-5782431> <http://www.w3.org/2000/01/rdf-schema#label> "prim\u00E4rer Author eines Beitrags"@de .
+<http://conference_de#c-9185334-5782431> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-2852856-4092117> .
+<http://conference_de#c-9365621-4628022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-9365621-4628022> <http://www.w3.org/2000/01/rdf-schema#label> "Abschnitte der Konferenz"@de .
+<http://conference_de#c-9605590-3026126> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-9605590-3026126> <http://www.w3.org/2000/01/rdf-schema#label> "Leiter der Workshops"@de .
+<http://conference_de#c-9605590-3026126> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-2807153-3693543> .
+<http://conference_de#c-9625814-4995879> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-9625814-4995879> <http://www.w3.org/2000/01/rdf-schema#label> "Ausschuss"@de .
+<http://conference_de#c-9664517-5940464> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://conference_de#c-9664517-5940464> <http://www.w3.org/2000/01/rdf-schema#label> "Konferenzbewerber spät gezahlt hat"@de .
+<http://conference_de#c-9664517-5940464> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://conference_de#c-3096259-3019685> .

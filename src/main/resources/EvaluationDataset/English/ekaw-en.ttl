@@ -1,0 +1,1191 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix daml: <http://www.daml.org/2001/03/daml+oil#> .
+@prefix : <http://ekaw#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://ekaw> a owl:Ontology .
+
+:Event a owl:Class ;
+	owl:disjointWith :Person .
+
+:Person a owl:Class .
+
+:Accepted_Paper a owl:Class ;
+	rdfs:comment """Accepted paper to become part of proceedings. 
+Note that camera-ready paper is not considered as 'accepted paper', as it was accepted in a different form!"""^^xsd:string ;
+	owl:disjointWith :Rejected_Paper .
+
+:Rejected_Paper a owl:Class .
+
+:Accepted_Paper rdfs:subClassOf :Evaluated_Paper .
+
+:Evaluated_Paper a owl:Class .
+
+:Accepted_Paper owl:disjointWith :Camera_Ready_Paper .
+
+:Camera_Ready_Paper a owl:Class .
+
+:Accepted_Paper rdfs:subClassOf _:node1e0ve5io8x1 .
+
+_:node1e0ve5io8x1 a owl:Restriction ;
+	owl:someValuesFrom :Positive_Review .
+
+:Positive_Review a owl:Class .
+
+_:node1e0ve5io8x1 owl:onProperty :hasReview .
+
+:hasReview a owl:ObjectProperty .
+
+:Workshop_Paper a owl:Class ;
+	owl:disjointWith :Industrial_Paper .
+
+:Industrial_Paper a owl:Class .
+
+:Workshop_Paper rdfs:subClassOf :Paper .
+
+:Paper a owl:Class .
+
+:Workshop_Paper owl:disjointWith :Conference_Paper .
+
+:Conference_Paper a owl:Class .
+
+:Industrial_Session a owl:Class ;
+	rdfs:subClassOf :Conference_Session .
+
+:Conference_Session a owl:Class .
+
+:Regular_Session a owl:Class ;
+	owl:disjointWith :Poster_Session .
+
+:Poster_Session a owl:Class .
+
+:Regular_Session owl:disjointWith :Demo_Session .
+
+:Demo_Session a owl:Class .
+
+:Regular_Session rdfs:subClassOf :Session .
+
+:Session a owl:Class .
+
+:Abstract a owl:Class ;
+	rdfs:subClassOf :Document .
+
+:Document a owl:Class .
+
+:Paper_Author a owl:Class ;
+	rdfs:subClassOf :Person .
+
+:Person a owl:Class .
+
+:Conference_Trip a owl:Class ;
+	rdfs:subClassOf :Social_Event .
+
+:Social_Event a owl:Class .
+
+:Tutorial_Abstract a owl:Class ;
+	rdfs:subClassOf :Abstract .
+
+:Camera_Ready_Paper a owl:Class ;
+	rdfs:subClassOf _:node1e0ve5io8x2 .
+
+_:node1e0ve5io8x2 a owl:Restriction ;
+	owl:onProperty :writtenBy .
+
+:writtenBy a owl:ObjectProperty .
+
+_:node1e0ve5io8x2 owl:someValuesFrom :Conference_Participant .
+
+:Conference_Participant a owl:Class .
+
+:Camera_Ready_Paper owl:disjointWith :Submitted_Paper .
+
+:Submitted_Paper a owl:Class .
+
+:Camera_Ready_Paper rdfs:subClassOf :Paper .
+
+:Paper a owl:Class .
+
+:Camera_Ready_Paper owl:disjointWith :Accepted_Paper , :Evaluated_Paper .
+
+:Evaluated_Paper a owl:Class .
+
+:Camera_Ready_Paper rdfs:subClassOf _:node1e0ve5io8x3 .
+
+_:node1e0ve5io8x3 a owl:Restriction ;
+	owl:onProperty :updatedVersionOf .
+
+:updatedVersionOf a owl:ObjectProperty .
+
+_:node1e0ve5io8x3 owl:someValuesFrom :Accepted_Paper .
+
+:Evaluated_Paper a owl:Class ;
+	owl:disjointWith :Camera_Ready_Paper ;
+	rdfs:subClassOf _:node1e0ve5io8x4 .
+
+_:node1e0ve5io8x4 a owl:Restriction ;
+	owl:onProperty :hasReview .
+
+:hasReview a owl:ObjectProperty .
+
+_:node1e0ve5io8x4 owl:minCardinality "3"^^xsd:int .
+
+:Evaluated_Paper rdfs:subClassOf :Assigned_Paper .
+
+:Assigned_Paper a owl:Class .
+
+:Positive_Review a owl:Class ;
+	owl:disjointWith :Negative_Review .
+
+:Negative_Review a owl:Class .
+
+:Positive_Review rdfs:subClassOf :Review .
+
+:Review a owl:Class .
+
+:Positive_Review owl:disjointWith :Neutral_Review .
+
+:Neutral_Review a owl:Class .
+
+:Research_Topic a owl:Class .
+
+:Organising_Agency a owl:Class ;
+	owl:disjointWith :Academic_Institution .
+
+:Academic_Institution a owl:Class .
+
+:Organising_Agency rdfs:subClassOf :Organization .
+
+:Organization a owl:Class .
+
+:Proceedings_Publisher a owl:Class ;
+	rdfs:subClassOf :Organization .
+
+:Organization a owl:Class .
+
+:Rejected_Paper a owl:Class ;
+	owl:disjointWith :Accepted_Paper ;
+	rdfs:subClassOf :Evaluated_Paper .
+
+:Conference_Paper a owl:Class ;
+	owl:disjointWith :Workshop_Paper ;
+	rdfs:subClassOf :Paper .
+
+:Paper a owl:Class .
+
+:Industrial_Paper a owl:Class ;
+	rdfs:subClassOf :Paper .
+
+:Paper a owl:Class .
+
+:Industrial_Paper owl:disjointWith :Poster_Paper .
+
+:Poster_Paper a owl:Class .
+
+:Industrial_Paper owl:disjointWith :Regular_Paper .
+
+:Regular_Paper a owl:Class .
+
+:Industrial_Paper owl:disjointWith :Workshop_Paper , :Demo_Paper .
+
+:Demo_Paper a owl:Class .
+
+:Person a owl:Class ;
+	owl:disjointWith :Location .
+
+:Location a owl:Class .
+
+:Person owl:disjointWith :Document .
+
+:Document a owl:Class .
+
+:Person owl:disjointWith :Organization .
+
+:Organization a owl:Class .
+
+:Person owl:disjointWith :Event .
+
+:Research_Institute a owl:Class ;
+	rdfs:subClassOf :Academic_Institution .
+
+:Academic_Institution a owl:Class .
+
+:Scientific_Event a owl:Class ;
+	rdfs:subClassOf :Event .
+
+:Academic_Institution a owl:Class ;
+	rdfs:subClassOf :Organization .
+
+:Organization a owl:Class .
+
+:Academic_Institution owl:disjointWith :Organising_Agency .
+
+:Demo_Session a owl:Class ;
+	owl:disjointWith :Poster_Session .
+
+:Poster_Session a owl:Class .
+
+:Demo_Session owl:disjointWith :Regular_Session ;
+	rdfs:subClassOf :Session .
+
+:Session a owl:Class .
+
+:Assigned_Paper a owl:Class ;
+	rdfs:subClassOf :Submitted_Paper .
+
+:Submitted_Paper a owl:Class .
+
+:Assigned_Paper rdfs:subClassOf _:node1e0ve5io8x5 .
+
+_:node1e0ve5io8x5 a owl:Restriction ;
+	owl:onProperty :hasReviewer .
+
+:hasReviewer a owl:ObjectProperty .
+
+_:node1e0ve5io8x5 owl:minCardinality "3"^^xsd:int .
+
+:Invited_Talk_Abstract a owl:Class ;
+	rdfs:subClassOf :Abstract .
+
+:Neutral_Review a owl:Class ;
+	rdfs:subClassOf :Review .
+
+:Review a owl:Class .
+
+:Neutral_Review owl:disjointWith :Negative_Review .
+
+:Negative_Review a owl:Class .
+
+:Neutral_Review owl:disjointWith :Positive_Review .
+
+:Agency_Staff_Member a owl:Class ;
+	rdfs:subClassOf :Person .
+
+:Organization a owl:Class ;
+	owl:disjointWith :Person .
+
+:Workshop_Session a owl:Class ;
+	owl:disjointWith :Conference_Session .
+
+:Conference_Session a owl:Class .
+
+:Workshop_Session rdfs:subClassOf :Session .
+
+:Session a owl:Class .
+
+:Track a owl:Class ;
+	owl:disjointWith :Session .
+
+:Session a owl:Class .
+
+:Track owl:disjointWith :Invited_Talk .
+
+:Invited_Talk a owl:Class .
+
+:Track owl:disjointWith :Workshop .
+
+:Workshop a owl:Class .
+
+:Track owl:disjointWith :Tutorial .
+
+:Tutorial a owl:Class .
+
+:Track owl:disjointWith :Social_Event .
+
+:Social_Event a owl:Class .
+
+:Track owl:disjointWith :Contributed_Talk .
+
+:Contributed_Talk a owl:Class .
+
+:Track owl:disjointWith :Conference .
+
+:Conference a owl:Class .
+
+:Track rdfs:subClassOf :Scientific_Event .
+
+:Demo_Chair a owl:Class ;
+	rdfs:subClassOf :Conference_Participant .
+
+:Conference_Participant a owl:Class , owl:Class ;
+	rdfs:subClassOf :Person .
+
+:Tutorial_Chair a owl:Class ;
+	owl:disjointWith :PC_Chair .
+
+:PC_Chair a owl:Class .
+
+:Tutorial_Chair rdfs:subClassOf :Conference_Participant , :PC_Member .
+
+:PC_Member a owl:Class .
+
+:Poster_Session a owl:Class ;
+	owl:disjointWith :Regular_Session ;
+	rdfs:subClassOf :Session .
+
+:Session a owl:Class .
+
+:Poster_Session owl:disjointWith :Demo_Session .
+
+:OC_Member a owl:Class ;
+	rdfs:subClassOf :Conference_Participant .
+
+:Review a owl:Class ;
+	owl:disjointWith :Paper .
+
+:Paper a owl:Class .
+
+:Review rdfs:subClassOf :Document .
+
+:Document a owl:Class .
+
+:Review owl:disjointWith :Proceedings .
+
+:Proceedings a owl:Class .
+
+:Review owl:disjointWith :Programme_Brochure .
+
+:Programme_Brochure a owl:Class .
+
+:Review owl:disjointWith :Flyer .
+
+:Flyer a owl:Class .
+
+:Review owl:disjointWith :Web_Site .
+
+:Web_Site a owl:Class .
+
+:Review owl:disjointWith :Multi-author_Volume .
+
+:Multi-author_Volume a owl:Class .
+
+:Regular_Paper a owl:Class ;
+	owl:disjointWith :Industrial_Paper , :Poster_Paper .
+
+:Poster_Paper a owl:Class .
+
+:Regular_Paper owl:disjointWith :Demo_Paper .
+
+:Demo_Paper a owl:Class .
+
+:Regular_Paper rdfs:subClassOf :Paper .
+
+:Paper a owl:Class .
+
+:Invited_Talk a owl:Class ;
+	owl:disjointWith :Workshop .
+
+:Workshop a owl:Class .
+
+:Invited_Talk owl:disjointWith :Social_Event .
+
+:Social_Event a owl:Class .
+
+:Invited_Talk owl:disjointWith :Tutorial .
+
+:Tutorial a owl:Class .
+
+:Invited_Talk owl:disjointWith :Contributed_Talk .
+
+:Contributed_Talk a owl:Class .
+
+:Invited_Talk rdfs:subClassOf :Individual_Presentation .
+
+:Individual_Presentation a owl:Class .
+
+:Invited_Talk owl:disjointWith :Track , :Conference .
+
+:Conference a owl:Class .
+
+:Invited_Talk owl:disjointWith :Session .
+
+:Session a owl:Class .
+
+:Social_Event a owl:Class ;
+	owl:disjointWith :Contributed_Talk .
+
+:Contributed_Talk a owl:Class .
+
+:Social_Event rdfs:subClassOf :Event ;
+	owl:disjointWith :Conference .
+
+:Conference a owl:Class .
+
+:Social_Event owl:disjointWith :Invited_Talk , :Track , :Workshop .
+
+:Workshop a owl:Class .
+
+:Social_Event owl:disjointWith :Tutorial .
+
+:Tutorial a owl:Class .
+
+:OC_Chair a owl:Class ;
+	rdfs:subClassOf :OC_Member .
+
+:Conference_Banquet a owl:Class ;
+	rdfs:subClassOf :Social_Event .
+
+:Multi-author_Volume a owl:Class ;
+	owl:disjointWith :Review , :Programme_Brochure .
+
+:Programme_Brochure a owl:Class .
+
+:Multi-author_Volume owl:disjointWith :Paper .
+
+:Paper a owl:Class .
+
+:Multi-author_Volume owl:disjointWith :Web_Site .
+
+:Web_Site a owl:Class .
+
+:Multi-author_Volume rdfs:subClassOf :Document .
+
+:Document a owl:Class .
+
+:Multi-author_Volume owl:disjointWith :Flyer .
+
+:Flyer a owl:Class .
+
+:Workshop_Chair a owl:Class ;
+	rdfs:subClassOf :Conference_Participant , :PC_Member .
+
+:PC_Member a owl:Class .
+
+:Workshop_Chair owl:disjointWith :PC_Chair .
+
+:PC_Chair a owl:Class .
+
+:Submitted_Paper a owl:Class ;
+	rdfs:subClassOf :Paper .
+
+:Paper a owl:Class .
+
+:Submitted_Paper owl:disjointWith :Camera_Ready_Paper .
+
+:Web_Site a owl:Class ;
+	owl:disjointWith :Programme_Brochure .
+
+:Programme_Brochure a owl:Class .
+
+:Web_Site rdfs:subClassOf :Document .
+
+:Document a owl:Class .
+
+:Web_Site owl:disjointWith :Proceedings .
+
+:Proceedings a owl:Class .
+
+:Web_Site owl:disjointWith :Review , :Multi-author_Volume , :Flyer .
+
+:Flyer a owl:Class .
+
+:Web_Site owl:disjointWith :Paper .
+
+:Paper a owl:Class .
+
+:Conference_Proceedings a owl:Class ;
+	rdfs:subClassOf :Proceedings .
+
+:Proceedings a owl:Class .
+
+:Conference_Proceedings rdfs:subClassOf _:node1e0ve5io8x6 .
+
+_:node1e0ve5io8x6 a owl:Restriction ;
+	owl:onProperty :volumeContainsPaper .
+
+:volumeContainsPaper a owl:ObjectProperty .
+
+_:node1e0ve5io8x6 owl:allValuesFrom _:node1e0ve5io8x7 .
+
+_:node1e0ve5io8x7 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x8 .
+
+_:node1e0ve5io8x8 rdf:first :Conference_Paper .
+
+:Conference_Paper a owl:Class .
+
+_:node1e0ve5io8x8 rdf:rest _:node1e0ve5io8x9 .
+
+_:node1e0ve5io8x9 rdf:first :Invited_Talk_Abstract .
+
+:Invited_Talk_Abstract a owl:Class .
+
+_:node1e0ve5io8x9 rdf:rest rdf:nil .
+
+:Workshop a owl:Class ;
+	owl:disjointWith :Conference .
+
+:Conference a owl:Class .
+
+:Workshop owl:disjointWith :Session .
+
+:Session a owl:Class .
+
+:Workshop owl:disjointWith :Tutorial .
+
+:Tutorial a owl:Class .
+
+:Workshop owl:disjointWith :Track , :Social_Event , :Individual_Presentation .
+
+:Individual_Presentation a owl:Class .
+
+:Workshop rdfs:subClassOf :Scientific_Event ;
+	owl:disjointWith :Invited_Talk .
+
+:Session_Chair a owl:Class ;
+	rdfs:subClassOf :PC_Member .
+
+:PC_Member a owl:Class .
+
+:Session_Chair rdfs:subClassOf :Conference_Participant .
+
+:Proceedings a owl:Class ;
+	rdfs:subClassOf :Multi-author_Volume , _:node1e0ve5io8x10 .
+
+_:node1e0ve5io8x10 a owl:Restriction ;
+	owl:allValuesFrom _:node1e0ve5io8x11 .
+
+_:node1e0ve5io8x11 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x12 .
+
+_:node1e0ve5io8x12 rdf:first :Accepted_Paper .
+
+:Accepted_Paper a owl:Class .
+
+_:node1e0ve5io8x12 rdf:rest _:node1e0ve5io8x13 .
+
+_:node1e0ve5io8x13 rdf:first :Invited_Talk_Abstract .
+
+:Invited_Talk_Abstract a owl:Class .
+
+_:node1e0ve5io8x13 rdf:rest rdf:nil .
+
+_:node1e0ve5io8x10 owl:onProperty :volumeContainsPaper .
+
+:volumeContainsPaper a owl:ObjectProperty .
+
+:Proceedings rdfs:subClassOf _:node1e0ve5io8x14 .
+
+_:node1e0ve5io8x14 a owl:Restriction ;
+	owl:onProperty :volumeContainsPaper .
+
+:volumeContainsPaper a owl:ObjectProperty .
+
+_:node1e0ve5io8x14 owl:minCardinality "1"^^xsd:int .
+
+:Proceedings owl:disjointWith :Web_Site , :Paper .
+
+:Paper a owl:Class .
+
+:Proceedings owl:disjointWith :Programme_Brochure .
+
+:Programme_Brochure a owl:Class .
+
+:Proceedings owl:disjointWith :Flyer .
+
+:Flyer a owl:Class .
+
+:Proceedings owl:disjointWith :Review .
+
+:Early-Registered_Participant a owl:Class ;
+	rdfs:subClassOf :Conference_Participant ;
+	owl:disjointWith :Late-Registered_Participant .
+
+:Late-Registered_Participant a owl:Class .
+
+:PC_Chair a owl:Class ;
+	owl:disjointWith :Tutorial_Chair ;
+	rdfs:subClassOf :Conference_Participant , :PC_Member .
+
+:PC_Member a owl:Class .
+
+:PC_Chair owl:disjointWith :Workshop_Chair .
+
+:Session a owl:Class ;
+	owl:disjointWith :Conference .
+
+:Conference a owl:Class .
+
+:Session owl:disjointWith :Contributed_Talk .
+
+:Contributed_Talk a owl:Class .
+
+:Session rdfs:subClassOf _:node1e0ve5io8x15 .
+
+_:node1e0ve5io8x15 a owl:Restriction ;
+	owl:onProperty :partOfEvent .
+
+:partOfEvent a owl:ObjectProperty .
+
+_:node1e0ve5io8x15 owl:allValuesFrom _:node1e0ve5io8x16 .
+
+_:node1e0ve5io8x16 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x17 .
+
+_:node1e0ve5io8x17 rdf:first :Conference .
+
+:Conference a owl:Class .
+
+_:node1e0ve5io8x17 rdf:rest _:node1e0ve5io8x18 .
+
+_:node1e0ve5io8x18 rdf:first :Track .
+
+:Track a owl:Class .
+
+_:node1e0ve5io8x18 rdf:rest _:node1e0ve5io8x19 .
+
+_:node1e0ve5io8x19 rdf:first :Workshop .
+
+:Workshop a owl:Class .
+
+_:node1e0ve5io8x19 rdf:rest rdf:nil .
+
+:Session rdfs:subClassOf _:node1e0ve5io8x20 .
+
+_:node1e0ve5io8x20 a owl:Restriction ;
+	owl:onProperty :hasEvent .
+
+:hasEvent a owl:ObjectProperty .
+
+_:node1e0ve5io8x20 owl:someValuesFrom :Individual_Presentation .
+
+:Individual_Presentation a owl:Class .
+
+:Session owl:disjointWith :Invited_Talk , :Workshop , :Tutorial .
+
+:Tutorial a owl:Class .
+
+:Session owl:disjointWith :Track ;
+	rdfs:subClassOf :Scientific_Event , _:node1e0ve5io8x21 .
+
+_:node1e0ve5io8x21 a owl:Restriction ;
+	owl:onProperty :partOfEvent .
+
+:partOfEvent a owl:ObjectProperty .
+
+_:node1e0ve5io8x21 owl:someValuesFrom _:node1e0ve5io8x22 .
+
+_:node1e0ve5io8x22 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x23 .
+
+_:node1e0ve5io8x23 rdf:first :Conference .
+
+:Conference a owl:Class .
+
+_:node1e0ve5io8x23 rdf:rest _:node1e0ve5io8x24 .
+
+_:node1e0ve5io8x24 rdf:first :Workshop .
+
+:Workshop a owl:Class .
+
+_:node1e0ve5io8x24 rdf:rest rdf:nil .
+
+:University a owl:Class ;
+	rdfs:subClassOf :Academic_Institution .
+
+:Location a owl:Class ;
+	owl:disjointWith :Person .
+
+:Contributed_Talk a owl:Class ;
+	owl:disjointWith :Social_Event , :Session , :Conference .
+
+:Conference a owl:Class .
+
+:Contributed_Talk rdfs:subClassOf _:node1e0ve5io8x25 .
+
+_:node1e0ve5io8x25 a owl:Restriction ;
+	owl:cardinality "1"^^xsd:int ;
+	owl:onProperty :presentationOfPaper .
+
+:presentationOfPaper a owl:ObjectProperty .
+
+:Contributed_Talk rdfs:subClassOf :Individual_Presentation .
+
+:Individual_Presentation a owl:Class .
+
+:Contributed_Talk rdfs:subClassOf _:node1e0ve5io8x26 .
+
+_:node1e0ve5io8x26 a owl:Restriction ;
+	owl:someValuesFrom :Camera_Ready_Paper ;
+	owl:onProperty :presentationOfPaper .
+
+:presentationOfPaper a owl:ObjectProperty .
+
+:Contributed_Talk owl:disjointWith :Invited_Talk , :Tutorial .
+
+:Tutorial a owl:Class .
+
+:Contributed_Talk owl:disjointWith :Track .
+
+:Individual_Presentation a owl:Class ;
+	owl:disjointWith :Workshop ;
+	rdfs:subClassOf :Scientific_Event .
+
+:Poster_Paper a owl:Class ;
+	owl:disjointWith :Industrial_Paper , :Regular_Paper , :Demo_Paper .
+
+:Demo_Paper a owl:Class .
+
+:Poster_Paper rdfs:subClassOf :Paper .
+
+:Paper a owl:Class .
+
+:Possible_Reviewer a owl:Class ;
+	rdfs:subClassOf :Person .
+
+:Student a owl:Class ;
+	rdfs:subClassOf :Person .
+
+:Negative_Review a owl:Class ;
+	rdfs:subClassOf :Review ;
+	owl:disjointWith :Neutral_Review , :Positive_Review .
+
+:PC_Member a owl:Class ;
+	rdfs:subClassOf :Possible_Reviewer .
+
+:Programme_Brochure a owl:Class ;
+	owl:disjointWith :Flyer .
+
+:Flyer a owl:Class .
+
+:Programme_Brochure rdfs:subClassOf :Document .
+
+:Document a owl:Class .
+
+:Programme_Brochure owl:disjointWith :Web_Site , :Paper .
+
+:Paper a owl:Class .
+
+:Programme_Brochure owl:disjointWith :Multi-author_Volume , :Review , :Proceedings .
+
+:Flyer a owl:Class ;
+	owl:disjointWith :Web_Site , :Paper .
+
+:Paper a owl:Class .
+
+:Flyer owl:disjointWith :Review ;
+	rdfs:subClassOf :Document .
+
+:Document a owl:Class .
+
+:Flyer owl:disjointWith :Multi-author_Volume , :Proceedings , :Programme_Brochure .
+
+:Invited_Speaker a owl:Class ;
+	rdfs:subClassOf :Presenter .
+
+:Presenter a owl:Class .
+
+:Late-Registered_Participant a owl:Class ;
+	rdfs:subClassOf :Conference_Participant ;
+	owl:disjointWith :Early-Registered_Participant .
+
+:Presenter a owl:Class ;
+	rdfs:subClassOf :Conference_Participant .
+
+:Conference_Session a owl:Class ;
+	owl:disjointWith :Workshop_Session ;
+	rdfs:subClassOf _:node1e0ve5io8x27 .
+
+_:node1e0ve5io8x27 a owl:Restriction ;
+	owl:onProperty :partOfEvent .
+
+:partOfEvent a owl:ObjectProperty .
+
+_:node1e0ve5io8x27 owl:someValuesFrom :Conference .
+
+:Conference a owl:Class .
+
+:Conference_Session rdfs:subClassOf :Session .
+
+:Tutorial a owl:Class ;
+	owl:disjointWith :Track , :Conference .
+
+:Conference a owl:Class .
+
+:Tutorial owl:disjointWith :Workshop , :Contributed_Talk , :Social_Event ;
+	rdfs:subClassOf :Individual_Presentation ;
+	owl:disjointWith :Invited_Talk , :Session .
+
+:Paper a owl:Class ;
+	owl:disjointWith :Programme_Brochure , :Multi-author_Volume ;
+	rdfs:subClassOf :Document .
+
+:Document a owl:Class .
+
+:Paper owl:disjointWith :Flyer , :Proceedings , :Web_Site , :Review .
+
+:SC_Member a owl:Class ;
+	rdfs:subClassOf :PC_Member .
+
+:Demo_Paper a owl:Class ;
+	owl:disjointWith :Poster_Paper , :Industrial_Paper ;
+	rdfs:subClassOf :Paper ;
+	owl:disjointWith :Regular_Paper .
+
+:Conference a owl:Class ;
+	rdfs:comment "One edition of a conference"^^xsd:string ;
+	owl:disjointWith :Social_Event , :Tutorial , :Contributed_Talk ;
+	rdfs:subClassOf :Scientific_Event ;
+	owl:disjointWith :Workshop , :Invited_Talk , :Session , :Track .
+
+:Document a owl:Class ;
+	owl:disjointWith :Person .
+
+:eventOnList a owl:ObjectProperty ;
+	rdfs:range _:node1e0ve5io8x28 .
+
+_:node1e0ve5io8x28 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x29 .
+
+_:node1e0ve5io8x29 rdf:first :Programme_Brochure .
+
+:Programme_Brochure a owl:Class .
+
+_:node1e0ve5io8x29 rdf:rest _:node1e0ve5io8x30 .
+
+_:node1e0ve5io8x30 rdf:first :Web_Site .
+
+:Web_Site a owl:Class .
+
+_:node1e0ve5io8x30 rdf:rest rdf:nil .
+
+:eventOnList owl:inverseOf :listsEvent .
+
+:listsEvent a owl:ObjectProperty .
+
+:eventOnList rdfs:domain :Event .
+
+:inverse_of_partOf_7 a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasPart .
+
+:hasPart a owl:ObjectProperty .
+
+:inverse_of_partOf_7 rdfs:range :Event .
+
+:partOfEvent a owl:ObjectProperty ;
+	rdfs:domain :Event ;
+	rdfs:range :Event ;
+	rdfs:subPropertyOf :partOf .
+
+:partOf a owl:ObjectProperty .
+
+:partOfEvent owl:inverseOf :hasEvent .
+
+:hasEvent a owl:ObjectProperty .
+
+:partOfEvent a owl:TransitiveProperty .
+
+:references a owl:ObjectProperty ;
+	owl:inverseOf :referencedIn .
+
+:referencedIn a owl:ObjectProperty .
+
+:listsEvent a owl:ObjectProperty ;
+	rdfs:domain _:node1e0ve5io8x31 .
+
+_:node1e0ve5io8x31 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x32 .
+
+_:node1e0ve5io8x32 rdf:first :Programme_Brochure .
+
+:Programme_Brochure a owl:Class .
+
+_:node1e0ve5io8x32 rdf:rest _:node1e0ve5io8x33 .
+
+_:node1e0ve5io8x33 rdf:first :Web_Site .
+
+:Web_Site a owl:Class .
+
+_:node1e0ve5io8x33 rdf:rest rdf:nil .
+
+:listsEvent owl:inverseOf :eventOnList ;
+	rdfs:range :Event .
+
+:hasEvent a owl:ObjectProperty ;
+	rdfs:domain :Event ;
+	rdfs:range :Event ;
+	owl:inverseOf :partOfEvent ;
+	rdfs:subPropertyOf :hasPart .
+
+:hasPart a owl:ObjectProperty .
+
+:hasReview a owl:ObjectProperty ;
+	rdfs:range :Review ;
+	rdfs:domain :Paper ;
+	owl:inverseOf :reviewOfPaper .
+
+:reviewOfPaper a owl:ObjectProperty .
+
+:organisedBy a owl:ObjectProperty ;
+	rdfs:range _:node1e0ve5io8x34 .
+
+_:node1e0ve5io8x34 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x35 .
+
+_:node1e0ve5io8x35 rdf:first :Organization .
+
+:Organization a owl:Class .
+
+_:node1e0ve5io8x35 rdf:rest _:node1e0ve5io8x36 .
+
+_:node1e0ve5io8x36 rdf:first :Person .
+
+:Person a owl:Class .
+
+_:node1e0ve5io8x36 rdf:rest rdf:nil .
+
+:organisedBy rdfs:domain :Event ;
+	owl:inverseOf :organises .
+
+:organises a owl:ObjectProperty .
+
+:hasPart a owl:ObjectProperty ;
+	owl:inverseOf :partOf .
+
+:partOf a owl:ObjectProperty .
+
+:hasPart a owl:TransitiveProperty .
+
+:partOf a owl:ObjectProperty ;
+	owl:inverseOf :hasPart ;
+	a owl:TransitiveProperty .
+
+:presentationOfPaper a owl:ObjectProperty ;
+	rdfs:domain :Individual_Presentation ;
+	owl:inverseOf :paperPresentedAs .
+
+:paperPresentedAs a owl:ObjectProperty .
+
+:presentationOfPaper rdfs:range _:node1e0ve5io8x37 .
+
+_:node1e0ve5io8x37 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x38 .
+
+_:node1e0ve5io8x38 rdf:first :Abstract .
+
+:Abstract a owl:Class .
+
+_:node1e0ve5io8x38 rdf:rest _:node1e0ve5io8x39 .
+
+_:node1e0ve5io8x39 rdf:first :Paper .
+
+:Paper a owl:Class .
+
+_:node1e0ve5io8x39 rdf:rest rdf:nil .
+
+:reviewerOfPaper a owl:ObjectProperty ;
+	rdfs:domain :Possible_Reviewer ;
+	rdfs:range :Paper ;
+	owl:inverseOf :hasReviewer .
+
+:hasReviewer a owl:ObjectProperty .
+
+:locationOf a owl:ObjectProperty ;
+	rdfs:domain :Location ;
+	rdfs:range :Event ;
+	owl:inverseOf :heldIn .
+
+:heldIn a owl:ObjectProperty .
+
+:publisherOf a owl:ObjectProperty ;
+	rdfs:range _:node1e0ve5io8x40 .
+
+_:node1e0ve5io8x40 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x41 .
+
+_:node1e0ve5io8x41 rdf:first :Multi-author_Volume .
+
+:Multi-author_Volume a owl:Class .
+
+_:node1e0ve5io8x41 rdf:rest _:node1e0ve5io8x42 .
+
+_:node1e0ve5io8x42 rdf:first :Programme_Brochure .
+
+:Programme_Brochure a owl:Class .
+
+_:node1e0ve5io8x42 rdf:rest _:node1e0ve5io8x43 .
+
+_:node1e0ve5io8x43 rdf:first :Web_Site .
+
+:Web_Site a owl:Class .
+
+_:node1e0ve5io8x43 rdf:rest _:node1e0ve5io8x44 .
+
+_:node1e0ve5io8x44 rdf:first :Flyer .
+
+:Flyer a owl:Class .
+
+_:node1e0ve5io8x44 rdf:rest rdf:nil .
+
+:publisherOf rdfs:domain :Organization .
+
+:paperPresentedAs a owl:ObjectProperty ;
+	rdfs:range :Individual_Presentation ;
+	rdfs:domain _:node1e0ve5io8x45 .
+
+_:node1e0ve5io8x45 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x46 .
+
+_:node1e0ve5io8x46 rdf:first :Abstract .
+
+:Abstract a owl:Class .
+
+_:node1e0ve5io8x46 rdf:rest _:node1e0ve5io8x47 .
+
+_:node1e0ve5io8x47 rdf:first :Paper .
+
+:Paper a owl:Class .
+
+_:node1e0ve5io8x47 rdf:rest rdf:nil .
+
+:paperPresentedAs owl:inverseOf :presentationOfPaper .
+
+:scientificallyOrganises a owl:ObjectProperty ;
+	rdfs:subPropertyOf :organises .
+
+:organises a owl:ObjectProperty .
+
+:scientificallyOrganises rdfs:domain :Academic_Institution ;
+	owl:inverseOf :scientificallyOrganisedBy .
+
+:scientificallyOrganisedBy a owl:ObjectProperty .
+
+:writtenBy a owl:ObjectProperty ;
+	owl:inverseOf :authorOf .
+
+:authorOf a owl:ObjectProperty .
+
+:writtenBy rdfs:domain :Document ;
+	rdfs:range :Person .
+
+:heldIn a owl:ObjectProperty ;
+	rdfs:domain :Event ;
+	rdfs:range :Location ;
+	owl:inverseOf :locationOf .
+
+:hasUpdatedVersion a owl:ObjectProperty ;
+	rdfs:domain :Document ;
+	owl:inverseOf :updatedVersionOf .
+
+:updatedVersionOf a owl:ObjectProperty .
+
+:hasUpdatedVersion rdfs:range :Document .
+
+:technicallyOrganisedBy a owl:ObjectProperty ;
+	rdfs:subPropertyOf :organisedBy ;
+	owl:inverseOf :technicallyOrganises .
+
+:technicallyOrganises a owl:ObjectProperty .
+
+:updatedVersionOf a owl:ObjectProperty ;
+	rdfs:domain :Document ;
+	owl:inverseOf :hasUpdatedVersion ;
+	rdfs:range :Document .
+
+:organises a owl:ObjectProperty ;
+	rdfs:range :Event ;
+	owl:inverseOf :organisedBy ;
+	rdfs:domain _:node1e0ve5io8x48 .
+
+_:node1e0ve5io8x48 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x49 .
+
+_:node1e0ve5io8x49 rdf:first :Organization .
+
+:Organization a owl:Class .
+
+_:node1e0ve5io8x49 rdf:rest _:node1e0ve5io8x50 .
+
+_:node1e0ve5io8x50 rdf:first :Person .
+
+:Person a owl:Class .
+
+_:node1e0ve5io8x50 rdf:rest rdf:nil .
+
+:reviewOfPaper a owl:ObjectProperty ;
+	rdfs:range :Paper ;
+	rdfs:domain :Review ;
+	owl:inverseOf :hasReview .
+
+:authorOf a owl:ObjectProperty ;
+	owl:inverseOf :writtenBy ;
+	rdfs:range :Document ;
+	rdfs:domain :Person .
+
+:volumeContainsPaper a owl:ObjectProperty ;
+	owl:inverseOf :paperInVolume .
+
+:paperInVolume a owl:ObjectProperty .
+
+:referencedIn a owl:ObjectProperty ;
+	owl:inverseOf :references .
+
+:paperInVolume a owl:ObjectProperty ;
+	owl:inverseOf :volumeContainsPaper .
+
+:scientificallyOrganisedBy a owl:ObjectProperty ;
+	rdfs:subPropertyOf :organisedBy ;
+	owl:inverseOf :scientificallyOrganises ;
+	rdfs:range :Academic_Institution .
+
+:coversTopic a owl:ObjectProperty ;
+	rdfs:domain _:node1e0ve5io8x51 .
+
+_:node1e0ve5io8x51 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x52 .
+
+_:node1e0ve5io8x52 rdf:first :Paper .
+
+:Paper a owl:Class .
+
+_:node1e0ve5io8x52 rdf:rest _:node1e0ve5io8x53 .
+
+_:node1e0ve5io8x53 rdf:first :Event .
+
+:Event a owl:Class .
+
+_:node1e0ve5io8x53 rdf:rest rdf:nil .
+
+:coversTopic owl:inverseOf :topicCoveredBy .
+
+:topicCoveredBy a owl:ObjectProperty .
+
+:coversTopic rdfs:range :Research_Topic .
+
+:reviewWrittenBy a owl:ObjectProperty ;
+	rdfs:domain :Review ;
+	rdfs:range :Possible_Reviewer ;
+	rdfs:subPropertyOf :writtenBy .
+
+:technicallyOrganises a owl:ObjectProperty ;
+	owl:inverseOf :technicallyOrganisedBy ;
+	rdfs:subPropertyOf :organises ;
+	rdfs:domain :Organization .
+
+:topicCoveredBy a owl:ObjectProperty ;
+	owl:inverseOf :coversTopic ;
+	rdfs:range _:node1e0ve5io8x54 .
+
+_:node1e0ve5io8x54 a owl:Class ;
+	owl:unionOf _:node1e0ve5io8x55 .
+
+_:node1e0ve5io8x55 rdf:first :Paper .
+
+:Paper a owl:Class .
+
+_:node1e0ve5io8x55 rdf:rest _:node1e0ve5io8x56 .
+
+_:node1e0ve5io8x56 rdf:first :Event .
+
+:Event a owl:Class .
+
+_:node1e0ve5io8x56 rdf:rest rdf:nil .
+
+:topicCoveredBy rdfs:domain :Research_Topic .
+
+:hasReviewer a owl:ObjectProperty ;
+	rdfs:domain :Paper ;
+	owl:inverseOf :reviewerOfPaper ;
+	rdfs:range :Possible_Reviewer .

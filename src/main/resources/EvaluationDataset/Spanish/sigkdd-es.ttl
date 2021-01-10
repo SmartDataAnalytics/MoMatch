@@ -1,0 +1,419 @@
+@prefix : <http://sigkdd_es#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://sigkdd_es> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+:op-0082403-8068860 a owl:ObjectProperty ;
+	rdfs:label "buscado por"@es ;
+	rdfs:domain :c-1286853-5689996 ;
+	rdfs:range :c-5388059-1977743 .
+
+:op-0119990-5009609 a owl:ObjectProperty ;
+	rdfs:label "puede quedarse en"@es ;
+	rdfs:range :c-2262477-9139447 ;
+	rdfs:domain :c-5092873-8482738 .
+
+:op-0250399-0530836 a owl:ObjectProperty ;
+	rdfs:label "obtener"@es ;
+	rdfs:range :c-8581510-5699945 ;
+	rdfs:domain :c-9987779-1090067 .
+
+:op-1759114-2962651 a owl:ObjectProperty ;
+	rdfs:label "presentación"@es ;
+	rdfs:range :c-5432918-1843544 ;
+	rdfs:domain :c-9399579-6840068 .
+
+:op-1865522-1515519 a owl:ObjectProperty ;
+	rdfs:label "diseñar"@es ;
+	rdfs:domain :c-5388059-1977743 ;
+	rdfs:range :c-8248914-4758164 .
+
+:op-2048186-1970004 a owl:ObjectProperty ;
+	rdfs:label "pagar"@es ;
+	rdfs:range :c-0491324-3180020 ;
+	rdfs:domain :c-5092873-8482738 ;
+	owl:inverseOf :op-9645105-0147967 .
+
+:op-2176163-2637645 a owl:ObjectProperty ;
+	rdfs:label "notificación hasta el"@es ;
+	rdfs:range :c-8262272-7187047 ;
+	rdfs:domain :c-9987779-1090067 .
+
+:op-3578718-6111148 a owl:ObjectProperty ;
+	rdfs:label "recibir"@es ;
+	rdfs:domain :c-5388059-1977743 ;
+	rdfs:range :c-5674301-2643102 .
+
+:op-4019908-9819825 a owl:ObjectProperty ;
+	rdfs:label "buscar"@es ;
+	rdfs:range :c-1286853-5689996 ;
+	rdfs:domain :c-5388059-1977743 ;
+	owl:inverseOf :op-0082403-8068860 .
+
+:op-5190337-7398337 a owl:ObjectProperty ;
+	rdfs:label "enviar hasta"@es ;
+	rdfs:domain :c-5432918-1843544 ;
+	rdfs:range :c-8248914-4758164 .
+
+:op-5622180-1137607 a owl:ObjectProperty ;
+	rdfs:label "premiado por"@es ;
+	rdfs:domain :c-8581510-5699945 ;
+	owl:inverseOf :op-8090583-4983289 .
+
+:op-6713485-3335607 a owl:ObjectProperty ;
+	rdfs:label "recibido por"@es ;
+	rdfs:range :c-5388059-1977743 ;
+	rdfs:domain :c-5674301-2643102 ;
+	owl:inverseOf :op-3578718-6111148 .
+
+:op-6808812-0736976 a owl:ObjectProperty ;
+	rdfs:label "presentado por"@es ;
+	rdfs:domain :c-5432918-1843544 ;
+	rdfs:range :c-9399579-6840068 ;
+	owl:inverseOf :op-1759114-2962651 .
+
+:op-8090583-4983289 a owl:ObjectProperty ;
+	rdfs:label "premio"@es ;
+	rdfs:range :c-8581510-5699945 .
+
+:op-8240675-9041219 a owl:ObjectProperty ;
+	rdfs:label "diseñado por"@es ;
+	rdfs:range :c-5388059-1977743 ;
+	rdfs:domain :c-8248914-4758164 ;
+	owl:inverseOf :op-1865522-1515519 .
+
+:op-9360309-5001475 a owl:ObjectProperty ;
+	rdfs:label "enviar"@es ;
+	rdfs:range :c-7285347-5021531 ;
+	rdfs:domain :c-9987779-1090067 .
+
+:op-9645105-0147967 a owl:ObjectProperty ;
+	rdfs:label "pagado por"@es ;
+	rdfs:domain :c-0491324-3180020 ;
+	rdfs:range :c-5092873-8482738 .
+
+:ent-0793320-1133786 a owl:DatatypeProperty ;
+	rdfs:label "principio de la conferencia"@es ;
+	rdfs:domain :c-5674301-2643102 ;
+	rdfs:range xsd:dateTime .
+
+:ent-1988382-4521773 a owl:DatatypeProperty ;
+	rdfs:label "fecha"@es ;
+	rdfs:domain :c-8248914-4758164 ;
+	rdfs:range xsd:dateTime .
+
+:ent-2976781-8405659 a owl:DatatypeProperty ;
+	rdfs:label "moneda"@es ;
+	rdfs:domain :c-0491324-3180020 ;
+	rdfs:range xsd:string .
+
+:ent-4974037-0776462 a owl:DatatypeProperty ;
+	rdfs:label "correo electrónico"@es ;
+	rdfs:domain :c-5092873-8482738 ;
+	rdfs:range xsd:string .
+
+:ent-5352815-2099245 a owl:DatatypeProperty ;
+	rdfs:label "ciudad de la conferencia"@es ;
+	rdfs:domain :c-5674301-2643102 ;
+	rdfs:range xsd:string .
+
+:ent-6930638-1874274 a owl:DatatypeProperty ;
+	rdfs:label "final de la conferencia"@es ;
+	rdfs:domain :c-5674301-2643102 ;
+	rdfs:range xsd:dateTime .
+
+:ent-7305366-9521620 a owl:DatatypeProperty ;
+	rdfs:label "nombre"@es ;
+	rdfs:domain :c-5092873-8482738 ;
+	rdfs:range xsd:string .
+
+:ent-7393506-6365274 a owl:DatatypeProperty ;
+	rdfs:label "nación"@es ;
+	rdfs:domain :c-5092873-8482738 ;
+	rdfs:range xsd:string .
+
+:ent-8117423-6601156 a owl:DatatypeProperty ;
+	rdfs:label "nombre del patrocinador"@es ;
+	rdfs:domain :c-1286853-5689996 ;
+	rdfs:range xsd:string .
+
+:ent-8219223-5137690 a owl:DatatypeProperty ;
+	rdfs:label "nombre de la conferencia"@es ;
+	rdfs:domain :c-5674301-2643102 ;
+	rdfs:range xsd:string .
+
+:ent-8637759-7073787 a owl:DatatypeProperty ;
+	rdfs:label "precio"@es ;
+	rdfs:domain :c-0491324-3180020 ;
+	rdfs:range xsd:int .
+
+:c-0392047-6889418 a owl:Class ;
+	rdfs:label "patrocinador de platino"@es ;
+	rdfs:subClassOf :c-1286853-5689996 .
+
+:c-0491324-3180020 a owl:Class ;
+	rdfs:label "tasas de registro"@es ;
+	rdfs:subClassOf :c-1066881-0032057 .
+
+:c-1066881-0032057 a owl:Class ;
+	rdfs:label "tasas"@es .
+
+:c-1092178-0472477 a owl:Class ;
+	rdfs:label "fecha límite de envío de artículos"@es ;
+	rdfs:subClassOf :c-8248914-4758164 .
+
+:c-1125983-4417923 a owl:Class ;
+	rdfs:label "registro para estudiantes"@es ;
+	rdfs:subClassOf :c-0491324-3180020 .
+
+:c-1286853-5689996 a owl:Class ;
+	rdfs:label "patrocinador"@es ;
+	owl:equivalentClass _:node1e05bkermx1 .
+
+_:node1e05bkermx1 a owl:Restriction ;
+	owl:onProperty :op-2048186-1970004 ;
+	owl:someValuesFrom :c-5797544-2932154 .
+
+:c-1420864-8549113 a owl:Class ;
+	rdfs:label "tasas para miembros de SIGKDD"@es ;
+	rdfs:subClassOf :c-0491324-3180020 .
+
+:c-1711697-1791535 a owl:Class ;
+	rdfs:label "estudiante autor del artículo"@es ;
+	rdfs:subClassOf :c-9987779-1090067 , _:node1e05bkermx2 .
+
+_:node1e05bkermx2 a owl:Restriction ;
+	owl:onProperty :op-8090583-4983289 ;
+	owl:someValuesFrom :c-2789708-7628223 .
+
+:c-2262477-9139447 a owl:Class ;
+	rdfs:label "lugar"@es .
+
+:c-2367263-1371224 a owl:Class ;
+	rdfs:label "patrocinador de plata"@es ;
+	rdfs:subClassOf :c-1286853-5689996 .
+
+:c-2706261-1155631 a owl:Class ;
+	rdfs:label "tasas para no miembros"@es ;
+	rdfs:subClassOf :c-0491324-3180020 .
+
+:c-2763261-4560459 a owl:Class ;
+	rdfs:label "administrador"@es ;
+	rdfs:subClassOf :c-3067451-2697143 .
+
+:c-2789708-7628223 a owl:Class ;
+	rdfs:label "premio al mejor estudiante"@es ;
+	rdfs:subClassOf :c-8581510-5699945 .
+
+:c-2951924-7398880 a owl:Class ;
+	rdfs:label "comité de programa"@es ;
+	rdfs:subClassOf :c-3262429-7101588 .
+
+:c-3067451-2697143 a owl:Class ;
+	rdfs:label "organizador"@es ;
+	rdfs:subClassOf :c-5092873-8482738 .
+
+:c-3117005-9113666 a owl:Class ;
+	rdfs:label "resumen"@es ;
+	owl:equivalentClass _:node1e05bkermx3 .
+
+_:node1e05bkermx3 a owl:Restriction ;
+	owl:onProperty :op-5190337-7398337 ;
+	owl:someValuesFrom :c-9805547-6326907 .
+
+:c-3117005-9113666 rdfs:subClassOf :c-5432918-1843544 .
+
+:c-3262429-7101588 a owl:Class ;
+	rdfs:label "comité"@es .
+
+:c-3269975-0857913 a owl:Class ;
+	rdfs:label "miembro del comité organizador"@es ;
+	rdfs:subClassOf :c-3067451-2697143 .
+
+:c-3356382-9968378 a owl:Class ;
+	rdfs:label "premio al mejor artículo de investigación"@es ;
+	rdfs:subClassOf :c-8581510-5699945 .
+
+:c-3469969-3497099 a owl:Class ;
+	rdfs:label "presidente de la conferencia"@es ;
+	rdfs:subClassOf :c-3067451-2697143 .
+
+:c-3830769-4363449 a owl:Class ;
+	rdfs:label "oficina principal"@es ;
+	rdfs:subClassOf :c-2262477-9139447 .
+
+:c-3934173-1045604 a owl:Class ;
+	rdfs:label "comité de concesión del premio al mejor artículo"@es ;
+	rdfs:subClassOf :c-3262429-7101588 .
+
+:c-4040331-3061528 a owl:Class ;
+	rdfs:label "patrocinador de oro"@es ;
+	rdfs:subClassOf :c-1286853-5689996 .
+
+:c-4831562-4817863 a owl:Class ;
+	rdfs:label "miembro del comité de programa"@es ;
+	rdfs:subClassOf :c-3067451-2697143 .
+
+:c-5021702-1376575 a owl:Class ;
+	rdfs:label "premio al mejor artículo de aplicaciones"@es ;
+	rdfs:subClassOf :c-8581510-5699945 .
+
+:c-5092873-8482738 a owl:Class ;
+	rdfs:label "persona"@es ;
+	owl:equivalentClass _:node1e05bkermx4 .
+
+_:node1e05bkermx4 a owl:Restriction ;
+	owl:onProperty :op-2048186-1970004 ;
+	owl:someValuesFrom :c-0491324-3180020 .
+
+:c-5092873-8482738 rdfs:subClassOf owl:Thing , _:node1e05bkermx5 .
+
+_:node1e05bkermx5 a owl:Restriction ;
+	owl:onProperty :op-0119990-5009609 ;
+	owl:someValuesFrom :c-8647066-8502754 .
+
+:c-5166138-7912412 a owl:Class ;
+	rdfs:label "tasas para miembros de SIGKDD"@es ;
+	rdfs:subClassOf :c-0491324-3180020 .
+
+:c-5225150-2769542 a owl:Class ;
+	rdfs:label "patrocinador de bronce"@es ;
+	rdfs:subClassOf :c-1286853-5689996 .
+
+:c-5388059-1977743 a owl:Class ;
+	rdfs:label "ACM_SIGKDD"@es ;
+	rdfs:subClassOf owl:Thing , _:node1e05bkermx6 .
+
+_:node1e05bkermx6 a owl:Restriction ;
+	owl:onProperty :op-4019908-9819825 ;
+	owl:someValuesFrom :c-1286853-5689996 .
+
+:c-5388059-1977743 rdfs:subClassOf _:node1e05bkermx7 .
+
+_:node1e05bkermx7 a owl:Restriction ;
+	owl:onProperty :op-3578718-6111148 ;
+	owl:someValuesFrom :c-5674301-2643102 .
+
+:c-5388059-1977743 rdfs:subClassOf _:node1e05bkermx8 .
+
+_:node1e05bkermx8 a owl:Restriction ;
+	owl:onProperty :op-1865522-1515519 ;
+	owl:someValuesFrom :c-8248914-4758164 .
+
+:c-5432918-1843544 a owl:Class ;
+	rdfs:label "documento"@es .
+
+:c-5674301-2643102 a owl:Class ;
+	rdfs:label "conferencia"@es .
+
+:c-5797544-2932154 a owl:Class ;
+	rdfs:label "tasas del patrocinador"@es ;
+	rdfs:subClassOf :c-1066881-0032057 .
+
+:c-6949498-3528979 a owl:Class ;
+	rdfs:label "comité organizador"@es ;
+	rdfs:subClassOf :c-3262429-7101588 .
+
+:c-7154611-7278456 a owl:Class ;
+	rdfs:label "conferenciante invitado"@es ;
+	rdfs:subClassOf :c-9399579-6840068 .
+
+:c-7231480-5414448 a owl:Class ;
+	rdfs:label "presidente del programa"@es ;
+	rdfs:subClassOf :c-3067451-2697143 .
+
+:c-7285347-5021531 a owl:Class ;
+	rdfs:label "artículo"@es ;
+	owl:equivalentClass _:node1e05bkermx9 .
+
+_:node1e05bkermx9 a owl:Restriction ;
+	owl:onProperty :op-5190337-7398337 ;
+	owl:someValuesFrom :c-1092178-0472477 .
+
+:c-7285347-5021531 rdfs:subClassOf :c-5432918-1843544 .
+
+:c-7484417-7700535 a owl:Class ;
+	rdfs:label "sala principal de la conferencia"@es ;
+	rdfs:subClassOf :c-2262477-9139447 .
+
+:c-7498444-0317000 a owl:Class ;
+	rdfs:label "autor del artículo"@es ;
+	rdfs:subClassOf :c-9987779-1090067 , _:node1e05bkermx10 .
+
+_:node1e05bkermx10 a owl:Restriction ;
+	owl:onProperty :op-8090583-4983289 ;
+	owl:someValuesFrom :c-3356382-9968378 .
+
+:c-7498444-0317000 rdfs:subClassOf _:node1e05bkermx11 .
+
+_:node1e05bkermx11 a owl:Restriction ;
+	owl:onProperty :op-8090583-4983289 ;
+	owl:someValuesFrom :c-5021702-1376575 .
+
+:c-7705390-2644551 a owl:Class ;
+	rdfs:label "revisión"@es ;
+	rdfs:subClassOf :c-5432918-1843544 .
+
+:c-8248914-4758164 a owl:Class ;
+	rdfs:label "fecha límite"@es .
+
+:c-8262272-7187047 a owl:Class ;
+	rdfs:label "fecha límite de notificación al autor"@es ;
+	rdfs:subClassOf :c-8248914-4758164 .
+
+:c-8370691-0420326 a owl:Class ;
+	rdfs:label "exhibidor"@es ;
+	rdfs:subClassOf :c-1286853-5689996 .
+
+:c-8514547-6877790 a owl:Class ;
+	rdfs:label "patrocinador del premio al mejor artículo de un estudiante"@es ;
+	rdfs:subClassOf :c-1286853-5689996 .
+
+:c-8581510-5699945 a owl:Class ;
+	rdfs:label "premio"@es ;
+	owl:equivalentClass _:node1e05bkermx12 .
+
+_:node1e05bkermx12 a owl:Restriction ;
+	owl:onProperty :op-5622180-1137607 ;
+	owl:someValuesFrom :c-3067451-2697143 .
+
+:c-8647066-8502754 a owl:Class ;
+	rdfs:label "hotel"@es ;
+	rdfs:subClassOf :c-2262477-9139447 .
+
+:c-9399579-6840068 a owl:Class ;
+	rdfs:label "orador"@es ;
+	owl:equivalentClass _:node1e05bkermx13 .
+
+_:node1e05bkermx13 a owl:Restriction ;
+	owl:onProperty :op-1759114-2962651 ;
+	owl:someValuesFrom :c-5432918-1843544 .
+
+:c-9399579-6840068 rdfs:subClassOf :c-5092873-8482738 .
+
+:c-9761403-5608106 a owl:Class ;
+	rdfs:label "oyente"@es ;
+	rdfs:subClassOf :c-5092873-8482738 .
+
+:c-9805547-6326907 a owl:Class ;
+	rdfs:label "fecha límite de envío de resúmenes"@es ;
+	rdfs:subClassOf :c-8248914-4758164 .
+
+:c-9987779-1090067 a owl:Class ;
+	rdfs:label "autor"@es ;
+	owl:equivalentClass _:node1e05bkermx14 .
+
+_:node1e05bkermx14 a owl:Restriction ;
+	owl:onProperty :op-9360309-5001475 ;
+	owl:someValuesFrom :c-7285347-5021531 .
+
+:c-9987779-1090067 rdfs:subClassOf :c-9399579-6840068 , _:node1e05bkermx15 .
+
+_:node1e05bkermx15 a owl:Restriction ;
+	owl:onProperty :op-2176163-2637645 ;
+	owl:someValuesFrom :c-8262272-7187047 .

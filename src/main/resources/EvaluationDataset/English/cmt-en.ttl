@@ -1,0 +1,527 @@
+@prefix : <http://cmt_en#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://cmt_en> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+:op-0102687-5392298 a owl:ObjectProperty ;
+	rdfs:label "has member"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range :c-8066557-3199962 ;
+	owl:inverseOf :op-3715253-7341884 .
+
+:op-0261939-6958814 a owl:ObjectProperty ;
+	rdfs:label "has member"@en ;
+	rdfs:range :c-4062369-5383392 ;
+	rdfs:domain :c-5375467-1655905 ;
+	owl:inverseOf :op-1581958-6116705 .
+
+:op-0455003-6077543 a owl:ObjectProperty ;
+	rdfs:label "set maximal number of assigned paper"@en ;
+	rdfs:domain :c-3355504-9442806 ;
+	rdfs:range :c-4062369-5383392 .
+
+:op-0491014-8723432 a owl:ObjectProperty ;
+	rdfs:label "hardcopy of mailing manifests printed by"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range :c-3355504-9442806 ;
+	owl:inverseOf :op-4815057-3921498 .
+
+:op-0563197-2956391 a owl:ObjectProperty , owl:FunctionalProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "accepted by"@en ;
+	rdfs:range :c-3355504-9442806 ;
+	rdfs:domain :c-5409377-9286012 .
+
+:op-0644404-7231162 a owl:ObjectProperty ;
+	rdfs:label "has conflict of interest with respect to"@en ;
+	rdfs:range :c-8693270-2767092 ;
+	rdfs:domain :c-9519178-7885109 .
+
+:op-1288474-9125864 a owl:ObjectProperty ;
+	rdfs:label "run paper asignmedt tools"@en ;
+	rdfs:range :c-3027646-3365825 ;
+	rdfs:domain :c-3355504-9442806 ;
+	owl:inverseOf :op-4204612-8254155 .
+
+:op-1415642-7736735 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "has bid"@en ;
+	rdfs:range :c-3017177-8896532 ;
+	rdfs:domain :c-5409377-9286012 .
+
+:op-1536122-6298582 a owl:ObjectProperty ;
+	rdfs:label "enter review criteria"@en ;
+	rdfs:range :c-3027646-3365825 ;
+	rdfs:domain :c-3355504-9442806 .
+
+:op-1581958-6116705 a owl:ObjectProperty ;
+	rdfs:label "member of program committee"@en ;
+	rdfs:domain :c-4062369-5383392 ;
+	rdfs:range :c-5375467-1655905 .
+
+:op-1599762-7967134 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "read by meta-reviewer"@en ;
+	rdfs:range :c-1998894-5296562 ;
+	rdfs:domain :c-5409377-9286012 .
+
+:op-1997920-3046898 a owl:ObjectProperty ;
+	rdfs:label "details entered by"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range :c-3355504-9442806 .
+
+:op-2352672-2684910 a owl:ObjectProperty ;
+	rdfs:label "assign"@en ;
+	rdfs:domain :c-3355504-9442806 ;
+	rdfs:range :c-8707801-9291338 ;
+	owl:inverseOf :op-7822155-2346526 .
+
+:op-2611597-4191733 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "write paper"@en ;
+	rdfs:domain :c-2074692-1147118 ;
+	rdfs:range :c-5409377-9286012 .
+
+:op-2649033-9712859 a owl:ObjectProperty ;
+	rdfs:label "read paper"@en ;
+	rdfs:range :c-5409377-9286012 ;
+	rdfs:domain :c-8707801-9291338 ;
+	owl:inverseOf :op-9779608-5108867 .
+
+:op-2674759-3900303 a owl:ObjectProperty ;
+	rdfs:label "reviewer bidding started by"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range :c-3355504-9442806 .
+
+:op-2798366-1946309 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "assign"@en ;
+	rdfs:range :c-7224102-6220619 ;
+	rdfs:domain :c-8707801-9291338 .
+
+:op-2852745-7435295 a owl:ObjectProperty ;
+	rdfs:label "has subject area"@en ;
+	rdfs:range :c-3969637-3563037 ;
+	rdfs:domain :c-5409377-9286012 .
+
+:op-2958559-8395926 a owl:ObjectProperty ;
+	rdfs:label "assigned to"@en ;
+	rdfs:domain :c-5409377-9286012 ;
+	rdfs:range :c-8707801-9291338 .
+
+:op-3343741-2145006 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "written by"@en ;
+	rdfs:domain :c-6029021-0998116 ;
+	rdfs:range :c-8707801-9291338 ;
+	owl:inverseOf :op-6746253-0545056 .
+
+:op-3673731-3704063 a owl:ObjectProperty ;
+	rdfs:label "enable virtual meeting"@en ;
+	rdfs:range :c-3027646-3365825 ;
+	rdfs:domain :c-3355504-9442806 ;
+	owl:inverseOf :op-6283707-9260731 .
+
+:op-3715253-7341884 a owl:ObjectProperty ;
+	rdfs:label "member of conference"@en ;
+	rdfs:range :c-3027646-3365825 ;
+	rdfs:domain :c-8066557-3199962 .
+
+:op-3741712-7753689 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "adjusted by"@en ;
+	rdfs:domain :c-3017177-8896532 ;
+	rdfs:range :c-8707801-9291338 .
+
+:op-4204612-8254155 a owl:ObjectProperty ;
+	rdfs:label "paper assignment tools run by"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range :c-3355504-9442806 .
+
+:op-4309011-4113368 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "added by"@en ;
+	rdfs:range :c-3355504-9442806 ;
+	rdfs:domain :c-4062369-5383392 ;
+	owl:inverseOf :op-4999283-7971326 .
+
+:op-4706944-2787728 a owl:ObjectProperty ;
+	rdfs:label "submit paper"@en ;
+	rdfs:domain :c-2074692-1147118 ;
+	rdfs:range :c-5409377-9286012 .
+
+:op-4815057-3921498 a owl:ObjectProperty ;
+	rdfs:label "print hardcopy mailing manifests"@en ;
+	rdfs:range :c-3027646-3365825 ;
+	rdfs:domain :c-3355504-9442806 .
+
+:op-4850171-5907708 a owl:ObjectProperty ;
+	rdfs:label "co-write"@en ;
+	rdfs:domain :c-1819859-8467443 ;
+	rdfs:range :c-5409377-9286012 .
+
+:op-4931010-8867602 a owl:ObjectProperty ;
+	rdfs:label "end reviewing time"@en ;
+	rdfs:range :c-6029021-0998116 ;
+	rdfs:domain :c-6062733-3218604 .
+
+:op-4999283-7971326 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "add"@en ;
+	rdfs:domain :c-3355504-9442806 ;
+	rdfs:range :c-4062369-5383392 .
+
+:op-5548425-1932115 a owl:ObjectProperty ;
+	rdfs:label "mark conflict of interest"@en ;
+	rdfs:range :c-5409377-9286012 ;
+	rdfs:domain _:node1e05bd7ikx1 .
+
+_:node1e05bd7ikx1 a owl:Class ;
+	owl:unionOf _:node1e05bd7ikx2 .
+
+_:node1e05bd7ikx2 rdf:first :c-2074692-1147118 ;
+	rdf:rest _:node1e05bd7ikx3 .
+
+_:node1e05bd7ikx3 rdf:first :c-3387453-2881212 ;
+	rdf:rest _:node1e05bd7ikx4 .
+
+_:node1e05bd7ikx4 rdf:first :c-8707801-9291338 ;
+	rdf:rest rdf:nil .
+
+:op-5714477-9488711 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "rejected by"@en ;
+	rdfs:range :c-3355504-9442806 ;
+	rdfs:domain :c-5409377-9286012 .
+
+:op-5999633-4351656 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "reject paper"@en ;
+	rdfs:domain :c-3355504-9442806 ;
+	rdfs:range :c-5409377-9286012 ;
+	owl:inverseOf :op-5714477-9488711 .
+
+:op-6143522-2877268 a owl:ObjectProperty ;
+	rdfs:label "paper assignment finalized by"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range :c-3355504-9442806 .
+
+:op-6283707-9260731 a owl:ObjectProperty ;
+	rdfs:label "virtual meeting enabled by"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range :c-3355504-9442806 .
+
+:op-6688605-5254034 a owl:ObjectProperty ;
+	rdfs:label "start reviewer bidding"@en ;
+	rdfs:range :c-3027646-3365825 ;
+	rdfs:domain :c-3355504-9442806 ;
+	owl:inverseOf :op-2674759-3900303 .
+
+:op-6746253-0545056 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "write review"@en ;
+	rdfs:range :c-6029021-0998116 ;
+	rdfs:domain :c-8707801-9291338 .
+
+:op-7075044-5167613 a owl:ObjectProperty ;
+	rdfs:label "finalize paper assignment"@en ;
+	rdfs:range :c-3027646-3365825 ;
+	rdfs:domain :c-3355504-9442806 ;
+	owl:inverseOf :op-6143522-2877268 .
+
+:op-7452997-4133095 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "written by"@en ;
+	rdfs:range :c-2074692-1147118 ;
+	rdfs:domain :c-5409377-9286012 ;
+	owl:inverseOf :op-2611597-4191733 .
+
+:op-7758730-0930874 a owl:ObjectProperty ;
+	rdfs:label "co-written by"@en ;
+	rdfs:range :c-1819859-8467443 ;
+	rdfs:domain :c-5409377-9286012 ;
+	owl:inverseOf :op-4850171-5907708 .
+
+:op-7822155-2346526 a owl:ObjectProperty ;
+	rdfs:label "assigned by admin"@en ;
+	rdfs:range :c-3355504-9442806 ;
+	rdfs:domain :c-8707801-9291338 .
+
+:op-7848370-1577514 a owl:ObjectProperty , owl:FunctionalProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "accepts"@en ;
+	rdfs:domain :c-3355504-9442806 ;
+	rdfs:range :c-5409377-9286012 ;
+	owl:inverseOf :op-0563197-2956391 .
+
+:op-8503855-9022324 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "has been decided (to be accepted, rejected, ...)"@en ;
+	rdfs:domain :c-5409377-9286012 ;
+	rdfs:range :c-8313706-4430806 .
+
+:op-8575895-0911006 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "assigned by reviewer"@en ;
+	rdfs:domain :c-7224102-6220619 ;
+	rdfs:range :c-8707801-9291338 ;
+	owl:inverseOf :op-2798366-1946309 .
+
+:op-8724798-7163354 a owl:ObjectProperty ;
+	rdfs:label "has been assigned"@en ;
+	rdfs:range :c-5409377-9286012 ;
+	rdfs:domain :c-8707801-9291338 ;
+	owl:inverseOf :op-2958559-8395926 .
+
+:op-8994929-8698791 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "adjust"@en ;
+	rdfs:range :c-3017177-8896532 ;
+	rdfs:domain :c-8707801-9291338 ;
+	owl:inverseOf :op-3741712-7753689 .
+
+:op-9145996-5514392 a owl:ObjectProperty ;
+	rdfs:label "review criteria entered by"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range :c-3355504-9442806 ;
+	owl:inverseOf :op-1536122-6298582 .
+
+:op-9305729-7081388 a owl:ObjectProperty ;
+	rdfs:label "enter details on"@en ;
+	rdfs:range :c-3027646-3365825 ;
+	rdfs:domain :c-3355504-9442806 ;
+	owl:inverseOf :op-1997920-3046898 .
+
+:op-9779608-5108867 a owl:ObjectProperty ;
+	rdfs:label "read by reviewer"@en ;
+	rdfs:domain :c-5409377-9286012 ;
+	rdfs:range :c-8707801-9291338 .
+
+:ent-0531196-9778108 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "maximal number of assigned papers"@en ;
+	rdfs:domain :c-4062369-5383392 ;
+	rdfs:range xsd:int .
+
+:ent-1648737-1451089 a owl:DatatypeProperty ;
+	rdfs:label "has email"@en ;
+	rdfs:domain :c-9519178-7885109 ;
+	rdfs:range xsd:string .
+
+:ent-1689293-3812948 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "has website at url"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range xsd:anyURI .
+
+:ent-1830157-2457934 a owl:DatatypeProperty ;
+	rdfs:label "has date"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range xsd:date .
+
+:ent-4692979-9121254 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "reviews per paper"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range xsd:int .
+
+:ent-6218326-5775008 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "has id"@en ;
+	rdfs:domain :c-5409377-9286012 ;
+	rdfs:range xsd:unsignedLong .
+
+:ent-7312475-4843858 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "has logo at url"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range xsd:anyURI .
+
+:ent-7385850-0767179 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "accepts hardcopy submissions"@en ;
+	rdfs:domain :c-3027646-3365825 ;
+	rdfs:range xsd:boolean .
+
+:ent-7592571-9671564 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "has title"@en ;
+	rdfs:domain :c-5409377-9286012 ;
+	rdfs:range xsd:string .
+
+:ent-7669016-6331082 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "has name"@en ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bd7ikx5 .
+
+_:node1e05bd7ikx5 a owl:Class ;
+	owl:unionOf _:node1e05bd7ikx6 .
+
+_:node1e05bd7ikx6 rdf:first :c-3027646-3365825 ;
+	rdf:rest _:node1e05bd7ikx7 .
+
+_:node1e05bd7ikx7 rdf:first :c-9519178-7885109 ;
+	rdf:rest rdf:nil .
+
+:c-0430420-0075813 a owl:Class ;
+	rdfs:label "abstract of paper"@en ;
+	rdfs:subClassOf :c-5409377-9286012 .
+
+:c-1611583-0668331 a owl:Class ;
+	rdfs:label "preference"@en ;
+	owl:disjointWith :c-3017177-8896532 , :c-3027646-3365825 , :c-5375467-1655905 , :c-8313706-4430806 , :c-8693270-2767092 , :c-9519178-7885109 .
+
+:c-1819859-8467443 a owl:Class ;
+	rdfs:label "co-author"@en ;
+	rdfs:subClassOf :c-2074692-1147118 .
+
+:c-1998894-5296562 a owl:Class ;
+	rdfs:label "meta-reviewer"@en ;
+	rdfs:subClassOf :c-8707801-9291338 .
+
+:c-2074692-1147118 a owl:Class ;
+	rdfs:label "author"@en ;
+	rdfs:subClassOf :c-6817901-7377121 , :c-8066557-3199962 .
+
+:c-2079829-2275666 a owl:Class ;
+	rdfs:label "conference chair"@en ;
+	rdfs:subClassOf :c-8066557-3199962 ;
+	owl:disjointWith :c-3945313-3684065 .
+
+:c-2282104-8815481 a owl:Class ;
+	rdfs:label "meta-review"@en ;
+	rdfs:subClassOf :c-6029021-0998116 .
+
+:c-3017177-8896532 a owl:Class ;
+	rdfs:label "bid"@en ;
+	owl:disjointWith :c-3027646-3365825 , :c-5375467-1655905 , :c-8313706-4430806 , :c-8693270-2767092 , :c-9519178-7885109 .
+
+:c-3027646-3365825 a owl:Class ;
+	rdfs:label "conference"@en ;
+	rdfs:subClassOf owl:Thing , _:node1e05bd7ikx8 .
+
+_:node1e05bd7ikx8 a owl:Restriction ;
+	owl:onProperty :ent-7669016-6331082 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-3027646-3365825 rdfs:subClassOf _:node1e05bd7ikx9 .
+
+_:node1e05bd7ikx9 a owl:Restriction ;
+	owl:onProperty :ent-1830157-2457934 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-3027646-3365825 rdfs:subClassOf _:node1e05bd7ikx10 .
+
+_:node1e05bd7ikx10 a owl:Restriction ;
+	owl:onProperty :ent-4692979-9121254 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-3027646-3365825 owl:disjointWith :c-5375467-1655905 , :c-8313706-4430806 , :c-8693270-2767092 , :c-9519178-7885109 .
+
+:c-3355504-9442806 a owl:Class ;
+	rdfs:label "administrator"@en ;
+	rdfs:subClassOf :c-6817901-7377121 .
+
+:c-3387453-2881212 a owl:Class ;
+	rdfs:label "chairman"@en ;
+	owl:equivalentClass _:node1e05bd7ikx11 .
+
+_:node1e05bd7ikx11 a owl:Class ;
+	owl:unionOf _:node1e05bd7ikx12 .
+
+_:node1e05bd7ikx12 rdf:first :c-2079829-2275666 ;
+	rdf:rest _:node1e05bd7ikx13 .
+
+_:node1e05bd7ikx13 rdf:first :c-3945313-3684065 ;
+	rdf:rest _:node1e05bd7ikx14 .
+
+_:node1e05bd7ikx14 rdf:first :c-6062733-3218604 ;
+	rdf:rest rdf:nil .
+
+:c-3387453-2881212 rdfs:subClassOf :c-9519178-7885109 .
+
+:c-3945313-3684065 a owl:Class ;
+	rdfs:label "associated chair"@en ;
+	rdfs:subClassOf :c-8066557-3199962 .
+
+:c-3959626-1362323 a owl:Class ;
+	rdfs:label "acceptance"@en ;
+	rdfs:subClassOf :c-8313706-4430806 ;
+	owl:disjointWith :c-5994448-5980560 .
+
+:c-3969637-3563037 a owl:Class ;
+	rdfs:label "subject area"@en .
+
+:c-4062369-5383392 a owl:Class ;
+	rdfs:label "member of program committee"@en ;
+	rdfs:subClassOf :c-8066557-3199962 , :c-9519178-7885109 ;
+	owl:disjointWith :c-5343668-8121191 .
+
+:c-4413043-1523228 a owl:Class ;
+	rdfs:label "full version of paper"@en ;
+	rdfs:subClassOf :c-5409377-9286012 .
+
+:c-5343668-8121191 a owl:Class ;
+	rdfs:label "author, who is not a reviewer"@en ;
+	rdfs:subClassOf :c-2074692-1147118 ;
+	owl:disjointWith :c-8707801-9291338 .
+
+:c-5375467-1655905 a owl:Class ;
+	rdfs:label "program committee"@en ;
+	owl:disjointWith :c-8313706-4430806 , :c-8693270-2767092 , :c-9519178-7885109 .
+
+:c-5409377-9286012 a owl:Class ;
+	rdfs:label "paper"@en ;
+	rdfs:subClassOf :c-8693270-2767092 , _:node1e05bd7ikx15 .
+
+_:node1e05bd7ikx15 a owl:Restriction ;
+	owl:onProperty :op-8503855-9022324 ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5409377-9286012 rdfs:subClassOf _:node1e05bd7ikx16 .
+
+_:node1e05bd7ikx16 a owl:Restriction ;
+	owl:onProperty :op-9779608-5108867 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5409377-9286012 rdfs:subClassOf _:node1e05bd7ikx17 .
+
+_:node1e05bd7ikx17 a owl:Restriction ;
+	owl:onProperty :op-8503855-9022324 ;
+	owl:minCardinality "0"^^xsd:nonNegativeInteger .
+
+:c-5409377-9286012 rdfs:subClassOf _:node1e05bd7ikx18 .
+
+_:node1e05bd7ikx18 a owl:Restriction ;
+	owl:onProperty :op-1599762-7967134 ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5409377-9286012 owl:disjointWith :c-6029021-0998116 .
+
+:c-5994448-5980560 a owl:Class ;
+	rdfs:label "rejection"@en ;
+	rdfs:subClassOf :c-8313706-4430806 .
+
+:c-6029021-0998116 a owl:Class ;
+	rdfs:label "review"@en ;
+	rdfs:subClassOf :c-8693270-2767092 .
+
+:c-6062733-3218604 a owl:Class ;
+	rdfs:label "chair of program committee"@en ;
+	rdfs:subClassOf :c-4062369-5383392 .
+
+:c-6817901-7377121 a owl:Class ;
+	rdfs:label "user"@en ;
+	rdfs:subClassOf :c-9519178-7885109 .
+
+:c-7224102-6220619 a owl:Class ;
+	rdfs:label "external reviewer"@en ;
+	rdfs:subClassOf :c-9519178-7885109 , _:node1e05bd7ikx19 .
+
+_:node1e05bd7ikx19 a owl:Restriction ;
+	owl:onProperty :op-8575895-0911006 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-7224102-6220619 owl:disjointWith :c-8707801-9291338 .
+
+:c-8066557-3199962 a owl:Class ;
+	rdfs:label "member of conference"@en ;
+	rdfs:subClassOf :c-9519178-7885109 .
+
+:c-8313706-4430806 a owl:Class ;
+	rdfs:label "decision"@en ;
+	owl:disjointWith :c-8693270-2767092 , :c-9519178-7885109 .
+
+:c-8693270-2767092 a owl:Class ;
+	rdfs:label "document"@en ;
+	owl:disjointWith :c-9519178-7885109 .
+
+:c-8707801-9291338 a owl:Class ;
+	rdfs:label "reviewer"@en ;
+	rdfs:subClassOf :c-6817901-7377121 , :c-8066557-3199962 .
+
+:c-9519178-7885109 a owl:Class ;
+	rdfs:label "person"@en .

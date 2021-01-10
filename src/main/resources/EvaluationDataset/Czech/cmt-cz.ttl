@@ -1,0 +1,526 @@
+@prefix : <http://cmt_cz#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://cmt_cz> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+:op-0432162-8398718 a owl:ObjectProperty ;
+	rdfs:label "člen konference"@cs ;
+	rdfs:range :c-0075317-8076564 ;
+	rdfs:domain :c-7762278-1333457 .
+
+:op-0458224-9433253 a owl:ObjectProperty ;
+	rdfs:label "dokončit přidělení příspěvků konference"@cs ;
+	rdfs:range :c-0075317-8076564 ;
+	rdfs:domain :c-9510493-7314978 ;
+	owl:inverseOf :op-5059116-9359721 .
+
+:op-0623795-6074869 a owl:ObjectProperty ;
+	rdfs:label "čte článek"@cs ;
+	rdfs:range :c-3460865-4718819 ;
+	rdfs:domain :c-9999501-9567959 ;
+	owl:inverseOf :op-2458065-0360190 .
+
+:op-0966508-4834998 a owl:ObjectProperty ;
+	rdfs:label "zadání kritérií recenzí kým"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range :c-9510493-7314978 ;
+	owl:inverseOf :op-3284481-2852944 .
+
+:op-1123799-1699346 a owl:ObjectProperty ;
+	rdfs:label "spustil přidělování článků konference"@cs ;
+	rdfs:range :c-0075317-8076564 ;
+	rdfs:domain :c-9510493-7314978 ;
+	owl:inverseOf :op-5846805-0359309 .
+
+:op-1170545-9807724 a owl:ObjectProperty ;
+	rdfs:label "člen programového výboru"@cs ;
+	rdfs:domain :c-2078968-5732070 ;
+	rdfs:range :c-5802603-8520876 .
+
+:op-1303951-4931939 a owl:ObjectProperty ;
+	rdfs:label "tisk brožur konference"@cs ;
+	rdfs:range :c-0075317-8076564 ;
+	rdfs:domain :c-9510493-7314978 .
+
+:op-1541405-5409026 a owl:ObjectProperty ;
+	rdfs:label "přidělen recenzent administrátorovi"@cs ;
+	rdfs:range :c-9510493-7314978 ;
+	rdfs:domain :c-9999501-9567959 .
+
+:op-1579152-3151797 a owl:ObjectProperty ;
+	rdfs:label "odeslání článku"@cs ;
+	rdfs:domain :c-2277754-4158396 ;
+	rdfs:range :c-3460865-4718819 .
+
+:op-1979724-8617564 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "napsal článek"@cs ;
+	rdfs:domain :c-2277754-4158396 ;
+	rdfs:range :c-3460865-4718819 .
+
+:op-2048853-9028952 a owl:ObjectProperty ;
+	rdfs:label "brožury vytištěny kým"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range :c-9510493-7314978 ;
+	owl:inverseOf :op-1303951-4931939 .
+
+:op-2458065-0360190 a owl:ObjectProperty ;
+	rdfs:label "článek přečten recenzentem"@cs ;
+	rdfs:domain :c-3460865-4718819 ;
+	rdfs:range :c-9999501-9567959 .
+
+:op-2594333-0978557 a owl:ObjectProperty ;
+	rdfs:label "přidělení členů programového výboru administrátorem"@cs ;
+	rdfs:range :c-2078968-5732070 ;
+	rdfs:domain :c-9510493-7314978 .
+
+:op-2719305-6116440 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "má rozhodnutí"@cs ;
+	rdfs:domain :c-3460865-4718819 ;
+	rdfs:range :c-6068065-2346935 .
+
+:op-3100859-0106878 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "přidán člen programového výboru"@cs ;
+	rdfs:domain :c-2078968-5732070 ;
+	rdfs:range :c-9510493-7314978 ;
+	owl:inverseOf :op-5595496-1359020 .
+
+:op-3145641-2703975 a owl:ObjectProperty , owl:FunctionalProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "přijal článek"@cs ;
+	rdfs:range :c-3460865-4718819 ;
+	rdfs:domain :c-9510493-7314978 ;
+	owl:inverseOf :op-3439303-1005047 .
+
+:op-3249689-5706056 a owl:ObjectProperty ;
+	rdfs:label "má spoluautora"@cs ;
+	rdfs:domain :c-3460865-4718819 ;
+	rdfs:range :c-6954144-5167465 ;
+	owl:inverseOf :op-5233762-3966768 .
+
+:op-3284481-2852944 a owl:ObjectProperty ;
+	rdfs:label "vložit kritéria recenze"@cs ;
+	rdfs:range :c-0075317-8076564 ;
+	rdfs:domain :c-9510493-7314978 .
+
+:op-3288010-0134836 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "napsal recenzi"@cs ;
+	rdfs:range :c-5395109-0887878 ;
+	rdfs:domain :c-9999501-9567959 .
+
+:op-3439303-1005047 a owl:ObjectProperty , owl:FunctionalProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "přijato kým"@cs ;
+	rdfs:domain :c-3460865-4718819 ;
+	rdfs:range :c-9510493-7314978 .
+
+:op-3595147-3775493 a owl:ObjectProperty ;
+	rdfs:label "umožnit virtuální schůzku konferenci"@cs ;
+	rdfs:range :c-0075317-8076564 ;
+	rdfs:domain :c-9510493-7314978 ;
+	owl:inverseOf :op-5203575-7027520 .
+
+:op-3866300-3329332 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "přidělen externí recenzent"@cs ;
+	rdfs:range :c-6084724-9952967 ;
+	rdfs:domain :c-9999501-9567959 .
+
+:op-3939079-1765799 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "článek napsal"@cs ;
+	rdfs:range :c-2277754-4158396 ;
+	rdfs:domain :c-3460865-4718819 ;
+	owl:inverseOf :op-1979724-8617564 .
+
+:op-3978264-5994210 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "zamítnut kým"@cs ;
+	rdfs:domain :c-3460865-4718819 ;
+	rdfs:range :c-9510493-7314978 .
+
+:op-4083995-9769205 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "vyjádření zájmu upraveno"@cs ;
+	rdfs:domain :c-1710596-1174205 ;
+	rdfs:range :c-9999501-9567959 .
+
+:op-4417571-9636359 a owl:ObjectProperty ;
+	rdfs:label "přidělen recenzent"@cs ;
+	rdfs:domain :c-9510493-7314978 ;
+	rdfs:range :c-9999501-9567959 ;
+	owl:inverseOf :op-1541405-5409026 .
+
+:op-4503022-0671140 a owl:ObjectProperty ;
+	rdfs:label "označil konflikt zájmu"@cs ;
+	rdfs:range :c-3460865-4718819 ;
+	rdfs:domain _:node1e05a8q02x1 .
+
+_:node1e05a8q02x1 a owl:Class ;
+	owl:unionOf _:node1e05a8q02x2 .
+
+_:node1e05a8q02x2 rdf:first :c-1109430-9892691 ;
+	rdf:rest _:node1e05a8q02x3 .
+
+_:node1e05a8q02x3 rdf:first :c-2277754-4158396 ;
+	rdf:rest _:node1e05a8q02x4 .
+
+_:node1e05a8q02x4 rdf:first :c-9999501-9567959 ;
+	rdf:rest rdf:nil .
+
+:op-4698265-0483831 a owl:ObjectProperty ;
+	rdfs:label "recenzuje článek"@cs ;
+	rdfs:range :c-3460865-4718819 ;
+	rdfs:domain :c-9999501-9567959 ;
+	owl:inverseOf :op-5600782-3305758 .
+
+:op-4736258-3439701 a owl:ObjectProperty ;
+	rdfs:label "uzavřít recenzi"@cs ;
+	rdfs:domain :c-4971341-0156307 ;
+	rdfs:range :c-5395109-0887878 .
+
+:op-4925705-2193515 a owl:ObjectProperty ;
+	rdfs:label "má konflikt zájmu s příspěvkem"@cs ;
+	rdfs:range :c-0452574-2080354 ;
+	rdfs:domain :c-0578733-1857190 .
+
+:op-5049562-0017689 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "přidělen meta-recenzent recenzentovi"@cs ;
+	rdfs:domain :c-6084724-9952967 ;
+	rdfs:range :c-9999501-9567959 ;
+	owl:inverseOf :op-3866300-3329332 .
+
+:op-5059116-9359721 a owl:ObjectProperty ;
+	rdfs:label "přidělení příspěvků dokončeno kým"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range :c-9510493-7314978 .
+
+:op-5203575-7027520 a owl:ObjectProperty ;
+	rdfs:label "virtuální schůzka konference umožněna kým"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range :c-9510493-7314978 .
+
+:op-5233762-3966768 a owl:ObjectProperty ;
+	rdfs:label "spoluautor příspěvku"@cs ;
+	rdfs:range :c-3460865-4718819 ;
+	rdfs:domain :c-6954144-5167465 .
+
+:op-5235981-5122813 a owl:ObjectProperty ;
+	rdfs:label "pojednává o tématu"@cs ;
+	rdfs:range :c-0978466-4762816 ;
+	rdfs:domain :c-3460865-4718819 .
+
+:op-5595496-1359020 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "přidat člena programového výboru"@cs ;
+	rdfs:range :c-2078968-5732070 ;
+	rdfs:domain :c-9510493-7314978 .
+
+:op-5600782-3305758 a owl:ObjectProperty ;
+	rdfs:label "přiděleno recenzentovi"@cs ;
+	rdfs:domain :c-3460865-4718819 ;
+	rdfs:range :c-9999501-9567959 .
+
+:op-5846805-0359309 a owl:ObjectProperty ;
+	rdfs:label "nástroj pro přídělení příspěvků spuštěn kým"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range :c-9510493-7314978 .
+
+:op-6176936-7944974 a owl:ObjectProperty ;
+	rdfs:label "zahájil vyjadřování zájmu recenzentů"@cs ;
+	rdfs:range :c-0075317-8076564 ;
+	rdfs:domain :c-9510493-7314978 ;
+	owl:inverseOf :op-6923946-9687405 .
+
+:op-6923946-9687405 a owl:ObjectProperty ;
+	rdfs:label "vyjadření zájmu spuštěno kým"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range :c-9510493-7314978 .
+
+:op-7603017-3460209 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "upravit vyjádření zájmu"@cs ;
+	rdfs:range :c-1710596-1174205 ;
+	rdfs:domain :c-9999501-9567959 ;
+	owl:inverseOf :op-4083995-9769205 .
+
+:op-8454321-5609778 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "recenze napsána kým"@cs ;
+	rdfs:domain :c-5395109-0887878 ;
+	rdfs:range :c-9999501-9567959 ;
+	owl:inverseOf :op-3288010-0134836 .
+
+:op-8492450-4994485 a owl:ObjectProperty ;
+	rdfs:label "vložit podrobnosti konference"@cs ;
+	rdfs:range :c-0075317-8076564 ;
+	rdfs:domain :c-9510493-7314978 ;
+	owl:inverseOf :op-9028664-9440680 .
+
+:op-8543092-2688723 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "zamítnul článek"@cs ;
+	rdfs:range :c-3460865-4718819 ;
+	rdfs:domain :c-9510493-7314978 ;
+	owl:inverseOf :op-3978264-5994210 .
+
+:op-8644966-5327331 a owl:ObjectProperty ;
+	rdfs:label "má člena programového výboru"@cs ;
+	rdfs:range :c-2078968-5732070 ;
+	rdfs:domain :c-5802603-8520876 ;
+	owl:inverseOf :op-1170545-9807724 .
+
+:op-9028664-9440680 a owl:ObjectProperty ;
+	rdfs:label "podrobnosti vloženy kým"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range :c-9510493-7314978 .
+
+:op-9555015-4440565 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "má vyjádření zájmu"@cs ;
+	rdfs:range :c-1710596-1174205 ;
+	rdfs:domain :c-3460865-4718819 .
+
+:op-9655662-7845361 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "článek přečten meta-recenzentem"@cs ;
+	rdfs:domain :c-3460865-4718819 ;
+	rdfs:range :c-4768517-7614612 .
+
+:op-9778175-4696720 a owl:ObjectProperty ;
+	rdfs:label "má člena konference"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range :c-7762278-1333457 ;
+	owl:inverseOf :op-0432162-8398718 .
+
+:ent-0734097-6608972 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "logo konference má URL"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range xsd:anyURI .
+
+:ent-3122496-0070100 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "konference má recenzí na článek"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range xsd:int .
+
+:ent-4323430-0231880 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "článek má ID"@cs ;
+	rdfs:domain :c-3460865-4718819 ;
+	rdfs:range xsd:unsignedLong .
+
+:ent-4819789-5630843 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "nastavil maximální počet recenzí"@cs ;
+	rdfs:domain :c-2078968-5732070 ;
+	rdfs:range xsd:int .
+
+:ent-4932889-3833748 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "článek má název"@cs ;
+	rdfs:domain :c-3460865-4718819 ;
+	rdfs:range xsd:string .
+
+:ent-4999871-0113227 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "má jméno"@cs ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05a8q02x5 .
+
+_:node1e05a8q02x5 a owl:Class ;
+	owl:unionOf _:node1e05a8q02x6 .
+
+_:node1e05a8q02x6 rdf:first :c-0075317-8076564 ;
+	rdf:rest _:node1e05a8q02x7 .
+
+_:node1e05a8q02x7 rdf:first :c-0578733-1857190 ;
+	rdf:rest rdf:nil .
+
+:ent-5109242-0314878 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "akceptovány příspěvky konference pro tisk"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range xsd:boolean .
+
+:ent-7179792-9328317 a owl:DatatypeProperty ;
+	rdfs:label "datum konference"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range xsd:date .
+
+:ent-8942207-0853588 a owl:DatatypeProperty ;
+	rdfs:label "má email"@cs ;
+	rdfs:domain :c-0578733-1857190 ;
+	rdfs:range xsd:string .
+
+:ent-9613142-1273747 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "webová stránka konference má URL"@cs ;
+	rdfs:domain :c-0075317-8076564 ;
+	rdfs:range xsd:anyURI .
+
+:c-0075317-8076564 a owl:Class ;
+	rdfs:label "konference"@cs ;
+	rdfs:subClassOf owl:Thing , _:node1e05a8q02x8 .
+
+_:node1e05a8q02x8 a owl:Restriction ;
+	owl:onProperty :ent-3122496-0070100 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0075317-8076564 rdfs:subClassOf _:node1e05a8q02x9 .
+
+_:node1e05a8q02x9 a owl:Restriction ;
+	owl:onProperty :ent-7179792-9328317 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0075317-8076564 rdfs:subClassOf _:node1e05a8q02x10 .
+
+_:node1e05a8q02x10 a owl:Restriction ;
+	owl:onProperty :ent-4999871-0113227 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0075317-8076564 owl:disjointWith :c-0452574-2080354 , :c-0578733-1857190 , :c-0754816-7898339 , :c-1710596-1174205 , :c-5802603-8520876 , :c-6068065-2346935 .
+
+:c-0128535-7854643 a owl:Class ;
+	rdfs:label "autor který není recenzent"@cs ;
+	rdfs:subClassOf :c-2277754-4158396 ;
+	owl:disjointWith :c-2078968-5732070 , :c-9999501-9567959 .
+
+:c-0452574-2080354 a owl:Class ;
+	rdfs:label "dokument"@cs ;
+	owl:disjointWith :c-0578733-1857190 , :c-0754816-7898339 , :c-1710596-1174205 , :c-5802603-8520876 , :c-6068065-2346935 .
+
+:c-0578733-1857190 a owl:Class ;
+	rdfs:label "osoba"@cs ;
+	owl:disjointWith :c-0754816-7898339 , :c-1710596-1174205 , :c-5802603-8520876 , :c-6068065-2346935 .
+
+:c-0754816-7898339 a owl:Class ;
+	rdfs:label "preference"@cs ;
+	owl:disjointWith :c-1710596-1174205 , :c-5802603-8520876 , :c-6068065-2346935 .
+
+:c-0978466-4762816 a owl:Class ;
+	rdfs:label "předmětná oblast"@cs .
+
+:c-1109430-9892691 a owl:Class ;
+	rdfs:label "předseda"@cs ;
+	owl:equivalentClass _:node1e05a8q02x11 .
+
+_:node1e05a8q02x11 a owl:Class ;
+	owl:unionOf _:node1e05a8q02x12 .
+
+_:node1e05a8q02x12 rdf:first :c-2063214-6676250 ;
+	rdf:rest _:node1e05a8q02x13 .
+
+_:node1e05a8q02x13 rdf:first :c-4499023-9965815 ;
+	rdf:rest _:node1e05a8q02x14 .
+
+_:node1e05a8q02x14 rdf:first :c-4971341-0156307 ;
+	rdf:rest rdf:nil .
+
+:c-1109430-9892691 rdfs:subClassOf :c-0578733-1857190 .
+
+:c-1435667-7309116 a owl:Class ;
+	rdfs:label "řádný článek"@cs ;
+	rdfs:subClassOf :c-3460865-4718819 .
+
+:c-1710596-1174205 a owl:Class ;
+	rdfs:label "vyjádření zájmu"@cs ;
+	owl:disjointWith :c-5802603-8520876 , :c-6068065-2346935 .
+
+:c-2063214-6676250 a owl:Class ;
+	rdfs:label "spolupředseda"@cs ;
+	rdfs:subClassOf :c-7762278-1333457 ;
+	owl:disjointWith :c-4499023-9965815 .
+
+:c-2078968-5732070 a owl:Class ;
+	rdfs:label "člen programového výboru"@cs ;
+	rdfs:subClassOf :c-0578733-1857190 , :c-7762278-1333457 .
+
+:c-2277754-4158396 a owl:Class ;
+	rdfs:label "autor"@cs ;
+	rdfs:subClassOf :c-4308335-5096551 , :c-7762278-1333457 .
+
+:c-3460865-4718819 a owl:Class ;
+	rdfs:label "článek"@cs ;
+	rdfs:subClassOf :c-0452574-2080354 , _:node1e05a8q02x15 .
+
+_:node1e05a8q02x15 a owl:Restriction ;
+	owl:onProperty :op-2719305-6116440 ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-3460865-4718819 rdfs:subClassOf _:node1e05a8q02x16 .
+
+_:node1e05a8q02x16 a owl:Restriction ;
+	owl:onProperty :op-9655662-7845361 ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-3460865-4718819 rdfs:subClassOf _:node1e05a8q02x17 .
+
+_:node1e05a8q02x17 a owl:Restriction ;
+	owl:onProperty :op-2719305-6116440 ;
+	owl:minCardinality "0"^^xsd:nonNegativeInteger .
+
+:c-3460865-4718819 rdfs:subClassOf _:node1e05a8q02x18 .
+
+_:node1e05a8q02x18 a owl:Restriction ;
+	owl:onProperty :op-2458065-0360190 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-3460865-4718819 owl:disjointWith :c-5395109-0887878 .
+
+:c-4308335-5096551 a owl:Class ;
+	rdfs:label "uživatel"@cs ;
+	rdfs:subClassOf :c-0578733-1857190 .
+
+:c-4396461-6855991 a owl:Class ;
+	rdfs:label "přijetí"@cs ;
+	rdfs:subClassOf :c-6068065-2346935 ;
+	owl:disjointWith :c-8922348-5805928 .
+
+:c-4499023-9965815 a owl:Class ;
+	rdfs:label "předseda konference"@cs ;
+	rdfs:subClassOf :c-7762278-1333457 .
+
+:c-4568940-5424482 a owl:Class ;
+	rdfs:label "krátký článek"@cs ;
+	rdfs:subClassOf :c-3460865-4718819 .
+
+:c-4768517-7614612 a owl:Class ;
+	rdfs:label "meta-recenzent"@cs ;
+	rdfs:subClassOf :c-9999501-9567959 .
+
+:c-4971341-0156307 a owl:Class ;
+	rdfs:label "předseda programového výboru"@cs ;
+	rdfs:subClassOf :c-2078968-5732070 .
+
+:c-5395109-0887878 a owl:Class ;
+	rdfs:label "recenze"@cs ;
+	rdfs:subClassOf :c-0452574-2080354 .
+
+:c-5802603-8520876 a owl:Class ;
+	rdfs:label "programový výbor"@cs ;
+	owl:disjointWith :c-6068065-2346935 .
+
+:c-6068065-2346935 a owl:Class ;
+	rdfs:label "rozhodnutí"@cs .
+
+:c-6084724-9952967 a owl:Class ;
+	rdfs:label "externí recenzent"@cs ;
+	rdfs:subClassOf :c-0578733-1857190 , _:node1e05a8q02x19 .
+
+_:node1e05a8q02x19 a owl:Restriction ;
+	owl:onProperty :op-5049562-0017689 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6084724-9952967 owl:disjointWith :c-9999501-9567959 .
+
+:c-6909402-0737569 a owl:Class ;
+	rdfs:label "meta-recenze"@cs ;
+	rdfs:subClassOf :c-5395109-0887878 .
+
+:c-6954144-5167465 a owl:Class ;
+	rdfs:label "spoluautor"@cs ;
+	rdfs:subClassOf :c-2277754-4158396 .
+
+:c-7762278-1333457 a owl:Class ;
+	rdfs:label "osoba s účastí na konferenci"@cs ;
+	rdfs:subClassOf :c-0578733-1857190 .
+
+:c-8922348-5805928 a owl:Class ;
+	rdfs:label "zamítnutí"@cs ;
+	rdfs:subClassOf :c-6068065-2346935 .
+
+:c-9510493-7314978 a owl:Class ;
+	rdfs:label "administrátor"@cs ;
+	rdfs:subClassOf :c-4308335-5096551 .
+
+:c-9999501-9567959 a owl:Class ;
+	rdfs:label "recenzent"@cs ;
+	rdfs:subClassOf :c-4308335-5096551 , :c-7762278-1333457 .

@@ -1,0 +1,631 @@
+@prefix : <http://confOf_ru#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://confOf_ru> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+:op-0307204-7449894 a owl:ObjectProperty ;
+	rdfs:label "адресует"@ru ;
+	rdfs:range :c-5876523-0419817 ;
+	rdfs:domain :c-6037990-0723904 .
+
+:op-1502165-7262239 a owl:ObjectProperty ;
+	rdfs:label "пишет"@ru ;
+	rdfs:range :c-6037990-0723904 ;
+	rdfs:domain :c-8517441-6767240 ;
+	owl:inverseOf :op-4995354-2093455 .
+
+:op-2784568-3094215 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "страна"@ru ;
+	rdfs:range :c-0999245-0541401 ;
+	rdfs:domain _:node1e05dhg9ox1 .
+
+_:node1e05dhg9ox1 a owl:Class ;
+	owl:unionOf _:node1e05dhg9ox2 .
+
+_:node1e05dhg9ox2 rdf:first :c-4758191-1789091 ;
+	rdf:rest _:node1e05dhg9ox3 .
+
+_:node1e05dhg9ox3 rdf:first :c-5590492-9780844 ;
+	rdf:rest rdf:nil .
+
+:op-3011101-3474867 a owl:ObjectProperty ;
+	rdfs:label "тема"@ru ;
+	rdfs:range :c-5876523-0419817 ;
+	rdfs:domain :c-6880169-3840891 .
+
+:op-3025349-3609264 a owl:ObjectProperty ;
+	rdfs:label "обучается в"@ru ;
+	rdfs:range :c-1868254-5433915 ;
+	rdfs:domain :c-2850102-5273069 .
+
+:op-3139527-0096506 a owl:ObjectProperty ;
+	rdfs:label "город"@ru ;
+	rdfs:range :c-7074126-2036468 ;
+	rdfs:domain _:node1e05dhg9ox4 .
+
+_:node1e05dhg9ox4 a owl:Class ;
+	owl:unionOf _:node1e05dhg9ox5 .
+
+_:node1e05dhg9ox5 rdf:first :c-4758191-1789091 ;
+	rdf:rest _:node1e05dhg9ox6 .
+
+_:node1e05dhg9ox6 rdf:first :c-5590492-9780844 ;
+	rdf:rest rdf:nil .
+
+:op-4995354-2093455 a owl:ObjectProperty ;
+	rdfs:label "написана"@ru ;
+	rdfs:domain :c-6037990-0723904 ;
+	rdfs:range :c-8517441-6767240 .
+
+:op-7143464-5736051 a owl:ObjectProperty ;
+	rdfs:label "содержит административный этап"@ru ;
+	rdfs:range :c-6427896-1485736 ;
+	rdfs:domain :c-6880169-3840891 .
+
+:op-7333897-5505293 a owl:ObjectProperty , owl:SymmetricProperty ;
+	rdfs:label "параллельно с"@ru ;
+	rdfs:domain :c-6427896-1485736 ;
+	rdfs:range :c-6427896-1485736 ;
+	owl:inverseOf :op-7333897-5505293 .
+
+:op-7642490-6388357 a owl:ObjectProperty ;
+	rdfs:label "место работы"@ru ;
+	rdfs:domain :c-4758191-1789091 ;
+	rdfs:range :c-5590492-9780844 .
+
+:op-8135134-0937123 a owl:ObjectProperty ;
+	rdfs:label "компетентен в"@ru ;
+	rdfs:range :c-5876523-0419817 ;
+	rdfs:domain :c-9527497-6101184 .
+
+:op-8986399-3636017 a owl:ObjectProperty ;
+	rdfs:label "рецензирует"@ru ;
+	rdfs:range :c-6037990-0723904 ;
+	rdfs:domain :c-9527497-6101184 .
+
+:op-9822521-6773713 a owl:ObjectProperty , owl:TransitiveProperty ;
+	rdfs:label "следует"@ru ;
+	rdfs:domain :c-6427896-1485736 ;
+	rdfs:range :c-6427896-1485736 .
+
+:ent-0798096-6591597 a owl:DatatypeProperty ;
+	rdfs:label "почтовый индекс"@ru ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05dhg9ox7 .
+
+_:node1e05dhg9ox7 a owl:Class ;
+	owl:unionOf _:node1e05dhg9ox8 .
+
+_:node1e05dhg9ox8 rdf:first :c-4758191-1789091 ;
+	rdf:rest _:node1e05dhg9ox9 .
+
+_:node1e05dhg9ox9 rdf:first :c-5590492-9780844 ;
+	rdf:rest rdf:nil .
+
+:ent-1475229-4773738 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "фамилия"@ru ;
+	rdfs:domain :c-4758191-1789091 ;
+	rdfs:range xsd:string .
+
+:ent-1492413-8931181 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "начало"@ru ;
+	rdfs:domain :c-1075317-7064396 ;
+	rdfs:range xsd:string .
+
+:ent-2072336-6490904 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "сокращённое название"@ru ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05dhg9ox10 .
+
+_:node1e05dhg9ox10 a owl:Class ;
+	owl:unionOf _:node1e05dhg9ox11 .
+
+_:node1e05dhg9ox11 rdf:first :c-1034299-9636303 ;
+	rdf:rest _:node1e05dhg9ox12 .
+
+_:node1e05dhg9ox12 rdf:first :c-6880169-3840891 ;
+	rdf:rest rdf:nil .
+
+:ent-2164851-8882672 a owl:DatatypeProperty ;
+	rdfs:label "замечание"@ru ;
+	rdfs:domain :c-6037990-0723904 ;
+	rdfs:range xsd:string .
+
+:ent-3452900-2179997 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "имя"@ru ;
+	rdfs:domain :c-4758191-1789091 ;
+	rdfs:range xsd:string .
+
+:ent-3476072-0793174 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "аннотация"@ru ;
+	rdfs:domain :c-6037990-0723904 ;
+	rdfs:range xsd:string .
+
+:ent-3534571-1058599 a owl:DatatypeProperty ;
+	rdfs:label "факс"@ru ;
+	rdfs:domain :c-4758191-1789091 ;
+	rdfs:range xsd:string .
+
+:ent-4680823-7883509 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "название"@ru ;
+	rdfs:domain :c-6037990-0723904 ;
+	rdfs:range xsd:string .
+
+:ent-5616382-6132011 a owl:DatatypeProperty ;
+	rdfs:label "телефон"@ru ;
+	rdfs:domain :c-4758191-1789091 ;
+	rdfs:range xsd:string .
+
+:ent-6283173-8451812 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "досрочная регистрация"@ru ;
+	rdfs:domain :c-7906083-9856634 ;
+	rdfs:range xsd:boolean .
+
+:ent-6507683-3490968 a owl:DatatypeProperty ;
+	rdfs:label "улица"@ru ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05dhg9ox13 .
+
+_:node1e05dhg9ox13 a owl:Class ;
+	owl:unionOf _:node1e05dhg9ox14 .
+
+_:node1e05dhg9ox14 rdf:first :c-4758191-1789091 ;
+	rdf:rest _:node1e05dhg9ox15 .
+
+_:node1e05dhg9ox15 rdf:first :c-5590492-9780844 ;
+	rdf:rest rdf:nil .
+
+:ent-6841525-6581134 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "окончание"@ru ;
+	rdfs:domain :c-1075317-7064396 ;
+	rdfs:range xsd:string .
+
+:ent-7018019-5688814 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "выбор по умолчанию"@ru ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:domain _:node1e05dhg9ox16 .
+
+_:node1e05dhg9ox16 a owl:Class ;
+	owl:unionOf _:node1e05dhg9ox17 .
+
+_:node1e05dhg9ox17 rdf:first :c-1034299-9636303 ;
+	rdf:rest _:node1e05dhg9ox18 .
+
+_:node1e05dhg9ox18 rdf:first :c-6880169-3840891 ;
+	rdf:rest rdf:nil .
+
+:ent-7072231-0011015 a owl:DatatypeProperty ;
+	rdfs:label "контактный адрес электронной почты"@ru ;
+	rdfs:domain :c-6037990-0723904 ;
+	rdfs:range xsd:string .
+
+:ent-7152264-2655023 a owl:DatatypeProperty ;
+	rdfs:label "место проведения"@ru ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05dhg9ox19 .
+
+_:node1e05dhg9ox19 a owl:Class ;
+	owl:unionOf _:node1e05dhg9ox20 .
+
+_:node1e05dhg9ox20 rdf:first :c-1034299-9636303 ;
+	rdf:rest _:node1e05dhg9ox21 .
+
+_:node1e05dhg9ox21 rdf:first :c-6880169-3840891 ;
+	rdf:rest rdf:nil .
+
+:ent-7589047-2700866 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "название"@ru ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05dhg9ox22 .
+
+_:node1e05dhg9ox22 a owl:Class ;
+	owl:unionOf _:node1e05dhg9ox23 .
+
+_:node1e05dhg9ox23 rdf:first :c-1034299-9636303 ;
+	rdf:rest _:node1e05dhg9ox24 .
+
+_:node1e05dhg9ox24 rdf:first :c-6880169-3840891 ;
+	rdf:rest rdf:nil .
+
+:ent-7854423-1601895 a owl:DatatypeProperty ;
+	rdfs:label "минимальный выбор"@ru ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:domain _:node1e05dhg9ox25 .
+
+_:node1e05dhg9ox25 a owl:Class ;
+	owl:unionOf _:node1e05dhg9ox26 .
+
+_:node1e05dhg9ox26 rdf:first :c-1034299-9636303 ;
+	rdf:rest _:node1e05dhg9ox27 .
+
+_:node1e05dhg9ox27 rdf:first :c-6880169-3840891 ;
+	rdf:rest rdf:nil .
+
+:ent-7961697-4876328 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "НДС"@ru ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05dhg9ox28 .
+
+_:node1e05dhg9ox28 a owl:Class ;
+	owl:unionOf _:node1e05dhg9ox29 .
+
+_:node1e05dhg9ox29 rdf:first :c-1034299-9636303 ;
+	rdf:rest _:node1e05dhg9ox30 .
+
+_:node1e05dhg9ox30 rdf:first :c-6880169-3840891 ;
+	rdf:rest rdf:nil .
+
+:ent-8485592-5940351 a owl:DatatypeProperty ;
+	rdfs:label "адрес электронной почты"@ru ;
+	rdfs:domain :c-4758191-1789091 ;
+	rdfs:range xsd:string .
+
+:ent-9096177-5027765 a owl:DatatypeProperty ;
+	rdfs:label "содержит ключевые слова"@ru ;
+	rdfs:domain :c-6037990-0723904 ;
+	rdfs:range xsd:string .
+
+:ent-9487647-3086106 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "максимальный выбор"@ru ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:domain _:node1e05dhg9ox31 .
+
+_:node1e05dhg9ox31 a owl:Class ;
+	owl:unionOf _:node1e05dhg9ox32 .
+
+_:node1e05dhg9ox32 rdf:first :c-1034299-9636303 ;
+	rdf:rest _:node1e05dhg9ox33 .
+
+_:node1e05dhg9ox33 rdf:first :c-6880169-3840891 ;
+	rdf:rest rdf:nil .
+
+:ent-9555439-9414011 a owl:DatatypeProperty ;
+	rdfs:label "домашняя страница"@ru ;
+	rdfs:domain :c-4758191-1789091 ;
+	rdfs:range xsd:string .
+
+:c-0148645-7348102 a owl:Class ;
+	rdfs:label "Студент"@ru ;
+	rdfs:subClassOf :c-7906083-9856634 .
+
+:c-0748432-5870144 a owl:Class ;
+	rdfs:label "Тезисы статьи"@ru ;
+	rdfs:subClassOf :c-6037990-0723904 ;
+	owl:disjointWith :c-4484677-5082611 , :c-8294927-3462455 .
+
+:c-0999245-0541401 a owl:Class ;
+	rdfs:label "Страна"@ru ;
+	owl:disjointWith :c-1075317-7064396 , :c-4758191-1789091 , :c-5590492-9780844 , :c-5876523-0419817 , :c-6037990-0723904 .
+
+:c-1034299-9636303 a owl:Class ;
+	rdfs:label "Культурный этап"@ru ;
+	rdfs:subClassOf :c-1075317-7064396 , _:node1e05dhg9ox34 .
+
+_:node1e05dhg9ox34 a owl:Restriction ;
+	owl:onProperty :ent-7018019-5688814 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-1034299-9636303 rdfs:subClassOf _:node1e05dhg9ox35 .
+
+_:node1e05dhg9ox35 a owl:Restriction ;
+	owl:onProperty :ent-7152264-2655023 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-1034299-9636303 rdfs:subClassOf _:node1e05dhg9ox36 .
+
+_:node1e05dhg9ox36 a owl:Restriction ;
+	owl:onProperty :ent-7589047-2700866 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-1034299-9636303 owl:disjointWith :c-6427896-1485736 , :c-6880169-3840891 .
+
+:c-1075317-7064396 a owl:Class ;
+	rdfs:label "Этап"@ru ;
+	owl:disjointWith :c-4758191-1789091 , :c-5590492-9780844 , :c-5876523-0419817 , :c-6037990-0723904 , :c-7074126-2036468 .
+
+:c-1113841-2603830 a owl:Class ;
+	rdfs:label "Конференция"@ru ;
+	rdfs:subClassOf :c-6880169-3840891 ;
+	owl:disjointWith :c-1499009-0148080 , :c-6007928-6964370 .
+
+:c-1499009-0148080 a owl:Class ;
+	rdfs:label "Семинар"@ru ;
+	rdfs:subClassOf :c-6880169-3840891 ;
+	owl:disjointWith :c-6007928-6964370 .
+
+:c-1868254-5433915 a owl:Class ;
+	rdfs:label "Образовательное учреждение"@ru ;
+	rdfs:subClassOf :c-5590492-9780844 ;
+	owl:disjointWith :c-8050726-1406739 .
+
+:c-2096748-7771408 a owl:Class ;
+	rdfs:label "Банкет"@ru ;
+	rdfs:subClassOf :c-1034299-9636303 ;
+	owl:disjointWith :c-7516412-5183709 , :c-7860731-7448048 .
+
+:c-2751577-2499374 a owl:Class ;
+	rdfs:label "Ассистент"@ru ;
+	rdfs:subClassOf :c-4758191-1789091 .
+
+:c-2850102-5273069 a owl:Class ;
+	rdfs:label "Учащийся"@ru ;
+	rdfs:subClassOf :c-4758191-1789091 , _:node1e05dhg9ox37 .
+
+_:node1e05dhg9ox37 a owl:Restriction ;
+	owl:onProperty :op-3025349-3609264 ;
+	owl:allValuesFrom :c-1868254-5433915 .
+
+:c-2850102-5273069 rdfs:subClassOf _:node1e05dhg9ox38 .
+
+_:node1e05dhg9ox38 a owl:Restriction ;
+	owl:onProperty :op-3025349-3609264 ;
+	owl:someValuesFrom :c-1868254-5433915 .
+
+:c-2939446-2483445 a owl:Class ;
+	rdfs:label "Этап результатов рецензирования"@ru ;
+	rdfs:subClassOf :c-6427896-1485736 ;
+	owl:disjointWith :c-3955619-0058534 , :c-4872274-7958288 , :c-7715802-3913377 , :c-9999086-4883863 .
+
+:c-3163203-1323782 a owl:Class ;
+	rdfs:label "Член"@ru ;
+	rdfs:subClassOf :c-7906083-9856634 .
+
+:c-3236691-3322928 a owl:Class ;
+	rdfs:label "Председатель программного комитета"@ru ;
+	rdfs:subClassOf :c-4758191-1789091 .
+
+:c-3955619-0058534 a owl:Class ;
+	rdfs:label "Этап подачи заявки"@ru ;
+	rdfs:subClassOf :c-6427896-1485736 ;
+	owl:disjointWith :c-4872274-7958288 , :c-7715802-3913377 , :c-9999086-4883863 .
+
+:c-4484677-5082611 a owl:Class ;
+	rdfs:label "Стенд"@ru ;
+	rdfs:subClassOf :c-6037990-0723904 ;
+	owl:disjointWith :c-8294927-3462455 .
+
+:c-4758191-1789091 a owl:Class ;
+	rdfs:label "Лицо"@ru ;
+	rdfs:subClassOf owl:Thing , _:node1e05dhg9ox39 .
+
+_:node1e05dhg9ox39 a owl:Restriction ;
+	owl:onProperty :op-3139527-0096506 ;
+	owl:someValuesFrom :c-7074126-2036468 .
+
+:c-4758191-1789091 rdfs:subClassOf _:node1e05dhg9ox40 .
+
+_:node1e05dhg9ox40 a owl:Restriction ;
+	owl:onProperty :op-7642490-6388357 ;
+	owl:someValuesFrom :c-5590492-9780844 .
+
+:c-4758191-1789091 rdfs:subClassOf _:node1e05dhg9ox41 .
+
+_:node1e05dhg9ox41 a owl:Restriction ;
+	owl:onProperty :ent-3452900-2179997 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4758191-1789091 rdfs:subClassOf _:node1e05dhg9ox42 .
+
+_:node1e05dhg9ox42 a owl:Restriction ;
+	owl:onProperty :ent-1475229-4773738 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4758191-1789091 rdfs:subClassOf _:node1e05dhg9ox43 .
+
+_:node1e05dhg9ox43 a owl:Restriction ;
+	owl:onProperty :ent-0798096-6591597 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4758191-1789091 rdfs:subClassOf _:node1e05dhg9ox44 .
+
+_:node1e05dhg9ox44 a owl:Restriction ;
+	owl:onProperty :ent-6507683-3490968 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4758191-1789091 rdfs:subClassOf _:node1e05dhg9ox45 .
+
+_:node1e05dhg9ox45 a owl:Restriction ;
+	owl:onProperty :ent-8485592-5940351 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4758191-1789091 rdfs:subClassOf _:node1e05dhg9ox46 .
+
+_:node1e05dhg9ox46 a owl:Restriction ;
+	owl:onProperty :op-7642490-6388357 ;
+	owl:allValuesFrom :c-5590492-9780844 .
+
+:c-4758191-1789091 rdfs:subClassOf _:node1e05dhg9ox47 .
+
+_:node1e05dhg9ox47 a owl:Restriction ;
+	owl:onProperty :op-2784568-3094215 ;
+	owl:someValuesFrom :c-0999245-0541401 .
+
+:c-4758191-1789091 owl:disjointWith :c-5590492-9780844 , :c-5876523-0419817 , :c-6037990-0723904 , :c-7074126-2036468 .
+
+:c-4872274-7958288 a owl:Class ;
+	rdfs:label "Этап подготовки окончательной версии"@ru ;
+	rdfs:subClassOf :c-6427896-1485736 ;
+	owl:disjointWith :c-7715802-3913377 , :c-9999086-4883863 .
+
+:c-5263883-4058307 a owl:Class ;
+	rdfs:label "Администратор"@ru ;
+	rdfs:subClassOf :c-4758191-1789091 .
+
+:c-5590492-9780844 a owl:Class ;
+	rdfs:label "Организация"@ru ;
+	owl:disjointWith :c-5876523-0419817 , :c-6037990-0723904 , :c-7074126-2036468 .
+
+:c-5863046-0913180 a owl:Class ;
+	rdfs:label "Волонтёр"@ru ;
+	rdfs:subClassOf :c-4758191-1789091 .
+
+:c-5876523-0419817 a owl:Class ;
+	rdfs:label "Тематиka"@ru ;
+	owl:disjointWith :c-6037990-0723904 , :c-7074126-2036468 .
+
+:c-6007928-6964370 a owl:Class ;
+	rdfs:label "Обучающий курс"@ru ;
+	rdfs:subClassOf :c-6880169-3840891 .
+
+:c-6037990-0723904 a owl:Class ;
+	rdfs:label "Труд"@ru ;
+	rdfs:subClassOf owl:Thing , _:node1e05dhg9ox48 .
+
+_:node1e05dhg9ox48 a owl:Restriction ;
+	owl:onProperty :ent-3476072-0793174 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6037990-0723904 rdfs:subClassOf _:node1e05dhg9ox49 .
+
+_:node1e05dhg9ox49 a owl:Restriction ;
+	owl:onProperty :op-0307204-7449894 ;
+	owl:someValuesFrom :c-5876523-0419817 .
+
+:c-6037990-0723904 rdfs:subClassOf _:node1e05dhg9ox50 .
+
+_:node1e05dhg9ox50 a owl:Restriction ;
+	owl:onProperty :ent-9096177-5027765 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6037990-0723904 rdfs:subClassOf _:node1e05dhg9ox51 .
+
+_:node1e05dhg9ox51 a owl:Restriction ;
+	owl:onProperty :ent-4680823-7883509 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6037990-0723904 rdfs:subClassOf _:node1e05dhg9ox52 .
+
+_:node1e05dhg9ox52 a owl:Restriction ;
+	owl:onProperty :ent-7072231-0011015 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6037990-0723904 rdfs:subClassOf _:node1e05dhg9ox53 .
+
+_:node1e05dhg9ox53 a owl:Restriction ;
+	owl:onProperty :op-0307204-7449894 ;
+	owl:allValuesFrom :c-5876523-0419817 .
+
+:c-6037990-0723904 owl:disjointWith :c-7074126-2036468 .
+
+:c-6427896-1485736 a owl:Class ;
+	rdfs:label "Административный этап"@ru ;
+	rdfs:subClassOf :c-1075317-7064396 ;
+	owl:disjointWith :c-6880169-3840891 .
+
+:c-6880169-3840891 a owl:Class ;
+	rdfs:label "Этап рабочей программы"@ru ;
+	rdfs:subClassOf :c-1075317-7064396 , _:node1e05dhg9ox54 .
+
+_:node1e05dhg9ox54 a owl:Restriction ;
+	owl:onProperty :ent-7018019-5688814 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6880169-3840891 rdfs:subClassOf _:node1e05dhg9ox55 .
+
+_:node1e05dhg9ox55 a owl:Restriction ;
+	owl:onProperty :ent-7152264-2655023 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6880169-3840891 rdfs:subClassOf _:node1e05dhg9ox56 .
+
+_:node1e05dhg9ox56 a owl:Restriction ;
+	owl:onProperty :ent-7589047-2700866 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6880169-3840891 rdfs:subClassOf _:node1e05dhg9ox57 .
+
+_:node1e05dhg9ox57 a owl:Restriction ;
+	owl:onProperty :op-3011101-3474867 ;
+	owl:someValuesFrom :c-5876523-0419817 .
+
+:c-6880169-3840891 rdfs:subClassOf _:node1e05dhg9ox58 .
+
+_:node1e05dhg9ox58 a owl:Restriction ;
+	owl:onProperty :op-3011101-3474867 ;
+	owl:allValuesFrom :c-5876523-0419817 .
+
+:c-7074126-2036468 a owl:Class ;
+	rdfs:label "Город"@ru .
+
+:c-7516412-5183709 a owl:Class ;
+	rdfs:label "Встреча"@ru ;
+	rdfs:subClassOf :c-1034299-9636303 ;
+	owl:disjointWith :c-7860731-7448048 .
+
+:c-7715802-3913377 a owl:Class ;
+	rdfs:label "Этап рецензирования"@ru ;
+	rdfs:subClassOf :c-6427896-1485736 ;
+	owl:disjointWith :c-9999086-4883863 .
+
+:c-7720707-6451477 a owl:Class ;
+	rdfs:label "Полная"@ru ;
+	rdfs:subClassOf :c-7906083-9856634 .
+
+:c-7860731-7448048 a owl:Class ;
+	rdfs:label "Экскурсия"@ru ;
+	rdfs:subClassOf :c-1034299-9636303 .
+
+:c-7906083-9856634 a owl:Class ;
+	rdfs:label "Участник"@ru ;
+	rdfs:subClassOf :c-4758191-1789091 .
+
+:c-8050726-1406739 a owl:Class ;
+	rdfs:label "Компания"@ru ;
+	rdfs:subClassOf :c-5590492-9780844 .
+
+:c-8294927-3462455 a owl:Class ;
+	rdfs:label "Статья"@ru ;
+	rdfs:subClassOf :c-6037990-0723904 .
+
+:c-8517441-6767240 a owl:Class ;
+	rdfs:label "Автор"@ru ;
+	rdfs:subClassOf :c-4758191-1789091 , _:node1e05dhg9ox59 .
+
+_:node1e05dhg9ox59 a owl:Restriction ;
+	owl:onProperty :op-1502165-7262239 ;
+	owl:allValuesFrom :c-6037990-0723904 .
+
+:c-8517441-6767240 rdfs:subClassOf _:node1e05dhg9ox60 .
+
+_:node1e05dhg9ox60 a owl:Restriction ;
+	owl:onProperty :op-1502165-7262239 ;
+	owl:someValuesFrom :c-6037990-0723904 .
+
+:c-8830839-2429614 a owl:Class ;
+	rdfs:label "Научный работник"@ru ;
+	rdfs:subClassOf :c-4758191-1789091 .
+
+:c-9527497-6101184 a owl:Class ;
+	rdfs:label "Член программного комитета"@ru ;
+	rdfs:subClassOf :c-4758191-1789091 , _:node1e05dhg9ox61 .
+
+_:node1e05dhg9ox61 a owl:Restriction ;
+	owl:onProperty :op-8986399-3636017 ;
+	owl:allValuesFrom :c-6037990-0723904 .
+
+:c-9527497-6101184 rdfs:subClassOf _:node1e05dhg9ox62 .
+
+_:node1e05dhg9ox62 a owl:Restriction ;
+	owl:onProperty :op-8135134-0937123 ;
+	owl:allValuesFrom :c-5876523-0419817 .
+
+:c-9527497-6101184 rdfs:subClassOf _:node1e05dhg9ox63 .
+
+_:node1e05dhg9ox63 a owl:Restriction ;
+	owl:onProperty :op-8135134-0937123 ;
+	owl:someValuesFrom :c-5876523-0419817 .
+
+:c-9527497-6101184 rdfs:subClassOf _:node1e05dhg9ox64 .
+
+_:node1e05dhg9ox64 a owl:Restriction ;
+	owl:onProperty :op-8986399-3636017 ;
+	owl:someValuesFrom :c-6037990-0723904 .
+
+:c-9999086-4883863 a owl:Class ;
+	rdfs:label "Этап регистрации участников"@ru ;
+	rdfs:subClassOf :c-6427896-1485736 .

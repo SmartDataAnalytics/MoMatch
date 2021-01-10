@@ -1,0 +1,925 @@
+@prefix : <http://conference_cn#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://conference_cn> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+:op-0264696-7902275 a owl:ObjectProperty ;
+	rdfs:label "作报告"@zh ;
+	rdfs:range :c-2481676-8465784 ;
+	rdfs:domain :c-5868151-1672428 ;
+	owl:inverseOf :op-1825246-2369809 .
+
+:op-0380280-2251650 a owl:ObjectProperty ;
+	rdfs:label "是一个会议部分的主题"@zh ;
+	rdfs:range :c-4901638-8623780 ;
+	rdfs:domain :c-8854326-1086163 .
+
+:op-0771447-6124635 a owl:ObjectProperty ;
+	rdfs:label "有部分"@zh ;
+	rdfs:range :c-4901638-8623780 ;
+	rdfs:domain :c-8605961-0132727 ;
+	owl:inverseOf :op-6861253-2110670 .
+
+:op-1032488-6754321 a owl:ObjectProperty ;
+	rdfs:label "有投稿"@zh ;
+	rdfs:range :c-8378121-4112879 ;
+	rdfs:domain :c-8605961-0132727 .
+
+:op-1112015-2539103 a owl:ObjectProperty ;
+	rdfs:label "投稿"@zh ;
+	rdfs:domain :c-0303892-1814191 ;
+	rdfs:range :c-3554496-7468792 ;
+	owl:inverseOf :op-6443303-1219145 .
+
+:op-1318161-8398469 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个出版商"@zh ;
+	rdfs:domain :c-5080162-2301751 ;
+	rdfs:range :c-8705165-8496652 ;
+	owl:inverseOf :op-9354729-8566403 .
+
+:op-1661707-5491515 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "有重要日期"@zh ;
+	rdfs:range :c-7581058-6321066 ;
+	rdfs:domain :c-8605961-0132727 ;
+	owl:inverseOf :op-6371378-4913874 .
+
+:op-1825246-2369809 a owl:ObjectProperty ;
+	rdfs:label "是由之作"@zh ;
+	rdfs:domain :c-2481676-8465784 ;
+	rdfs:range :c-5868151-1672428 .
+
+:op-2042126-7019591 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个组织委员会"@zh ;
+	rdfs:range :c-2095635-3901454 ;
+	rdfs:domain :c-8605961-0132727 ;
+	rdfs:subPropertyOf :op-4939086-2911452 .
+
+:op-2718258-8311810 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "被分配给审稿参考"@zh ;
+	rdfs:range :c-0761152-8794260 ;
+	rdfs:domain _:node1e05a3mm3x1 .
+
+_:node1e05a3mm3x1 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x2 .
+
+_:node1e05a3mm3x2 rdf:first :c-8190505-2879219 ;
+	rdf:rest _:node1e05a3mm3x3 .
+
+_:node1e05a3mm3x3 rdf:first :c-8854326-1086163 ;
+	rdf:rest rdf:nil .
+
+:op-2967223-4240010 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "曾是一个组织委员会"@zh ;
+	rdfs:domain :c-2095635-3901454 ;
+	rdfs:range :c-8605961-0132727 ;
+	owl:inverseOf :op-2042126-7019591 ;
+	rdfs:subPropertyOf :op-9598412-4424297 .
+
+:op-3135057-2198800 a owl:ObjectProperty ;
+	rdfs:label "有研讨会"@zh ;
+	rdfs:range :c-6926672-9037231 ;
+	rdfs:domain :c-8605961-0132727 ;
+	rdfs:subPropertyOf :op-0771447-6124635 .
+
+:op-3235270-1447226 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个指导委员会"@zh ;
+	rdfs:range :c-0270768-7415104 ;
+	rdfs:domain :c-8605961-0132727 ;
+	rdfs:subPropertyOf :op-4939086-2911452 ;
+	owl:inverseOf :op-6670849-0738421 .
+
+:op-3928862-8242891 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个摘要"@zh ;
+	rdfs:range :c-6321882-0880652 ;
+	owl:inverseOf :op-8374329-5896815 ;
+	rdfs:domain _:node1e05a3mm3x4 .
+
+_:node1e05a3mm3x4 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x5 .
+
+_:node1e05a3mm3x5 rdf:first :c-2481676-8465784 ;
+	rdf:rest _:node1e05a3mm3x6 .
+
+_:node1e05a3mm3x6 rdf:first :c-2629069-4055824 ;
+	rdf:rest _:node1e05a3mm3x7 .
+
+_:node1e05a3mm3x7 rdf:first :c-4447529-2843211 ;
+	rdf:rest rdf:nil .
+
+:op-4515255-0277664 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "曾是一个研讨会主席"@zh ;
+	rdfs:domain :c-0093779-4365422 ;
+	rdfs:range :c-4901638-8623780 ;
+	owl:inverseOf :op-5401439-9644116 .
+
+:op-4612606-3565270 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个程序委员会"@zh ;
+	rdfs:domain :c-8605961-0132727 ;
+	rdfs:range :c-8671713-5700321 ;
+	rdfs:subPropertyOf :op-4939086-2911452 .
+
+:op-4939086-2911452 a owl:ObjectProperty ;
+	rdfs:label "有一个委员会"@zh ;
+	rdfs:range :c-1222165-4711193 ;
+	rdfs:domain :c-8605961-0132727 ;
+	owl:inverseOf :op-9598412-4424297 .
+
+:op-5218980-5192208 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "属于一个审稿参考"@zh ;
+	rdfs:range :c-0761152-8794260 ;
+	rdfs:domain :c-8854326-1086163 .
+
+:op-5340236-6811618 a owl:ObjectProperty ;
+	rdfs:label "有一个审稿参考或者专长"@zh ;
+	rdfs:domain :c-0616852-2463017 ;
+	rdfs:range _:node1e05a3mm3x8 .
+
+_:node1e05a3mm3x8 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x9 .
+
+_:node1e05a3mm3x9 rdf:first :c-0761152-8794260 ;
+	rdf:rest _:node1e05a3mm3x10 .
+
+_:node1e05a3mm3x10 rdf:first :c-2167088-5414867 ;
+	rdf:rest rdf:nil .
+
+:op-5401439-9644116 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个研讨会教程主席"@zh ;
+	rdfs:range :c-0093779-4365422 ;
+	rdfs:domain :c-4901638-8623780 .
+
+:op-5858016-6611160 a owl:ObjectProperty ;
+	rdfs:label "有教程"@zh ;
+	rdfs:range :c-7510981-3509283 ;
+	rdfs:domain :c-8605961-0132727 ;
+	rdfs:subPropertyOf :op-0771447-6124635 .
+
+:op-5891356-5099080 a owl:ObjectProperty ;
+	rdfs:label "曾是一个委员会联合主席"@zh ;
+	rdfs:range :c-1222165-4711193 ;
+	rdfs:domain :c-7632427-6171275 ;
+	rdfs:subPropertyOf :op-8748640-7968974 .
+
+:op-5935467-6641785 a owl:ObjectProperty ;
+	rdfs:label "有一个委员会联合主席"@zh ;
+	rdfs:domain :c-1222165-4711193 ;
+	rdfs:range :c-7632427-6171275 ;
+	owl:inverseOf :op-5891356-5099080 ;
+	rdfs:subPropertyOf :op-9551518-7013661 .
+
+:op-6102947-0258301 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "曾是一个委员会主席"@zh ;
+	rdfs:range :c-1222165-4711193 ;
+	rdfs:domain :c-7043069-9708118 ;
+	rdfs:subPropertyOf :op-8748640-7968974 .
+
+:op-6110385-9428205 a owl:ObjectProperty ;
+	rdfs:label "邀请联合审稿人"@zh ;
+	rdfs:range :c-0616852-2463017 ;
+	rdfs:domain :c-0616852-2463017 ;
+	owl:inverseOf :op-6589698-7147407 .
+
+:op-6217428-9253672 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "有一个审稿专长"@zh ;
+	rdfs:range :c-2167088-5414867 ;
+	rdfs:domain :c-8190505-2879219 .
+
+:op-6371378-4913874 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "属于一个会议卷册"@zh ;
+	rdfs:domain :c-7581058-6321066 ;
+	rdfs:range :c-8605961-0132727 .
+
+:op-6399796-7234456 a owl:ObjectProperty ;
+	rdfs:label "属于审稿人"@zh ;
+	rdfs:range :c-0616852-2463017 ;
+	owl:inverseOf :op-5340236-6811618 ;
+	rdfs:domain _:node1e05a3mm3x11 .
+
+_:node1e05a3mm3x11 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x12 .
+
+_:node1e05a3mm3x12 rdf:first :c-0761152-8794260 ;
+	rdf:rest _:node1e05a3mm3x13 .
+
+_:node1e05a3mm3x13 rdf:first :c-2167088-5414867 ;
+	rdf:rest rdf:nil .
+
+:op-6443303-1219145 a owl:ObjectProperty ;
+	rdfs:label "有作者"@zh ;
+	rdfs:range :c-0303892-1814191 ;
+	rdfs:domain :c-3554496-7468792 .
+
+:op-6495536-2293950 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个委员会主席"@zh ;
+	rdfs:domain :c-1222165-4711193 ;
+	rdfs:range :c-7043069-9708118 ;
+	owl:inverseOf :op-6102947-0258301 ;
+	rdfs:subPropertyOf :op-9551518-7013661 .
+
+:op-6589698-7147407 a owl:ObjectProperty ;
+	rdfs:label "受邀于"@zh ;
+	rdfs:domain :c-0616852-2463017 ;
+	rdfs:range :c-0616852-2463017 .
+
+:op-6670849-0738421 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "曾是一个指导委员会"@zh ;
+	rdfs:domain :c-0270768-7415104 ;
+	rdfs:range :c-8605961-0132727 ;
+	rdfs:subPropertyOf :op-9598412-4424297 .
+
+:op-6861253-2110670 a owl:ObjectProperty ;
+	rdfs:label "是会议卷册的一部分"@zh ;
+	rdfs:domain :c-4901638-8623780 ;
+	rdfs:range :c-8605961-0132727 .
+
+:op-7550186-5195018 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "有一个审稿意见"@zh ;
+	rdfs:range :c-1342284-9566424 ;
+	rdfs:domain :c-8410478-8751562 ;
+	owl:inverseOf :op-9587070-4401229 .
+
+:op-7598149-3025987 a owl:ObjectProperty ;
+	rdfs:label "有轨道"@zh ;
+	rdfs:domain :c-8605961-0132727 ;
+	rdfs:range :c-8807539-1109418 ;
+	rdfs:subPropertyOf :op-0771447-6124635 .
+
+:op-7836525-8578059 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个主题或者投稿"@zh ;
+	rdfs:domain :c-0761152-8794260 ;
+	owl:inverseOf :op-2718258-8311810 ;
+	rdfs:range _:node1e05a3mm3x14 .
+
+_:node1e05a3mm3x14 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x15 .
+
+_:node1e05a3mm3x15 rdf:first :c-8190505-2879219 ;
+	rdf:rest _:node1e05a3mm3x16 .
+
+_:node1e05a3mm3x16 rdf:first :c-8854326-1086163 ;
+	rdf:rest rdf:nil .
+
+:op-7944512-1327128 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "曾是一个程序委员会"@zh ;
+	rdfs:range :c-8605961-0132727 ;
+	rdfs:domain :c-8671713-5700321 ;
+	owl:inverseOf :op-4612606-3565270 ;
+	rdfs:subPropertyOf :op-9598412-4424297 .
+
+:op-8058561-5048213 a owl:ObjectProperty ;
+	rdfs:label "是投至"@zh ;
+	rdfs:domain :c-8378121-4112879 ;
+	rdfs:range :c-8605961-0132727 ;
+	owl:inverseOf :op-1032488-6754321 .
+
+:op-8212064-4806744 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个投稿"@zh ;
+	rdfs:domain :c-2167088-5414867 ;
+	rdfs:range :c-8190505-2879219 ;
+	owl:inverseOf :op-6217428-9253672 .
+
+:op-8374329-5896815 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "是第一部分"@zh ;
+	rdfs:domain :c-6321882-0880652 ;
+	rdfs:range _:node1e05a3mm3x17 .
+
+_:node1e05a3mm3x17 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x18 .
+
+_:node1e05a3mm3x18 rdf:first :c-2481676-8465784 ;
+	rdf:rest _:node1e05a3mm3x19 .
+
+_:node1e05a3mm3x19 rdf:first :c-2629069-4055824 ;
+	rdf:rest _:node1e05a3mm3x20 .
+
+_:node1e05a3mm3x20 rdf:first :c-4447529-2843211 ;
+	rdf:rest rdf:nil .
+
+:op-8549749-5268663 a owl:ObjectProperty ;
+	rdfs:label "有一个研讨会教程主题"@zh ;
+	rdfs:domain :c-4901638-8623780 ;
+	rdfs:range :c-8854326-1086163 ;
+	owl:inverseOf :op-0380280-2251650 .
+
+:op-8748640-7968974 a owl:ObjectProperty ;
+	rdfs:label "曾是一个成员"@zh ;
+	rdfs:range :c-1222165-4711193 ;
+	rdfs:domain :c-7231695-3438312 .
+
+:op-9354729-8566403 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "发行"@zh ;
+	rdfs:range :c-5080162-2301751 ;
+	rdfs:domain :c-8705165-8496652 .
+
+:op-9551518-7013661 a owl:ObjectProperty ;
+	rdfs:label "有成员"@zh ;
+	rdfs:domain :c-1222165-4711193 ;
+	rdfs:range :c-7231695-3438312 ;
+	owl:inverseOf :op-8748640-7968974 .
+
+:op-9587070-4401229 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "评审"@zh ;
+	rdfs:domain :c-1342284-9566424 ;
+	rdfs:range :c-8410478-8751562 .
+
+:op-9598412-4424297 a owl:ObjectProperty ;
+	rdfs:label "曾是一个委员会"@zh ;
+	rdfs:domain :c-1222165-4711193 ;
+	rdfs:range :c-8605961-0132727 .
+
+:ent-0192762-9998580 a owl:DatatypeProperty ;
+	rdfs:label "有一个电子邮箱"@zh ;
+	rdfs:domain :c-0303892-1814191 ;
+	rdfs:range xsd:string .
+
+:ent-0349331-2807631 a owl:DatatypeProperty ;
+	rdfs:label "有名"@zh ;
+	rdfs:domain :c-0303892-1814191 ;
+	rdfs:range xsd:string .
+
+:ent-1286720-8897226 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个名字"@zh ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05a3mm3x21 .
+
+_:node1e05a3mm3x21 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x22 .
+
+_:node1e05a3mm3x22 rdf:first :c-4901638-8623780 ;
+	rdf:rest _:node1e05a3mm3x23 .
+
+_:node1e05a3mm3x23 rdf:first :c-5080162-2301751 ;
+	rdf:rest _:node1e05a3mm3x24 .
+
+_:node1e05a3mm3x24 rdf:first :c-8705165-8496652 ;
+	rdf:rest _:node1e05a3mm3x25 .
+
+_:node1e05a3mm3x25 rdf:first :c-8850526-1216914 ;
+	rdf:rest _:node1e05a3mm3x26 .
+
+_:node1e05a3mm3x26 rdf:first :c-8854326-1086163 ;
+	rdf:rest rdf:nil .
+
+:ent-1379873-0723070 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个网址"@zh ;
+	rdfs:domain :c-9459674-9618383 ;
+	rdfs:range xsd:string .
+
+:ent-1856607-0386452 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个卷册"@zh ;
+	rdfs:domain :c-5080162-2301751 ;
+	rdfs:range xsd:int .
+
+:ent-1984692-1981469 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有姓"@zh ;
+	rdfs:domain :c-0303892-1814191 ;
+	rdfs:range xsd:string .
+
+:ent-2308882-4392305 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个全文投稿日期"@zh ;
+	rdfs:domain :c-7581058-6321066 ;
+	rdfs:range xsd:date .
+
+:ent-3051261-2960041 a owl:DatatypeProperty ;
+	rdfs:label "有一个地点"@zh ;
+	rdfs:domain :c-8605961-0132727 ;
+	rdfs:range xsd:string .
+
+:ent-3183034-4854997 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个录用通知日期"@zh ;
+	rdfs:domain :c-7581058-6321066 ;
+	rdfs:range xsd:date .
+
+:ent-3322899-3507087 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个ISBN"@zh ;
+	rdfs:domain :c-5080162-2301751 ;
+	rdfs:range xsd:string .
+
+:ent-4352115-8489633 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个摘要投稿日期"@zh ;
+	rdfs:domain :c-7581058-6321066 ;
+	rdfs:range xsd:date .
+
+:ent-4974127-9911882 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有性别"@zh ;
+	rdfs:domain :c-0303892-1814191 ;
+	rdfs:range _:node1e05a3mm3x27 .
+
+_:node1e05a3mm3x27 a rdfs:Datatype ;
+	owl:oneOf _:node1e05a3mm3x28 .
+
+_:node1e05a3mm3x28 a rdf:List ;
+	rdf:first "female"^^xsd:string ;
+	rdf:rest _:node1e05a3mm3x29 .
+
+_:node1e05a3mm3x29 a rdf:List ;
+	rdf:first "male"^^xsd:string ;
+	rdf:rest rdf:nil .
+
+:ent-5187609-1034391 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个结束日期"@zh ;
+	rdfs:domain :c-7581058-6321066 ;
+	rdfs:range xsd:date .
+
+:ent-6771303-1107489 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个专长"@zh ;
+	rdfs:domain :c-2167088-5414867 ;
+	rdfs:range _:node1e05a3mm3x30 .
+
+_:node1e05a3mm3x30 a rdfs:Datatype ;
+	owl:oneOf _:node1e05a3mm3x31 .
+
+_:node1e05a3mm3x31 a rdf:List ;
+	rdf:first "high"^^xsd:string ;
+	rdf:rest _:node1e05a3mm3x32 .
+
+_:node1e05a3mm3x32 a rdf:List ;
+	rdf:first "low"^^xsd:string ;
+	rdf:rest _:node1e05a3mm3x33 .
+
+_:node1e05a3mm3x33 a rdf:List ;
+	rdf:first "medium"^^xsd:string ;
+	rdf:rest _:node1e05a3mm3x34 .
+
+_:node1e05a3mm3x34 a rdf:List ;
+	rdf:first "very high"^^xsd:string ;
+	rdf:rest rdf:nil .
+
+:ent-7630346-9883552 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个开始日期"@zh ;
+	rdfs:domain :c-7581058-6321066 ;
+	rdfs:range xsd:date .
+
+:ent-8092603-6598498 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个照相制版提交日期"@zh ;
+	rdfs:domain :c-7581058-6321066 ;
+	rdfs:range xsd:date .
+
+:ent-8971329-1726032 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个发行日题"@zh ;
+	rdfs:domain :c-3554496-7468792 ;
+	rdfs:range xsd:date .
+
+:ent-9631123-7009536 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "有一个度"@zh ;
+	rdfs:domain :c-0761152-8794260 ;
+	rdfs:range xsd:int .
+
+:c-0093779-4365422 a owl:Class ;
+	rdfs:label "研讨会主席"@zh ;
+	owl:equivalentClass _:node1e05a3mm3x35 .
+
+_:node1e05a3mm3x35 a owl:Restriction ;
+	owl:onProperty :op-4515255-0277664 ;
+	owl:someValuesFrom _:node1e05a3mm3x36 .
+
+_:node1e05a3mm3x36 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x37 .
+
+_:node1e05a3mm3x37 rdf:first :c-6926672-9037231 ;
+	rdf:rest _:node1e05a3mm3x38 .
+
+_:node1e05a3mm3x38 rdf:first :c-8807539-1109418 ;
+	rdf:rest rdf:nil .
+
+:c-0093779-4365422 rdfs:subClassOf :c-0303892-1814191 .
+
+:c-0270768-7415104 a owl:Class ;
+	rdfs:label "指导委员会"@zh ;
+	rdfs:subClassOf :c-1222165-4711193 ;
+	owl:disjointWith :c-2095635-3901454 , :c-8671713-5700321 .
+
+:c-0303892-1814191 a owl:Class ;
+	rdfs:label "人员"@zh .
+
+:c-0616852-2463017 a owl:Class ;
+	rdfs:label "审稿人"@zh ;
+	rdfs:subClassOf :c-0303892-1814191 .
+
+:c-0696061-5856960 a owl:Class ;
+	rdfs:label "会议投稿人"@zh ;
+	rdfs:subClassOf :c-0303892-1814191 .
+
+:c-0761152-8794260 a owl:Class ;
+	rdfs:label "审稿优先选择"@zh ;
+	rdfs:subClassOf owl:Thing , _:node1e05a3mm3x39 .
+
+_:node1e05a3mm3x39 a owl:Restriction ;
+	owl:onProperty :op-6399796-7234456 ;
+	owl:someValuesFrom :c-0616852-2463017 .
+
+:c-0761152-8794260 rdfs:subClassOf _:node1e05a3mm3x40 .
+
+_:node1e05a3mm3x40 a owl:Restriction ;
+	owl:onProperty :op-7836525-8578059 ;
+	owl:someValuesFrom _:node1e05a3mm3x41 .
+
+_:node1e05a3mm3x41 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x42 .
+
+_:node1e05a3mm3x42 rdf:first :c-8190505-2879219 ;
+	rdf:rest _:node1e05a3mm3x43 .
+
+_:node1e05a3mm3x43 rdf:first :c-8854326-1086163 ;
+	rdf:rest rdf:nil .
+
+:c-0948243-2990012 a owl:Class ;
+	rdfs:label "征文启事"@zh ;
+	rdfs:subClassOf :c-3554496-7468792 .
+
+:c-1095048-4876856 a owl:Class ;
+	rdfs:label "提前付费申请人"@zh ;
+	rdfs:subClassOf :c-7714669-1265737 ;
+	owl:disjointWith :c-4187918-4915509 .
+
+:c-1222165-4711193 a owl:Class ;
+	rdfs:label "委员会"@zh ;
+	owl:equivalentClass _:node1e05a3mm3x44 .
+
+_:node1e05a3mm3x44 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x45 .
+
+_:node1e05a3mm3x45 rdf:first :c-0270768-7415104 ;
+	rdf:rest _:node1e05a3mm3x46 .
+
+_:node1e05a3mm3x46 rdf:first :c-2095635-3901454 ;
+	rdf:rest _:node1e05a3mm3x47 .
+
+_:node1e05a3mm3x47 rdf:first :c-8671713-5700321 ;
+	rdf:rest rdf:nil .
+
+:c-1324196-0860261 a owl:Class ;
+	rdfs:label "长摘要"@zh ;
+	rdfs:subClassOf :c-7201875-5372963 ;
+	owl:disjointWith :c-2629069-4055824 .
+
+:c-1342284-9566424 a owl:Class ;
+	rdfs:label "审稿意见"@zh ;
+	rdfs:subClassOf :c-3554496-7468792 , _:node1e05a3mm3x48 .
+
+_:node1e05a3mm3x48 a owl:Restriction ;
+	owl:onProperty :op-6443303-1219145 ;
+	owl:allValuesFrom :c-0616852-2463017 .
+
+:c-1624856-6964623 a owl:Class ;
+	rdfs:label "已注册申请人"@zh ;
+	rdfs:subClassOf :c-2409353-1237300 .
+
+:c-1677285-9036800 a owl:Class ;
+	rdfs:label "会议费用"@zh .
+
+:c-1709978-2912032 a owl:Class ;
+	rdfs:label "组织"@zh .
+
+:c-1789727-1476426 a owl:Class ;
+	rdfs:label "照相制版稿件"@zh ;
+	rdfs:subClassOf :c-8347862-9693008 .
+
+:c-1991023-0606800 a owl:Class ;
+	rdfs:label "被动与会者"@zh ;
+	rdfs:subClassOf :c-8767431-8865125 ;
+	owl:disjointWith :c-5868151-1672428 .
+
+:c-2095635-3901454 a owl:Class ;
+	rdfs:label "组委会"@zh ;
+	rdfs:subClassOf :c-1222165-4711193 ;
+	owl:disjointWith :c-8671713-5700321 .
+
+:c-2167088-5414867 a owl:Class ;
+	rdfs:label "审稿专长"@zh ;
+	rdfs:subClassOf owl:Thing , _:node1e05a3mm3x49 .
+
+_:node1e05a3mm3x49 a owl:Restriction ;
+	owl:onProperty :op-6399796-7234456 ;
+	owl:someValuesFrom :c-0616852-2463017 .
+
+:c-2167088-5414867 rdfs:subClassOf _:node1e05a3mm3x50 .
+
+_:node1e05a3mm3x50 a owl:Restriction ;
+	owl:onProperty :op-8212064-4806744 ;
+	owl:someValuesFrom :c-8190505-2879219 .
+
+:c-2303811-8542745 a owl:Class ;
+	rdfs:label "拒收稿件"@zh ;
+	rdfs:subClassOf :c-8410478-8751562 ;
+	owl:disjointWith :c-8347862-9693008 .
+
+:c-2409353-1237300 a owl:Class ;
+	rdfs:label "会议申请人"@zh ;
+	rdfs:subClassOf :c-0303892-1814191 .
+
+:c-2481676-8465784 a owl:Class ;
+	rdfs:label "报告"@zh ;
+	rdfs:subClassOf :c-8378121-4112879 .
+
+:c-2629069-4055824 a owl:Class ;
+	rdfs:label "论文"@zh ;
+	rdfs:subClassOf :c-7201875-5372963 .
+
+:c-3342436-6821881 a owl:Class ;
+	rdfs:label "书面投稿"@zh ;
+	rdfs:subClassOf :c-8378121-4112879 , _:node1e05a3mm3x51 .
+
+_:node1e05a3mm3x51 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x52 .
+
+_:node1e05a3mm3x52 rdf:first :c-4447529-2843211 ;
+	rdf:rest _:node1e05a3mm3x53 .
+
+_:node1e05a3mm3x53 rdf:first :c-7201875-5372963 ;
+	rdf:rest rdf:nil .
+
+:c-3554496-7468792 a owl:Class ;
+	rdfs:label "会议文件"@zh .
+
+:c-4143210-8661289 a owl:Class ;
+	rdfs:label "特邀报告人"@zh ;
+	owl:equivalentClass _:node1e05a3mm3x54 .
+
+_:node1e05a3mm3x54 a owl:Restriction ;
+	owl:onProperty :op-1112015-2539103 ;
+	owl:someValuesFrom :c-6964746-1010196 .
+
+:c-4143210-8661289 rdfs:subClassOf :c-0696061-5856960 .
+
+:c-4187918-4915509 a owl:Class ;
+	rdfs:label "晚付费申请人"@zh ;
+	rdfs:subClassOf :c-7714669-1265737 .
+
+:c-4447529-2843211 a owl:Class ;
+	rdfs:label "海报"@zh ;
+	rdfs:subClassOf :c-8378121-4112879 ;
+	owl:disjointWith :c-6964746-1010196 , :c-7201875-5372963 .
+
+:c-4815562-5367679 a owl:Class ;
+	rdfs:label "投稿第一作者"@zh ;
+	rdfs:subClassOf :c-9329539-8004095 ;
+	owl:disjointWith :c-9905617-7890958 .
+
+:c-4901638-8623780 a owl:Class ;
+	rdfs:label "会议部分"@zh .
+
+:c-5080162-2301751 a owl:Class ;
+	rdfs:label "会议论文集"@zh .
+
+:c-5544763-2634309 a owl:Class ;
+	rdfs:label "与会者信息"@zh ;
+	rdfs:subClassOf :c-3554496-7468792 .
+
+:c-5868151-1672428 a owl:Class ;
+	rdfs:label "主动与会者"@zh ;
+	rdfs:subClassOf :c-0696061-5856960 , :c-8767431-8865125 , _:node1e05a3mm3x55 .
+
+_:node1e05a3mm3x55 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x56 .
+
+_:node1e05a3mm3x56 rdf:first :c-4143210-8661289 ;
+	rdf:rest _:node1e05a3mm3x57 .
+
+_:node1e05a3mm3x57 rdf:first :c-9329539-8004095 ;
+	rdf:rest rdf:nil .
+
+:c-6321882-0880652 a owl:Class ;
+	rdfs:label "摘要"@zh ;
+	rdfs:subClassOf :c-1324196-0860261 .
+
+:c-6408979-2861972 a owl:Class ;
+	rdfs:label "组织者"@zh ;
+	rdfs:subClassOf owl:Thing , _:node1e05a3mm3x58 .
+
+_:node1e05a3mm3x58 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x59 .
+
+_:node1e05a3mm3x59 rdf:first :c-1709978-2912032 ;
+	rdf:rest _:node1e05a3mm3x60 .
+
+_:node1e05a3mm3x60 rdf:first :c-7231695-3438312 ;
+	rdf:rest rdf:nil .
+
+:c-6926672-9037231 a owl:Class ;
+	rdfs:label "研讨会"@zh ;
+	rdfs:subClassOf :c-4901638-8623780 ;
+	owl:disjointWith :c-7510981-3509283 , :c-8807539-1109418 .
+
+:c-6964746-1010196 a owl:Class ;
+	rdfs:label "特邀报告"@zh ;
+	rdfs:subClassOf :c-2481676-8465784 ;
+	owl:disjointWith :c-7201875-5372963 .
+
+:c-7043069-9708118 a owl:Class ;
+	rdfs:label "主席"@zh ;
+	owl:equivalentClass _:node1e05a3mm3x61 .
+
+_:node1e05a3mm3x61 a owl:Restriction ;
+	owl:onProperty :op-6102947-0258301 ;
+	owl:someValuesFrom :c-1222165-4711193 .
+
+:c-7043069-9708118 rdfs:subClassOf :c-7231695-3438312 .
+
+:c-7201875-5372963 a owl:Class ;
+	rdfs:label "正规投稿"@zh ;
+	owl:equivalentClass _:node1e05a3mm3x62 .
+
+_:node1e05a3mm3x62 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x63 .
+
+_:node1e05a3mm3x63 rdf:first :c-1324196-0860261 ;
+	rdf:rest _:node1e05a3mm3x64 .
+
+_:node1e05a3mm3x64 rdf:first :c-2629069-4055824 ;
+	rdf:rest rdf:nil .
+
+:c-7201875-5372963 rdfs:subClassOf :c-3342436-6821881 .
+
+:c-7231695-3438312 a owl:Class ;
+	rdfs:label "委员会成员"@zh ;
+	owl:equivalentClass _:node1e05a3mm3x65 .
+
+_:node1e05a3mm3x65 a owl:Restriction ;
+	owl:onProperty :op-8748640-7968974 ;
+	owl:someValuesFrom :c-1222165-4711193 .
+
+:c-7231695-3438312 rdfs:subClassOf :c-0303892-1814191 .
+
+:c-7510981-3509283 a owl:Class ;
+	rdfs:label "教程"@zh ;
+	rdfs:subClassOf :c-4901638-8623780 ;
+	owl:disjointWith :c-8807539-1109418 .
+
+:c-7581058-6321066 a owl:Class ;
+	rdfs:label "重要日期"@zh .
+
+:c-7632427-6171275 a owl:Class ;
+	rdfs:label "联合主席"@zh ;
+	owl:equivalentClass _:node1e05a3mm3x66 .
+
+_:node1e05a3mm3x66 a owl:Restriction ;
+	owl:onProperty :op-5891356-5099080 ;
+	owl:someValuesFrom :c-1222165-4711193 .
+
+:c-7632427-6171275 rdfs:subClassOf :c-7231695-3438312 .
+
+:c-7714669-1265737 a owl:Class ;
+	rdfs:label "付费申请人"@zh ;
+	owl:equivalentClass _:node1e05a3mm3x67 .
+
+_:node1e05a3mm3x67 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x68 .
+
+_:node1e05a3mm3x68 rdf:first :c-1095048-4876856 ;
+	rdf:rest _:node1e05a3mm3x69 .
+
+_:node1e05a3mm3x69 rdf:first :c-4187918-4915509 ;
+	rdf:rest rdf:nil .
+
+:c-7714669-1265737 rdfs:subClassOf :c-1624856-6964623 .
+
+:c-8190505-2879219 a owl:Class ;
+	rdfs:label "投稿"@zh ;
+	rdfs:subClassOf :c-3342436-6821881 , _:node1e05a3mm3x70 .
+
+_:node1e05a3mm3x70 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x71 .
+
+_:node1e05a3mm3x71 rdf:first :c-4447529-2843211 ;
+	rdf:rest _:node1e05a3mm3x72 .
+
+_:node1e05a3mm3x72 rdf:first :c-7201875-5372963 ;
+	rdf:rest rdf:nil .
+
+:c-8347862-9693008 a owl:Class ;
+	rdfs:label "录用稿件"@zh ;
+	rdfs:subClassOf :c-8410478-8751562 .
+
+:c-8378121-4112879 a owl:Class ;
+	rdfs:label "会议征稿通知"@zh ;
+	owl:equivalentClass _:node1e05a3mm3x73 .
+
+_:node1e05a3mm3x73 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x74 .
+
+_:node1e05a3mm3x74 rdf:first :c-2481676-8465784 ;
+	rdf:rest _:node1e05a3mm3x75 .
+
+_:node1e05a3mm3x75 rdf:first :c-3342436-6821881 ;
+	rdf:rest rdf:nil .
+
+:c-8378121-4112879 owl:equivalentClass _:node1e05a3mm3x76 .
+
+_:node1e05a3mm3x76 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x77 .
+
+_:node1e05a3mm3x77 rdf:first :c-4447529-2843211 ;
+	rdf:rest _:node1e05a3mm3x78 .
+
+_:node1e05a3mm3x78 rdf:first :c-6964746-1010196 ;
+	rdf:rest _:node1e05a3mm3x79 .
+
+_:node1e05a3mm3x79 rdf:first :c-7201875-5372963 ;
+	rdf:rest rdf:nil .
+
+:c-8378121-4112879 rdfs:subClassOf :c-3554496-7468792 .
+
+:c-8410478-8751562 a owl:Class ;
+	rdfs:label "被审稿件"@zh ;
+	owl:equivalentClass _:node1e05a3mm3x80 .
+
+_:node1e05a3mm3x80 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x81 .
+
+_:node1e05a3mm3x81 rdf:first :c-2303811-8542745 ;
+	rdf:rest _:node1e05a3mm3x82 .
+
+_:node1e05a3mm3x82 rdf:first :c-8347862-9693008 ;
+	rdf:rest rdf:nil .
+
+:c-8410478-8751562 rdfs:subClassOf :c-8190505-2879219 .
+
+:c-8605961-0132727 a owl:Class ;
+	rdfs:label "会议卷册"@zh ;
+	rdfs:subClassOf :c-8850526-1216914 .
+
+:c-8671713-5700321 a owl:Class ;
+	rdfs:label "程序委员会"@zh ;
+	rdfs:subClassOf :c-1222165-4711193 .
+
+:c-8705165-8496652 a owl:Class ;
+	rdfs:label "出版商"@zh .
+
+:c-8767431-8865125 a owl:Class ;
+	rdfs:label "与会者"@zh ;
+	owl:equivalentClass _:node1e05a3mm3x83 .
+
+_:node1e05a3mm3x83 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x84 .
+
+_:node1e05a3mm3x84 rdf:first :c-1991023-0606800 ;
+	rdf:rest _:node1e05a3mm3x85 .
+
+_:node1e05a3mm3x85 rdf:first :c-5868151-1672428 ;
+	rdf:rest rdf:nil .
+
+:c-8767431-8865125 rdfs:subClassOf :c-0303892-1814191 .
+
+:c-8807539-1109418 a owl:Class ;
+	rdfs:label "轨道"@zh ;
+	rdfs:subClassOf :c-4901638-8623780 .
+
+:c-8850526-1216914 a owl:Class ;
+	rdfs:label "会议"@zh .
+
+:c-8854326-1086163 a owl:Class ;
+	rdfs:label "主题"@zh .
+
+:c-9117676-5296944 a owl:Class ;
+	rdfs:label "会议通知"@zh ;
+	rdfs:subClassOf :c-3554496-7468792 .
+
+:c-9329539-8004095 a owl:Class ;
+	rdfs:label "正规作者"@zh ;
+	owl:equivalentClass _:node1e05a3mm3x86 .
+
+_:node1e05a3mm3x86 a owl:Class ;
+	owl:intersectionOf _:node1e05a3mm3x88 .
+
+_:node1e05a3mm3x88 rdf:first _:node1e05a3mm3x87 .
+
+_:node1e05a3mm3x87 a owl:Class ;
+	owl:unionOf _:node1e05a3mm3x89 .
+
+_:node1e05a3mm3x89 rdf:first :c-4815562-5367679 ;
+	rdf:rest _:node1e05a3mm3x90 .
+
+_:node1e05a3mm3x90 rdf:first :c-9905617-7890958 ;
+	rdf:rest rdf:nil .
+
+_:node1e05a3mm3x88 rdf:rest _:node1e05a3mm3x92 .
+
+_:node1e05a3mm3x92 rdf:first _:node1e05a3mm3x91 .
+
+_:node1e05a3mm3x91 a owl:Restriction ;
+	owl:onProperty :op-1112015-2539103 ;
+	owl:someValuesFrom :c-8378121-4112879 .
+
+_:node1e05a3mm3x92 rdf:rest rdf:nil .
+
+:c-9329539-8004095 rdfs:subClassOf :c-0696061-5856960 .
+
+:c-9459674-9618383 a owl:Class ;
+	rdfs:label "会议网站"@zh ;
+	rdfs:subClassOf :c-3554496-7468792 .
+
+:c-9800107-1420273 a owl:Class ;
+	rdfs:label "征集参与者通知"@zh ;
+	rdfs:subClassOf :c-3554496-7468792 .
+
+:c-9905617-7890958 a owl:Class ;
+	rdfs:label "投稿合作作者"@zh ;
+	rdfs:subClassOf :c-9329539-8004095 .

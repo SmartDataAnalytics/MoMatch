@@ -1,0 +1,1683 @@
+@prefix : <http://iasted_nl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iasted: <http://iasted#> .
+
+<http://iasted_nl> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+:op-0434015-6668176 a owl:ObjectProperty ;
+	rdfs:label "wordt gehouden voor"@nl ;
+	rdfs:domain :c-0750484-5404167 ;
+	rdfs:range :c-5204119-7508475 .
+
+:op-0436272-4758544 a owl:ObjectProperty ;
+	rdfs:label "wordt voorbereid door"@nl ;
+	rdfs:range :c-2416944-9431809 ;
+	rdfs:domain :c-6598573-6357597 .
+
+:op-0545303-2877953 a owl:ObjectProperty ;
+	rdfs:label "wordt verzonden voor"@nl ;
+	rdfs:range :c-5204119-7508475 ;
+	rdfs:domain :c-6598573-6357597 .
+
+:op-1153872-7628706 a owl:ObjectProperty ;
+	rdfs:label "tekenen"@nl ;
+	rdfs:domain :c-2416944-9431809 ;
+	rdfs:range :c-6598573-6357597 .
+
+:op-1170476-0609663 a owl:ObjectProperty ;
+	rdfs:label "wordt gehouden na"@nl ;
+	rdfs:domain :c-0750484-5404167 ;
+	rdfs:range :c-5204119-7508475 .
+
+:op-1262014-4215089 a owl:ObjectProperty ;
+	rdfs:label "is voorzien van"@nl ;
+	rdfs:domain :c-5895297-4083696 ;
+	rdfs:range :c-6598573-6357597 .
+
+:op-1731185-9821615 a owl:ObjectProperty ;
+	rdfs:label "wordt verzonden door"@nl ;
+	rdfs:range :c-2416944-9431809 ;
+	rdfs:domain :c-6598573-6357597 .
+
+:op-2006201-4922677 a owl:ObjectProperty ;
+	rdfs:label "schrijven"@nl ;
+	rdfs:domain :c-2416944-9431809 ;
+	rdfs:range :c-6598573-6357597 ;
+	owl:inverseOf :op-8303816-0298073 .
+
+:op-2795270-6537843 a owl:ObjectProperty ;
+	rdfs:label "wordt bezet door"@nl ;
+	rdfs:range :c-2416944-9431809 ;
+	owl:inverseOf :op-3854150-6124124 ;
+	rdfs:domain _:node1e05bsi98x1 .
+
+_:node1e05bsi98x1 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x2 .
+
+_:node1e05bsi98x2 rdf:first :c-0029724-8458622 ;
+	rdf:rest _:node1e05bsi98x3 .
+
+_:node1e05bsi98x3 rdf:first :c-2378045-7158734 ;
+	rdf:rest _:node1e05bsi98x4 .
+
+_:node1e05bsi98x4 rdf:first :c-3668276-6028154 ;
+	rdf:rest rdf:nil .
+
+:op-3730192-8548911 a owl:ObjectProperty ;
+	rdfs:label "voorbereiden"@nl ;
+	rdfs:domain :c-2416944-9431809 ;
+	rdfs:range :c-6598573-6357597 ;
+	owl:inverseOf :op-0436272-4758544 .
+
+:op-3854150-6124124 a owl:ObjectProperty ;
+	rdfs:label "bezetten"@nl ;
+	rdfs:domain :c-2416944-9431809 ;
+	rdfs:range _:node1e05bsi98x5 .
+
+_:node1e05bsi98x5 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x6 .
+
+_:node1e05bsi98x6 rdf:first :c-0029724-8458622 ;
+	rdf:rest _:node1e05bsi98x7 .
+
+_:node1e05bsi98x7 rdf:first :c-2378045-7158734 ;
+	rdf:rest _:node1e05bsi98x8 .
+
+_:node1e05bsi98x8 rdf:first :c-3668276-6028154 ;
+	rdf:rest rdf:nil .
+
+:op-4192900-7995466 a owl:ObjectProperty ;
+	rdfs:label "wordt gegeven aan"@nl ;
+	rdfs:range :c-2416944-9431809 ;
+	rdfs:domain :c-6598573-6357597 .
+
+:op-4262781-8170508 a owl:ObjectProperty ;
+	rdfs:label "is gemaakt van"@nl ;
+	rdfs:domain :c-6598573-6357597 ;
+	rdfs:range :c-6598573-6357597 .
+
+:op-4745420-8191762 a owl:ObjectProperty ;
+	rdfs:label "is aanwezig"@nl ;
+	rdfs:domain :c-2416944-9431809 ;
+	rdfs:range :c-5204119-7508475 .
+
+:op-5035685-3856774 a owl:ObjectProperty ;
+	rdfs:label "wordt bezocht door"@nl ;
+	rdfs:range :c-2416944-9431809 ;
+	rdfs:domain _:node1e05bsi98x9 .
+
+_:node1e05bsi98x9 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x10 .
+
+_:node1e05bsi98x10 rdf:first :c-0029724-8458622 ;
+	rdf:rest _:node1e05bsi98x11 .
+
+_:node1e05bsi98x11 rdf:first :c-2378045-7158734 ;
+	rdf:rest _:node1e05bsi98x12 .
+
+_:node1e05bsi98x12 rdf:first :c-3668276-6028154 ;
+	rdf:rest rdf:nil .
+
+:op-5145845-6920469 a owl:ObjectProperty ;
+	rdfs:label "krijgen"@nl ;
+	rdfs:domain :c-2416944-9431809 ;
+	rdfs:range :c-6598573-6357597 .
+
+:op-5330715-7290222 a owl:ObjectProperty ;
+	rdfs:label "betalen"@nl ;
+	rdfs:range :c-2256010-1169246 ;
+	rdfs:domain :c-2416944-9431809 .
+
+:op-5458449-7378480 a owl:ObjectProperty ;
+	rdfs:label "wordt gegeven door"@nl ;
+	rdfs:range :c-2416944-9431809 ;
+	owl:inverseOf :op-8104942-5878619 ;
+	rdfs:domain _:node1e05bsi98x13 .
+
+_:node1e05bsi98x13 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x14 .
+
+_:node1e05bsi98x14 rdf:first :c-0750484-5404167 ;
+	rdf:rest _:node1e05bsi98x15 .
+
+_:node1e05bsi98x15 rdf:first :c-6598573-6357597 ;
+	rdf:rest rdf:nil .
+
+:op-5546520-9804535 a owl:ObjectProperty ;
+	rdfs:label "is nodig voor"@nl ;
+	rdfs:range :c-2416944-9431809 ;
+	rdfs:domain :c-6598573-6357597 ;
+	owl:inverseOf :op-7838939-1811890 .
+
+:op-6254382-6020290 a owl:ObjectProperty ;
+	rdfs:label "wordt verzonden na"@nl ;
+	rdfs:range :c-5204119-7508475 ;
+	rdfs:domain :c-6598573-6357597 .
+
+:op-6494444-7279320 a owl:ObjectProperty ;
+	rdfs:label "is verbonden met"@nl ;
+	rdfs:range _:node1e05bsi98x16 .
+
+_:node1e05bsi98x16 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x17 .
+
+_:node1e05bsi98x17 rdf:first :c-5895297-4083696 ;
+	rdf:rest _:node1e05bsi98x18 .
+
+_:node1e05bsi98x18 rdf:first :c-6598573-6357597 ;
+	rdf:rest rdf:nil .
+
+:op-6494444-7279320 rdfs:domain _:node1e05bsi98x19 .
+
+_:node1e05bsi98x19 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x20 .
+
+_:node1e05bsi98x20 rdf:first :c-0750484-5404167 ;
+	rdf:rest _:node1e05bsi98x21 .
+
+_:node1e05bsi98x21 rdf:first :c-2416944-9431809 ;
+	rdf:rest rdf:nil .
+
+:op-6755570-0182916 a owl:ObjectProperty ;
+	rdfs:label "is gelegen in"@nl ;
+	rdfs:domain _:node1e05bsi98x22 .
+
+_:node1e05bsi98x22 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x23 .
+
+_:node1e05bsi98x23 rdf:first :c-0029724-8458622 ;
+	rdf:rest _:node1e05bsi98x24 .
+
+_:node1e05bsi98x24 rdf:first :c-3668276-6028154 ;
+	rdf:rest _:node1e05bsi98x25 .
+
+_:node1e05bsi98x25 rdf:first :c-5895297-4083696 ;
+	rdf:rest rdf:nil .
+
+:op-6755570-0182916 rdfs:range _:node1e05bsi98x26 .
+
+_:node1e05bsi98x26 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x27 .
+
+_:node1e05bsi98x27 rdf:first :c-0029724-8458622 ;
+	rdf:rest _:node1e05bsi98x28 .
+
+_:node1e05bsi98x28 rdf:first :c-2378045-7158734 ;
+	rdf:rest _:node1e05bsi98x29 .
+
+_:node1e05bsi98x29 rdf:first :c-3668276-6028154 ;
+	rdf:rest _:node1e05bsi98x30 .
+
+_:node1e05bsi98x30 rdf:first :c-5895297-4083696 ;
+	rdf:rest rdf:nil .
+
+:op-6877911-2429762 a owl:ObjectProperty ;
+	rdfs:label "verzenden"@nl ;
+	rdfs:domain :c-2416944-9431809 ;
+	rdfs:range :c-6598573-6357597 ;
+	owl:inverseOf :op-1731185-9821615 .
+
+:op-6978705-1222028 a owl:ObjectProperty ;
+	rdfs:label "wordt betaald in"@nl ;
+	rdfs:range :c-0029724-8458622 ;
+	rdfs:domain :c-2256010-1169246 .
+
+:op-7356220-3153506 a owl:ObjectProperty ;
+	rdfs:label "wordt gehouden in"@nl ;
+	rdfs:domain :c-0750484-5404167 ;
+	rdfs:range _:node1e05bsi98x31 .
+
+_:node1e05bsi98x31 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x32 .
+
+_:node1e05bsi98x32 rdf:first :c-5204119-7508475 ;
+	rdf:rest _:node1e05bsi98x33 .
+
+_:node1e05bsi98x33 rdf:first :c-5895297-4083696 ;
+	rdf:rest rdf:nil .
+
+:op-7723687-8111893 a owl:ObjectProperty ;
+	rdfs:label "wordt gebruikt door"@nl ;
+	rdfs:range :c-2416944-9431809 ;
+	rdfs:domain :c-6598573-6357597 .
+
+:op-7838939-1811890 a owl:ObjectProperty ;
+	rdfs:label "nodig hebben"@nl ;
+	rdfs:domain :c-2416944-9431809 ;
+	rdfs:range :c-6598573-6357597 .
+
+:op-7841554-0908910 a owl:ObjectProperty ;
+	rdfs:label "is aanwezig bij"@nl ;
+	rdfs:domain :c-2416944-9431809 ;
+	rdfs:range _:node1e05bsi98x34 .
+
+_:node1e05bsi98x34 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x35 .
+
+_:node1e05bsi98x35 rdf:first :c-5204119-7508475 ;
+	rdf:rest _:node1e05bsi98x36 .
+
+_:node1e05bsi98x36 rdf:first :c-5895297-4083696 ;
+	rdf:rest rdf:nil .
+
+:op-8104942-5878619 a owl:ObjectProperty ;
+	rdfs:label "geven"@nl ;
+	rdfs:domain :c-2416944-9431809 ;
+	rdfs:range _:node1e05bsi98x37 .
+
+_:node1e05bsi98x37 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x38 .
+
+_:node1e05bsi98x38 rdf:first :c-0750484-5404167 ;
+	rdf:rest _:node1e05bsi98x39 .
+
+_:node1e05bsi98x39 rdf:first :c-6598573-6357597 ;
+	rdf:rest rdf:nil .
+
+:op-8234614-0910743 a owl:ObjectProperty ;
+	rdfs:label "spreken in"@nl ;
+	rdfs:domain :c-2416944-9431809 ;
+	rdfs:range _:node1e05bsi98x40 .
+
+_:node1e05bsi98x40 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x41 .
+
+_:node1e05bsi98x41 rdf:first :c-5204119-7508475 ;
+	rdf:rest _:node1e05bsi98x42 .
+
+_:node1e05bsi98x42 rdf:first :c-5895297-4083696 ;
+	rdf:rest rdf:nil .
+
+:op-8287978-4308097 a owl:ObjectProperty ;
+	rdfs:label "wordt betaald voor"@nl ;
+	rdfs:domain :c-2256010-1169246 ;
+	rdfs:range _:node1e05bsi98x43 .
+
+_:node1e05bsi98x43 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x44 .
+
+_:node1e05bsi98x44 rdf:first :c-0750484-5404167 ;
+	rdf:rest _:node1e05bsi98x45 .
+
+_:node1e05bsi98x45 rdf:first :c-6598573-6357597 ;
+	rdf:rest rdf:nil .
+
+:op-8303816-0298073 a owl:ObjectProperty ;
+	rdfs:label "is geschreven door"@nl ;
+	rdfs:range :c-2416944-9431809 ;
+	rdfs:domain :c-6598573-6357597 .
+
+:op-8714656-1135087 a owl:ObjectProperty ;
+	rdfs:label "wordt betaald met"@nl ;
+	rdfs:domain :c-2256010-1169246 ;
+	rdfs:range :c-6598573-6357597 .
+
+:op-9165543-5988814 a owl:ObjectProperty ;
+	rdfs:label "is ontworpen voor"@nl ;
+	rdfs:range _:node1e05bsi98x46 .
+
+_:node1e05bsi98x46 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x47 .
+
+_:node1e05bsi98x47 rdf:first :c-0750484-5404167 ;
+	rdf:rest _:node1e05bsi98x48 .
+
+_:node1e05bsi98x48 rdf:first :c-2416944-9431809 ;
+	rdf:rest rdf:nil .
+
+:op-9165543-5988814 rdfs:domain _:node1e05bsi98x49 .
+
+_:node1e05bsi98x49 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x50 .
+
+_:node1e05bsi98x50 rdf:first :c-0750484-5404167 ;
+	rdf:rest _:node1e05bsi98x51 .
+
+_:node1e05bsi98x51 rdf:first :c-2256010-1169246 ;
+	rdf:rest _:node1e05bsi98x52 .
+
+_:node1e05bsi98x52 rdf:first :c-5204119-7508475 ;
+	rdf:rest rdf:nil .
+
+:op-9255157-3085801 a owl:ObjectProperty ;
+	rdfs:label "is getekend door"@nl ;
+	rdfs:range :c-2416944-9431809 ;
+	rdfs:domain :c-6598573-6357597 ;
+	owl:inverseOf :op-1153872-7628706 .
+
+:op-9525941-3257734 a owl:ObjectProperty ;
+	rdfs:label "wordt gebruikt voor"@nl ;
+	rdfs:domain :c-6598573-6357597 ;
+	rdfs:range _:node1e05bsi98x53 .
+
+_:node1e05bsi98x53 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x54 .
+
+_:node1e05bsi98x54 rdf:first :c-0750484-5404167 ;
+	rdf:rest _:node1e05bsi98x55 .
+
+_:node1e05bsi98x55 rdf:first :c-2256010-1169246 ;
+	rdf:rest rdf:nil .
+
+:op-9530523-9859182 a owl:ObjectProperty ;
+	rdfs:label "wordt betaald door"@nl ;
+	rdfs:domain :c-2256010-1169246 ;
+	rdfs:range :c-2416944-9431809 ;
+	owl:inverseOf :op-5330715-7290222 .
+
+:op-9711684-3976276 a owl:ObjectProperty ;
+	rdfs:label "doorgaan"@nl ;
+	rdfs:range :c-0750484-5404167 ;
+	rdfs:domain :c-6598573-6357597 .
+
+:ent-4345562-7115840 a owl:DatatypeProperty ;
+	rdfs:label "is gedateerd"@nl ;
+	rdfs:domain :c-0750484-5404167 ;
+	rdfs:range xsd:dateTime .
+
+:ent-6241017-7715610 a owl:DatatypeProperty ;
+	rdfs:label "heeft bedrag"@nl ;
+	rdfs:domain :c-2256010-1169246 ;
+	rdfs:range xsd:int .
+
+:ent-6840964-4009371 a owl:DatatypeProperty ;
+	rdfs:label "klaar tot"@nl ;
+	rdfs:domain :c-5296468-9153980 ;
+	rdfs:range xsd:date .
+
+:c-0029724-8458622 a owl:Class ;
+	rdfs:label "gebouw"@nl ;
+	rdfs:subClassOf :c-5895297-4083696 .
+
+:c-0070935-4466395 a owl:Class ;
+	rdfs:label "conferentie gebouw"@nl ;
+	rdfs:subClassOf :c-0029724-8458622 , _:node1e05bsi98x56 .
+
+_:node1e05bsi98x56 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-4679840-5171490 .
+
+:c-0070935-4466395 rdfs:subClassOf _:node1e05bsi98x57 .
+
+_:node1e05bsi98x57 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-3645748-7048258 .
+
+:c-0070935-4466395 rdfs:subClassOf _:node1e05bsi98x58 .
+
+_:node1e05bsi98x58 a owl:Restriction ;
+	owl:onProperty :op-2795270-6537843 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-0213804-9023942 a owl:Class ;
+	rdfs:label "deadline drukklaar manuscript"@nl ;
+	rdfs:subClassOf :c-5296468-9153980 .
+
+:c-0262878-3683901 a owl:Class ;
+	rdfs:label "transport voertuig"@nl ;
+	rdfs:subClassOf :c-6598573-6357597 , _:node1e05bsi98x59 .
+
+_:node1e05bsi98x59 a owl:Restriction ;
+	owl:onProperty :op-7723687-8111893 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-0302060-4568793 a owl:Class ;
+	rdfs:label "conferentiezaal"@nl ;
+	rdfs:subClassOf :c-5895297-4083696 , _:node1e05bsi98x60 .
+
+_:node1e05bsi98x60 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-0070935-4466395 .
+
+:c-0423929-3257440 a owl:Class ;
+	rdfs:label "toehoorder"@nl ;
+	rdfs:subClassOf :c-4039546-4647141 , _:node1e05bsi98x61 .
+
+_:node1e05bsi98x61 a owl:Restriction ;
+	owl:onProperty :op-1153872-7628706 ;
+	owl:someValuesFrom :c-2544605-3060476 .
+
+:c-0423929-3257440 rdfs:subClassOf _:node1e05bsi98x62 .
+
+_:node1e05bsi98x62 a owl:Restriction ;
+	owl:onProperty :op-7841554-0908910 ;
+	owl:someValuesFrom _:node1e05bsi98x63 .
+
+_:node1e05bsi98x63 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x64 .
+
+_:node1e05bsi98x64 rdf:first :c-0302060-4568793 ;
+	rdf:rest _:node1e05bsi98x65 .
+
+_:node1e05bsi98x65 rdf:first :c-7419370-7213316 ;
+	rdf:rest rdf:nil .
+
+:c-0447708-8078411 a owl:Class ;
+	rdfs:label "document"@nl ;
+	rdfs:subClassOf :c-6598573-6357597 .
+
+:c-0470062-9753831 a owl:Class ;
+	rdfs:label "betalingsdocument"@nl ;
+	rdfs:subClassOf :c-0447708-8078411 , _:node1e05bsi98x66 .
+
+_:node1e05bsi98x66 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom _:node1e05bsi98x67 .
+
+_:node1e05bsi98x67 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x68 .
+
+_:node1e05bsi98x68 rdf:first :c-2134713-9915548 ;
+	rdf:rest _:node1e05bsi98x69 .
+
+_:node1e05bsi98x69 rdf:first :c-2862906-1005986 ;
+	rdf:rest rdf:nil .
+
+:c-0479563-3677267 a owl:Class ;
+	rdfs:label "eendaags presentator"@nl ;
+	owl:equivalentClass _:node1e05bsi98x70 .
+
+_:node1e05bsi98x70 a owl:Restriction ;
+	owl:onProperty :op-4745420-8191762 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0479563-3677267 rdfs:subClassOf :c-4039546-4647141 .
+
+:c-0527334-7513428 a owl:Class ;
+	rdfs:label "audiovisuele uitrusting"@nl ;
+	rdfs:subClassOf :c-6598573-6357597 , _:node1e05bsi98x71 .
+
+_:node1e05bsi98x71 a owl:Restriction ;
+	owl:onProperty :op-7723687-8111893 ;
+	owl:someValuesFrom :c-7588689-5064361 .
+
+:c-0527334-7513428 rdfs:subClassOf _:node1e05bsi98x72 .
+
+_:node1e05bsi98x72 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-7419370-7213316 .
+
+:c-0527334-7513428 rdfs:subClassOf _:node1e05bsi98x73 .
+
+_:node1e05bsi98x73 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-0423929-3257440 .
+
+:c-0539961-0830837 a owl:Class ;
+	rdfs:label "uitnodigingsbrief"@nl ;
+	rdfs:subClassOf :c-0447708-8078411 , _:node1e05bsi98x74 .
+
+_:node1e05bsi98x74 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-0671055-2385913 a owl:Class ;
+	rdfs:label "pendelbus"@nl ;
+	rdfs:subClassOf :c-0262878-3683901 .
+
+:c-0724242-1321998 a owl:Class ;
+	rdfs:label "recentie"@nl ;
+	rdfs:subClassOf :c-0447708-8078411 , _:node1e05bsi98x75 .
+
+_:node1e05bsi98x75 a owl:Restriction ;
+	owl:onProperty :op-8303816-0298073 ;
+	owl:someValuesFrom :c-5314614-6369996 .
+
+:c-0738850-9657699 a owl:Class ;
+	rdfs:label "activiteit voor de conferentie"@nl ;
+	rdfs:subClassOf :c-0750484-5404167 , _:node1e05bsi98x76 .
+
+_:node1e05bsi98x76 a owl:Restriction ;
+	owl:onProperty :op-0434015-6668176 ;
+	owl:someValuesFrom :c-3333510-8822083 .
+
+:c-0750484-5404167 a owl:Class ;
+	rdfs:label "activiteit"@nl .
+
+:c-0819726-5174724 a owl:Class ;
+	rdfs:label "arbeider lector"@nl ;
+	rdfs:subClassOf :c-3630365-7723515 .
+
+:c-0865131-5942804 a owl:Class ;
+	rdfs:label "manuscript afwijzen"@nl ;
+	rdfs:subClassOf :c-0738850-9657699 .
+
+:c-0924544-5442365 a owl:Class ;
+	rdfs:label "kosten voor extra reis"@nl ;
+	rdfs:subClassOf :c-2862906-1005986 , _:node1e05bsi98x77 .
+
+_:node1e05bsi98x77 a owl:Restriction ;
+	owl:onProperty :op-8287978-4308097 ;
+	owl:someValuesFrom :c-3391853-9025951 .
+
+:c-0924544-5442365 rdfs:subClassOf _:node1e05bsi98x78 .
+
+_:node1e05bsi98x78 a owl:Restriction ;
+	owl:onProperty :op-9530523-9859182 ;
+	owl:someValuesFrom :c-8500290-5873408 .
+
+:c-0971506-7086988 a owl:Class ;
+	rdfs:label "sponsoring"@nl ;
+	owl:equivalentClass _:node1e05bsi98x79 .
+
+_:node1e05bsi98x79 a owl:Restriction ;
+	owl:onProperty :op-9530523-9859182 ;
+	owl:someValuesFrom :c-5300609-1105470 .
+
+:c-0971506-7086988 rdfs:subClassOf :c-2256010-1169246 .
+
+:c-0985399-4808602 a owl:Class ;
+	rdfs:label "video presentatie"@nl ;
+	rdfs:subClassOf :c-7332710-1081186 .
+
+:c-1048755-8572155 a owl:Class ;
+	rdfs:label "registratiekosten lid"@nl ;
+	rdfs:subClassOf :c-6749294-3918570 , _:node1e05bsi98x80 .
+
+_:node1e05bsi98x80 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-5947133-0410684 .
+
+:c-1168613-7158092 a owl:Class ;
+	rdfs:label "hotel informatie formulier"@nl ;
+	rdfs:subClassOf :c-7016611-1309279 , _:node1e05bsi98x81 .
+
+_:node1e05bsi98x81 a owl:Restriction ;
+	owl:onProperty :op-0545303-2877953 ;
+	owl:someValuesFrom :c-1640223-4552898 .
+
+:c-1286013-2097945 a owl:Class ;
+	rdfs:label "inschrijving"@nl ;
+	rdfs:subClassOf :c-4536045-2582468 , _:node1e05bsi98x82 .
+
+_:node1e05bsi98x82 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-1431750-1213664 a owl:Class ;
+	rdfs:label "technische activiteit"@nl ;
+	rdfs:subClassOf :c-4536045-2582468 , _:node1e05bsi98x83 .
+
+_:node1e05bsi98x83 a owl:Restriction ;
+	owl:onProperty :op-5458449-7378480 ;
+	owl:someValuesFrom :c-9976985-0358251 .
+
+:c-1499318-0546061 a owl:Class ;
+	rdfs:label "welkomsttoespraak"@nl ;
+	rdfs:subClassOf :c-4536045-2582468 .
+
+:c-1640223-4552898 a owl:Class ;
+	rdfs:label "deadline hotel reservering"@nl ;
+	rdfs:subClassOf :c-5296468-9153980 .
+
+:c-1752117-9847951 a owl:Class ;
+	rdfs:label "submissie"@nl ;
+	rdfs:subClassOf :c-0447708-8078411 , _:node1e05bsi98x84 .
+
+_:node1e05bsi98x84 a owl:Restriction ;
+	owl:onProperty :op-8303816-0298073 ;
+	owl:someValuesFrom :c-7588689-5064361 .
+
+:c-1760018-4550754 a owl:Class ;
+	rdfs:label "beamer"@nl ;
+	rdfs:subClassOf :c-0527334-7513428 .
+
+:c-1768503-8556463 a owl:Class ;
+	rdfs:label "IASTED niet-lid"@nl ;
+	owl:equivalentClass _:node1e05bsi98x85 .
+
+_:node1e05bsi98x85 a owl:Restriction ;
+	owl:onProperty :op-5330715-7290222 ;
+	owl:someValuesFrom :c-5626991-7298094 .
+
+:c-1768503-8556463 rdfs:subClassOf :c-4039546-4647141 .
+
+:c-1770619-1846377 a owl:Class ;
+	rdfs:label "reisdag"@nl ;
+	rdfs:subClassOf :c-5204119-7508475 , _:node1e05bsi98x86 .
+
+_:node1e05bsi98x86 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-1862013-2016140 a owl:Class ;
+	rdfs:label "overhead projector"@nl ;
+	rdfs:subClassOf :c-0527334-7513428 .
+
+:c-2011785-8508256 a owl:Class ;
+	rdfs:label "auto"@nl ;
+	rdfs:subClassOf :c-0262878-3683901 .
+
+:c-2024331-7013138 a owl:Class ;
+	rdfs:label "conferentie vliegveld"@nl ;
+	rdfs:subClassOf :c-0029724-8458622 , _:node1e05bsi98x87 .
+
+_:node1e05bsi98x87 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-3645748-7048258 .
+
+:c-2024331-7013138 rdfs:subClassOf _:node1e05bsi98x88 .
+
+_:node1e05bsi98x88 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-4679840-5171490 .
+
+:c-2134713-9915548 a owl:Class ;
+	rdfs:label "belasting"@nl ;
+	rdfs:subClassOf :c-2256010-1169246 .
+
+:c-2221247-3420552 a owl:Class ;
+	rdfs:label "sponsor bedrijf huis"@nl ;
+	rdfs:subClassOf :c-0029724-8458622 , _:node1e05bsi98x89 .
+
+_:node1e05bsi98x89 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-7344969-2873577 .
+
+:c-2221247-3420552 rdfs:subClassOf _:node1e05bsi98x90 .
+
+_:node1e05bsi98x90 a owl:Restriction ;
+	owl:onProperty :op-2795270-6537843 ;
+	owl:someValuesFrom :c-5300609-1105470 .
+
+:c-2221247-3420552 rdfs:subClassOf _:node1e05bsi98x91 .
+
+_:node1e05bsi98x91 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-6321262-3248825 .
+
+:c-2242718-9023830 a owl:Class ;
+	rdfs:label "vertrek"@nl ;
+	rdfs:subClassOf :c-8556649-2766223 .
+
+:c-2256010-1169246 a owl:Class ;
+	rdfs:label "geld"@nl .
+
+:c-2262410-3953189 a owl:Class ;
+	rdfs:label "manuscript accepteren"@nl ;
+	rdfs:subClassOf :c-0738850-9657699 .
+
+:c-2304461-9501008 a owl:Class ;
+	rdfs:label "tijdzone"@nl .
+
+:c-2378045-7158734 a owl:Class ;
+	rdfs:label "staat"@nl .
+
+:c-2416944-9431809 a owl:Class ;
+	rdfs:label "persoon"@nl .
+
+:c-2544605-3060476 a owl:Class ;
+	rdfs:label "bewijs van aanwezigheid"@nl ;
+	rdfs:subClassOf :c-0447708-8078411 , _:node1e05bsi98x92 .
+
+_:node1e05bsi98x92 a owl:Restriction ;
+	owl:onProperty :op-9255157-3085801 ;
+	owl:someValuesFrom :c-0423929-3257440 .
+
+:c-2544605-3060476 rdfs:subClassOf _:node1e05bsi98x93 .
+
+_:node1e05bsi98x93 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-7419370-7213316 .
+
+:c-2598665-8478625 a owl:Class ;
+	rdfs:label "visum"@nl ;
+	rdfs:subClassOf :c-0447708-8078411 , _:node1e05bsi98x94 .
+
+_:node1e05bsi98x94 a owl:Restriction ;
+	owl:onProperty :op-5546520-9804535 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-2624035-3776782 a owl:Class ;
+	rdfs:label "transparant"@nl ;
+	rdfs:subClassOf :c-0447708-8078411 , _:node1e05bsi98x95 .
+
+_:node1e05bsi98x95 a owl:Restriction ;
+	owl:onProperty :op-0436272-4758544 ;
+	owl:someValuesFrom :c-7588689-5064361 .
+
+:c-2758427-6927464 a owl:Class ;
+	rdfs:label "videospeler"@nl ;
+	rdfs:subClassOf :c-0527334-7513428 .
+
+:c-2855641-0938764 a owl:Class ;
+	rdfs:label "simuleren"@nl ;
+	rdfs:subClassOf :c-8854104-9386965 .
+
+:c-2862906-1005986 a owl:Class ;
+	rdfs:label "kosten"@nl ;
+	rdfs:subClassOf :c-2256010-1169246 , _:node1e05bsi98x96 .
+
+_:node1e05bsi98x96 a owl:Restriction ;
+	owl:onProperty :op-8714656-1135087 ;
+	owl:someValuesFrom _:node1e05bsi98x97 .
+
+_:node1e05bsi98x97 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x98 .
+
+_:node1e05bsi98x98 rdf:first :c-0470062-9753831 ;
+	rdf:rest _:node1e05bsi98x99 .
+
+_:node1e05bsi98x99 rdf:first :c-4131584-5710372 ;
+	rdf:rest rdf:nil .
+
+:c-2972355-8856305 a owl:Class ;
+	rdfs:label "cheque"@nl ;
+	rdfs:subClassOf :c-0470062-9753831 .
+
+:c-3148268-0146218 a owl:Class ;
+	rdfs:label "auteur conferentiebundel boek inbegrepen"@nl ;
+	rdfs:subClassOf :c-4169538-0517095 , _:node1e05bsi98x100 .
+
+_:node1e05bsi98x100 a owl:Restriction ;
+	owl:onProperty :op-5145845-6920469 ;
+	owl:someValuesFrom :c-4367998-7819682 .
+
+:c-3257731-9673187 a owl:Class ;
+	rdfs:label "munteenheid"@nl .
+
+:c-3333510-8822083 a owl:Class ;
+	rdfs:label "conferentie dagen"@nl ;
+	rdfs:subClassOf :c-5204119-7508475 , _:node1e05bsi98x101 .
+
+_:node1e05bsi98x101 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-3333800-4662197 a owl:Class ;
+	rdfs:label "registratie deadline"@nl ;
+	rdfs:subClassOf :c-5296468-9153980 .
+
+:c-3338654-5159253 a owl:Class ;
+	rdfs:label "korte inleiding voorzitter"@nl ;
+	rdfs:subClassOf :c-0447708-8078411 , _:node1e05bsi98x102 .
+
+_:node1e05bsi98x102 a owl:Restriction ;
+	owl:onProperty :op-5458449-7378480 ;
+	owl:someValuesFrom :c-4169538-0517095 .
+
+:c-3338654-5159253 rdfs:subClassOf _:node1e05bsi98x103 .
+
+_:node1e05bsi98x103 a owl:Restriction ;
+	owl:onProperty :op-4192900-7995466 ;
+	owl:someValuesFrom :c-7840274-2518602 .
+
+:c-3361467-5327492 a owl:Class ;
+	rdfs:label "publicatie"@nl ;
+	rdfs:subClassOf :c-6598573-6357597 , _:node1e05bsi98x104 .
+
+_:node1e05bsi98x104 a owl:Restriction ;
+	owl:onProperty :op-4262781-8170508 ;
+	owl:someValuesFrom :c-4358715-7616104 .
+
+:c-3387857-5311861 a owl:Class ;
+	rdfs:label "koffiepauze"@nl ;
+	rdfs:subClassOf :c-4536045-2582468 , _:node1e05bsi98x105 .
+
+_:node1e05bsi98x105 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-3391853-9025951 a owl:Class ;
+	rdfs:label "dagvullende rondleiding"@nl ;
+	rdfs:subClassOf :c-8556649-2766223 , _:node1e05bsi98x106 .
+
+_:node1e05bsi98x106 a owl:Restriction ;
+	owl:onProperty :op-7356220-3153506 ;
+	owl:someValuesFrom :c-6559501-0991678 .
+
+:c-3391853-9025951 rdfs:subClassOf _:node1e05bsi98x107 .
+
+_:node1e05bsi98x107 a owl:Restriction ;
+	owl:onProperty :op-7356220-3153506 ;
+	owl:someValuesFrom :c-1770619-1846377 .
+
+:c-3391853-9025951 rdfs:subClassOf _:node1e05bsi98x108 .
+
+_:node1e05bsi98x108 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-3449302-1499080 a owl:Class ;
+	rdfs:label "inleiding"@nl ;
+	rdfs:subClassOf :c-4536045-2582468 .
+
+:c-3481371-7572306 a owl:Class ;
+	rdfs:label "registratiekosten aanwezige auteur boek"@nl ;
+	rdfs:subClassOf :c-6749294-3918570 , _:node1e05bsi98x109 .
+
+_:node1e05bsi98x109 a owl:Restriction ;
+	owl:onProperty :op-8287978-4308097 ;
+	owl:someValuesFrom :c-4367998-7819682 .
+
+:c-3592681-0415875 a owl:Class ;
+	rdfs:label "algemene lezing spreker"@nl ;
+	owl:equivalentClass _:node1e05bsi98x110 .
+
+_:node1e05bsi98x110 a owl:Restriction ;
+	owl:onProperty :op-8104942-5878619 ;
+	owl:someValuesFrom :c-4218168-3652575 .
+
+:c-3592681-0415875 rdfs:subClassOf :c-4169538-0517095 , _:node1e05bsi98x111 .
+
+_:node1e05bsi98x111 a owl:Restriction ;
+	owl:onProperty :op-8234614-0910743 ;
+	owl:someValuesFrom :c-0302060-4568793 .
+
+:c-3630365-7723515 a owl:Class ;
+	rdfs:label "lector"@nl ;
+	owl:equivalentClass _:node1e05bsi98x112 .
+
+_:node1e05bsi98x112 a owl:Restriction ;
+	owl:onProperty :op-8104942-5878619 ;
+	owl:someValuesFrom :c-4096651-7869906 .
+
+:c-3630365-7723515 rdfs:subClassOf :c-4169538-0517095 , _:node1e05bsi98x113 .
+
+_:node1e05bsi98x113 a owl:Restriction ;
+	owl:onProperty :op-8234614-0910743 ;
+	owl:someValuesFrom :c-7419370-7213316 .
+
+:c-3645748-7048258 a owl:Class ;
+	rdfs:label "conferentie stad"@nl ;
+	rdfs:subClassOf :c-3668276-6028154 , _:node1e05bsi98x114 .
+
+_:node1e05bsi98x114 a owl:Restriction ;
+	owl:onProperty :op-5035685-3856774 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-3668276-6028154 a owl:Class ;
+	rdfs:label "stad"@nl ;
+	rdfs:subClassOf owl:Thing , _:node1e05bsi98x115 .
+
+_:node1e05bsi98x115 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-2378045-7158734 .
+
+:c-3861960-1967493 a owl:Class ;
+	rdfs:label "presentator huis"@nl ;
+	rdfs:subClassOf :c-0029724-8458622 , _:node1e05bsi98x116 .
+
+_:node1e05bsi98x116 a owl:Restriction ;
+	owl:onProperty :op-2795270-6537843 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-3861960-1967493 rdfs:subClassOf _:node1e05bsi98x117 .
+
+_:node1e05bsi98x117 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-6232849-6040565 .
+
+:c-3861960-1967493 rdfs:subClassOf _:node1e05bsi98x118 .
+
+_:node1e05bsi98x118 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-7122106-6772615 .
+
+:c-4019752-6842233 a owl:Class ;
+	rdfs:label "banket"@nl ;
+	rdfs:subClassOf :c-8095125-1391931 , _:node1e05bsi98x119 .
+
+_:node1e05bsi98x119 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom _:node1e05bsi98x120 .
+
+_:node1e05bsi98x120 a owl:Class ;
+	owl:complementOf :c-0479563-3677267 .
+
+:c-4039546-4647141 a owl:Class ;
+	rdfs:label "afgevaardigde"@nl ;
+	owl:equivalentClass _:node1e05bsi98x121 .
+
+_:node1e05bsi98x121 a owl:Class ;
+	owl:intersectionOf _:node1e05bsi98x123 .
+
+_:node1e05bsi98x123 rdf:first _:node1e05bsi98x122 .
+
+_:node1e05bsi98x122 a owl:Restriction ;
+	owl:onProperty :op-7841554-0908910 ;
+	owl:someValuesFrom :c-0070935-4466395 .
+
+_:node1e05bsi98x123 rdf:rest _:node1e05bsi98x125 .
+
+_:node1e05bsi98x125 rdf:first _:node1e05bsi98x124 .
+
+_:node1e05bsi98x124 a owl:Restriction ;
+	owl:onProperty :op-7841554-0908910 ;
+	owl:someValuesFrom :c-3333510-8822083 .
+
+_:node1e05bsi98x125 rdf:rest _:node1e05bsi98x127 .
+
+_:node1e05bsi98x127 rdf:first _:node1e05bsi98x126 .
+
+_:node1e05bsi98x126 a owl:Restriction ;
+	owl:onProperty :op-9711684-3976276 ;
+	owl:someValuesFrom :c-1286013-2097945 .
+
+_:node1e05bsi98x127 rdf:rest rdf:nil .
+
+:c-4039546-4647141 rdfs:subClassOf :c-2416944-9431809 , _:node1e05bsi98x128 .
+
+_:node1e05bsi98x128 a owl:Restriction ;
+	owl:onProperty :op-3854150-6124124 ;
+	owl:someValuesFrom :c-3861960-1967493 .
+
+:c-4039546-4647141 rdfs:subClassOf _:node1e05bsi98x129 .
+
+_:node1e05bsi98x129 a owl:Restriction ;
+	owl:onProperty :op-5330715-7290222 ;
+	owl:someValuesFrom :c-6749294-3918570 .
+
+:c-4039546-4647141 rdfs:subClassOf _:node1e05bsi98x130 .
+
+_:node1e05bsi98x130 a owl:Restriction ;
+	owl:onProperty :op-3854150-6124124 ;
+	owl:someValuesFrom :c-7122106-6772615 .
+
+:c-4039546-4647141 rdfs:subClassOf _:node1e05bsi98x131 .
+
+_:node1e05bsi98x131 a owl:Restriction ;
+	owl:onProperty :op-7838939-1811890 ;
+	owl:someValuesFrom :c-2598665-8478625 .
+
+:c-4039546-4647141 rdfs:subClassOf _:node1e05bsi98x132 .
+
+_:node1e05bsi98x132 a owl:Restriction ;
+	owl:onProperty :op-3854150-6124124 ;
+	owl:someValuesFrom :c-6232849-6040565 .
+
+:c-4039546-4647141 rdfs:subClassOf _:node1e05bsi98x133 .
+
+_:node1e05bsi98x133 a owl:Restriction ;
+	owl:onProperty :op-6877911-2429762 ;
+	owl:someValuesFrom :c-7938850-6961663 .
+
+:c-4039546-4647141 rdfs:subClassOf _:node1e05bsi98x134 .
+
+_:node1e05bsi98x134 a owl:Restriction ;
+	owl:onProperty :op-5145845-6920469 ;
+	owl:someValuesFrom :c-0539961-0830837 .
+
+:c-4096651-7869906 a owl:Class ;
+	rdfs:label "sessie"@nl ;
+	rdfs:subClassOf :c-6037480-6462789 , _:node1e05bsi98x135 .
+
+_:node1e05bsi98x135 a owl:Restriction ;
+	owl:onProperty :op-7356220-3153506 ;
+	owl:someValuesFrom :c-7419370-7213316 .
+
+:c-4096651-7869906 rdfs:subClassOf _:node1e05bsi98x136 .
+
+_:node1e05bsi98x136 a owl:Restriction ;
+	owl:onProperty :op-5458449-7378480 ;
+	owl:someValuesFrom _:node1e05bsi98x137 .
+
+_:node1e05bsi98x137 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x138 .
+
+_:node1e05bsi98x138 rdf:first :c-4169538-0517095 ;
+	rdf:rest _:node1e05bsi98x139 .
+
+_:node1e05bsi98x139 rdf:first :c-7840274-2518602 ;
+	rdf:rest rdf:nil .
+
+:c-4099556-3856305 a owl:Class ;
+	rdfs:label "spreker lezing"@nl ;
+	rdfs:subClassOf :c-4096651-7869906 .
+
+:c-4131584-5710372 a owl:Class ;
+	rdfs:label "creditcard"@nl ;
+	rdfs:subClassOf :c-6715127-5081695 , _:node1e05bsi98x140 .
+
+_:node1e05bsi98x140 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom _:node1e05bsi98x141 .
+
+_:node1e05bsi98x141 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x142 .
+
+_:node1e05bsi98x142 rdf:first :c-0971506-7086988 ;
+	rdf:rest _:node1e05bsi98x143 .
+
+_:node1e05bsi98x143 rdf:first :c-2134713-9915548 ;
+	rdf:rest _:node1e05bsi98x144 .
+
+_:node1e05bsi98x144 rdf:first :c-2862906-1005986 ;
+	rdf:rest rdf:nil .
+
+:c-4136101-9145933 a owl:Class ;
+	rdfs:label "tweepersoonskamer"@nl ;
+	rdfs:subClassOf :c-7545326-8561408 .
+
+:c-4169538-0517095 a owl:Class ;
+	rdfs:label "auteur"@nl ;
+	rdfs:subClassOf :c-7588689-5064361 , _:node1e05bsi98x145 .
+
+_:node1e05bsi98x145 a owl:Restriction ;
+	owl:onProperty :op-3730192-8548911 ;
+	owl:someValuesFrom :c-2624035-3776782 .
+
+:c-4169538-0517095 rdfs:subClassOf _:node1e05bsi98x146 .
+
+_:node1e05bsi98x146 a owl:Restriction ;
+	owl:onProperty :op-8104942-5878619 ;
+	owl:someValuesFrom :c-3338654-5159253 .
+
+:c-4218168-3652575 a owl:Class ;
+	rdfs:label "snelcursus"@nl ;
+	owl:equivalentClass _:node1e05bsi98x147 .
+
+_:node1e05bsi98x147 a owl:Restriction ;
+	owl:onProperty :op-5458449-7378480 ;
+	owl:someValuesFrom :c-5891155-3974992 .
+
+:c-4218168-3652575 rdfs:subClassOf :c-6037480-6462789 .
+
+:c-4315799-7560343 a owl:Class ;
+	rdfs:label "arbeider niet-spreker"@nl ;
+	owl:equivalentClass _:node1e05bsi98x148 .
+
+_:node1e05bsi98x148 a owl:Restriction ;
+	owl:onProperty :op-5330715-7290222 ;
+	owl:someValuesFrom :c-8827196-7642769 .
+
+:c-4315799-7560343 rdfs:subClassOf :c-9881546-4105720 .
+
+:c-4358715-7616104 a owl:Class ;
+	rdfs:label "definitief manuscript"@nl ;
+	rdfs:subClassOf :c-1752117-9847951 , _:node1e05bsi98x149 .
+
+_:node1e05bsi98x149 a owl:Restriction ;
+	owl:onProperty :op-9711684-3976276 ;
+	owl:someValuesFrom :c-2262410-3953189 .
+
+:c-4367998-7819682 a owl:Class ;
+	rdfs:label "conferentiebundel boek"@nl ;
+	rdfs:subClassOf :c-3361467-5327492 .
+
+:c-4520832-0077482 a owl:Class ;
+	rdfs:label "student niet-spreker"@nl ;
+	owl:equivalentClass _:node1e05bsi98x150 .
+
+_:node1e05bsi98x150 a owl:Restriction ;
+	owl:onProperty :op-5330715-7290222 ;
+	owl:someValuesFrom :c-4868914-9726069 .
+
+:c-4520832-0077482 rdfs:subClassOf :c-9881546-4105720 .
+
+:c-4536045-2582468 a owl:Class ;
+	rdfs:label "conferentie activiteit"@nl ;
+	rdfs:subClassOf :c-0750484-5404167 , _:node1e05bsi98x151 .
+
+_:node1e05bsi98x151 a owl:Restriction ;
+	owl:onProperty :op-7356220-3153506 ;
+	owl:someValuesFrom :c-4679840-5171490 .
+
+:c-4536045-2582468 rdfs:subClassOf _:node1e05bsi98x152 .
+
+_:node1e05bsi98x152 a owl:Restriction ;
+	owl:onProperty :op-7356220-3153506 ;
+	owl:someValuesFrom :c-3333510-8822083 .
+
+:c-4562934-4684107 a owl:Class ;
+	rdfs:label "plenaire lezing"@nl ;
+	owl:equivalentClass _:node1e05bsi98x153 .
+
+_:node1e05bsi98x153 a owl:Restriction ;
+	owl:onProperty :op-5458449-7378480 ;
+	owl:someValuesFrom :c-3592681-0415875 .
+
+:c-4562934-4684107 rdfs:subClassOf :c-6037480-6462789 .
+
+:c-4637836-0900963 a owl:Class ;
+	rdfs:label "registratiekosten aanwezige auteur cd"@nl ;
+	rdfs:subClassOf :c-6749294-3918570 , _:node1e05bsi98x154 .
+
+_:node1e05bsi98x154 a owl:Restriction ;
+	owl:onProperty :op-8287978-4308097 ;
+	owl:someValuesFrom :c-6060007-2667346 .
+
+:c-4658569-3615501 a owl:Class ;
+	rdfs:label "hotel presentator"@nl ;
+	rdfs:subClassOf :c-4039546-4647141 , _:node1e05bsi98x155 .
+
+_:node1e05bsi98x155 a owl:Class ;
+	owl:intersectionOf _:node1e05bsi98x157 .
+
+_:node1e05bsi98x157 rdf:first _:node1e05bsi98x156 .
+
+_:node1e05bsi98x156 a owl:Restriction ;
+	owl:onProperty :op-3854150-6124124 ;
+	owl:someValuesFrom :c-6703510-5976713 .
+
+_:node1e05bsi98x157 rdf:rest _:node1e05bsi98x159 .
+
+_:node1e05bsi98x159 rdf:first _:node1e05bsi98x158 .
+
+_:node1e05bsi98x158 a owl:Restriction ;
+	owl:onProperty :op-5330715-7290222 ;
+	owl:someValuesFrom :c-5242616-9798583 .
+
+_:node1e05bsi98x159 rdf:rest rdf:nil .
+
+:c-4679840-5171490 a owl:Class ;
+	rdfs:label "conferentie staat"@nl ;
+	rdfs:subClassOf :c-2378045-7158734 , _:node1e05bsi98x160 .
+
+_:node1e05bsi98x160 a owl:Restriction ;
+	owl:onProperty :op-5035685-3856774 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-4802053-9740454 a owl:Class ;
+	rdfs:label "computer"@nl ;
+	rdfs:subClassOf :c-0527334-7513428 .
+
+:c-4868914-9726069 a owl:Class ;
+	rdfs:label "registratiekosten student"@nl ;
+	rdfs:subClassOf :c-6749294-3918570 , _:node1e05bsi98x161 .
+
+_:node1e05bsi98x161 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom _:node1e05bsi98x162 .
+
+_:node1e05bsi98x162 a owl:Class ;
+	owl:unionOf _:node1e05bsi98x163 .
+
+_:node1e05bsi98x163 rdf:first :c-4520832-0077482 ;
+	rdf:rest _:node1e05bsi98x164 .
+
+_:node1e05bsi98x164 rdf:first :c-9501653-9711652 ;
+	rdf:rest rdf:nil .
+
+:c-5204119-7508475 a owl:Class ;
+	rdfs:label "tijd"@nl .
+
+:c-5242616-9798583 a owl:Class ;
+	rdfs:label "hotel kosten"@nl ;
+	rdfs:subClassOf :c-2862906-1005986 , _:node1e05bsi98x165 .
+
+_:node1e05bsi98x165 a owl:Restriction ;
+	owl:onProperty :op-9530523-9859182 ;
+	owl:someValuesFrom :c-4658569-3615501 .
+
+:c-5296468-9153980 a owl:Class ;
+	rdfs:label "deadline"@nl ;
+	rdfs:subClassOf :c-5204119-7508475 , _:node1e05bsi98x166 .
+
+_:node1e05bsi98x166 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-5300609-1105470 a owl:Class ;
+	rdfs:label "sponsor"@nl ;
+	owl:equivalentClass _:node1e05bsi98x167 .
+
+_:node1e05bsi98x167 a owl:Restriction ;
+	owl:onProperty :op-8104942-5878619 ;
+	owl:someValuesFrom :c-0971506-7086988 .
+
+:c-5300609-1105470 rdfs:subClassOf :c-2416944-9431809 , _:node1e05bsi98x168 .
+
+_:node1e05bsi98x168 a owl:Restriction ;
+	owl:onProperty :op-3854150-6124124 ;
+	owl:someValuesFrom :c-2221247-3420552 .
+
+:c-5300609-1105470 rdfs:subClassOf _:node1e05bsi98x169 .
+
+_:node1e05bsi98x169 a owl:Restriction ;
+	owl:onProperty :op-3854150-6124124 ;
+	owl:someValuesFrom :c-6321262-3248825 .
+
+:c-5300609-1105470 rdfs:subClassOf _:node1e05bsi98x170 .
+
+_:node1e05bsi98x170 a owl:Restriction ;
+	owl:onProperty :op-3854150-6124124 ;
+	owl:someValuesFrom :c-7344969-2873577 .
+
+:c-5314614-6369996 a owl:Class ;
+	rdfs:label "recencent"@nl ;
+	owl:equivalentClass _:node1e05bsi98x171 .
+
+_:node1e05bsi98x171 a owl:Restriction ;
+	owl:onProperty :op-8104942-5878619 ;
+	owl:someValuesFrom :c-0724242-1321998 .
+
+:c-5314614-6369996 rdfs:subClassOf :c-7588689-5064361 .
+
+:c-5613310-0456561 a owl:Class ;
+	rdfs:label "presentator universiteit"@nl ;
+	rdfs:subClassOf :c-0029724-8458622 , _:node1e05bsi98x172 .
+
+_:node1e05bsi98x172 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-6232849-6040565 .
+
+:c-5613310-0456561 rdfs:subClassOf _:node1e05bsi98x173 .
+
+_:node1e05bsi98x173 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-7122106-6772615 .
+
+:c-5626991-7298094 a owl:Class ;
+	rdfs:label "registratiekosten niet-lid"@nl ;
+	rdfs:subClassOf :c-6749294-3918570 , _:node1e05bsi98x174 .
+
+_:node1e05bsi98x174 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-1768503-8556463 .
+
+:c-5891155-3974992 a owl:Class ;
+	rdfs:label "snelcursus spreker"@nl ;
+	owl:equivalentClass _:node1e05bsi98x175 .
+
+_:node1e05bsi98x175 a owl:Restriction ;
+	owl:onProperty :op-8104942-5878619 ;
+	owl:someValuesFrom :c-4562934-4684107 .
+
+:c-5891155-3974992 rdfs:subClassOf :c-4169538-0517095 , _:node1e05bsi98x176 .
+
+_:node1e05bsi98x176 a owl:Restriction ;
+	owl:onProperty :op-8234614-0910743 ;
+	owl:someValuesFrom :c-0302060-4568793 .
+
+:c-5895297-4083696 a owl:Class ;
+	rdfs:label "plaats"@nl ;
+	rdfs:subClassOf owl:Thing , _:node1e05bsi98x177 .
+
+_:node1e05bsi98x177 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-3645748-7048258 .
+
+:c-5895297-4083696 rdfs:subClassOf _:node1e05bsi98x178 .
+
+_:node1e05bsi98x178 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-4679840-5171490 .
+
+:c-5947133-0410684 a owl:Class ;
+	rdfs:label "IASTED lid"@nl ;
+	owl:equivalentClass _:node1e05bsi98x179 .
+
+_:node1e05bsi98x179 a owl:Restriction ;
+	owl:onProperty :op-5330715-7290222 ;
+	owl:someValuesFrom :c-1048755-8572155 .
+
+:c-5947133-0410684 rdfs:subClassOf :c-4039546-4647141 .
+
+:c-6037480-6462789 a owl:Class ;
+	rdfs:label "lezing"@nl ;
+	rdfs:subClassOf :c-4536045-2582468 , _:node1e05bsi98x180 .
+
+_:node1e05bsi98x180 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-0423929-3257440 .
+
+:c-6060007-2667346 a owl:Class ;
+	rdfs:label "conferentiebundel CD"@nl ;
+	rdfs:subClassOf :c-3361467-5327492 .
+
+:c-6104010-1974423 a owl:Class ;
+	rdfs:label "PowerPoint presentatie"@nl ;
+	rdfs:subClassOf :c-7332710-1081186 .
+
+:c-6232849-6040565 a owl:Class ;
+	rdfs:label "presentator stad"@nl ;
+	rdfs:subClassOf :c-3668276-6028154 , _:node1e05bsi98x181 .
+
+_:node1e05bsi98x181 a owl:Restriction ;
+	owl:onProperty :op-2795270-6537843 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-6321262-3248825 a owl:Class ;
+	rdfs:label "sponsor stad"@nl ;
+	rdfs:subClassOf :c-3668276-6028154 , _:node1e05bsi98x182 .
+
+_:node1e05bsi98x182 a owl:Restriction ;
+	owl:onProperty :op-2795270-6537843 ;
+	owl:someValuesFrom :c-5300609-1105470 .
+
+:c-6543388-5084927 a owl:Class ;
+	rdfs:label "hoofdkantoor"@nl ;
+	rdfs:subClassOf :c-5895297-4083696 .
+
+:c-6557321-7566960 a owl:Class ;
+	rdfs:label "fooi"@nl ;
+	rdfs:subClassOf :c-2256010-1169246 , _:node1e05bsi98x183 .
+
+_:node1e05bsi98x183 a owl:Restriction ;
+	owl:onProperty :op-6978705-1222028 ;
+	owl:someValuesFrom :c-8275860-0851766 .
+
+:c-6559501-0991678 a owl:Class ;
+	rdfs:label "reis stad"@nl ;
+	rdfs:subClassOf :c-3668276-6028154 , _:node1e05bsi98x184 .
+
+_:node1e05bsi98x184 a owl:Restriction ;
+	owl:onProperty :op-5035685-3856774 ;
+	owl:someValuesFrom :c-8500290-5873408 .
+
+:c-6598573-6357597 a owl:Class ;
+	rdfs:label "onderdeel"@nl .
+
+:c-6614689-0635966 a owl:Class ;
+	rdfs:label "vertrekbelasting"@nl ;
+	rdfs:subClassOf :c-2134713-9915548 , _:node1e05bsi98x185 .
+
+_:node1e05bsi98x185 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-2242718-9023830 .
+
+:c-6657478-6297187 a owl:Class ;
+	rdfs:label "auteur conferentiebundel cd inbegrepen"@nl ;
+	rdfs:subClassOf :c-4169538-0517095 , _:node1e05bsi98x186 .
+
+_:node1e05bsi98x186 a owl:Restriction ;
+	owl:onProperty :op-5145845-6920469 ;
+	owl:someValuesFrom :c-6060007-2667346 .
+
+:c-6703510-5976713 a owl:Class ;
+	rdfs:label "conferentie hotel"@nl ;
+	rdfs:subClassOf :c-0029724-8458622 , _:node1e05bsi98x187 .
+
+_:node1e05bsi98x187 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-3645748-7048258 .
+
+:c-6703510-5976713 rdfs:subClassOf _:node1e05bsi98x188 .
+
+_:node1e05bsi98x188 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-4679840-5171490 .
+
+:c-6703510-5976713 rdfs:subClassOf _:node1e05bsi98x189 .
+
+_:node1e05bsi98x189 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-4658569-3615501 .
+
+:c-6715127-5081695 a owl:Class ;
+	rdfs:label "kaart"@nl ;
+	rdfs:subClassOf :c-6598573-6357597 .
+
+:c-6749294-3918570 a owl:Class ;
+	rdfs:label "registratiekosten"@nl ;
+	rdfs:subClassOf :c-2862906-1005986 , _:node1e05bsi98x190 .
+
+_:node1e05bsi98x190 a owl:Restriction ;
+	owl:onProperty :op-9530523-9859182 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-6749294-3918570 rdfs:subClassOf _:node1e05bsi98x191 .
+
+_:node1e05bsi98x191 a owl:Restriction ;
+	owl:onProperty :op-8287978-4308097 ;
+	owl:someValuesFrom :c-4536045-2582468 .
+
+:c-6870627-1670717 a owl:Class ;
+	rdfs:label "een conferentie dag"@nl ;
+	rdfs:subClassOf :c-3333510-8822083 .
+
+:c-6952564-9034010 a owl:Class ;
+	rdfs:label "manuscript ontvangen"@nl ;
+	rdfs:subClassOf :c-0738850-9657699 .
+
+:c-7016611-1309279 a owl:Class ;
+	rdfs:label "formulier"@nl ;
+	rdfs:subClassOf :c-0447708-8078411 , _:node1e05bsi98x192 .
+
+_:node1e05bsi98x192 a owl:Restriction ;
+	owl:onProperty :op-4192900-7995466 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-7089128-1874598 a owl:Class ;
+	rdfs:label "spreker voorstellen"@nl ;
+	rdfs:subClassOf :c-3449302-1499080 .
+
+:c-7122106-6772615 a owl:Class ;
+	rdfs:label "presentator staat"@nl ;
+	rdfs:subClassOf :c-2378045-7158734 , _:node1e05bsi98x193 .
+
+_:node1e05bsi98x193 a owl:Restriction ;
+	owl:onProperty :op-2795270-6537843 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-7332710-1081186 a owl:Class ;
+	rdfs:label "presentatie"@nl ;
+	rdfs:subClassOf :c-4536045-2582468 .
+
+:c-7344969-2873577 a owl:Class ;
+	rdfs:label "sponsor staat"@nl ;
+	rdfs:subClassOf :c-2378045-7158734 .
+
+:c-7419370-7213316 a owl:Class ;
+	rdfs:label "sessie kamer"@nl ;
+	rdfs:subClassOf :c-5895297-4083696 , _:node1e05bsi98x194 .
+
+_:node1e05bsi98x194 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-0070935-4466395 .
+
+:c-7419370-7213316 rdfs:subClassOf _:node1e05bsi98x195 .
+
+_:node1e05bsi98x195 a owl:Restriction ;
+	owl:onProperty :op-1262014-4215089 ;
+	owl:someValuesFrom :c-0527334-7513428 .
+
+:c-7545326-8561408 a owl:Class ;
+	rdfs:label "hotelkamer"@nl ;
+	rdfs:subClassOf :c-5895297-4083696 , _:node1e05bsi98x196 .
+
+_:node1e05bsi98x196 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-6703510-5976713 .
+
+:c-7545326-8561408 rdfs:subClassOf _:node1e05bsi98x197 .
+
+_:node1e05bsi98x197 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-4658569-3615501 .
+
+:c-7554526-2511902 a owl:Class ;
+	rdfs:label "deadline aankondiging acceptatie"@nl ;
+	rdfs:subClassOf :c-5296468-9153980 .
+
+:c-7588689-5064361 a owl:Class ;
+	rdfs:label "spreker"@nl ;
+	rdfs:subClassOf :c-4039546-4647141 , _:node1e05bsi98x198 .
+
+_:node1e05bsi98x198 a owl:Restriction ;
+	owl:onProperty :op-8104942-5878619 ;
+	owl:someValuesFrom :c-6037480-6462789 .
+
+:c-7588689-5064361 rdfs:subClassOf _:node1e05bsi98x199 .
+
+_:node1e05bsi98x199 a owl:Restriction ;
+	owl:onProperty :op-2006201-4922677 ;
+	owl:someValuesFrom :c-4358715-7616104 .
+
+:c-7588689-5064361 owl:disjointWith :c-9881546-4105720 .
+
+:c-7741194-4333319 a owl:Class ;
+	rdfs:label "taxi"@nl ;
+	rdfs:subClassOf :c-0262878-3683901 .
+
+:c-7751598-8649754 a owl:Class ;
+	rdfs:label "huren"@nl ;
+	rdfs:subClassOf :c-0738850-9657699 , _:node1e05bsi98x200 .
+
+_:node1e05bsi98x200 a owl:Restriction ;
+	owl:onProperty :op-6494444-7279320 ;
+	owl:someValuesFrom :c-2011785-8508256 .
+
+:c-7840274-2518602 a owl:Class ;
+	rdfs:label "sessievoorzitter"@nl ;
+	owl:equivalentClass _:node1e05bsi98x201 .
+
+_:node1e05bsi98x201 a owl:Restriction ;
+	owl:onProperty :op-9711684-3976276 ;
+	owl:someValuesFrom :c-7089128-1874598 .
+
+:c-7840274-2518602 rdfs:subClassOf :c-4039546-4647141 , _:node1e05bsi98x202 .
+
+_:node1e05bsi98x202 a owl:Restriction ;
+	owl:onProperty :op-5145845-6920469 ;
+	owl:someValuesFrom :c-3338654-5159253 .
+
+:c-7938850-6961663 a owl:Class ;
+	rdfs:label "registratieformulier"@nl ;
+	rdfs:subClassOf :c-7016611-1309279 , _:node1e05bsi98x203 .
+
+_:node1e05bsi98x203 a owl:Restriction ;
+	owl:onProperty :op-0545303-2877953 ;
+	owl:someValuesFrom :c-3333800-4662197 .
+
+:c-7938850-6961663 rdfs:subClassOf _:node1e05bsi98x204 .
+
+_:node1e05bsi98x204 a owl:Restriction ;
+	owl:onProperty :op-1731185-9821615 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-8095125-1391931 a owl:Class ;
+	rdfs:label "sociaal programma"@nl ;
+	rdfs:subClassOf :c-4536045-2582468 , _:node1e05bsi98x205 .
+
+_:node1e05bsi98x205 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-8124831-4536106 a owl:Class ;
+	rdfs:label "eenpersoonskamer"@nl ;
+	rdfs:subClassOf :c-7545326-8561408 .
+
+:c-8275860-0851766 a owl:Class ;
+	rdfs:label "conferentie restaurant"@nl ;
+	rdfs:subClassOf :c-0029724-8458622 , _:node1e05bsi98x206 .
+
+_:node1e05bsi98x206 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-3645748-7048258 .
+
+:c-8275860-0851766 rdfs:subClassOf _:node1e05bsi98x207 .
+
+_:node1e05bsi98x207 a owl:Restriction ;
+	owl:onProperty :op-2795270-6537843 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-8275860-0851766 rdfs:subClassOf _:node1e05bsi98x208 .
+
+_:node1e05bsi98x208 a owl:Restriction ;
+	owl:onProperty :op-6755570-0182916 ;
+	owl:someValuesFrom :c-4679840-5171490 .
+
+:c-8500290-5873408 a owl:Class ;
+	rdfs:label "conferentie wandelaar"@nl ;
+	owl:equivalentClass _:node1e05bsi98x209 .
+
+_:node1e05bsi98x209 a owl:Restriction ;
+	owl:onProperty :op-9711684-3976276 ;
+	owl:someValuesFrom :c-3391853-9025951 .
+
+:c-8500290-5873408 rdfs:subClassOf :c-4039546-4647141 .
+
+:c-8556649-2766223 a owl:Class ;
+	rdfs:label "activiteit na de conferentie"@nl ;
+	rdfs:subClassOf :c-0750484-5404167 , _:node1e05bsi98x210 .
+
+_:node1e05bsi98x210 a owl:Restriction ;
+	owl:onProperty :op-1170476-0609663 ;
+	owl:someValuesFrom :c-3333510-8822083 .
+
+:c-8665419-0663691 a owl:Class ;
+	rdfs:label "coctail receptie"@nl ;
+	rdfs:subClassOf :c-4536045-2582468 , _:node1e05bsi98x211 .
+
+_:node1e05bsi98x211 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-8814699-6429280 a owl:Class ;
+	rdfs:label "modelleren"@nl ;
+	rdfs:subClassOf :c-8854104-9386965 .
+
+:c-8827196-7642769 a owl:Class ;
+	rdfs:label "registratiekosten niet-auteur"@nl ;
+	rdfs:subClassOf :c-6749294-3918570 , _:node1e05bsi98x212 .
+
+_:node1e05bsi98x212 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-9881546-4105720 .
+
+:c-8854104-9386965 a owl:Class ;
+	rdfs:label "onderzoek"@nl ;
+	rdfs:subClassOf :c-0738850-9657699 .
+
+:c-8879873-4017811 a owl:Class ;
+	rdfs:label "overschrijving"@nl ;
+	rdfs:subClassOf :c-0470062-9753831 .
+
+:c-8967187-4796274 a owl:Class ;
+	rdfs:label "busje"@nl ;
+	rdfs:subClassOf :c-0262878-3683901 .
+
+:c-9501653-9711652 a owl:Class ;
+	rdfs:label "student lector"@nl ;
+	rdfs:subClassOf :c-3630365-7723515 .
+
+:c-9501704-2012463 a owl:Class ;
+	rdfs:label "eerste manuscript"@nl ;
+	rdfs:subClassOf :c-1752117-9847951 , _:node1e05bsi98x213 .
+
+_:node1e05bsi98x213 a owl:Restriction ;
+	owl:onProperty :op-9711684-3976276 ;
+	owl:someValuesFrom :c-0865131-5942804 .
+
+:c-9571954-5645495 a owl:Class ;
+	rdfs:label "toegevoegde waarde belasting"@nl ;
+	rdfs:subClassOf :c-2134713-9915548 .
+
+:c-9574611-9176079 a owl:Class ;
+	rdfs:label "submissie deadline"@nl ;
+	rdfs:subClassOf :c-5296468-9153980 .
+
+:c-9585627-2704863 a owl:Class ;
+	rdfs:label "auteur informatie formulier"@nl ;
+	rdfs:subClassOf :c-7016611-1309279 , _:node1e05bsi98x214 .
+
+_:node1e05bsi98x214 a owl:Restriction ;
+	owl:onProperty :op-6254382-6020290 ;
+	owl:someValuesFrom :c-7554526-2511902 .
+
+:c-9725785-2003067 a owl:Class ;
+	rdfs:label "email lijst"@nl ;
+	rdfs:subClassOf :c-0447708-8078411 , _:node1e05bsi98x215 .
+
+_:node1e05bsi98x215 a owl:Restriction ;
+	owl:onProperty :op-9165543-5988814 ;
+	owl:someValuesFrom :c-4039546-4647141 .
+
+:c-9881546-4105720 a owl:Class ;
+	rdfs:label "niet-spreker"@nl ;
+	rdfs:subClassOf :c-4039546-4647141 .
+
+:c-9976985-0358251 a owl:Class ;
+	rdfs:label "technisch committee"@nl ;
+	rdfs:subClassOf :c-4039546-4647141 , _:node1e05bsi98x216 .
+
+_:node1e05bsi98x216 a owl:Restriction ;
+	owl:onProperty :op-9711684-3976276 ;
+	owl:someValuesFrom :c-1431750-1213664 .
+
+iasted:Cancun a owl:NamedIndividual , :c-3645748-7048258 .
+
+iasted:Chichen_Itza a owl:NamedIndividual , :c-6559501-0991678 .
+
+iasted:Mexico a owl:NamedIndividual , :c-4679840-5171490 .
+
+iasted:peso a owl:NamedIndividual , :c-3257731-9673187 .

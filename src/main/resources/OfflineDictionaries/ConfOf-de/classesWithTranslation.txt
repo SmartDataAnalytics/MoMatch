@@ -1,0 +1,38 @@
+Stadt,City
+Konferenz,Conference
+Organisation,Organization
+Ereignis der Begutachtung,Event review
+Empfang,Reception
+studentischer Teilnehmer,student participants
+Assistent,Assistant
+Ereignis,Event
+soziales Ereignis,social event
+Ergebnis-der-Begutachtung_Ereignis,Result-of-Begutachtung_Ereignis
+Thema,Topic
+regulärer Teilnehmer,regular participants
+Tutorium,Tutorial
+Workshop,Workshop
+Arbeits-Ereignis,Work Event
+Firma,Company
+Freiwilliger,Voluntary
+Teilnehmer,Participants
+Land,Country
+Ereignis zur Registrierung der Teilnehmer,Incident to the registration of the participants
+Einreichung,Submission
+Poster,Poster
+Universität,University
+Ausflug,Trip
+Vorsitz des Programmkomitees,Chair of the program Committee
+Wissenschaftler,Scientists
+Ereignis des Sendens des "camera-ready" Papiers,Event of the sending of the "camera-ready" paper
+Papier,Paper
+Mitglied,Member
+Administrator,Administrator
+Mitglied des Programmkomitees,Member of the program Committee
+administratives Ereignis,the administrative event
+Person,Person
+Autor,Author
+kurzes Papier,short paper
+Student,Student
+Ereignis des Einreichens eines Papiers,Event of submission of a paper
+Bankett,Banquet

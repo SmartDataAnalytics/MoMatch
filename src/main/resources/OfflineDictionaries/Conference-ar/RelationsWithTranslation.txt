@@ -1,0 +1,65 @@
+لديه تاريخ مهم,has a history of important
+يدعو المراجع المشترك,Supports references to the joint
+انه رئيس ورشة عمل ل,He's the head of a workshop for
+تاريخ إخطار القبول,The date of notification of acceptance
+هو الجزء الأول من,Is the first part of the
+تم تسنيد افضلية المراجعة,The Securitization advantage review
+هو رئيس الجنة,Is president of paradise
+هو الرئيس المشترك للجنة,Is the co-chair of the committee
+لديه المسار,has a track
+لديه رئيس ورشة عمل,has the head of a workshop
+انها اللجنة العلمية للمؤتمر,It's the scientific committee of the conference
+تاريخ ارسال الملخصات,Date to send abstracts
+هي لجنة المؤتمر,Is the conference committee
+لديه الاسم الأول,has the first name
+جزء من المؤتمر,Part of the conference
+لديه اللقب,Has the last name
+لديه موضوع ورشة عمل,It has the theme of a workshop
+يجعل العرض التقديمي,Makes the presentation
+هو عضو في,is a member of
+لديه جزء, has the part
+موضوع هو جزء من مؤتمر,The theme is part of the conference
+لديه رئيس اللجنة,Has the chairman of the committee
+تاريخ البداية,Start date
+لديه رئيس مشترك لللجنة,Has the chairman of the Joint Committee
+أفضلية أو خبرة المراجع,Preference or experience references
+لديه بريد الكتروني,I have his email
+درجة تفضيل مراجعة,The degree of preference for the review
+لديه مساهمة,has a contribution
+يساهم في المؤتمر,Help in the conference
+تاريخ مهم من سلسلة المؤتمر,Important date of a series of conference
+منشر المحضر هو,Sawmill station is
+مساهمة المراجعة,The contribution of the audit
+مدعو من المراجع,Invited reviewer
+مرسلة إلى,Sent to
+لجنة المؤتمر هي,The conference committee is
+اللجنة التوجيهية للمؤتمر,The steering committee of the conference
+لديه البرنامج التعليمي,has a tutorial
+اللجنة التوجيهية للمؤتمر هي,The steering committee of the conference are
+لديه اسم,has a name
+رقم حجم المحضر,Number size axle
+مقدم من قبل,Submitted by
+لديه الكاتب,Has the author
+لديه مساهمة مرسلة,I have his contribution sent
+ISBN محضر,ISBN the minutes of the
+اللجنة المنظمة للمؤتمر هي,The organizing committee of the conference are
+اللجنة المنظمة للمؤتمر,The organizing committee of the conference
+موقع المؤتمر,The conference site
+تاريخ الارسال بعد إجراء التعديل,The history of the transmitter, after adjustment
+لديه موضوع أو مساهمة مرسلة,Have a theme or a contribution sent
+لديه عضو,Has the member
+ينشر,Published
+لديه خبرة المراجعة,Have experience of audit
+الجنة العلمية للمؤتمرهي,Paradise scientific Lite
+تاريخ ارسال البحث كامل,Date of send full search
+موقع شبكة الإنترنت العنكبوتية للمؤتمرهو,The web site Spider Lite
+درجة خبرة المراجع,The degree of experience and references
+لديه ملخص,Has a summary
+افضلية أو خبرة المراجعة هي,Advantage or experience of the audit are
+لديه ورشة عمل,has a workshop
+لديه الجنس,Have sex
+AnnotationProperty,AnnotationProperty
+اليوم محطة,Today the station
+نشرت بتاريخ,Published on
+موضوع مرتبط بافضلية المراجعة,The theme is tied after the audit
+لديه مراجعة,Has the review

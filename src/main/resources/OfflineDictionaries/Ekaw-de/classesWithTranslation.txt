@@ -1,0 +1,73 @@
+university,Universität
+tutorial chair,tutorial Stuhl
+individual presentation,die individuelle Präsentation
+tutorial,tutorial
+industrial paper,Industrie-Papier
+negative review,negative Bewertung
+poster session,poster-session
+camera ready paper,Kamera bereit Papier
+web site,Website
+pc member,pc-Mitglied
+presenter,Moderator
+neutral review,Neutrale Bewertung
+oc chair,oc-Lehrstuhl
+submitted paper,eingereicht Papier
+poster paper,poster-Papier
+evaluated paper,ausgewertet Papier
+demo session,demo-session
+proceedings publisher,Verfahren publisher
+early registered participant,frühzeitig angemeldete Teilnehmer
+academic institution,akademischen institution
+flyer,flyer
+accepted paper,akzeptiert Papier
+review,überprüfen
+industrial session,Industrie-session
+positive review,positive Bewertung
+session,Sitzung
+conference trip,Konferenz-Reise
+contributed talk,beigetragen zu sprechen
+invited talk,eingeladener Vortrag
+event,event
+workshop session,workshop-Sitzung
+session chair,session chair
+paper author,Papier Autor
+conference proceedings,conference proceedings
+demo paper,demo-Papier
+conference participant,Teilnehmer der Konferenz
+paper,Papier
+scientific event,wissenschaftliche Veranstaltung
+abstract,abstract
+workshop paper,workshop Papier
+multi author volume,multi volume Autor
+social event,social event
+conference,Konferenz
+proceedings,Verfahren
+workshop,workshop
+regular session,reguläre Sitzung
+invited talk abstract,eingeladener Vortrag abstract
+assigned paper,zugewiesen Papier
+conference session,Konferenz-session
+track,track
+invited speaker,Gastvortrag
+research institute,research institute
+research topic,Thema
+conference paper,Konferenz Papier
+rejected paper,abgelehnt Papier
+organization,Organisation
+late registered participant,zu spät angemeldete Teilnehmer
+location,Lage
+organising agency,die Organisation Agentur
+person,person
+workshop chair,workshop chair
+conference banquet,Konferenz-Bankett
+regular paper,normalen Papier
+oc member,oc Mitglied
+possible reviewer,möglich Rezensent
+pc chair,pc Stuhl
+demo chair,demo-Stuhl
+student,student
+agency staff member,Agentur-Mitarbeiter
+document,Dokument
+sc member,sc-Mitglied
+programme brochure,Programm-Broschüre
+tutorial abstract,tutorial abstrakte

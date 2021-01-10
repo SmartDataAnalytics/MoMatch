@@ -1,0 +1,304 @@
+<http://confOf_en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://confOf_en#op-1921350-5090826> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-1921350-5090826> <http://www.w3.org/2000/01/rdf-schema#label> "written by author"@en .
+<http://confOf_en#op-1921350-5090826> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-1804480-3618243> .
+<http://confOf_en#op-1921350-5090826> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-3734266-2898610> .
+<http://confOf_en#op-3802438-8167706> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-3802438-8167706> <http://www.w3.org/2000/01/rdf-schema#label> "stay in city"@en .
+<http://confOf_en#op-3802438-8167706> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-5948332-3267518> .
+<http://confOf_en#op-4096845-6623331> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-4096845-6623331> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://confOf_en#op-4096845-6623331> <http://www.w3.org/2000/01/rdf-schema#label> "follows"@en .
+<http://confOf_en#op-4096845-6623331> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-5404723-6232359> .
+<http://confOf_en#op-4096845-6623331> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-5404723-6232359> .
+<http://confOf_en#op-4178089-9091832> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-4178089-9091832> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://confOf_en#op-4178089-9091832> <http://www.w3.org/2000/01/rdf-schema#label> "is parallel with"@en .
+<http://confOf_en#op-4178089-9091832> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-5404723-6232359> .
+<http://confOf_en#op-4178089-9091832> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-5404723-6232359> .
+<http://confOf_en#op-4178089-9091832> <http://www.w3.org/2002/07/owl#inverseOf> <http://confOf_en#op-4178089-9091832> .
+<http://confOf_en#op-4917934-2826750> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-4917934-2826750> <http://www.w3.org/2000/01/rdf-schema#label> "employed by"@en .
+<http://confOf_en#op-4917934-2826750> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-2402287-2880350> .
+<http://confOf_en#op-4917934-2826750> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#op-5066813-3735504> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-5066813-3735504> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#op-5066813-3735504> <http://www.w3.org/2000/01/rdf-schema#label> "stay in country"@en .
+<http://confOf_en#op-5066813-3735504> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-3748486-8385244> .
+<http://confOf_en#op-5103134-5854227> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-5103134-5854227> <http://www.w3.org/2000/01/rdf-schema#label> "has relevant administrative event"@en .
+<http://confOf_en#op-5103134-5854227> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-3868234-1876752> .
+<http://confOf_en#op-5103134-5854227> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-5404723-6232359> .
+<http://confOf_en#op-6508666-4665772> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-6508666-4665772> <http://www.w3.org/2000/01/rdf-schema#label> "reviews"@en .
+<http://confOf_en#op-6508666-4665772> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-1804480-3618243> .
+<http://confOf_en#op-6508666-4665772> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-4940510-7116222> .
+<http://confOf_en#op-6734207-8272486> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-6734207-8272486> <http://www.w3.org/2000/01/rdf-schema#label> "writes contribution"@en .
+<http://confOf_en#op-6734207-8272486> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-1804480-3618243> .
+<http://confOf_en#op-6734207-8272486> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-3734266-2898610> .
+<http://confOf_en#op-6734207-8272486> <http://www.w3.org/2002/07/owl#inverseOf> <http://confOf_en#op-1921350-5090826> .
+<http://confOf_en#op-7502401-8040051> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-7502401-8040051> <http://www.w3.org/2000/01/rdf-schema#label> "study at university"@en .
+<http://confOf_en#op-7502401-8040051> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-5701075-1274855> .
+<http://confOf_en#op-7502401-8040051> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-9051277-7292388> .
+<http://confOf_en#op-7718872-4722905> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-7718872-4722905> <http://www.w3.org/2000/01/rdf-schema#label> "expert on topic"@en .
+<http://confOf_en#op-7718872-4722905> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-4888780-4443103> .
+<http://confOf_en#op-7718872-4722905> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-4940510-7116222> .
+<http://confOf_en#op-8030807-5984904> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-8030807-5984904> <http://www.w3.org/2000/01/rdf-schema#label> "has topic"@en .
+<http://confOf_en#op-8030807-5984904> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-3868234-1876752> .
+<http://confOf_en#op-8030807-5984904> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-4888780-4443103> .
+<http://confOf_en#op-8176347-7547891> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://confOf_en#op-8176347-7547891> <http://www.w3.org/2000/01/rdf-schema#label> "deals with topic"@en .
+<http://confOf_en#op-8176347-7547891> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-1804480-3618243> .
+<http://confOf_en#op-8176347-7547891> <http://www.w3.org/2000/01/rdf-schema#range> <http://confOf_en#c-4888780-4443103> .
+<http://confOf_en#ent-0251198-5994761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-0251198-5994761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#ent-0251198-5994761> <http://www.w3.org/2000/01/rdf-schema#label> "end day of event"@en .
+<http://confOf_en#ent-0251198-5994761> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-4184138-3261067> .
+<http://confOf_en#ent-0251198-5994761> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-1700978-0800293> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-1700978-0800293> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#ent-1700978-0800293> <http://www.w3.org/2000/01/rdf-schema#label> "setting of maximal number of event"@en .
+<http://confOf_en#ent-1700978-0800293> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://confOf_en#ent-1716167-5904495> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-1716167-5904495> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#ent-1716167-5904495> <http://www.w3.org/2000/01/rdf-schema#label> "has first name"@en .
+<http://confOf_en#ent-1716167-5904495> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#ent-1716167-5904495> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-1772794-8603573> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-1772794-8603573> <http://www.w3.org/2000/01/rdf-schema#label> "event is being held at"@en .
+<http://confOf_en#ent-1772794-8603573> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-2941342-5653153> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-2941342-5653153> <http://www.w3.org/2000/01/rdf-schema#label> "has fax"@en .
+<http://confOf_en#ent-2941342-5653153> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#ent-2941342-5653153> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-2971893-5806604> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-2971893-5806604> <http://www.w3.org/2000/01/rdf-schema#label> "has remark"@en .
+<http://confOf_en#ent-2971893-5806604> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-1804480-3618243> .
+<http://confOf_en#ent-2971893-5806604> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-3180463-1145375> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-3180463-1145375> <http://www.w3.org/2000/01/rdf-schema#label> "has keywords"@en .
+<http://confOf_en#ent-3180463-1145375> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-1804480-3618243> .
+<http://confOf_en#ent-3180463-1145375> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-3724946-8160347> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-3724946-8160347> <http://www.w3.org/2000/01/rdf-schema#label> "has home page"@en .
+<http://confOf_en#ent-3724946-8160347> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#ent-3724946-8160347> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-4532610-9643499> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-4532610-9643499> <http://www.w3.org/2000/01/rdf-schema#label> "has contact email"@en .
+<http://confOf_en#ent-4532610-9643499> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-1804480-3618243> .
+<http://confOf_en#ent-4532610-9643499> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-4532930-2199897> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-4532930-2199897> <http://www.w3.org/2000/01/rdf-schema#label> "has email"@en .
+<http://confOf_en#ent-4532930-2199897> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#ent-4532930-2199897> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-4646280-6521925> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-4646280-6521925> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#ent-4646280-6521925> <http://www.w3.org/2000/01/rdf-schema#label> "has title"@en .
+<http://confOf_en#ent-4646280-6521925> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-1804480-3618243> .
+<http://confOf_en#ent-4646280-6521925> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-5063643-6711325> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-5063643-6711325> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#ent-5063643-6711325> <http://www.w3.org/2000/01/rdf-schema#label> "starting day of event"@en .
+<http://confOf_en#ent-5063643-6711325> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-4184138-3261067> .
+<http://confOf_en#ent-5063643-6711325> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-5229701-3075709> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-5229701-3075709> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#ent-5229701-3075709> <http://www.w3.org/2000/01/rdf-schema#label> "has title"@en .
+<http://confOf_en#ent-5229701-3075709> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-5730464-5416292> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-5730464-5416292> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#ent-5730464-5416292> <http://www.w3.org/2000/01/rdf-schema#label> "has valued added tax"@en .
+<http://confOf_en#ent-5730464-5416292> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-5934500-8154939> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-5934500-8154939> <http://www.w3.org/2000/01/rdf-schema#label> "has postal code"@en .
+<http://confOf_en#ent-5934500-8154939> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-6379747-8396882> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-6379747-8396882> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#ent-6379747-8396882> <http://www.w3.org/2000/01/rdf-schema#label> "participant of conference has early registration"@en .
+<http://confOf_en#ent-6379747-8396882> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-8729640-0951717> .
+<http://confOf_en#ent-6379747-8396882> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://confOf_en#ent-6734221-5873053> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-6734221-5873053> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#ent-6734221-5873053> <http://www.w3.org/2000/01/rdf-schema#label> "has short title"@en .
+<http://confOf_en#ent-6734221-5873053> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-8227140-2506031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-8227140-2506031> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#ent-8227140-2506031> <http://www.w3.org/2000/01/rdf-schema#label> "has surname"@en .
+<http://confOf_en#ent-8227140-2506031> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#ent-8227140-2506031> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-8617792-4471683> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-8617792-4471683> <http://www.w3.org/2000/01/rdf-schema#label> "stay in street"@en .
+<http://confOf_en#ent-8617792-4471683> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-8881801-2437397> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-8881801-2437397> <http://www.w3.org/2000/01/rdf-schema#label> "setting of minimal number of event"@en .
+<http://confOf_en#ent-8881801-2437397> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://confOf_en#ent-9012565-8739542> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-9012565-8739542> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#ent-9012565-8739542> <http://www.w3.org/2000/01/rdf-schema#label> "has abstract"@en .
+<http://confOf_en#ent-9012565-8739542> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-1804480-3618243> .
+<http://confOf_en#ent-9012565-8739542> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-9275375-3973324> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-9275375-3973324> <http://www.w3.org/2000/01/rdf-schema#label> "has phone"@en .
+<http://confOf_en#ent-9275375-3973324> <http://www.w3.org/2000/01/rdf-schema#domain> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#ent-9275375-3973324> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://confOf_en#ent-9519410-6347395> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://confOf_en#ent-9519410-6347395> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://confOf_en#ent-9519410-6347395> <http://www.w3.org/2000/01/rdf-schema#label> "setting of default choice of number of event"@en .
+<http://confOf_en#ent-9519410-6347395> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://confOf_en#c-0319363-2610594> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-0319363-2610594> <http://www.w3.org/2000/01/rdf-schema#label> "short paper"@en .
+<http://confOf_en#c-0319363-2610594> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-1804480-3618243> .
+<http://confOf_en#c-0319363-2610594> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-2124079-9413007> .
+<http://confOf_en#c-0319363-2610594> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6834280-4912416> .
+<http://confOf_en#c-0499297-8084322> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-0499297-8084322> <http://www.w3.org/2000/01/rdf-schema#label> "event of submission"@en .
+<http://confOf_en#c-0499297-8084322> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-5404723-6232359> .
+<http://confOf_en#c-0499297-8084322> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-3107403-2678849> .
+<http://confOf_en#c-0499297-8084322> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6062393-2520649> .
+<http://confOf_en#c-0499297-8084322> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6109887-5999898> .
+<http://confOf_en#c-0499297-8084322> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6604321-4337835> .
+<http://confOf_en#c-1546212-3884536> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-1546212-3884536> <http://www.w3.org/2000/01/rdf-schema#label> "student participant of conference"@en .
+<http://confOf_en#c-1546212-3884536> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-8729640-0951717> .
+<http://confOf_en#c-1596852-9596957> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-1596852-9596957> <http://www.w3.org/2000/01/rdf-schema#label> "company"@en .
+<http://confOf_en#c-1596852-9596957> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-2402287-2880350> .
+<http://confOf_en#c-1596852-9596957> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-9051277-7292388> .
+<http://confOf_en#c-1804480-3618243> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-1804480-3618243> <http://www.w3.org/2000/01/rdf-schema#label> "contribution"@en .
+<http://confOf_en#c-1804480-3618243> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://confOf_en#c-1804480-3618243> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-2402287-2880350> .
+<http://confOf_en#c-1804480-3618243> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-3748486-8385244> .
+<http://confOf_en#c-1804480-3618243> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-4184138-3261067> .
+<http://confOf_en#c-1804480-3618243> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-4888780-4443103> .
+<http://confOf_en#c-1804480-3618243> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-5948332-3267518> .
+<http://confOf_en#c-1804480-3618243> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-2124079-9413007> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-2124079-9413007> <http://www.w3.org/2000/01/rdf-schema#label> "poster"@en .
+<http://confOf_en#c-2124079-9413007> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-1804480-3618243> .
+<http://confOf_en#c-2124079-9413007> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6834280-4912416> .
+<http://confOf_en#c-2402287-2880350> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-2402287-2880350> <http://www.w3.org/2000/01/rdf-schema#label> "organization"@en .
+<http://confOf_en#c-2402287-2880350> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-3748486-8385244> .
+<http://confOf_en#c-2402287-2880350> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-4184138-3261067> .
+<http://confOf_en#c-2402287-2880350> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-4888780-4443103> .
+<http://confOf_en#c-2402287-2880350> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-5948332-3267518> .
+<http://confOf_en#c-2402287-2880350> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-3107403-2678849> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-3107403-2678849> <http://www.w3.org/2000/01/rdf-schema#label> "event of reviewing results"@en .
+<http://confOf_en#c-3107403-2678849> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-5404723-6232359> .
+<http://confOf_en#c-3107403-2678849> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6062393-2520649> .
+<http://confOf_en#c-3107403-2678849> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6109887-5999898> .
+<http://confOf_en#c-3107403-2678849> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6604321-4337835> .
+<http://confOf_en#c-3734266-2898610> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-3734266-2898610> <http://www.w3.org/2000/01/rdf-schema#label> "author"@en .
+<http://confOf_en#c-3734266-2898610> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-3748486-8385244> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-3748486-8385244> <http://www.w3.org/2000/01/rdf-schema#label> "country"@en .
+<http://confOf_en#c-3748486-8385244> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-4184138-3261067> .
+<http://confOf_en#c-3748486-8385244> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-4888780-4443103> .
+<http://confOf_en#c-3748486-8385244> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-3826751-4914269> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-3826751-4914269> <http://www.w3.org/2000/01/rdf-schema#label> "volunteer of conference"@en .
+<http://confOf_en#c-3826751-4914269> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-3868234-1876752> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-3868234-1876752> <http://www.w3.org/2000/01/rdf-schema#label> "working event"@en .
+<http://confOf_en#c-3868234-1876752> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-4184138-3261067> .
+<http://confOf_en#c-3868234-1876752> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-5404723-6232359> .
+<http://confOf_en#c-3868234-1876752> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-9402184-3168847> .
+<http://confOf_en#c-4184138-3261067> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-4184138-3261067> <http://www.w3.org/2000/01/rdf-schema#label> "event"@en .
+<http://confOf_en#c-4184138-3261067> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-4888780-4443103> .
+<http://confOf_en#c-4184138-3261067> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-5948332-3267518> .
+<http://confOf_en#c-4184138-3261067> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-4855691-2375415> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-4855691-2375415> <http://www.w3.org/2000/01/rdf-schema#label> "workshop"@en .
+<http://confOf_en#c-4855691-2375415> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-3868234-1876752> .
+<http://confOf_en#c-4855691-2375415> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-5307218-6000981> .
+<http://confOf_en#c-4855691-2375415> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-9890668-1988204> .
+<http://confOf_en#c-4888780-4443103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-4888780-4443103> <http://www.w3.org/2000/01/rdf-schema#label> "topic"@en .
+<http://confOf_en#c-4888780-4443103> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-5948332-3267518> .
+<http://confOf_en#c-4888780-4443103> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-4918829-3001709> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-4918829-3001709> <http://www.w3.org/2000/01/rdf-schema#label> "regular participant of conference"@en .
+<http://confOf_en#c-4918829-3001709> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-8729640-0951717> .
+<http://confOf_en#c-4940510-7116222> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-4940510-7116222> <http://www.w3.org/2000/01/rdf-schema#label> "member of program committee"@en .
+<http://confOf_en#c-4940510-7116222> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-5307218-6000981> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-5307218-6000981> <http://www.w3.org/2000/01/rdf-schema#label> "conference"@en .
+<http://confOf_en#c-5307218-6000981> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-3868234-1876752> .
+<http://confOf_en#c-5307218-6000981> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-9890668-1988204> .
+<http://confOf_en#c-5404723-6232359> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-5404723-6232359> <http://www.w3.org/2000/01/rdf-schema#label> "administrative event"@en .
+<http://confOf_en#c-5404723-6232359> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-4184138-3261067> .
+<http://confOf_en#c-5404723-6232359> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-9402184-3168847> .
+<http://confOf_en#c-5701075-1274855> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-5701075-1274855> <http://www.w3.org/2000/01/rdf-schema#label> "student"@en .
+<http://confOf_en#c-5701075-1274855> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-5851222-7607068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-5851222-7607068> <http://www.w3.org/2000/01/rdf-schema#label> "reception"@en .
+<http://confOf_en#c-5851222-7607068> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-9402184-3168847> .
+<http://confOf_en#c-5851222-7607068> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6603668-7634311> .
+<http://confOf_en#c-5851222-7607068> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-9180297-9494437> .
+<http://confOf_en#c-5904090-2937490> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-5904090-2937490> <http://www.w3.org/2000/01/rdf-schema#label> "administrator"@en .
+<http://confOf_en#c-5904090-2937490> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-5948332-3267518> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-5948332-3267518> <http://www.w3.org/2000/01/rdf-schema#label> "city"@en .
+<http://confOf_en#c-5948332-3267518> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-6062393-2520649> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-6062393-2520649> <http://www.w3.org/2000/01/rdf-schema#label> "event of reviewing"@en .
+<http://confOf_en#c-6062393-2520649> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-5404723-6232359> .
+<http://confOf_en#c-6062393-2520649> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6109887-5999898> .
+<http://confOf_en#c-6062393-2520649> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6604321-4337835> .
+<http://confOf_en#c-6109887-5999898> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-6109887-5999898> <http://www.w3.org/2000/01/rdf-schema#label> "event of registration of participants event"@en .
+<http://confOf_en#c-6109887-5999898> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-5404723-6232359> .
+<http://confOf_en#c-6109887-5999898> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-6604321-4337835> .
+<http://confOf_en#c-6603668-7634311> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-6603668-7634311> <http://www.w3.org/2000/01/rdf-schema#label> "trip"@en .
+<http://confOf_en#c-6603668-7634311> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-9402184-3168847> .
+<http://confOf_en#c-6603668-7634311> <http://www.w3.org/2002/07/owl#disjointWith> <http://confOf_en#c-9180297-9494437> .
+<http://confOf_en#c-6603806-5996118> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-6603806-5996118> <http://www.w3.org/2000/01/rdf-schema#label> "science worker"@en .
+<http://confOf_en#c-6603806-5996118> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-6604321-4337835> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-6604321-4337835> <http://www.w3.org/2000/01/rdf-schema#label> "event of sending camera-ready version"@en .
+<http://confOf_en#c-6604321-4337835> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-5404723-6232359> .
+<http://confOf_en#c-6834280-4912416> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-6834280-4912416> <http://www.w3.org/2000/01/rdf-schema#label> "paper"@en .
+<http://confOf_en#c-6834280-4912416> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-1804480-3618243> .
+<http://confOf_en#c-6922761-6569068> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-6922761-6569068> <http://www.w3.org/2000/01/rdf-schema#label> "person"@en .
+<http://confOf_en#c-6922761-6569068> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://confOf_en#c-7155976-8510258> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-7155976-8510258> <http://www.w3.org/2000/01/rdf-schema#label> "person involved with conference"@en .
+<http://confOf_en#c-7155976-8510258> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-8729640-0951717> .
+<http://confOf_en#c-8729640-0951717> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-8729640-0951717> <http://www.w3.org/2000/01/rdf-schema#label> "participant"@en .
+<http://confOf_en#c-8729640-0951717> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-8897779-7605019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-8897779-7605019> <http://www.w3.org/2000/01/rdf-schema#label> "chair of program committee"@en .
+<http://confOf_en#c-8897779-7605019> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-9051277-7292388> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-9051277-7292388> <http://www.w3.org/2000/01/rdf-schema#label> "university"@en .
+<http://confOf_en#c-9051277-7292388> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-2402287-2880350> .
+<http://confOf_en#c-9180297-9494437> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-9180297-9494437> <http://www.w3.org/2000/01/rdf-schema#label> "banquet"@en .
+<http://confOf_en#c-9180297-9494437> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-9402184-3168847> .
+<http://confOf_en#c-9180975-7931356> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-9180975-7931356> <http://www.w3.org/2000/01/rdf-schema#label> "assistant"@en .
+<http://confOf_en#c-9180975-7931356> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-6922761-6569068> .
+<http://confOf_en#c-9402184-3168847> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-9402184-3168847> <http://www.w3.org/2000/01/rdf-schema#label> "social event"@en .
+<http://confOf_en#c-9402184-3168847> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-4184138-3261067> .
+<http://confOf_en#c-9890668-1988204> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://confOf_en#c-9890668-1988204> <http://www.w3.org/2000/01/rdf-schema#label> "tutorial"@en .
+<http://confOf_en#c-9890668-1988204> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://confOf_en#c-3868234-1876752> .

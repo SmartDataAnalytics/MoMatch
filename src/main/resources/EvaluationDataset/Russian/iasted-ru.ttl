@@ -1,0 +1,1682 @@
+@prefix : <http://iasted_ru#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iasted: <http://iasted#> .
+
+<http://iasted_ru> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+:op-0001546-2684001 a owl:ObjectProperty ;
+	rdfs:label "используется для"@ru ;
+	rdfs:domain :c-5937523-4595389 ;
+	rdfs:range _:node1e05dhu3px1 .
+
+_:node1e05dhu3px1 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px2 .
+
+_:node1e05dhu3px2 rdf:first :c-1199603-8518183 ;
+	rdf:rest _:node1e05dhu3px3 .
+
+_:node1e05dhu3px3 rdf:first :c-2031854-0820396 ;
+	rdf:rest rdf:nil .
+
+:op-0052739-7741822 a owl:ObjectProperty ;
+	rdfs:label "используется"@ru ;
+	rdfs:range :c-1199603-8518183 ;
+	rdfs:domain :c-5937523-4595389 .
+
+:op-0104086-3568017 a owl:ObjectProperty ;
+	rdfs:label "посылается до"@ru ;
+	rdfs:range :c-4467786-1803044 ;
+	rdfs:domain :c-5937523-4595389 .
+
+:op-0318233-1616354 a owl:ObjectProperty ;
+	rdfs:label "оплачивает"@ru ;
+	rdfs:range :c-2031854-0820396 ;
+	rdfs:domain :c-8641604-8311920 .
+
+:op-0346162-5997076 a owl:ObjectProperty ;
+	rdfs:label "происходить после"@ru ;
+	rdfs:domain :c-1199603-8518183 ;
+	rdfs:range :c-4467786-1803044 .
+
+:op-0367021-7814462 a owl:ObjectProperty ;
+	rdfs:label "связан с"@ru ;
+	rdfs:range _:node1e05dhu3px4 .
+
+_:node1e05dhu3px4 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px5 .
+
+_:node1e05dhu3px5 rdf:first :c-5532781-0044027 ;
+	rdf:rest _:node1e05dhu3px6 .
+
+_:node1e05dhu3px6 rdf:first :c-5937523-4595389 ;
+	rdf:rest rdf:nil .
+
+:op-0367021-7814462 rdfs:domain _:node1e05dhu3px7 .
+
+_:node1e05dhu3px7 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px8 .
+
+_:node1e05dhu3px8 rdf:first :c-1199603-8518183 ;
+	rdf:rest _:node1e05dhu3px9 .
+
+_:node1e05dhu3px9 rdf:first :c-8641604-8311920 ;
+	rdf:rest rdf:nil .
+
+:op-0494288-0658947 a owl:ObjectProperty ;
+	rdfs:label "где оплачивается"@ru ;
+	rdfs:domain :c-2031854-0820396 ;
+	rdfs:range :c-4842341-7406812 .
+
+:op-0611892-2135912 a owl:ObjectProperty ;
+	rdfs:label "посылает"@ru ;
+	rdfs:range :c-5937523-4595389 ;
+	rdfs:domain :c-8641604-8311920 ;
+	owl:inverseOf :op-6956204-0592383 .
+
+:op-0612345-8869014 a owl:ObjectProperty ;
+	rdfs:label "даёт"@ru ;
+	rdfs:domain :c-8641604-8311920 ;
+	rdfs:range _:node1e05dhu3px10 .
+
+_:node1e05dhu3px10 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px11 .
+
+_:node1e05dhu3px11 rdf:first :c-1199603-8518183 ;
+	rdf:rest _:node1e05dhu3px12 .
+
+_:node1e05dhu3px12 rdf:first :c-5937523-4595389 ;
+	rdf:rest rdf:nil .
+
+:op-0765447-4488856 a owl:ObjectProperty ;
+	rdfs:label "чем оплачивается"@ru ;
+	rdfs:domain :c-2031854-0820396 ;
+	rdfs:range :c-5937523-4595389 .
+
+:op-0875342-6055612 a owl:ObjectProperty ;
+	rdfs:label "кем оплачивается"@ru ;
+	rdfs:domain :c-2031854-0820396 ;
+	rdfs:range :c-8641604-8311920 ;
+	owl:inverseOf :op-0318233-1616354 .
+
+:op-1801101-5789610 a owl:ObjectProperty ;
+	rdfs:label "происходить до"@ru ;
+	rdfs:domain :c-1199603-8518183 ;
+	rdfs:range :c-4467786-1803044 .
+
+:op-2058853-2307732 a owl:ObjectProperty ;
+	rdfs:label "пишет"@ru ;
+	rdfs:range :c-5937523-4595389 ;
+	rdfs:domain :c-8641604-8311920 ;
+	owl:inverseOf :op-5216246-8424422 .
+
+:op-2281052-5128123 a owl:ObjectProperty ;
+	rdfs:label "пристутствует в"@ru ;
+	rdfs:domain :c-8641604-8311920 ;
+	rdfs:range _:node1e05dhu3px13 .
+
+_:node1e05dhu3px13 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px14 .
+
+_:node1e05dhu3px14 rdf:first :c-4467786-1803044 ;
+	rdf:rest _:node1e05dhu3px15 .
+
+_:node1e05dhu3px15 rdf:first :c-5532781-0044027 ;
+	rdf:rest rdf:nil .
+
+:op-3490261-8569131 a owl:ObjectProperty ;
+	rdfs:label "оборудован"@ru ;
+	rdfs:domain :c-5532781-0044027 ;
+	rdfs:range :c-5937523-4595389 .
+
+:op-3754573-0430082 a owl:ObjectProperty ;
+	rdfs:label "присутствует во время"@ru ;
+	rdfs:range :c-4467786-1803044 ;
+	rdfs:domain :c-8641604-8311920 .
+
+:op-3777599-9887878 a owl:ObjectProperty ;
+	rdfs:label "посылается после"@ru ;
+	rdfs:range :c-4467786-1803044 ;
+	rdfs:domain :c-5937523-4595389 .
+
+:op-3874114-0675517 a owl:ObjectProperty ;
+	rdfs:label "кем подписывается"@ru ;
+	rdfs:domain :c-5937523-4595389 ;
+	rdfs:range :c-8641604-8311920 ;
+	owl:inverseOf :op-6885084-5362486 .
+
+:op-4185327-6667395 a owl:ObjectProperty ;
+	rdfs:label "требует"@ru ;
+	rdfs:range :c-5937523-4595389 ;
+	rdfs:domain :c-8641604-8311920 .
+
+:op-4720451-4901833 a owl:ObjectProperty ;
+	rdfs:label "докладывает в"@ru ;
+	rdfs:domain :c-8641604-8311920 ;
+	rdfs:range _:node1e05dhu3px16 .
+
+_:node1e05dhu3px16 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px17 .
+
+_:node1e05dhu3px17 rdf:first :c-4467786-1803044 ;
+	rdf:rest _:node1e05dhu3px18 .
+
+_:node1e05dhu3px18 rdf:first :c-5532781-0044027 ;
+	rdf:rest rdf:nil .
+
+:op-4897820-2608941 a owl:ObjectProperty ;
+	rdfs:label "за что оплачивается"@ru ;
+	rdfs:domain :c-2031854-0820396 ;
+	rdfs:range _:node1e05dhu3px19 .
+
+_:node1e05dhu3px19 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px20 .
+
+_:node1e05dhu3px20 rdf:first :c-1199603-8518183 ;
+	rdf:rest _:node1e05dhu3px21 .
+
+_:node1e05dhu3px21 rdf:first :c-5937523-4595389 ;
+	rdf:rest rdf:nil .
+
+:op-5216246-8424422 a owl:ObjectProperty ;
+	rdfs:label "кем пишется"@ru ;
+	rdfs:domain :c-5937523-4595389 ;
+	rdfs:range :c-8641604-8311920 .
+
+:op-5407663-5664061 a owl:ObjectProperty ;
+	rdfs:label "готовит"@ru ;
+	rdfs:range :c-5937523-4595389 ;
+	rdfs:domain :c-8641604-8311920 ;
+	owl:inverseOf :op-7264426-5627470 .
+
+:op-6050608-7879638 a owl:ObjectProperty ;
+	rdfs:label "требуется для"@ru ;
+	rdfs:domain :c-5937523-4595389 ;
+	rdfs:range :c-8641604-8311920 ;
+	owl:inverseOf :op-4185327-6667395 .
+
+:op-6492601-8195531 a owl:ObjectProperty ;
+	rdfs:label "находится в"@ru ;
+	rdfs:domain _:node1e05dhu3px22 .
+
+_:node1e05dhu3px22 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px23 .
+
+_:node1e05dhu3px23 rdf:first :c-4337071-2295615 ;
+	rdf:rest _:node1e05dhu3px24 .
+
+_:node1e05dhu3px24 rdf:first :c-4842341-7406812 ;
+	rdf:rest _:node1e05dhu3px25 .
+
+_:node1e05dhu3px25 rdf:first :c-5532781-0044027 ;
+	rdf:rest rdf:nil .
+
+:op-6492601-8195531 rdfs:range _:node1e05dhu3px26 .
+
+_:node1e05dhu3px26 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px27 .
+
+_:node1e05dhu3px27 rdf:first :c-4337071-2295615 ;
+	rdf:rest _:node1e05dhu3px28 .
+
+_:node1e05dhu3px28 rdf:first :c-4842341-7406812 ;
+	rdf:rest _:node1e05dhu3px29 .
+
+_:node1e05dhu3px29 rdf:first :c-5532781-0044027 ;
+	rdf:rest _:node1e05dhu3px30 .
+
+_:node1e05dhu3px30 rdf:first :c-7659911-1498507 ;
+	rdf:rest rdf:nil .
+
+:op-6779574-3600111 a owl:ObjectProperty ;
+	rdfs:label "кем посещается"@ru ;
+	rdfs:range :c-8641604-8311920 ;
+	rdfs:domain _:node1e05dhu3px31 .
+
+_:node1e05dhu3px31 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px32 .
+
+_:node1e05dhu3px32 rdf:first :c-4337071-2295615 ;
+	rdf:rest _:node1e05dhu3px33 .
+
+_:node1e05dhu3px33 rdf:first :c-4842341-7406812 ;
+	rdf:rest _:node1e05dhu3px34 .
+
+_:node1e05dhu3px34 rdf:first :c-7659911-1498507 ;
+	rdf:rest rdf:nil .
+
+:op-6885084-5362486 a owl:ObjectProperty ;
+	rdfs:label "подписывает"@ru ;
+	rdfs:range :c-5937523-4595389 ;
+	rdfs:domain :c-8641604-8311920 .
+
+:op-6956204-0592383 a owl:ObjectProperty ;
+	rdfs:label "кем посылается"@ru ;
+	rdfs:domain :c-5937523-4595389 ;
+	rdfs:range :c-8641604-8311920 .
+
+:op-7264426-5627470 a owl:ObjectProperty ;
+	rdfs:label "кем готовится"@ru ;
+	rdfs:domain :c-5937523-4595389 ;
+	rdfs:range :c-8641604-8311920 .
+
+:op-7504570-9021379 a owl:ObjectProperty ;
+	rdfs:label "занимает"@ru ;
+	rdfs:domain :c-8641604-8311920 ;
+	rdfs:range _:node1e05dhu3px35 .
+
+_:node1e05dhu3px35 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px36 .
+
+_:node1e05dhu3px36 rdf:first :c-4337071-2295615 ;
+	rdf:rest _:node1e05dhu3px37 .
+
+_:node1e05dhu3px37 rdf:first :c-4842341-7406812 ;
+	rdf:rest _:node1e05dhu3px38 .
+
+_:node1e05dhu3px38 rdf:first :c-7659911-1498507 ;
+	rdf:rest rdf:nil .
+
+:op-7609339-3979443 a owl:ObjectProperty ;
+	rdfs:label "происходит в"@ru ;
+	rdfs:domain :c-1199603-8518183 ;
+	rdfs:range _:node1e05dhu3px39 .
+
+_:node1e05dhu3px39 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px40 .
+
+_:node1e05dhu3px40 rdf:first :c-4467786-1803044 ;
+	rdf:rest _:node1e05dhu3px41 .
+
+_:node1e05dhu3px41 rdf:first :c-5532781-0044027 ;
+	rdf:rest rdf:nil .
+
+:op-7904124-7792589 a owl:ObjectProperty ;
+	rdfs:label "кем используется"@ru ;
+	rdfs:domain :c-5937523-4595389 ;
+	rdfs:range :c-8641604-8311920 .
+
+:op-7924318-5580404 a owl:ObjectProperty ;
+	rdfs:label "получает"@ru ;
+	rdfs:range :c-5937523-4595389 ;
+	rdfs:domain :c-8641604-8311920 .
+
+:op-8309361-6033692 a owl:ObjectProperty ;
+	rdfs:label "разработан для"@ru ;
+	rdfs:domain _:node1e05dhu3px42 .
+
+_:node1e05dhu3px42 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px43 .
+
+_:node1e05dhu3px43 rdf:first :c-1199603-8518183 ;
+	rdf:rest _:node1e05dhu3px44 .
+
+_:node1e05dhu3px44 rdf:first :c-2031854-0820396 ;
+	rdf:rest _:node1e05dhu3px45 .
+
+_:node1e05dhu3px45 rdf:first :c-4467786-1803044 ;
+	rdf:rest rdf:nil .
+
+:op-8309361-6033692 rdfs:range _:node1e05dhu3px46 .
+
+_:node1e05dhu3px46 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px47 .
+
+_:node1e05dhu3px47 rdf:first :c-1199603-8518183 ;
+	rdf:rest _:node1e05dhu3px48 .
+
+_:node1e05dhu3px48 rdf:first :c-8641604-8311920 ;
+	rdf:rest rdf:nil .
+
+:op-8468603-0992367 a owl:ObjectProperty ;
+	rdfs:label "кому_представлен"@ru ;
+	rdfs:domain :c-5937523-4595389 ;
+	rdfs:range :c-8641604-8311920 .
+
+:op-8595958-0247802 a owl:ObjectProperty ;
+	rdfs:label "кем_представлен"@ru ;
+	rdfs:range :c-8641604-8311920 ;
+	owl:inverseOf :op-0612345-8869014 ;
+	rdfs:domain _:node1e05dhu3px49 .
+
+_:node1e05dhu3px49 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px50 .
+
+_:node1e05dhu3px50 rdf:first :c-1199603-8518183 ;
+	rdf:rest _:node1e05dhu3px51 .
+
+_:node1e05dhu3px51 rdf:first :c-5937523-4595389 ;
+	rdf:rest rdf:nil .
+
+:op-8799251-7637896 a owl:ObjectProperty ;
+	rdfs:label "чем занимается"@ru ;
+	rdfs:range :c-8641604-8311920 ;
+	owl:inverseOf :op-7504570-9021379 ;
+	rdfs:domain _:node1e05dhu3px52 .
+
+_:node1e05dhu3px52 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px53 .
+
+_:node1e05dhu3px53 rdf:first :c-4337071-2295615 ;
+	rdf:rest _:node1e05dhu3px54 .
+
+_:node1e05dhu3px54 rdf:first :c-4842341-7406812 ;
+	rdf:rest _:node1e05dhu3px55 .
+
+_:node1e05dhu3px55 rdf:first :c-7659911-1498507 ;
+	rdf:rest rdf:nil .
+
+:op-9049170-1637516 a owl:ObjectProperty ;
+	rdfs:label "производится из"@ru ;
+	rdfs:range :c-5937523-4595389 ;
+	rdfs:domain :c-5937523-4595389 .
+
+:ent-2838063-1392448 a owl:DatatypeProperty ;
+	rdfs:label "до"@ru ;
+	rdfs:domain :c-3886567-1562319 ;
+	rdfs:range xsd:date .
+
+:ent-5942060-3976606 a owl:DatatypeProperty ;
+	rdfs:label "запланировано на"@ru ;
+	rdfs:domain :c-1199603-8518183 ;
+	rdfs:range xsd:dateTime .
+
+:ent-8218804-9672148 a owl:DatatypeProperty ;
+	rdfs:label "сумма"@ru ;
+	rdfs:domain :c-2031854-0820396 ;
+	rdfs:range xsd:int .
+
+:c-0016548-5959606 a owl:Class ;
+	rdfs:label "Взнос"@ru ;
+	rdfs:subClassOf :c-2031854-0820396 , _:node1e05dhu3px56 .
+
+_:node1e05dhu3px56 a owl:Restriction ;
+	owl:onProperty :op-0765447-4488856 ;
+	owl:someValuesFrom _:node1e05dhu3px57 .
+
+_:node1e05dhu3px57 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px58 .
+
+_:node1e05dhu3px58 rdf:first :c-0987765-4696958 ;
+	rdf:rest _:node1e05dhu3px59 .
+
+_:node1e05dhu3px59 rdf:first :c-8879485-6262945 ;
+	rdf:rest rdf:nil .
+
+:c-0241664-2110436 a owl:Class ;
+	rdfs:label "Ресторан конференции"@ru ;
+	rdfs:subClassOf :c-4842341-7406812 , _:node1e05dhu3px60 .
+
+_:node1e05dhu3px60 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-8589224-5539482 .
+
+:c-0241664-2110436 rdfs:subClassOf _:node1e05dhu3px61 .
+
+_:node1e05dhu3px61 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-5048344-0590784 .
+
+:c-0241664-2110436 rdfs:subClassOf _:node1e05dhu3px62 .
+
+_:node1e05dhu3px62 a owl:Restriction ;
+	owl:onProperty :op-8799251-7637896 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-0386419-7378068 a owl:Class ;
+	rdfs:label "Отправление"@ru ;
+	rdfs:subClassOf :c-2015838-2426341 .
+
+:c-0644385-6040722 a owl:Class ;
+	rdfs:label "Представление докладчика"@ru ;
+	rdfs:subClassOf :c-4170147-0055160 .
+
+:c-0671851-5268508 a owl:Class ;
+	rdfs:label "Податель в гостинице"@ru ;
+	rdfs:subClassOf :c-1149240-3869493 , _:node1e05dhu3px63 .
+
+_:node1e05dhu3px63 a owl:Class ;
+	owl:intersectionOf _:node1e05dhu3px65 .
+
+_:node1e05dhu3px65 rdf:first _:node1e05dhu3px64 .
+
+_:node1e05dhu3px64 a owl:Restriction ;
+	owl:onProperty :op-0318233-1616354 ;
+	owl:someValuesFrom :c-1915487-4767262 .
+
+_:node1e05dhu3px65 rdf:rest _:node1e05dhu3px67 .
+
+_:node1e05dhu3px67 rdf:first _:node1e05dhu3px66 .
+
+_:node1e05dhu3px66 a owl:Restriction ;
+	owl:onProperty :op-7504570-9021379 ;
+	owl:someValuesFrom :c-7723583-7427165 .
+
+_:node1e05dhu3px67 rdf:rest rdf:nil .
+
+:c-0679422-4582832 a owl:Class ;
+	rdfs:label "Доклад"@ru ;
+	rdfs:subClassOf :c-8226844-5467515 , _:node1e05dhu3px68 .
+
+_:node1e05dhu3px68 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-9915121-1038926 .
+
+:c-0798796-2058847 a owl:Class ;
+	rdfs:label "Потолочный проектор"@ru ;
+	rdfs:subClassOf :c-5886805-5721140 .
+
+:c-0846456-7209404 a owl:Class ;
+	rdfs:label "Пригородный автобус"@ru ;
+	rdfs:subClassOf :c-9327528-5757490 .
+
+:c-0987765-4696958 a owl:Class ;
+	rdfs:label "Документ об оплате"@ru ;
+	rdfs:subClassOf :c-7738637-1995654 , _:node1e05dhu3px69 .
+
+_:node1e05dhu3px69 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom _:node1e05dhu3px70 .
+
+_:node1e05dhu3px70 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px71 .
+
+_:node1e05dhu3px71 rdf:first :c-0016548-5959606 ;
+	rdf:rest _:node1e05dhu3px72 .
+
+_:node1e05dhu3px72 rdf:first :c-4959621-1510051 ;
+	rdf:rest rdf:nil .
+
+:c-1090428-4905921 a owl:Class ;
+	rdfs:label "День экскурсии"@ru ;
+	rdfs:subClassOf :c-4467786-1803044 , _:node1e05dhu3px73 .
+
+_:node1e05dhu3px73 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-1149240-3869493 a owl:Class ;
+	rdfs:label "Делегат"@ru ;
+	owl:equivalentClass _:node1e05dhu3px74 .
+
+_:node1e05dhu3px74 a owl:Class ;
+	owl:intersectionOf _:node1e05dhu3px76 .
+
+_:node1e05dhu3px76 rdf:first _:node1e05dhu3px75 .
+
+_:node1e05dhu3px75 a owl:Restriction ;
+	owl:onProperty :op-0052739-7741822 ;
+	owl:someValuesFrom :c-3117152-8066409 .
+
+_:node1e05dhu3px76 rdf:rest _:node1e05dhu3px78 .
+
+_:node1e05dhu3px78 rdf:first _:node1e05dhu3px77 .
+
+_:node1e05dhu3px77 a owl:Restriction ;
+	owl:onProperty :op-2281052-5128123 ;
+	owl:someValuesFrom :c-3793226-8791584 .
+
+_:node1e05dhu3px78 rdf:rest _:node1e05dhu3px80 .
+
+_:node1e05dhu3px80 rdf:first _:node1e05dhu3px79 .
+
+_:node1e05dhu3px79 a owl:Restriction ;
+	owl:onProperty :op-2281052-5128123 ;
+	owl:someValuesFrom :c-9635346-4826301 .
+
+_:node1e05dhu3px80 rdf:rest rdf:nil .
+
+:c-1149240-3869493 rdfs:subClassOf :c-8641604-8311920 , _:node1e05dhu3px81 .
+
+_:node1e05dhu3px81 a owl:Restriction ;
+	owl:onProperty :op-4185327-6667395 ;
+	owl:someValuesFrom :c-5577847-9662417 .
+
+:c-1149240-3869493 rdfs:subClassOf _:node1e05dhu3px82 .
+
+_:node1e05dhu3px82 a owl:Restriction ;
+	owl:onProperty :op-0611892-2135912 ;
+	owl:someValuesFrom :c-2223372-1052297 .
+
+:c-1149240-3869493 rdfs:subClassOf _:node1e05dhu3px83 .
+
+_:node1e05dhu3px83 a owl:Restriction ;
+	owl:onProperty :op-0318233-1616354 ;
+	owl:someValuesFrom :c-6950982-2947501 .
+
+:c-1149240-3869493 rdfs:subClassOf _:node1e05dhu3px84 .
+
+_:node1e05dhu3px84 a owl:Restriction ;
+	owl:onProperty :op-7504570-9021379 ;
+	owl:someValuesFrom :c-7058869-9094108 .
+
+:c-1149240-3869493 rdfs:subClassOf _:node1e05dhu3px85 .
+
+_:node1e05dhu3px85 a owl:Restriction ;
+	owl:onProperty :op-7504570-9021379 ;
+	owl:someValuesFrom :c-1390474-7299764 .
+
+:c-1149240-3869493 rdfs:subClassOf _:node1e05dhu3px86 .
+
+_:node1e05dhu3px86 a owl:Restriction ;
+	owl:onProperty :op-7924318-5580404 ;
+	owl:someValuesFrom :c-9304321-9213053 .
+
+:c-1149240-3869493 rdfs:subClassOf _:node1e05dhu3px87 .
+
+_:node1e05dhu3px87 a owl:Restriction ;
+	owl:onProperty :op-7504570-9021379 ;
+	owl:someValuesFrom :c-2064642-9421657 .
+
+:c-1167310-0759193 a owl:Class ;
+	rdfs:label "Исследование"@ru ;
+	rdfs:subClassOf :c-1181746-7849100 .
+
+:c-1181746-7849100 a owl:Class ;
+	rdfs:label "Мероприятие до конференции"@ru ;
+	rdfs:subClassOf :c-1199603-8518183 , _:node1e05dhu3px88 .
+
+_:node1e05dhu3px88 a owl:Restriction ;
+	owl:onProperty :op-1801101-5789610 ;
+	owl:someValuesFrom :c-9635346-4826301 .
+
+:c-1199603-8518183 a owl:Class ;
+	rdfs:label "Мероприятие"@ru .
+
+:c-1245660-0649251 a owl:Class ;
+	rdfs:label "Сертификат участия"@ru ;
+	rdfs:subClassOf :c-7738637-1995654 , _:node1e05dhu3px89 .
+
+_:node1e05dhu3px89 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-1869527-9896628 .
+
+:c-1245660-0649251 rdfs:subClassOf _:node1e05dhu3px90 .
+
+_:node1e05dhu3px90 a owl:Restriction ;
+	owl:onProperty :op-3874114-0675517 ;
+	owl:someValuesFrom :c-9915121-1038926 .
+
+:c-1380782-1645610 a owl:Class ;
+	rdfs:label "Членский регистрационный взнос"@ru ;
+	rdfs:subClassOf :c-6950982-2947501 , _:node1e05dhu3px91 .
+
+_:node1e05dhu3px91 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-8673945-4787269 .
+
+:c-1390474-7299764 a owl:Class ;
+	rdfs:label "Дом докладчика"@ru ;
+	rdfs:subClassOf :c-4842341-7406812 , _:node1e05dhu3px92 .
+
+_:node1e05dhu3px92 a owl:Restriction ;
+	owl:onProperty :op-8799251-7637896 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-1390474-7299764 rdfs:subClassOf _:node1e05dhu3px93 .
+
+_:node1e05dhu3px93 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-2064642-9421657 .
+
+:c-1390474-7299764 rdfs:subClassOf _:node1e05dhu3px94 .
+
+_:node1e05dhu3px94 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-7058869-9094108 .
+
+:c-1398366-1570123 a owl:Class ;
+	rdfs:label "Дневной тур"@ru ;
+	rdfs:subClassOf :c-2015838-2426341 , _:node1e05dhu3px95 .
+
+_:node1e05dhu3px95 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-1398366-1570123 rdfs:subClassOf _:node1e05dhu3px96 .
+
+_:node1e05dhu3px96 a owl:Restriction ;
+	owl:onProperty :op-7609339-3979443 ;
+	owl:someValuesFrom :c-1090428-4905921 .
+
+:c-1398366-1570123 rdfs:subClassOf _:node1e05dhu3px97 .
+
+_:node1e05dhu3px97 a owl:Restriction ;
+	owl:onProperty :op-7609339-3979443 ;
+	owl:someValuesFrom :c-3248407-5260640 .
+
+:c-1555920-3879452 a owl:Class ;
+	rdfs:label "Последний срок подачи"@ru ;
+	rdfs:subClassOf :c-3886567-1562319 .
+
+:c-1772097-3816170 a owl:Class ;
+	rdfs:label "Докладчик обучающего курса"@ru ;
+	owl:equivalentClass _:node1e05dhu3px98 .
+
+_:node1e05dhu3px98 a owl:Restriction ;
+	owl:onProperty :op-0612345-8869014 ;
+	owl:someValuesFrom :c-5183280-6234268 .
+
+:c-1772097-3816170 rdfs:subClassOf :c-3334430-6873903 , _:node1e05dhu3px99 .
+
+_:node1e05dhu3px99 a owl:Restriction ;
+	owl:onProperty :op-4720451-4901833 ;
+	owl:someValuesFrom :c-5989318-7045666 .
+
+:c-1869527-9896628 a owl:Class ;
+	rdfs:label "Комната секции"@ru ;
+	rdfs:subClassOf :c-5532781-0044027 , _:node1e05dhu3px100 .
+
+_:node1e05dhu3px100 a owl:Restriction ;
+	owl:onProperty :op-3490261-8569131 ;
+	owl:someValuesFrom :c-5886805-5721140 .
+
+:c-1869527-9896628 rdfs:subClassOf _:node1e05dhu3px101 .
+
+_:node1e05dhu3px101 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-3793226-8791584 .
+
+:c-1915487-4767262 a owl:Class ;
+	rdfs:label "Гостиничный взнос"@ru ;
+	rdfs:subClassOf :c-0016548-5959606 , _:node1e05dhu3px102 .
+
+_:node1e05dhu3px102 a owl:Restriction ;
+	owl:onProperty :op-0875342-6055612 ;
+	owl:someValuesFrom :c-0671851-5268508 .
+
+:c-1956317-0483471 a owl:Class ;
+	rdfs:label "Первоначальный манускрипт"@ru ;
+	rdfs:subClassOf :c-7133788-1786892 , _:node1e05dhu3px103 .
+
+_:node1e05dhu3px103 a owl:Restriction ;
+	owl:onProperty :op-0052739-7741822 ;
+	owl:someValuesFrom :c-9606542-8114973 .
+
+:c-2015838-2426341 a owl:Class ;
+	rdfs:label "Мероприятие после конференции"@ru ;
+	rdfs:subClassOf :c-1199603-8518183 , _:node1e05dhu3px104 .
+
+_:node1e05dhu3px104 a owl:Restriction ;
+	owl:onProperty :op-0346162-5997076 ;
+	owl:someValuesFrom :c-9635346-4826301 .
+
+:c-2031854-0820396 a owl:Class ;
+	rdfs:label "Деньги"@ru .
+
+:c-2064642-9421657 a owl:Class ;
+	rdfs:label "Страна докладчика"@ru ;
+	rdfs:subClassOf :c-7659911-1498507 , _:node1e05dhu3px105 .
+
+_:node1e05dhu3px105 a owl:Restriction ;
+	owl:onProperty :op-8799251-7637896 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-2093189-9254563 a owl:Class ;
+	rdfs:label "Гостиничный номер"@ru ;
+	rdfs:subClassOf :c-5532781-0044027 , _:node1e05dhu3px106 .
+
+_:node1e05dhu3px106 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-7723583-7427165 .
+
+:c-2093189-9254563 rdfs:subClassOf _:node1e05dhu3px107 .
+
+_:node1e05dhu3px107 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-0671851-5268508 .
+
+:c-2217203-4831622 a owl:Class ;
+	rdfs:label "Моделирование"@ru ;
+	rdfs:subClassOf :c-1167310-0759193 .
+
+:c-2223372-1052297 a owl:Class ;
+	rdfs:label "Регистрационный бланк"@ru ;
+	rdfs:subClassOf :c-6296205-9606628 , _:node1e05dhu3px108 .
+
+_:node1e05dhu3px108 a owl:Restriction ;
+	owl:onProperty :op-6956204-0592383 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-2223372-1052297 rdfs:subClassOf _:node1e05dhu3px109 .
+
+_:node1e05dhu3px109 a owl:Restriction ;
+	owl:onProperty :op-0104086-3568017 ;
+	owl:someValuesFrom :c-5948843-3110796 .
+
+:c-2273688-9059873 a owl:Class ;
+	rdfs:label "Проигрыватель видео кассет"@ru ;
+	rdfs:subClassOf :c-5886805-5721140 .
+
+:c-2324870-4392067 a owl:Class ;
+	rdfs:label "Один день конференции"@ru ;
+	rdfs:subClassOf :c-9635346-4826301 .
+
+:c-2645088-5405588 a owl:Class ;
+	rdfs:label "Последний срок уведомления о принятии"@ru ;
+	rdfs:subClassOf :c-3886567-1562319 .
+
+:c-2860400-8942733 a owl:Class ;
+	rdfs:label "Докладчик пленарного доклада"@ru ;
+	owl:equivalentClass _:node1e05dhu3px110 .
+
+_:node1e05dhu3px110 a owl:Restriction ;
+	owl:onProperty :op-0612345-8869014 ;
+	owl:someValuesFrom :c-4979229-5594729 .
+
+:c-2860400-8942733 rdfs:subClassOf :c-3334430-6873903 , _:node1e05dhu3px111 .
+
+_:node1e05dhu3px111 a owl:Restriction ;
+	owl:onProperty :op-4720451-4901833 ;
+	owl:someValuesFrom :c-5989318-7045666 .
+
+:c-3010709-0496279 a owl:Class ;
+	rdfs:label "Список рассылки"@ru ;
+	rdfs:subClassOf :c-7738637-1995654 , _:node1e05dhu3px112 .
+
+_:node1e05dhu3px112 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-3047846-8744427 a owl:Class ;
+	rdfs:label "Не авторский регистрационный взнос"@ru ;
+	rdfs:subClassOf :c-6950982-2947501 , _:node1e05dhu3px113 .
+
+_:node1e05dhu3px113 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-6710545-1848375 .
+
+:c-3094780-5489025 a owl:Class ;
+	rdfs:label "Налого на добавленную стоимость"@ru ;
+	rdfs:subClassOf :c-4959621-1510051 .
+
+:c-3117152-8066409 a owl:Class ;
+	rdfs:label "Регистрация"@ru ;
+	rdfs:subClassOf :c-8226844-5467515 , _:node1e05dhu3px114 .
+
+_:node1e05dhu3px114 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-3128225-4678588 a owl:Class ;
+	rdfs:label "Спонсор"@ru ;
+	owl:equivalentClass _:node1e05dhu3px115 .
+
+_:node1e05dhu3px115 a owl:Restriction ;
+	owl:onProperty :op-0612345-8869014 ;
+	owl:someValuesFrom :c-9984138-1248778 .
+
+:c-3128225-4678588 rdfs:subClassOf :c-8641604-8311920 , _:node1e05dhu3px116 .
+
+_:node1e05dhu3px116 a owl:Restriction ;
+	owl:onProperty :op-7504570-9021379 ;
+	owl:someValuesFrom :c-6419638-6523554 .
+
+:c-3128225-4678588 rdfs:subClassOf _:node1e05dhu3px117 .
+
+_:node1e05dhu3px117 a owl:Restriction ;
+	owl:onProperty :op-7504570-9021379 ;
+	owl:someValuesFrom :c-8049927-4169113 .
+
+:c-3128225-4678588 rdfs:subClassOf _:node1e05dhu3px118 .
+
+_:node1e05dhu3px118 a owl:Restriction ;
+	owl:onProperty :op-7504570-9021379 ;
+	owl:someValuesFrom :c-7645149-7527287 .
+
+:c-3248407-5260640 a owl:Class ;
+	rdfs:label "Город экскурсии"@ru ;
+	rdfs:subClassOf :c-4337071-2295615 , _:node1e05dhu3px119 .
+
+_:node1e05dhu3px119 a owl:Restriction ;
+	owl:onProperty :op-6779574-3600111 ;
+	owl:someValuesFrom :c-6441210-8894852 .
+
+:c-3284966-8015286 a owl:Class ;
+	rdfs:label "Докладчик"@ru ;
+	owl:equivalentClass _:node1e05dhu3px120 .
+
+_:node1e05dhu3px120 a owl:Restriction ;
+	owl:onProperty :op-0612345-8869014 ;
+	owl:someValuesFrom :c-7915612-5677357 .
+
+:c-3284966-8015286 rdfs:subClassOf :c-3334430-6873903 , _:node1e05dhu3px121 .
+
+_:node1e05dhu3px121 a owl:Restriction ;
+	owl:onProperty :op-4720451-4901833 ;
+	owl:someValuesFrom :c-1869527-9896628 .
+
+:c-3293568-4098963 a owl:Class ;
+	rdfs:label "Презентация PowerPoint"@ru ;
+	rdfs:subClassOf :c-8480446-3268253 .
+
+:c-3334430-6873903 a owl:Class ;
+	rdfs:label "Автор"@ru ;
+	rdfs:subClassOf :c-7997099-4182490 , _:node1e05dhu3px122 .
+
+_:node1e05dhu3px122 a owl:Restriction ;
+	owl:onProperty :op-0612345-8869014 ;
+	owl:someValuesFrom :c-4543414-3650522 .
+
+:c-3334430-6873903 rdfs:subClassOf _:node1e05dhu3px123 .
+
+_:node1e05dhu3px123 a owl:Restriction ;
+	owl:onProperty :op-5407663-5664061 ;
+	owl:someValuesFrom :c-9455977-6625394 .
+
+:c-3354312-2097686 a owl:Class ;
+	rdfs:label "Чаевые"@ru ;
+	rdfs:subClassOf :c-2031854-0820396 , _:node1e05dhu3px124 .
+
+_:node1e05dhu3px124 a owl:Restriction ;
+	owl:onProperty :op-0494288-0658947 ;
+	owl:someValuesFrom :c-0241664-2110436 .
+
+:c-3564879-6832144 a owl:Class ;
+	rdfs:label "Получение манускрипта"@ru ;
+	rdfs:subClassOf :c-1181746-7849100 .
+
+:c-3583860-0703848 a owl:Class ;
+	rdfs:label "Председатель секции"@ru ;
+	owl:equivalentClass _:node1e05dhu3px125 .
+
+_:node1e05dhu3px125 a owl:Restriction ;
+	owl:onProperty :op-0052739-7741822 ;
+	owl:someValuesFrom :c-0644385-6040722 .
+
+:c-3583860-0703848 rdfs:subClassOf :c-1149240-3869493 , _:node1e05dhu3px126 .
+
+_:node1e05dhu3px126 a owl:Restriction ;
+	owl:onProperty :op-7924318-5580404 ;
+	owl:someValuesFrom :c-4543414-3650522 .
+
+:c-3680658-6831289 a owl:Class ;
+	rdfs:label "Чек"@ru ;
+	rdfs:subClassOf :c-0987765-4696958 .
+
+:c-3685619-2663706 a owl:Class ;
+	rdfs:label "Работник-докладчик"@ru ;
+	rdfs:subClassOf :c-3284966-8015286 .
+
+:c-3725969-1497219 a owl:Class ;
+	rdfs:label "Банковский перевод"@ru ;
+	rdfs:subClassOf :c-0987765-4696958 .
+
+:c-3793226-8791584 a owl:Class ;
+	rdfs:label "Здание конференции"@ru ;
+	rdfs:subClassOf :c-4842341-7406812 , _:node1e05dhu3px127 .
+
+_:node1e05dhu3px127 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-8589224-5539482 .
+
+:c-3793226-8791584 rdfs:subClassOf _:node1e05dhu3px128 .
+
+_:node1e05dhu3px128 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-5048344-0590784 .
+
+:c-3793226-8791584 rdfs:subClassOf _:node1e05dhu3px129 .
+
+_:node1e05dhu3px129 a owl:Restriction ;
+	owl:onProperty :op-8799251-7637896 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-3806313-2914749 a owl:Class ;
+	rdfs:label "Светская программа"@ru ;
+	rdfs:subClassOf :c-8226844-5467515 , _:node1e05dhu3px130 .
+
+_:node1e05dhu3px130 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-3886567-1562319 a owl:Class ;
+	rdfs:label "Последний срок"@ru ;
+	rdfs:subClassOf :c-4467786-1803044 , _:node1e05dhu3px131 .
+
+_:node1e05dhu3px131 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-3999209-0264478 a owl:Class ;
+	rdfs:label "Автомобиль"@ru ;
+	rdfs:subClassOf :c-9327528-5757490 .
+
+:c-4089497-7757884 a owl:Class ;
+	rdfs:label "Автор, книга сборника трудов_включены"@ru ;
+	rdfs:subClassOf :c-3334430-6873903 , _:node1e05dhu3px132 .
+
+_:node1e05dhu3px132 a owl:Restriction ;
+	owl:onProperty :op-7924318-5580404 ;
+	owl:someValuesFrom :c-8088119-2503811 .
+
+:c-4126860-8801237 a owl:Class ;
+	rdfs:label "Студент-докладчик"@ru ;
+	rdfs:subClassOf :c-3284966-8015286 .
+
+:c-4170147-0055160 a owl:Class ;
+	rdfs:label "Вступление"@ru ;
+	rdfs:subClassOf :c-8226844-5467515 .
+
+:c-4239412-6759836 a owl:Class ;
+	rdfs:label "Перерыв на кофе"@ru ;
+	rdfs:subClassOf :c-8226844-5467515 , _:node1e05dhu3px133 .
+
+_:node1e05dhu3px133 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-4247794-8522223 a owl:Class ;
+	rdfs:label "Микроавтобус"@ru ;
+	rdfs:subClassOf :c-9327528-5757490 .
+
+:c-4337071-2295615 a owl:Class ;
+	rdfs:label "Город"@ru ;
+	rdfs:subClassOf owl:Thing , _:node1e05dhu3px134 .
+
+_:node1e05dhu3px134 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-7659911-1498507 .
+
+:c-4374593-3626258 a owl:Class ;
+	rdfs:label "Видео презентация"@ru ;
+	rdfs:subClassOf :c-8480446-3268253 .
+
+:c-4443920-5456321 a owl:Class ;
+	rdfs:label "Главный оффис"@ru ;
+	rdfs:subClassOf :c-5532781-0044027 .
+
+:c-4467786-1803044 a owl:Class ;
+	rdfs:label "Время"@ru .
+
+:c-4496772-9902832 a owl:Class ;
+	rdfs:label "Компьютер"@ru ;
+	rdfs:subClassOf :c-5886805-5721140 .
+
+:c-4543414-3650522 a owl:Class ;
+	rdfs:label "Краткое вступление председателя секции"@ru ;
+	rdfs:subClassOf :c-7738637-1995654 , _:node1e05dhu3px135 .
+
+_:node1e05dhu3px135 a owl:Restriction ;
+	owl:onProperty :op-8595958-0247802 ;
+	owl:someValuesFrom :c-3334430-6873903 .
+
+:c-4543414-3650522 rdfs:subClassOf _:node1e05dhu3px136 .
+
+_:node1e05dhu3px136 a owl:Restriction ;
+	owl:onProperty :op-8468603-0992367 ;
+	owl:someValuesFrom :c-3583860-0703848 .
+
+:c-4616709-0981294 a owl:Class ;
+	rdfs:label "Не членский регистрационный взнос"@ru ;
+	rdfs:subClassOf :c-6950982-2947501 , _:node1e05dhu3px137 .
+
+_:node1e05dhu3px137 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-8550271-1292451 .
+
+:c-4797607-8817764 a owl:Class ;
+	rdfs:label "Студент-не докладчик"@ru ;
+	owl:equivalentClass _:node1e05dhu3px138 .
+
+_:node1e05dhu3px138 a owl:Restriction ;
+	owl:onProperty :op-0318233-1616354 ;
+	owl:someValuesFrom :c-5861013-3272470 .
+
+:c-4797607-8817764 rdfs:subClassOf :c-6710545-1848375 .
+
+:c-4805480-3280006 a owl:Class ;
+	rdfs:label "Технический комитет"@ru ;
+	rdfs:subClassOf :c-1149240-3869493 , _:node1e05dhu3px139 .
+
+_:node1e05dhu3px139 a owl:Restriction ;
+	owl:onProperty :op-0052739-7741822 ;
+	owl:someValuesFrom :c-5734453-3930488 .
+
+:c-4842341-7406812 a owl:Class ;
+	rdfs:label "Здание"@ru ;
+	rdfs:subClassOf :c-5532781-0044027 .
+
+:c-4936131-9963996 a owl:Class ;
+	rdfs:label "Двуспальный гостиничный номер"@ru ;
+	rdfs:subClassOf :c-2093189-9254563 .
+
+:c-4959621-1510051 a owl:Class ;
+	rdfs:label "Налог"@ru ;
+	rdfs:subClassOf :c-2031854-0820396 .
+
+:c-4979229-5594729 a owl:Class ;
+	rdfs:label "Обучающий курс"@ru ;
+	owl:equivalentClass _:node1e05dhu3px140 .
+
+_:node1e05dhu3px140 a owl:Restriction ;
+	owl:onProperty :op-8595958-0247802 ;
+	owl:someValuesFrom :c-1772097-3816170 .
+
+:c-4979229-5594729 rdfs:subClassOf :c-0679422-4582832 .
+
+:c-5048344-0590784 a owl:Class ;
+	rdfs:label "Город конференции"@ru ;
+	rdfs:subClassOf :c-4337071-2295615 , _:node1e05dhu3px141 .
+
+_:node1e05dhu3px141 a owl:Restriction ;
+	owl:onProperty :op-6779574-3600111 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-5119581-6007018 a owl:Class ;
+	rdfs:label "Налог на отправление"@ru ;
+	rdfs:subClassOf :c-4959621-1510051 , _:node1e05dhu3px142 .
+
+_:node1e05dhu3px142 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-0386419-7378068 .
+
+:c-5183280-6234268 a owl:Class ;
+	rdfs:label "Пленарный доклад"@ru ;
+	owl:equivalentClass _:node1e05dhu3px143 .
+
+_:node1e05dhu3px143 a owl:Restriction ;
+	owl:onProperty :op-8595958-0247802 ;
+	owl:someValuesFrom :c-2860400-8942733 .
+
+:c-5183280-6234268 rdfs:subClassOf :c-0679422-4582832 .
+
+:c-5287788-2486324 a owl:Class ;
+	rdfs:label "Окончательный манускрипт"@ru ;
+	rdfs:subClassOf :c-7133788-1786892 , _:node1e05dhu3px144 .
+
+_:node1e05dhu3px144 a owl:Restriction ;
+	owl:onProperty :op-0052739-7741822 ;
+	owl:someValuesFrom :c-8111583-5926670 .
+
+:c-5512211-2133784 a owl:Class ;
+	rdfs:label "Welcome_address"@ru ;
+	rdfs:subClassOf :c-8226844-5467515 .
+
+:c-5532781-0044027 a owl:Class ;
+	rdfs:label "Место"@ru ;
+	rdfs:subClassOf owl:Thing , _:node1e05dhu3px145 .
+
+_:node1e05dhu3px145 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-5048344-0590784 .
+
+:c-5532781-0044027 rdfs:subClassOf _:node1e05dhu3px146 .
+
+_:node1e05dhu3px146 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-8589224-5539482 .
+
+:c-5551172-7015894 a owl:Class ;
+	rdfs:label "Валюта"@ru .
+
+:c-5577847-9662417 a owl:Class ;
+	rdfs:label "Виза"@ru ;
+	rdfs:subClassOf :c-7738637-1995654 , _:node1e05dhu3px147 .
+
+_:node1e05dhu3px147 a owl:Restriction ;
+	owl:onProperty :op-6050608-7879638 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-5577953-9491683 a owl:Class ;
+	rdfs:label "Последний срок окончательной версии манускрипта"@ru ;
+	rdfs:subClassOf :c-3886567-1562319 .
+
+:c-5734453-3930488 a owl:Class ;
+	rdfs:label "Техническое мероприятие"@ru ;
+	rdfs:subClassOf :c-8226844-5467515 , _:node1e05dhu3px148 .
+
+_:node1e05dhu3px148 a owl:Restriction ;
+	owl:onProperty :op-8595958-0247802 ;
+	owl:someValuesFrom :c-4805480-3280006 .
+
+:c-5861013-3272470 a owl:Class ;
+	rdfs:label "Студенческий регистрационный взнос"@ru ;
+	rdfs:subClassOf :c-6950982-2947501 , _:node1e05dhu3px149 .
+
+_:node1e05dhu3px149 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom _:node1e05dhu3px150 .
+
+_:node1e05dhu3px150 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px151 .
+
+_:node1e05dhu3px151 rdf:first :c-4126860-8801237 ;
+	rdf:rest _:node1e05dhu3px152 .
+
+_:node1e05dhu3px152 rdf:first :c-4797607-8817764 ;
+	rdf:rest rdf:nil .
+
+:c-5886805-5721140 a owl:Class ;
+	rdfs:label "Аудиовизуальное оборудование"@ru ;
+	rdfs:subClassOf :c-5937523-4595389 , _:node1e05dhu3px153 .
+
+_:node1e05dhu3px153 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-1869527-9896628 .
+
+:c-5886805-5721140 rdfs:subClassOf _:node1e05dhu3px154 .
+
+_:node1e05dhu3px154 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-9915121-1038926 .
+
+:c-5886805-5721140 rdfs:subClassOf _:node1e05dhu3px155 .
+
+_:node1e05dhu3px155 a owl:Restriction ;
+	owl:onProperty :op-7904124-7792589 ;
+	owl:someValuesFrom :c-7997099-4182490 .
+
+:c-5937523-4595389 a owl:Class ;
+	rdfs:label "Предмет"@ru .
+
+:c-5948843-3110796 a owl:Class ;
+	rdfs:label "Последний срок регистрации"@ru ;
+	rdfs:subClassOf :c-3886567-1562319 .
+
+:c-5989318-7045666 a owl:Class ;
+	rdfs:label "Kонференц-зал"@ru ;
+	rdfs:subClassOf :c-5532781-0044027 , _:node1e05dhu3px156 .
+
+_:node1e05dhu3px156 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-3793226-8791584 .
+
+:c-6022895-8177854 a owl:Class ;
+	rdfs:label "Регистрационный взнос aвтор, участник"@ru ;
+	rdfs:subClassOf :c-6950982-2947501 , _:node1e05dhu3px157 .
+
+_:node1e05dhu3px157 a owl:Restriction ;
+	owl:onProperty :op-4897820-2608941 ;
+	owl:someValuesFrom :c-9669157-9813317 .
+
+:c-6156720-1693934 a owl:Class ;
+	rdfs:label "Взнос за дополнительную поездку"@ru ;
+	rdfs:subClassOf :c-0016548-5959606 , _:node1e05dhu3px158 .
+
+_:node1e05dhu3px158 a owl:Restriction ;
+	owl:onProperty :op-0875342-6055612 ;
+	owl:someValuesFrom :c-6441210-8894852 .
+
+:c-6156720-1693934 rdfs:subClassOf _:node1e05dhu3px159 .
+
+_:node1e05dhu3px159 a owl:Restriction ;
+	owl:onProperty :op-4897820-2608941 ;
+	owl:someValuesFrom :c-1398366-1570123 .
+
+:c-6159176-0172546 a owl:Class ;
+	rdfs:label "Такси"@ru ;
+	rdfs:subClassOf :c-9327528-5757490 .
+
+:c-6179457-1535858 a owl:Class ;
+	rdfs:label "Публикация"@ru ;
+	rdfs:subClassOf :c-5937523-4595389 , _:node1e05dhu3px160 .
+
+_:node1e05dhu3px160 a owl:Restriction ;
+	owl:onProperty :op-9049170-1637516 ;
+	owl:someValuesFrom :c-5287788-2486324 .
+
+:c-6187398-0999079 a owl:Class ;
+	rdfs:label "Одноместный гостиничный номер"@ru ;
+	rdfs:subClassOf :c-2093189-9254563 .
+
+:c-6244591-8906721 a owl:Class ;
+	rdfs:label "Последний срок бронирования гостиницы"@ru ;
+	rdfs:subClassOf :c-3886567-1562319 .
+
+:c-6276128-9113038 a owl:Class ;
+	rdfs:label "Часовой_пояс"@ru .
+
+:c-6296205-9606628 a owl:Class ;
+	rdfs:label "Форма"@ru ;
+	rdfs:subClassOf :c-7738637-1995654 , _:node1e05dhu3px161 .
+
+_:node1e05dhu3px161 a owl:Restriction ;
+	owl:onProperty :op-8468603-0992367 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-6419638-6523554 a owl:Class ;
+	rdfs:label "Cтрана спонсора"@ru ;
+	rdfs:subClassOf :c-7659911-1498507 .
+
+:c-6441210-8894852 a owl:Class ;
+	rdfs:label "Conference_Hiker"@ru ;
+	owl:equivalentClass _:node1e05dhu3px162 .
+
+_:node1e05dhu3px162 a owl:Restriction ;
+	owl:onProperty :op-0052739-7741822 ;
+	owl:someValuesFrom :c-1398366-1570123 .
+
+:c-6441210-8894852 rdfs:subClassOf :c-1149240-3869493 .
+
+:c-6535155-6553020 a owl:Class ;
+	rdfs:label "Один день докладчик"@ru ;
+	owl:equivalentClass _:node1e05dhu3px163 .
+
+_:node1e05dhu3px163 a owl:Restriction ;
+	owl:onProperty :op-3754573-0430082 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6535155-6553020 rdfs:subClassOf :c-1149240-3869493 .
+
+:c-6710545-1848375 a owl:Class ;
+	rdfs:label "Не доскладчик"@ru ;
+	rdfs:subClassOf :c-1149240-3869493 ;
+	owl:disjointWith :c-7997099-4182490 .
+
+:c-6776521-5536115 a owl:Class ;
+	rdfs:label "Гостиничный регистрационный бланк"@ru ;
+	rdfs:subClassOf :c-6296205-9606628 , _:node1e05dhu3px164 .
+
+_:node1e05dhu3px164 a owl:Restriction ;
+	owl:onProperty :op-0104086-3568017 ;
+	owl:someValuesFrom :c-6244591-8906721 .
+
+:c-6950982-2947501 a owl:Class ;
+	rdfs:label "Регистрационный взнос"@ru ;
+	rdfs:subClassOf :c-0016548-5959606 , _:node1e05dhu3px165 .
+
+_:node1e05dhu3px165 a owl:Restriction ;
+	owl:onProperty :op-0875342-6055612 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-6950982-2947501 rdfs:subClassOf _:node1e05dhu3px166 .
+
+_:node1e05dhu3px166 a owl:Restriction ;
+	owl:onProperty :op-4897820-2608941 ;
+	owl:someValuesFrom :c-8226844-5467515 .
+
+:c-7058869-9094108 a owl:Class ;
+	rdfs:label "Город докладчика"@ru ;
+	rdfs:subClassOf :c-4337071-2295615 , _:node1e05dhu3px167 .
+
+_:node1e05dhu3px167 a owl:Restriction ;
+	owl:onProperty :op-8799251-7637896 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-7086640-7189032 a owl:Class ;
+	rdfs:label "Работник-не докладчик"@ru ;
+	owl:equivalentClass _:node1e05dhu3px168 .
+
+_:node1e05dhu3px168 a owl:Restriction ;
+	owl:onProperty :op-0318233-1616354 ;
+	owl:someValuesFrom :c-3047846-8744427 .
+
+:c-7086640-7189032 rdfs:subClassOf :c-6710545-1848375 .
+
+:c-7133788-1786892 a owl:Class ;
+	rdfs:label "Подача"@ru ;
+	rdfs:subClassOf :c-7738637-1995654 , _:node1e05dhu3px169 .
+
+_:node1e05dhu3px169 a owl:Restriction ;
+	owl:onProperty :op-5216246-8424422 ;
+	owl:someValuesFrom :c-7997099-4182490 .
+
+:c-7221529-5048709 a owl:Class ;
+	rdfs:label "Автор, диск сборника трудов включёны"@ru ;
+	rdfs:subClassOf :c-3334430-6873903 , _:node1e05dhu3px170 .
+
+_:node1e05dhu3px170 a owl:Restriction ;
+	owl:onProperty :op-7924318-5580404 ;
+	owl:someValuesFrom :c-9669157-9813317 .
+
+:c-7253829-4032883 a owl:Class ;
+	rdfs:label "Рецензент"@ru ;
+	owl:equivalentClass _:node1e05dhu3px171 .
+
+_:node1e05dhu3px171 a owl:Restriction ;
+	owl:onProperty :op-0612345-8869014 ;
+	owl:someValuesFrom :c-9551750-7908758 .
+
+:c-7253829-4032883 rdfs:subClassOf :c-7997099-4182490 .
+
+:c-7297148-0295851 a owl:Class ;
+	rdfs:label "Университет докладчика"@ru ;
+	rdfs:subClassOf :c-4842341-7406812 , _:node1e05dhu3px172 .
+
+_:node1e05dhu3px172 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-2064642-9421657 .
+
+:c-7297148-0295851 rdfs:subClassOf _:node1e05dhu3px173 .
+
+_:node1e05dhu3px173 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-7058869-9094108 .
+
+:c-7645149-7527287 a owl:Class ;
+	rdfs:label "Город спонсора"@ru ;
+	rdfs:subClassOf :c-4337071-2295615 , _:node1e05dhu3px174 .
+
+_:node1e05dhu3px174 a owl:Restriction ;
+	owl:onProperty :op-8799251-7637896 ;
+	owl:someValuesFrom :c-3128225-4678588 .
+
+:c-7659911-1498507 a owl:Class ;
+	rdfs:label "Страна"@ru .
+
+:c-7723583-7427165 a owl:Class ;
+	rdfs:label "Гостиница конференции"@ru ;
+	rdfs:subClassOf :c-4842341-7406812 , _:node1e05dhu3px175 .
+
+_:node1e05dhu3px175 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-0671851-5268508 .
+
+:c-7723583-7427165 rdfs:subClassOf _:node1e05dhu3px176 .
+
+_:node1e05dhu3px176 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-8589224-5539482 .
+
+:c-7723583-7427165 rdfs:subClassOf _:node1e05dhu3px177 .
+
+_:node1e05dhu3px177 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-5048344-0590784 .
+
+:c-7738637-1995654 a owl:Class ;
+	rdfs:label "Документ"@ru ;
+	rdfs:subClassOf :c-5937523-4595389 .
+
+:c-7915612-5677357 a owl:Class ;
+	rdfs:label "Секция"@ru ;
+	rdfs:subClassOf :c-0679422-4582832 , _:node1e05dhu3px178 .
+
+_:node1e05dhu3px178 a owl:Restriction ;
+	owl:onProperty :op-8595958-0247802 ;
+	owl:someValuesFrom _:node1e05dhu3px179 .
+
+_:node1e05dhu3px179 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px180 .
+
+_:node1e05dhu3px180 rdf:first :c-3334430-6873903 ;
+	rdf:rest _:node1e05dhu3px181 .
+
+_:node1e05dhu3px181 rdf:first :c-3583860-0703848 ;
+	rdf:rest rdf:nil .
+
+:c-7915612-5677357 rdfs:subClassOf _:node1e05dhu3px182 .
+
+_:node1e05dhu3px182 a owl:Restriction ;
+	owl:onProperty :op-7609339-3979443 ;
+	owl:someValuesFrom :c-1869527-9896628 .
+
+:c-7997099-4182490 a owl:Class ;
+	rdfs:label "Докладчик"@ru ;
+	rdfs:subClassOf :c-1149240-3869493 , _:node1e05dhu3px183 .
+
+_:node1e05dhu3px183 a owl:Restriction ;
+	owl:onProperty :op-2058853-2307732 ;
+	owl:someValuesFrom :c-5287788-2486324 .
+
+:c-7997099-4182490 rdfs:subClassOf _:node1e05dhu3px184 .
+
+_:node1e05dhu3px184 a owl:Restriction ;
+	owl:onProperty :op-0612345-8869014 ;
+	owl:someValuesFrom :c-0679422-4582832 .
+
+:c-8049927-4169113 a owl:Class ;
+	rdfs:label "Дом  спонсорской компании"@ru ;
+	rdfs:subClassOf :c-4842341-7406812 , _:node1e05dhu3px185 .
+
+_:node1e05dhu3px185 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-7645149-7527287 .
+
+:c-8049927-4169113 rdfs:subClassOf _:node1e05dhu3px186 .
+
+_:node1e05dhu3px186 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-6419638-6523554 .
+
+:c-8049927-4169113 rdfs:subClassOf _:node1e05dhu3px187 .
+
+_:node1e05dhu3px187 a owl:Restriction ;
+	owl:onProperty :op-8799251-7637896 ;
+	owl:someValuesFrom :c-3128225-4678588 .
+
+:c-8088119-2503811 a owl:Class ;
+	rdfs:label "Книга сборника трудов"@ru ;
+	rdfs:subClassOf :c-6179457-1535858 .
+
+:c-8111583-5926670 a owl:Class ;
+	rdfs:label "Принятие манускрипта"@ru ;
+	rdfs:subClassOf :c-1181746-7849100 .
+
+:c-8226844-5467515 a owl:Class ;
+	rdfs:label "Мероприятие конференции"@ru ;
+	rdfs:subClassOf :c-1199603-8518183 , _:node1e05dhu3px188 .
+
+_:node1e05dhu3px188 a owl:Restriction ;
+	owl:onProperty :op-7609339-3979443 ;
+	owl:someValuesFrom :c-9635346-4826301 .
+
+:c-8226844-5467515 rdfs:subClassOf _:node1e05dhu3px189 .
+
+_:node1e05dhu3px189 a owl:Restriction ;
+	owl:onProperty :op-7609339-3979443 ;
+	owl:someValuesFrom :c-8589224-5539482 .
+
+:c-8480446-3268253 a owl:Class ;
+	rdfs:label "Презентация"@ru ;
+	rdfs:subClassOf :c-8226844-5467515 .
+
+:c-8550271-1292451 a owl:Class ;
+	rdfs:label "Не член IASTED"@ru ;
+	owl:equivalentClass _:node1e05dhu3px190 .
+
+_:node1e05dhu3px190 a owl:Restriction ;
+	owl:onProperty :op-0318233-1616354 ;
+	owl:someValuesFrom :c-4616709-0981294 .
+
+:c-8550271-1292451 rdfs:subClassOf :c-1149240-3869493 .
+
+:c-8589224-5539482 a owl:Class ;
+	rdfs:label "Страна конференции"@ru ;
+	rdfs:subClassOf :c-7659911-1498507 , _:node1e05dhu3px191 .
+
+_:node1e05dhu3px191 a owl:Restriction ;
+	owl:onProperty :op-6779574-3600111 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-8641604-8311920 a owl:Class ;
+	rdfs:label "Лицо"@ru .
+
+:c-8673945-4787269 a owl:Class ;
+	rdfs:label "Член IASTED"@ru ;
+	owl:equivalentClass _:node1e05dhu3px192 .
+
+_:node1e05dhu3px192 a owl:Restriction ;
+	owl:onProperty :op-0318233-1616354 ;
+	owl:someValuesFrom :c-1380782-1645610 .
+
+:c-8673945-4787269 rdfs:subClassOf :c-1149240-3869493 .
+
+:c-8696685-2873109 a owl:Class ;
+	rdfs:label "Аэропорт конференции"@ru ;
+	rdfs:subClassOf :c-4842341-7406812 , _:node1e05dhu3px193 .
+
+_:node1e05dhu3px193 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-5048344-0590784 .
+
+:c-8696685-2873109 rdfs:subClassOf _:node1e05dhu3px194 .
+
+_:node1e05dhu3px194 a owl:Restriction ;
+	owl:onProperty :op-6492601-8195531 ;
+	owl:someValuesFrom :c-8589224-5539482 .
+
+:c-8879485-6262945 a owl:Class ;
+	rdfs:label "Кредитная карта"@ru ;
+	rdfs:subClassOf :c-9177703-1913806 , _:node1e05dhu3px195 .
+
+_:node1e05dhu3px195 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom _:node1e05dhu3px196 .
+
+_:node1e05dhu3px196 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px197 .
+
+_:node1e05dhu3px197 rdf:first :c-0016548-5959606 ;
+	rdf:rest _:node1e05dhu3px198 .
+
+_:node1e05dhu3px198 rdf:first :c-4959621-1510051 ;
+	rdf:rest _:node1e05dhu3px199 .
+
+_:node1e05dhu3px199 rdf:first :c-9984138-1248778 ;
+	rdf:rest rdf:nil .
+
+:c-8920464-3007484 a owl:Class ;
+	rdfs:label "Доклад докладчика"@ru ;
+	rdfs:subClassOf :c-7915612-5677357 .
+
+:c-8969304-2511086 a owl:Class ;
+	rdfs:label "Ужин-банкет"@ru ;
+	rdfs:subClassOf :c-3806313-2914749 , _:node1e05dhu3px200 .
+
+_:node1e05dhu3px200 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom _:node1e05dhu3px201 .
+
+_:node1e05dhu3px201 a owl:Class ;
+	owl:complementOf :c-6535155-6553020 .
+
+:c-9177703-1913806 a owl:Class ;
+	rdfs:label "Карта"@ru ;
+	rdfs:subClassOf :c-5937523-4595389 .
+
+:c-9191848-1647667 a owl:Class ;
+	rdfs:label "Информационная форма об авторе"@ru ;
+	rdfs:subClassOf :c-6296205-9606628 , _:node1e05dhu3px202 .
+
+_:node1e05dhu3px202 a owl:Restriction ;
+	owl:onProperty :op-3777599-9887878 ;
+	owl:someValuesFrom :c-2645088-5405588 .
+
+:c-9214038-3897186 a owl:Class ;
+	rdfs:label "Симуляция"@ru ;
+	rdfs:subClassOf :c-1167310-0759193 .
+
+:c-9304321-9213053 a owl:Class ;
+	rdfs:label "Пригласительное письмо"@ru ;
+	rdfs:subClassOf :c-7738637-1995654 , _:node1e05dhu3px203 .
+
+_:node1e05dhu3px203 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-9327528-5757490 a owl:Class ;
+	rdfs:label "Транспортное средство"@ru ;
+	rdfs:subClassOf :c-5937523-4595389 , _:node1e05dhu3px204 .
+
+_:node1e05dhu3px204 a owl:Restriction ;
+	owl:onProperty :op-7904124-7792589 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-9380568-5605721 a owl:Class ;
+	rdfs:label "Регистрационный взнос автор, участник, книга"@ru ;
+	rdfs:subClassOf :c-6950982-2947501 , _:node1e05dhu3px205 .
+
+_:node1e05dhu3px205 a owl:Restriction ;
+	owl:onProperty :op-4897820-2608941 ;
+	owl:someValuesFrom :c-8088119-2503811 .
+
+:c-9455977-6625394 a owl:Class ;
+	rdfs:label "Прозрачность"@ru ;
+	rdfs:subClassOf :c-7738637-1995654 , _:node1e05dhu3px206 .
+
+_:node1e05dhu3px206 a owl:Restriction ;
+	owl:onProperty :op-7264426-5627470 ;
+	owl:someValuesFrom :c-7997099-4182490 .
+
+:c-9551750-7908758 a owl:Class ;
+	rdfs:label "Рецензия"@ru ;
+	rdfs:subClassOf :c-7738637-1995654 , _:node1e05dhu3px207 .
+
+_:node1e05dhu3px207 a owl:Restriction ;
+	owl:onProperty :op-5216246-8424422 ;
+	owl:someValuesFrom :c-7253829-4032883 .
+
+:c-9606542-8114973 a owl:Class ;
+	rdfs:label "Отклонение манускрипта"@ru ;
+	rdfs:subClassOf :c-1181746-7849100 .
+
+:c-9635346-4826301 a owl:Class ;
+	rdfs:label "Даты конференции"@ru ;
+	rdfs:subClassOf :c-4467786-1803044 , _:node1e05dhu3px208 .
+
+_:node1e05dhu3px208 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-9669157-9813317 a owl:Class ;
+	rdfs:label "Диск сборника трудов"@ru ;
+	rdfs:subClassOf :c-6179457-1535858 .
+
+:c-9723162-2073478 a owl:Class ;
+	rdfs:label "Прокат"@ru ;
+	rdfs:subClassOf :c-1181746-7849100 , _:node1e05dhu3px209 .
+
+_:node1e05dhu3px209 a owl:Restriction ;
+	owl:onProperty :op-0367021-7814462 ;
+	owl:someValuesFrom :c-3999209-0264478 .
+
+:c-9823884-3871617 a owl:Class ;
+	rdfs:label "Житкокристаллический проектор"@ru ;
+	rdfs:subClassOf :c-5886805-5721140 .
+
+:c-9824387-2438862 a owl:Class ;
+	rdfs:label "Коктейль-Вечеринка"@ru ;
+	rdfs:subClassOf :c-8226844-5467515 , _:node1e05dhu3px210 .
+
+_:node1e05dhu3px210 a owl:Restriction ;
+	owl:onProperty :op-8309361-6033692 ;
+	owl:someValuesFrom :c-1149240-3869493 .
+
+:c-9915121-1038926 a owl:Class ;
+	rdfs:label "Слушатель"@ru ;
+	rdfs:subClassOf :c-1149240-3869493 , _:node1e05dhu3px211 .
+
+_:node1e05dhu3px211 a owl:Restriction ;
+	owl:onProperty :op-6885084-5362486 ;
+	owl:someValuesFrom :c-1245660-0649251 .
+
+:c-9915121-1038926 rdfs:subClassOf _:node1e05dhu3px212 .
+
+_:node1e05dhu3px212 a owl:Restriction ;
+	owl:onProperty :op-2281052-5128123 ;
+	owl:someValuesFrom _:node1e05dhu3px213 .
+
+_:node1e05dhu3px213 a owl:Class ;
+	owl:unionOf _:node1e05dhu3px214 .
+
+_:node1e05dhu3px214 rdf:first :c-1869527-9896628 ;
+	rdf:rest _:node1e05dhu3px215 .
+
+_:node1e05dhu3px215 rdf:first :c-5989318-7045666 ;
+	rdf:rest rdf:nil .
+
+:c-9984138-1248778 a owl:Class ;
+	rdfs:label "Спонсорство"@ru ;
+	owl:equivalentClass _:node1e05dhu3px216 .
+
+_:node1e05dhu3px216 a owl:Restriction ;
+	owl:onProperty :op-0875342-6055612 ;
+	owl:someValuesFrom :c-3128225-4678588 .
+
+:c-9984138-1248778 rdfs:subClassOf :c-2031854-0820396 .
+
+iasted:Cancun a owl:NamedIndividual , :c-5048344-0590784 .
+
+iasted:Chichen_Itza a owl:NamedIndividual , :c-3248407-5260640 .
+
+iasted:Mexico a owl:NamedIndividual , :c-8589224-5539482 .
+
+iasted:peso a owl:NamedIndividual , :c-5551172-7015894 .

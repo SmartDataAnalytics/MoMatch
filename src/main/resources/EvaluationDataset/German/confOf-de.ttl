@@ -1,0 +1,631 @@
+@prefix : <http://confOf_de#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://confOf_de> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+:op-0668174-3248392 a owl:ObjectProperty ;
+	rdfs:label "begutachtet"@de ;
+	rdfs:domain :c-4439571-8274936 ;
+	rdfs:range :c-5598437-4596711 .
+
+:op-1722644-5121501 a owl:ObjectProperty ;
+	rdfs:label "schreibt"@de ;
+	rdfs:domain :c-4345951-5264002 ;
+	rdfs:range :c-5598437-4596711 ;
+	owl:inverseOf :op-9873670-8357831 .
+
+:op-1761269-0805727 a owl:ObjectProperty ;
+	rdfs:label "angestellt bei"@de ;
+	rdfs:domain :c-2683474-6183904 ;
+	rdfs:range :c-6031375-0881001 .
+
+:op-4302120-7233512 a owl:ObjectProperty ;
+	rdfs:label "hat Thema"@de ;
+	rdfs:domain :c-4702748-1915950 ;
+	rdfs:range :c-8403504-7828299 .
+
+:op-4508989-0566286 a owl:ObjectProperty ;
+	rdfs:label "beschäftigt sich mit"@de ;
+	rdfs:domain :c-5598437-4596711 ;
+	rdfs:range :c-8403504-7828299 .
+
+:op-5548380-9195122 a owl:ObjectProperty ;
+	rdfs:label "fachkundig für"@de ;
+	rdfs:domain :c-4439571-8274936 ;
+	rdfs:range :c-8403504-7828299 .
+
+:op-5694068-8845542 a owl:ObjectProperty ;
+	rdfs:label "studiert an"@de ;
+	rdfs:range :c-0211430-8010097 ;
+	rdfs:domain :c-7709681-8293969 .
+
+:op-5847282-2267282 a owl:ObjectProperty , owl:SymmetricProperty ;
+	rdfs:label "gleichzeitig mit"@de ;
+	rdfs:domain :c-4532133-5374065 ;
+	rdfs:range :c-4532133-5374065 ;
+	owl:inverseOf :op-5847282-2267282 .
+
+:op-6246394-5080283 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "hat Land"@de ;
+	rdfs:range :c-0652717-7598825 ;
+	rdfs:domain _:node1e05aqge7x1 .
+
+_:node1e05aqge7x1 a owl:Class ;
+	owl:unionOf _:node1e05aqge7x2 .
+
+_:node1e05aqge7x2 rdf:first :c-2683474-6183904 ;
+	rdf:rest _:node1e05aqge7x3 .
+
+_:node1e05aqge7x3 rdf:first :c-6031375-0881001 ;
+	rdf:rest rdf:nil .
+
+:op-6302277-5481695 a owl:ObjectProperty , owl:TransitiveProperty ;
+	rdfs:label "folgt"@de ;
+	rdfs:domain :c-4532133-5374065 ;
+	rdfs:range :c-4532133-5374065 .
+
+:op-7917558-9062341 a owl:ObjectProperty ;
+	rdfs:label "hat Stadt"@de ;
+	rdfs:range :c-1803256-3977939 ;
+	rdfs:domain _:node1e05aqge7x4 .
+
+_:node1e05aqge7x4 a owl:Class ;
+	owl:unionOf _:node1e05aqge7x5 .
+
+_:node1e05aqge7x5 rdf:first :c-2683474-6183904 ;
+	rdf:rest _:node1e05aqge7x6 .
+
+_:node1e05aqge7x6 rdf:first :c-6031375-0881001 ;
+	rdf:rest rdf:nil .
+
+:op-9873670-8357831 a owl:ObjectProperty ;
+	rdfs:label "geschrieben von"@de ;
+	rdfs:range :c-4345951-5264002 ;
+	rdfs:domain :c-5598437-4596711 .
+
+:op-9878680-0383531 a owl:ObjectProperty ;
+	rdfs:label "hat administratives Event"@de ;
+	rdfs:range :c-4532133-5374065 ;
+	rdfs:domain :c-4702748-1915950 .
+
+:ent-0303881-5975791 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "hat Vornamen"@de ;
+	rdfs:domain :c-2683474-6183904 ;
+	rdfs:range xsd:string .
+
+:ent-0611468-9782860 a owl:DatatypeProperty ;
+	rdfs:label "findet statt an"@de ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05aqge7x7 .
+
+_:node1e05aqge7x7 a owl:Class ;
+	owl:unionOf _:node1e05aqge7x8 .
+
+_:node1e05aqge7x8 rdf:first :c-0126412-6208972 ;
+	rdf:rest _:node1e05aqge7x9 .
+
+_:node1e05aqge7x9 rdf:first :c-4702748-1915950 ;
+	rdf:rest rdf:nil .
+
+:ent-0835076-0487700 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "hat Mehrwertsteuer"@de ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05aqge7x10 .
+
+_:node1e05aqge7x10 a owl:Class ;
+	owl:unionOf _:node1e05aqge7x11 .
+
+_:node1e05aqge7x11 rdf:first :c-0126412-6208972 ;
+	rdf:rest _:node1e05aqge7x12 .
+
+_:node1e05aqge7x12 rdf:first :c-4702748-1915950 ;
+	rdf:rest rdf:nil .
+
+:ent-1324673-6996465 a owl:DatatypeProperty ;
+	rdfs:label "hat Anmerkung"@de ;
+	rdfs:domain :c-5598437-4596711 ;
+	rdfs:range xsd:string .
+
+:ent-1987350-8650340 a owl:DatatypeProperty ;
+	rdfs:label "minimale Anzahl"@de ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:domain _:node1e05aqge7x13 .
+
+_:node1e05aqge7x13 a owl:Class ;
+	owl:unionOf _:node1e05aqge7x14 .
+
+_:node1e05aqge7x14 rdf:first :c-0126412-6208972 ;
+	rdf:rest _:node1e05aqge7x15 .
+
+_:node1e05aqge7x15 rdf:first :c-4702748-1915950 ;
+	rdf:rest rdf:nil .
+
+:ent-2160031-2946829 a owl:DatatypeProperty ;
+	rdfs:label "hat Stichwörter"@de ;
+	rdfs:domain :c-5598437-4596711 ;
+	rdfs:range xsd:string .
+
+:ent-3116369-8783570 a owl:DatatypeProperty ;
+	rdfs:label "hat Kontakt-Email Adresse"@de ;
+	rdfs:domain :c-5598437-4596711 ;
+	rdfs:range xsd:string .
+
+:ent-3284867-9260202 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "hat Kurztitel"@de ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05aqge7x16 .
+
+_:node1e05aqge7x16 a owl:Class ;
+	owl:unionOf _:node1e05aqge7x17 .
+
+_:node1e05aqge7x17 rdf:first :c-0126412-6208972 ;
+	rdf:rest _:node1e05aqge7x18 .
+
+_:node1e05aqge7x18 rdf:first :c-4702748-1915950 ;
+	rdf:rest rdf:nil .
+
+:ent-3531218-9750426 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "hat Zusammenfassung"@de ;
+	rdfs:domain :c-5598437-4596711 ;
+	rdfs:range xsd:string .
+
+:ent-4079155-2412723 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "hat Titel"@de ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05aqge7x19 .
+
+_:node1e05aqge7x19 a owl:Class ;
+	owl:unionOf _:node1e05aqge7x20 .
+
+_:node1e05aqge7x20 rdf:first :c-0126412-6208972 ;
+	rdf:rest _:node1e05aqge7x21 .
+
+_:node1e05aqge7x21 rdf:first :c-4702748-1915950 ;
+	rdf:rest rdf:nil .
+
+:ent-4553206-2103816 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "startet am"@de ;
+	rdfs:domain :c-8959319-1033837 ;
+	rdfs:range xsd:string .
+
+:ent-4883389-8000129 a owl:DatatypeProperty ;
+	rdfs:label "hat Faxnummer"@de ;
+	rdfs:domain :c-2683474-6183904 ;
+	rdfs:range xsd:string .
+
+:ent-5550018-6700451 a owl:DatatypeProperty ;
+	rdfs:label "hat Homepage"@de ;
+	rdfs:domain :c-2683474-6183904 ;
+	rdfs:range xsd:string .
+
+:ent-5642216-9536112 a owl:DatatypeProperty ;
+	rdfs:label "hat Straße"@de ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05aqge7x22 .
+
+_:node1e05aqge7x22 a owl:Class ;
+	owl:unionOf _:node1e05aqge7x23 .
+
+_:node1e05aqge7x23 rdf:first :c-2683474-6183904 ;
+	rdf:rest _:node1e05aqge7x24 .
+
+_:node1e05aqge7x24 rdf:first :c-6031375-0881001 ;
+	rdf:rest rdf:nil .
+
+:ent-5742004-8000728 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "hat Titel"@de ;
+	rdfs:domain :c-5598437-4596711 ;
+	rdfs:range xsd:string .
+
+:ent-6095931-1291276 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "frühzeitige Registrierung"@de ;
+	rdfs:domain :c-2472530-7442299 ;
+	rdfs:range xsd:boolean .
+
+:ent-6312613-2029317 a owl:DatatypeProperty ;
+	rdfs:label "hat Postleitzahl"@de ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05aqge7x25 .
+
+_:node1e05aqge7x25 a owl:Class ;
+	owl:unionOf _:node1e05aqge7x26 .
+
+_:node1e05aqge7x26 rdf:first :c-2683474-6183904 ;
+	rdf:rest _:node1e05aqge7x27 .
+
+_:node1e05aqge7x27 rdf:first :c-6031375-0881001 ;
+	rdf:rest rdf:nil .
+
+:ent-7472904-1496645 a owl:DatatypeProperty ;
+	rdfs:label "hat Email Adresse"@de ;
+	rdfs:domain :c-2683474-6183904 ;
+	rdfs:range xsd:string .
+
+:ent-8169889-1545004 a owl:DatatypeProperty ;
+	rdfs:label "hat Telephonnummer"@de ;
+	rdfs:domain :c-2683474-6183904 ;
+	rdfs:range xsd:string .
+
+:ent-9176086-3549112 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "endet am"@de ;
+	rdfs:domain :c-8959319-1033837 ;
+	rdfs:range xsd:string .
+
+:ent-9378447-8956054 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "maximale Anzahl"@de ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:domain _:node1e05aqge7x28 .
+
+_:node1e05aqge7x28 a owl:Class ;
+	owl:unionOf _:node1e05aqge7x29 .
+
+_:node1e05aqge7x29 rdf:first :c-0126412-6208972 ;
+	rdf:rest _:node1e05aqge7x30 .
+
+_:node1e05aqge7x30 rdf:first :c-4702748-1915950 ;
+	rdf:rest rdf:nil .
+
+:ent-9393618-3251719 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "vorgegebene_Anzahl"@de ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:domain _:node1e05aqge7x31 .
+
+_:node1e05aqge7x31 a owl:Class ;
+	owl:unionOf _:node1e05aqge7x32 .
+
+_:node1e05aqge7x32 rdf:first :c-0126412-6208972 ;
+	rdf:rest _:node1e05aqge7x33 .
+
+_:node1e05aqge7x33 rdf:first :c-4702748-1915950 ;
+	rdf:rest rdf:nil .
+
+:ent-9875824-2357826 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "hat Nachname"@de ;
+	rdfs:domain :c-2683474-6183904 ;
+	rdfs:range xsd:string .
+
+:c-0064824-4442977 a owl:Class ;
+	rdfs:label "Ereignis des Sendens des \"camera-ready\" Papiers"@de ;
+	rdfs:subClassOf :c-4532133-5374065 ;
+	owl:disjointWith :c-3716617-5099119 , :c-6386839-2509220 , :c-8118103-3976495 , :c-9531197-4911923 .
+
+:c-0126412-6208972 a owl:Class ;
+	rdfs:label "soziales Ereignis"@de ;
+	rdfs:subClassOf :c-8959319-1033837 , _:node1e05aqge7x34 .
+
+_:node1e05aqge7x34 a owl:Restriction ;
+	owl:onProperty :ent-9393618-3251719 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0126412-6208972 rdfs:subClassOf _:node1e05aqge7x35 .
+
+_:node1e05aqge7x35 a owl:Restriction ;
+	owl:onProperty :ent-0611468-9782860 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0126412-6208972 rdfs:subClassOf _:node1e05aqge7x36 .
+
+_:node1e05aqge7x36 a owl:Restriction ;
+	owl:onProperty :ent-4079155-2412723 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0126412-6208972 owl:disjointWith :c-4532133-5374065 , :c-4702748-1915950 .
+
+:c-0211430-8010097 a owl:Class ;
+	rdfs:label "Universität"@de ;
+	rdfs:subClassOf :c-6031375-0881001 ;
+	owl:disjointWith :c-1543161-5658463 .
+
+:c-0505747-2615706 a owl:Class ;
+	rdfs:label "kurzes Papier"@de ;
+	rdfs:subClassOf :c-5598437-4596711 ;
+	owl:disjointWith :c-0553488-4726167 , :c-3756950-6271891 .
+
+:c-0553488-4726167 a owl:Class ;
+	rdfs:label "Papier"@de ;
+	rdfs:subClassOf :c-5598437-4596711 ;
+	owl:disjointWith :c-3756950-6271891 .
+
+:c-0652717-7598825 a owl:Class ;
+	rdfs:label "Land"@de ;
+	owl:disjointWith :c-2683474-6183904 , :c-5598437-4596711 , :c-6031375-0881001 , :c-8403504-7828299 , :c-8959319-1033837 .
+
+:c-0977717-2950137 a owl:Class ;
+	rdfs:label "Vorsitz des Programmkomitees"@de ;
+	rdfs:subClassOf :c-2683474-6183904 .
+
+:c-1001355-3418487 a owl:Class ;
+	rdfs:label "Bankett"@de ;
+	rdfs:subClassOf :c-0126412-6208972 ;
+	owl:disjointWith :c-1165971-3665910 , :c-6723589-0344433 .
+
+:c-1165971-3665910 a owl:Class ;
+	rdfs:label "Empfang"@de ;
+	rdfs:subClassOf :c-0126412-6208972 ;
+	owl:disjointWith :c-6723589-0344433 .
+
+:c-1543161-5658463 a owl:Class ;
+	rdfs:label "Firma"@de ;
+	rdfs:subClassOf :c-6031375-0881001 .
+
+:c-1803256-3977939 a owl:Class ;
+	rdfs:label "Stadt"@de ;
+	owl:disjointWith :c-2683474-6183904 , :c-5598437-4596711 , :c-6031375-0881001 , :c-8403504-7828299 , :c-8959319-1033837 .
+
+:c-2005207-6803071 a owl:Class ;
+	rdfs:label "Assistent"@de ;
+	rdfs:subClassOf :c-2683474-6183904 .
+
+:c-2022407-5202362 a owl:Class ;
+	rdfs:label "studentischer Teilnehmer"@de ;
+	rdfs:subClassOf :c-2472530-7442299 .
+
+:c-2463275-9197848 a owl:Class ;
+	rdfs:label "Tutorium"@de ;
+	rdfs:subClassOf :c-4702748-1915950 ;
+	owl:disjointWith :c-7620981-0130792 , :c-8182861-6425712 .
+
+:c-2472530-7442299 a owl:Class ;
+	rdfs:label "Teilnehmer"@de ;
+	rdfs:subClassOf :c-2683474-6183904 .
+
+:c-2683474-6183904 a owl:Class ;
+	rdfs:label "Person"@de ;
+	rdfs:subClassOf owl:Thing , _:node1e05aqge7x37 .
+
+_:node1e05aqge7x37 a owl:Restriction ;
+	owl:onProperty :op-6246394-5080283 ;
+	owl:someValuesFrom :c-0652717-7598825 .
+
+:c-2683474-6183904 rdfs:subClassOf _:node1e05aqge7x38 .
+
+_:node1e05aqge7x38 a owl:Restriction ;
+	owl:onProperty :op-1761269-0805727 ;
+	owl:allValuesFrom :c-6031375-0881001 .
+
+:c-2683474-6183904 rdfs:subClassOf _:node1e05aqge7x39 .
+
+_:node1e05aqge7x39 a owl:Restriction ;
+	owl:onProperty :ent-6312613-2029317 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-2683474-6183904 rdfs:subClassOf _:node1e05aqge7x40 .
+
+_:node1e05aqge7x40 a owl:Restriction ;
+	owl:onProperty :ent-7472904-1496645 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-2683474-6183904 rdfs:subClassOf _:node1e05aqge7x41 .
+
+_:node1e05aqge7x41 a owl:Restriction ;
+	owl:onProperty :ent-0303881-5975791 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-2683474-6183904 rdfs:subClassOf _:node1e05aqge7x42 .
+
+_:node1e05aqge7x42 a owl:Restriction ;
+	owl:onProperty :ent-9875824-2357826 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-2683474-6183904 rdfs:subClassOf _:node1e05aqge7x43 .
+
+_:node1e05aqge7x43 a owl:Restriction ;
+	owl:onProperty :ent-5642216-9536112 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-2683474-6183904 rdfs:subClassOf _:node1e05aqge7x44 .
+
+_:node1e05aqge7x44 a owl:Restriction ;
+	owl:onProperty :op-7917558-9062341 ;
+	owl:someValuesFrom :c-1803256-3977939 .
+
+:c-2683474-6183904 rdfs:subClassOf _:node1e05aqge7x45 .
+
+_:node1e05aqge7x45 a owl:Restriction ;
+	owl:onProperty :op-1761269-0805727 ;
+	owl:someValuesFrom :c-6031375-0881001 .
+
+:c-2683474-6183904 owl:disjointWith :c-5598437-4596711 , :c-6031375-0881001 , :c-8403504-7828299 , :c-8959319-1033837 .
+
+:c-3286368-6722233 a owl:Class ;
+	rdfs:label "Administrator"@de ;
+	rdfs:subClassOf :c-2683474-6183904 .
+
+:c-3716617-5099119 a owl:Class ;
+	rdfs:label "Ereignis zur Registrierung der Teilnehmer"@de ;
+	rdfs:subClassOf :c-4532133-5374065 ;
+	owl:disjointWith :c-6386839-2509220 , :c-8118103-3976495 , :c-9531197-4911923 .
+
+:c-3756950-6271891 a owl:Class ;
+	rdfs:label "Poster"@de ;
+	rdfs:subClassOf :c-5598437-4596711 .
+
+:c-4345951-5264002 a owl:Class ;
+	rdfs:label "Autor"@de ;
+	rdfs:subClassOf :c-2683474-6183904 , _:node1e05aqge7x46 .
+
+_:node1e05aqge7x46 a owl:Restriction ;
+	owl:onProperty :op-1722644-5121501 ;
+	owl:allValuesFrom :c-5598437-4596711 .
+
+:c-4345951-5264002 rdfs:subClassOf _:node1e05aqge7x47 .
+
+_:node1e05aqge7x47 a owl:Restriction ;
+	owl:onProperty :op-1722644-5121501 ;
+	owl:someValuesFrom :c-5598437-4596711 .
+
+:c-4439571-8274936 a owl:Class ;
+	rdfs:label "Mitglied des Programmkomitees"@de ;
+	rdfs:subClassOf :c-2683474-6183904 , _:node1e05aqge7x48 .
+
+_:node1e05aqge7x48 a owl:Restriction ;
+	owl:onProperty :op-5548380-9195122 ;
+	owl:someValuesFrom :c-8403504-7828299 .
+
+:c-4439571-8274936 rdfs:subClassOf _:node1e05aqge7x49 .
+
+_:node1e05aqge7x49 a owl:Restriction ;
+	owl:onProperty :op-0668174-3248392 ;
+	owl:someValuesFrom :c-5598437-4596711 .
+
+:c-4439571-8274936 rdfs:subClassOf _:node1e05aqge7x50 .
+
+_:node1e05aqge7x50 a owl:Restriction ;
+	owl:onProperty :op-0668174-3248392 ;
+	owl:allValuesFrom :c-5598437-4596711 .
+
+:c-4439571-8274936 rdfs:subClassOf _:node1e05aqge7x51 .
+
+_:node1e05aqge7x51 a owl:Restriction ;
+	owl:onProperty :op-5548380-9195122 ;
+	owl:allValuesFrom :c-8403504-7828299 .
+
+:c-4532133-5374065 a owl:Class ;
+	rdfs:label "administratives Ereignis"@de ;
+	rdfs:subClassOf :c-8959319-1033837 ;
+	owl:disjointWith :c-4702748-1915950 .
+
+:c-4702748-1915950 a owl:Class ;
+	rdfs:label "Arbeits-Ereignis"@de ;
+	rdfs:subClassOf :c-8959319-1033837 , _:node1e05aqge7x52 .
+
+_:node1e05aqge7x52 a owl:Restriction ;
+	owl:onProperty :ent-4079155-2412723 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4702748-1915950 rdfs:subClassOf _:node1e05aqge7x53 .
+
+_:node1e05aqge7x53 a owl:Restriction ;
+	owl:onProperty :ent-9393618-3251719 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4702748-1915950 rdfs:subClassOf _:node1e05aqge7x54 .
+
+_:node1e05aqge7x54 a owl:Restriction ;
+	owl:onProperty :ent-0611468-9782860 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4702748-1915950 rdfs:subClassOf _:node1e05aqge7x55 .
+
+_:node1e05aqge7x55 a owl:Restriction ;
+	owl:onProperty :op-4302120-7233512 ;
+	owl:someValuesFrom :c-8403504-7828299 .
+
+:c-4702748-1915950 rdfs:subClassOf _:node1e05aqge7x56 .
+
+_:node1e05aqge7x56 a owl:Restriction ;
+	owl:onProperty :op-4302120-7233512 ;
+	owl:allValuesFrom :c-8403504-7828299 .
+
+:c-4861385-1103485 a owl:Class ;
+	rdfs:label "Freiwilliger"@de ;
+	rdfs:subClassOf :c-2683474-6183904 .
+
+:c-4973711-7358267 a owl:Class ;
+	rdfs:label "Mitglied"@de ;
+	rdfs:subClassOf :c-2472530-7442299 .
+
+:c-5598437-4596711 a owl:Class ;
+	rdfs:label "Einreichung"@de ;
+	rdfs:subClassOf owl:Thing , _:node1e05aqge7x57 .
+
+_:node1e05aqge7x57 a owl:Restriction ;
+	owl:onProperty :op-4508989-0566286 ;
+	owl:allValuesFrom :c-8403504-7828299 .
+
+:c-5598437-4596711 rdfs:subClassOf _:node1e05aqge7x58 .
+
+_:node1e05aqge7x58 a owl:Restriction ;
+	owl:onProperty :ent-3531218-9750426 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5598437-4596711 rdfs:subClassOf _:node1e05aqge7x59 .
+
+_:node1e05aqge7x59 a owl:Restriction ;
+	owl:onProperty :ent-5742004-8000728 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5598437-4596711 rdfs:subClassOf _:node1e05aqge7x60 .
+
+_:node1e05aqge7x60 a owl:Restriction ;
+	owl:onProperty :ent-3116369-8783570 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5598437-4596711 rdfs:subClassOf _:node1e05aqge7x61 .
+
+_:node1e05aqge7x61 a owl:Restriction ;
+	owl:onProperty :op-4508989-0566286 ;
+	owl:someValuesFrom :c-8403504-7828299 .
+
+:c-5598437-4596711 rdfs:subClassOf _:node1e05aqge7x62 .
+
+_:node1e05aqge7x62 a owl:Restriction ;
+	owl:onProperty :ent-2160031-2946829 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5598437-4596711 owl:disjointWith :c-6031375-0881001 , :c-8403504-7828299 , :c-8959319-1033837 .
+
+:c-6031375-0881001 a owl:Class ;
+	rdfs:label "Organisation"@de ;
+	owl:disjointWith :c-8403504-7828299 , :c-8959319-1033837 .
+
+:c-6386839-2509220 a owl:Class ;
+	rdfs:label "Ergebnis-der-Begutachtung_Ereignis"@de ;
+	rdfs:subClassOf :c-4532133-5374065 ;
+	owl:disjointWith :c-8118103-3976495 , :c-9531197-4911923 .
+
+:c-6723589-0344433 a owl:Class ;
+	rdfs:label "Ausflug"@de ;
+	rdfs:subClassOf :c-0126412-6208972 .
+
+:c-7620981-0130792 a owl:Class ;
+	rdfs:label "Workshop"@de ;
+	rdfs:subClassOf :c-4702748-1915950 ;
+	owl:disjointWith :c-8182861-6425712 .
+
+:c-7709681-8293969 a owl:Class ;
+	rdfs:label "Student"@de ;
+	rdfs:subClassOf :c-2683474-6183904 , _:node1e05aqge7x63 .
+
+_:node1e05aqge7x63 a owl:Restriction ;
+	owl:onProperty :op-5694068-8845542 ;
+	owl:allValuesFrom :c-0211430-8010097 .
+
+:c-7709681-8293969 rdfs:subClassOf _:node1e05aqge7x64 .
+
+_:node1e05aqge7x64 a owl:Restriction ;
+	owl:onProperty :op-5694068-8845542 ;
+	owl:someValuesFrom :c-0211430-8010097 .
+
+:c-8118103-3976495 a owl:Class ;
+	rdfs:label "Ereignis des Einreichens eines Papiers"@de ;
+	rdfs:subClassOf :c-4532133-5374065 ;
+	owl:disjointWith :c-9531197-4911923 .
+
+:c-8168019-5837036 a owl:Class ;
+	rdfs:label "Wissenschaftler"@de ;
+	rdfs:subClassOf :c-2683474-6183904 .
+
+:c-8182861-6425712 a owl:Class ;
+	rdfs:label "Konferenz"@de ;
+	rdfs:subClassOf :c-4702748-1915950 .
+
+:c-8403504-7828299 a owl:Class ;
+	rdfs:label "Thema"@de ;
+	owl:disjointWith :c-8959319-1033837 .
+
+:c-8959319-1033837 a owl:Class ;
+	rdfs:label "Ereignis"@de .
+
+:c-9260969-5532672 a owl:Class ;
+	rdfs:label "regulärer Teilnehmer"@de ;
+	rdfs:subClassOf :c-2472530-7442299 .
+
+:c-9531197-4911923 a owl:Class ;
+	rdfs:label "Ereignis der Begutachtung"@de ;
+	rdfs:subClassOf :c-4532133-5374065 .

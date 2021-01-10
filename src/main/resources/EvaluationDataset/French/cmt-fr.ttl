@@ -1,0 +1,524 @@
+@prefix : <http://cmt_fr#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://cmt_fr> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+:op-0678707-8568652 a owl:ObjectProperty ;
+	rdfs:label "l'attribution des articles finalisée par"@fr ;
+	rdfs:range :c-5413559-6236750 ;
+	rdfs:domain :c-7635033-5406957 .
+
+:op-1277237-7526917 a owl:ObjectProperty ;
+	rdfs:label "a pour co-auteur"@fr ;
+	rdfs:range :c-6515186-6166981 ;
+	rdfs:domain :c-6624877-8973875 ;
+	owl:inverseOf :op-6616205-9179416 .
+
+:op-1834043-2526986 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "écrit l'article"@fr ;
+	rdfs:domain :c-0480911-0003886 ;
+	rdfs:range :c-6624877-8973875 .
+
+:op-1952954-9976197 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "ajoute membre du comité de programme"@fr ;
+	rdfs:domain :c-5413559-6236750 ;
+	rdfs:range :c-6425593-9645104 .
+
+:op-1977308-1366465 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "est ajouté par"@fr ;
+	rdfs:range :c-5413559-6236750 ;
+	rdfs:domain :c-6425593-9645104 ;
+	owl:inverseOf :op-1952954-9976197 .
+
+:op-2275862-2556166 a owl:ObjectProperty , owl:FunctionalProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "accepte l'article"@fr ;
+	rdfs:domain :c-5413559-6236750 ;
+	rdfs:range :c-6624877-8973875 ;
+	owl:inverseOf :op-8126222-6511113 .
+
+:op-2391526-8438986 a owl:ObjectProperty ;
+	rdfs:label "les exemplaires papier des courriers de la manifestation imprimés par"@fr ;
+	rdfs:range :c-5413559-6236750 ;
+	rdfs:domain :c-7635033-5406957 ;
+	owl:inverseOf :op-6500113-0482123 .
+
+:op-2414470-7819093 a owl:ObjectProperty ;
+	rdfs:label "exécute les outils d'attribution d'articles de"@fr ;
+	rdfs:domain :c-5413559-6236750 ;
+	rdfs:range :c-7635033-5406957 ;
+	owl:inverseOf :op-7412441-9911534 .
+
+:op-2463475-1302676 a owl:ObjectProperty ;
+	rdfs:label "finalise l'attribution d'articles"@fr ;
+	rdfs:domain :c-5413559-6236750 ;
+	rdfs:range :c-7635033-5406957 ;
+	owl:inverseOf :op-0678707-8568652 .
+
+:op-2528682-2433166 a owl:ObjectProperty ;
+	rdfs:label "est affecté par l'administrateur"@fr ;
+	rdfs:domain :c-0752747-4444619 ;
+	rdfs:range :c-5413559-6236750 .
+
+:op-2675499-5395227 a owl:ObjectProperty ;
+	rdfs:label "définit le nombre maximum d'articles de"@fr ;
+	rdfs:domain :c-5413559-6236750 ;
+	rdfs:range :c-6425593-9645104 .
+
+:op-3329102-5307912 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "est rejeté par"@fr ;
+	rdfs:range :c-5413559-6236750 ;
+	rdfs:domain :c-6624877-8973875 .
+
+:op-3330571-4568520 a owl:ObjectProperty ;
+	rdfs:label "Membre de conférence"@fr ;
+	rdfs:domain :c-2724520-3587324 ;
+	rdfs:range :c-7635033-5406957 .
+
+:op-3407046-2338151 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "est écrit par"@fr ;
+	rdfs:range :c-0752747-4444619 ;
+	rdfs:domain :c-6282668-8946550 ;
+	owl:inverseOf :op-4935244-2451760 .
+
+:op-3503714-3089656 a owl:ObjectProperty ;
+	rdfs:label "a été associé à"@fr ;
+	rdfs:domain :c-0752747-4444619 ;
+	rdfs:range :c-6624877-8973875 ;
+	owl:inverseOf :op-8128023-0460106 .
+
+:op-3676239-0431045 a owl:ObjectProperty ;
+	rdfs:label "soumet l'article"@fr ;
+	rdfs:domain :c-0480911-0003886 ;
+	rdfs:range :c-6624877-8973875 .
+
+:op-3693648-9226478 a owl:ObjectProperty ;
+	rdfs:label "Membre de comité de programme"@fr ;
+	rdfs:domain :c-6425593-9645104 ;
+	rdfs:range :c-8504144-9632689 .
+
+:op-3723632-9161948 a owl:ObjectProperty ;
+	rdfs:label "a pour membre de conférence"@fr ;
+	rdfs:range :c-2724520-3587324 ;
+	rdfs:domain :c-7635033-5406957 ;
+	owl:inverseOf :op-3330571-4568520 .
+
+:op-3731016-4868439 a owl:ObjectProperty ;
+	rdfs:label "a un conflit d'intérêt à propos de"@fr ;
+	rdfs:range :c-0218338-0979990 ;
+	rdfs:domain :c-4497134-7374494 .
+
+:op-3821472-6823797 a owl:ObjectProperty ;
+	rdfs:label "est lu par le relecteur"@fr ;
+	rdfs:range :c-0752747-4444619 ;
+	rdfs:domain :c-6624877-8973875 .
+
+:op-4133318-3983517 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "est affecté par le relecteur"@fr ;
+	rdfs:range :c-0752747-4444619 ;
+	rdfs:domain :c-3962194-2541126 ;
+	owl:inverseOf :op-5763161-7747081 .
+
+:op-4158971-7855975 a owl:ObjectProperty ;
+	rdfs:label "la réunion virtuelle activée par"@fr ;
+	rdfs:range :c-5413559-6236750 ;
+	rdfs:domain :c-7635033-5406957 .
+
+:op-4436097-6709983 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "a pour décision"@fr ;
+	rdfs:domain :c-6624877-8973875 ;
+	rdfs:range :c-6784528-8405992 .
+
+:op-4660494-3439234 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "ajuste la proposition de relecture"@fr ;
+	rdfs:domain :c-0752747-4444619 ;
+	rdfs:range :c-5579543-7208566 ;
+	owl:inverseOf :op-7648680-2906834 .
+
+:op-4935244-2451760 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "écrit le rapport d'examen"@fr ;
+	rdfs:domain :c-0752747-4444619 ;
+	rdfs:range :c-6282668-8946550 .
+
+:op-5315618-7011868 a owl:ObjectProperty ;
+	rdfs:label "a pour thématique"@fr ;
+	rdfs:range :c-5982584-2694829 ;
+	rdfs:domain :c-6624877-8973875 .
+
+:op-5379083-2635350 a owl:ObjectProperty ;
+	rdfs:label "initialise l'attribution de propositions aux relecteurs de"@fr ;
+	rdfs:domain :c-5413559-6236750 ;
+	rdfs:range :c-7635033-5406957 ;
+	owl:inverseOf :op-9173847-3955614 .
+
+:op-5536003-6834447 a owl:ObjectProperty ;
+	rdfs:label "saisit les critères d'évaluation de"@fr ;
+	rdfs:domain :c-5413559-6236750 ;
+	rdfs:range :c-7635033-5406957 .
+
+:op-5763161-7747081 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "affecte le rôle de relecteur externe à"@fr ;
+	rdfs:domain :c-0752747-4444619 ;
+	rdfs:range :c-3962194-2541126 .
+
+:op-6231018-4689091 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "est lu par le méta-relecteur"@fr ;
+	rdfs:range :c-0743498-8291005 ;
+	rdfs:domain :c-6624877-8973875 .
+
+:op-6499331-0925740 a owl:ObjectProperty ;
+	rdfs:label "met en place la réunion virtuelle"@fr ;
+	rdfs:domain :c-5413559-6236750 ;
+	rdfs:range :c-7635033-5406957 ;
+	owl:inverseOf :op-4158971-7855975 .
+
+:op-6500113-0482123 a owl:ObjectProperty ;
+	rdfs:label "imprime les courriers de la manifestation"@fr ;
+	rdfs:domain :c-5413559-6236750 ;
+	rdfs:range :c-7635033-5406957 .
+
+:op-6616205-9179416 a owl:ObjectProperty ;
+	rdfs:label "co-écrit l'article"@fr ;
+	rdfs:domain :c-6515186-6166981 ;
+	rdfs:range :c-6624877-8973875 .
+
+:op-6665981-5434654 a owl:ObjectProperty ;
+	rdfs:label "signale un conflit d'intérêt pour"@fr ;
+	rdfs:range :c-6624877-8973875 ;
+	rdfs:domain _:node1e05bmud5x1 .
+
+_:node1e05bmud5x1 a owl:Class ;
+	owl:unionOf _:node1e05bmud5x2 .
+
+_:node1e05bmud5x2 rdf:first :c-0480911-0003886 ;
+	rdf:rest _:node1e05bmud5x3 .
+
+_:node1e05bmud5x3 rdf:first :c-0752747-4444619 ;
+	rdf:rest _:node1e05bmud5x4 .
+
+_:node1e05bmud5x4 rdf:first :c-2745207-1642565 ;
+	rdf:rest rdf:nil .
+
+:op-6987320-6104201 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "rejette l'article"@fr ;
+	rdfs:domain :c-5413559-6236750 ;
+	rdfs:range :c-6624877-8973875 ;
+	owl:inverseOf :op-3329102-5307912 .
+
+:op-6997809-5722146 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "a pour proposition de relecture"@fr ;
+	rdfs:range :c-5579543-7208566 ;
+	rdfs:domain :c-6624877-8973875 .
+
+:op-7150942-3233248 a owl:ObjectProperty ;
+	rdfs:label "affecte le rôle de relecteur à"@fr ;
+	rdfs:range :c-0752747-4444619 ;
+	rdfs:domain :c-5413559-6236750 ;
+	owl:inverseOf :op-2528682-2433166 .
+
+:op-7369513-4372573 a owl:ObjectProperty ;
+	rdfs:label "saisit les détails de la conférence"@fr ;
+	rdfs:domain :c-5413559-6236750 ;
+	rdfs:range :c-7635033-5406957 ;
+	owl:inverseOf :op-9859591-8891558 .
+
+:op-7412441-9911534 a owl:ObjectProperty ;
+	rdfs:label "les outils d'attribution d'articles sont exécutés par"@fr ;
+	rdfs:range :c-5413559-6236750 ;
+	rdfs:domain :c-7635033-5406957 .
+
+:op-7648680-2906834 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "est ajusté par"@fr ;
+	rdfs:range :c-0752747-4444619 ;
+	rdfs:domain :c-5579543-7208566 .
+
+:op-7941198-0671399 a owl:ObjectProperty ;
+	rdfs:label "a pour membre du comité de programme"@fr ;
+	rdfs:range :c-6425593-9645104 ;
+	rdfs:domain :c-8504144-9632689 ;
+	owl:inverseOf :op-3693648-9226478 .
+
+:op-8026307-8225502 a owl:ObjectProperty ;
+	rdfs:label "finalise le processus de relecture"@fr ;
+	rdfs:domain :c-0917731-1974635 ;
+	rdfs:range :c-6282668-8946550 .
+
+:op-8126222-6511113 a owl:ObjectProperty , owl:FunctionalProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "est accepté par"@fr ;
+	rdfs:range :c-5413559-6236750 ;
+	rdfs:domain :c-6624877-8973875 .
+
+:op-8128023-0460106 a owl:ObjectProperty ;
+	rdfs:label "est assigné à"@fr ;
+	rdfs:range :c-0752747-4444619 ;
+	rdfs:domain :c-6624877-8973875 .
+
+:op-8484350-3429635 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "a pour auteur"@fr ;
+	rdfs:range :c-0480911-0003886 ;
+	rdfs:domain :c-6624877-8973875 ;
+	owl:inverseOf :op-1834043-2526986 .
+
+:op-8918513-2667584 a owl:ObjectProperty ;
+	rdfs:label "les critères d'évaluation sont remplis par"@fr ;
+	rdfs:range :c-5413559-6236750 ;
+	rdfs:domain :c-7635033-5406957 ;
+	owl:inverseOf :op-5536003-6834447 .
+
+:op-9173847-3955614 a owl:ObjectProperty ;
+	rdfs:label "l'attribution de propositions aux relecteurs est initialisée par"@fr ;
+	rdfs:range :c-5413559-6236750 ;
+	rdfs:domain :c-7635033-5406957 .
+
+:op-9232056-7617405 a owl:ObjectProperty ;
+	rdfs:label "lit l'article"@fr ;
+	rdfs:domain :c-0752747-4444619 ;
+	rdfs:range :c-6624877-8973875 ;
+	owl:inverseOf :op-3821472-6823797 .
+
+:op-9859591-8891558 a owl:ObjectProperty ;
+	rdfs:label "les détails sont saisis par"@fr ;
+	rdfs:range :c-5413559-6236750 ;
+	rdfs:domain :c-7635033-5406957 .
+
+:ent-4724406-3539421 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "titre"@fr ;
+	rdfs:domain :c-6624877-8973875 ;
+	rdfs:range xsd:string .
+
+:ent-4761498-2044262 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "nombre de rapports d'examen par article"@fr ;
+	rdfs:domain :c-7635033-5406957 ;
+	rdfs:range xsd:int .
+
+:ent-5571423-1892362 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "URL du site"@fr ;
+	rdfs:domain :c-7635033-5406957 ;
+	rdfs:range xsd:anyURI .
+
+:ent-6474161-2405628 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "nom"@fr ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bmud5x5 .
+
+_:node1e05bmud5x5 a owl:Class ;
+	owl:unionOf _:node1e05bmud5x6 .
+
+_:node1e05bmud5x6 rdf:first :c-4497134-7374494 ;
+	rdf:rest _:node1e05bmud5x7 .
+
+_:node1e05bmud5x7 rdf:first :c-7635033-5406957 ;
+	rdf:rest rdf:nil .
+
+:ent-6818761-0126481 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "accepte les soumissions d'articles au format papier"@fr ;
+	rdfs:domain :c-7635033-5406957 ;
+	rdfs:range xsd:boolean .
+
+:ent-7278298-5023089 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "nombre maximum d'articles"@fr ;
+	rdfs:domain :c-6425593-9645104 ;
+	rdfs:range xsd:int .
+
+:ent-7490112-7877912 a owl:DatatypeProperty ;
+	rdfs:label "date"@fr ;
+	rdfs:domain :c-7635033-5406957 ;
+	rdfs:range xsd:date .
+
+:ent-8219716-4961949 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "URL du logo"@fr ;
+	rdfs:domain :c-7635033-5406957 ;
+	rdfs:range xsd:anyURI .
+
+:ent-8959215-2725585 a owl:DatatypeProperty ;
+	rdfs:label "courriel"@fr ;
+	rdfs:domain :c-4497134-7374494 ;
+	rdfs:range xsd:string .
+
+:ent-9275526-7398528 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "identifiant de l'article"@fr ;
+	rdfs:domain :c-6624877-8973875 ;
+	rdfs:range xsd:unsignedLong .
+
+:c-0218338-0979990 a owl:Class ;
+	rdfs:label "Document"@fr ;
+	owl:disjointWith :c-4497134-7374494 , :c-5579543-7208566 , :c-6784528-8405992 , :c-7635033-5406957 , :c-8504144-9632689 , :c-9058566-4923189 .
+
+:c-0480911-0003886 a owl:Class ;
+	rdfs:label "Auteur"@fr ;
+	rdfs:subClassOf :c-2724520-3587324 , :c-5886865-8763032 .
+
+:c-0712755-6034378 a owl:Class ;
+	rdfs:label "Acceptation"@fr ;
+	rdfs:subClassOf :c-6784528-8405992 ;
+	owl:disjointWith :c-5416499-8931739 .
+
+:c-0743498-8291005 a owl:Class ;
+	rdfs:label "Méta-relecteur"@fr ;
+	rdfs:subClassOf :c-0752747-4444619 .
+
+:c-0752747-4444619 a owl:Class ;
+	rdfs:label "Relecteur"@fr ;
+	rdfs:subClassOf :c-2724520-3587324 , :c-5886865-8763032 ;
+	owl:disjointWith :c-3962194-2541126 , :c-9412558-6009078 .
+
+:c-0917731-1974635 a owl:Class ;
+	rdfs:label "Président de comité de programme"@fr ;
+	rdfs:subClassOf :c-6425593-9645104 .
+
+:c-1646923-7206967 a owl:Class ;
+	rdfs:label "Méta-rapport d'examen"@fr ;
+	rdfs:subClassOf :c-6282668-8946550 .
+
+:c-2724520-3587324 a owl:Class ;
+	rdfs:label "Membre de conférence"@fr ;
+	rdfs:subClassOf :c-4497134-7374494 .
+
+:c-2745207-1642565 a owl:Class ;
+	rdfs:label "Président"@fr ;
+	owl:equivalentClass _:node1e05bmud5x8 .
+
+_:node1e05bmud5x8 a owl:Class ;
+	owl:unionOf _:node1e05bmud5x9 .
+
+_:node1e05bmud5x9 rdf:first :c-0917731-1974635 ;
+	rdf:rest _:node1e05bmud5x10 .
+
+_:node1e05bmud5x10 rdf:first :c-4519548-1775663 ;
+	rdf:rest _:node1e05bmud5x11 .
+
+_:node1e05bmud5x11 rdf:first :c-5301001-2369434 ;
+	rdf:rest rdf:nil .
+
+:c-2745207-1642565 rdfs:subClassOf :c-4497134-7374494 .
+
+:c-3407699-0090940 a owl:Class ;
+	rdfs:label "Version complète d'article"@fr ;
+	rdfs:subClassOf :c-6624877-8973875 .
+
+:c-3962194-2541126 a owl:Class ;
+	rdfs:label "Relecteur externe"@fr ;
+	rdfs:subClassOf :c-4497134-7374494 , _:node1e05bmud5x12 .
+
+_:node1e05bmud5x12 a owl:Restriction ;
+	owl:onProperty :op-4133318-3983517 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-4497134-7374494 a owl:Class ;
+	rdfs:label "Personne"@fr ;
+	owl:disjointWith :c-5579543-7208566 , :c-6784528-8405992 , :c-7635033-5406957 , :c-8504144-9632689 , :c-9058566-4923189 .
+
+:c-4519548-1775663 a owl:Class ;
+	rdfs:label "Président de conférence"@fr ;
+	rdfs:subClassOf :c-2724520-3587324 ;
+	owl:disjointWith :c-5301001-2369434 .
+
+:c-5301001-2369434 a owl:Class ;
+	rdfs:label "Président adjoint de conférence"@fr ;
+	rdfs:subClassOf :c-2724520-3587324 .
+
+:c-5413559-6236750 a owl:Class ;
+	rdfs:label "Administrateur"@fr ;
+	rdfs:subClassOf :c-5886865-8763032 .
+
+:c-5416499-8931739 a owl:Class ;
+	rdfs:label "Rejet"@fr ;
+	rdfs:subClassOf :c-6784528-8405992 .
+
+:c-5579543-7208566 a owl:Class ;
+	rdfs:label "Proposition de relecture"@fr ;
+	owl:disjointWith :c-6784528-8405992 , :c-7635033-5406957 , :c-8504144-9632689 , :c-9058566-4923189 .
+
+:c-5886865-8763032 a owl:Class ;
+	rdfs:label "Utilisateur"@fr ;
+	rdfs:subClassOf :c-4497134-7374494 .
+
+:c-5982584-2694829 a owl:Class ;
+	rdfs:label "Thématique"@fr .
+
+:c-6282668-8946550 a owl:Class ;
+	rdfs:label "Rapport d'examen"@fr ;
+	rdfs:subClassOf :c-0218338-0979990 ;
+	owl:disjointWith :c-6624877-8973875 .
+
+:c-6425593-9645104 a owl:Class ;
+	rdfs:label "Membre de comité de programme"@fr ;
+	rdfs:subClassOf :c-2724520-3587324 , :c-4497134-7374494 ;
+	owl:disjointWith :c-9412558-6009078 .
+
+:c-6515186-6166981 a owl:Class ;
+	rdfs:label "Co-auteur"@fr ;
+	rdfs:subClassOf :c-0480911-0003886 .
+
+:c-6624877-8973875 a owl:Class ;
+	rdfs:label "Article"@fr ;
+	rdfs:subClassOf :c-0218338-0979990 , _:node1e05bmud5x13 .
+
+_:node1e05bmud5x13 a owl:Restriction ;
+	owl:onProperty :op-4436097-6709983 ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6624877-8973875 rdfs:subClassOf _:node1e05bmud5x14 .
+
+_:node1e05bmud5x14 a owl:Restriction ;
+	owl:onProperty :op-6231018-4689091 ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6624877-8973875 rdfs:subClassOf _:node1e05bmud5x15 .
+
+_:node1e05bmud5x15 a owl:Restriction ;
+	owl:onProperty :op-3821472-6823797 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6624877-8973875 rdfs:subClassOf _:node1e05bmud5x16 .
+
+_:node1e05bmud5x16 a owl:Restriction ;
+	owl:onProperty :op-4436097-6709983 ;
+	owl:minCardinality "0"^^xsd:nonNegativeInteger .
+
+:c-6784528-8405992 a owl:Class ;
+	rdfs:label "Décision"@fr ;
+	owl:disjointWith :c-7635033-5406957 , :c-8504144-9632689 , :c-9058566-4923189 .
+
+:c-7635033-5406957 a owl:Class ;
+	rdfs:label "Conférence"@fr ;
+	rdfs:subClassOf owl:Thing , _:node1e05bmud5x17 .
+
+_:node1e05bmud5x17 a owl:Restriction ;
+	owl:onProperty :ent-7490112-7877912 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-7635033-5406957 rdfs:subClassOf _:node1e05bmud5x18 .
+
+_:node1e05bmud5x18 a owl:Restriction ;
+	owl:onProperty :ent-4761498-2044262 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-7635033-5406957 rdfs:subClassOf _:node1e05bmud5x19 .
+
+_:node1e05bmud5x19 a owl:Restriction ;
+	owl:onProperty :ent-6474161-2405628 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-7635033-5406957 owl:disjointWith :c-8504144-9632689 , :c-9058566-4923189 .
+
+:c-7886248-9730062 a owl:Class ;
+	rdfs:label "Résumé d'article"@fr ;
+	rdfs:subClassOf :c-6624877-8973875 .
+
+:c-8504144-9632689 a owl:Class ;
+	rdfs:label "Comité de programme"@fr ;
+	owl:disjointWith :c-9058566-4923189 .
+
+:c-9058566-4923189 a owl:Class ;
+	rdfs:label "Préférence"@fr .
+
+:c-9412558-6009078 a owl:Class ;
+	rdfs:label "Auteur qui n'est pas relecteur"@fr ;
+	rdfs:subClassOf :c-0480911-0003886 .

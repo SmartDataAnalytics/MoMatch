@@ -1,0 +1,65 @@
+hat E-Mailadresse,E-mail address
+hat Beitrag eingreicht,contribution submitted has 
+Datum der Einreichung des kompletten Beitrags ist,Date of submission of the complete contribution is
+Anzahl der Fortschritte der Konferenz,Number of progress of the conference
+Verleger des Konferenzfortschritts ist,Publisher of the conference progress
+hat Ausschussvorsitzender,Chairman of the Committee, has 
+eingeladen von Gutachter,invited reviewer
+ISBN der Fortschritte ist,ISBN progress
+ist Organisationsausschuss der Konferenz,organization Committee of the conference
+ist Anfangsdatum,is the start date
+Programmausschuss der Konferenz ist,Program Committee of the conference is
+hat stellvertrenden Ausschussvorsitzender,has the Deputy Committee Chairman
+URL der Konferenz ist,URL of the conference is
+hat Zusammenfassung,has summary
+ist Leiter des Workshops,is the head of the Workshops
+Präferenz oder Fachgebiet des Gutachters ist,Preference or area of expertise of the expert
+Grad des Fachgebiets des Gutachters ist,Degree in the subject area of the expert
+veröffentlicht,published
+ist Thema ein Konferenzabschnittes,the conference portion is the subject of
+Datum der druckfertigen Einreichung ist,Date of print-ready submission
+hat Workshop,has Workshop
+hat eine zugewiesene Gutachterpräferenz,a assigned to reviewer preference has 
+ist der erst Teil von,the first part of
+Ausschuss der Konferenz ist,Committee of the conference is
+hat Geschlecht,has sex
+ist am folgenden Datum veröffentlicht worden,has been published on the following date
+ist Ausschuss der Konferenz,Committee of the conference
+Organisationsausschuss der Konferenz ist,The organizing Committee of the conference is
+hat Mitglieder,members
+begutachtet Beitrag,assessed contribution
+ist Programmausschuss der Konferenz,program Committee of the conference
+ist ein präferiertes Thema oder Fachgebiet eines Gutachters,is a preferred topic or subject area of an assessor
+hat Beitrag,has contribution
+hat Abschnitt,section
+lädt Mitgutachter ein,invites Mitgutachter
+ist Mitglied von,is a member of
+ist ein wichtiges Datum einer Konferenzreihe,is an important date for a conference series
+Datum der Akzeptanz-Mitteilung ist,The date of the acceptance notice is
+hat Workshop-Leitung,Workshop-management
+hat Nachnamen,has last name
+ist Enddatum,is the end date
+hat Thema oder Beitrag eingereicht,has the topic or post submitted
+hat Abfolge,has sequence
+ist Vorsitzender des Ausschusses,is the Chairman of the Committee
+Steuerungsausschuss der Konferenz ist,The steering Committee of the conference is
+Datum der Einreichung des Zusammenfassungen,Date of submission of the summaries
+ist Teil der Konferenzreihe,is part of the conference series
+ist Steuerungsausschuss der Konferenz,control Committee of the conference
+ist eingereicht für,is submitted for
+ist ein präferiertes Thema eines Gutachters,is a preferred topic of an assessor
+hat Fachgutachten,expert opinion has
+präsentiert von,presented by
+liefert Konferenzbeitrag,provides conference contribution
+hat Tutorium,has tutorial
+hält Präsentation,holds presentation
+hat Author,has Author
+hat Workshop-Thema,Workshop theme
+hat Gutachten,has review
+Ort der Konferenz,Place of the conference
+AnnotationProperty,Annotation property
+Grad der Gutachterpräferenz,Degree of the expert's preference
+hat Vornamen,has a first name
+hat wichtiges Datum,has important date
+hat Name,has Name
+ist stellvertretender Vorsitzender des Ausschusses,is the Deputy Chairman of the Committee

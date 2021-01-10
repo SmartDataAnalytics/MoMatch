@@ -1,0 +1,73 @@
+university,université
+tutorial chair,tutoriel président
+individual presentation,présentation individuelle
+tutorial,tutoriel
+industrial paper,papier industriel
+negative review,critique négative
+poster session,séance d'affiches
+camera ready paper,prêt pour la caméra de papier
+web site,site web
+pc member,pc membre
+presenter,présentateur
+neutral review,examen neutre
+oc chair,oc président
+submitted paper,document présenté
+poster paper,affiche papier
+evaluated paper,évalué papier
+demo session,séance de démonstration
+proceedings publisher,la procédure de l'éditeur
+early registered participant,début du participant inscrit
+academic institution,établissement d'enseignement
+flyer,flyer
+accepted paper,article accepté
+review,examen
+industrial session,industrielle session
+positive review,critique positive
+session,session
+conference trip,conférence de voyage
+contributed talk,contribué parler
+invited talk,conférence invitée
+event,l'événement
+workshop session,session de l'atelier
+session chair,président de séance
+paper author,le papier auteur
+conference proceedings,actes de la conférence
+demo paper,démo de papier
+conference participant,les participants à la conférence
+paper,papier
+scientific event,manifestation scientifique
+abstract,résumé
+workshop paper,l'atelier du livre
+multi author volume,multi auteur de volume
+social event,événement social
+conference,conférence
+proceedings,la procédure
+workshop,atelier
+regular session,session ordinaire
+invited talk abstract,invitée abstrait
+assigned paper,attribué papier
+conference session,session de la conférence
+track,piste
+invited speaker,conférencier invité
+research institute,institut de recherche
+research topic,sujet de recherche
+conference paper,document de la conférence
+rejected paper,rejeté papier
+organization,organisation
+late registered participant,la fin de participant inscrit
+location,emplacement
+organising agency,l'organisation de l'agence
+person,personne
+workshop chair,président de l'atelier
+conference banquet,conférence de banquet
+regular paper,papier ordinaire
+oc member,oc membre
+possible reviewer,possible examinateur
+pc chair,pc présidente de
+demo chair,démo président
+student,étudiant
+agency staff member,le personnel de l'agence membre
+document,document
+sc member,sc membre
+programme brochure,la brochure du programme
+tutorial abstract,tutoriel abstrait

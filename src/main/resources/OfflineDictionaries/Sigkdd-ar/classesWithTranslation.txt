@@ -1,0 +1,50 @@
+آخر موعد,The last date
+الراعي كمقدم,Sponsor as a provider of
+كاتب,Writer
+جائزة لأفضل مقالة في المؤتمر,Prize for the best article in the conference
+آخر موعد للإخطار الباحثين,The last date of the notification by the researchers
+منظمي المؤتمر,The organizers of the conference
+جائزة أفضل بحث لطالب,The award for the best research student
+SIG رسوم التسجيل للاشخاص الذين ليسوا أعضاء,SIG registration fee for people who are not members of the
+اللجنة العلمية,Scientific committee
+sigmod رسوم التسجيل لأعضاء,sigmod registration fee for members
+آخر موعد لتسليم ملخصات الأبحاث,The last date for students to submit summaries of research
+مستمع المؤتمر,The level of the conference
+الراعي لأفضل بحث طالب,The sponsor for the best research student
+رئيس اللجنة العلمية,Chairman of the scientific committee
+اللجنة التحضيرية,The preparatory committee
+المؤتمر,conference
+رسوم الرعاة,Fee sponsors
+جائزة لأفضل مقالة بحث,Prize for the best essay search
+الوثيقة,Document
+شخص,Someone
+مراجع الحسابات المؤتمر,Auditor conference
+الراعي البرونزي للمؤتمر,Bronze sponsor of the conference
+مدير المؤتمر,The conference manager
+الرعاة,Sponsors
+رسوم التسجيل,Registration fee
+sigkdd رسوم التسجيل لأعضاء,sigkdd registration fee for members
+البحث,Search
+آخر موعد لإرسال البحوث,The last date to send the research
+كاتب البحث طالب,Writer, research student
+مراجعة,Review
+لاشيئ,Nothing
+المؤتمر acm sigkdd,Conference acm sigkdd
+الراعي البلاتيني للمؤتمر,Platinum sponsor of the conference
+عضو اللجنة العلمية,Member of the scientific committee
+رسوم المؤتمر,Conference fees
+لجان المؤتمر,Committees of the conference
+الراعي الذهبي للمؤتمر,Gold sponsor of the conference
+الراعى الفضى للمؤتمر,Silver sponsor of the conference
+ملخص البحث,Research summary
+أفضل بحث تطبيقي,The best applied research
+رسوم التسجيل لطالب,Registration fee for student
+المسؤول عن الموقع,Webmaster
+كاتب البحث,Writer search
+المكتب الرئيسي للمؤتمر,The main venue of the conference
+الفندق,The hotel
+مكان,Place
+لجنة لاختيار أفضل البحوث,The committee to choose the best research
+المحاضر المدعو,The invited lecturer
+مكان انعقاد المؤتمر,The conference venue
+عضو اللجنة التحضيرية,Member of the preparatory committee

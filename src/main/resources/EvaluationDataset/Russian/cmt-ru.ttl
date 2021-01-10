@@ -1,0 +1,525 @@
+@prefix : <http://cmt_ru#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://cmt_ru> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+:op-0248595-8765277 a owl:ObjectProperty ;
+	rdfs:label "закончил рецензию"@ru ;
+	rdfs:domain :c-3253065-3482461 ;
+	rdfs:range :c-7626630-3082011 .
+
+:op-0421050-1357949 a owl:ObjectProperty ;
+	rdfs:label "тематическая область"@ru ;
+	rdfs:domain :c-1449639-0204386 ;
+	rdfs:range :c-9823120-3643272 .
+
+:op-0615862-7577846 a owl:ObjectProperty , owl:FunctionalProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "принимает статью"@ru ;
+	rdfs:domain :c-0431702-9352529 ;
+	rdfs:range :c-1449639-0204386 ;
+	owl:inverseOf :op-4144004-4735163 .
+
+:op-0734264-3785594 a owl:ObjectProperty ;
+	rdfs:label "назначена кому"@ru ;
+	rdfs:domain :c-1449639-0204386 ;
+	rdfs:range :c-8426382-7561331 .
+
+:op-0899475-8100977 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "изменяет ставку"@ru ;
+	rdfs:range :c-4228744-2741801 ;
+	rdfs:domain :c-8426382-7561331 ;
+	owl:inverseOf :op-5354277-8977438 .
+
+:op-0918347-8897928 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "кем написано"@ru ;
+	rdfs:domain :c-7626630-3082011 ;
+	rdfs:range :c-8426382-7561331 ;
+	owl:inverseOf :op-3634030-2302616 .
+
+:op-0938084-9328951 a owl:ObjectProperty ;
+	rdfs:label "прочитано рецензентом"@ru ;
+	rdfs:domain :c-1449639-0204386 ;
+	rdfs:range :c-8426382-7561331 .
+
+:op-1083402-1771371 a owl:ObjectProperty ;
+	rdfs:label "отметить конфликт интересов"@ru ;
+	rdfs:range :c-1449639-0204386 ;
+	rdfs:domain _:node1e05dglatx1 .
+
+_:node1e05dglatx1 a owl:Class ;
+	owl:unionOf _:node1e05dglatx2 .
+
+_:node1e05dglatx2 rdf:first :c-3696081-5776907 ;
+	rdf:rest _:node1e05dglatx3 .
+
+_:node1e05dglatx3 rdf:first :c-6544163-8337298 ;
+	rdf:rest _:node1e05dglatx4 .
+
+_:node1e05dglatx4 rdf:first :c-8426382-7561331 ;
+	rdf:rest rdf:nil .
+
+:op-1115483-1560386 a owl:ObjectProperty ;
+	rdfs:label "написать статью в соавторстве"@ru ;
+	rdfs:range :c-1449639-0204386 ;
+	rdfs:domain :c-4846170-9804375 .
+
+:op-1571552-8169674 a owl:ObjectProperty ;
+	rdfs:label "кем введены критерии рецензирования"@ru ;
+	rdfs:range :c-0431702-9352529 ;
+	rdfs:domain :c-5374498-2488870 ;
+	owl:inverseOf :op-8696871-2036393 .
+
+:op-1785777-4419267 a owl:ObjectProperty ;
+	rdfs:label "член программного коммитета"@ru ;
+	rdfs:domain :c-0262502-8961327 ;
+	rdfs:range :c-8140011-4675339 ;
+	owl:inverseOf :op-9066307-6395104 .
+
+:op-2513795-1563947 a owl:ObjectProperty ;
+	rdfs:label "назначает рецензента"@ru ;
+	rdfs:domain :c-0431702-9352529 ;
+	rdfs:range :c-8426382-7561331 ;
+	owl:inverseOf :op-5741507-4423016 .
+
+:op-2668260-5651787 a owl:ObjectProperty ;
+	rdfs:label "начало размещения ставок рецензента"@ru ;
+	rdfs:domain :c-0431702-9352529 ;
+	rdfs:range :c-5374498-2488870 ;
+	owl:inverseOf :op-8712218-3426393 .
+
+:op-3183932-3428720 a owl:ObjectProperty ;
+	rdfs:label "закончить назначение статей"@ru ;
+	rdfs:domain :c-0431702-9352529 ;
+	rdfs:range :c-5374498-2488870 ;
+	owl:inverseOf :op-7245860-8140291 .
+
+:op-3359706-4957607 a owl:ObjectProperty ;
+	rdfs:label "член конференции"@ru ;
+	rdfs:domain :c-5374498-2488870 ;
+	rdfs:range :c-8743351-7621853 ;
+	owl:inverseOf :op-7551185-7738136 .
+
+:op-3634030-2302616 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "пишет рецензию"@ru ;
+	rdfs:range :c-7626630-3082011 ;
+	rdfs:domain :c-8426382-7561331 .
+
+:op-3637354-4465637 a owl:ObjectProperty ;
+	rdfs:label "соавтор"@ru ;
+	rdfs:domain :c-1449639-0204386 ;
+	rdfs:range :c-4846170-9804375 ;
+	owl:inverseOf :op-1115483-1560386 .
+
+:op-4077641-6566492 a owl:ObjectProperty ;
+	rdfs:label "кем запущена программа назначения статей"@ru ;
+	rdfs:range :c-0431702-9352529 ;
+	rdfs:domain :c-5374498-2488870 .
+
+:op-4144004-4735163 a owl:ObjectProperty , owl:FunctionalProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "кем принято"@ru ;
+	rdfs:range :c-0431702-9352529 ;
+	rdfs:domain :c-1449639-0204386 .
+
+:op-4269953-4864796 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "автор"@ru ;
+	rdfs:domain :c-1449639-0204386 ;
+	rdfs:range :c-3696081-5776907 ;
+	owl:inverseOf :op-5182518-6772915 .
+
+:op-4442065-5567313 a owl:ObjectProperty ;
+	rdfs:label "кем запущена программа назначения статей"@ru ;
+	rdfs:domain :c-0431702-9352529 ;
+	rdfs:range :c-5374498-2488870 ;
+	owl:inverseOf :op-4077641-6566492 .
+
+:op-4515232-8202439 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "отклоняет статью"@ru ;
+	rdfs:domain :c-0431702-9352529 ;
+	rdfs:range :c-1449639-0204386 ;
+	owl:inverseOf :op-9330734-2759408 .
+
+:op-4655272-1850333 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "кем добавлено"@ru ;
+	rdfs:range :c-0431702-9352529 ;
+	rdfs:domain :c-8140011-4675339 ;
+	owl:inverseOf :op-7001176-3880025 .
+
+:op-4675140-9473550 a owl:ObjectProperty ;
+	rdfs:label "внести детали конференции"@ru ;
+	rdfs:domain :c-0431702-9352529 ;
+	rdfs:range :c-5374498-2488870 ;
+	owl:inverseOf :op-4701777-5185749 .
+
+:op-4701777-5185749 a owl:ObjectProperty ;
+	rdfs:label "кем внесены детали"@ru ;
+	rdfs:range :c-0431702-9352529 ;
+	rdfs:domain :c-5374498-2488870 .
+
+:op-5182518-6772915 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "пишет статью"@ru ;
+	rdfs:range :c-1449639-0204386 ;
+	rdfs:domain :c-3696081-5776907 .
+
+:op-5350425-1940234 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "назначает внешнего рецензента"@ru ;
+	rdfs:domain :c-8426382-7561331 ;
+	rdfs:range :c-9572951-5457499 .
+
+:op-5354277-8977438 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "кем изменена"@ru ;
+	rdfs:domain :c-4228744-2741801 ;
+	rdfs:range :c-8426382-7561331 .
+
+:op-5741507-4423016 a owl:ObjectProperty ;
+	rdfs:label "назначен администратором"@ru ;
+	rdfs:range :c-0431702-9352529 ;
+	rdfs:domain :c-8426382-7561331 .
+
+:op-5762496-9298917 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "ставка"@ru ;
+	rdfs:domain :c-1449639-0204386 ;
+	rdfs:range :c-4228744-2741801 .
+
+:op-6397821-0257281 a owl:ObjectProperty ;
+	rdfs:label "установить максимум статей"@ru ;
+	rdfs:domain :c-0431702-9352529 ;
+	rdfs:range :c-8140011-4675339 .
+
+:op-6404605-2933801 a owl:ObjectProperty ;
+	rdfs:label "назначена"@ru ;
+	rdfs:range :c-1449639-0204386 ;
+	rdfs:domain :c-8426382-7561331 ;
+	owl:inverseOf :op-0734264-3785594 .
+
+:op-6800407-6009371 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "решение"@ru ;
+	rdfs:domain :c-1449639-0204386 ;
+	rdfs:range :c-8294812-6660316 .
+
+:op-6807164-7565888 a owl:ObjectProperty ;
+	rdfs:label "кем разершёна виртуальная встреча"@ru ;
+	rdfs:range :c-0431702-9352529 ;
+	rdfs:domain :c-5374498-2488870 .
+
+:op-6875576-8732585 a owl:ObjectProperty ;
+	rdfs:label "hardcopyMailingManifestsPrintedBy"@ru ;
+	rdfs:range :c-0431702-9352529 ;
+	rdfs:domain :c-5374498-2488870 ;
+	owl:inverseOf :op-7526096-8186272 .
+
+:op-7001176-3880025 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "добавляет члена программного коммитета"@ru ;
+	rdfs:domain :c-0431702-9352529 ;
+	rdfs:range :c-8140011-4675339 .
+
+:op-7210644-6009289 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "прочитано мета-рецензентом"@ru ;
+	rdfs:domain :c-1449639-0204386 ;
+	rdfs:range :c-2009116-5703380 .
+
+:op-7245860-8140291 a owl:ObjectProperty ;
+	rdfs:label "кем закончено назначение статей"@ru ;
+	rdfs:range :c-0431702-9352529 ;
+	rdfs:domain :c-5374498-2488870 .
+
+:op-7518378-0077697 a owl:ObjectProperty ;
+	rdfs:label "конфликт интересов"@ru ;
+	rdfs:range :c-1200416-1719045 ;
+	rdfs:domain :c-2683356-2886427 .
+
+:op-7526096-8186272 a owl:ObjectProperty ;
+	rdfs:label "printHardcopyMailingManifests"@ru ;
+	rdfs:domain :c-0431702-9352529 ;
+	rdfs:range :c-5374498-2488870 .
+
+:op-7551185-7738136 a owl:ObjectProperty ;
+	rdfs:label "член конференции"@ru ;
+	rdfs:range :c-5374498-2488870 ;
+	rdfs:domain :c-8743351-7621853 .
+
+:op-7793864-4453194 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "назначен рецензентом"@ru ;
+	rdfs:range :c-8426382-7561331 ;
+	rdfs:domain :c-9572951-5457499 ;
+	owl:inverseOf :op-5350425-1940234 .
+
+:op-8696871-2036393 a owl:ObjectProperty ;
+	rdfs:label "внести критерии рецензирования"@ru ;
+	rdfs:domain :c-0431702-9352529 ;
+	rdfs:range :c-5374498-2488870 .
+
+:op-8712218-3426393 a owl:ObjectProperty ;
+	rdfs:label "кем начато размещение ставок рецензента"@ru ;
+	rdfs:range :c-0431702-9352529 ;
+	rdfs:domain :c-5374498-2488870 .
+
+:op-8861411-7531463 a owl:ObjectProperty ;
+	rdfs:label "подать статью"@ru ;
+	rdfs:range :c-1449639-0204386 ;
+	rdfs:domain :c-3696081-5776907 .
+
+:op-9066307-6395104 a owl:ObjectProperty ;
+	rdfs:label "член программного коммитета"@ru ;
+	rdfs:range :c-0262502-8961327 ;
+	rdfs:domain :c-8140011-4675339 .
+
+:op-9330734-2759408 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "кем отклонено"@ru ;
+	rdfs:range :c-0431702-9352529 ;
+	rdfs:domain :c-1449639-0204386 .
+
+:op-9639505-8922506 a owl:ObjectProperty ;
+	rdfs:label "разрешить виртуальную встречу"@ru ;
+	rdfs:domain :c-0431702-9352529 ;
+	rdfs:range :c-5374498-2488870 ;
+	owl:inverseOf :op-6807164-7565888 .
+
+:op-9905932-0790027 a owl:ObjectProperty ;
+	rdfs:label "читает статью"@ru ;
+	rdfs:range :c-1449639-0204386 ;
+	rdfs:domain :c-8426382-7561331 ;
+	owl:inverseOf :op-0938084-9328951 .
+
+:ent-1959932-4309624 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "принимает печатные заявки"@ru ;
+	rdfs:domain :c-5374498-2488870 ;
+	rdfs:range xsd:boolean .
+
+:ent-2284473-2935529 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "интернет-адрес логотипа"@ru ;
+	rdfs:domain :c-5374498-2488870 ;
+	rdfs:range xsd:anyURI .
+
+:ent-2402171-8040413 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "рецензенты статьи"@ru ;
+	rdfs:domain :c-5374498-2488870 ;
+	rdfs:range xsd:int .
+
+:ent-2728158-9834392 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "имя"@ru ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05dglatx5 .
+
+_:node1e05dglatx5 a owl:Class ;
+	owl:unionOf _:node1e05dglatx6 .
+
+_:node1e05dglatx6 rdf:first :c-2683356-2886427 ;
+	rdf:rest _:node1e05dglatx7 .
+
+_:node1e05dglatx7 rdf:first :c-5374498-2488870 ;
+	rdf:rest rdf:nil .
+
+:ent-3018977-7157738 a owl:DatatypeProperty ;
+	rdfs:label "число"@ru ;
+	rdfs:domain :c-5374498-2488870 ;
+	rdfs:range xsd:date .
+
+:ent-5354486-6390562 a owl:DatatypeProperty ;
+	rdfs:label "адрес электронной почты"@ru ;
+	rdfs:domain :c-2683356-2886427 ;
+	rdfs:range xsd:string .
+
+:ent-5572805-1098327 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "идентификатор статьи"@ru ;
+	rdfs:domain :c-1449639-0204386 ;
+	rdfs:range xsd:unsignedLong .
+
+:ent-6537351-0595193 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "максимум статей"@ru ;
+	rdfs:domain :c-8140011-4675339 ;
+	rdfs:range xsd:int .
+
+:ent-6860606-5339895 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "заголовок"@ru ;
+	rdfs:domain :c-1449639-0204386 ;
+	rdfs:range xsd:string .
+
+:ent-9926005-7349993 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "интернет-адрес сайта"@ru ;
+	rdfs:domain :c-5374498-2488870 ;
+	rdfs:range xsd:anyURI .
+
+:c-0262502-8961327 a owl:Class ;
+	rdfs:label "Программный коммитет"@ru ;
+	owl:disjointWith :c-1200416-1719045 , :c-2683356-2886427 , :c-4228744-2741801 , :c-4901384-1452373 , :c-5374498-2488870 , :c-8294812-6660316 .
+
+:c-0431702-9352529 a owl:Class ;
+	rdfs:label "Администратор"@ru ;
+	rdfs:subClassOf :c-7977088-3410524 .
+
+:c-1200416-1719045 a owl:Class ;
+	rdfs:label "Документ"@ru ;
+	owl:disjointWith :c-2683356-2886427 , :c-4228744-2741801 , :c-4901384-1452373 , :c-5374498-2488870 , :c-8294812-6660316 .
+
+:c-1449639-0204386 a owl:Class ;
+	rdfs:label "Статья"@ru ;
+	rdfs:subClassOf :c-1200416-1719045 , _:node1e05dglatx8 .
+
+_:node1e05dglatx8 a owl:Restriction ;
+	owl:onProperty :op-6800407-6009371 ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-1449639-0204386 rdfs:subClassOf _:node1e05dglatx9 .
+
+_:node1e05dglatx9 a owl:Restriction ;
+	owl:onProperty :op-7210644-6009289 ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-1449639-0204386 rdfs:subClassOf _:node1e05dglatx10 .
+
+_:node1e05dglatx10 a owl:Restriction ;
+	owl:onProperty :op-6800407-6009371 ;
+	owl:minCardinality "0"^^xsd:nonNegativeInteger .
+
+:c-1449639-0204386 rdfs:subClassOf _:node1e05dglatx11 .
+
+_:node1e05dglatx11 a owl:Restriction ;
+	owl:onProperty :op-0938084-9328951 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-1449639-0204386 owl:disjointWith :c-7626630-3082011 .
+
+:c-2009116-5703380 a owl:Class ;
+	rdfs:label "Мета-Рецензент"@ru ;
+	rdfs:subClassOf :c-8426382-7561331 .
+
+:c-2394876-1588025 a owl:Class ;
+	rdfs:label "Аннотация статьи"@ru ;
+	rdfs:subClassOf :c-1449639-0204386 .
+
+:c-2683356-2886427 a owl:Class ;
+	rdfs:label "Лицо"@ru ;
+	owl:disjointWith :c-4228744-2741801 , :c-4901384-1452373 , :c-5374498-2488870 , :c-8294812-6660316 .
+
+:c-3253065-3482461 a owl:Class ;
+	rdfs:label "Председатель программного коммитета"@ru ;
+	rdfs:subClassOf :c-8140011-4675339 .
+
+:c-3696081-5776907 a owl:Class ;
+	rdfs:label "Автор"@ru ;
+	rdfs:subClassOf :c-7977088-3410524 , :c-8743351-7621853 .
+
+:c-4228744-2741801 a owl:Class ;
+	rdfs:label "Ставка"@ru ;
+	owl:disjointWith :c-4901384-1452373 , :c-5374498-2488870 , :c-8294812-6660316 .
+
+:c-4846170-9804375 a owl:Class ;
+	rdfs:label "Соавтор"@ru ;
+	rdfs:subClassOf :c-3696081-5776907 .
+
+:c-4901384-1452373 a owl:Class ;
+	rdfs:label "Предпочтение"@ru ;
+	owl:disjointWith :c-5374498-2488870 , :c-8294812-6660316 .
+
+:c-5213926-1265113 a owl:Class ;
+	rdfs:label "Председатель конференции"@ru ;
+	rdfs:subClassOf :c-8743351-7621853 ;
+	owl:disjointWith :c-9394588-5515721 .
+
+:c-5374498-2488870 a owl:Class ;
+	rdfs:label "Конференция"@ru ;
+	rdfs:subClassOf owl:Thing , _:node1e05dglatx12 .
+
+_:node1e05dglatx12 a owl:Restriction ;
+	owl:onProperty :ent-2402171-8040413 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5374498-2488870 rdfs:subClassOf _:node1e05dglatx13 .
+
+_:node1e05dglatx13 a owl:Restriction ;
+	owl:onProperty :ent-2728158-9834392 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5374498-2488870 rdfs:subClassOf _:node1e05dglatx14 .
+
+_:node1e05dglatx14 a owl:Restriction ;
+	owl:onProperty :ent-3018977-7157738 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5374498-2488870 owl:disjointWith :c-8294812-6660316 .
+
+:c-5701994-2128478 a owl:Class ;
+	rdfs:label "Полная версия статьи"@ru ;
+	rdfs:subClassOf :c-1449639-0204386 .
+
+:c-6368135-0745827 a owl:Class ;
+	rdfs:label "Отклонение"@ru ;
+	rdfs:subClassOf :c-8294812-6660316 ;
+	owl:disjointWith :c-6729620-2692521 .
+
+:c-6544163-8337298 a owl:Class ;
+	rdfs:label "Председатель"@ru ;
+	owl:equivalentClass _:node1e05dglatx15 .
+
+_:node1e05dglatx15 a owl:Class ;
+	owl:unionOf _:node1e05dglatx16 .
+
+_:node1e05dglatx16 rdf:first :c-3253065-3482461 ;
+	rdf:rest _:node1e05dglatx17 .
+
+_:node1e05dglatx17 rdf:first :c-5213926-1265113 ;
+	rdf:rest _:node1e05dglatx18 .
+
+_:node1e05dglatx18 rdf:first :c-9394588-5515721 ;
+	rdf:rest rdf:nil .
+
+:c-6544163-8337298 rdfs:subClassOf :c-2683356-2886427 .
+
+:c-6729620-2692521 a owl:Class ;
+	rdfs:label "Принятие"@ru ;
+	rdfs:subClassOf :c-8294812-6660316 .
+
+:c-6877591-4235224 a owl:Class ;
+	rdfs:label "Мета-Рецензия"@ru ;
+	rdfs:subClassOf :c-7626630-3082011 .
+
+:c-7528802-8793845 a owl:Class ;
+	rdfs:label "Автор не являющийся рецензентом"@ru ;
+	rdfs:subClassOf :c-3696081-5776907 ;
+	owl:disjointWith :c-8140011-4675339 , :c-8426382-7561331 .
+
+:c-7626630-3082011 a owl:Class ;
+	rdfs:label "Рецензия"@ru ;
+	rdfs:subClassOf :c-1200416-1719045 .
+
+:c-7977088-3410524 a owl:Class ;
+	rdfs:label "Пользователь"@ru ;
+	rdfs:subClassOf :c-2683356-2886427 .
+
+:c-8140011-4675339 a owl:Class ;
+	rdfs:label "Член программного коммитета"@ru ;
+	rdfs:subClassOf :c-2683356-2886427 , :c-8743351-7621853 .
+
+:c-8294812-6660316 a owl:Class ;
+	rdfs:label "Решение"@ru .
+
+:c-8426382-7561331 a owl:Class ;
+	rdfs:label "Рецензент"@ru ;
+	rdfs:subClassOf :c-7977088-3410524 , :c-8743351-7621853 ;
+	owl:disjointWith :c-9572951-5457499 .
+
+:c-8743351-7621853 a owl:Class ;
+	rdfs:label "Член конференции"@ru ;
+	rdfs:subClassOf :c-2683356-2886427 .
+
+:c-9394588-5515721 a owl:Class ;
+	rdfs:label "Заместитель председателя"@ru ;
+	rdfs:subClassOf :c-8743351-7621853 .
+
+:c-9572951-5457499 a owl:Class ;
+	rdfs:label "Внешний рецензент"@ru ;
+	rdfs:subClassOf :c-2683356-2886427 , _:node1e05dglatx19 .
+
+_:node1e05dglatx19 a owl:Restriction ;
+	owl:onProperty :op-7793864-4453194 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-9823120-3643272 a owl:Class ;
+	rdfs:label "Тематическая область"@ru .

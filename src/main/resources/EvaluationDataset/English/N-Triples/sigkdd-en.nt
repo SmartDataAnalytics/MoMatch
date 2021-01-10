@@ -1,0 +1,257 @@
+<http://sigkdd_en> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://sigkdd_en#op-0358048-9340662> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-0358048-9340662> <http://www.w3.org/2000/01/rdf-schema#label> "sponzor are called by"@en .
+<http://sigkdd_en#op-0358048-9340662> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-1350325-0780321> .
+<http://sigkdd_en#op-0358048-9340662> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-4095132-8928036> .
+<http://sigkdd_en#op-0893463-6791984> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-0893463-6791984> <http://www.w3.org/2000/01/rdf-schema#label> "has deadline for submission"@en .
+<http://sigkdd_en#op-0893463-6791984> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-4448805-6156000> .
+<http://sigkdd_en#op-0893463-6791984> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-4561947-0725440> .
+<http://sigkdd_en#op-1929902-8457454> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-1929902-8457454> <http://www.w3.org/2000/01/rdf-schema#label> "obtained award"@en .
+<http://sigkdd_en#op-1929902-8457454> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-4834530-8825541> .
+<http://sigkdd_en#op-1929902-8457454> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-8492343-3188887> .
+<http://sigkdd_en#op-1986890-7846167> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-1986890-7846167> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee paid by"@en .
+<http://sigkdd_en#op-1986890-7846167> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-6356419-4596819> .
+<http://sigkdd_en#op-1986890-7846167> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-6792972-5439604> .
+<http://sigkdd_en#op-3129961-5988302> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-3129961-5988302> <http://www.w3.org/2000/01/rdf-schema#label> "call for sponzor"@en .
+<http://sigkdd_en#op-3129961-5988302> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-1350325-0780321> .
+<http://sigkdd_en#op-3129961-5988302> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-4095132-8928036> .
+<http://sigkdd_en#op-3129961-5988302> <http://www.w3.org/2002/07/owl#inverseOf> <http://sigkdd_en#op-0358048-9340662> .
+<http://sigkdd_en#op-4016118-2436545> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-4016118-2436545> <http://www.w3.org/2000/01/rdf-schema#label> "conference organized by"@en .
+<http://sigkdd_en#op-4016118-2436545> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-4095132-8928036> .
+<http://sigkdd_en#op-4016118-2436545> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-5031073-5159430> .
+<http://sigkdd_en#op-4016118-2436545> <http://www.w3.org/2002/07/owl#inverseOf> <http://sigkdd_en#op-4440329-9009612> .
+<http://sigkdd_en#op-4440329-9009612> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-4440329-9009612> <http://www.w3.org/2000/01/rdf-schema#label> "organize conference"@en .
+<http://sigkdd_en#op-4440329-9009612> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-4095132-8928036> .
+<http://sigkdd_en#op-4440329-9009612> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-5031073-5159430> .
+<http://sigkdd_en#op-4467419-9190823> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-4467419-9190823> <http://www.w3.org/2000/01/rdf-schema#label> "awarded by"@en .
+<http://sigkdd_en#op-4467419-9190823> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-8492343-3188887> .
+<http://sigkdd_en#op-4467419-9190823> <http://www.w3.org/2002/07/owl#inverseOf> <http://sigkdd_en#op-7781882-8225488> .
+<http://sigkdd_en#op-4524643-0591579> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-4524643-0591579> <http://www.w3.org/2000/01/rdf-schema#label> "paid registration fee"@en .
+<http://sigkdd_en#op-4524643-0591579> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-6356419-4596819> .
+<http://sigkdd_en#op-4524643-0591579> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-6792972-5439604> .
+<http://sigkdd_en#op-4524643-0591579> <http://www.w3.org/2002/07/owl#inverseOf> <http://sigkdd_en#op-1986890-7846167> .
+<http://sigkdd_en#op-4588680-8309474> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-4588680-8309474> <http://www.w3.org/2000/01/rdf-schema#label> "submit of paper"@en .
+<http://sigkdd_en#op-4588680-8309474> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-3705916-7930602> .
+<http://sigkdd_en#op-4588680-8309474> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-4834530-8825541> .
+<http://sigkdd_en#op-4778648-3039012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-4778648-3039012> <http://www.w3.org/2000/01/rdf-schema#label> "presents document"@en .
+<http://sigkdd_en#op-4778648-3039012> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-4448805-6156000> .
+<http://sigkdd_en#op-4778648-3039012> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-8570424-4038182> .
+<http://sigkdd_en#op-5101248-3088535> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-5101248-3088535> <http://www.w3.org/2000/01/rdf-schema#label> "was presented by"@en .
+<http://sigkdd_en#op-5101248-3088535> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-4448805-6156000> .
+<http://sigkdd_en#op-5101248-3088535> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-8570424-4038182> .
+<http://sigkdd_en#op-5101248-3088535> <http://www.w3.org/2002/07/owl#inverseOf> <http://sigkdd_en#op-4778648-3039012> .
+<http://sigkdd_en#op-5430589-5394464> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-5430589-5394464> <http://www.w3.org/2000/01/rdf-schema#label> "set-up deadline for"@en .
+<http://sigkdd_en#op-5430589-5394464> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-4095132-8928036> .
+<http://sigkdd_en#op-5430589-5394464> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-4561947-0725440> .
+<http://sigkdd_en#op-5430589-5394464> <http://www.w3.org/2002/07/owl#inverseOf> <http://sigkdd_en#op-7996089-2358292> .
+<http://sigkdd_en#op-5788630-0787234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-5788630-0787234> <http://www.w3.org/2000/01/rdf-schema#label> "deadline of author notification"@en .
+<http://sigkdd_en#op-5788630-0787234> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-4834530-8825541> .
+<http://sigkdd_en#op-5788630-0787234> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-7201186-4592712> .
+<http://sigkdd_en#op-7662020-6424075> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-7662020-6424075> <http://www.w3.org/2000/01/rdf-schema#label> "stay in"@en .
+<http://sigkdd_en#op-7662020-6424075> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-1144746-3205183> .
+<http://sigkdd_en#op-7662020-6424075> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-6792972-5439604> .
+<http://sigkdd_en#op-7781882-8225488> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-7781882-8225488> <http://www.w3.org/2000/01/rdf-schema#label> "has award"@en .
+<http://sigkdd_en#op-7781882-8225488> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-8492343-3188887> .
+<http://sigkdd_en#op-7996089-2358292> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_en#op-7996089-2358292> <http://www.w3.org/2000/01/rdf-schema#label> "set-up deadline"@en .
+<http://sigkdd_en#op-7996089-2358292> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-4095132-8928036> .
+<http://sigkdd_en#op-7996089-2358292> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_en#c-4561947-0725440> .
+<http://sigkdd_en#ent-0035096-2402503> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_en#ent-0035096-2402503> <http://www.w3.org/2000/01/rdf-schema#label> "is dated on"@en .
+<http://sigkdd_en#ent-0035096-2402503> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-4561947-0725440> .
+<http://sigkdd_en#ent-0035096-2402503> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://sigkdd_en#ent-1255069-8857146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_en#ent-1255069-8857146> <http://www.w3.org/2000/01/rdf-schema#label> "has price"@en .
+<http://sigkdd_en#ent-1255069-8857146> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-6356419-4596819> .
+<http://sigkdd_en#ent-1255069-8857146> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://sigkdd_en#ent-1904903-3191481> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_en#ent-1904903-3191481> <http://www.w3.org/2000/01/rdf-schema#label> "has sponzor name"@en .
+<http://sigkdd_en#ent-1904903-3191481> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-1350325-0780321> .
+<http://sigkdd_en#ent-1904903-3191481> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_en#ent-2375537-3899257> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_en#ent-2375537-3899257> <http://www.w3.org/2000/01/rdf-schema#label> "has name of conference"@en .
+<http://sigkdd_en#ent-2375537-3899257> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-5031073-5159430> .
+<http://sigkdd_en#ent-2375537-3899257> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_en#ent-4334834-0139494> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_en#ent-4334834-0139494> <http://www.w3.org/2000/01/rdf-schema#label> "date of final day of conference"@en .
+<http://sigkdd_en#ent-4334834-0139494> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-5031073-5159430> .
+<http://sigkdd_en#ent-4334834-0139494> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://sigkdd_en#ent-4408730-1320391> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_en#ent-4408730-1320391> <http://www.w3.org/2000/01/rdf-schema#label> "has nationality"@en .
+<http://sigkdd_en#ent-4408730-1320391> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-6792972-5439604> .
+<http://sigkdd_en#ent-4408730-1320391> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_en#ent-5258086-9094070> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_en#ent-5258086-9094070> <http://www.w3.org/2000/01/rdf-schema#label> "date of starting day of conference"@en .
+<http://sigkdd_en#ent-5258086-9094070> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-5031073-5159430> .
+<http://sigkdd_en#ent-5258086-9094070> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://sigkdd_en#ent-5985310-3715518> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_en#ent-5985310-3715518> <http://www.w3.org/2000/01/rdf-schema#label> "conference takes place in city"@en .
+<http://sigkdd_en#ent-5985310-3715518> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-5031073-5159430> .
+<http://sigkdd_en#ent-5985310-3715518> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_en#ent-6795922-7675825> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_en#ent-6795922-7675825> <http://www.w3.org/2000/01/rdf-schema#label> "has email"@en .
+<http://sigkdd_en#ent-6795922-7675825> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-6792972-5439604> .
+<http://sigkdd_en#ent-6795922-7675825> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_en#ent-6945476-8980997> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_en#ent-6945476-8980997> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee is in currency"@en .
+<http://sigkdd_en#ent-6945476-8980997> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-6356419-4596819> .
+<http://sigkdd_en#ent-6945476-8980997> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_en#ent-8043331-3659734> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_en#ent-8043331-3659734> <http://www.w3.org/2000/01/rdf-schema#label> "has name"@en .
+<http://sigkdd_en#ent-8043331-3659734> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_en#c-6792972-5439604> .
+<http://sigkdd_en#ent-8043331-3659734> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_en#c-0092598-8150334> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-0092598-8150334> <http://www.w3.org/2000/01/rdf-schema#label> "platinum sponzor of conference"@en .
+<http://sigkdd_en#c-0092598-8150334> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-1350325-0780321> .
+<http://sigkdd_en#c-0410372-0876754> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-0410372-0876754> <http://www.w3.org/2000/01/rdf-schema#label> "author of paper"@en .
+<http://sigkdd_en#c-0410372-0876754> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-4834530-8825541> .
+<http://sigkdd_en#c-1144746-3205183> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-1144746-3205183> <http://www.w3.org/2000/01/rdf-schema#label> "place"@en .
+<http://sigkdd_en#c-1214605-4064522> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-1214605-4064522> <http://www.w3.org/2000/01/rdf-schema#label> "listener of conference"@en .
+<http://sigkdd_en#c-1214605-4064522> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-6792972-5439604> .
+<http://sigkdd_en#c-1350325-0780321> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-1350325-0780321> <http://www.w3.org/2000/01/rdf-schema#label> "sponzor"@en .
+<http://sigkdd_en#c-1615562-8494578> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-1615562-8494578> <http://www.w3.org/2000/01/rdf-schema#label> "award for best application paper"@en .
+<http://sigkdd_en#c-1615562-8494578> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-8492343-3188887> .
+<http://sigkdd_en#c-2170683-2078960> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-2170683-2078960> <http://www.w3.org/2000/01/rdf-schema#label> "gold sponzor of conference"@en .
+<http://sigkdd_en#c-2170683-2078960> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-1350325-0780321> .
+<http://sigkdd_en#c-2288341-0956338> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-2288341-0956338> <http://www.w3.org/2000/01/rdf-schema#label> "organizing committee"@en .
+<http://sigkdd_en#c-2288341-0956338> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-4956507-8354862> .
+<http://sigkdd_en#c-2636703-8787934> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-2636703-8787934> <http://www.w3.org/2000/01/rdf-schema#label> "hotel"@en .
+<http://sigkdd_en#c-2636703-8787934> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-1144746-3205183> .
+<http://sigkdd_en#c-2971568-4653657> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-2971568-4653657> <http://www.w3.org/2000/01/rdf-schema#label> "author of student paper"@en .
+<http://sigkdd_en#c-2971568-4653657> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-4834530-8825541> .
+<http://sigkdd_en#c-3063358-7931866> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-3063358-7931866> <http://www.w3.org/2000/01/rdf-schema#label> "sponzor for best student paper"@en .
+<http://sigkdd_en#c-3063358-7931866> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-1350325-0780321> .
+<http://sigkdd_en#c-3661201-8652994> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-3661201-8652994> <http://www.w3.org/2000/01/rdf-schema#label> "review"@en .
+<http://sigkdd_en#c-3661201-8652994> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-4448805-6156000> .
+<http://sigkdd_en#c-3705916-7930602> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-3705916-7930602> <http://www.w3.org/2000/01/rdf-schema#label> "paper"@en .
+<http://sigkdd_en#c-3705916-7930602> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-4448805-6156000> .
+<http://sigkdd_en#c-3782386-9035854> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-3782386-9035854> <http://www.w3.org/2000/01/rdf-schema#label> "award for best student paper"@en .
+<http://sigkdd_en#c-3782386-9035854> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-8492343-3188887> .
+<http://sigkdd_en#c-3800373-8198658> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-3800373-8198658> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee for student"@en .
+<http://sigkdd_en#c-3800373-8198658> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-6356419-4596819> .
+<http://sigkdd_en#c-3869300-1065009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-3869300-1065009> <http://www.w3.org/2000/01/rdf-schema#label> "bronze sponzor of conference"@en .
+<http://sigkdd_en#c-3869300-1065009> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-1350325-0780321> .
+<http://sigkdd_en#c-3967774-8138616> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-3967774-8138616> <http://www.w3.org/2000/01/rdf-schema#label> "conference fee"@en .
+<http://sigkdd_en#c-4095132-8928036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-4095132-8928036> <http://www.w3.org/2000/01/rdf-schema#label> "conference acm sigkdd"@en .
+<http://sigkdd_en#c-4095132-8928036> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://sigkdd_en#c-4249220-5767505> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-4249220-5767505> <http://www.w3.org/2000/01/rdf-schema#label> "member of organizing committee"@en .
+<http://sigkdd_en#c-4249220-5767505> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-5988514-6350175> .
+<http://sigkdd_en#c-4402529-2023643> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-4402529-2023643> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee for person not being member of SIG"@en .
+<http://sigkdd_en#c-4402529-2023643> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-6356419-4596819> .
+<http://sigkdd_en#c-4408098-5910124> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-4408098-5910124> <http://www.w3.org/2000/01/rdf-schema#label> "member of program committee"@en .
+<http://sigkdd_en#c-4408098-5910124> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-5988514-6350175> .
+<http://sigkdd_en#c-4448805-6156000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-4448805-6156000> <http://www.w3.org/2000/01/rdf-schema#label> "document"@en .
+<http://sigkdd_en#c-4512427-8358882> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-4512427-8358882> <http://www.w3.org/2000/01/rdf-schema#label> "invited speaker"@en .
+<http://sigkdd_en#c-4512427-8358882> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-8570424-4038182> .
+<http://sigkdd_en#c-4561947-0725440> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-4561947-0725440> <http://www.w3.org/2000/01/rdf-schema#label> "deadline"@en .
+<http://sigkdd_en#c-4834530-8825541> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-4834530-8825541> <http://www.w3.org/2000/01/rdf-schema#label> "author"@en .
+<http://sigkdd_en#c-4834530-8825541> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-8570424-4038182> .
+<http://sigkdd_en#c-4956507-8354862> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-4956507-8354862> <http://www.w3.org/2000/01/rdf-schema#label> "committee"@en .
+<http://sigkdd_en#c-5031073-5159430> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-5031073-5159430> <http://www.w3.org/2000/01/rdf-schema#label> "conference"@en .
+<http://sigkdd_en#c-5243564-3002269> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-5243564-3002269> <http://www.w3.org/2000/01/rdf-schema#label> "webmaster"@en .
+<http://sigkdd_en#c-5243564-3002269> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-5988514-6350175> .
+<http://sigkdd_en#c-5268789-8381535> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-5268789-8381535> <http://www.w3.org/2000/01/rdf-schema#label> "chair of conference"@en .
+<http://sigkdd_en#c-5268789-8381535> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-5988514-6350175> .
+<http://sigkdd_en#c-5937062-8520809> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-5937062-8520809> <http://www.w3.org/2000/01/rdf-schema#label> "program committee"@en .
+<http://sigkdd_en#c-5937062-8520809> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-4956507-8354862> .
+<http://sigkdd_en#c-5988514-6350175> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-5988514-6350175> <http://www.w3.org/2000/01/rdf-schema#label> "organizator of conference"@en .
+<http://sigkdd_en#c-5988514-6350175> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-6792972-5439604> .
+<http://sigkdd_en#c-6356419-4596819> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-6356419-4596819> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee"@en .
+<http://sigkdd_en#c-6356419-4596819> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-3967774-8138616> .
+<http://sigkdd_en#c-6558007-3948763> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-6558007-3948763> <http://www.w3.org/2000/01/rdf-schema#label> "silver sponzor of conference"@en .
+<http://sigkdd_en#c-6558007-3948763> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-1350325-0780321> .
+<http://sigkdd_en#c-6722062-3545965> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-6722062-3545965> <http://www.w3.org/2000/01/rdf-schema#label> "deadline of abstract submission"@en .
+<http://sigkdd_en#c-6722062-3545965> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-4561947-0725440> .
+<http://sigkdd_en#c-6792972-5439604> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-6792972-5439604> <http://www.w3.org/2000/01/rdf-schema#label> "person"@en .
+<http://sigkdd_en#c-6792972-5439604> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://sigkdd_en#c-7092519-9239674> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-7092519-9239674> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee for member of sigkdd"@en .
+<http://sigkdd_en#c-7092519-9239674> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-6356419-4596819> .
+<http://sigkdd_en#c-7165036-6864096> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-7165036-6864096> <http://www.w3.org/2000/01/rdf-schema#label> "deadline of paper submission"@en .
+<http://sigkdd_en#c-7165036-6864096> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-4561947-0725440> .
+<http://sigkdd_en#c-7201186-4592712> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-7201186-4592712> <http://www.w3.org/2000/01/rdf-schema#label> "deadline of author notification"@en .
+<http://sigkdd_en#c-7201186-4592712> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-4561947-0725440> .
+<http://sigkdd_en#c-7218530-9921151> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-7218530-9921151> <http://www.w3.org/2000/01/rdf-schema#label> "registration fee for member of sigmod"@en .
+<http://sigkdd_en#c-7218530-9921151> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-6356419-4596819> .
+<http://sigkdd_en#c-7287097-6354392> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-7287097-6354392> <http://www.w3.org/2000/01/rdf-schema#label> "program chair"@en .
+<http://sigkdd_en#c-7287097-6354392> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-5988514-6350175> .
+<http://sigkdd_en#c-7357680-6909888> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-7357680-6909888> <http://www.w3.org/2000/01/rdf-schema#label> "abstrakt"@en .
+<http://sigkdd_en#c-7357680-6909888> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-4448805-6156000> .
+<http://sigkdd_en#c-7909190-7180764> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-7909190-7180764> <http://www.w3.org/2000/01/rdf-schema#label> "sponzor as exhibitor"@en .
+<http://sigkdd_en#c-7909190-7180764> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-1350325-0780321> .
+<http://sigkdd_en#c-8492343-3188887> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-8492343-3188887> <http://www.w3.org/2000/01/rdf-schema#label> "award for conference paper"@en .
+<http://sigkdd_en#c-8570424-4038182> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-8570424-4038182> <http://www.w3.org/2000/01/rdf-schema#label> "person active at conference"@en .
+<http://sigkdd_en#c-8570424-4038182> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-6792972-5439604> .
+<http://sigkdd_en#c-8614980-2531823> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-8614980-2531823> <http://www.w3.org/2000/01/rdf-schema#label> "award for best research paper"@en .
+<http://sigkdd_en#c-8614980-2531823> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-8492343-3188887> .
+<http://sigkdd_en#c-8811480-5015529> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-8811480-5015529> <http://www.w3.org/2000/01/rdf-schema#label> "sponzor fee"@en .
+<http://sigkdd_en#c-8811480-5015529> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-3967774-8138616> .
+<http://sigkdd_en#c-9656043-0451863> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-9656043-0451863> <http://www.w3.org/2000/01/rdf-schema#label> "committee for best paper awards"@en .
+<http://sigkdd_en#c-9656043-0451863> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-4956507-8354862> .
+<http://sigkdd_en#c-9932783-9574589> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-9932783-9574589> <http://www.w3.org/2000/01/rdf-schema#label> "hall of conference"@en .
+<http://sigkdd_en#c-9932783-9574589> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-1144746-3205183> .
+<http://sigkdd_en#c-9975477-9791635> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_en#c-9975477-9791635> <http://www.w3.org/2000/01/rdf-schema#label> "main office of conference"@en .
+<http://sigkdd_en#c-9975477-9791635> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_en#c-1144746-3205183> .

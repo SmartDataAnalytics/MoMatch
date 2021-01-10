@@ -1,0 +1,60 @@
+تشغيل أدوات احالة البحث,Run tools assignment search
+معايير مراجعة أدخلت من قبل,Standards of review introduced by the
+لديه موقع على رابط,have site on the link
+يعيين,Live
+بدأ تقديم العطاءات المراجع من قبل,Started bidding references by
+بدء تقديم العطاءات المراجع,Start the bidding references
+تفاصيل مدخلة من قبل,The details of the entry by
+مسند من قبل مراجع,Datum by the auditor
+المراجعة كتابية,Review written
+العدد الأقصى من الابحاث المسندة,The maximum number of papers assigned
+عضو المؤتمر,A member of the conference
+احالة البحث منتهي من قبل,Assignment search products by
+كاتب مشترك من قبل,The clerk shared by
+قراءته من قبل مراجع,Read by references
+لديه اسم,has a name
+تحديد مجموعة عدد أقصى من الابحاث المسندة,Determine a set maximum number of research papers assigned
+لديه عضو,Has the member
+لديه التاريخ,has history
+لديه بريد الكتروني,have email
+لديه عضو,Has the member
+ارسال البحث,Send search
+علامة تضارب المصالح,Sign a conflict of interest
+مشترك في الكتابة,Common in writing
+كتابته من قبل,Written by
+تعيين من اجل,Set for
+احالة أدوات البحث مشغل من قبل,The assignment of tools to the search engine before.
+طباعة نسخة من البريد الالكتروني للمظاهرات,Print a copy of the e-mail demonstrations
+يقبل,Accept
+لديه معرف,have ID
+يضيف,Adds
+عضو في اللجنة العلمية,Member of the scientific committee
+اجتماع الظاهري ممكن من قبل,Virtual meeting possible by
+لديه الشعار في رابط,has the logo in the link
+تمكين الاجتماع الظاهري,To enable virtual meeting
+كتابته من قبل,Written by
+تقبل نسخة المرسلات,Accept version the messenger
+نسخة من البريد الالكتروني للمظاهرات مطبوعة من قبل,A copy of the email to the demonstrations printed by
+وقت إنتهاء مراجعة,The expiry time of the review
+لديه موضوع المحور,Has the theme editor
+استكمال احالة البحث,Complete the assignment search
+(... ،تم تقرير (ليكون مقبول، مرفوض,( ... , The report (to be accepted, rejected
+تعديله من قبل,Modified by
+قبوله من قبل,Accepted by
+قراءة البحث,Read the search
+بحث مرفوض,Research rejected
+ضبط,Adjust
+أضافته من قبل,Added by
+لديه مزايدة,Has the bidding
+إدخال معايير المراجعة,The introduction of auditing standards
+مراجعة/تعليقات لكل بحث,Review/comments per search
+لديه عنوان,have address
+تعيينه من قبل مشرف,Appointed by the project
+رفض من قبل,Rejected by
+يعيين,Live
+كتابة البحث,Book search
+قراءته من قبل مراجع الفوقي,Read by references epitaxial
+لديه تضارب في المصالح مع احترام,has a conflict of interest with respect
+AnnotationProperty,AnnotationProperty
+إدخال التفاصيل حول,Enter the details about
+تم تعيين,Has been set

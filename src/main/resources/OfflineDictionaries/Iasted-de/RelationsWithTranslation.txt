@@ -1,0 +1,42 @@
+unterzeichnet,signed
+ist verbunden mit/bezogen auf,is connected with/related 
+wird versendet von,will be shipped 
+findet statt nach,to take place 
+istAnwesend (räumlich),istAnwesend (spatially)
+wird versendet nach,is to be sent 
+wird benötigt für,is required for
+muss erledigt sein bis,needs to be done to
+durchgeht,goes through
+wird bezahlt von,is paid by
+wird bezahlt in,will be paid in
+ist ausgestattet mit,is equipped with 
+istAnwesend (räumlich und zeitlich),istAnwesend (spatially and temporally)
+gibt,there
+bereitet vor,prepares 
+wird besucht von,it is attended by 
+benötigt,needed
+wird vorbereitet von,is prepared 
+ist gemacht aus,is made 
+ist datiert auf,on dated 
+erhält,receives
+schreibt,writes
+spricht in (räumlich und zeitlich),speaks in a (spatially and temporally)
+wird bewohnt von,is inhabited 
+wird versendet vor,is before be shipped 
+wird bezahlt mit,will be paid with
+befindet sich in,located in
+bewohnt,inhabited
+wird bezahlt für,is paid for
+wird verwendet für,is used for
+ist geschrieben von,is written 
+findet statt vor,before takes place 
+wirdGegebenAn,is granted
+sendet,sends
+findet statt in,will be held in
+wird gegeben/ausgeführt von,is given/carried out 
+wird verwendet von,is used 
+wird unterzeichnet von,is of signed 
+bezahlt,paid
+AnnotationProperty,Annotation property
+hat Betrag von,of has amount 
+ist entworfen/bestimmt für,is designed/intended for

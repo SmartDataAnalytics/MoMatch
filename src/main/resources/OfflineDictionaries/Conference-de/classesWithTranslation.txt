@@ -1,0 +1,59 @@
+eingeladener Referent,invited speaker
+begutachteter Beitrag,peer-reviewed contribution
+Organisation,Organization
+angenommener Beitrag,the assumed contribution
+Zusammenfassung,Abstract
+Organisator,Organizer
+Aufruf für Beiträge,Call for contributions
+Präsentation,Presentation
+Konferenzteilnehmer,Conference participants
+Gutachter,Reviewers
+Programmausschuss,Program Committee
+registrierter Bewerber,registered candidates
+Aufruf zu Teilnahme,Call for participation
+Fortschritte der Konferenz,Conference proceedings
+Leiter der Workshops,Workshop chair
+erweitertes Zusammenfassung,extended summary
+Tutorium,Tutorial
+druckfertiger Beitrag,print-ready contribution
+regulärer Beitrag,regular contribution
+stellvertretender Vorsitzender,Vice-Chairman
+passiver Konferenzteilnehmer,passive conference participants
+Internet der Konferenz,Internet conference
+Ablauf der Konferenz,The expiration of the conference
+Konferenzankündigung,Conference announcement
+Author eines regulären Beitrags,Author a regular contribution
+Konferenzgebühren,Conference fees
+eingereichter Beitrag,any contribution
+Konferenzbewerber gezahlt hat,Conference applicant has paid
+geschriebener Beitrag,written contribution
+Konferenzreihe,Conference series
+Organisationsausschuss,Organization Committee
+Konferenz,Conference
+Informationen für Teilnehmer,Information for participants
+Workshop,Workshop
+Herausgeber,Publisher
+Fachgebiet des Gutachters,Area of expertise of the evaluator
+Aushang,Notice
+Angehörige des Ausschusses,Members of the Committee
+Konferenzbeitrag,Conference contribution
+eingeladener Vortrag,invited talk
+primärer Author eines Beitrags,the primary Author of a contribution
+abgelehnter Beitrag,rejected contribution
+Koferenzdokument,Conference document
+Konferenzbewerber früh gezahlt hat,Conference applicant has paid early
+Person,Person
+Ausschuss,Committee
+Mitverfasser eines Beitrags,Co-author of a contribution
+Präferenz des Gutachters,Preference of the evaluator
+wichtiges Datum,important date
+Steuerungsausschuss,Steering Committee
+Gutachten,Review
+Konferenzbeteiligung,Conference participation
+Thema,Topic
+Konferenzbewerber spät gezahlt hat,Conference applicant has paid late
+Koferenzbewerber,Conference applicants
+Vorsitzender,Chairman
+Konferenzteilnehmer Beitrag hat,Conference participant contribution has
+aktiver Konferenzteilnehmer,active participants in the conference
+Abschnitte der Konferenz,Sections of the conference

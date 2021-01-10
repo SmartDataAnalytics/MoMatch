@@ -1,0 +1,422 @@
+@prefix : <http://sigkdd_ar#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://sigkdd_ar> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+:op-1699370-4424020 a owl:ObjectProperty ;
+	rdfs:label "آخر موعد المحدد من اجل"@ar ;
+	rdfs:range :c-9383035-4528001 ;
+	rdfs:domain :c-9858835-9194545 ;
+	owl:inverseOf :op-2567718-1943973 .
+
+:op-3608444-2411140 a owl:ObjectProperty ;
+	rdfs:label "يمكن البقاء في"@ar ;
+	rdfs:range :c-3363751-8760227 ;
+	rdfs:domain :c-4596635-0722497 .
+
+:op-6619175-5616650 a owl:ObjectProperty ;
+	rdfs:label "التي تمنحها"@ar ;
+	rdfs:domain :c-0007370-7553257 ;
+	owl:inverseOf :op-6412754-0086179 .
+
+:op-2701839-4065570 a owl:ObjectProperty ;
+	rdfs:label "رسوم التسجيل المدفوعة من قبل"@ar ;
+	rdfs:range :c-4596635-0722497 ;
+	rdfs:domain :c-9545303-7816338 .
+
+:op-1317108-2039751 a owl:ObjectProperty ;
+	rdfs:label "قد قدم من جانب"@ar ;
+	rdfs:domain :c-1363765-1519553 ;
+	rdfs:range :c-8653983-1538377 ;
+	owl:inverseOf :op-5244267-6419314 .
+
+:op-2039817-3965471 a owl:ObjectProperty ;
+	rdfs:label "آخر موعد للإخطار الباحثين"@ar ;
+	rdfs:range :c-5280199-2852104 ;
+	rdfs:domain :c-8633912-4903208 .
+
+:op-1178744-5763012 a owl:ObjectProperty ;
+	rdfs:label "دفع رسوم التسجيل"@ar ;
+	rdfs:domain :c-4596635-0722497 ;
+	rdfs:range :c-9545303-7816338 ;
+	owl:inverseOf :op-2701839-4065570 .
+
+:op-6752038-0855382 a owl:ObjectProperty ;
+	rdfs:label "إرسال البحث"@ar ;
+	rdfs:range :c-0206856-6159682 ;
+	rdfs:domain :c-8633912-4903208 .
+
+:op-2567718-1943973 a owl:ObjectProperty ;
+	rdfs:label "تحديد آخر موعد"@ar ;
+	rdfs:domain :c-9383035-4528001 ;
+	rdfs:range :c-9858835-9194545 .
+
+:op-5244267-6419314 a owl:ObjectProperty ;
+	rdfs:label "يقدم الوثيقة"@ar ;
+	rdfs:range :c-1363765-1519553 ;
+	rdfs:domain :c-8653983-1538377 .
+
+:op-5028692-2946764 a owl:ObjectProperty ;
+	rdfs:label "تنظيم المؤتمر"@ar ;
+	rdfs:domain :c-9383035-4528001 ;
+	rdfs:range :c-8947268-7078266 .
+
+:op-4513601-4918866 a owl:ObjectProperty ;
+	rdfs:label "لديه آخر موعد لإرسال"@ar ;
+	rdfs:domain :c-1363765-1519553 ;
+	rdfs:range :c-9858835-9194545 .
+
+:op-1114706-0372837 a owl:ObjectProperty ;
+	rdfs:label "الدعوة من اجل الراعي"@ar ;
+	rdfs:range :c-3034633-3276400 ;
+	rdfs:domain :c-9383035-4528001 ;
+	owl:inverseOf :op-3273389-5047429 .
+
+:op-7124942-4020478 a owl:ObjectProperty ;
+	rdfs:label "جائزة متحصل عليها"@ar ;
+	rdfs:range :c-0007370-7553257 ;
+	rdfs:domain :c-8633912-4903208 .
+
+:op-3273389-5047429 a owl:ObjectProperty ;
+	rdfs:label "الرعاة مدعوين من قبل"@ar ;
+	rdfs:domain :c-3034633-3276400 ;
+	rdfs:range :c-9383035-4528001 .
+
+:op-6412754-0086179 a owl:ObjectProperty ;
+	rdfs:label "لديه جائزة"@ar ;
+	rdfs:range :c-0007370-7553257 .
+
+:op-0434389-6122099 a owl:ObjectProperty ;
+	rdfs:label "مؤتمر منظم من قبل"@ar ;
+	rdfs:range :c-9383035-4528001 ;
+	rdfs:domain :c-8947268-7078266 ;
+	owl:inverseOf :op-5028692-2946764 .
+
+:ent-4317870-2090050 a owl:DatatypeProperty ;
+	rdfs:label "موعد أول يوم من المؤتمر"@ar ;
+	rdfs:domain :c-8947268-7078266 ;
+	rdfs:range xsd:dateTime .
+
+:ent-3168095-4358690 a owl:DatatypeProperty ;
+	rdfs:label "موعد اليوم الأخير من المؤتمر"@ar ;
+	rdfs:domain :c-8947268-7078266 ;
+	rdfs:range xsd:dateTime .
+
+:ent-4451821-0618411 a owl:DatatypeProperty ;
+	rdfs:label "مؤتمر عقد في مدينة"@ar ;
+	rdfs:domain :c-8947268-7078266 ;
+	rdfs:range xsd:string .
+
+:ent-6560837-1049611 a owl:DatatypeProperty ;
+	rdfs:label "لديه السعر"@ar ;
+	rdfs:domain :c-9545303-7816338 ;
+	rdfs:range xsd:int .
+
+:ent-1083761-2754742 a owl:DatatypeProperty ;
+	rdfs:label "لديه اسم الراعي"@ar ;
+	rdfs:domain :c-3034633-3276400 ;
+	rdfs:range xsd:string .
+
+:ent-8230424-5955962 a owl:DatatypeProperty ;
+	rdfs:label "لديه اسم المؤتمر"@ar ;
+	rdfs:domain :c-8947268-7078266 ;
+	rdfs:range xsd:string .
+
+:ent-6250328-1253383 a owl:DatatypeProperty ;
+	rdfs:label "مؤرخ على"@ar ;
+	rdfs:domain :c-9858835-9194545 ;
+	rdfs:range xsd:dateTime .
+
+:ent-1510064-3002835 a owl:DatatypeProperty ;
+	rdfs:label "لديه اسم"@ar ;
+	rdfs:domain :c-4596635-0722497 ;
+	rdfs:range xsd:string .
+
+:ent-4540296-2149307 a owl:DatatypeProperty ;
+	rdfs:label "لديه الجنسية"@ar ;
+	rdfs:domain :c-4596635-0722497 ;
+	rdfs:range xsd:string .
+
+:ent-6391301-7405898 a owl:DatatypeProperty ;
+	rdfs:label "لديه بريد الكتروني"@ar ;
+	rdfs:domain :c-4596635-0722497 ;
+	rdfs:range xsd:string .
+
+:ent-4883538-1531419 a owl:DatatypeProperty ;
+	rdfs:label "رسوم التسجيل هي بالعملة"@ar ;
+	rdfs:domain :c-9545303-7816338 ;
+	rdfs:range xsd:string .
+
+:c-5999261-8594400 a owl:Class ;
+	rdfs:label "المسؤول عن الموقع"@ar ;
+	rdfs:subClassOf :c-3569277-9113287 .
+
+:c-3034633-3276400 a owl:Class ;
+	rdfs:label "الرعاة"@ar ;
+	owl:equivalentClass _:node1e059vjv4x1 .
+
+_:node1e059vjv4x1 a owl:Restriction ;
+	owl:onProperty :op-1178744-5763012 ;
+	owl:someValuesFrom :c-5153493-0821388 .
+
+:c-3960593-3778700 a owl:Class ;
+	rdfs:label "ملخص البحث"@ar ;
+	owl:equivalentClass _:node1e059vjv4x2 .
+
+_:node1e059vjv4x2 a owl:Restriction ;
+	owl:onProperty :op-4513601-4918866 ;
+	owl:someValuesFrom :c-6864457-1274625 .
+
+:c-3960593-3778700 rdfs:subClassOf :c-1363765-1519553 .
+
+:c-6351636-9487040 a owl:Class ;
+	rdfs:label "لجان المؤتمر"@ar .
+
+:c-0033129-4113750 a owl:Class ;
+	rdfs:label "جائزة لأفضل مقالة بحث"@ar ;
+	rdfs:subClassOf :c-0007370-7553257 .
+
+:c-9383035-4528001 a owl:Class ;
+	rdfs:label "المؤتمر acm sigkdd"@ar ;
+	rdfs:subClassOf :c-2810425-6420121 , _:node1e059vjv4x3 .
+
+_:node1e059vjv4x3 a owl:Restriction ;
+	owl:onProperty :op-5028692-2946764 ;
+	owl:someValuesFrom :c-8947268-7078266 .
+
+:c-9383035-4528001 rdfs:subClassOf _:node1e059vjv4x4 .
+
+_:node1e059vjv4x4 a owl:Restriction ;
+	owl:onProperty :op-1114706-0372837 ;
+	owl:someValuesFrom :c-3034633-3276400 .
+
+:c-9383035-4528001 rdfs:subClassOf _:node1e059vjv4x5 .
+
+_:node1e059vjv4x5 a owl:Restriction ;
+	owl:onProperty :op-2567718-1943973 ;
+	owl:someValuesFrom :c-9858835-9194545 .
+
+:c-0959891-7240511 a owl:Class ;
+	rdfs:label "مكان انعقاد المؤتمر"@ar ;
+	rdfs:subClassOf :c-3363751-8760227 .
+
+:c-2810425-6420121 a owl:Class ;
+	rdfs:label "لاشيئ"@ar .
+
+:c-7141216-2542971 a owl:Class ;
+	rdfs:label "مدير المؤتمر"@ar ;
+	rdfs:subClassOf :c-3569277-9113287 .
+
+:c-9530062-2636552 a owl:Class ;
+	rdfs:label "الفندق"@ar ;
+	rdfs:subClassOf :c-3363751-8760227 .
+
+:c-0071414-5648562 a owl:Class ;
+	rdfs:label "المكتب الرئيسي للمؤتمر"@ar ;
+	rdfs:subClassOf :c-3363751-8760227 .
+
+:c-1125351-6329272 a owl:Class ;
+	rdfs:label "SIG رسوم التسجيل للاشخاص الذين ليسوا أعضاء"@ar ;
+	rdfs:subClassOf :c-9545303-7816338 .
+
+:c-0206856-6159682 a owl:Class ;
+	rdfs:label "البحث"@ar ;
+	owl:equivalentClass _:node1e059vjv4x6 .
+
+_:node1e059vjv4x6 a owl:Restriction ;
+	owl:onProperty :op-4513601-4918866 ;
+	owl:someValuesFrom :c-0665494-3081508 .
+
+:c-0206856-6159682 rdfs:subClassOf :c-1363765-1519553 .
+
+:c-8594766-6604333 a owl:Class ;
+	rdfs:label "الراعي كمقدم"@ar ;
+	rdfs:subClassOf :c-3034633-3276400 .
+
+:c-1363765-1519553 a owl:Class ;
+	rdfs:label "الوثيقة"@ar .
+
+:c-9060975-8428873 a owl:Class ;
+	rdfs:label "sigmod رسوم التسجيل لأعضاء"@ar ;
+	rdfs:subClassOf :c-9545303-7816338 .
+
+:c-5280199-2852104 a owl:Class ;
+	rdfs:label "آخر موعد للإخطار الباحثين"@ar ;
+	rdfs:subClassOf :c-9858835-9194545 .
+
+:c-0552203-0679914 a owl:Class ;
+	rdfs:label "رسوم التسجيل لطالب"@ar ;
+	rdfs:subClassOf :c-9545303-7816338 .
+
+:c-4881492-4438334 a owl:Class ;
+	rdfs:label "الراعي الذهبي للمؤتمر"@ar ;
+	rdfs:subClassOf :c-3034633-3276400 .
+
+:c-8231477-0497654 a owl:Class ;
+	rdfs:label "الراعي البلاتيني للمؤتمر"@ar ;
+	rdfs:subClassOf :c-3034633-3276400 .
+
+:c-1634373-2116164 a owl:Class ;
+	rdfs:label "الراعى الفضى للمؤتمر"@ar ;
+	rdfs:subClassOf :c-3034633-3276400 .
+
+:c-8669534-2676474 a owl:Class ;
+	rdfs:label "الراعي لأفضل بحث طالب"@ar ;
+	rdfs:subClassOf :c-3034633-3276400 .
+
+:c-6864457-1274625 a owl:Class ;
+	rdfs:label "آخر موعد لتسليم ملخصات الأبحاث"@ar ;
+	rdfs:subClassOf :c-9858835-9194545 .
+
+:c-9858835-9194545 a owl:Class ;
+	rdfs:label "آخر موعد"@ar .
+
+:c-6782980-9359185 a owl:Class ;
+	rdfs:label "لجنة لاختيار أفضل البحوث"@ar ;
+	rdfs:subClassOf :c-6351636-9487040 .
+
+:c-8725611-3799036 a owl:Class ;
+	rdfs:label "كاتب البحث"@ar ;
+	rdfs:subClassOf :c-8633912-4903208 , _:node1e059vjv4x7 .
+
+_:node1e059vjv4x7 a owl:Restriction ;
+	owl:onProperty :op-6412754-0086179 ;
+	owl:someValuesFrom :c-0033129-4113750 .
+
+:c-8725611-3799036 rdfs:subClassOf _:node1e059vjv4x8 .
+
+_:node1e059vjv4x8 a owl:Restriction ;
+	owl:onProperty :op-6412754-0086179 ;
+	owl:someValuesFrom :c-2506343-1114428 .
+
+:c-2852562-5212156 a owl:Class ;
+	rdfs:label "اللجنة التحضيرية"@ar ;
+	rdfs:subClassOf :c-6351636-9487040 .
+
+:c-8947268-7078266 a owl:Class ;
+	rdfs:label "المؤتمر"@ar .
+
+:c-2079294-7245676 a owl:Class ;
+	rdfs:label "المحاضر المدعو"@ar ;
+	rdfs:subClassOf :c-8653983-1538377 .
+
+:c-3606408-9812086 a owl:Class ;
+	rdfs:label "جائزة أفضل بحث لطالب"@ar ;
+	rdfs:subClassOf :c-0007370-7553257 .
+
+:c-1612891-5946596 a owl:Class ;
+	rdfs:label "كاتب البحث طالب"@ar ;
+	rdfs:subClassOf :c-8633912-4903208 , _:node1e059vjv4x9 .
+
+_:node1e059vjv4x9 a owl:Restriction ;
+	owl:onProperty :op-6412754-0086179 ;
+	owl:someValuesFrom :c-3606408-9812086 .
+
+:c-0551399-1781107 a owl:Class ;
+	rdfs:label "عضو اللجنة العلمية"@ar ;
+	rdfs:subClassOf :c-3569277-9113287 .
+
+:c-8452462-9106117 a owl:Class ;
+	rdfs:label "الراعي البرونزي للمؤتمر"@ar ;
+	rdfs:subClassOf :c-3034633-3276400 .
+
+:c-3363751-8760227 a owl:Class ;
+	rdfs:label "مكان"@ar .
+
+:c-0007370-7553257 a owl:Class ;
+	rdfs:label "جائزة لأفضل مقالة في المؤتمر"@ar ;
+	owl:equivalentClass _:node1e059vjv4x10 .
+
+_:node1e059vjv4x10 a owl:Restriction ;
+	owl:onProperty :op-6619175-5616650 ;
+	owl:someValuesFrom :c-3569277-9113287 .
+
+:c-8653983-1538377 a owl:Class ;
+	rdfs:label "مراجع الحسابات المؤتمر"@ar ;
+	owl:equivalentClass _:node1e059vjv4x11 .
+
+_:node1e059vjv4x11 a owl:Restriction ;
+	owl:onProperty :op-5244267-6419314 ;
+	owl:someValuesFrom :c-1363765-1519553 .
+
+:c-8653983-1538377 rdfs:subClassOf :c-4596635-0722497 .
+
+:c-3100347-8206777 a owl:Class ;
+	rdfs:label "اللجنة العلمية"@ar ;
+	rdfs:subClassOf :c-6351636-9487040 .
+
+:c-3569277-9113287 a owl:Class ;
+	rdfs:label "منظمي المؤتمر"@ar ;
+	rdfs:subClassOf :c-4596635-0722497 .
+
+:c-5590730-5984687 a owl:Class ;
+	rdfs:label "مراجعة"@ar ;
+	rdfs:subClassOf :c-1363765-1519553 .
+
+:c-4596635-0722497 a owl:Class ;
+	rdfs:label "شخص"@ar ;
+	owl:equivalentClass _:node1e059vjv4x12 .
+
+_:node1e059vjv4x12 a owl:Restriction ;
+	owl:onProperty :op-1178744-5763012 ;
+	owl:someValuesFrom :c-9545303-7816338 .
+
+:c-4596635-0722497 rdfs:subClassOf :c-2810425-6420121 , _:node1e059vjv4x13 .
+
+_:node1e059vjv4x13 a owl:Restriction ;
+	owl:onProperty :op-3608444-2411140 ;
+	owl:someValuesFrom :c-9530062-2636552 .
+
+:c-8633912-4903208 a owl:Class ;
+	rdfs:label "كاتب"@ar ;
+	owl:equivalentClass _:node1e059vjv4x14 .
+
+_:node1e059vjv4x14 a owl:Restriction ;
+	owl:onProperty :op-6752038-0855382 ;
+	owl:someValuesFrom :c-0206856-6159682 .
+
+:c-8633912-4903208 rdfs:subClassOf :c-8653983-1538377 , _:node1e059vjv4x15 .
+
+_:node1e059vjv4x15 a owl:Restriction ;
+	owl:onProperty :op-2039817-3965471 ;
+	owl:someValuesFrom :c-5280199-2852104 .
+
+:c-0665494-3081508 a owl:Class ;
+	rdfs:label "آخر موعد لإرسال البحوث"@ar ;
+	rdfs:subClassOf :c-9858835-9194545 .
+
+:c-2506343-1114428 a owl:Class ;
+	rdfs:label "أفضل بحث تطبيقي"@ar ;
+	rdfs:subClassOf :c-0007370-7553257 .
+
+:c-9773590-3091928 a owl:Class ;
+	rdfs:label "عضو اللجنة التحضيرية"@ar ;
+	rdfs:subClassOf :c-3569277-9113287 .
+
+:c-9545303-7816338 a owl:Class ;
+	rdfs:label "رسوم التسجيل"@ar ;
+	rdfs:subClassOf :c-2111951-9494729 .
+
+:c-5153493-0821388 a owl:Class ;
+	rdfs:label "رسوم الرعاة"@ar ;
+	rdfs:subClassOf :c-2111951-9494729 .
+
+:c-9564408-9817198 a owl:Class ;
+	rdfs:label "sigkdd رسوم التسجيل لأعضاء"@ar ;
+	rdfs:subClassOf :c-9545303-7816338 .
+
+:c-0039271-2080919 a owl:Class ;
+	rdfs:label "رئيس اللجنة العلمية"@ar ;
+	rdfs:subClassOf :c-3569277-9113287 .
+
+:c-2111951-9494729 a owl:Class ;
+	rdfs:label "رسوم المؤتمر"@ar .
+
+:c-2964635-3714249 a owl:Class ;
+	rdfs:label "مستمع المؤتمر"@ar ;
+	rdfs:subClassOf :c-4596635-0722497 .

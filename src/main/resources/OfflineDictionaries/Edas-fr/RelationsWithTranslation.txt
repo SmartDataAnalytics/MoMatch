@@ -1,0 +1,54 @@
+has attendee,a participant
+has country,a pays de
+attendee at,participant à
+has topic,a sujet
+has name,a nom
+has related paper,a papier
+has rating,a cote de
+is location of,c'est l'emplacement de
+has postal code,a code postal
+has street,a la rue
+is reviewed by,est examiné par
+has rating,a cote de
+related to paper,liées à papier
+is provider of,est fournisseur de
+has phone,a un téléphone
+has review history,a l'examen de l'histoire
+has start date time,a la date de début du temps
+is menu of,est menu de
+has end date time,a la date de fin de temps
+is topic of,est sujet de
+has country,a pays de
+is initiated by,est initiée par
+has city,a la ville
+start date,date de début de
+has biography,a biographie
+has programme,a programme
+registration due on,enregistrement dus sur
+related to event,liées à l'événement
+has submission instructions,a instructions de soumission
+has member,a membre
+for event,pour l'événement
+has related document,a document connexe
+has cost amount,a la quantité de coût
+has location,a l'emplacement
+initiates,lance
+is member of,est membre de
+has submission deadline,a date limite de soumission
+paper due on,travail sur
+has first name,a prénom
+provided by,fournis par
+relates to,se rapporte à
+is review history of,est l'examen de l'histoire de
+has submission instructions,a instructions de soumission
+has call,a l'appel
+belongs to event,appartient à l'événement
+end date,date de fin
+is reviewing,est en train de réviser
+has submission deadline,a date limite de soumission
+has last name,a nom de famille
+has menu,a menu
+manuscript due on,manuscrit dû sur
+has cost currency,d'un coût de monnaie
+has email,a e-mail
+is written by,est écrit par

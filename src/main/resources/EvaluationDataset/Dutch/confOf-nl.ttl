@@ -1,0 +1,632 @@
+@prefix : <http://confOf_nl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://confOf_nl> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+:op-0904237-8212000 a owl:ObjectProperty ;
+	rdfs:label "werknemer van"@nl ;
+	rdfs:domain :c-0582934-7485542 ;
+	rdfs:range :c-8992711-7232891 .
+
+:op-1400889-4257078 a owl:ObjectProperty ;
+	rdfs:label "expert op het gebied van"@nl ;
+	rdfs:range :c-5942383-3081555 ;
+	rdfs:domain :c-9240813-6148127 .
+
+:op-1462496-0705059 a owl:ObjectProperty , owl:SymmetricProperty ;
+	rdfs:label "parallel met"@nl ;
+	rdfs:range :c-6710519-2895467 ;
+	rdfs:domain :c-6710519-2895467 ;
+	owl:inverseOf :op-1462496-0705059 .
+
+:op-1875169-1383817 a owl:ObjectProperty ;
+	rdfs:label "studeert bij"@nl ;
+	rdfs:range :c-2579448-9682769 ;
+	rdfs:domain :c-8781368-7519227 .
+
+:op-1920728-4428698 a owl:ObjectProperty ;
+	rdfs:label "heeft te maken met"@nl ;
+	rdfs:domain :c-2771772-3464274 ;
+	rdfs:range :c-5942383-3081555 .
+
+:op-4220628-5755755 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "heeft land"@nl ;
+	rdfs:range :c-3431197-3608298 ;
+	rdfs:domain _:node1e05bs21ex1 .
+
+_:node1e05bs21ex1 a owl:Class ;
+	owl:unionOf _:node1e05bs21ex2 .
+
+_:node1e05bs21ex2 rdf:first :c-0582934-7485542 ;
+	rdf:rest _:node1e05bs21ex3 .
+
+_:node1e05bs21ex3 rdf:first :c-8992711-7232891 ;
+	rdf:rest rdf:nil .
+
+:op-5472020-4194143 a owl:ObjectProperty ;
+	rdfs:label "geschreven door"@nl ;
+	rdfs:domain :c-2771772-3464274 ;
+	rdfs:range :c-6579519-7491384 .
+
+:op-5969416-2861281 a owl:ObjectProperty , owl:TransitiveProperty ;
+	rdfs:label "volgt"@nl ;
+	rdfs:domain :c-6710519-2895467 ;
+	rdfs:range :c-6710519-2895467 .
+
+:op-6007225-4349055 a owl:ObjectProperty ;
+	rdfs:label "heeft stad"@nl ;
+	rdfs:range :c-5637971-4350493 ;
+	rdfs:domain _:node1e05bs21ex4 .
+
+_:node1e05bs21ex4 a owl:Class ;
+	owl:unionOf _:node1e05bs21ex5 .
+
+_:node1e05bs21ex5 rdf:first :c-0582934-7485542 ;
+	rdf:rest _:node1e05bs21ex6 .
+
+_:node1e05bs21ex6 rdf:first :c-8992711-7232891 ;
+	rdf:rest rdf:nil .
+
+:op-7080727-2229119 a owl:ObjectProperty ;
+	rdfs:label "heeft administratieve gebeurtenis"@nl ;
+	rdfs:domain :c-0450652-4349124 ;
+	rdfs:range :c-6710519-2895467 .
+
+:op-7275263-7685611 a owl:ObjectProperty ;
+	rdfs:label "schrijft"@nl ;
+	rdfs:range :c-2771772-3464274 ;
+	rdfs:domain :c-6579519-7491384 ;
+	owl:inverseOf :op-5472020-4194143 .
+
+:op-9210667-2427618 a owl:ObjectProperty ;
+	rdfs:label "heeft onderwerp"@nl ;
+	rdfs:domain :c-0450652-4349124 ;
+	rdfs:range :c-5942383-3081555 .
+
+:op-9414187-0096564 a owl:ObjectProperty ;
+	rdfs:label "recensies"@nl ;
+	rdfs:range :c-2771772-3464274 ;
+	rdfs:domain :c-9240813-6148127 .
+
+:ent-0538231-8565004 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "heeft titel"@nl ;
+	rdfs:domain :c-2771772-3464274 ;
+	rdfs:range xsd:string .
+
+:ent-0889407-0755732 a owl:DatatypeProperty ;
+	rdfs:label "opmerking"@nl ;
+	rdfs:domain :c-2771772-3464274 ;
+	rdfs:range xsd:string .
+
+:ent-1575868-7836276 a owl:DatatypeProperty ;
+	rdfs:label "plaats"@nl ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bs21ex7 .
+
+_:node1e05bs21ex7 a owl:Class ;
+	owl:unionOf _:node1e05bs21ex8 .
+
+_:node1e05bs21ex8 rdf:first :c-0450652-4349124 ;
+	rdf:rest _:node1e05bs21ex9 .
+
+_:node1e05bs21ex9 rdf:first :c-5159844-1645943 ;
+	rdf:rest rdf:nil .
+
+:ent-1588328-7756303 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "heeft voornaam"@nl ;
+	rdfs:domain :c-0582934-7485542 ;
+	rdfs:range xsd:string .
+
+:ent-2155284-2360596 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "abstract"@nl ;
+	rdfs:domain :c-2771772-3464274 ;
+	rdfs:range xsd:string .
+
+:ent-2900879-7368963 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "eindigt op"@nl ;
+	rdfs:domain :c-8229318-1464511 ;
+	rdfs:range xsd:string .
+
+:ent-3540734-1528611 a owl:DatatypeProperty ;
+	rdfs:label "heeft email"@nl ;
+	rdfs:domain :c-0582934-7485542 ;
+	rdfs:range xsd:string .
+
+:ent-4101711-3605929 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "maximum keuze"@nl ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:domain _:node1e05bs21ex10 .
+
+_:node1e05bs21ex10 a owl:Class ;
+	owl:unionOf _:node1e05bs21ex11 .
+
+_:node1e05bs21ex11 rdf:first :c-0450652-4349124 ;
+	rdf:rest _:node1e05bs21ex12 .
+
+_:node1e05bs21ex12 rdf:first :c-5159844-1645943 ;
+	rdf:rest rdf:nil .
+
+:ent-4563044-6701647 a owl:DatatypeProperty ;
+	rdfs:label "heeft fax"@nl ;
+	rdfs:domain :c-0582934-7485542 ;
+	rdfs:range xsd:string .
+
+:ent-4889894-1187309 a owl:DatatypeProperty ;
+	rdfs:label "heeft webpagina"@nl ;
+	rdfs:domain :c-0582934-7485542 ;
+	rdfs:range xsd:string .
+
+:ent-4968386-3587203 a owl:DatatypeProperty ;
+	rdfs:label "heeft straat"@nl ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bs21ex13 .
+
+_:node1e05bs21ex13 a owl:Class ;
+	owl:unionOf _:node1e05bs21ex14 .
+
+_:node1e05bs21ex14 rdf:first :c-0582934-7485542 ;
+	rdf:rest _:node1e05bs21ex15 .
+
+_:node1e05bs21ex15 rdf:first :c-8992711-7232891 ;
+	rdf:rest rdf:nil .
+
+:ent-6013110-0731759 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "vroege registratie"@nl ;
+	rdfs:domain :c-7965721-8197972 ;
+	rdfs:range xsd:boolean .
+
+:ent-6696092-6023599 a owl:DatatypeProperty ;
+	rdfs:label "heeft postcode"@nl ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bs21ex16 .
+
+_:node1e05bs21ex16 a owl:Class ;
+	owl:unionOf _:node1e05bs21ex17 .
+
+_:node1e05bs21ex17 rdf:first :c-0582934-7485542 ;
+	rdf:rest _:node1e05bs21ex18 .
+
+_:node1e05bs21ex18 rdf:first :c-8992711-7232891 ;
+	rdf:rest rdf:nil .
+
+:ent-6745901-9473116 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "heeft BTW"@nl ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bs21ex19 .
+
+_:node1e05bs21ex19 a owl:Class ;
+	owl:unionOf _:node1e05bs21ex20 .
+
+_:node1e05bs21ex20 rdf:first :c-0450652-4349124 ;
+	rdf:rest _:node1e05bs21ex21 .
+
+_:node1e05bs21ex21 rdf:first :c-5159844-1645943 ;
+	rdf:rest rdf:nil .
+
+:ent-6828943-1746845 a owl:DatatypeProperty ;
+	rdfs:label "heeft steekwoord"@nl ;
+	rdfs:domain :c-2771772-3464274 ;
+	rdfs:range xsd:string .
+
+:ent-6858539-4290497 a owl:DatatypeProperty ;
+	rdfs:label "heeft telefoon"@nl ;
+	rdfs:domain :c-0582934-7485542 ;
+	rdfs:range xsd:string .
+
+:ent-6939853-4325174 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "heeft korte titel"@nl ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bs21ex22 .
+
+_:node1e05bs21ex22 a owl:Class ;
+	owl:unionOf _:node1e05bs21ex23 .
+
+_:node1e05bs21ex23 rdf:first :c-0450652-4349124 ;
+	rdf:rest _:node1e05bs21ex24 .
+
+_:node1e05bs21ex24 rdf:first :c-5159844-1645943 ;
+	rdf:rest rdf:nil .
+
+:ent-7494328-6365338 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "heeft achternaam"@nl ;
+	rdfs:domain :c-0582934-7485542 ;
+	rdfs:range xsd:string .
+
+:ent-7495420-5578639 a owl:DatatypeProperty ;
+	rdfs:label "minimum keuze"@nl ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:domain _:node1e05bs21ex25 .
+
+_:node1e05bs21ex25 a owl:Class ;
+	owl:unionOf _:node1e05bs21ex26 .
+
+_:node1e05bs21ex26 rdf:first :c-0450652-4349124 ;
+	rdf:rest _:node1e05bs21ex27 .
+
+_:node1e05bs21ex27 rdf:first :c-5159844-1645943 ;
+	rdf:rest rdf:nil .
+
+:ent-8434216-9700189 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "begint op"@nl ;
+	rdfs:domain :c-8229318-1464511 ;
+	rdfs:range xsd:string .
+
+:ent-8671638-6894304 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "standaard keuze"@nl ;
+	rdfs:range xsd:positiveInteger ;
+	rdfs:domain _:node1e05bs21ex28 .
+
+_:node1e05bs21ex28 a owl:Class ;
+	owl:unionOf _:node1e05bs21ex29 .
+
+_:node1e05bs21ex29 rdf:first :c-0450652-4349124 ;
+	rdf:rest _:node1e05bs21ex30 .
+
+_:node1e05bs21ex30 rdf:first :c-5159844-1645943 ;
+	rdf:rest rdf:nil .
+
+:ent-9580908-4160537 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "heeft titel"@nl ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05bs21ex31 .
+
+_:node1e05bs21ex31 a owl:Class ;
+	owl:unionOf _:node1e05bs21ex32 .
+
+_:node1e05bs21ex32 rdf:first :c-0450652-4349124 ;
+	rdf:rest _:node1e05bs21ex33 .
+
+_:node1e05bs21ex33 rdf:first :c-5159844-1645943 ;
+	rdf:rest rdf:nil .
+
+:ent-9750269-4045508 a owl:DatatypeProperty ;
+	rdfs:label "contactinformatie email"@nl ;
+	rdfs:domain :c-2771772-3464274 ;
+	rdfs:range xsd:string .
+
+:c-0450652-4349124 a owl:Class ;
+	rdfs:label "werken gebeurtenis"@nl ;
+	rdfs:subClassOf :c-8229318-1464511 , _:node1e05bs21ex34 .
+
+_:node1e05bs21ex34 a owl:Restriction ;
+	owl:onProperty :op-9210667-2427618 ;
+	owl:allValuesFrom :c-5942383-3081555 .
+
+:c-0450652-4349124 rdfs:subClassOf _:node1e05bs21ex35 .
+
+_:node1e05bs21ex35 a owl:Restriction ;
+	owl:onProperty :op-9210667-2427618 ;
+	owl:someValuesFrom :c-5942383-3081555 .
+
+:c-0450652-4349124 rdfs:subClassOf _:node1e05bs21ex36 .
+
+_:node1e05bs21ex36 a owl:Restriction ;
+	owl:onProperty :ent-1575868-7836276 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0450652-4349124 rdfs:subClassOf _:node1e05bs21ex37 .
+
+_:node1e05bs21ex37 a owl:Restriction ;
+	owl:onProperty :ent-8671638-6894304 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0450652-4349124 rdfs:subClassOf _:node1e05bs21ex38 .
+
+_:node1e05bs21ex38 a owl:Restriction ;
+	owl:onProperty :ent-9580908-4160537 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0450652-4349124 owl:disjointWith :c-5159844-1645943 , :c-6710519-2895467 .
+
+:c-0582934-7485542 a owl:Class ;
+	rdfs:label "persoon"@nl ;
+	rdfs:subClassOf owl:Thing , _:node1e05bs21ex39 .
+
+_:node1e05bs21ex39 a owl:Restriction ;
+	owl:onProperty :op-6007225-4349055 ;
+	owl:someValuesFrom :c-5637971-4350493 .
+
+:c-0582934-7485542 rdfs:subClassOf _:node1e05bs21ex40 .
+
+_:node1e05bs21ex40 a owl:Restriction ;
+	owl:onProperty :ent-6696092-6023599 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0582934-7485542 rdfs:subClassOf _:node1e05bs21ex41 .
+
+_:node1e05bs21ex41 a owl:Restriction ;
+	owl:onProperty :op-4220628-5755755 ;
+	owl:someValuesFrom :c-3431197-3608298 .
+
+:c-0582934-7485542 rdfs:subClassOf _:node1e05bs21ex42 .
+
+_:node1e05bs21ex42 a owl:Restriction ;
+	owl:onProperty :ent-1588328-7756303 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0582934-7485542 rdfs:subClassOf _:node1e05bs21ex43 .
+
+_:node1e05bs21ex43 a owl:Restriction ;
+	owl:onProperty :ent-7494328-6365338 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0582934-7485542 rdfs:subClassOf _:node1e05bs21ex44 .
+
+_:node1e05bs21ex44 a owl:Restriction ;
+	owl:onProperty :op-0904237-8212000 ;
+	owl:allValuesFrom :c-8992711-7232891 .
+
+:c-0582934-7485542 rdfs:subClassOf _:node1e05bs21ex45 .
+
+_:node1e05bs21ex45 a owl:Restriction ;
+	owl:onProperty :ent-4968386-3587203 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0582934-7485542 rdfs:subClassOf _:node1e05bs21ex46 .
+
+_:node1e05bs21ex46 a owl:Restriction ;
+	owl:onProperty :op-0904237-8212000 ;
+	owl:someValuesFrom :c-8992711-7232891 .
+
+:c-0582934-7485542 rdfs:subClassOf _:node1e05bs21ex47 .
+
+_:node1e05bs21ex47 a owl:Restriction ;
+	owl:onProperty :ent-3540734-1528611 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0582934-7485542 owl:disjointWith :c-2771772-3464274 , :c-3431197-3608298 , :c-5637971-4350493 , :c-5942383-3081555 , :c-8229318-1464511 , :c-8992711-7232891 .
+
+:c-0596930-7917145 a owl:Class ;
+	rdfs:label "reis"@nl ;
+	rdfs:subClassOf :c-5159844-1645943 ;
+	owl:disjointWith :c-3885644-3479454 , :c-4154900-5366197 .
+
+:c-1180439-2483437 a owl:Class ;
+	rdfs:label "student"@nl ;
+	rdfs:subClassOf :c-7965721-8197972 .
+
+:c-1955672-3254196 a owl:Class ;
+	rdfs:label "vrijwilliger"@nl ;
+	rdfs:subClassOf :c-0582934-7485542 .
+
+:c-2076329-6785320 a owl:Class ;
+	rdfs:label "artikel"@nl ;
+	rdfs:subClassOf :c-2771772-3464274 ;
+	owl:disjointWith :c-3273026-5636644 , :c-6059828-1330333 .
+
+:c-2360121-1646283 a owl:Class ;
+	rdfs:label "recensie gebeurtenis"@nl ;
+	rdfs:subClassOf :c-6710519-2895467 ;
+	owl:disjointWith :c-3124257-6471106 , :c-5014442-4116417 , :c-5791724-3808336 , :c-8597204-1535683 .
+
+:c-2579448-9682769 a owl:Class ;
+	rdfs:label "universiteit"@nl ;
+	rdfs:subClassOf :c-8992711-7232891 ;
+	owl:disjointWith :c-8762124-2240768 .
+
+:c-2771772-3464274 a owl:Class ;
+	rdfs:label "bijdrage"@nl ;
+	rdfs:subClassOf owl:Thing , _:node1e05bs21ex48 .
+
+_:node1e05bs21ex48 a owl:Restriction ;
+	owl:onProperty :op-1920728-4428698 ;
+	owl:someValuesFrom :c-5942383-3081555 .
+
+:c-2771772-3464274 rdfs:subClassOf _:node1e05bs21ex49 .
+
+_:node1e05bs21ex49 a owl:Restriction ;
+	owl:onProperty :ent-9750269-4045508 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-2771772-3464274 rdfs:subClassOf _:node1e05bs21ex50 .
+
+_:node1e05bs21ex50 a owl:Restriction ;
+	owl:onProperty :ent-2155284-2360596 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-2771772-3464274 rdfs:subClassOf _:node1e05bs21ex51 .
+
+_:node1e05bs21ex51 a owl:Restriction ;
+	owl:onProperty :ent-0538231-8565004 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-2771772-3464274 rdfs:subClassOf _:node1e05bs21ex52 .
+
+_:node1e05bs21ex52 a owl:Restriction ;
+	owl:onProperty :op-1920728-4428698 ;
+	owl:allValuesFrom :c-5942383-3081555 .
+
+:c-2771772-3464274 rdfs:subClassOf _:node1e05bs21ex53 .
+
+_:node1e05bs21ex53 a owl:Restriction ;
+	owl:onProperty :ent-6828943-1746845 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-2771772-3464274 owl:disjointWith :c-3431197-3608298 , :c-5637971-4350493 , :c-5942383-3081555 , :c-8229318-1464511 , :c-8992711-7232891 .
+
+:c-3124257-6471106 a owl:Class ;
+	rdfs:label "drukklaar gebeurtenis"@nl ;
+	rdfs:subClassOf :c-6710519-2895467 ;
+	owl:disjointWith :c-5014442-4116417 , :c-5791724-3808336 , :c-8597204-1535683 .
+
+:c-3248585-3397432 a owl:Class ;
+	rdfs:label "voorzitter programmacommissie"@nl ;
+	rdfs:subClassOf :c-0582934-7485542 .
+
+:c-3273026-5636644 a owl:Class ;
+	rdfs:label "kort artiekel"@nl ;
+	rdfs:subClassOf :c-2771772-3464274 ;
+	owl:disjointWith :c-6059828-1330333 .
+
+:c-3431197-3608298 a owl:Class ;
+	rdfs:label "land"@nl ;
+	owl:disjointWith :c-5942383-3081555 , :c-8229318-1464511 , :c-8992711-7232891 .
+
+:c-3850884-5956494 a owl:Class ;
+	rdfs:label "assistent"@nl ;
+	rdfs:subClassOf :c-0582934-7485542 .
+
+:c-3885644-3479454 a owl:Class ;
+	rdfs:label "receptie"@nl ;
+	rdfs:subClassOf :c-5159844-1645943 ;
+	owl:disjointWith :c-4154900-5366197 .
+
+:c-4154900-5366197 a owl:Class ;
+	rdfs:label "banket"@nl ;
+	rdfs:subClassOf :c-5159844-1645943 .
+
+:c-4300402-6170257 a owl:Class ;
+	rdfs:label "gewoon"@nl ;
+	rdfs:subClassOf :c-7965721-8197972 .
+
+:c-4379755-0753827 a owl:Class ;
+	rdfs:label "conferentie"@nl ;
+	rdfs:subClassOf :c-0450652-4349124 ;
+	owl:disjointWith :c-5673997-6695479 , :c-7949187-3752819 .
+
+:c-5014442-4116417 a owl:Class ;
+	rdfs:label "indienen gebeurtenis"@nl ;
+	rdfs:subClassOf :c-6710519-2895467 ;
+	owl:disjointWith :c-5791724-3808336 , :c-8597204-1535683 .
+
+:c-5159844-1645943 a owl:Class ;
+	rdfs:label "sociale gebeurtenis"@nl ;
+	rdfs:subClassOf :c-8229318-1464511 , _:node1e05bs21ex54 .
+
+_:node1e05bs21ex54 a owl:Restriction ;
+	owl:onProperty :ent-9580908-4160537 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5159844-1645943 rdfs:subClassOf _:node1e05bs21ex55 .
+
+_:node1e05bs21ex55 a owl:Restriction ;
+	owl:onProperty :ent-1575868-7836276 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5159844-1645943 rdfs:subClassOf _:node1e05bs21ex56 .
+
+_:node1e05bs21ex56 a owl:Restriction ;
+	owl:onProperty :ent-8671638-6894304 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-5159844-1645943 owl:disjointWith :c-6710519-2895467 .
+
+:c-5637971-4350493 a owl:Class ;
+	rdfs:label "stad"@nl ;
+	owl:disjointWith :c-5942383-3081555 , :c-8229318-1464511 , :c-8992711-7232891 .
+
+:c-5673997-6695479 a owl:Class ;
+	rdfs:label "snelcursus"@nl ;
+	rdfs:subClassOf :c-0450652-4349124 ;
+	owl:disjointWith :c-7949187-3752819 .
+
+:c-5791724-3808336 a owl:Class ;
+	rdfs:label "deelnemersregistratie gebeurtenis"@nl ;
+	rdfs:subClassOf :c-6710519-2895467 ;
+	owl:disjointWith :c-8597204-1535683 .
+
+:c-5875190-0599512 a owl:Class ;
+	rdfs:label "lid"@nl ;
+	rdfs:subClassOf :c-7965721-8197972 .
+
+:c-5942383-3081555 a owl:Class ;
+	rdfs:label "onderwerp"@nl ;
+	owl:disjointWith :c-8229318-1464511 , :c-8992711-7232891 .
+
+:c-6059828-1330333 a owl:Class ;
+	rdfs:label "poster"@nl ;
+	rdfs:subClassOf :c-2771772-3464274 .
+
+:c-6579519-7491384 a owl:Class ;
+	rdfs:label "auteur"@nl ;
+	rdfs:subClassOf :c-0582934-7485542 , _:node1e05bs21ex57 .
+
+_:node1e05bs21ex57 a owl:Restriction ;
+	owl:onProperty :op-7275263-7685611 ;
+	owl:someValuesFrom :c-2771772-3464274 .
+
+:c-6579519-7491384 rdfs:subClassOf _:node1e05bs21ex58 .
+
+_:node1e05bs21ex58 a owl:Restriction ;
+	owl:onProperty :op-7275263-7685611 ;
+	owl:allValuesFrom :c-2771772-3464274 .
+
+:c-6710519-2895467 a owl:Class ;
+	rdfs:label "administratieve gebeurtenis"@nl ;
+	rdfs:subClassOf :c-8229318-1464511 .
+
+:c-6808952-5087678 a owl:Class ;
+	rdfs:label "wetenschappelijk medewerker"@nl ;
+	rdfs:subClassOf :c-0582934-7485542 .
+
+:c-7949187-3752819 a owl:Class ;
+	rdfs:label "workshop"@nl ;
+	rdfs:subClassOf :c-0450652-4349124 .
+
+:c-7965721-8197972 a owl:Class ;
+	rdfs:label "deelnemer"@nl ;
+	rdfs:subClassOf :c-0582934-7485542 .
+
+:c-8229318-1464511 a owl:Class ;
+	rdfs:label "gebeurtenis"@nl ;
+	owl:disjointWith :c-8992711-7232891 .
+
+:c-8597204-1535683 a owl:Class ;
+	rdfs:label "recensieresultaat gebeurtenis"@nl ;
+	rdfs:subClassOf :c-6710519-2895467 .
+
+:c-8762124-2240768 a owl:Class ;
+	rdfs:label "bedrijf"@nl ;
+	rdfs:subClassOf :c-8992711-7232891 .
+
+:c-8781368-7519227 a owl:Class ;
+	rdfs:label "wetenschapper"@nl ;
+	rdfs:subClassOf :c-0582934-7485542 , _:node1e05bs21ex59 .
+
+_:node1e05bs21ex59 a owl:Restriction ;
+	owl:onProperty :op-1875169-1383817 ;
+	owl:someValuesFrom :c-2579448-9682769 .
+
+:c-8781368-7519227 rdfs:subClassOf _:node1e05bs21ex60 .
+
+_:node1e05bs21ex60 a owl:Restriction ;
+	owl:onProperty :op-1875169-1383817 ;
+	owl:allValuesFrom :c-2579448-9682769 .
+
+:c-8992711-7232891 a owl:Class ;
+	rdfs:label "organisatie"@nl .
+
+:c-9240813-6148127 a owl:Class ;
+	rdfs:label "lid programmacommissie"@nl ;
+	rdfs:subClassOf :c-0582934-7485542 , _:node1e05bs21ex61 .
+
+_:node1e05bs21ex61 a owl:Restriction ;
+	owl:onProperty :op-1400889-4257078 ;
+	owl:allValuesFrom :c-5942383-3081555 .
+
+:c-9240813-6148127 rdfs:subClassOf _:node1e05bs21ex62 .
+
+_:node1e05bs21ex62 a owl:Restriction ;
+	owl:onProperty :op-9414187-0096564 ;
+	owl:someValuesFrom :c-2771772-3464274 .
+
+:c-9240813-6148127 rdfs:subClassOf _:node1e05bs21ex63 .
+
+_:node1e05bs21ex63 a owl:Restriction ;
+	owl:onProperty :op-1400889-4257078 ;
+	owl:someValuesFrom :c-5942383-3081555 .
+
+:c-9240813-6148127 rdfs:subClassOf _:node1e05bs21ex64 .
+
+_:node1e05bs21ex64 a owl:Restriction ;
+	owl:onProperty :op-9414187-0096564 ;
+	owl:allValuesFrom :c-2771772-3464274 .
+
+:c-9946679-7000478 a owl:Class ;
+	rdfs:label "beheerder"@nl ;
+	rdfs:subClassOf :c-0582934-7485542 .

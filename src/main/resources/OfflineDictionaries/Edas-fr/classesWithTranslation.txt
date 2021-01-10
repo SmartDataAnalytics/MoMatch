@@ -1,0 +1,103 @@
+review,examen
+conference session,session de la conférence
+conference dinner,dîner de la conférence
+review form,le formulaire d'examen
+single level conference,seul le niveau de conférence
+call for reviews,appel à commentaires
+welcome talk,bienvenue parler
+review question,examen de la question
+contact information,les informations de contact
+rejected paper,rejeté papier
+country,pays
+conference venue place,lieu de la conférence la place
+week reject rating,la semaine de la note de rejet
+non academic event,non universitaire de l'événement
+conference event,conférence de l'événement
+numerical review question,numérique examen de la question
+government organization,l'organisation du gouvernement
+signal processing topic,traitement du signal rubrique
+academia organization,les universités de l'organisation
+meal menu,menu de repas
+call,appel
+personal history,histoire personnelle
+computer networks measurements topic,les réseaux informatiques les mesures de sujet
+personal publication history,publication personnelle de l'histoire
+attendee,participant
+sponsorship,parrainage
+presenter,présentateur
+satellite and space communications topic,par satellite et les communications spatiales sujet
+two level conference,deux niveau de conférence
+microelectronics topic,la microélectronique sujet
+reject rating,note de rejet
+powerline transmission topic,cpl transmission sujet
+communications topic,communications rubrique
+travel grant,subvention de voyage
+withdrawn paper,retrait du papier
+computer networks management topic,les réseaux informatiques de gestion de la rubrique
+wireless communications topic,les communications sans fil sujet
+call for manuscripts,appel à manuscrits
+talk event,parler de l'événement
+operating topicsystems,d'exploitation topicsystems
+active paper,active papier
+multimedia topic,multimédia sujet
+paper,papier
+meal break,pause repas
+communication theory topic,la théorie de la communication rubrique
+dining place,place à manger
+call for papers,appel à communications
+published paper,article publié
+free time break,libre de temps de pause
+computer networks enterprise topic,les réseaux informatiques de l'entreprise sujet
+paper presentation,présentation de l'article
+programme,programme
+parallel and distributed computing topic,parallèles et distribués sujet
+excursion,excursion
+conference,conférence
+ngo,ong
+personal review history,personnels de l'examen de l'histoire
+test only topic,test seul sujet
+coffee break,pause café
+performance topic,les performances de sujet
+cad topic,cad sujet
+meeting room place,salle de réunion la place
+textual review question,textuel de l'examen de la question
+accpet if room rating,accpet si la chambre de notation
+cryptography topic,la cryptographie sujet
+computer networks sensor topic,les réseaux informatiques capteur sujet
+organizational meeting,réunion d'organisation
+rated papers,nominale papiers
+pending paper,dans l'attente de papier
+tpc member,tpc membre
+review rating,révision de notation
+accept rating,accepter de notation
+computer networks aapplications topic,les réseaux informatiques aapplications sujet
+organization,organisation
+security topic,thème sécurité
+accepted paper,article accepté
+meal event,repas de l'événement
+computer networks security topic,thème sécurité des réseaux informatiques
+session chair,président de séance
+academic event,académique de l'événement
+workshop,atelier
+topic,sujet
+antennas topic,antennes sujet
+place,place
+slide set,diaporama
+medicine topic,la médecine rubrique
+reviewer,examinateur
+mobile computing topic,l'informatique mobile sujet
+social event,événement social
+radio communications topic,les communications radio sujet
+computer networks switching topic,les réseaux informatiques de commutation sujet
+reception,réception
+computer networks optical topic,les réseaux informatiques optiques sujet
+person,personne
+industry organization,organisation de l'industrie
+accommodation place,logement
+conference chair,le président de la conférence
+computer networks topic,les réseaux informatiques sujet
+closing talk,discours de clôture
+author,auteur
+computer architecture topic,architecture des ordinateurs sujet
+document,document
+break event,pause événement

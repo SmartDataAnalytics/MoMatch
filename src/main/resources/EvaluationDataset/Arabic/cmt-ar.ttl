@@ -1,0 +1,533 @@
+@prefix : <http://cmt_ar#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://cmt_ar> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+:op-0077265-3002157 a owl:ObjectProperty ;
+	rdfs:label "لديه عضو"@ar ;
+	rdfs:range :c-2220987-5331821 ;
+	rdfs:domain :c-6407650-6197378 ;
+	owl:inverseOf :op-5466717-2620633 .
+
+:op-0124511-1789830 a owl:ObjectProperty ;
+	rdfs:label "تعيين من اجل"@ar ;
+	rdfs:domain :c-6855502-1595452 ;
+	rdfs:range :c-6884283-5550269 .
+
+:op-0662627-4814294 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "يضيف"@ar ;
+	rdfs:domain :c-1708774-9125777 ;
+	rdfs:range :c-7572681-2355237 .
+
+:op-1026354-7274154 a owl:ObjectProperty ;
+	rdfs:label "احالة أدوات البحث مشغل من قبل"@ar ;
+	rdfs:range :c-1708774-9125777 ;
+	rdfs:domain :c-6407650-6197378 .
+
+:op-1374410-6089444 a owl:ObjectProperty ;
+	rdfs:label "تحديد مجموعة عدد أقصى من الابحاث المسندة"@ar ;
+	rdfs:domain :c-1708774-9125777 ;
+	rdfs:range :c-7572681-2355237 .
+
+:op-1512138-2288119 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "لديه مزايدة"@ar ;
+	rdfs:range :c-3101760-6220913 ;
+	rdfs:domain :c-6855502-1595452 .
+
+:op-1906733-2277684 a owl:ObjectProperty ;
+	rdfs:label "عضو في اللجنة العلمية"@ar ;
+	rdfs:range :c-1232161-0048624 ;
+	rdfs:domain :c-7572681-2355237 .
+
+:op-1942381-2978009 a owl:ObjectProperty ;
+	rdfs:label "اجتماع الظاهري ممكن من قبل"@ar ;
+	rdfs:range :c-1708774-9125777 ;
+	rdfs:domain :c-6407650-6197378 .
+
+:op-1947892-8022039 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "تعديله من قبل"@ar ;
+	rdfs:domain :c-3101760-6220913 ;
+	rdfs:range :c-6884283-5550269 .
+
+:op-2082117-7310815 a owl:ObjectProperty ;
+	rdfs:label "تمكين الاجتماع الظاهري"@ar ;
+	rdfs:domain :c-1708774-9125777 ;
+	rdfs:range :c-6407650-6197378 ;
+	owl:inverseOf :op-1942381-2978009 .
+
+:op-2398058-4371549 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "ضبط"@ar ;
+	rdfs:range :c-3101760-6220913 ;
+	rdfs:domain :c-6884283-5550269 ;
+	owl:inverseOf :op-1947892-8022039 .
+
+:op-2532909-8512587 a owl:ObjectProperty ;
+	rdfs:label "استكمال احالة البحث"@ar ;
+	rdfs:domain :c-1708774-9125777 ;
+	rdfs:range :c-6407650-6197378 ;
+	owl:inverseOf :op-4375254-0101062 .
+
+:op-2621489-2639155 a owl:ObjectProperty ;
+	rdfs:label "بدء تقديم العطاءات المراجع"@ar ;
+	rdfs:domain :c-1708774-9125777 ;
+	rdfs:range :c-6407650-6197378 ;
+	owl:inverseOf :op-6266157-6462507 .
+
+:op-3146868-7245125 a owl:ObjectProperty ;
+	rdfs:label "كاتب مشترك من قبل"@ar ;
+	rdfs:range :c-3714057-1039146 ;
+	rdfs:domain :c-6855502-1595452 ;
+	owl:inverseOf :op-7987969-7509674 .
+
+:op-3462160-0135119 a owl:ObjectProperty ;
+	rdfs:label "طباعة نسخة من البريد الالكتروني للمظاهرات"@ar ;
+	rdfs:domain :c-1708774-9125777 ;
+	rdfs:range :c-6407650-6197378 .
+
+:op-3738146-7132581 a owl:ObjectProperty ;
+	rdfs:label "تفاصيل مدخلة من قبل"@ar ;
+	rdfs:range :c-1708774-9125777 ;
+	rdfs:domain :c-6407650-6197378 .
+
+:op-3998076-6312950 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "المراجعة كتابية"@ar ;
+	rdfs:range :c-3194825-5346027 ;
+	rdfs:domain :c-6884283-5550269 .
+
+:op-4249215-9846680 a owl:ObjectProperty ;
+	rdfs:label "يعيين"@ar ;
+	rdfs:domain :c-1708774-9125777 ;
+	rdfs:range :c-6884283-5550269 ;
+	owl:inverseOf :op-8681941-3178471 .
+
+:op-4356631-9076520 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "مسند من قبل مراجع"@ar ;
+	rdfs:domain :c-3945225-6300796 ;
+	rdfs:range :c-6884283-5550269 ;
+	owl:inverseOf :op-9524919-6736172 .
+
+:op-4375254-0101062 a owl:ObjectProperty ;
+	rdfs:label "احالة البحث منتهي من قبل"@ar ;
+	rdfs:range :c-1708774-9125777 ;
+	rdfs:domain :c-6407650-6197378 .
+
+:op-4636674-1359847 a owl:ObjectProperty ;
+	rdfs:label "لديه عضو"@ar ;
+	rdfs:domain :c-1232161-0048624 ;
+	rdfs:range :c-7572681-2355237 ;
+	owl:inverseOf :op-1906733-2277684 .
+
+:op-4915323-2210432 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "كتابته من قبل"@ar ;
+	rdfs:domain :c-6855502-1595452 ;
+	rdfs:range :c-8335305-4555146 ;
+	owl:inverseOf :op-6477014-2447390 .
+
+:op-5074777-6797175 a owl:ObjectProperty ;
+	rdfs:label "ارسال البحث"@ar ;
+	rdfs:range :c-6855502-1595452 ;
+	rdfs:domain :c-8335305-4555146 .
+
+:op-5466717-2620633 a owl:ObjectProperty ;
+	rdfs:label "عضو المؤتمر"@ar ;
+	rdfs:domain :c-2220987-5331821 ;
+	rdfs:range :c-6407650-6197378 .
+
+:op-5783340-2574236 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "(... ،تم تقرير (ليكون مقبول، مرفوض"@ar ;
+	rdfs:range :c-1031803-6530562 ;
+	rdfs:domain :c-6855502-1595452 .
+
+:op-5894858-9261514 a owl:ObjectProperty ;
+	rdfs:label "وقت إنتهاء مراجعة"@ar ;
+	rdfs:domain :c-0197956-6725851 ;
+	rdfs:range :c-3194825-5346027 .
+
+:op-6147118-8808919 a owl:ObjectProperty ;
+	rdfs:label "نسخة من البريد الالكتروني للمظاهرات مطبوعة من قبل"@ar ;
+	rdfs:range :c-1708774-9125777 ;
+	rdfs:domain :c-6407650-6197378 ;
+	owl:inverseOf :op-3462160-0135119 .
+
+:op-6266157-6462507 a owl:ObjectProperty ;
+	rdfs:label "بدأ تقديم العطاءات المراجع من قبل"@ar ;
+	rdfs:range :c-1708774-9125777 ;
+	rdfs:domain :c-6407650-6197378 .
+
+:op-6389051-2982777 a owl:ObjectProperty ;
+	rdfs:label "معايير مراجعة أدخلت من قبل"@ar ;
+	rdfs:range :c-1708774-9125777 ;
+	rdfs:domain :c-6407650-6197378 ;
+	owl:inverseOf :op-9993047-2293020 .
+
+:op-6438608-6997044 a owl:ObjectProperty ;
+	rdfs:label "تم تعيين"@ar ;
+	rdfs:range :c-6855502-1595452 ;
+	rdfs:domain :c-6884283-5550269 ;
+	owl:inverseOf :op-0124511-1789830 .
+
+:op-6477014-2447390 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "كتابة البحث"@ar ;
+	rdfs:range :c-6855502-1595452 ;
+	rdfs:domain :c-8335305-4555146 .
+
+:op-6683020-8838246 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "كتابته من قبل"@ar ;
+	rdfs:domain :c-3194825-5346027 ;
+	rdfs:range :c-6884283-5550269 ;
+	owl:inverseOf :op-3998076-6312950 .
+
+:op-6776481-7922961 a owl:ObjectProperty ;
+	rdfs:label "قراءة البحث"@ar ;
+	rdfs:range :c-6855502-1595452 ;
+	rdfs:domain :c-6884283-5550269 ;
+	owl:inverseOf :op-7141547-2558957 .
+
+:op-6823078-4797319 a owl:ObjectProperty ;
+	rdfs:label "تشغيل أدوات احالة البحث"@ar ;
+	rdfs:domain :c-1708774-9125777 ;
+	rdfs:range :c-6407650-6197378 ;
+	owl:inverseOf :op-1026354-7274154 .
+
+:op-6930500-2740802 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "قراءته من قبل مراجع الفوقي"@ar ;
+	rdfs:range :c-5605295-3101146 ;
+	rdfs:domain :c-6855502-1595452 .
+
+:op-7141547-2558957 a owl:ObjectProperty ;
+	rdfs:label "قراءته من قبل مراجع"@ar ;
+	rdfs:domain :c-6855502-1595452 ;
+	rdfs:range :c-6884283-5550269 .
+
+:op-7376977-4507172 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "بحث مرفوض"@ar ;
+	rdfs:domain :c-1708774-9125777 ;
+	rdfs:range :c-6855502-1595452 ;
+	owl:inverseOf :op-8508521-5721137 .
+
+:op-7547975-1395694 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "أضافته من قبل"@ar ;
+	rdfs:range :c-1708774-9125777 ;
+	rdfs:domain :c-7572681-2355237 ;
+	owl:inverseOf :op-0662627-4814294 .
+
+:op-7617874-9671290 a owl:ObjectProperty ;
+	rdfs:label "إدخال التفاصيل حول"@ar ;
+	rdfs:domain :c-1708774-9125777 ;
+	rdfs:range :c-6407650-6197378 ;
+	owl:inverseOf :op-3738146-7132581 .
+
+:op-7726218-5131887 a owl:ObjectProperty ;
+	rdfs:label "علامة تضارب المصالح"@ar ;
+	rdfs:range :c-6855502-1595452 ;
+	rdfs:domain _:node1e059mespx1 .
+
+_:node1e059mespx1 a owl:Class ;
+	owl:unionOf _:node1e059mespx2 .
+
+_:node1e059mespx2 rdf:first :c-3930288-3644648 ;
+	rdf:rest _:node1e059mespx3 .
+
+_:node1e059mespx3 rdf:first :c-6884283-5550269 ;
+	rdf:rest _:node1e059mespx4 .
+
+_:node1e059mespx4 rdf:first :c-8335305-4555146 ;
+	rdf:rest rdf:nil .
+
+:op-7940247-9734251 a owl:ObjectProperty , owl:FunctionalProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "يقبل"@ar ;
+	rdfs:domain :c-1708774-9125777 ;
+	rdfs:range :c-6855502-1595452 ;
+	owl:inverseOf :op-8625931-9644071 .
+
+:op-7987969-7509674 a owl:ObjectProperty ;
+	rdfs:label "مشترك في الكتابة"@ar ;
+	rdfs:domain :c-3714057-1039146 ;
+	rdfs:range :c-6855502-1595452 .
+
+:op-8508521-5721137 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "رفض من قبل"@ar ;
+	rdfs:range :c-1708774-9125777 ;
+	rdfs:domain :c-6855502-1595452 .
+
+:op-8625931-9644071 a owl:ObjectProperty , owl:FunctionalProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "قبوله من قبل"@ar ;
+	rdfs:range :c-1708774-9125777 ;
+	rdfs:domain :c-6855502-1595452 .
+
+:op-8681941-3178471 a owl:ObjectProperty ;
+	rdfs:label "تعيينه من قبل مشرف"@ar ;
+	rdfs:range :c-1708774-9125777 ;
+	rdfs:domain :c-6884283-5550269 .
+
+:op-9193814-5047447 a owl:ObjectProperty ;
+	rdfs:label "لديه موضوع المحور"@ar ;
+	rdfs:range :c-0625239-2425775 ;
+	rdfs:domain :c-6855502-1595452 .
+
+:op-9439554-2925691 a owl:ObjectProperty ;
+	rdfs:label "لديه تضارب في المصالح مع احترام"@ar ;
+	rdfs:range :c-9476305-1556488 ;
+	rdfs:domain :c-9541928-7173577 .
+
+:op-9524919-6736172 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "يعيين"@ar ;
+	rdfs:range :c-3945225-6300796 ;
+	rdfs:domain :c-6884283-5550269 .
+
+:op-9993047-2293020 a owl:ObjectProperty ;
+	rdfs:label "إدخال معايير المراجعة"@ar ;
+	rdfs:domain :c-1708774-9125777 ;
+	rdfs:range :c-6407650-6197378 .
+
+:ent-0474024-8645389 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه عنوان"@ar ;
+	rdfs:domain :c-6855502-1595452 ;
+	rdfs:range xsd:string .
+
+:ent-0888652-2952644 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه اسم"@ar ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e059mespx5 .
+
+_:node1e059mespx5 a owl:Class ;
+	owl:unionOf _:node1e059mespx6 .
+
+_:node1e059mespx6 rdf:first :c-6407650-6197378 ;
+	rdf:rest _:node1e059mespx7 .
+
+_:node1e059mespx7 rdf:first :c-9541928-7173577 ;
+	rdf:rest rdf:nil .
+
+:ent-1697241-5302844 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "مراجعة/تعليقات لكل بحث"@ar ;
+	rdfs:domain :c-6407650-6197378 ;
+	rdfs:range xsd:int .
+
+:ent-1721348-6878918 a owl:DatatypeProperty ;
+	rdfs:label "لديه التاريخ"@ar ;
+	rdfs:domain :c-6407650-6197378 ;
+	rdfs:range xsd:date .
+
+:ent-4299333-0273163 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "العدد الأقصى من الابحاث المسندة"@ar ;
+	rdfs:domain :c-7572681-2355237 ;
+	rdfs:range xsd:int .
+
+:ent-6252776-8181806 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "تقبل نسخة المرسلات"@ar ;
+	rdfs:domain :c-6407650-6197378 ;
+	rdfs:range xsd:boolean .
+
+:ent-6395384-0777412 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه الشعار في رابط"@ar ;
+	rdfs:domain :c-6407650-6197378 ;
+	rdfs:range xsd:anyURI .
+
+:ent-6629428-4947742 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه معرف"@ar ;
+	rdfs:domain :c-6855502-1595452 ;
+	rdfs:range xsd:unsignedLong .
+
+:ent-6657622-4246440 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "لديه موقع على رابط"@ar ;
+	rdfs:domain :c-6407650-6197378 ;
+	rdfs:range xsd:anyURI .
+
+:ent-9784858-1898461 a owl:DatatypeProperty ;
+	rdfs:label "لديه بريد الكتروني"@ar ;
+	rdfs:domain :c-9541928-7173577 ;
+	rdfs:range xsd:string .
+
+:c-0197956-6725851 a owl:Class ;
+	rdfs:label "رئيس اللجنة العلمية"@ar ;
+	rdfs:subClassOf :c-7572681-2355237 .
+
+:c-0471234-6892254 a owl:Class ;
+	rdfs:label "لاشيء"@ar .
+
+:c-0625239-2425775 a owl:Class ;
+	rdfs:label "موضوع المحور"@ar .
+
+:c-0634254-3328105 a owl:Class ;
+	rdfs:label "رئيس المرتبطة"@ar ;
+	rdfs:subClassOf :c-2220987-5331821 ;
+	owl:disjointWith :c-9634422-4066717 .
+
+:c-1031803-6530562 a owl:Class ;
+	rdfs:label "قرار"@ar ;
+	owl:disjointWith :c-1232161-0048624 , :c-1776859-6098962 , :c-3101760-6220913 , :c-6407650-6197378 , :c-9476305-1556488 , :c-9541928-7173577 .
+
+:c-1232161-0048624 a owl:Class ;
+	rdfs:label "لجنة العلمية"@ar ;
+	owl:disjointWith :c-1776859-6098962 , :c-3101760-6220913 , :c-6407650-6197378 , :c-9476305-1556488 , :c-9541928-7173577 .
+
+:c-1708774-9125777 a owl:Class ;
+	rdfs:label "مشرف"@ar ;
+	rdfs:subClassOf :c-4595043-4384026 .
+
+:c-1753052-0526039 a owl:Class ;
+	rdfs:label "ملخص البحث"@ar ;
+	rdfs:subClassOf :c-6855502-1595452 .
+
+:c-1776859-6098962 a owl:Class ;
+	rdfs:label "أفضلية"@ar ;
+	owl:disjointWith :c-3101760-6220913 , :c-6407650-6197378 , :c-9476305-1556488 , :c-9541928-7173577 .
+
+:c-2220987-5331821 a owl:Class ;
+	rdfs:label "عضو المؤتمر"@ar ;
+	rdfs:subClassOf :c-9541928-7173577 .
+
+:c-3101760-6220913 a owl:Class ;
+	rdfs:label "مزايدة"@ar ;
+	owl:disjointWith :c-6407650-6197378 , :c-9476305-1556488 , :c-9541928-7173577 .
+
+:c-3194825-5346027 a owl:Class ;
+	rdfs:label "مراجعة"@ar ;
+	rdfs:subClassOf :c-9476305-1556488 ;
+	owl:disjointWith :c-6855502-1595452 .
+
+:c-3714057-1039146 a owl:Class ;
+	rdfs:label "الكاتب المشترك"@ar ;
+	rdfs:subClassOf :c-8335305-4555146 .
+
+:c-3930288-3644648 a owl:Class ;
+	rdfs:label "رئيس"@ar ;
+	owl:equivalentClass _:node1e059mespx8 .
+
+_:node1e059mespx8 a owl:Class ;
+	owl:unionOf _:node1e059mespx9 .
+
+_:node1e059mespx9 rdf:first :c-0197956-6725851 ;
+	rdf:rest _:node1e059mespx10 .
+
+_:node1e059mespx10 rdf:first :c-0634254-3328105 ;
+	rdf:rest _:node1e059mespx11 .
+
+_:node1e059mespx11 rdf:first :c-9634422-4066717 ;
+	rdf:rest rdf:nil .
+
+:c-3930288-3644648 rdfs:subClassOf :c-9541928-7173577 .
+
+:c-3945225-6300796 a owl:Class ;
+	rdfs:label "المراجع خارجي"@ar ;
+	rdfs:subClassOf :c-9541928-7173577 , _:node1e059mespx12 .
+
+_:node1e059mespx12 a owl:Restriction ;
+	owl:onProperty :op-4356631-9076520 ;
+	owl:onClass :c-0471234-6892254 ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-3945225-6300796 owl:disjointWith :c-6884283-5550269 .
+
+:c-4595043-4384026 a owl:Class ;
+	rdfs:label "المستخدم"@ar ;
+	rdfs:subClassOf :c-9541928-7173577 .
+
+:c-4901776-6249690 a owl:Class ;
+	rdfs:label "الكاتب، الذي ليس المراجع"@ar ;
+	rdfs:subClassOf :c-8335305-4555146 ;
+	owl:disjointWith :c-6884283-5550269 , :c-7572681-2355237 .
+
+:c-5258810-6413397 a owl:Class ;
+	rdfs:label "النسخة الكاملة من البحث"@ar ;
+	rdfs:subClassOf :c-6855502-1595452 .
+
+:c-5515515-7655801 a owl:Class ;
+	rdfs:label "مراجعة فوقية"@ar ;
+	rdfs:subClassOf :c-3194825-5346027 .
+
+:c-5605295-3101146 a owl:Class ;
+	rdfs:label "المراجع الفوقي"@ar ;
+	rdfs:subClassOf :c-6884283-5550269 .
+
+:c-6326453-4709586 a owl:Class ;
+	rdfs:label "القبول"@ar ;
+	rdfs:subClassOf :c-1031803-6530562 ;
+	owl:disjointWith :c-8895015-9423071 .
+
+:c-6407650-6197378 a owl:Class ;
+	rdfs:label "مؤتمر"@ar ;
+	rdfs:subClassOf :c-0471234-6892254 , _:node1e059mespx13 .
+
+_:node1e059mespx13 a owl:Restriction ;
+	owl:onProperty :ent-0888652-2952644 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6407650-6197378 rdfs:subClassOf _:node1e059mespx14 .
+
+_:node1e059mespx14 a owl:Restriction ;
+	owl:onProperty :ent-1721348-6878918 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6407650-6197378 rdfs:subClassOf _:node1e059mespx15 .
+
+_:node1e059mespx15 a owl:Restriction ;
+	owl:onProperty :ent-1697241-5302844 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6407650-6197378 owl:disjointWith :c-9476305-1556488 , :c-9541928-7173577 .
+
+:c-6855502-1595452 a owl:Class ;
+	rdfs:label "البحث"@ar ;
+	rdfs:subClassOf :c-9476305-1556488 , _:node1e059mespx16 .
+
+_:node1e059mespx16 a owl:Restriction ;
+	owl:onProperty :op-6930500-2740802 ;
+	owl:onClass :c-0471234-6892254 ;
+	owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6855502-1595452 rdfs:subClassOf _:node1e059mespx17 .
+
+_:node1e059mespx17 a owl:Restriction ;
+	owl:onProperty :op-5783340-2574236 ;
+	owl:onClass :c-0471234-6892254 ;
+	owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger .
+
+:c-6855502-1595452 rdfs:subClassOf _:node1e059mespx18 .
+
+_:node1e059mespx18 a owl:Restriction ;
+	owl:onProperty :op-7141547-2558957 ;
+	owl:onClass :c-0471234-6892254 ;
+	owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6855502-1595452 rdfs:subClassOf _:node1e059mespx19 .
+
+_:node1e059mespx19 a owl:Restriction ;
+	owl:onProperty :op-5783340-2574236 ;
+	owl:onClass :c-0471234-6892254 ;
+	owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6884283-5550269 a owl:Class ;
+	rdfs:label "المراجع"@ar ;
+	rdfs:subClassOf :c-2220987-5331821 , :c-4595043-4384026 .
+
+:c-7572681-2355237 a owl:Class ;
+	rdfs:label "عضو في اللجنة العلمية"@ar ;
+	rdfs:subClassOf :c-2220987-5331821 , :c-9541928-7173577 .
+
+:c-8335305-4555146 a owl:Class ;
+	rdfs:label "الكاتب"@ar ;
+	rdfs:subClassOf :c-2220987-5331821 , :c-4595043-4384026 .
+
+:c-8895015-9423071 a owl:Class ;
+	rdfs:label "الرفض"@ar ;
+	rdfs:subClassOf :c-1031803-6530562 .
+
+:c-9476305-1556488 a owl:Class ;
+	rdfs:label "وثيقة"@ar ;
+	owl:disjointWith :c-9541928-7173577 .
+
+:c-9541928-7173577 a owl:Class ;
+	rdfs:label "شخص"@ar .
+
+:c-9634422-4066717 a owl:Class ;
+	rdfs:label "رئيس المؤتمر"@ar ;
+	rdfs:subClassOf :c-2220987-5331821 .

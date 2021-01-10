@@ -1,0 +1,3475 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://edas#> .
+@prefix p1: <http://www.owl-ontologies.com/assert.owl#> .
+
+<http://edas> a owl:Ontology ;
+	owl:versionInfo "1.5"^^xsd:string ;
+	rdfs:comment "EDAS Conference Menagement Ontology (for 4iz440)"^^xsd:string .
+
+:SlideSet a owl:Class ;
+	owl:disjointWith :Review .
+
+:Review a owl:Class .
+
+:SlideSet owl:disjointWith :Programme .
+
+:Programme a owl:Class .
+
+:SlideSet owl:disjointWith :Paper .
+
+:Paper a owl:Class .
+
+:SlideSet owl:disjointWith :MealMenu .
+
+:MealMenu a owl:Class .
+
+:SlideSet rdfs:subClassOf :Document .
+
+:Document a owl:Class .
+
+:Topic a owl:Class ;
+	owl:disjointWith :ConferenceEvent .
+
+:ConferenceEvent a owl:Class .
+
+:Topic owl:disjointWith :Call .
+
+:Call a owl:Class .
+
+:Topic owl:disjointWith :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:Topic owl:disjointWith :Organization .
+
+:Organization a owl:Class .
+
+:Topic owl:disjointWith :ReviewForm .
+
+:ReviewForm a owl:Class .
+
+:Topic owl:disjointWith :Conference .
+
+:Conference a owl:Class .
+
+:Topic owl:disjointWith :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:Topic owl:disjointWith :Sponsorship .
+
+:Sponsorship a owl:Class .
+
+:Topic owl:disjointWith :ReviewQuestion .
+
+:ReviewQuestion a owl:Class .
+
+:Topic owl:disjointWith :Person .
+
+:Person a owl:Class .
+
+:Topic owl:disjointWith :Country .
+
+:Country a owl:Class .
+
+:Topic owl:disjointWith :ConferenceSession .
+
+:ConferenceSession a owl:Class .
+
+:Topic owl:disjointWith :ContactInformation .
+
+:ContactInformation a owl:Class .
+
+:Topic owl:disjointWith :Document .
+
+:Document a owl:Class .
+
+:Topic owl:disjointWith :Place .
+
+:Place a owl:Class .
+
+:WeekRejectRating a owl:Class ;
+	rdfs:subClassOf :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:WeekRejectRating owl:disjointWith :AcceptRating .
+
+:AcceptRating a owl:Class .
+
+:WeekRejectRating owl:disjointWith :AccpetIfRoomRating .
+
+:AccpetIfRoomRating a owl:Class .
+
+:WeekRejectRating owl:disjointWith :RejectRating .
+
+:RejectRating a owl:Class .
+
+:ContactInformation a owl:Class ;
+	owl:disjointWith :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:ContactInformation owl:disjointWith :ReviewForm .
+
+:ReviewForm a owl:Class .
+
+:ContactInformation owl:disjointWith :ConferenceSession .
+
+:ConferenceSession a owl:Class .
+
+:ContactInformation owl:disjointWith :Document .
+
+:Document a owl:Class .
+
+:ContactInformation owl:disjointWith :ReviewQuestion .
+
+:ReviewQuestion a owl:Class .
+
+:ContactInformation owl:disjointWith :Country .
+
+:Country a owl:Class .
+
+:ContactInformation owl:disjointWith :Conference .
+
+:Conference a owl:Class .
+
+:ContactInformation owl:disjointWith :Sponsorship .
+
+:Sponsorship a owl:Class .
+
+:ContactInformation owl:disjointWith :Topic , :Call .
+
+:Call a owl:Class .
+
+:ContactInformation owl:disjointWith :Place .
+
+:Place a owl:Class .
+
+:ContactInformation owl:disjointWith :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:ContactInformation owl:disjointWith :ConferenceEvent .
+
+:ConferenceEvent a owl:Class .
+
+:ContactInformation owl:disjointWith :Organization .
+
+:Organization a owl:Class .
+
+:MealEvent a owl:Class ;
+	rdfs:subClassOf :NonAcademicEvent .
+
+:NonAcademicEvent a owl:Class .
+
+:MealEvent owl:disjointWith :BreakEvent .
+
+:BreakEvent a owl:Class .
+
+:ParallelAndDistributedComputingTopic a owl:Class ;
+	owl:disjointWith :WirelessCommunicationsTopic .
+
+:WirelessCommunicationsTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic rdfs:subClassOf :Topic ;
+	owl:disjointWith :OperatingTopicsystems .
+
+:OperatingTopicsystems a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :ComputerNetworksTopic .
+
+:ComputerNetworksTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :CADTopic .
+
+:CADTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :CommunicationsTopic .
+
+:CommunicationsTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :AntennasTopic .
+
+:AntennasTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :PerformanceTopic .
+
+:PerformanceTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :SignalProcessingTopic .
+
+:SignalProcessingTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :MedicineTopic .
+
+:MedicineTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :SecurityTopic .
+
+:SecurityTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :MobileComputingTopic .
+
+:MobileComputingTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:ParallelAndDistributedComputingTopic owl:disjointWith :CommunicationTheoryTopic .
+
+:CommunicationTheoryTopic a owl:Class .
+
+:ConferenceChair a owl:Class ;
+	owl:disjointWith :Author .
+
+:Author a owl:Class .
+
+:ConferenceChair rdfs:subClassOf :Person .
+
+:Person a owl:Class .
+
+:Paper a owl:Class ;
+	rdfs:subClassOf :Document .
+
+:Document a owl:Class .
+
+:Paper owl:disjointWith :SlideSet , :Review .
+
+:Review a owl:Class .
+
+:Paper owl:disjointWith :Programme .
+
+:Programme a owl:Class .
+
+:Paper owl:disjointWith :MealMenu .
+
+:MealMenu a owl:Class .
+
+:Paper owl:disjointWith :Conference .
+
+:Conference a owl:Class .
+
+:DiningPlace a owl:Class ;
+	rdfs:subClassOf :Place .
+
+:Place a owl:Class .
+
+:ComputerNetworksTopic a owl:Class ;
+	owl:disjointWith :AntennasTopic .
+
+:AntennasTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :PerformanceTopic .
+
+:PerformanceTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :CommunicationTheoryTopic .
+
+:CommunicationTheoryTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:ComputerNetworksTopic rdfs:subClassOf :Topic ;
+	owl:disjointWith :WirelessCommunicationsTopic .
+
+:WirelessCommunicationsTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :SignalProcessingTopic .
+
+:SignalProcessingTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :MedicineTopic .
+
+:MedicineTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :SecurityTopic .
+
+:SecurityTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :CommunicationsTopic .
+
+:CommunicationsTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :ParallelAndDistributedComputingTopic , :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :OperatingTopicsystems .
+
+:OperatingTopicsystems a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :CADTopic .
+
+:CADTopic a owl:Class .
+
+:ComputerNetworksTopic owl:disjointWith :MobileComputingTopic .
+
+:MobileComputingTopic a owl:Class .
+
+:Presenter a owl:Class ;
+	rdfs:subClassOf :Author .
+
+:Author a owl:Class .
+
+:CommunicationTheoryTopic a owl:Class ;
+	owl:disjointWith :ComputerNetworksTopic , :OperatingTopicsystems .
+
+:OperatingTopicsystems a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :WirelessCommunicationsTopic .
+
+:WirelessCommunicationsTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:CommunicationTheoryTopic rdfs:subClassOf :Topic ;
+	owl:disjointWith :CommunicationsTopic .
+
+:CommunicationsTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :SignalProcessingTopic .
+
+:SignalProcessingTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :MedicineTopic .
+
+:MedicineTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :CADTopic .
+
+:CADTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :PerformanceTopic .
+
+:PerformanceTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :SecurityTopic .
+
+:SecurityTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :MobileComputingTopic .
+
+:MobileComputingTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :AntennasTopic .
+
+:AntennasTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:CommunicationTheoryTopic owl:disjointWith :ParallelAndDistributedComputingTopic .
+
+:Programme a owl:Class ;
+	owl:disjointWith :SlideSet , :Review .
+
+:Review a owl:Class .
+
+:Programme owl:disjointWith :Paper , :MealMenu .
+
+:MealMenu a owl:Class .
+
+:Programme rdfs:subClassOf :Document .
+
+:Document a owl:Class .
+
+:AcademiaOrganization a owl:Class ;
+	owl:disjointWith :IndustryOrganization .
+
+:IndustryOrganization a owl:Class .
+
+:AcademiaOrganization owl:disjointWith :NGO .
+
+:NGO a owl:Class .
+
+:AcademiaOrganization owl:disjointWith :GovernmentOrganization .
+
+:GovernmentOrganization a owl:Class .
+
+:AcademiaOrganization rdfs:subClassOf :Organization .
+
+:Organization a owl:Class .
+
+:ComputerNetworksEnterpriseTopic a owl:Class ;
+	rdfs:subClassOf :ComputerNetworksTopic ;
+	owl:disjointWith :ComputerNetworksSwitchingTopic .
+
+:ComputerNetworksSwitchingTopic a owl:Class .
+
+:ComputerNetworksEnterpriseTopic owl:disjointWith :ComputerNetworksSensorTopic .
+
+:ComputerNetworksSensorTopic a owl:Class .
+
+:ComputerNetworksEnterpriseTopic owl:disjointWith :ComputerNetworksSecurityTopic .
+
+:ComputerNetworksSecurityTopic a owl:Class .
+
+:ComputerNetworksEnterpriseTopic owl:disjointWith :ComputerNetworksOpticalTopic .
+
+:ComputerNetworksOpticalTopic a owl:Class .
+
+:ComputerNetworksEnterpriseTopic owl:disjointWith :ComputerNetworksMeasurementsTopic .
+
+:ComputerNetworksMeasurementsTopic a owl:Class .
+
+:ComputerNetworksEnterpriseTopic owl:disjointWith :ComputerNetworksManagementTopic .
+
+:ComputerNetworksManagementTopic a owl:Class .
+
+:ComputerNetworksEnterpriseTopic owl:disjointWith :ComputerNetworksAapplicationsTopic .
+
+:ComputerNetworksAapplicationsTopic a owl:Class .
+
+:ReviewQuestion a owl:Class ;
+	owl:disjointWith :Document .
+
+:Document a owl:Class .
+
+:ReviewQuestion owl:disjointWith :ConferenceSession .
+
+:ConferenceSession a owl:Class .
+
+:ReviewQuestion owl:disjointWith :Place .
+
+:Place a owl:Class .
+
+:ReviewQuestion owl:disjointWith :Country .
+
+:Country a owl:Class .
+
+:ReviewQuestion owl:disjointWith :Person .
+
+:Person a owl:Class .
+
+:ReviewQuestion owl:disjointWith :Sponsorship .
+
+:Sponsorship a owl:Class .
+
+:ReviewQuestion owl:disjointWith :Call .
+
+:Call a owl:Class .
+
+:ReviewQuestion owl:disjointWith :Organization .
+
+:Organization a owl:Class .
+
+:ReviewQuestion owl:disjointWith :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:ReviewQuestion owl:disjointWith :ConferenceEvent .
+
+:ConferenceEvent a owl:Class .
+
+:ReviewQuestion owl:disjointWith :Conference .
+
+:Conference a owl:Class .
+
+:ReviewQuestion owl:disjointWith :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:ReviewQuestion owl:disjointWith :ReviewForm .
+
+:ReviewForm a owl:Class .
+
+:ReviewQuestion owl:disjointWith :Topic , :ContactInformation .
+
+:Place a owl:Class ;
+	owl:disjointWith :Document .
+
+:Document a owl:Class .
+
+:Place owl:disjointWith :Person .
+
+:Person a owl:Class .
+
+:Place owl:disjointWith :Country .
+
+:Country a owl:Class .
+
+:Place owl:disjointWith :Organization .
+
+:Organization a owl:Class .
+
+:Place owl:disjointWith :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:Place owl:disjointWith :Topic , :ConferenceEvent .
+
+:ConferenceEvent a owl:Class .
+
+:Place owl:disjointWith :ContactInformation , :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:Place owl:disjointWith :Sponsorship .
+
+:Sponsorship a owl:Class .
+
+:Place owl:disjointWith :Call .
+
+:Call a owl:Class .
+
+:Place owl:disjointWith :ReviewForm .
+
+:ReviewForm a owl:Class .
+
+:Place owl:disjointWith :ReviewQuestion , :ConferenceSession .
+
+:ConferenceSession a owl:Class .
+
+:Place owl:disjointWith :Conference .
+
+:Conference a owl:Class .
+
+:Document a owl:Class ;
+	owl:disjointWith :ConferenceSession .
+
+:ConferenceSession a owl:Class .
+
+:Document owl:disjointWith :Person .
+
+:Person a owl:Class .
+
+:Document owl:disjointWith :Sponsorship .
+
+:Sponsorship a owl:Class .
+
+:Document owl:disjointWith :ReviewQuestion , :Call .
+
+:Call a owl:Class .
+
+:Document owl:disjointWith :Organization .
+
+:Organization a owl:Class .
+
+:Document owl:disjointWith :ReviewForm .
+
+:ReviewForm a owl:Class .
+
+:Document owl:disjointWith :ContactInformation , :Conference .
+
+:Conference a owl:Class .
+
+:Document owl:disjointWith :ConferenceEvent .
+
+:ConferenceEvent a owl:Class .
+
+:Document owl:disjointWith :Topic , :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:Document owl:disjointWith :Place , :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:Document owl:disjointWith :Country .
+
+:Country a owl:Class .
+
+:ActivePaper a owl:Class ;
+	rdfs:subClassOf :Paper ;
+	owl:disjointWith :PendingPaper .
+
+:PendingPaper a owl:Class .
+
+:ActivePaper owl:disjointWith :WithdrawnPaper .
+
+:WithdrawnPaper a owl:Class .
+
+:ActivePaper owl:disjointWith :RejectedPaper .
+
+:RejectedPaper a owl:Class .
+
+:ActivePaper owl:disjointWith :AcceptedPaper .
+
+:AcceptedPaper a owl:Class .
+
+:ActivePaper owl:disjointWith :PublishedPaper .
+
+:PublishedPaper a owl:Class .
+
+:RejectRating a owl:Class ;
+	owl:disjointWith :AcceptRating .
+
+:AcceptRating a owl:Class .
+
+:RejectRating owl:disjointWith :AccpetIfRoomRating .
+
+:AccpetIfRoomRating a owl:Class .
+
+:RejectRating owl:disjointWith :WeekRejectRating ;
+	rdfs:subClassOf :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:SecurityTopic a owl:Class ;
+	owl:disjointWith :CommunicationTheoryTopic , :MobileComputingTopic .
+
+:MobileComputingTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :MedicineTopic .
+
+:MedicineTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :ComputerNetworksTopic , :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :ParallelAndDistributedComputingTopic , :CommunicationsTopic .
+
+:CommunicationsTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:SecurityTopic rdfs:subClassOf :Topic ;
+	owl:disjointWith :WirelessCommunicationsTopic .
+
+:WirelessCommunicationsTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :SignalProcessingTopic .
+
+:SignalProcessingTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :OperatingTopicsystems .
+
+:OperatingTopicsystems a owl:Class .
+
+:SecurityTopic owl:disjointWith :PerformanceTopic .
+
+:PerformanceTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :AntennasTopic .
+
+:AntennasTopic a owl:Class .
+
+:SecurityTopic owl:disjointWith :CADTopic .
+
+:CADTopic a owl:Class .
+
+:PublishedPaper a owl:Class ;
+	rdfs:subClassOf :Paper ;
+	owl:disjointWith :PendingPaper .
+
+:PendingPaper a owl:Class .
+
+:PublishedPaper owl:disjointWith :ActivePaper , :WithdrawnPaper .
+
+:WithdrawnPaper a owl:Class .
+
+:PublishedPaper owl:disjointWith :RejectedPaper .
+
+:RejectedPaper a owl:Class .
+
+:PublishedPaper owl:disjointWith :AcceptedPaper .
+
+:AcceptedPaper a owl:Class .
+
+:WirelessCommunicationsTopic a owl:Class ;
+	owl:disjointWith :OperatingTopicsystems .
+
+:OperatingTopicsystems a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :PerformanceTopic .
+
+:PerformanceTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :MedicineTopic .
+
+:MedicineTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :CommunicationsTopic .
+
+:CommunicationsTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :CommunicationTheoryTopic , :CADTopic .
+
+:CADTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :ParallelAndDistributedComputingTopic , :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :MobileComputingTopic .
+
+:MobileComputingTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :SignalProcessingTopic .
+
+:SignalProcessingTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :ComputerNetworksTopic ;
+	rdfs:subClassOf :Topic ;
+	owl:disjointWith :SecurityTopic , :AntennasTopic .
+
+:AntennasTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:WirelessCommunicationsTopic owl:disjointWith :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:Attendee a owl:Class ;
+	rdfs:subClassOf :Person .
+
+:Person a owl:Class .
+
+:BreakEvent a owl:Class ;
+	rdfs:subClassOf :NonAcademicEvent .
+
+:NonAcademicEvent a owl:Class .
+
+:BreakEvent owl:disjointWith :MealEvent ;
+	owl:equivalentClass _:node1e0ve56lpx1 .
+
+_:node1e0ve56lpx1 a owl:Class ;
+	owl:unionOf _:node1e0ve56lpx2 .
+
+_:node1e0ve56lpx2 rdf:first :CoffeeBreak .
+
+:CoffeeBreak a owl:Class .
+
+_:node1e0ve56lpx2 rdf:rest _:node1e0ve56lpx3 .
+
+_:node1e0ve56lpx3 rdf:first :FreeTimeBreak .
+
+:FreeTimeBreak a owl:Class .
+
+_:node1e0ve56lpx3 rdf:rest _:node1e0ve56lpx4 .
+
+_:node1e0ve56lpx4 rdf:first :MealBreak .
+
+:MealBreak a owl:Class .
+
+_:node1e0ve56lpx4 rdf:rest rdf:nil .
+
+:Reviewer a owl:Class ;
+	owl:equivalentClass _:node1e0ve56lpx5 .
+
+_:node1e0ve56lpx5 a owl:Class ;
+	owl:intersectionOf _:node1e0ve56lpx7 .
+
+_:node1e0ve56lpx7 rdf:first _:node1e0ve56lpx6 .
+
+_:node1e0ve56lpx6 a owl:Restriction ;
+	owl:someValuesFrom :Paper ;
+	owl:onProperty :isReviewing .
+
+:isReviewing a owl:ObjectProperty .
+
+_:node1e0ve56lpx7 rdf:rest _:node1e0ve56lpx8 .
+
+_:node1e0ve56lpx8 rdf:first :Person .
+
+:Person a owl:Class .
+
+_:node1e0ve56lpx8 rdf:rest rdf:nil .
+
+:Sponsorship a owl:Class ;
+	owl:disjointWith :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:Sponsorship owl:disjointWith :Place , :ConferenceEvent .
+
+:ConferenceEvent a owl:Class .
+
+:Sponsorship owl:disjointWith :Country .
+
+:Country a owl:Class .
+
+:Sponsorship owl:disjointWith :Person .
+
+:Person a owl:Class .
+
+:Sponsorship owl:disjointWith :Conference .
+
+:Conference a owl:Class .
+
+:Sponsorship owl:disjointWith :ConferenceSession .
+
+:ConferenceSession a owl:Class .
+
+:Sponsorship owl:disjointWith :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:Sponsorship owl:disjointWith :Topic , :Organization .
+
+:Organization a owl:Class .
+
+:Sponsorship owl:disjointWith :ReviewForm .
+
+:ReviewForm a owl:Class .
+
+:Sponsorship owl:disjointWith :ReviewQuestion , :ContactInformation , :Document , :Call .
+
+:Call a owl:Class .
+
+:ClosingTalk a owl:Class ;
+	owl:disjointWith :WelcomeTalk .
+
+:WelcomeTalk a owl:Class .
+
+:ClosingTalk rdfs:subClassOf :TalkEvent .
+
+:TalkEvent a owl:Class .
+
+:MedicineTopic a owl:Class ;
+	owl:disjointWith :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:MedicineTopic rdfs:subClassOf :Topic ;
+	owl:disjointWith :CADTopic .
+
+:CADTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :SignalProcessingTopic .
+
+:SignalProcessingTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :OperatingTopicsystems .
+
+:OperatingTopicsystems a owl:Class .
+
+:MedicineTopic owl:disjointWith :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :AntennasTopic .
+
+:AntennasTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :CommunicationsTopic .
+
+:CommunicationsTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :CommunicationTheoryTopic , :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :MobileComputingTopic .
+
+:MobileComputingTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :ComputerNetworksTopic , :WirelessCommunicationsTopic , :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :SecurityTopic , :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :PerformanceTopic .
+
+:PerformanceTopic a owl:Class .
+
+:MedicineTopic owl:disjointWith :ParallelAndDistributedComputingTopic .
+
+:Author a owl:Class ;
+	owl:equivalentClass _:node1e0ve56lpx9 .
+
+_:node1e0ve56lpx9 a owl:Class ;
+	owl:intersectionOf _:node1e0ve56lpx11 .
+
+_:node1e0ve56lpx11 rdf:first _:node1e0ve56lpx10 .
+
+_:node1e0ve56lpx10 a owl:Restriction ;
+	owl:someValuesFrom :Paper ;
+	owl:onProperty :hasRelatedDocument .
+
+:hasRelatedDocument a owl:ObjectProperty .
+
+_:node1e0ve56lpx11 rdf:rest _:node1e0ve56lpx12 .
+
+_:node1e0ve56lpx12 rdf:first :Person .
+
+:Person a owl:Class .
+
+_:node1e0ve56lpx12 rdf:rest rdf:nil .
+
+:Author owl:disjointWith :ConferenceChair , :SessionChair .
+
+:SessionChair a owl:Class .
+
+:Author owl:disjointWith :TPCMember .
+
+:TPCMember a owl:Class .
+
+:AntennasTopic a owl:Class ;
+	owl:disjointWith :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:AntennasTopic rdfs:subClassOf :Topic ;
+	owl:disjointWith :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:AntennasTopic owl:disjointWith :SecurityTopic , :CommunicationTheoryTopic , :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:AntennasTopic owl:disjointWith :CADTopic .
+
+:CADTopic a owl:Class .
+
+:AntennasTopic owl:disjointWith :MedicineTopic , :ComputerNetworksTopic , :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:AntennasTopic owl:disjointWith :OperatingTopicsystems .
+
+:OperatingTopicsystems a owl:Class .
+
+:AntennasTopic owl:disjointWith :CommunicationsTopic .
+
+:CommunicationsTopic a owl:Class .
+
+:AntennasTopic owl:disjointWith :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:AntennasTopic owl:disjointWith :PerformanceTopic .
+
+:PerformanceTopic a owl:Class .
+
+:AntennasTopic owl:disjointWith :SignalProcessingTopic .
+
+:SignalProcessingTopic a owl:Class .
+
+:AntennasTopic owl:disjointWith :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:AntennasTopic owl:disjointWith :ParallelAndDistributedComputingTopic , :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:AntennasTopic owl:disjointWith :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:AntennasTopic owl:disjointWith :MobileComputingTopic .
+
+:MobileComputingTopic a owl:Class .
+
+:AntennasTopic owl:disjointWith :WirelessCommunicationsTopic .
+
+:NGO a owl:Class ;
+	rdfs:subClassOf :Organization .
+
+:Organization a owl:Class .
+
+:NGO owl:disjointWith :IndustryOrganization .
+
+:IndustryOrganization a owl:Class .
+
+:NGO owl:disjointWith :AcademiaOrganization , :GovernmentOrganization .
+
+:GovernmentOrganization a owl:Class .
+
+:PerformanceTopic a owl:Class ;
+	owl:disjointWith :ComputerNetworksTopic , :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:PerformanceTopic owl:disjointWith :CommunicationTheoryTopic , :SignalProcessingTopic .
+
+:SignalProcessingTopic a owl:Class .
+
+:PerformanceTopic owl:disjointWith :AntennasTopic , :WirelessCommunicationsTopic , :CommunicationsTopic .
+
+:CommunicationsTopic a owl:Class .
+
+:PerformanceTopic owl:disjointWith :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:PerformanceTopic owl:disjointWith :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:PerformanceTopic owl:disjointWith :SecurityTopic ;
+	rdfs:subClassOf :Topic ;
+	owl:disjointWith :OperatingTopicsystems .
+
+:OperatingTopicsystems a owl:Class .
+
+:PerformanceTopic owl:disjointWith :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:PerformanceTopic owl:disjointWith :ParallelAndDistributedComputingTopic , :MobileComputingTopic .
+
+:MobileComputingTopic a owl:Class .
+
+:PerformanceTopic owl:disjointWith :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:PerformanceTopic owl:disjointWith :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:PerformanceTopic owl:disjointWith :CADTopic .
+
+:CADTopic a owl:Class .
+
+:PerformanceTopic owl:disjointWith :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:PerformanceTopic owl:disjointWith :MedicineTopic , :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:CommunicationsTopic a owl:Class ;
+	owl:disjointWith :PerformanceTopic , :CADTopic .
+
+:CADTopic a owl:Class .
+
+:CommunicationsTopic owl:disjointWith :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:CommunicationsTopic owl:disjointWith :AntennasTopic , :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:CommunicationsTopic owl:disjointWith :OperatingTopicsystems .
+
+:OperatingTopicsystems a owl:Class .
+
+:CommunicationsTopic owl:disjointWith :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:CommunicationsTopic owl:disjointWith :ParallelAndDistributedComputingTopic , :WirelessCommunicationsTopic , :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:CommunicationsTopic owl:disjointWith :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:CommunicationsTopic owl:disjointWith :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:CommunicationsTopic owl:disjointWith :MedicineTopic , :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:CommunicationsTopic owl:disjointWith :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:CommunicationsTopic owl:disjointWith :CommunicationTheoryTopic , :ComputerNetworksTopic , :SignalProcessingTopic .
+
+:SignalProcessingTopic a owl:Class .
+
+:CommunicationsTopic owl:disjointWith :MobileComputingTopic .
+
+:MobileComputingTopic a owl:Class .
+
+:CommunicationsTopic rdfs:subClassOf :Topic ;
+	owl:disjointWith :SecurityTopic .
+
+:TwoLevelConference a owl:Class ;
+	owl:equivalentClass _:node1e0ve56lpx13 .
+
+_:node1e0ve56lpx13 a owl:Class ;
+	owl:intersectionOf _:node1e0ve56lpx14 .
+
+_:node1e0ve56lpx14 rdf:first :Conference .
+
+:Conference a owl:Class .
+
+_:node1e0ve56lpx14 rdf:rest _:node1e0ve56lpx16 .
+
+_:node1e0ve56lpx16 rdf:first _:node1e0ve56lpx15 .
+
+_:node1e0ve56lpx15 a owl:Restriction ;
+	owl:allValuesFrom :Person .
+
+:Person a owl:Class .
+
+_:node1e0ve56lpx15 owl:onProperty :hasMember .
+
+:hasMember a owl:ObjectProperty .
+
+_:node1e0ve56lpx16 rdf:rest _:node1e0ve56lpx18 .
+
+_:node1e0ve56lpx18 rdf:first _:node1e0ve56lpx17 .
+
+_:node1e0ve56lpx17 a owl:Restriction ;
+	owl:onProperty :hasMember .
+
+:hasMember a owl:ObjectProperty .
+
+_:node1e0ve56lpx17 owl:someValuesFrom :TPCMember .
+
+:TPCMember a owl:Class .
+
+_:node1e0ve56lpx18 rdf:rest rdf:nil .
+
+:CallForPapers a owl:Class ;
+	rdfs:comment "Call For Papers"^^xsd:string ;
+	rdfs:subClassOf :Call .
+
+:Call a owl:Class .
+
+:IndustryOrganization a owl:Class ;
+	rdfs:subClassOf :Organization .
+
+:Organization a owl:Class .
+
+:IndustryOrganization owl:disjointWith :NGO , :AcademiaOrganization , :GovernmentOrganization .
+
+:GovernmentOrganization a owl:Class .
+
+:MealMenu a owl:Class ;
+	owl:disjointWith :SlideSet , :Review .
+
+:Review a owl:Class .
+
+:MealMenu owl:disjointWith :Programme , :Paper ;
+	rdfs:subClassOf :Document .
+
+:TextualReviewQuestion a owl:Class ;
+	rdfs:subClassOf :ReviewQuestion .
+
+:SignalProcessingTopic a owl:Class ;
+	owl:disjointWith :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:SignalProcessingTopic owl:disjointWith :CommunicationsTopic , :OperatingTopicsystems .
+
+:OperatingTopicsystems a owl:Class .
+
+:SignalProcessingTopic owl:disjointWith :ParallelAndDistributedComputingTopic , :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:SignalProcessingTopic owl:disjointWith :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:SignalProcessingTopic owl:disjointWith :WirelessCommunicationsTopic , :PerformanceTopic , :SecurityTopic , :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:SignalProcessingTopic owl:disjointWith :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:SignalProcessingTopic owl:disjointWith :MedicineTopic , :MobileComputingTopic .
+
+:MobileComputingTopic a owl:Class .
+
+:SignalProcessingTopic owl:disjointWith :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:SignalProcessingTopic owl:disjointWith :CADTopic .
+
+:CADTopic a owl:Class .
+
+:SignalProcessingTopic rdfs:subClassOf :Topic ;
+	owl:disjointWith :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:SignalProcessingTopic owl:disjointWith :AntennasTopic , :CommunicationTheoryTopic , :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:SignalProcessingTopic owl:disjointWith :ComputerNetworksTopic .
+
+:MobileComputingTopic a owl:Class ;
+	owl:disjointWith :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:MobileComputingTopic owl:disjointWith :WirelessCommunicationsTopic , :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:MobileComputingTopic owl:disjointWith :CommunicationTheoryTopic , :AntennasTopic , :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:MobileComputingTopic owl:disjointWith :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:MobileComputingTopic owl:disjointWith :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:MobileComputingTopic owl:disjointWith :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:MobileComputingTopic owl:disjointWith :PerformanceTopic , :SecurityTopic , :ComputerNetworksTopic , :MedicineTopic , :ParallelAndDistributedComputingTopic , :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:MobileComputingTopic owl:disjointWith :CommunicationsTopic , :CADTopic .
+
+:CADTopic a owl:Class .
+
+:MobileComputingTopic rdfs:subClassOf :Topic ;
+	owl:disjointWith :SignalProcessingTopic , :OperatingTopicsystems .
+
+:OperatingTopicsystems a owl:Class .
+
+:MobileComputingTopic owl:disjointWith :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:NumericalReviewQuestion a owl:Class ;
+	rdfs:subClassOf :ReviewQuestion .
+
+:ComputerNetworksOpticalTopic a owl:Class ;
+	owl:disjointWith :ComputerNetworksSwitchingTopic .
+
+:ComputerNetworksSwitchingTopic a owl:Class .
+
+:ComputerNetworksOpticalTopic owl:disjointWith :ComputerNetworksSensorTopic .
+
+:ComputerNetworksSensorTopic a owl:Class .
+
+:ComputerNetworksOpticalTopic owl:disjointWith :ComputerNetworksSecurityTopic .
+
+:ComputerNetworksSecurityTopic a owl:Class .
+
+:ComputerNetworksOpticalTopic owl:disjointWith :ComputerNetworksMeasurementsTopic .
+
+:ComputerNetworksMeasurementsTopic a owl:Class .
+
+:ComputerNetworksOpticalTopic owl:disjointWith :ComputerNetworksManagementTopic .
+
+:ComputerNetworksManagementTopic a owl:Class .
+
+:ComputerNetworksOpticalTopic owl:disjointWith :ComputerNetworksEnterpriseTopic , :ComputerNetworksAapplicationsTopic .
+
+:ComputerNetworksAapplicationsTopic a owl:Class .
+
+:ComputerNetworksOpticalTopic rdfs:subClassOf :ComputerNetworksTopic .
+
+:WithdrawnPaper a owl:Class ;
+	owl:disjointWith :PendingPaper .
+
+:PendingPaper a owl:Class .
+
+:WithdrawnPaper owl:disjointWith :ActivePaper , :RejectedPaper .
+
+:RejectedPaper a owl:Class .
+
+:WithdrawnPaper owl:disjointWith :AcceptedPaper .
+
+:AcceptedPaper a owl:Class .
+
+:WithdrawnPaper owl:disjointWith :PublishedPaper ;
+	rdfs:subClassOf :Paper .
+
+:OrganizationalMeeting a owl:Class ;
+	owl:disjointWith :TalkEvent .
+
+:TalkEvent a owl:Class .
+
+:OrganizationalMeeting owl:disjointWith :PaperPresentation .
+
+:PaperPresentation a owl:Class .
+
+:OrganizationalMeeting owl:disjointWith :Workshop .
+
+:Workshop a owl:Class .
+
+:OrganizationalMeeting rdfs:subClassOf :AcademicEvent .
+
+:AcademicEvent a owl:Class .
+
+:FreeTimeBreak a owl:Class ;
+	rdfs:subClassOf :BreakEvent .
+
+:Call a owl:Class ;
+	owl:disjointWith :Place , :Sponsorship , :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:Call owl:disjointWith :Document , :ReviewQuestion , :Topic , :Country .
+
+:Country a owl:Class .
+
+:Call owl:disjointWith :ConferenceEvent .
+
+:ConferenceEvent a owl:Class .
+
+:Call owl:disjointWith :ConferenceSession .
+
+:ConferenceSession a owl:Class .
+
+:Call owl:disjointWith :ReviewForm .
+
+:ReviewForm a owl:Class .
+
+:Call owl:disjointWith :Conference .
+
+:Conference a owl:Class .
+
+:Call owl:disjointWith :Organization .
+
+:Organization a owl:Class .
+
+:Call owl:disjointWith :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:Call owl:disjointWith :Person .
+
+:Person a owl:Class .
+
+:Call owl:disjointWith :ContactInformation .
+
+:PersonalPublicationHistory a owl:Class ;
+	rdfs:subClassOf :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:Excursion a owl:Class ;
+	rdfs:subClassOf :SocialEvent .
+
+:SocialEvent a owl:Class .
+
+:ConferenceEvent a owl:Class ;
+	owl:disjointWith :Document , :Organization .
+
+:Organization a owl:Class .
+
+:ConferenceEvent owl:disjointWith :ReviewQuestion , :Person .
+
+:Person a owl:Class .
+
+:ConferenceEvent owl:disjointWith :Sponsorship , :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:ConferenceEvent owl:disjointWith :Topic , :ReviewForm .
+
+:ReviewForm a owl:Class .
+
+:ConferenceEvent owl:disjointWith :Place , :Conference .
+
+:Conference a owl:Class .
+
+:ConferenceEvent owl:disjointWith :ConferenceSession .
+
+:ConferenceSession a owl:Class .
+
+:ConferenceEvent owl:disjointWith :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:ConferenceEvent owl:disjointWith :Call , :ContactInformation , :Country .
+
+:Country a owl:Class .
+
+:MealBreak a owl:Class ;
+	rdfs:subClassOf :BreakEvent .
+
+:ComputerNetworksMeasurementsTopic a owl:Class ;
+	owl:disjointWith :ComputerNetworksSwitchingTopic .
+
+:ComputerNetworksSwitchingTopic a owl:Class .
+
+:ComputerNetworksMeasurementsTopic owl:disjointWith :ComputerNetworksSensorTopic .
+
+:ComputerNetworksSensorTopic a owl:Class .
+
+:ComputerNetworksMeasurementsTopic owl:disjointWith :ComputerNetworksSecurityTopic .
+
+:ComputerNetworksSecurityTopic a owl:Class .
+
+:ComputerNetworksMeasurementsTopic owl:disjointWith :ComputerNetworksOpticalTopic , :ComputerNetworksManagementTopic .
+
+:ComputerNetworksManagementTopic a owl:Class .
+
+:ComputerNetworksMeasurementsTopic owl:disjointWith :ComputerNetworksEnterpriseTopic , :ComputerNetworksAapplicationsTopic .
+
+:ComputerNetworksAapplicationsTopic a owl:Class .
+
+:ComputerNetworksMeasurementsTopic rdfs:subClassOf :ComputerNetworksTopic .
+
+:ComputerNetworksManagementTopic a owl:Class ;
+	rdfs:subClassOf :ComputerNetworksTopic ;
+	owl:disjointWith :ComputerNetworksSwitchingTopic .
+
+:ComputerNetworksSwitchingTopic a owl:Class .
+
+:ComputerNetworksManagementTopic owl:disjointWith :ComputerNetworksSensorTopic .
+
+:ComputerNetworksSensorTopic a owl:Class .
+
+:ComputerNetworksManagementTopic owl:disjointWith :ComputerNetworksSecurityTopic .
+
+:ComputerNetworksSecurityTopic a owl:Class .
+
+:ComputerNetworksManagementTopic owl:disjointWith :ComputerNetworksOpticalTopic , :ComputerNetworksMeasurementsTopic , :ComputerNetworksEnterpriseTopic , :ComputerNetworksAapplicationsTopic .
+
+:ComputerNetworksAapplicationsTopic a owl:Class .
+
+:GovernmentOrganization a owl:Class ;
+	owl:disjointWith :NGO , :IndustryOrganization , :AcademiaOrganization ;
+	rdfs:subClassOf :Organization .
+
+:Organization a owl:Class .
+
+:CoffeeBreak a owl:Class ;
+	rdfs:subClassOf :BreakEvent .
+
+:CADTopic a owl:Class ;
+	owl:disjointWith :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:CADTopic owl:disjointWith :ParallelAndDistributedComputingTopic , :CommunicationsTopic , :PerformanceTopic , :MedicineTopic , :CommunicationTheoryTopic , :SignalProcessingTopic , :OperatingTopicsystems .
+
+:OperatingTopicsystems a owl:Class .
+
+:CADTopic owl:disjointWith :AntennasTopic , :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:CADTopic rdfs:subClassOf :Topic ;
+	owl:disjointWith :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:CADTopic owl:disjointWith :MobileComputingTopic , :ComputerNetworksTopic , :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:CADTopic owl:disjointWith :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:CADTopic owl:disjointWith :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:CADTopic owl:disjointWith :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:CADTopic owl:disjointWith :SecurityTopic , :WirelessCommunicationsTopic , :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:ComputerNetworksSwitchingTopic a owl:Class ;
+	owl:disjointWith :ComputerNetworksSensorTopic .
+
+:ComputerNetworksSensorTopic a owl:Class .
+
+:ComputerNetworksSwitchingTopic owl:disjointWith :ComputerNetworksSecurityTopic .
+
+:ComputerNetworksSecurityTopic a owl:Class .
+
+:ComputerNetworksSwitchingTopic owl:disjointWith :ComputerNetworksOpticalTopic , :ComputerNetworksMeasurementsTopic , :ComputerNetworksManagementTopic , :ComputerNetworksEnterpriseTopic , :ComputerNetworksAapplicationsTopic .
+
+:ComputerNetworksAapplicationsTopic a owl:Class .
+
+:ComputerNetworksSwitchingTopic rdfs:subClassOf :ComputerNetworksTopic .
+
+:Conference a owl:Class ;
+	rdfs:subClassOf _:node1e0ve56lpx19 .
+
+_:node1e0ve56lpx19 a owl:Restriction ;
+	owl:onProperty :hasCountry .
+
+:hasCountry a owl:FunctionalProperty .
+
+_:node1e0ve56lpx19 owl:cardinality "1"^^xsd:int .
+
+:Conference owl:disjointWith :ReviewForm .
+
+:ReviewForm a owl:Class .
+
+:Conference owl:disjointWith :Sponsorship ;
+	rdfs:subClassOf owl:Thing .
+
+owl:Thing owl:versionInfo """OWLUnitTest:<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<OWLUnitTest enabled=\"true\" satisfiable=\"true\">
+    <superclasses/>
+    <subclasses/>
+    <comment/>
+</OWLUnitTest>"""^^xsd:string .
+
+:Conference owl:disjointWith :Topic , :Country .
+
+:Country a owl:Class .
+
+:Conference owl:disjointWith :ReviewQuestion ;
+	rdfs:subClassOf _:node1e0ve56lpx20 .
+
+_:node1e0ve56lpx20 a owl:Restriction ;
+	owl:maxCardinality "1"^^xsd:int ;
+	owl:onProperty :endDate .
+
+:endDate a owl:DatatypeProperty .
+
+:Conference owl:disjointWith :Paper , :Document , :Person .
+
+:Person a owl:Class .
+
+:Conference owl:disjointWith :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:Conference owl:disjointWith :Place ;
+	rdfs:subClassOf _:node1e0ve56lpx21 .
+
+_:node1e0ve56lpx21 a owl:Restriction ;
+	owl:onProperty :startDate .
+
+:startDate a owl:DatatypeProperty .
+
+_:node1e0ve56lpx21 owl:maxCardinality "1"^^xsd:int .
+
+:Conference owl:disjointWith :Call , :ConferenceSession .
+
+:ConferenceSession a owl:Class .
+
+:Conference rdfs:comment "Conference"^^xsd:string ;
+	owl:disjointWith :ContactInformation , :ConferenceEvent ;
+	rdfs:subClassOf _:node1e0ve56lpx22 .
+
+_:node1e0ve56lpx22 a owl:Restriction ;
+	owl:cardinality "1"^^xsd:int ;
+	owl:onProperty :hasName .
+
+:hasName a owl:DatatypeProperty .
+
+:Conference rdfs:subClassOf _:node1e0ve56lpx23 .
+
+_:node1e0ve56lpx23 a owl:Restriction ;
+	owl:onProperty :registrationDueOn .
+
+:registrationDueOn a owl:DatatypeProperty .
+
+_:node1e0ve56lpx23 owl:maxCardinality "1"^^xsd:int .
+
+:Conference rdfs:subClassOf _:node1e0ve56lpx24 .
+
+_:node1e0ve56lpx24 a owl:Restriction ;
+	owl:onProperty :hasTopic .
+
+:hasTopic a owl:ObjectProperty .
+
+_:node1e0ve56lpx24 owl:cardinality "1"^^xsd:int .
+
+:Conference owl:disjointWith :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:Conference owl:disjointWith :Organization .
+
+:Organization a owl:Class .
+
+:Conference rdfs:subClassOf _:node1e0ve56lpx25 .
+
+_:node1e0ve56lpx25 a owl:Restriction ;
+	owl:onProperty :manuscriptDueOn .
+
+:manuscriptDueOn a owl:DatatypeProperty .
+
+_:node1e0ve56lpx25 owl:maxCardinality "1"^^xsd:int .
+
+:Conference rdfs:subClassOf _:node1e0ve56lpx26 .
+
+_:node1e0ve56lpx26 a owl:Restriction ;
+	owl:onProperty :paperDueOn .
+
+:paperDueOn a owl:DatatypeProperty .
+
+_:node1e0ve56lpx26 owl:maxCardinality "1"^^xsd:int .
+
+:OperatingTopicsystems a owl:Class ;
+	owl:disjointWith :CADTopic , :PerformanceTopic , :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:OperatingTopicsystems owl:disjointWith :ParallelAndDistributedComputingTopic ;
+	rdfs:subClassOf :Topic ;
+	owl:disjointWith :ComputerArchitectureTopic .
+
+:ComputerArchitectureTopic a owl:Class .
+
+:OperatingTopicsystems owl:disjointWith :MobileComputingTopic , :CommunicationsTopic , :ComputerNetworksTopic , :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:OperatingTopicsystems owl:disjointWith :WirelessCommunicationsTopic , :SignalProcessingTopic , :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:OperatingTopicsystems owl:disjointWith :AntennasTopic , :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:OperatingTopicsystems owl:disjointWith :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:OperatingTopicsystems owl:disjointWith :CommunicationTheoryTopic , :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:OperatingTopicsystems owl:disjointWith :SecurityTopic , :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:OperatingTopicsystems owl:disjointWith :MedicineTopic .
+
+:AccpetIfRoomRating a owl:Class ;
+	rdfs:subClassOf :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:AccpetIfRoomRating owl:disjointWith :AcceptRating .
+
+:AcceptRating a owl:Class .
+
+:AccpetIfRoomRating owl:disjointWith :RejectRating , :WeekRejectRating .
+
+:ComputerNetworksSensorTopic a owl:Class ;
+	owl:disjointWith :ComputerNetworksSwitchingTopic , :ComputerNetworksSecurityTopic .
+
+:ComputerNetworksSecurityTopic a owl:Class .
+
+:ComputerNetworksSensorTopic owl:disjointWith :ComputerNetworksOpticalTopic , :ComputerNetworksMeasurementsTopic , :ComputerNetworksManagementTopic , :ComputerNetworksEnterpriseTopic , :ComputerNetworksAapplicationsTopic .
+
+:ComputerNetworksAapplicationsTopic a owl:Class .
+
+:ComputerNetworksSensorTopic rdfs:subClassOf :ComputerNetworksTopic .
+
+:CallForReviews a owl:Class ;
+	rdfs:comment "Call For Reviews"^^xsd:string ;
+	rdfs:subClassOf :Call .
+
+:NonAcademicEvent a owl:Class ;
+	rdfs:subClassOf :ConferenceEvent ;
+	owl:disjointWith :AcademicEvent .
+
+:AcademicEvent a owl:Class .
+
+:ComputerArchitectureTopic a owl:Class ;
+	rdfs:subClassOf :Topic ;
+	owl:disjointWith :MultimediaTopic .
+
+:MultimediaTopic a owl:Class .
+
+:ComputerArchitectureTopic owl:disjointWith :CommunicationsTopic , :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:ComputerArchitectureTopic owl:disjointWith :ParallelAndDistributedComputingTopic , :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:ComputerArchitectureTopic owl:disjointWith :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:ComputerArchitectureTopic owl:disjointWith :OperatingTopicsystems , :CommunicationTheoryTopic , :WirelessCommunicationsTopic , :MedicineTopic , :SignalProcessingTopic , :ComputerNetworksTopic , :AntennasTopic , :MobileComputingTopic , :PerformanceTopic , :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:ComputerArchitectureTopic owl:disjointWith :CADTopic , :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:ComputerArchitectureTopic owl:disjointWith :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:ComputerArchitectureTopic owl:disjointWith :SecurityTopic .
+
+:PersonalReviewHistory a owl:Class ;
+	rdfs:subClassOf :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:ConferenceSession a owl:Class ;
+	owl:disjointWith :ReviewForm .
+
+:ReviewForm a owl:Class .
+
+:ConferenceSession owl:disjointWith :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:ConferenceSession owl:disjointWith :Document , :Conference , :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:ConferenceSession owl:disjointWith :ReviewQuestion , :Country .
+
+:Country a owl:Class .
+
+:ConferenceSession owl:disjointWith :ContactInformation , :Topic , :Person .
+
+:Person a owl:Class .
+
+:ConferenceSession owl:disjointWith :Call , :Place , :Sponsorship , :Organization .
+
+:Organization a owl:Class .
+
+:ConferenceSession owl:disjointWith :ConferenceEvent .
+
+:AcceptRating a owl:Class ;
+	owl:disjointWith :AccpetIfRoomRating , :RejectRating , :WeekRejectRating ;
+	rdfs:subClassOf :ReviewRating .
+
+:ReviewRating a owl:Class .
+
+:SessionChair a owl:Class ;
+	owl:disjointWith :Author ;
+	rdfs:subClassOf :Person .
+
+:Person a owl:Class .
+
+:TPCMember a owl:Class ;
+	owl:disjointWith :Author ;
+	rdfs:subClassOf :Person .
+
+:Person a owl:Class .
+
+:ReviewRating a owl:Class ;
+	owl:equivalentClass _:node1e0ve56lpx27 .
+
+_:node1e0ve56lpx27 a owl:Class ;
+	owl:unionOf _:node1e0ve56lpx28 .
+
+_:node1e0ve56lpx28 rdf:first :AcceptRating .
+
+:AcceptRating a owl:Class .
+
+_:node1e0ve56lpx28 rdf:rest _:node1e0ve56lpx29 .
+
+_:node1e0ve56lpx29 rdf:first :AccpetIfRoomRating .
+
+:AccpetIfRoomRating a owl:Class .
+
+_:node1e0ve56lpx29 rdf:rest _:node1e0ve56lpx30 .
+
+_:node1e0ve56lpx30 rdf:first :RejectRating .
+
+:RejectRating a owl:Class .
+
+_:node1e0ve56lpx30 rdf:rest _:node1e0ve56lpx31 .
+
+_:node1e0ve56lpx31 rdf:first :WeekRejectRating .
+
+:WeekRejectRating a owl:Class .
+
+_:node1e0ve56lpx31 rdf:rest rdf:nil .
+
+:ReviewRating owl:disjointWith :Topic , :Sponsorship , :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:ReviewRating owl:disjointWith :ReviewForm .
+
+:ReviewForm a owl:Class .
+
+:ReviewRating owl:disjointWith :Person .
+
+:Person a owl:Class .
+
+:ReviewRating owl:disjointWith :Conference , :Country .
+
+:Country a owl:Class .
+
+:ReviewRating owl:disjointWith :ConferenceSession , :Organization .
+
+:Organization a owl:Class .
+
+:ReviewRating owl:disjointWith :Document , :ConferenceEvent , :ReviewQuestion , :ContactInformation , :Place , :Call .
+
+:MultimediaTopic a owl:Class ;
+	owl:disjointWith :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:MultimediaTopic owl:disjointWith :SecurityTopic , :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:MultimediaTopic owl:disjointWith :CommunicationTheoryTopic , :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:MultimediaTopic owl:disjointWith :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:MultimediaTopic owl:disjointWith :ComputerNetworksTopic , :OperatingTopicsystems , :SignalProcessingTopic , :AntennasTopic , :CADTopic , :ComputerArchitectureTopic , :CommunicationsTopic ;
+	rdfs:subClassOf :Topic ;
+	owl:disjointWith :WirelessCommunicationsTopic , :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:MultimediaTopic owl:disjointWith :SatelliteAndSpaceCommunicationsTopic .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class .
+
+:MultimediaTopic owl:disjointWith :MedicineTopic , :ParallelAndDistributedComputingTopic , :PerformanceTopic , :MobileComputingTopic .
+
+:ConferenceVenuePlace a owl:Class ;
+	rdfs:subClassOf :Place .
+
+:ComputerNetworksSecurityTopic a owl:Class ;
+	rdfs:subClassOf :ComputerNetworksTopic ;
+	owl:disjointWith :ComputerNetworksSwitchingTopic , :ComputerNetworksSensorTopic , :ComputerNetworksOpticalTopic , :ComputerNetworksMeasurementsTopic , :ComputerNetworksManagementTopic , :ComputerNetworksEnterpriseTopic , :ComputerNetworksAapplicationsTopic .
+
+:ComputerNetworksAapplicationsTopic a owl:Class .
+
+:ReviewForm a owl:Class ;
+	owl:disjointWith :Call , :PersonalHistory .
+
+:PersonalHistory a owl:Class .
+
+:ReviewForm owl:disjointWith :ReviewRating , :Place , :ContactInformation , :ConferenceEvent , :Conference , :Document , :Person .
+
+:Person a owl:Class .
+
+:ReviewForm owl:disjointWith :ConferenceSession , :Organization .
+
+:Organization a owl:Class .
+
+:ReviewForm owl:disjointWith :Country .
+
+:Country a owl:Class .
+
+:ReviewForm owl:disjointWith :Sponsorship , :ReviewQuestion , :Topic .
+
+:CallForManuscripts a owl:Class ;
+	rdfs:comment "Call For Manuscripts"^^xsd:string ;
+	rdfs:subClassOf :Call .
+
+:ComputerNetworksAapplicationsTopic a owl:Class ;
+	rdfs:subClassOf :ComputerNetworksTopic ;
+	owl:disjointWith :ComputerNetworksSwitchingTopic , :ComputerNetworksSensorTopic , :ComputerNetworksSecurityTopic , :ComputerNetworksOpticalTopic , :ComputerNetworksMeasurementsTopic , :ComputerNetworksManagementTopic , :ComputerNetworksEnterpriseTopic .
+
+:WelcomeTalk a owl:Class ;
+	owl:disjointWith :ClosingTalk ;
+	rdfs:subClassOf :TalkEvent .
+
+:TalkEvent a owl:Class .
+
+:Reception a owl:Class ;
+	rdfs:subClassOf :SocialEvent .
+
+:SocialEvent a owl:Class .
+
+:Workshop a owl:Class ;
+	owl:disjointWith :TalkEvent .
+
+:TalkEvent a owl:Class .
+
+:Workshop owl:disjointWith :PaperPresentation .
+
+:PaperPresentation a owl:Class .
+
+:Workshop owl:disjointWith :OrganizationalMeeting ;
+	rdfs:subClassOf :AcademicEvent .
+
+:AcademicEvent a owl:Class .
+
+:SatelliteAndSpaceCommunicationsTopic a owl:Class ;
+	owl:disjointWith :AntennasTopic , :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:SatelliteAndSpaceCommunicationsTopic owl:disjointWith :ComputerArchitectureTopic , :SecurityTopic ;
+	rdfs:subClassOf :Topic ;
+	owl:disjointWith :ComputerNetworksTopic , :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:SatelliteAndSpaceCommunicationsTopic owl:disjointWith :PerformanceTopic , :MedicineTopic , :MobileComputingTopic , :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:SatelliteAndSpaceCommunicationsTopic owl:disjointWith :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:SatelliteAndSpaceCommunicationsTopic owl:disjointWith :OperatingTopicsystems , :WirelessCommunicationsTopic , :CommunicationTheoryTopic , :CADTopic , :ParallelAndDistributedComputingTopic , :CryptographyTopic .
+
+:CryptographyTopic a owl:Class .
+
+:SatelliteAndSpaceCommunicationsTopic owl:disjointWith :SignalProcessingTopic , :MultimediaTopic , :CommunicationsTopic .
+
+:PersonalHistory a owl:Class ;
+	owl:disjointWith :Sponsorship , :Organization .
+
+:Organization a owl:Class .
+
+:PersonalHistory owl:disjointWith :ReviewForm , :Place , :Country .
+
+:Country a owl:Class .
+
+:PersonalHistory owl:disjointWith :Document , :Person .
+
+:Person a owl:Class .
+
+:PersonalHistory owl:disjointWith :ReviewQuestion , :ConferenceEvent , :ConferenceSession , :Topic , :ReviewRating , :Conference , :ContactInformation , :Call .
+
+:CryptographyTopic a owl:Class ;
+	rdfs:subClassOf :Topic ;
+	owl:disjointWith :CommunicationsTopic , :MultimediaTopic , :ComputerArchitectureTopic , :CommunicationTheoryTopic , :PerformanceTopic , :SignalProcessingTopic , :CADTopic , :WirelessCommunicationsTopic , :ComputerNetworksTopic , :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:CryptographyTopic owl:disjointWith :ParallelAndDistributedComputingTopic , :OperatingTopicsystems , :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:CryptographyTopic owl:disjointWith :MedicineTopic , :MobileComputingTopic , :SecurityTopic , :AntennasTopic , :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:CryptographyTopic owl:disjointWith :MicroelectronicsTopic .
+
+:MicroelectronicsTopic a owl:Class .
+
+:CryptographyTopic owl:disjointWith :SatelliteAndSpaceCommunicationsTopic .
+
+:AcceptedPaper a owl:Class ;
+	owl:disjointWith :PendingPaper .
+
+:PendingPaper a owl:Class .
+
+:AcceptedPaper owl:disjointWith :ActivePaper , :WithdrawnPaper , :RejectedPaper .
+
+:RejectedPaper a owl:Class .
+
+:AcceptedPaper owl:disjointWith :PublishedPaper ;
+	rdfs:subClassOf :Paper .
+
+:PaperPresentation a owl:Class ;
+	rdfs:subClassOf :AcademicEvent .
+
+:AcademicEvent a owl:Class .
+
+:PaperPresentation owl:disjointWith :TalkEvent .
+
+:TalkEvent a owl:Class .
+
+:PaperPresentation owl:disjointWith :Workshop , :OrganizationalMeeting .
+
+:RejectedPaper a owl:Class ;
+	owl:disjointWith :PendingPaper .
+
+:PendingPaper a owl:Class .
+
+:RejectedPaper owl:disjointWith :ActivePaper , :WithdrawnPaper , :AcceptedPaper , :PublishedPaper ;
+	rdfs:subClassOf :Paper .
+
+:Person a owl:Class ;
+	owl:disjointWith :ReviewQuestion , :ReviewRating , :ConferenceSession , :Conference , :PersonalHistory , :Document , :Country .
+
+:Country a owl:Class .
+
+:Person owl:disjointWith :Place , :Topic , :ConferenceEvent , :Organization .
+
+:Organization a owl:Class .
+
+:Person owl:disjointWith :ReviewForm , :Sponsorship , :Call .
+
+:MicroelectronicsTopic a owl:Class ;
+	owl:disjointWith :MultimediaTopic , :SecurityTopic ;
+	rdfs:subClassOf :Topic ;
+	owl:disjointWith :PowerlineTransmissionTopic .
+
+:PowerlineTransmissionTopic a owl:Class .
+
+:MicroelectronicsTopic owl:disjointWith :CADTopic , :MedicineTopic , :OperatingTopicsystems , :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:MicroelectronicsTopic owl:disjointWith :ComputerNetworksTopic , :WirelessCommunicationsTopic , :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:MicroelectronicsTopic owl:disjointWith :MobileComputingTopic , :CryptographyTopic , :CommunicationTheoryTopic , :AntennasTopic , :ComputerArchitectureTopic , :SignalProcessingTopic , :SatelliteAndSpaceCommunicationsTopic , :PerformanceTopic , :CommunicationsTopic , :ParallelAndDistributedComputingTopic .
+
+:SingleLevelConference a owl:Class ;
+	owl:equivalentClass _:node1e0ve56lpx32 .
+
+_:node1e0ve56lpx32 a owl:Class ;
+	owl:intersectionOf _:node1e0ve56lpx33 .
+
+_:node1e0ve56lpx33 rdf:first :Conference .
+
+:Conference a owl:Class .
+
+_:node1e0ve56lpx33 rdf:rest _:node1e0ve56lpx35 .
+
+_:node1e0ve56lpx35 rdf:first _:node1e0ve56lpx34 .
+
+_:node1e0ve56lpx34 a owl:Restriction ;
+	owl:onProperty :hasMember .
+
+:hasMember a owl:ObjectProperty .
+
+_:node1e0ve56lpx34 owl:allValuesFrom :Person .
+
+_:node1e0ve56lpx35 rdf:rest _:node1e0ve56lpx37 .
+
+_:node1e0ve56lpx37 rdf:first _:node1e0ve56lpx36 .
+
+_:node1e0ve56lpx36 a owl:Class ;
+	owl:complementOf :TwoLevelConference .
+
+_:node1e0ve56lpx37 rdf:rest rdf:nil .
+
+:AcademicEvent a owl:Class ;
+	rdfs:subClassOf :ConferenceEvent ;
+	owl:disjointWith :NonAcademicEvent .
+
+:MeetingRoomPlace a owl:Class ;
+	rdfs:subClassOf :Place .
+
+:PowerlineTransmissionTopic a owl:Class ;
+	owl:disjointWith :SecurityTopic , :SignalProcessingTopic ;
+	rdfs:subClassOf :Topic ;
+	owl:disjointWith :CommunicationTheoryTopic , :MedicineTopic , :MultimediaTopic , :OperatingTopicsystems , :MobileComputingTopic , :SatelliteAndSpaceCommunicationsTopic , :CommunicationsTopic , :ParallelAndDistributedComputingTopic , :ComputerNetworksTopic , :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:PowerlineTransmissionTopic owl:disjointWith :PerformanceTopic , :CADTopic , :MicroelectronicsTopic , :WirelessCommunicationsTopic , :CryptographyTopic , :TestOnlyTopic .
+
+:TestOnlyTopic a owl:Class .
+
+:PowerlineTransmissionTopic owl:disjointWith :AntennasTopic , :ComputerArchitectureTopic .
+
+:Country a owl:Class ;
+	owl:disjointWith :Topic , :ReviewForm , :Call , :ReviewQuestion , :Sponsorship , :Conference , :ContactInformation , :Document , :ConferenceEvent , :ConferenceSession , :Person , :Organization .
+
+:Organization a owl:Class .
+
+:Country owl:disjointWith :ReviewRating , :PersonalHistory , :Place .
+
+:TalkEvent a owl:Class ;
+	owl:disjointWith :PaperPresentation , :Workshop , :OrganizationalMeeting ;
+	rdfs:subClassOf :AcademicEvent .
+
+:AccommodationPlace a owl:Class ;
+	rdfs:subClassOf :Place .
+
+:Organization a owl:Class ;
+	owl:disjointWith :ContactInformation , :ReviewQuestion , :ConferenceSession , :ConferenceEvent , :Country , :Call , :Document , :ReviewRating , :ReviewForm , :PersonalHistory , :Place , :Sponsorship , :Person , :Conference , :Topic .
+
+:PendingPaper a owl:Class ;
+	rdfs:subClassOf :Paper ;
+	owl:disjointWith :ActivePaper , :WithdrawnPaper , :RejectedPaper , :AcceptedPaper , :PublishedPaper .
+
+:SocialEvent a owl:Class ;
+	rdfs:subClassOf :NonAcademicEvent .
+
+:TestOnlyTopic a owl:Class ;
+	rdfs:subClassOf :Topic ;
+	owl:disjointWith :ParallelAndDistributedComputingTopic , :MicroelectronicsTopic , :OperatingTopicsystems , :CommunicationTheoryTopic , :MedicineTopic , :ComputerNetworksTopic , :CryptographyTopic , :PowerlineTransmissionTopic , :SatelliteAndSpaceCommunicationsTopic , :CADTopic , :RadioCommunicationsTopic .
+
+:RadioCommunicationsTopic a owl:Class .
+
+:TestOnlyTopic owl:disjointWith :MobileComputingTopic , :MultimediaTopic , :AntennasTopic , :CommunicationsTopic , :WirelessCommunicationsTopic , :SecurityTopic , :SignalProcessingTopic , :ComputerArchitectureTopic , :PerformanceTopic .
+
+:RatedPapers a owl:Class ;
+	owl:equivalentClass _:node1e0ve56lpx38 .
+
+_:node1e0ve56lpx38 a owl:Restriction ;
+	owl:someValuesFrom :ReviewRating ;
+	owl:onProperty :hasRating .
+
+:hasRating a owl:FunctionalProperty .
+
+:RatedPapers rdfs:subClassOf :ActivePaper .
+
+:RadioCommunicationsTopic a owl:Class ;
+	owl:disjointWith :ComputerArchitectureTopic , :MultimediaTopic , :CommunicationTheoryTopic , :AntennasTopic , :OperatingTopicsystems , :WirelessCommunicationsTopic , :PowerlineTransmissionTopic , :CryptographyTopic , :SecurityTopic , :MobileComputingTopic , :SignalProcessingTopic , :CommunicationsTopic , :ComputerNetworksTopic , :PerformanceTopic , :SatelliteAndSpaceCommunicationsTopic , :ParallelAndDistributedComputingTopic , :MicroelectronicsTopic ;
+	rdfs:subClassOf :Topic ;
+	owl:disjointWith :MedicineTopic , :CADTopic , :TestOnlyTopic .
+
+:Review a owl:Class ;
+	owl:disjointWith :SlideSet , :Programme , :Paper , :MealMenu ;
+	rdfs:subClassOf :Document .
+
+:TravelGrant a owl:Class ;
+	rdfs:subClassOf :Sponsorship .
+
+:ConferenceDinner a owl:Class ;
+	rdfs:subClassOf :MealEvent .
+
+:hasRelatedPaper a owl:ObjectProperty ;
+	rdfs:range :Paper ;
+	owl:inverseOf :isWrittenBy .
+
+:isWrittenBy a owl:ObjectProperty .
+
+:hasRelatedPaper rdfs:domain :Author .
+
+:hasTopic a owl:ObjectProperty ;
+	rdfs:domain _:node1e0ve56lpx39 .
+
+_:node1e0ve56lpx39 a owl:Class ;
+	owl:unionOf _:node1e0ve56lpx40 .
+
+_:node1e0ve56lpx40 rdf:first :Conference .
+
+:Conference a owl:Class .
+
+_:node1e0ve56lpx40 rdf:rest _:node1e0ve56lpx41 .
+
+_:node1e0ve56lpx41 rdf:first :Paper .
+
+:Paper a owl:Class .
+
+_:node1e0ve56lpx41 rdf:rest rdf:nil .
+
+:hasTopic owl:inverseOf :isTopicOf .
+
+:isTopicOf a owl:ObjectProperty .
+
+:hasTopic rdfs:range :Topic .
+
+:hasRelatedDocument a owl:ObjectProperty ;
+	owl:inverseOf :relatesTo .
+
+:relatesTo a owl:ObjectProperty .
+
+:hasRelatedDocument rdfs:domain _:node1e0ve56lpx42 .
+
+_:node1e0ve56lpx42 a owl:Class ;
+	owl:unionOf _:node1e0ve56lpx43 .
+
+_:node1e0ve56lpx43 rdf:first :AcademicEvent .
+
+:AcademicEvent a owl:Class .
+
+_:node1e0ve56lpx43 rdf:rest _:node1e0ve56lpx44 .
+
+_:node1e0ve56lpx44 rdf:first :Conference .
+
+:Conference a owl:Class .
+
+_:node1e0ve56lpx44 rdf:rest _:node1e0ve56lpx45 .
+
+_:node1e0ve56lpx45 rdf:first :Person .
+
+:Person a owl:Class .
+
+_:node1e0ve56lpx45 rdf:rest _:node1e0ve56lpx46 .
+
+_:node1e0ve56lpx46 rdf:first :ConferenceSession .
+
+:ConferenceSession a owl:Class .
+
+_:node1e0ve56lpx46 rdf:rest rdf:nil .
+
+:hasRelatedDocument rdfs:range :Document .
+
+:isReviewHistoryOf a owl:ObjectProperty ;
+	rdfs:domain :PersonalReviewHistory ;
+	owl:inverseOf :hasReviewHistory .
+
+:hasReviewHistory a owl:ObjectProperty .
+
+:isReviewHistoryOf rdfs:range :Reviewer .
+
+:belongsToEvent a owl:ObjectProperty ;
+	rdfs:range :ConferenceEvent ;
+	rdfs:domain :Programme ;
+	owl:inverseOf :hasProgramme .
+
+:hasProgramme a owl:ObjectProperty .
+
+:isProviderOf a owl:ObjectProperty ;
+	owl:inverseOf :providedBy .
+
+:providedBy a owl:ObjectProperty .
+
+:isProviderOf rdfs:range :Sponsorship ;
+	rdfs:domain :Organization .
+
+:attendeeAt a owl:ObjectProperty ;
+	rdfs:domain :Person ;
+	owl:inverseOf :hasAttendee .
+
+:hasAttendee a owl:ObjectProperty .
+
+:attendeeAt rdfs:range :ConferenceEvent .
+
+:hasMenu a owl:ObjectProperty ;
+	rdfs:domain :MealEvent ;
+	rdfs:range :MealMenu ;
+	owl:inverseOf :isMenuOf .
+
+:isMenuOf a owl:ObjectProperty .
+
+:hasCall a owl:ObjectProperty ;
+	owl:inverseOf :forEvent .
+
+:forEvent a owl:ObjectProperty .
+
+:hasCall rdfs:range :Call ;
+	rdfs:domain :AcademicEvent .
+
+:forEvent a owl:ObjectProperty ;
+	rdfs:domain :Call ;
+	rdfs:range :AcademicEvent ;
+	owl:inverseOf :hasCall .
+
+:relatedToEvent a owl:ObjectProperty ;
+	owl:inverseOf :relatedToPaper .
+
+:relatedToPaper a owl:ObjectProperty .
+
+:relatedToEvent rdfs:domain :AcceptedPaper ;
+	rdfs:range :PaperPresentation .
+
+:hasMember a owl:ObjectProperty ;
+	owl:inverseOf :isMemberOf .
+
+:isMemberOf a owl:ObjectProperty .
+
+:hasMember rdfs:range :Person ;
+	rdfs:domain :Conference .
+
+:isMenuOf a owl:ObjectProperty ;
+	rdfs:domain :MealMenu ;
+	rdfs:range :MealEvent ;
+	owl:inverseOf :hasMenu .
+
+:isLocationOf a owl:ObjectProperty ;
+	rdfs:range :ConferenceEvent ;
+	owl:inverseOf :hasLocation .
+
+:hasLocation a owl:ObjectProperty .
+
+:isLocationOf rdfs:domain :Place .
+
+:isInitiatedBy a owl:ObjectProperty ;
+	owl:inverseOf :initiates .
+
+:initiates a owl:ObjectProperty .
+
+:isInitiatedBy rdfs:range _:node1e0ve56lpx47 .
+
+_:node1e0ve56lpx47 a owl:Class ;
+	owl:unionOf _:node1e0ve56lpx48 .
+
+_:node1e0ve56lpx48 rdf:first :SessionChair .
+
+:SessionChair a owl:Class .
+
+_:node1e0ve56lpx48 rdf:rest _:node1e0ve56lpx49 .
+
+_:node1e0ve56lpx49 rdf:first :TPCMember .
+
+:TPCMember a owl:Class .
+
+_:node1e0ve56lpx49 rdf:rest _:node1e0ve56lpx50 .
+
+_:node1e0ve56lpx50 rdf:first :ConferenceChair .
+
+:ConferenceChair a owl:Class .
+
+_:node1e0ve56lpx50 rdf:rest rdf:nil .
+
+:isInitiatedBy rdfs:domain :Call .
+
+:hasAttendee a owl:ObjectProperty ;
+	owl:inverseOf :attendeeAt ;
+	rdfs:domain :ConferenceEvent ;
+	rdfs:range :Person .
+
+:isMemberOf a owl:ObjectProperty ;
+	rdfs:domain :Person ;
+	owl:inverseOf :hasMember ;
+	rdfs:range :Conference .
+
+:hasLocation a owl:ObjectProperty ;
+	owl:inverseOf :isLocationOf ;
+	rdfs:range :Place ;
+	rdfs:domain :ConferenceEvent .
+
+:hasProgramme a owl:ObjectProperty ;
+	rdfs:domain :ConferenceEvent ;
+	owl:inverseOf :belongsToEvent ;
+	rdfs:range :Programme .
+
+:isTopicOf a owl:ObjectProperty ;
+	rdfs:domain :Topic ;
+	rdfs:range _:node1e0ve56lpx51 .
+
+_:node1e0ve56lpx51 a owl:Class ;
+	owl:unionOf _:node1e0ve56lpx52 .
+
+_:node1e0ve56lpx52 rdf:first :Paper .
+
+:Paper a owl:Class .
+
+_:node1e0ve56lpx52 rdf:rest _:node1e0ve56lpx53 .
+
+_:node1e0ve56lpx53 rdf:first :Conference .
+
+:Conference a owl:Class .
+
+_:node1e0ve56lpx53 rdf:rest rdf:nil .
+
+:isTopicOf owl:inverseOf :hasTopic .
+
+:relatedToPaper a owl:ObjectProperty ;
+	owl:inverseOf :relatedToEvent ;
+	rdfs:domain :PaperPresentation ;
+	rdfs:range :AcceptedPaper .
+
+:relatesTo a owl:ObjectProperty ;
+	rdfs:domain :Document ;
+	rdfs:range _:node1e0ve56lpx54 .
+
+_:node1e0ve56lpx54 a owl:Class ;
+	owl:unionOf _:node1e0ve56lpx55 .
+
+_:node1e0ve56lpx55 rdf:first :AcademicEvent .
+
+:AcademicEvent a owl:Class .
+
+_:node1e0ve56lpx55 rdf:rest _:node1e0ve56lpx56 .
+
+_:node1e0ve56lpx56 rdf:first :Conference .
+
+:Conference a owl:Class .
+
+_:node1e0ve56lpx56 rdf:rest _:node1e0ve56lpx57 .
+
+_:node1e0ve56lpx57 rdf:first :Person .
+
+:Person a owl:Class .
+
+_:node1e0ve56lpx57 rdf:rest _:node1e0ve56lpx58 .
+
+_:node1e0ve56lpx58 rdf:first :ConferenceSession .
+
+:ConferenceSession a owl:Class .
+
+_:node1e0ve56lpx58 rdf:rest rdf:nil .
+
+:relatesTo owl:inverseOf :hasRelatedDocument .
+
+:providedBy a owl:ObjectProperty ;
+	rdfs:range :Organization ;
+	rdfs:domain :Sponsorship ;
+	owl:inverseOf :isProviderOf .
+
+:isReviewing a owl:ObjectProperty ;
+	rdfs:domain _:node1e0ve56lpx59 .
+
+_:node1e0ve56lpx59 a owl:Class ;
+	owl:unionOf _:node1e0ve56lpx60 .
+
+_:node1e0ve56lpx60 rdf:first :Reviewer .
+
+:Reviewer a owl:Class .
+
+_:node1e0ve56lpx60 rdf:rest _:node1e0ve56lpx61 .
+
+_:node1e0ve56lpx61 rdf:first :SessionChair .
+
+:SessionChair a owl:Class .
+
+_:node1e0ve56lpx61 rdf:rest _:node1e0ve56lpx62 .
+
+_:node1e0ve56lpx62 rdf:first :TPCMember .
+
+:TPCMember a owl:Class .
+
+_:node1e0ve56lpx62 rdf:rest _:node1e0ve56lpx63 .
+
+_:node1e0ve56lpx63 rdf:first :ConferenceChair .
+
+:ConferenceChair a owl:Class .
+
+_:node1e0ve56lpx63 rdf:rest rdf:nil .
+
+:isReviewing owl:inverseOf :isReviewedBy .
+
+:isReviewedBy a owl:ObjectProperty .
+
+:isReviewing rdfs:range :Paper .
+
+:hasReviewHistory a owl:ObjectProperty ;
+	rdfs:domain :Reviewer ;
+	rdfs:range :PersonalReviewHistory ;
+	owl:inverseOf :isReviewHistoryOf .
+
+:isWrittenBy a owl:ObjectProperty ;
+	owl:inverseOf :hasRelatedPaper ;
+	rdfs:domain :Paper ;
+	rdfs:range :Author .
+
+:isReviewedBy a owl:ObjectProperty ;
+	rdfs:domain :Paper ;
+	owl:inverseOf :isReviewing ;
+	rdfs:range _:node1e0ve56lpx64 .
+
+_:node1e0ve56lpx64 a owl:Class ;
+	owl:unionOf _:node1e0ve56lpx65 .
+
+_:node1e0ve56lpx65 rdf:first :SessionChair .
+
+:SessionChair a owl:Class .
+
+_:node1e0ve56lpx65 rdf:rest _:node1e0ve56lpx66 .
+
+_:node1e0ve56lpx66 rdf:first :Reviewer .
+
+:Reviewer a owl:Class .
+
+_:node1e0ve56lpx66 rdf:rest _:node1e0ve56lpx67 .
+
+_:node1e0ve56lpx67 rdf:first :TPCMember .
+
+:TPCMember a owl:Class .
+
+_:node1e0ve56lpx67 rdf:rest _:node1e0ve56lpx68 .
+
+_:node1e0ve56lpx68 rdf:first :ConferenceChair .
+
+:ConferenceChair a owl:Class .
+
+_:node1e0ve56lpx68 rdf:rest rdf:nil .
+
+:initiates a owl:ObjectProperty ;
+	rdfs:domain _:node1e0ve56lpx69 .
+
+_:node1e0ve56lpx69 a owl:Class ;
+	owl:unionOf _:node1e0ve56lpx70 .
+
+_:node1e0ve56lpx70 rdf:first :ConferenceChair .
+
+:ConferenceChair a owl:Class .
+
+_:node1e0ve56lpx70 rdf:rest _:node1e0ve56lpx71 .
+
+_:node1e0ve56lpx71 rdf:first :SessionChair .
+
+:SessionChair a owl:Class .
+
+_:node1e0ve56lpx71 rdf:rest _:node1e0ve56lpx72 .
+
+_:node1e0ve56lpx72 rdf:first :TPCMember .
+
+:TPCMember a owl:Class .
+
+_:node1e0ve56lpx72 rdf:rest rdf:nil .
+
+:initiates owl:inverseOf :isInitiatedBy ;
+	rdfs:range :Call .
+
+:hasFirstName a owl:DatatypeProperty ;
+	rdfs:range xsd:string ;
+	rdfs:domain :Person .
+
+:hasCostCurrency a owl:DatatypeProperty ;
+	rdfs:domain :Sponsorship ;
+	rdfs:range xsd:string .
+
+:hasCity a owl:DatatypeProperty ;
+	rdfs:domain :ContactInformation ;
+	rdfs:range xsd:string .
+
+:hasName a owl:DatatypeProperty ;
+	rdfs:comment "Conference Full Name"^^xsd:string ;
+	rdfs:domain :Conference ;
+	rdfs:range xsd:string .
+
+:endDate a owl:DatatypeProperty ;
+	rdfs:domain :Conference ;
+	rdfs:range xsd:dateTime ;
+	rdfs:comment "Conference End Date and Time"^^xsd:string .
+
+:paperDueOn a owl:DatatypeProperty ;
+	rdfs:range xsd:dateTime ;
+	rdfs:domain :Conference ;
+	rdfs:comment "Conference Paper Date and Time Deadline"^^xsd:string .
+
+:registrationDueOn a owl:DatatypeProperty ;
+	rdfs:comment "Conference Registration Date and Time Deadline"^^xsd:string ;
+	rdfs:domain :Conference ;
+	rdfs:range xsd:dateTime .
+
+:hasEmail a owl:DatatypeProperty ;
+	rdfs:domain _:node1e0ve56lpx73 .
+
+_:node1e0ve56lpx73 a owl:Class ;
+	owl:unionOf _:node1e0ve56lpx74 .
+
+_:node1e0ve56lpx74 rdf:first :ContactInformation .
+
+:ContactInformation a owl:Class .
+
+_:node1e0ve56lpx74 rdf:rest _:node1e0ve56lpx75 .
+
+_:node1e0ve56lpx75 rdf:first :Person .
+
+:Person a owl:Class .
+
+_:node1e0ve56lpx75 rdf:rest rdf:nil .
+
+:hasEmail rdfs:range xsd:string .
+
+:hasStreet a owl:DatatypeProperty ;
+	rdfs:domain :ContactInformation ;
+	rdfs:range xsd:string .
+
+:hasEndDateTime a owl:DatatypeProperty ;
+	rdfs:range xsd:dateTime ;
+	rdfs:domain :ConferenceEvent .
+
+:hasStartDateTime a owl:DatatypeProperty ;
+	rdfs:domain :ConferenceEvent ;
+	rdfs:range xsd:dateTime .
+
+:hasBiography a owl:DatatypeProperty ;
+	rdfs:domain :Person ;
+	rdfs:range xsd:string .
+
+:hasLastName a owl:DatatypeProperty ;
+	rdfs:range xsd:string ;
+	rdfs:domain :Person .
+
+:manuscriptDueOn a owl:DatatypeProperty ;
+	rdfs:comment "Conference Manuscript Date and Time Deadline"^^xsd:string ;
+	rdfs:domain :Conference ;
+	rdfs:range xsd:dateTime .
+
+:hasPostalCode a owl:DatatypeProperty ;
+	rdfs:domain :ContactInformation ;
+	rdfs:range xsd:string .
+
+:hasCostAmount a owl:DatatypeProperty ;
+	rdfs:domain :Sponsorship ;
+	rdfs:range xsd:int .
+
+:startDate a owl:DatatypeProperty ;
+	rdfs:domain :Conference ;
+	rdfs:comment "Conference Start Date and Time"^^xsd:string ;
+	rdfs:range xsd:dateTime .
+
+:hasPhone a owl:DatatypeProperty ;
+	rdfs:domain :ContactInformation ;
+	rdfs:range xsd:string .
+
+:hasSubmissionInstructions a owl:FunctionalProperty ;
+	rdfs:range xsd:string ;
+	a owl:DatatypeProperty ;
+	rdfs:domain :Call .
+
+:hasCountry a owl:FunctionalProperty , owl:ObjectProperty ;
+	rdfs:range :Country ;
+	rdfs:domain :Conference .
+
+:hasRating a owl:FunctionalProperty , owl:ObjectProperty ;
+	rdfs:domain :ActivePaper ;
+	rdfs:range :ReviewRating .
+
+:hasSubmissionDeadline a owl:FunctionalProperty , owl:DatatypeProperty ;
+	rdfs:domain :Call ;
+	rdfs:range xsd:dateTime .
+
+:Venezuela a :Country .
+
+:Cuba a :Country .
+
+:Japan a :Country .
+
+:Senegal a :Country .
+
+:Norway a :Country .
+
+:Madagascar a :Country .
+
+:Iran a :Country .
+
+:USA a :Country .
+
+:Latvia a :Country .
+
+:China a :Country .
+
+:CocosIslands a :Country .
+
+:Uruguay a :Country .
+
+:Ukraine a :Country .
+
+:Argentina a :Country .
+
+:Poland a :Country .
+
+:Spain a :Country .
+
+:Thailand a :Country .
+
+:Turkey a :Country .
+
+:Netherlands a :Country .
+
+:Azerbaijan a :Country .
+
+:Switzerland a :Country .
+
+_:node1e0ve56lpx76 a owl:AllDifferent ;
+	owl:distinctMembers _:node1e0ve56lpx77 .
+
+_:node1e0ve56lpx77 rdf:first :Argentina .
+
+:Argentina a :Country .
+
+_:node1e0ve56lpx77 rdf:rest _:node1e0ve56lpx78 .
+
+_:node1e0ve56lpx78 rdf:first :Armenia .
+
+:Armenia a :Country .
+
+_:node1e0ve56lpx78 rdf:rest _:node1e0ve56lpx79 .
+
+_:node1e0ve56lpx79 rdf:first :Australia .
+
+:Australia a :Country .
+
+_:node1e0ve56lpx79 rdf:rest _:node1e0ve56lpx80 .
+
+_:node1e0ve56lpx80 rdf:first :Austria .
+
+:Austria a :Country .
+
+_:node1e0ve56lpx80 rdf:rest _:node1e0ve56lpx81 .
+
+_:node1e0ve56lpx81 rdf:first :Azerbaijan .
+
+:Azerbaijan a :Country .
+
+_:node1e0ve56lpx81 rdf:rest _:node1e0ve56lpx82 .
+
+_:node1e0ve56lpx82 rdf:first :Bahamas .
+
+:Bahamas a :Country .
+
+_:node1e0ve56lpx82 rdf:rest _:node1e0ve56lpx83 .
+
+_:node1e0ve56lpx83 rdf:first :Bahrain .
+
+:Bahrain a :Country .
+
+_:node1e0ve56lpx83 rdf:rest _:node1e0ve56lpx84 .
+
+_:node1e0ve56lpx84 rdf:first :Bangladesh .
+
+:Bangladesh a :Country .
+
+_:node1e0ve56lpx84 rdf:rest _:node1e0ve56lpx85 .
+
+_:node1e0ve56lpx85 rdf:first :Belgium .
+
+:Belgium a :Country .
+
+_:node1e0ve56lpx85 rdf:rest _:node1e0ve56lpx86 .
+
+_:node1e0ve56lpx86 rdf:first :BosniaAndHerzegovina .
+
+:BosniaAndHerzegovina a :Country .
+
+_:node1e0ve56lpx86 rdf:rest _:node1e0ve56lpx87 .
+
+_:node1e0ve56lpx87 rdf:first :Botswana .
+
+:Botswana a :Country .
+
+_:node1e0ve56lpx87 rdf:rest _:node1e0ve56lpx88 .
+
+_:node1e0ve56lpx88 rdf:first :Brazil .
+
+:Brazil a :Country .
+
+_:node1e0ve56lpx88 rdf:rest _:node1e0ve56lpx89 .
+
+_:node1e0ve56lpx89 rdf:first :Bulgaria .
+
+:Bulgaria a :Country .
+
+_:node1e0ve56lpx89 rdf:rest _:node1e0ve56lpx90 .
+
+_:node1e0ve56lpx90 rdf:first :Belarus .
+
+:Belarus a :Country .
+
+_:node1e0ve56lpx90 rdf:rest _:node1e0ve56lpx91 .
+
+_:node1e0ve56lpx91 rdf:first :Cambodia .
+
+:Cambodia a :Country .
+
+_:node1e0ve56lpx91 rdf:rest _:node1e0ve56lpx92 .
+
+_:node1e0ve56lpx92 rdf:first :Canada .
+
+:Canada a :Country .
+
+_:node1e0ve56lpx92 rdf:rest _:node1e0ve56lpx93 .
+
+_:node1e0ve56lpx93 rdf:first :Chile .
+
+:Chile a :Country .
+
+_:node1e0ve56lpx93 rdf:rest _:node1e0ve56lpx94 .
+
+_:node1e0ve56lpx94 rdf:first :CocosIslands .
+
+:CocosIslands a :Country .
+
+_:node1e0ve56lpx94 rdf:rest _:node1e0ve56lpx95 .
+
+_:node1e0ve56lpx95 rdf:first :DemocraticRepublicOfCongo .
+
+:DemocraticRepublicOfCongo a :Country .
+
+_:node1e0ve56lpx95 rdf:rest _:node1e0ve56lpx96 .
+
+_:node1e0ve56lpx96 rdf:first :China .
+
+:China a :Country .
+
+_:node1e0ve56lpx96 rdf:rest _:node1e0ve56lpx97 .
+
+_:node1e0ve56lpx97 rdf:first :Colombia .
+
+:Colombia a :Country .
+
+_:node1e0ve56lpx97 rdf:rest _:node1e0ve56lpx98 .
+
+_:node1e0ve56lpx98 rdf:first :Croatia .
+
+:Croatia a :Country .
+
+_:node1e0ve56lpx98 rdf:rest _:node1e0ve56lpx99 .
+
+_:node1e0ve56lpx99 rdf:first :Cuba .
+
+:Cuba a :Country .
+
+_:node1e0ve56lpx99 rdf:rest _:node1e0ve56lpx100 .
+
+_:node1e0ve56lpx100 rdf:first :Cyprus .
+
+:Cyprus a :Country .
+
+_:node1e0ve56lpx100 rdf:rest _:node1e0ve56lpx101 .
+
+_:node1e0ve56lpx101 rdf:first :CzechRepublic .
+
+:CzechRepublic a :Country .
+
+_:node1e0ve56lpx101 rdf:rest _:node1e0ve56lpx102 .
+
+_:node1e0ve56lpx102 rdf:first :Denmark .
+
+:Denmark a :Country .
+
+_:node1e0ve56lpx102 rdf:rest _:node1e0ve56lpx103 .
+
+_:node1e0ve56lpx103 rdf:first :Ecuador .
+
+:Ecuador a :Country .
+
+_:node1e0ve56lpx103 rdf:rest _:node1e0ve56lpx104 .
+
+_:node1e0ve56lpx104 rdf:first :Egypt .
+
+:Egypt a :Country .
+
+_:node1e0ve56lpx104 rdf:rest _:node1e0ve56lpx105 .
+
+_:node1e0ve56lpx105 rdf:first :Estonia .
+
+:Estonia a :Country .
+
+_:node1e0ve56lpx105 rdf:rest _:node1e0ve56lpx106 .
+
+_:node1e0ve56lpx106 rdf:first :Ethiopia .
+
+:Ethiopia a :Country .
+
+_:node1e0ve56lpx106 rdf:rest _:node1e0ve56lpx107 .
+
+_:node1e0ve56lpx107 rdf:first :EuropeanUnion .
+
+:EuropeanUnion a :Country .
+
+_:node1e0ve56lpx107 rdf:rest _:node1e0ve56lpx108 .
+
+_:node1e0ve56lpx108 rdf:first :Finland .
+
+:Finland a :Country .
+
+_:node1e0ve56lpx108 rdf:rest _:node1e0ve56lpx109 .
+
+_:node1e0ve56lpx109 rdf:first :France .
+
+:France a :Country .
+
+_:node1e0ve56lpx109 rdf:rest _:node1e0ve56lpx110 .
+
+_:node1e0ve56lpx110 rdf:first :Georgia .
+
+:Georgia a :Country .
+
+_:node1e0ve56lpx110 rdf:rest _:node1e0ve56lpx111 .
+
+_:node1e0ve56lpx111 rdf:first :Germany .
+
+:Germany a :Country .
+
+_:node1e0ve56lpx111 rdf:rest _:node1e0ve56lpx112 .
+
+_:node1e0ve56lpx112 rdf:first :Ghana .
+
+:Ghana a :Country .
+
+_:node1e0ve56lpx112 rdf:rest _:node1e0ve56lpx113 .
+
+_:node1e0ve56lpx113 rdf:first :Greece .
+
+:Greece a :Country .
+
+_:node1e0ve56lpx113 rdf:rest _:node1e0ve56lpx114 .
+
+_:node1e0ve56lpx114 rdf:first :HongKong .
+
+:HongKong a :Country .
+
+_:node1e0ve56lpx114 rdf:rest _:node1e0ve56lpx115 .
+
+_:node1e0ve56lpx115 rdf:first :Hungary .
+
+:Hungary a :Country .
+
+_:node1e0ve56lpx115 rdf:rest _:node1e0ve56lpx116 .
+
+_:node1e0ve56lpx116 rdf:first :Iceland .
+
+:Iceland a :Country .
+
+_:node1e0ve56lpx116 rdf:rest _:node1e0ve56lpx117 .
+
+_:node1e0ve56lpx117 rdf:first :India .
+
+:India a :Country .
+
+_:node1e0ve56lpx117 rdf:rest _:node1e0ve56lpx118 .
+
+_:node1e0ve56lpx118 rdf:first :Indonesia .
+
+:Indonesia a :Country .
+
+_:node1e0ve56lpx118 rdf:rest _:node1e0ve56lpx119 .
+
+_:node1e0ve56lpx119 rdf:first :Iran .
+
+:Iran a :Country .
+
+_:node1e0ve56lpx119 rdf:rest _:node1e0ve56lpx120 .
+
+_:node1e0ve56lpx120 rdf:first :Iraq .
+
+:Iraq a :Country .
+
+_:node1e0ve56lpx120 rdf:rest _:node1e0ve56lpx121 .
+
+_:node1e0ve56lpx121 rdf:first :Ireland .
+
+:Ireland a :Country .
+
+_:node1e0ve56lpx121 rdf:rest _:node1e0ve56lpx122 .
+
+_:node1e0ve56lpx122 rdf:first :Israel .
+
+:Israel a :Country .
+
+_:node1e0ve56lpx122 rdf:rest _:node1e0ve56lpx123 .
+
+_:node1e0ve56lpx123 rdf:first :Italy .
+
+:Italy a :Country .
+
+_:node1e0ve56lpx123 rdf:rest _:node1e0ve56lpx124 .
+
+_:node1e0ve56lpx124 rdf:first :Japan .
+
+:Japan a :Country .
+
+_:node1e0ve56lpx124 rdf:rest _:node1e0ve56lpx125 .
+
+_:node1e0ve56lpx125 rdf:first :Jordan .
+
+:Jordan a :Country .
+
+_:node1e0ve56lpx125 rdf:rest _:node1e0ve56lpx126 .
+
+_:node1e0ve56lpx126 rdf:first :Kenya .
+
+:Kenya a :Country .
+
+_:node1e0ve56lpx126 rdf:rest _:node1e0ve56lpx127 .
+
+_:node1e0ve56lpx127 rdf:first :Korea .
+
+:Korea a :Country .
+
+_:node1e0ve56lpx127 rdf:rest _:node1e0ve56lpx128 .
+
+_:node1e0ve56lpx128 rdf:first :Kuwait .
+
+:Kuwait a :Country .
+
+_:node1e0ve56lpx128 rdf:rest _:node1e0ve56lpx129 .
+
+_:node1e0ve56lpx129 rdf:first :Lebanon .
+
+:Lebanon a :Country .
+
+_:node1e0ve56lpx129 rdf:rest _:node1e0ve56lpx130 .
+
+_:node1e0ve56lpx130 rdf:first :Latvia .
+
+:Latvia a :Country .
+
+_:node1e0ve56lpx130 rdf:rest _:node1e0ve56lpx131 .
+
+_:node1e0ve56lpx131 rdf:first :Libya .
+
+:Libya a :Country .
+
+_:node1e0ve56lpx131 rdf:rest _:node1e0ve56lpx132 .
+
+_:node1e0ve56lpx132 rdf:first :Lithuania .
+
+:Lithuania a :Country .
+
+_:node1e0ve56lpx132 rdf:rest _:node1e0ve56lpx133 .
+
+_:node1e0ve56lpx133 rdf:first :Luxemburg .
+
+:Luxemburg a :Country .
+
+_:node1e0ve56lpx133 rdf:rest _:node1e0ve56lpx134 .
+
+_:node1e0ve56lpx134 rdf:first :Macao .
+
+:Macao a :Country .
+
+_:node1e0ve56lpx134 rdf:rest _:node1e0ve56lpx135 .
+
+_:node1e0ve56lpx135 rdf:first :Macedonia .
+
+:Macedonia a :Country .
+
+_:node1e0ve56lpx135 rdf:rest _:node1e0ve56lpx136 .
+
+_:node1e0ve56lpx136 rdf:first :Madagascar .
+
+:Madagascar a :Country .
+
+_:node1e0ve56lpx136 rdf:rest _:node1e0ve56lpx137 .
+
+_:node1e0ve56lpx137 rdf:first :Malaysia .
+
+:Malaysia a :Country .
+
+_:node1e0ve56lpx137 rdf:rest _:node1e0ve56lpx138 .
+
+_:node1e0ve56lpx138 rdf:first :Malta .
+
+:Malta a :Country .
+
+_:node1e0ve56lpx138 rdf:rest _:node1e0ve56lpx139 .
+
+_:node1e0ve56lpx139 rdf:first :Mauritius .
+
+:Mauritius a :Country .
+
+_:node1e0ve56lpx139 rdf:rest _:node1e0ve56lpx140 .
+
+_:node1e0ve56lpx140 rdf:first :Mexico .
+
+:Mexico a :Country .
+
+_:node1e0ve56lpx140 rdf:rest _:node1e0ve56lpx141 .
+
+_:node1e0ve56lpx141 rdf:first :Mongolia .
+
+:Mongolia a :Country .
+
+_:node1e0ve56lpx141 rdf:rest _:node1e0ve56lpx142 .
+
+_:node1e0ve56lpx142 rdf:first :Morocco .
+
+:Morocco a :Country .
+
+_:node1e0ve56lpx142 rdf:rest _:node1e0ve56lpx143 .
+
+_:node1e0ve56lpx143 rdf:first :Nicaragua .
+
+:Nicaragua a :Country .
+
+_:node1e0ve56lpx143 rdf:rest _:node1e0ve56lpx144 .
+
+_:node1e0ve56lpx144 rdf:first :Nepal .
+
+:Nepal a :Country .
+
+_:node1e0ve56lpx144 rdf:rest _:node1e0ve56lpx145 .
+
+_:node1e0ve56lpx145 rdf:first :Netherlands .
+
+:Netherlands a :Country .
+
+_:node1e0ve56lpx145 rdf:rest _:node1e0ve56lpx146 .
+
+_:node1e0ve56lpx146 rdf:first :NewZealand .
+
+:NewZealand a :Country .
+
+_:node1e0ve56lpx146 rdf:rest _:node1e0ve56lpx147 .
+
+_:node1e0ve56lpx147 rdf:first :Nigeria .
+
+:Nigeria a :Country .
+
+_:node1e0ve56lpx147 rdf:rest _:node1e0ve56lpx148 .
+
+_:node1e0ve56lpx148 rdf:first :NorthKorea .
+
+:NorthKorea a :Country .
+
+_:node1e0ve56lpx148 rdf:rest _:node1e0ve56lpx149 .
+
+_:node1e0ve56lpx149 rdf:first :Norway .
+
+:Norway a :Country .
+
+_:node1e0ve56lpx149 rdf:rest _:node1e0ve56lpx150 .
+
+_:node1e0ve56lpx150 rdf:first :Oman .
+
+:Oman a :Country .
+
+_:node1e0ve56lpx150 rdf:rest _:node1e0ve56lpx151 .
+
+_:node1e0ve56lpx151 rdf:first :Pakistan .
+
+:Pakistan a :Country .
+
+_:node1e0ve56lpx151 rdf:rest _:node1e0ve56lpx152 .
+
+_:node1e0ve56lpx152 rdf:first :Paraguay .
+
+:Paraguay a :Country .
+
+_:node1e0ve56lpx152 rdf:rest _:node1e0ve56lpx153 .
+
+_:node1e0ve56lpx153 rdf:first :Peru .
+
+:Peru a :Country .
+
+_:node1e0ve56lpx153 rdf:rest _:node1e0ve56lpx154 .
+
+_:node1e0ve56lpx154 rdf:first :Philippines .
+
+:Philippines a :Country .
+
+_:node1e0ve56lpx154 rdf:rest _:node1e0ve56lpx155 .
+
+_:node1e0ve56lpx155 rdf:first :Poland .
+
+:Poland a :Country .
+
+_:node1e0ve56lpx155 rdf:rest _:node1e0ve56lpx156 .
+
+_:node1e0ve56lpx156 rdf:first :Portugal .
+
+:Portugal a :Country .
+
+_:node1e0ve56lpx156 rdf:rest _:node1e0ve56lpx157 .
+
+_:node1e0ve56lpx157 rdf:first :PuertoRico .
+
+:PuertoRico a :Country .
+
+_:node1e0ve56lpx157 rdf:rest _:node1e0ve56lpx158 .
+
+_:node1e0ve56lpx158 rdf:first :Qatar .
+
+:Qatar a :Country .
+
+_:node1e0ve56lpx158 rdf:rest _:node1e0ve56lpx159 .
+
+_:node1e0ve56lpx159 rdf:first :Romania .
+
+:Romania a :Country .
+
+_:node1e0ve56lpx159 rdf:rest _:node1e0ve56lpx160 .
+
+_:node1e0ve56lpx160 rdf:first :Russia .
+
+:Russia a :Country .
+
+_:node1e0ve56lpx160 rdf:rest _:node1e0ve56lpx161 .
+
+_:node1e0ve56lpx161 rdf:first :SanMarino .
+
+:SanMarino a :Country .
+
+_:node1e0ve56lpx161 rdf:rest _:node1e0ve56lpx162 .
+
+_:node1e0ve56lpx162 rdf:first :SaudiArabia .
+
+:SaudiArabia a :Country .
+
+_:node1e0ve56lpx162 rdf:rest _:node1e0ve56lpx163 .
+
+_:node1e0ve56lpx163 rdf:first :Senegal .
+
+:Senegal a :Country .
+
+_:node1e0ve56lpx163 rdf:rest _:node1e0ve56lpx164 .
+
+_:node1e0ve56lpx164 rdf:first :SerbiaAndMontenegro .
+
+:SerbiaAndMontenegro a :Country .
+
+_:node1e0ve56lpx164 rdf:rest _:node1e0ve56lpx165 .
+
+_:node1e0ve56lpx165 rdf:first :Singapore .
+
+:Singapore a :Country .
+
+_:node1e0ve56lpx165 rdf:rest _:node1e0ve56lpx166 .
+
+_:node1e0ve56lpx166 rdf:first :Slovakia .
+
+:Slovakia a :Country .
+
+_:node1e0ve56lpx166 rdf:rest _:node1e0ve56lpx167 .
+
+_:node1e0ve56lpx167 rdf:first :Slovenia .
+
+:Slovenia a :Country .
+
+_:node1e0ve56lpx167 rdf:rest _:node1e0ve56lpx168 .
+
+_:node1e0ve56lpx168 rdf:first :SouthAfrica .
+
+:SouthAfrica a :Country .
+
+_:node1e0ve56lpx168 rdf:rest _:node1e0ve56lpx169 .
+
+_:node1e0ve56lpx169 rdf:first :Spain .
+
+:Spain a :Country .
+
+_:node1e0ve56lpx169 rdf:rest _:node1e0ve56lpx170 .
+
+_:node1e0ve56lpx170 rdf:first :SriLanka .
+
+:SriLanka a :Country .
+
+_:node1e0ve56lpx170 rdf:rest _:node1e0ve56lpx171 .
+
+_:node1e0ve56lpx171 rdf:first :Sweden .
+
+:Sweden a :Country .
+
+_:node1e0ve56lpx171 rdf:rest _:node1e0ve56lpx172 .
+
+_:node1e0ve56lpx172 rdf:first :Switzerland .
+
+:Switzerland a :Country .
+
+_:node1e0ve56lpx172 rdf:rest _:node1e0ve56lpx173 .
+
+_:node1e0ve56lpx173 rdf:first :Syria .
+
+:Syria a :Country .
+
+_:node1e0ve56lpx173 rdf:rest _:node1e0ve56lpx174 .
+
+_:node1e0ve56lpx174 rdf:first :Taiwan .
+
+:Taiwan a :Country .
+
+_:node1e0ve56lpx174 rdf:rest _:node1e0ve56lpx175 .
+
+_:node1e0ve56lpx175 rdf:first :Tajikistan .
+
+:Tajikistan a :Country .
+
+_:node1e0ve56lpx175 rdf:rest _:node1e0ve56lpx176 .
+
+_:node1e0ve56lpx176 rdf:first :Tanzania .
+
+:Tanzania a :Country .
+
+_:node1e0ve56lpx176 rdf:rest _:node1e0ve56lpx177 .
+
+_:node1e0ve56lpx177 rdf:first :Thailand .
+
+:Thailand a :Country .
+
+_:node1e0ve56lpx177 rdf:rest _:node1e0ve56lpx178 .
+
+_:node1e0ve56lpx178 rdf:first :Tunisia .
+
+:Tunisia a :Country .
+
+_:node1e0ve56lpx178 rdf:rest _:node1e0ve56lpx179 .
+
+_:node1e0ve56lpx179 rdf:first :Turkey .
+
+:Turkey a :Country .
+
+_:node1e0ve56lpx179 rdf:rest _:node1e0ve56lpx180 .
+
+_:node1e0ve56lpx180 rdf:first :Turkmenistan .
+
+:Turkmenistan a :Country .
+
+_:node1e0ve56lpx180 rdf:rest _:node1e0ve56lpx181 .
+
+_:node1e0ve56lpx181 rdf:first :UAE .
+
+:UAE a :Country .
+
+_:node1e0ve56lpx181 rdf:rest _:node1e0ve56lpx182 .
+
+_:node1e0ve56lpx182 rdf:first :Ukraine .
+
+:Ukraine a :Country .
+
+_:node1e0ve56lpx182 rdf:rest _:node1e0ve56lpx183 .
+
+_:node1e0ve56lpx183 rdf:first :Uganda .
+
+:Uganda a :Country .
+
+_:node1e0ve56lpx183 rdf:rest _:node1e0ve56lpx184 .
+
+_:node1e0ve56lpx184 rdf:first :UnitedKingdom .
+
+:UnitedKingdom a :Country .
+
+_:node1e0ve56lpx184 rdf:rest _:node1e0ve56lpx185 .
+
+_:node1e0ve56lpx185 rdf:first :Uruguay .
+
+:Uruguay a :Country .
+
+_:node1e0ve56lpx185 rdf:rest _:node1e0ve56lpx186 .
+
+_:node1e0ve56lpx186 rdf:first :USA .
+
+:USA a :Country .
+
+_:node1e0ve56lpx186 rdf:rest _:node1e0ve56lpx187 .
+
+_:node1e0ve56lpx187 rdf:first :Venezuela .
+
+:Venezuela a :Country .
+
+_:node1e0ve56lpx187 rdf:rest _:node1e0ve56lpx188 .
+
+_:node1e0ve56lpx188 rdf:first :Vietnam .
+
+:Vietnam a :Country .
+
+_:node1e0ve56lpx188 rdf:rest _:node1e0ve56lpx189 .
+
+_:node1e0ve56lpx189 rdf:first :Yemen .
+
+:Yemen a :Country .
+
+_:node1e0ve56lpx189 rdf:rest _:node1e0ve56lpx190 .
+
+_:node1e0ve56lpx190 rdf:first :Zimbabwe .
+
+:Zimbabwe a :Country .
+
+_:node1e0ve56lpx190 rdf:rest rdf:nil .

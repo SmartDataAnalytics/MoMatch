@@ -1,0 +1,37 @@
+انتهاء يوم الحدث,Expiry day of the event
+البقاء في المدينة,Stay in the city
+البقاء في الشارع,Stay on the street
+تحديد عدد الخيار الافتراضي من الحدث,Specify the number of the default option of the event
+المشارك في المؤتمر لديه التسجيل مبكر,The joint in the conference has to register early
+المراجعين,Reviewers
+بدء يوم الحدث,Starting the day of the event
+لديه اللقب,Has the last name
+لديه الرمز البريدي,Has a zip
+لديه اتصال البريد الإلكتروني,have e-mail contact
+لديه موضوع,has the theme
+حدث يقام في,Event takes place in
+لديه الاسم الأول,have the first name
+لديه بريد الكتروني,have email
+لديه ملاحظة,have note
+البقاء في البلد,Stay in the country
+يتعامل مع الموضوع,Deals with the topic
+تحديد أقل عدد من الحدث,Determine the least number of event
+تحديد العدد الأقصى من الحدث,Specify the maximum number of event
+يكتب المساهمة,Writes contributing
+لديه الهاتف,have phone
+لديه عنوان,have address
+لديه قيمة ضريبة مضافة,has a Value Added Tax
+كتب من قبل الكاتب,Written by the author
+يتبع,Follow
+خبير في الموضوع,An expert in the subject
+دراسة في الجامعة,A study at the University
+لديه عنوان,have address
+لديه كلمات البحث,Has the word search
+لديه الفاكس,have fax
+لديه عنوان قصير,Has a short title
+متستخدمة من قبل,Step by
+لديه ملخص,Has a summary
+AnnotationProperty,AnnotationProperty
+بتوازي مع,Parallel with
+لديه الصفحة الرئيسية,Has the home page
+لديه الحدث الإداري ذات الصلة,Has the event related administrative

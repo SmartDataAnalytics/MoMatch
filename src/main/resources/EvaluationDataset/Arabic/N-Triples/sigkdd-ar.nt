@@ -1,0 +1,259 @@
+<http://sigkdd_ar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://sigkdd_ar#op-1699370-4424020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-1699370-4424020> <http://www.w3.org/2000/01/rdf-schema#label> "\u0622\u062E\u0631 \u0645\u0648\u0639\u062F \u0627\u0644\u0645\u062D\u062F\u062F \u0645\u0646 \u0627\u062C\u0644"@ar .
+<http://sigkdd_ar#op-1699370-4424020> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-9383035-4528001> .
+<http://sigkdd_ar#op-1699370-4424020> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-9858835-9194545> .
+<http://sigkdd_ar#op-1699370-4424020> <http://www.w3.org/2002/07/owl#inverseOf> <http://sigkdd_ar#op-2567718-1943973> .
+<http://sigkdd_ar#op-3608444-2411140> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-3608444-2411140> <http://www.w3.org/2000/01/rdf-schema#label> "\u064A\u0645\u0643\u0646 \u0627\u0644\u0628\u0642\u0627\u0621 \u0641\u064A"@ar .
+<http://sigkdd_ar#op-3608444-2411140> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-3363751-8760227> .
+<http://sigkdd_ar#op-3608444-2411140> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-4596635-0722497> .
+<http://sigkdd_ar#op-6619175-5616650> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-6619175-5616650> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u062A\u064A \u062A\u0645\u0646\u062D\u0647\u0627"@ar .
+<http://sigkdd_ar#op-6619175-5616650> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-0007370-7553257> .
+<http://sigkdd_ar#op-6619175-5616650> <http://www.w3.org/2002/07/owl#inverseOf> <http://sigkdd_ar#op-6412754-0086179> .
+<http://sigkdd_ar#op-2701839-4065570> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-2701839-4065570> <http://www.w3.org/2000/01/rdf-schema#label> "\u0631\u0633\u0648\u0645 \u0627\u0644\u062A\u0633\u062C\u064A\u0644 \u0627\u0644\u0645\u062F\u0641\u0648\u0639\u0629 \u0645\u0646 \u0642\u0628\u0644"@ar .
+<http://sigkdd_ar#op-2701839-4065570> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-4596635-0722497> .
+<http://sigkdd_ar#op-2701839-4065570> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-9545303-7816338> .
+<http://sigkdd_ar#op-1317108-2039751> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-1317108-2039751> <http://www.w3.org/2000/01/rdf-schema#label> "\u0642\u062F \u0642\u062F\u0645 \u0645\u0646 \u062C\u0627\u0646\u0628"@ar .
+<http://sigkdd_ar#op-1317108-2039751> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-1363765-1519553> .
+<http://sigkdd_ar#op-1317108-2039751> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-8653983-1538377> .
+<http://sigkdd_ar#op-1317108-2039751> <http://www.w3.org/2002/07/owl#inverseOf> <http://sigkdd_ar#op-5244267-6419314> .
+<http://sigkdd_ar#op-2039817-3965471> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-2039817-3965471> <http://www.w3.org/2000/01/rdf-schema#label> "\u0622\u062E\u0631 \u0645\u0648\u0639\u062F \u0644\u0644\u0625\u062E\u0637\u0627\u0631 \u0627\u0644\u0628\u0627\u062D\u062B\u064A\u0646"@ar .
+<http://sigkdd_ar#op-2039817-3965471> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-5280199-2852104> .
+<http://sigkdd_ar#op-2039817-3965471> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-8633912-4903208> .
+<http://sigkdd_ar#op-1178744-5763012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-1178744-5763012> <http://www.w3.org/2000/01/rdf-schema#label> "\u062F\u0641\u0639 \u0631\u0633\u0648\u0645 \u0627\u0644\u062A\u0633\u062C\u064A\u0644"@ar .
+<http://sigkdd_ar#op-1178744-5763012> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-4596635-0722497> .
+<http://sigkdd_ar#op-1178744-5763012> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-9545303-7816338> .
+<http://sigkdd_ar#op-1178744-5763012> <http://www.w3.org/2002/07/owl#inverseOf> <http://sigkdd_ar#op-2701839-4065570> .
+<http://sigkdd_ar#op-6752038-0855382> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-6752038-0855382> <http://www.w3.org/2000/01/rdf-schema#label> "\u0625\u0631\u0633\u0627\u0644 \u0627\u0644\u0628\u062D\u062B"@ar .
+<http://sigkdd_ar#op-6752038-0855382> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-0206856-6159682> .
+<http://sigkdd_ar#op-6752038-0855382> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-8633912-4903208> .
+<http://sigkdd_ar#op-2567718-1943973> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-2567718-1943973> <http://www.w3.org/2000/01/rdf-schema#label> "\u062A\u062D\u062F\u064A\u062F \u0622\u062E\u0631 \u0645\u0648\u0639\u062F"@ar .
+<http://sigkdd_ar#op-2567718-1943973> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-9383035-4528001> .
+<http://sigkdd_ar#op-2567718-1943973> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-9858835-9194545> .
+<http://sigkdd_ar#op-5244267-6419314> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-5244267-6419314> <http://www.w3.org/2000/01/rdf-schema#label> "\u064A\u0642\u062F\u0645 \u0627\u0644\u0648\u062B\u064A\u0642\u0629"@ar .
+<http://sigkdd_ar#op-5244267-6419314> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-1363765-1519553> .
+<http://sigkdd_ar#op-5244267-6419314> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-8653983-1538377> .
+<http://sigkdd_ar#op-5028692-2946764> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-5028692-2946764> <http://www.w3.org/2000/01/rdf-schema#label> "\u062A\u0646\u0638\u064A\u0645 \u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#op-5028692-2946764> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-9383035-4528001> .
+<http://sigkdd_ar#op-5028692-2946764> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-8947268-7078266> .
+<http://sigkdd_ar#op-4513601-4918866> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-4513601-4918866> <http://www.w3.org/2000/01/rdf-schema#label> "\u0644\u062F\u064A\u0647 \u0622\u062E\u0631 \u0645\u0648\u0639\u062F \u0644\u0625\u0631\u0633\u0627\u0644"@ar .
+<http://sigkdd_ar#op-4513601-4918866> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-1363765-1519553> .
+<http://sigkdd_ar#op-4513601-4918866> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-9858835-9194545> .
+<http://sigkdd_ar#op-1114706-0372837> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-1114706-0372837> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u062F\u0639\u0648\u0629 \u0645\u0646 \u0627\u062C\u0644 \u0627\u0644\u0631\u0627\u0639\u064A"@ar .
+<http://sigkdd_ar#op-1114706-0372837> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-3034633-3276400> .
+<http://sigkdd_ar#op-1114706-0372837> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-9383035-4528001> .
+<http://sigkdd_ar#op-1114706-0372837> <http://www.w3.org/2002/07/owl#inverseOf> <http://sigkdd_ar#op-3273389-5047429> .
+<http://sigkdd_ar#op-7124942-4020478> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-7124942-4020478> <http://www.w3.org/2000/01/rdf-schema#label> "\u062C\u0627\u0626\u0632\u0629 \u0645\u062A\u062D\u0635\u0644 \u0639\u0644\u064A\u0647\u0627"@ar .
+<http://sigkdd_ar#op-7124942-4020478> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-0007370-7553257> .
+<http://sigkdd_ar#op-7124942-4020478> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-8633912-4903208> .
+<http://sigkdd_ar#op-3273389-5047429> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-3273389-5047429> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0631\u0639\u0627\u0629 \u0645\u062F\u0639\u0648\u064A\u0646 \u0645\u0646 \u0642\u0628\u0644"@ar .
+<http://sigkdd_ar#op-3273389-5047429> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-3034633-3276400> .
+<http://sigkdd_ar#op-3273389-5047429> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-9383035-4528001> .
+<http://sigkdd_ar#op-6412754-0086179> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-6412754-0086179> <http://www.w3.org/2000/01/rdf-schema#label> "\u0644\u062F\u064A\u0647 \u062C\u0627\u0626\u0632\u0629"@ar .
+<http://sigkdd_ar#op-6412754-0086179> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-0007370-7553257> .
+<http://sigkdd_ar#op-0434389-6122099> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://sigkdd_ar#op-0434389-6122099> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u0624\u062A\u0645\u0631 \u0645\u0646\u0638\u0645 \u0645\u0646 \u0642\u0628\u0644"@ar .
+<http://sigkdd_ar#op-0434389-6122099> <http://www.w3.org/2000/01/rdf-schema#range> <http://sigkdd_ar#c-9383035-4528001> .
+<http://sigkdd_ar#op-0434389-6122099> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-8947268-7078266> .
+<http://sigkdd_ar#op-0434389-6122099> <http://www.w3.org/2002/07/owl#inverseOf> <http://sigkdd_ar#op-5028692-2946764> .
+<http://sigkdd_ar#ent-4317870-2090050> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_ar#ent-4317870-2090050> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u0648\u0639\u062F \u0623\u0648\u0644 \u064A\u0648\u0645 \u0645\u0646 \u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#ent-4317870-2090050> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-8947268-7078266> .
+<http://sigkdd_ar#ent-4317870-2090050> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://sigkdd_ar#ent-3168095-4358690> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_ar#ent-3168095-4358690> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u0648\u0639\u062F \u0627\u0644\u064A\u0648\u0645 \u0627\u0644\u0623\u062E\u064A\u0631 \u0645\u0646 \u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#ent-3168095-4358690> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-8947268-7078266> .
+<http://sigkdd_ar#ent-3168095-4358690> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://sigkdd_ar#ent-4451821-0618411> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_ar#ent-4451821-0618411> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u0624\u062A\u0645\u0631 \u0639\u0642\u062F \u0641\u064A \u0645\u062F\u064A\u0646\u0629"@ar .
+<http://sigkdd_ar#ent-4451821-0618411> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-8947268-7078266> .
+<http://sigkdd_ar#ent-4451821-0618411> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_ar#ent-6560837-1049611> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_ar#ent-6560837-1049611> <http://www.w3.org/2000/01/rdf-schema#label> "\u0644\u062F\u064A\u0647 \u0627\u0644\u0633\u0639\u0631"@ar .
+<http://sigkdd_ar#ent-6560837-1049611> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-9545303-7816338> .
+<http://sigkdd_ar#ent-6560837-1049611> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://sigkdd_ar#ent-1083761-2754742> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_ar#ent-1083761-2754742> <http://www.w3.org/2000/01/rdf-schema#label> "\u0644\u062F\u064A\u0647 \u0627\u0633\u0645 \u0627\u0644\u0631\u0627\u0639\u064A"@ar .
+<http://sigkdd_ar#ent-1083761-2754742> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-3034633-3276400> .
+<http://sigkdd_ar#ent-1083761-2754742> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_ar#ent-8230424-5955962> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_ar#ent-8230424-5955962> <http://www.w3.org/2000/01/rdf-schema#label> "\u0644\u062F\u064A\u0647 \u0627\u0633\u0645 \u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#ent-8230424-5955962> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-8947268-7078266> .
+<http://sigkdd_ar#ent-8230424-5955962> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_ar#ent-6250328-1253383> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_ar#ent-6250328-1253383> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u0624\u0631\u062E \u0639\u0644\u0649"@ar .
+<http://sigkdd_ar#ent-6250328-1253383> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-9858835-9194545> .
+<http://sigkdd_ar#ent-6250328-1253383> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://sigkdd_ar#ent-1510064-3002835> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_ar#ent-1510064-3002835> <http://www.w3.org/2000/01/rdf-schema#label> "\u0644\u062F\u064A\u0647 \u0627\u0633\u0645"@ar .
+<http://sigkdd_ar#ent-1510064-3002835> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-4596635-0722497> .
+<http://sigkdd_ar#ent-1510064-3002835> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_ar#ent-4540296-2149307> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_ar#ent-4540296-2149307> <http://www.w3.org/2000/01/rdf-schema#label> "\u0644\u062F\u064A\u0647 \u0627\u0644\u062C\u0646\u0633\u064A\u0629"@ar .
+<http://sigkdd_ar#ent-4540296-2149307> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-4596635-0722497> .
+<http://sigkdd_ar#ent-4540296-2149307> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_ar#ent-6391301-7405898> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_ar#ent-6391301-7405898> <http://www.w3.org/2000/01/rdf-schema#label> "\u0644\u062F\u064A\u0647 \u0628\u0631\u064A\u062F \u0627\u0644\u0643\u062A\u0631\u0648\u0646\u064A"@ar .
+<http://sigkdd_ar#ent-6391301-7405898> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-4596635-0722497> .
+<http://sigkdd_ar#ent-6391301-7405898> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_ar#ent-4883538-1531419> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://sigkdd_ar#ent-4883538-1531419> <http://www.w3.org/2000/01/rdf-schema#label> "\u0631\u0633\u0648\u0645 \u0627\u0644\u062A\u0633\u062C\u064A\u0644 \u0647\u064A \u0628\u0627\u0644\u0639\u0645\u0644\u0629"@ar .
+<http://sigkdd_ar#ent-4883538-1531419> <http://www.w3.org/2000/01/rdf-schema#domain> <http://sigkdd_ar#c-9545303-7816338> .
+<http://sigkdd_ar#ent-4883538-1531419> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://sigkdd_ar#c-5999261-8594400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-5999261-8594400> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0645\u0633\u0624\u0648\u0644 \u0639\u0646 \u0627\u0644\u0645\u0648\u0642\u0639"@ar .
+<http://sigkdd_ar#c-5999261-8594400> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3569277-9113287> .
+<http://sigkdd_ar#c-3034633-3276400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-3034633-3276400> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0631\u0639\u0627\u0629"@ar .
+<http://sigkdd_ar#c-3960593-3778700> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-3960593-3778700> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u0644\u062E\u0635 \u0627\u0644\u0628\u062D\u062B"@ar .
+<http://sigkdd_ar#c-3960593-3778700> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-1363765-1519553> .
+<http://sigkdd_ar#c-6351636-9487040> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-6351636-9487040> <http://www.w3.org/2000/01/rdf-schema#label> "\u0644\u062C\u0627\u0646 \u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-0033129-4113750> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-0033129-4113750> <http://www.w3.org/2000/01/rdf-schema#label> "\u062C\u0627\u0626\u0632\u0629 \u0644\u0623\u0641\u0636\u0644 \u0645\u0642\u0627\u0644\u0629 \u0628\u062D\u062B"@ar .
+<http://sigkdd_ar#c-0033129-4113750> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-0007370-7553257> .
+<http://sigkdd_ar#c-9383035-4528001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-9383035-4528001> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0645\u0624\u062A\u0645\u0631 acm sigkdd"@ar .
+<http://sigkdd_ar#c-9383035-4528001> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-2810425-6420121> .
+<http://sigkdd_ar#c-0959891-7240511> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-0959891-7240511> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u0643\u0627\u0646 \u0627\u0646\u0639\u0642\u0627\u062F \u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-0959891-7240511> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3363751-8760227> .
+<http://sigkdd_ar#c-2810425-6420121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-2810425-6420121> <http://www.w3.org/2000/01/rdf-schema#label> "\u0644\u0627\u0634\u064A\u0626"@ar .
+<http://sigkdd_ar#c-7141216-2542971> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-7141216-2542971> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u062F\u064A\u0631 \u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-7141216-2542971> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3569277-9113287> .
+<http://sigkdd_ar#c-9530062-2636552> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-9530062-2636552> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0641\u0646\u062F\u0642"@ar .
+<http://sigkdd_ar#c-9530062-2636552> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3363751-8760227> .
+<http://sigkdd_ar#c-0071414-5648562> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-0071414-5648562> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0645\u0643\u062A\u0628 \u0627\u0644\u0631\u0626\u064A\u0633\u064A \u0644\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-0071414-5648562> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3363751-8760227> .
+<http://sigkdd_ar#c-1125351-6329272> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-1125351-6329272> <http://www.w3.org/2000/01/rdf-schema#label> "SIG \u0631\u0633\u0648\u0645 \u0627\u0644\u062A\u0633\u062C\u064A\u0644 \u0644\u0644\u0627\u0634\u062E\u0627\u0635 \u0627\u0644\u0630\u064A\u0646 \u0644\u064A\u0633\u0648\u0627 \u0623\u0639\u0636\u0627\u0621"@ar .
+<http://sigkdd_ar#c-1125351-6329272> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-9545303-7816338> .
+<http://sigkdd_ar#c-0206856-6159682> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-0206856-6159682> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0628\u062D\u062B"@ar .
+<http://sigkdd_ar#c-0206856-6159682> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-1363765-1519553> .
+<http://sigkdd_ar#c-8594766-6604333> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-8594766-6604333> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0631\u0627\u0639\u064A \u0643\u0645\u0642\u062F\u0645"@ar .
+<http://sigkdd_ar#c-8594766-6604333> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3034633-3276400> .
+<http://sigkdd_ar#c-1363765-1519553> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-1363765-1519553> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0648\u062B\u064A\u0642\u0629"@ar .
+<http://sigkdd_ar#c-9060975-8428873> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-9060975-8428873> <http://www.w3.org/2000/01/rdf-schema#label> "sigmod \u0631\u0633\u0648\u0645 \u0627\u0644\u062A\u0633\u062C\u064A\u0644 \u0644\u0623\u0639\u0636\u0627\u0621"@ar .
+<http://sigkdd_ar#c-9060975-8428873> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-9545303-7816338> .
+<http://sigkdd_ar#c-5280199-2852104> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-5280199-2852104> <http://www.w3.org/2000/01/rdf-schema#label> "\u0622\u062E\u0631 \u0645\u0648\u0639\u062F \u0644\u0644\u0625\u062E\u0637\u0627\u0631 \u0627\u0644\u0628\u0627\u062D\u062B\u064A\u0646"@ar .
+<http://sigkdd_ar#c-5280199-2852104> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-9858835-9194545> .
+<http://sigkdd_ar#c-0552203-0679914> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-0552203-0679914> <http://www.w3.org/2000/01/rdf-schema#label> "\u0631\u0633\u0648\u0645 \u0627\u0644\u062A\u0633\u062C\u064A\u0644 \u0644\u0637\u0627\u0644\u0628"@ar .
+<http://sigkdd_ar#c-0552203-0679914> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-9545303-7816338> .
+<http://sigkdd_ar#c-4881492-4438334> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-4881492-4438334> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0631\u0627\u0639\u064A \u0627\u0644\u0630\u0647\u0628\u064A \u0644\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-4881492-4438334> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3034633-3276400> .
+<http://sigkdd_ar#c-8231477-0497654> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-8231477-0497654> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0631\u0627\u0639\u064A \u0627\u0644\u0628\u0644\u0627\u062A\u064A\u0646\u064A \u0644\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-8231477-0497654> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3034633-3276400> .
+<http://sigkdd_ar#c-1634373-2116164> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-1634373-2116164> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0631\u0627\u0639\u0649 \u0627\u0644\u0641\u0636\u0649 \u0644\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-1634373-2116164> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3034633-3276400> .
+<http://sigkdd_ar#c-8669534-2676474> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-8669534-2676474> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0631\u0627\u0639\u064A \u0644\u0623\u0641\u0636\u0644 \u0628\u062D\u062B \u0637\u0627\u0644\u0628"@ar .
+<http://sigkdd_ar#c-8669534-2676474> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3034633-3276400> .
+<http://sigkdd_ar#c-6864457-1274625> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-6864457-1274625> <http://www.w3.org/2000/01/rdf-schema#label> "\u0622\u062E\u0631 \u0645\u0648\u0639\u062F \u0644\u062A\u0633\u0644\u064A\u0645 \u0645\u0644\u062E\u0635\u0627\u062A \u0627\u0644\u0623\u0628\u062D\u0627\u062B"@ar .
+<http://sigkdd_ar#c-6864457-1274625> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-9858835-9194545> .
+<http://sigkdd_ar#c-9858835-9194545> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-9858835-9194545> <http://www.w3.org/2000/01/rdf-schema#label> "\u0622\u062E\u0631 \u0645\u0648\u0639\u062F"@ar .
+<http://sigkdd_ar#c-6782980-9359185> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-6782980-9359185> <http://www.w3.org/2000/01/rdf-schema#label> "\u0644\u062C\u0646\u0629 \u0644\u0627\u062E\u062A\u064A\u0627\u0631 \u0623\u0641\u0636\u0644 \u0627\u0644\u0628\u062D\u0648\u062B"@ar .
+<http://sigkdd_ar#c-6782980-9359185> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-6351636-9487040> .
+<http://sigkdd_ar#c-8725611-3799036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-8725611-3799036> <http://www.w3.org/2000/01/rdf-schema#label> "\u0643\u0627\u062A\u0628 \u0627\u0644\u0628\u062D\u062B"@ar .
+<http://sigkdd_ar#c-8725611-3799036> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-8633912-4903208> .
+<http://sigkdd_ar#c-2852562-5212156> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-2852562-5212156> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0644\u062C\u0646\u0629 \u0627\u0644\u062A\u062D\u0636\u064A\u0631\u064A\u0629"@ar .
+<http://sigkdd_ar#c-2852562-5212156> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-6351636-9487040> .
+<http://sigkdd_ar#c-8947268-7078266> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-8947268-7078266> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-2079294-7245676> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-2079294-7245676> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0645\u062D\u0627\u0636\u0631 \u0627\u0644\u0645\u062F\u0639\u0648"@ar .
+<http://sigkdd_ar#c-2079294-7245676> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-8653983-1538377> .
+<http://sigkdd_ar#c-3606408-9812086> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-3606408-9812086> <http://www.w3.org/2000/01/rdf-schema#label> "\u062C\u0627\u0626\u0632\u0629 \u0623\u0641\u0636\u0644 \u0628\u062D\u062B \u0644\u0637\u0627\u0644\u0628"@ar .
+<http://sigkdd_ar#c-3606408-9812086> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-0007370-7553257> .
+<http://sigkdd_ar#c-1612891-5946596> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-1612891-5946596> <http://www.w3.org/2000/01/rdf-schema#label> "\u0643\u0627\u062A\u0628 \u0627\u0644\u0628\u062D\u062B \u0637\u0627\u0644\u0628"@ar .
+<http://sigkdd_ar#c-1612891-5946596> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-8633912-4903208> .
+<http://sigkdd_ar#c-0551399-1781107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-0551399-1781107> <http://www.w3.org/2000/01/rdf-schema#label> "\u0639\u0636\u0648 \u0627\u0644\u0644\u062C\u0646\u0629 \u0627\u0644\u0639\u0644\u0645\u064A\u0629"@ar .
+<http://sigkdd_ar#c-0551399-1781107> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3569277-9113287> .
+<http://sigkdd_ar#c-8452462-9106117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-8452462-9106117> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0631\u0627\u0639\u064A \u0627\u0644\u0628\u0631\u0648\u0646\u0632\u064A \u0644\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-8452462-9106117> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3034633-3276400> .
+<http://sigkdd_ar#c-3363751-8760227> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-3363751-8760227> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u0643\u0627\u0646"@ar .
+<http://sigkdd_ar#c-0007370-7553257> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-0007370-7553257> <http://www.w3.org/2000/01/rdf-schema#label> "\u062C\u0627\u0626\u0632\u0629 \u0644\u0623\u0641\u0636\u0644 \u0645\u0642\u0627\u0644\u0629 \u0641\u064A \u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-8653983-1538377> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-8653983-1538377> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u0631\u0627\u062C\u0639 \u0627\u0644\u062D\u0633\u0627\u0628\u0627\u062A \u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-8653983-1538377> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-4596635-0722497> .
+<http://sigkdd_ar#c-3100347-8206777> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-3100347-8206777> <http://www.w3.org/2000/01/rdf-schema#label> "\u0627\u0644\u0644\u062C\u0646\u0629 \u0627\u0644\u0639\u0644\u0645\u064A\u0629"@ar .
+<http://sigkdd_ar#c-3100347-8206777> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-6351636-9487040> .
+<http://sigkdd_ar#c-3569277-9113287> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-3569277-9113287> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u0646\u0638\u0645\u064A \u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-3569277-9113287> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-4596635-0722497> .
+<http://sigkdd_ar#c-5590730-5984687> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-5590730-5984687> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u0631\u0627\u062C\u0639\u0629"@ar .
+<http://sigkdd_ar#c-5590730-5984687> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-1363765-1519553> .
+<http://sigkdd_ar#c-4596635-0722497> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-4596635-0722497> <http://www.w3.org/2000/01/rdf-schema#label> "\u0634\u062E\u0635"@ar .
+<http://sigkdd_ar#c-4596635-0722497> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-2810425-6420121> .
+<http://sigkdd_ar#c-8633912-4903208> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-8633912-4903208> <http://www.w3.org/2000/01/rdf-schema#label> "\u0643\u0627\u062A\u0628"@ar .
+<http://sigkdd_ar#c-8633912-4903208> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-8653983-1538377> .
+<http://sigkdd_ar#c-0665494-3081508> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-0665494-3081508> <http://www.w3.org/2000/01/rdf-schema#label> "\u0622\u062E\u0631 \u0645\u0648\u0639\u062F \u0644\u0625\u0631\u0633\u0627\u0644 \u0627\u0644\u0628\u062D\u0648\u062B"@ar .
+<http://sigkdd_ar#c-0665494-3081508> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-9858835-9194545> .
+<http://sigkdd_ar#c-2506343-1114428> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-2506343-1114428> <http://www.w3.org/2000/01/rdf-schema#label> "\u0623\u0641\u0636\u0644 \u0628\u062D\u062B \u062A\u0637\u0628\u064A\u0642\u064A"@ar .
+<http://sigkdd_ar#c-2506343-1114428> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-0007370-7553257> .
+<http://sigkdd_ar#c-9773590-3091928> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-9773590-3091928> <http://www.w3.org/2000/01/rdf-schema#label> "\u0639\u0636\u0648 \u0627\u0644\u0644\u062C\u0646\u0629 \u0627\u0644\u062A\u062D\u0636\u064A\u0631\u064A\u0629"@ar .
+<http://sigkdd_ar#c-9773590-3091928> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3569277-9113287> .
+<http://sigkdd_ar#c-9545303-7816338> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-9545303-7816338> <http://www.w3.org/2000/01/rdf-schema#label> "\u0631\u0633\u0648\u0645 \u0627\u0644\u062A\u0633\u062C\u064A\u0644"@ar .
+<http://sigkdd_ar#c-9545303-7816338> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-2111951-9494729> .
+<http://sigkdd_ar#c-5153493-0821388> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-5153493-0821388> <http://www.w3.org/2000/01/rdf-schema#label> "\u0631\u0633\u0648\u0645 \u0627\u0644\u0631\u0639\u0627\u0629"@ar .
+<http://sigkdd_ar#c-5153493-0821388> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-2111951-9494729> .
+<http://sigkdd_ar#c-9564408-9817198> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-9564408-9817198> <http://www.w3.org/2000/01/rdf-schema#label> "sigkdd \u0631\u0633\u0648\u0645 \u0627\u0644\u062A\u0633\u062C\u064A\u0644 \u0644\u0623\u0639\u0636\u0627\u0621"@ar .
+<http://sigkdd_ar#c-9564408-9817198> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-9545303-7816338> .
+<http://sigkdd_ar#c-0039271-2080919> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-0039271-2080919> <http://www.w3.org/2000/01/rdf-schema#label> "\u0631\u0626\u064A\u0633 \u0627\u0644\u0644\u062C\u0646\u0629 \u0627\u0644\u0639\u0644\u0645\u064A\u0629"@ar .
+<http://sigkdd_ar#c-0039271-2080919> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-3569277-9113287> .
+<http://sigkdd_ar#c-2111951-9494729> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-2111951-9494729> <http://www.w3.org/2000/01/rdf-schema#label> "\u0631\u0633\u0648\u0645 \u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-2964635-3714249> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://sigkdd_ar#c-2964635-3714249> <http://www.w3.org/2000/01/rdf-schema#label> "\u0645\u0633\u062A\u0645\u0639 \u0627\u0644\u0645\u0624\u062A\u0645\u0631"@ar .
+<http://sigkdd_ar#c-2964635-3714249> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://sigkdd_ar#c-4596635-0722497> .

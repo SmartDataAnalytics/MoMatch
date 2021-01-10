@@ -1,0 +1,49 @@
+Ausschuss für den Award des besten Beitrags,Committee for the Award of the best contribution
+Deadline,Deadline
+Hotel,Hotel
+Deadline für die Einreichung eines Beitrags,Deadline for the submission of a contribution
+Registrierungskosten für Mitglieder von sigkdd,Registration costs for members of sigkdd
+Mitglied des Organisationsausschusses,Member of the organizing Committee
+Konferenz,Conference
+Hauptbüro der Konferenz,The main office of the conference
+Sponsor als Aussteller,Sponsor, as an Exhibitor
+Beitrag,Post
+Registrierungskosten für Personen, die nicht Mitglied von SIG sind,Registration costs for individuals who are not a member of SIG 
+Mitglied des Programmausschusses,Member of the program Committee
+eingeladener Referent,invited speaker
+Award für besten Forschungsbeitrag,Award for best research contribution
+Programmvorsitzender,Program Chairman
+Konferenzgebühr,Conference fee
+Ausschuss,Committee
+Silber Sponsor der Konferenz,Silver Sponsor of the conference
+Webmaster,Webmaster
+Sponsor für besten studentischen Beitrag,Sponsor for best student contribution
+Deadline für die Mitteilung eines Authors,Deadline for notification of Authors
+Hörer der Konferenz,Listeners of the conference
+Sponsor,Sponsor
+eines studentischen Beitrags,a student's contribution
+Vorsitzender der Konferenz,Chairman of the conference
+Konferenzsaal,Conference room
+Award für besten anwendbaren Beitrag,Award for best applicable contribution
+Platin Sponsor der Konferenz,The platinum Sponsor of the conference
+Registrierungsgebühr,Registration fee
+Platz,Place
+Author eines Konferenzbeitrages,Author of a conference contribution
+Programmausschuss,Program Committee
+Bronze Sponsor der Konferenz,Bronze Sponsor of the conference
+Award für Konferenzbeitrag,Award for conference paper
+Dokument,Document
+Zusammenfassung,Abstract
+Person,Person
+Organisatoren der Konferenz,Organizers of the conference
+Gold Sponsor der Konferenz,Gold Sponsor of the conference
+Registrierungskosten für Mitglieder von sigmod,Registration costs for members of the sigmod
+Deadline für die Einreichung der Zusammenfassung,Deadline for the submission of the abstract
+Award für besten studentischen Beitrag,Award for best student contribution
+Organisationsausschuss,Organization Committee
+Author,Author
+Gutachten,Review
+Sponsorenbeitrag,Sponsors contribution
+aktiver Konferenzteilnehmer,active participants in the conference
+Konferenz ACM sigdkdd,Conference of the ACM sigdkdd
+Registrierungskosten für Studenten,Registration costs for students

@@ -1,0 +1,103 @@
+review,überprüfen
+conference session,Konferenz-session
+conference dinner,conference dinner
+review form,review-form
+single level conference,single-level-Konferenz
+call for reviews,rufen Sie für Bewertungen
+welcome talk,willkommen im talk
+review question,überprüfen Frage
+contact information,Kontakt-Informationen
+rejected paper,abgelehnt Papier
+country,Land
+conference venue place,Veranstaltungsort Ort
+week reject rating,Woche ablehnen-Bewertung
+non academic event,nicht Akademische Veranstaltung
+conference event,Konferenz Veranstaltung
+numerical review question,numerische Bewertung Frage
+government organization,Regierung Organisation
+signal processing topic,Signalverarbeitung Thema
+academia organization,Wissenschaft Organisation
+meal menu,Mahlzeit Menü
+call,rufen
+personal history,persönliche Geschichte
+computer networks measurements topic,computer-Netzwerke-Messungen Thema
+personal publication history,persönlichen Verlauf der Veröffentlichung
+attendee,Teilnehmer
+sponsorship,Sponsoring
+presenter,Moderator
+satellite and space communications topic,Satelliten-und Raumfahrt-Kommunikation Thema
+two level conference,zwei-level-Konferenz
+microelectronics topic,Mikroelektronik Thema
+reject rating,lehnen Bewertung
+powerline transmission topic,powerline-übertragung Thema
+communications topic,Kommunikation Thema
+travel grant,travel grant
+withdrawn paper,zurückgezogen Papier
+computer networks management topic,computer-Netzwerke-management-Thema
+wireless communications topic,drahtlose Kommunikation Thema
+call for manuscripts,rufen Sie für Manuskripte
+talk event,talk-Veranstaltung
+operating topicsystems,Betrieb topicsystems
+active paper,active Papier
+multimedia topic,multimedia-Thema
+paper,Papier
+meal break,Mahlzeit brechen
+communication theory topic,Kommunikations-Theorie Thema
+dining place,Essplatz
+call for papers,call for papers
+published paper,veröffentlicht Papier
+free time break,freie Zeit, Pause
+computer networks enterprise topic,computer-Netzwerke der enterprise-Thema
+paper presentation,paper presentation
+programme,Programm
+parallel and distributed computing topic,parallel-und distributed computing-Thema
+excursion,Ausflug
+conference,Konferenz
+ngo,ngo
+personal review history,persönliche Bewertung der Geschichte
+test only topic,test nur Thema
+coffee break,Kaffeepause
+performance topic,performance-Thema
+cad topic,cad-Thema
+meeting room place,Tagungsraum Platz
+textual review question,textliche Beurteilung Frage
+accpet if room rating,accpet, wenn das Zimmer Bewertung
+cryptography topic,Kryptographie Thema
+computer networks sensor topic,computer-Netzwerke sensor-Thema
+organizational meeting,organisatorische treffen
+rated papers,rated Papiere
+pending paper,ausstehende Papier
+tpc member,tpc-Mitglied
+review rating,Bewertung abgeben
+accept rating,annehmen Bewertung
+computer networks aapplications topic,computer-Netzwerke aapplications Thema
+organization,Organisation
+security topic,Thema Sicherheit
+accepted paper,akzeptiert Papier
+meal event,Mahlzeit Veranstaltung
+computer networks security topic,computer-Netzwerke security-Thema
+session chair,session chair
+academic event,Akademische Veranstaltung
+workshop,workshop
+topic,Thema
+antennas topic,Antennen-Thema
+place,Ort
+slide set,Folien-set
+medicine topic,Medizin Thema
+reviewer,Rezensent
+mobile computing topic,mobile computing Thema
+social event,social event
+radio communications topic,Funkverkehr Thema
+computer networks switching topic,computer-Netzwerke, switching Thema
+reception,Rezeption
+computer networks optical topic,computer-Netzwerke optische Thema
+person,person
+industry organization,Industrie-Organisation
+accommodation place,Unterkunft
+conference chair,Konferenz Stuhl
+computer networks topic,computer-Netzwerke Thema
+closing talk,schließen sprechen
+author,Autor
+computer architecture topic,computer-Architektur ist Thema
+document,Dokument
+break event,break-event

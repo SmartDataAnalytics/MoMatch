@@ -1,0 +1,419 @@
+@prefix : <http://sigkdd_de#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://sigkdd_de> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+:op-0496595-9432839 a owl:ObjectProperty ;
+	rdfs:label "hat Award erhalten von"@de ;
+	rdfs:domain :c-1587059-6708917 ;
+	owl:inverseOf :op-5726044-8910848 .
+
+:op-0836929-5233701 a owl:ObjectProperty ;
+	rdfs:label "wurde präsentiert von"@de ;
+	rdfs:range :c-4711434-5769445 ;
+	rdfs:domain :c-6140019-6453251 ;
+	owl:inverseOf :op-2955099-2207630 .
+
+:op-1005860-9935354 a owl:ObjectProperty ;
+	rdfs:label "Sponsoren wurden aufgerufen von"@de ;
+	rdfs:range :c-2689271-9857625 ;
+	rdfs:domain :c-3477390-2381487 .
+
+:op-1549992-0103030 a owl:ObjectProperty ;
+	rdfs:label "Registrierungsbeitrag gezahlt von"@de ;
+	rdfs:range :c-2769827-8195865 ;
+	rdfs:domain :c-3867058-2838516 .
+
+:op-2222974-4946181 a owl:ObjectProperty ;
+	rdfs:label "Deadline für Authorenmitteilung"@de ;
+	rdfs:range :c-5524974-3116937 ;
+	rdfs:domain :c-6217268-0289211 .
+
+:op-2344492-4602298 a owl:ObjectProperty ;
+	rdfs:label "Award erhalten von"@de ;
+	rdfs:range :c-1587059-6708917 ;
+	rdfs:domain :c-6217268-0289211 .
+
+:op-2375848-3510341 a owl:ObjectProperty ;
+	rdfs:label "organisiert Konferenz"@de ;
+	rdfs:domain :c-2689271-9857625 ;
+	rdfs:range :c-9282764-4133286 .
+
+:op-2911102-2799433 a owl:ObjectProperty ;
+	rdfs:label "bleibt in"@de ;
+	rdfs:range :c-1670757-7005751 ;
+	rdfs:domain :c-2769827-8195865 .
+
+:op-2955099-2207630 a owl:ObjectProperty ;
+	rdfs:label "präsentiert Dokumente"@de ;
+	rdfs:domain :c-4711434-5769445 ;
+	rdfs:range :c-6140019-6453251 .
+
+:op-3816868-2166376 a owl:ObjectProperty ;
+	rdfs:label "Aufruf von Sponsoren"@de ;
+	rdfs:domain :c-2689271-9857625 ;
+	rdfs:range :c-3477390-2381487 ;
+	owl:inverseOf :op-1005860-9935354 .
+
+:op-3901475-6910808 a owl:ObjectProperty ;
+	rdfs:label "Deadline festgelegt"@de ;
+	rdfs:domain :c-2689271-9857625 ;
+	rdfs:range :c-7203961-8308851 .
+
+:op-5726044-8910848 a owl:ObjectProperty ;
+	rdfs:label "hat Award"@de ;
+	rdfs:range :c-1587059-6708917 .
+
+:op-6914055-1852287 a owl:ObjectProperty ;
+	rdfs:label "hat Deadline für Einreichungen"@de ;
+	rdfs:domain :c-6140019-6453251 ;
+	rdfs:range :c-7203961-8308851 .
+
+:op-7778495-5250855 a owl:ObjectProperty ;
+	rdfs:label "Beitrag wurde eingereicht von"@de ;
+	rdfs:range :c-1975722-3062538 ;
+	rdfs:domain :c-6217268-0289211 .
+
+:op-7981549-5780784 a owl:ObjectProperty ;
+	rdfs:label "Deadline eingerichtet für"@de ;
+	rdfs:range :c-2689271-9857625 ;
+	rdfs:domain :c-7203961-8308851 ;
+	owl:inverseOf :op-3901475-6910808 .
+
+:op-9258168-1550244 a owl:ObjectProperty ;
+	rdfs:label "Konferenz organisiert von"@de ;
+	rdfs:range :c-2689271-9857625 ;
+	rdfs:domain :c-9282764-4133286 ;
+	owl:inverseOf :op-2375848-3510341 .
+
+:op-9850717-2340674 a owl:ObjectProperty ;
+	rdfs:label "paid zahlt Registrierungsbeitrag"@de ;
+	rdfs:domain :c-2769827-8195865 ;
+	rdfs:range :c-3867058-2838516 ;
+	owl:inverseOf :op-1549992-0103030 .
+
+:ent-0138865-5902109 a owl:DatatypeProperty ;
+	rdfs:label "hat E-Mailadresse"@de ;
+	rdfs:domain :c-2769827-8195865 ;
+	rdfs:range xsd:string .
+
+:ent-0228699-0914491 a owl:DatatypeProperty ;
+	rdfs:label "hat Name der Konferenz"@de ;
+	rdfs:domain :c-9282764-4133286 ;
+	rdfs:range xsd:string .
+
+:ent-0366388-0658866 a owl:DatatypeProperty ;
+	rdfs:label "Registrierungsbeitrags ist in Währung"@de ;
+	rdfs:domain :c-3867058-2838516 ;
+	rdfs:range xsd:string .
+
+:ent-1646067-6583158 a owl:DatatypeProperty ;
+	rdfs:label "ist datiert auf den"@de ;
+	rdfs:domain :c-7203961-8308851 ;
+	rdfs:range xsd:dateTime .
+
+:ent-1700090-3901005 a owl:DatatypeProperty ;
+	rdfs:label "hat Namen"@de ;
+	rdfs:domain :c-2769827-8195865 ;
+	rdfs:range xsd:string .
+
+:ent-3304226-6226138 a owl:DatatypeProperty ;
+	rdfs:label "Datum des ersten Tages der Konferenz ist"@de ;
+	rdfs:domain :c-9282764-4133286 ;
+	rdfs:range xsd:dateTime .
+
+:ent-3844426-4630787 a owl:DatatypeProperty ;
+	rdfs:label "Konferenz findet in folgender Stadt statt"@de ;
+	rdfs:domain :c-9282764-4133286 ;
+	rdfs:range xsd:string .
+
+:ent-3892449-0313636 a owl:DatatypeProperty ;
+	rdfs:label "hat Nationalität"@de ;
+	rdfs:domain :c-2769827-8195865 ;
+	rdfs:range xsd:string .
+
+:ent-5762878-4478584 a owl:DatatypeProperty ;
+	rdfs:label "hat Sponsorenname"@de ;
+	rdfs:domain :c-3477390-2381487 ;
+	rdfs:range xsd:string .
+
+:ent-7525202-3357334 a owl:DatatypeProperty ;
+	rdfs:label "hat Preis"@de ;
+	rdfs:domain :c-3867058-2838516 ;
+	rdfs:range xsd:int .
+
+:ent-9506029-4384266 a owl:DatatypeProperty ;
+	rdfs:label "Datum des letzten Tages der Konferenz ist"@de ;
+	rdfs:domain :c-9282764-4133286 ;
+	rdfs:range xsd:dateTime .
+
+:c-0094164-6634357 a owl:Class ;
+	rdfs:label "Ausschuss"@de .
+
+:c-0419564-4277308 a owl:Class ;
+	rdfs:label "Deadline für die Einreichung eines Beitrags"@de ;
+	rdfs:subClassOf :c-7203961-8308851 .
+
+:c-0695531-5412063 a owl:Class ;
+	rdfs:label "eingeladener Referent"@de ;
+	rdfs:subClassOf :c-4711434-5769445 .
+
+:c-1052931-1641701 a owl:Class ;
+	rdfs:label "Programmausschuss"@de ;
+	rdfs:subClassOf :c-0094164-6634357 .
+
+:c-1463146-3958561 a owl:Class ;
+	rdfs:label "Author eines Konferenzbeitrages"@de ;
+	rdfs:subClassOf :c-6217268-0289211 , _:node1e05arhigx1 .
+
+_:node1e05arhigx1 a owl:Restriction ;
+	owl:onProperty :op-5726044-8910848 ;
+	owl:someValuesFrom :c-4307011-3733141 .
+
+:c-1463146-3958561 rdfs:subClassOf _:node1e05arhigx2 .
+
+_:node1e05arhigx2 a owl:Restriction ;
+	owl:onProperty :op-5726044-8910848 ;
+	owl:someValuesFrom :c-9920303-9624193 .
+
+:c-1587059-6708917 a owl:Class ;
+	rdfs:label "Award für Konferenzbeitrag"@de ;
+	owl:equivalentClass _:node1e05arhigx3 .
+
+_:node1e05arhigx3 a owl:Restriction ;
+	owl:onProperty :op-0496595-9432839 ;
+	owl:someValuesFrom :c-7379473-9781356 .
+
+:c-1670757-7005751 a owl:Class ;
+	rdfs:label "Platz"@de .
+
+:c-1975722-3062538 a owl:Class ;
+	rdfs:label "Beitrag"@de ;
+	owl:equivalentClass _:node1e05arhigx4 .
+
+_:node1e05arhigx4 a owl:Restriction ;
+	owl:onProperty :op-6914055-1852287 ;
+	owl:someValuesFrom :c-0419564-4277308 .
+
+:c-1975722-3062538 rdfs:subClassOf :c-6140019-6453251 .
+
+:c-2334066-8778202 a owl:Class ;
+	rdfs:label "eines studentischen Beitrags"@de ;
+	rdfs:subClassOf :c-6217268-0289211 , _:node1e05arhigx5 .
+
+_:node1e05arhigx5 a owl:Restriction ;
+	owl:onProperty :op-5726044-8910848 ;
+	owl:someValuesFrom :c-5796626-5205866 .
+
+:c-2689271-9857625 a owl:Class ;
+	rdfs:label "Konferenz ACM sigdkdd"@de ;
+	rdfs:subClassOf owl:Thing , _:node1e05arhigx6 .
+
+_:node1e05arhigx6 a owl:Restriction ;
+	owl:onProperty :op-3901475-6910808 ;
+	owl:someValuesFrom :c-7203961-8308851 .
+
+:c-2689271-9857625 rdfs:subClassOf _:node1e05arhigx7 .
+
+_:node1e05arhigx7 a owl:Restriction ;
+	owl:onProperty :op-3816868-2166376 ;
+	owl:someValuesFrom :c-3477390-2381487 .
+
+:c-2689271-9857625 rdfs:subClassOf _:node1e05arhigx8 .
+
+_:node1e05arhigx8 a owl:Restriction ;
+	owl:onProperty :op-2375848-3510341 ;
+	owl:someValuesFrom :c-9282764-4133286 .
+
+:c-2769827-8195865 a owl:Class ;
+	rdfs:label "Person"@de ;
+	owl:equivalentClass _:node1e05arhigx9 .
+
+_:node1e05arhigx9 a owl:Restriction ;
+	owl:onProperty :op-9850717-2340674 ;
+	owl:someValuesFrom :c-3867058-2838516 .
+
+:c-2769827-8195865 rdfs:subClassOf owl:Thing , _:node1e05arhigx10 .
+
+_:node1e05arhigx10 a owl:Restriction ;
+	owl:onProperty :op-2911102-2799433 ;
+	owl:someValuesFrom :c-7099779-6421757 .
+
+:c-3054994-1434064 a owl:Class ;
+	rdfs:label "Deadline für die Einreichung der Zusammenfassung"@de ;
+	rdfs:subClassOf :c-7203961-8308851 .
+
+:c-3477390-2381487 a owl:Class ;
+	rdfs:label "Sponsor"@de ;
+	owl:equivalentClass _:node1e05arhigx11 .
+
+_:node1e05arhigx11 a owl:Restriction ;
+	owl:onProperty :op-9850717-2340674 ;
+	owl:someValuesFrom :c-7156294-5892481 .
+
+:c-3760592-8292146 a owl:Class ;
+	rdfs:label "Programmvorsitzender"@de ;
+	rdfs:subClassOf :c-7379473-9781356 .
+
+:c-3777294-9496881 a owl:Class ;
+	rdfs:label "Ausschuss für den Award des besten Beitrags"@de ;
+	rdfs:subClassOf :c-0094164-6634357 .
+
+:c-3867058-2838516 a owl:Class ;
+	rdfs:label "Registrierungsgebühr"@de ;
+	rdfs:subClassOf :c-9302905-7296086 .
+
+:c-4126640-5313604 a owl:Class ;
+	rdfs:label "Bronze Sponsor der Konferenz"@de ;
+	rdfs:subClassOf :c-3477390-2381487 .
+
+:c-4301546-5674434 a owl:Class ;
+	rdfs:label "Organisationsausschuss"@de ;
+	rdfs:subClassOf :c-0094164-6634357 .
+
+:c-4307011-3733141 a owl:Class ;
+	rdfs:label "Award für besten Forschungsbeitrag"@de ;
+	rdfs:subClassOf :c-1587059-6708917 .
+
+:c-4426271-6299311 a owl:Class ;
+	rdfs:label "Sponsor als Aussteller"@de ;
+	rdfs:subClassOf :c-3477390-2381487 .
+
+:c-4711434-5769445 a owl:Class ;
+	rdfs:label "aktiver Konferenzteilnehmer"@de ;
+	owl:equivalentClass _:node1e05arhigx12 .
+
+_:node1e05arhigx12 a owl:Restriction ;
+	owl:onProperty :op-2955099-2207630 ;
+	owl:someValuesFrom :c-6140019-6453251 .
+
+:c-4711434-5769445 rdfs:subClassOf :c-2769827-8195865 .
+
+:c-5524974-3116937 a owl:Class ;
+	rdfs:label "Deadline für die Mitteilung eines Authors"@de ;
+	rdfs:subClassOf :c-7203961-8308851 .
+
+:c-5541011-4485740 a owl:Class ;
+	rdfs:label "Mitglied des Programmausschusses"@de ;
+	rdfs:subClassOf :c-7379473-9781356 .
+
+:c-5742228-5366012 a owl:Class ;
+	rdfs:label "Platin Sponsor der Konferenz"@de ;
+	rdfs:subClassOf :c-3477390-2381487 .
+
+:c-5796626-5205866 a owl:Class ;
+	rdfs:label "Award für besten studentischen Beitrag"@de ;
+	rdfs:subClassOf :c-1587059-6708917 .
+
+:c-5850113-5122819 a owl:Class ;
+	rdfs:label "Registrierungskosten für Personen, die nicht Mitglied von SIG sind"@de ;
+	rdfs:subClassOf :c-3867058-2838516 .
+
+:c-6140019-6453251 a owl:Class ;
+	rdfs:label "Dokument"@de .
+
+:c-6217268-0289211 a owl:Class ;
+	rdfs:label "Author"@de ;
+	owl:equivalentClass _:node1e05arhigx13 .
+
+_:node1e05arhigx13 a owl:Restriction ;
+	owl:onProperty :op-7778495-5250855 ;
+	owl:someValuesFrom :c-1975722-3062538 .
+
+:c-6217268-0289211 rdfs:subClassOf :c-4711434-5769445 , _:node1e05arhigx14 .
+
+_:node1e05arhigx14 a owl:Restriction ;
+	owl:onProperty :op-2222974-4946181 ;
+	owl:someValuesFrom :c-5524974-3116937 .
+
+:c-6469555-3746715 a owl:Class ;
+	rdfs:label "Gutachten"@de ;
+	rdfs:subClassOf :c-6140019-6453251 .
+
+:c-6537612-7287795 a owl:Class ;
+	rdfs:label "Silber Sponsor der Konferenz"@de ;
+	rdfs:subClassOf :c-3477390-2381487 .
+
+:c-6541109-1088286 a owl:Class ;
+	rdfs:label "Registrierungskosten für Mitglieder von sigkdd"@de ;
+	rdfs:subClassOf :c-3867058-2838516 .
+
+:c-6801077-9660974 a owl:Class ;
+	rdfs:label "Webmaster"@de ;
+	rdfs:subClassOf :c-7379473-9781356 .
+
+:c-6894624-1804334 a owl:Class ;
+	rdfs:label "Sponsor für besten studentischen Beitrag"@de ;
+	rdfs:subClassOf :c-3477390-2381487 .
+
+:c-6985541-3131901 a owl:Class ;
+	rdfs:label "Zusammenfassung"@de ;
+	owl:equivalentClass _:node1e05arhigx15 .
+
+_:node1e05arhigx15 a owl:Restriction ;
+	owl:onProperty :op-6914055-1852287 ;
+	owl:someValuesFrom :c-3054994-1434064 .
+
+:c-6985541-3131901 rdfs:subClassOf :c-6140019-6453251 .
+
+:c-7099779-6421757 a owl:Class ;
+	rdfs:label "Hotel"@de ;
+	rdfs:subClassOf :c-1670757-7005751 .
+
+:c-7156294-5892481 a owl:Class ;
+	rdfs:label "Sponsorenbeitrag"@de ;
+	rdfs:subClassOf :c-9302905-7296086 .
+
+:c-7203961-8308851 a owl:Class ;
+	rdfs:label "Deadline"@de .
+
+:c-7379473-9781356 a owl:Class ;
+	rdfs:label "Organisatoren der Konferenz"@de ;
+	rdfs:subClassOf :c-2769827-8195865 .
+
+:c-7606899-8734332 a owl:Class ;
+	rdfs:label "Vorsitzender der Konferenz"@de ;
+	rdfs:subClassOf :c-7379473-9781356 .
+
+:c-7753839-9560987 a owl:Class ;
+	rdfs:label "Konferenzsaal"@de ;
+	rdfs:subClassOf :c-1670757-7005751 .
+
+:c-7783492-1910067 a owl:Class ;
+	rdfs:label "Hauptbüro der Konferenz"@de ;
+	rdfs:subClassOf :c-1670757-7005751 .
+
+:c-7808089-4928984 a owl:Class ;
+	rdfs:label "Registrierungskosten für Studenten"@de ;
+	rdfs:subClassOf :c-3867058-2838516 .
+
+:c-7958316-3629503 a owl:Class ;
+	rdfs:label "Mitglied des Organisationsausschusses"@de ;
+	rdfs:subClassOf :c-7379473-9781356 .
+
+:c-8468797-7679212 a owl:Class ;
+	rdfs:label "Gold Sponsor der Konferenz"@de ;
+	rdfs:subClassOf :c-3477390-2381487 .
+
+:c-9038315-6127488 a owl:Class ;
+	rdfs:label "Hörer der Konferenz"@de ;
+	rdfs:subClassOf :c-2769827-8195865 .
+
+:c-9282764-4133286 a owl:Class ;
+	rdfs:label "Konferenz"@de .
+
+:c-9302905-7296086 a owl:Class ;
+	rdfs:label "Konferenzgebühr"@de .
+
+:c-9920303-9624193 a owl:Class ;
+	rdfs:label "Award für besten anwendbaren Beitrag"@de ;
+	rdfs:subClassOf :c-1587059-6708917 .
+
+:c-9937182-0544372 a owl:Class ;
+	rdfs:label "Registrierungskosten für Mitglieder von sigmod"@de ;
+	rdfs:subClassOf :c-3867058-2838516 .

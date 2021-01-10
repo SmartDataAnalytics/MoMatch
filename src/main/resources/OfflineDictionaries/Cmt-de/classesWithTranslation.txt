@@ -1,0 +1,29 @@
+Konferenzbeitrag,Conference contribution
+Vorsitzender des Programm-Komitees,Chairman of the program Committee
+Präferenz,Preference
+Akzeptanz,Acceptance
+Konferenz,Conference
+Meta-Gutachater (Gutachter der Gutachten begutachtet),Meta-Gutachater (reviewers of the reports reviewed)
+externer Gutachter,external reviewer
+Programm-Komitee,Program Committee
+Verfasser, der kein Gutachter ist,The author is no expert 
+Zusammenfassung eines Konferenzbeitrags,Summary of a conference contribution
+Teilnehmer einer Konferenz,Participants in a conference
+Mitglied des Programm-Komitees,Member of the program Committee
+Vorsitzender der Konferenz,Chairman of the conference
+Vorsitzender,Chairman
+Entscheidung,Decision
+vollständiger Konferenzbeitrag,full conference paper
+Meta-Gutachten (Gutachten über ein Gutachten),Meta-advice (opinion about opinion)
+Verfasser,Author
+Gutachter,Reviewers
+Mitverfasser,Co-author
+stellvertretender Vorsitz,Vice-chair
+Administrator,Administrator
+Gebot,Bid
+Dokument,Document
+Gegenstandsbereich,The subject area
+Person,Person
+Zurückweisung,Rejection
+Gutachten,Review
+Benutzer,User

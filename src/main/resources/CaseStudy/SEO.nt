@@ -1,0 +1,717 @@
+<https://w3id.org/seo#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/seo#> <http://www.w3.org/2002/07/owl#imports> <http://dbpedia.org/ontology/> .
+<https://w3id.org/seo#> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl> .
+<https://w3id.org/seo#> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/seo#> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/seo#> <http://purl.org/dc/terms/creator> "Soeren Auer" .
+<https://w3id.org/seo#> <http://purl.org/dc/terms/title> "SEO, The Scientific Events Ontology."@en .
+<https://w3id.org/seo#> <http://purl.org/dc/elements/1.1/creator> "Said Fathalla" .
+<https://w3id.org/seo#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "seo" .
+<https://w3id.org/seo#> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Events Ontology"@en .
+<https://w3id.org/seo#> <http://purl.org/dc/terms/lastModified> "2019-04-10"@en .
+<https://w3id.org/seo#> <http://purl.org/dc/terms/creator> "Sahar Vahdati" .
+<https://w3id.org/seo#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "See also documentation at http://kddste.sda.tech/SEOontology/Documentation/SEO.html"@en .
+<https://w3id.org/seo#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/seo/"^^<http://purl.org/dc/terms/URI> .
+<https://w3id.org/seo#> <http://purl.org/dc/terms/description> "SEO is a reference ontology for modelling data about scientific events such as conferences, symposioums and workshops."@en .
+<https://w3id.org/seo#> <http://purl.org/dc/terms/created> "2018-02-01"@en .
+<https://w3id.org/seo#> <http://purl.org/dc/elements/1.1/creator> "Christoph Lange" .
+<https://w3id.org/seo#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/3.0/> .
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/coverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/description> .
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/description> .
+<http://purl.org/dc/terms/accessRights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/accessRights> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/rights> .
+<http://purl.org/dc/terms/accessRights> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/RightsStatement> .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/title> .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/title> .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/available> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+<http://purl.org/dc/terms/available> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/dc/terms/available> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/identifier> .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/terms/BibliographicResource> .
+<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Standard> .
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/contributor> .
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Agent> .
+<http://purl.org/dc/terms/coverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/coverage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/coverage> .
+<http://purl.org/dc/terms/coverage> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/LocationPeriodOrJurisdiction> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/creator> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Agent> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/dateAccepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/dateAccepted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+<http://purl.org/dc/terms/dateAccepted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/dc/terms/dateAccepted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/description> .
+<http://purl.org/dc/terms/extent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/extent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/format> .
+<http://purl.org/dc/terms/extent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/SizeOrDuration> .
+<http://purl.org/dc/terms/format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/format> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/format> .
+<http://purl.org/dc/terms/format> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/MediaTypeOrExtent> .
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/hasPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/hasPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/hasVersion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/identifier> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/isFormatOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/isFormatOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/isFormatOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/isReferencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/isReferencedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/isReplacedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/isReplacedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/isReplacedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/isRequiredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/isRequiredBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/isRequiredBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/isVersionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/isVersionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/isVersionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/language> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/LinguisticSystem> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/rights> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/LicenseDocument> .
+<http://purl.org/dc/terms/medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/medium> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/format> .
+<http://purl.org/dc/terms/medium> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/PhysicalMedium> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/publisher> .
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Agent> .
+<http://purl.org/dc/terms/references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/references> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/references> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/relation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/replaces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/replaces> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/replaces> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/requires> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/requires> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/relation> .
+<http://purl.org/dc/terms/requires> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/rights> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/RightsStatement> .
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/source> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/source> .
+<http://purl.org/dc/terms/source> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .
+<http://purl.org/dc/terms/spatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/spatial> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/coverage> .
+<http://purl.org/dc/terms/spatial> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Location> .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/subject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/subject> .
+<http://purl.org/dc/terms/tableOfContents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/tableOfContents> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/description> .
+<http://purl.org/dc/terms/tableOfContents> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/description> .
+<http://purl.org/dc/terms/temporal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/temporal> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/coverage> .
+<http://purl.org/dc/terms/temporal> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/PeriodOfTime> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/title> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://purl.org/dc/terms/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/type> .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.org/dc/terms/valid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/valid> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
+<http://purl.org/dc/terms/valid> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/dc/terms/valid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2006/time#hasDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2006/time#hasTemporalDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasProceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/Box> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/dc/terms/ISO3166> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/dc/terms/ISO639-2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/dc/terms/ISO639-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/dc/terms/Period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/dc/terms/Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/dc/terms/RFC1766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/dc/terms/RFC3066> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/dc/terms/RFC4646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/dc/terms/RFC5646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/dc/terms/URI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/dc/terms/W3CDTF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://purl.org/dc/terms/accessRights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/accessRights> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/rights> .
+<http://purl.org/dc/terms/accrualMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/accrualMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/dcmitype/Collection> .
+<http://purl.org/dc/terms/accrualPeriodicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/accrualPeriodicity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/dcmitype/Collection> .
+<http://purl.org/dc/terms/accrualPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/accrualPolicy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/dcmitype/Collection> .
+<http://purl.org/dc/terms/audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/audience> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<http://purl.org/dc/terms/audience> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/AgentClass> .
+<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/coverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
+<http://purl.org/dc/terms/educationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/educationLevel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/audience> .
+<http://purl.org/dc/terms/educationLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/AgentClass> .
+<http://purl.org/dc/terms/extent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/extent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/format> .
+<http://purl.org/dc/terms/format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/instructionalMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/rights> .
+<http://purl.org/dc/terms/mediator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/mediator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/audience> .
+<http://purl.org/dc/terms/mediator> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/AgentClass> .
+<http://purl.org/dc/terms/medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/medium> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/format> .
+<http://purl.org/dc/terms/provenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Agent> .
+<http://purl.org/dc/terms/spatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/spatial> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/coverage> .
+<http://purl.org/dc/terms/temporal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/temporal> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/coverage> .
+<http://purl.org/dc/terms/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/semsur/belongsToProceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/semsur/belongsToProceedings> <http://www.w3.org/2000/01/rdf-schema#domain> <http://swrc.ontoware.org/ontology#Publication> .
+<http://purl.org/semsur/belongsToProceedings> <http://www.w3.org/2000/01/rdf-schema#range> <http://swrc.ontoware.org/ontology#Proceedings> .
+<http://purl.org/semsur/hasAppendix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/semsur/hasAppendix> <http://www.w3.org/2000/01/rdf-schema#domain> <http://swrc.ontoware.org/ontology#Publication> .
+<http://purl.org/semsur/hasAppendix> <http://www.w3.org/2000/01/rdf-schema#range> <http://org.semanticweb.owlapi/error#Error2> .
+<http://purl.org/semsur/hasAppendix> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/deo/DiscourseElement> .
+<http://purl.org/semsur/hasAppendix> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/doco/Appendix> .
+<http://purl.org/semsur/hasAppendix> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/doco/Section> .
+<http://purl.org/semsur/hasAppendix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2008/12/pattern#Bucket> .
+<http://purl.org/semsur/hasAppendix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2008/12/pattern#Container> .
+<http://purl.org/semsur/hasAppendix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2008/12/pattern#HeadedContainer> .
+<http://purl.org/semsur/hasAppendix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2008/12/pattern#NonTextual> .
+<http://purl.org/semsur/hasAppendix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2008/12/pattern#Pattern> .
+<http://purl.org/semsur/hasAppendix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.essepuntato.it/2008/12/pattern#Structured> .
+<http://purl.org/vocab/frbr/core#embodiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#realization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/vocab/frbr/core#realizationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://swrc.ontoware.org/ontology#cite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2008/12/pattern#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2008/12/pattern#containsAsHeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2008/12/pattern#isContainedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2006/time#hasDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasAddress> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Agent> .
+<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#holdsRoleIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/seo#belongsToSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#belongsToSeries> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/seo#hasEvent> .
+<https://w3id.org/seo#belongsToSeries> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#belongsToSeries> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#EventSeries> .
+<https://w3id.org/seo#belongsToSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "This property shows the series which an event belongs to."@en .
+<https://w3id.org/seo#belongsToSeries> <http://www.w3.org/2000/01/rdf-schema#label> "belongsToSeries"@en .
+<https://w3id.org/seo#colocatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#colocatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://w3id.org/seo#colocatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#colocatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#colocatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an event to another one which is co-located with."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/seo#hasAffiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasAffiliation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/seo#hasAffiliation> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Organization> .
+<https://w3id.org/seo#hasChair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasChair> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Track> .
+<https://w3id.org/seo#hasChair> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#Chair> .
+<https://w3id.org/seo#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#EventSeries> .
+<https://w3id.org/seo#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "an event series has an event edition" .
+<https://w3id.org/seo#hasFlyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasFlyer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#hasFlyer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#Flyer> .
+<https://w3id.org/seo#hasImportantDates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasImportantDates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#hasImportantDates> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#ImportantDates> .
+<https://w3id.org/seo#hasKeynote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasKeynote> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/seo#keynoteIn> .
+<https://w3id.org/seo#hasKeynote> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#hasKeynote> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#Keynote> .
+<https://w3id.org/seo#hasProgramCommitteeMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasProgramCommitteeMember> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#hasProgramCommitteeMember> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Person> .
+<https://w3id.org/seo#hasProgramSchedual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasProgramSchedual> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#hasPublisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasPublisher> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/seo#isPublisherOf> .
+<https://w3id.org/seo#hasPublisher> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#Publisher> .
+<https://w3id.org/seo#hasPublisher> <http://www.w3.org/2000/01/rdf-schema#comment> "This propoerty shows the publisher of a proceedings."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/seo#hasRegistration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasRegistration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#hasRegistration> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#Registration> .
+<https://w3id.org/seo#hasRegistrationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasRegistrationType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/seo#Author> .
+<https://w3id.org/seo#hasSocialEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasSocialEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#hasSocialEvent> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#SocialEvent> .
+<https://w3id.org/seo#hasSponsor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasSponsor> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/seo#isSponsorOf> .
+<https://w3id.org/seo#hasSponsor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#hasSponsor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#Sponsor> .
+<https://w3id.org/seo#hasSponsor> <http://www.w3.org/2000/01/rdf-schema#comment> "This propoerty shows the sponsor of an event."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/seo#hasSubmissionGuidelines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasSubmissionGuidelines> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#hasSubmissionGuidelines> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#SubmissionGuidelines> .
+<https://w3id.org/seo#hasTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#hasTrack> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/seo#isTrackOf> .
+<https://w3id.org/seo#hasTrack> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#hasTrack> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Track> .
+<https://w3id.org/seo#hasTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "This propoerty shows the available tracks of an event."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/seo#heldInCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#heldInCity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasLocation> .
+<https://w3id.org/seo#heldInCity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#heldInCity> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/City> .
+<https://w3id.org/seo#heldInCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#heldInCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#hasLocation> .
+<https://w3id.org/seo#heldInCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#heldInCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Country> .
+<https://w3id.org/seo#isPublisherOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#isPublisherOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/seo#Publisher> .
+<https://w3id.org/seo#isSponsorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#isSponsorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/seo#Sponsor> .
+<https://w3id.org/seo#isSponsorOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#isTrackOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#isTrackOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Track> .
+<https://w3id.org/seo#isTrackOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#keynoteIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#keynoteIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/seo#Keynote> .
+<https://w3id.org/seo#keynoteIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#offersAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#offersAward> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#offersAward> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#Award> .
+<https://w3id.org/seo#offersBestPaperAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#offersBestPaperAward> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/seo#offersAward> .
+<https://w3id.org/seo#offersBestPaperAward> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#offersBestPaperAward> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#BestPaperAward> .
+<https://w3id.org/seo#participatesAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#participatesAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/seo#participatesIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#participatesIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<https://w3id.org/seo#participatesIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#providesTravelInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#providesTravelInformation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#providesTravelInformation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#TravelInformation> .
+<https://w3id.org/seo#registeredAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#registeredAs> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/seo#Author> .
+<https://w3id.org/seo#registeredAs> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#AuthorRegistration> .
+<https://w3id.org/seo#sponsorshipType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#sponsorshipType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/seo#Sponsor> .
+<https://w3id.org/seo#sponsorshipType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#Sponsorship> .
+<https://w3id.org/seo#takesAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/seo#takesAward> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/seo#Author> .
+<https://w3id.org/seo#takesAward> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/seo#Award> .
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/alternative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/dateAccepted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/dateCopyrighted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/dateSubmitted> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/tableOfContents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/valid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://swrc.ontoware.org/ontology#keywords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://swrc.ontoware.org/ontology#keywords> <http://www.w3.org/2000/01/rdf-schema#domain> <http://swrc.ontoware.org/ontology#Publication> .
+<http://swrc.ontoware.org/ontology#keywords> <http://www.w3.org/2000/01/rdf-schema#domain> _:node1drh4bkn2x91 .
+<http://swrc.ontoware.org/ontology#keywords> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/seo#abstractDeadline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/seo#abstractDeadline> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#abstractDeadline> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/seo#abstractDeadline> <http://www.w3.org/2000/01/rdf-schema#comment> "The deadline of abstract submission."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/seo#acceptanceRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/seo#acceptanceRate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#acceptanceRate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/seo#acceptanceRate> <http://www.w3.org/2000/01/rdf-schema#comment> "The acceptance rate of the event in a particular year."@en .
+<https://w3id.org/seo#acceptedPapers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/seo#acceptedPapers> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#acceptedPapers> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#unsignedInt> .
+<https://w3id.org/seo#acceptedPapers> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of accepted papers in the event."@en .
+<https://w3id.org/seo#eventWebsite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/seo#eventWebsite> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#eventWebsite> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/seo#eventWebsite> <http://www.w3.org/2000/01/rdf-schema#comment> "The webpage of the event."@en .
+<https://w3id.org/seo#hasTwitter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/seo#hasTwitter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#EventSeries> .
+<https://w3id.org/seo#hasTwitter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/seo#hasTwitter> <http://www.w3.org/2000/01/rdf-schema#comment> "The twitter account of the event."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/seo#notificationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/seo#notificationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#notificationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/seo#notificationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date of the paper acceptance notification." .
+<https://w3id.org/seo#notificationDate> <http://www.w3.org/2000/01/rdf-schema#label> "Paper Acceptance Notification" .
+<https://w3id.org/seo#submissionDeadline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/seo#submissionDeadline> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#submissionDeadline> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/seo#submissionDeadline> <http://www.w3.org/2000/01/rdf-schema#comment> "The deadline of paper submission."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/seo#submissionWebPage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/seo#submissionWebPage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#OrganisedEvent> .
+<https://w3id.org/seo#submissionWebPage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/seo#submissionWebPage> <http://www.w3.org/2000/01/rdf-schema#comment> "The webpage of the submission to event."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/seo#submittedPapers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/seo#submittedPapers> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#submittedPapers> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#unsignedInt> .
+<https://w3id.org/seo#submittedPapers> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of submitted papers to the event."@en .
+<http://dbpedia.org/ontology/City> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.org/City> .
+<http://dbpedia.org/ontology/Country> <http://www.w3.org/2002/07/owl#equivalentClass> <http://schema.org/Country> .
+<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://org.semanticweb.owlapi/error#Error3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/AgentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/AgentClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.org/dc/terms/BibliographicResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/FileFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/FileFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/MediaType> .
+<http://purl.org/dc/terms/Jurisdiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/MediaType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/MediaType> .
+<http://purl.org/spar/deo/DiscourseElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Abstract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://salt.semanticauthoring.org/ontologies/sro#Abstract> .
+<http://purl.org/spar/doco/Appendix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Appendix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error2> .
+<http://purl.org/spar/doco/Appendix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/DiscourseElement> .
+<http://purl.org/spar/doco/Appendix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/doco/Section> .
+<http://purl.org/spar/doco/Appendix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2008/12/pattern#Bucket> .
+<http://purl.org/spar/doco/Appendix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2008/12/pattern#Container> .
+<http://purl.org/spar/doco/Appendix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2008/12/pattern#HeadedContainer> .
+<http://purl.org/spar/doco/Appendix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2008/12/pattern#NonTextual> .
+<http://purl.org/spar/doco/Appendix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2008/12/pattern#Pattern> .
+<http://purl.org/spar/doco/Appendix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2008/12/pattern#Structured> .
+<http://purl.org/spar/doco/BackMatter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/BodyMatter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Chapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/FrontMatter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Paragraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ConferencePaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ConferencePaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/ConferencePoster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ConferenceProceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ConferenceProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/Expression> .
+<http://purl.org/spar/fabio/ConferenceProceedings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/fabio/ExpressionCollection> .
+<http://purl.org/spar/fabio/Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ExpressionCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Manifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/ProceedingsPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/fabio/WorkingPaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://salt.semanticauthoring.org/ontologies/sro#Abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://swrc.ontoware.org/ontology#Proceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://swrc.ontoware.org/ontology#Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://swrc.ontoware.org/ontology#Publication> <http://purl.org/dc/elements/1.1/description> "an article issued for public sale" .
+<http://www.essepuntato.it/2008/12/pattern#Block> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Bucket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Field> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#HeadedContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Meta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#NonTextual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Pattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Popup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Structured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Table> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Textual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2000/01/rdf-schema#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#EventSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Proceedings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Author> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/seo#Author> <http://www.w3.org/2000/01/rdf-schema#comment> "The one who write the article."@en .
+<https://w3id.org/seo#Author> <http://www.w3.org/2000/01/rdf-schema#label> "Author"@en .
+<https://w3id.org/seo#AuthorRegistration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#AuthorRegistration> <http://www.w3.org/2000/01/rdf-schema#comment> "At least one of the authors must register at the full rate in order for the paper to be published in the Proceedings."@en .
+<https://w3id.org/seo#AuthorRegistration> <http://www.w3.org/2000/01/rdf-schema#label> "Author registration"@en .
+<https://w3id.org/seo#Award> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Award> <http://www.w3.org/2000/01/rdf-schema#comment> "A price for the highest quality research."@en .
+<https://w3id.org/seo#Award> <http://www.w3.org/2000/01/rdf-schema#label> "Award"@en .
+<https://w3id.org/seo#BestApplicationsPaperAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#BestApplicationsPaperAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#BestPaperAward> .
+<https://w3id.org/seo#BestApplicationsPaperAward> <http://www.w3.org/2000/01/rdf-schema#comment> "This award for the best application paper presented. "@en .
+<https://w3id.org/seo#BestApplicationsPaperAward> <http://www.w3.org/2000/01/rdf-schema#label> "Best applications paper award"@en .
+<https://w3id.org/seo#BestPaperAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#BestPaperAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Award> .
+<https://w3id.org/seo#BestPaperAward> <http://www.w3.org/2000/01/rdf-schema#comment> "This award recognizes the best paper presented."@en .
+<https://w3id.org/seo#BestPaperAward> <http://www.w3.org/2000/01/rdf-schema#label> "Best paper award"@en .
+<https://w3id.org/seo#BestPosterAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#BestPosterAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Award> .
+<https://w3id.org/seo#BestPosterAward> <http://www.w3.org/2000/01/rdf-schema#comment> "This award highlight good quality posters presented."@en .
+<https://w3id.org/seo#BestPosterAward> <http://www.w3.org/2000/01/rdf-schema#label> "Best poster award"@en .
+<https://w3id.org/seo#BestStudentPaperAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#BestStudentPaperAward> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#BestPaperAward> .
+<https://w3id.org/seo#BestStudentPaperAward> <http://www.w3.org/2000/01/rdf-schema#comment> "This award recognizes the best paper authored primarily by a student and presented by the student."@en .
+<https://w3id.org/seo#BestStudentPaperAward> <http://www.w3.org/2000/01/rdf-schema#label> "Best student paper award"@en .
+<https://w3id.org/seo#BronzeSponsorship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#BronzeSponsorship> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Sponsorship> .
+<https://w3id.org/seo#BronzeSponsorship> <http://www.w3.org/2000/01/rdf-schema#comment> "A Sponsorship Package."@en .
+<https://w3id.org/seo#BronzeSponsorship> <http://www.w3.org/2000/01/rdf-schema#label> "Bronze sponsorship"@en .
+<https://w3id.org/seo#Chair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Chair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/seo#Chair> <http://www.w3.org/2000/01/rdf-schema#comment> "The Chair person must ensure that the Management Committee functions properly, that there is full participation during meetings, that all relevant matters are discussed and that effective decisions are made and carried out."@en .
+<https://w3id.org/seo#Chair> <http://www.w3.org/2000/01/rdf-schema#label> "Chair"@en .
+<https://w3id.org/seo#ChallengeTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#ChallengeTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Track> .
+<https://w3id.org/seo#ChallengeTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "The idea of the challenge track is to provide participants with a set of case studies and challenge the state of the art."@en .
+<https://w3id.org/seo#ChallengeTrack> <http://www.w3.org/2000/01/rdf-schema#label> "Challenge track"@en .
+<https://w3id.org/seo#DemoChair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#DemoChair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Chair> .
+<https://w3id.org/seo#DemoChair> <http://www.w3.org/2000/01/rdf-schema#comment> "A person responsible for assembling the system demonstration papers to be presented in the main conference program. "@en .
+<https://w3id.org/seo#DemoChair> <http://www.w3.org/2000/01/rdf-schema#label> "Demo chair"@en .
+<https://w3id.org/seo#DemosTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#DemosTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Track> .
+<https://w3id.org/seo#DemosTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "Offer an opportunity for presenting late-breaking research results, on-going research projects, and speculative or innovative work in progress."@en .
+<https://w3id.org/seo#DemosTrack> <http://www.w3.org/2000/01/rdf-schema#label> "Demos track"@en .
+<https://w3id.org/seo#DoctoralConsortium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#DoctoralConsortium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#DoctoralConsortium> <http://www.w3.org/2000/01/rdf-schema#comment> "Provide PhD students an opportunity to share and develop their research ideas in a critical but supportive environment."@en .
+<https://w3id.org/seo#DoctoralConsortium> <http://www.w3.org/2000/01/rdf-schema#label> "Doctoral consortium"@en .
+<https://w3id.org/seo#DoctoralConsortiumChair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#DoctoralConsortiumChair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Chair> .
+<https://w3id.org/seo#DoctoralConsortiumChair> <http://www.w3.org/2000/01/rdf-schema#comment> "The event member who leads the doctoral consortium."@en .
+<https://w3id.org/seo#DoctoralConsortiumChair> <http://www.w3.org/2000/01/rdf-schema#label> "Doctoral consortium chair"@en .
+<https://w3id.org/seo#EarlyBirdRegistration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#EarlyBirdRegistration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Registration> .
+<https://w3id.org/seo#EarlyBirdRegistration> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/seo#LateRegistration> .
+<https://w3id.org/seo#EarlyBirdRegistration> <http://www.w3.org/2000/01/rdf-schema#comment> "Registration before a specific date."@en .
+<https://w3id.org/seo#EarlyBirdRegistration> <http://www.w3.org/2000/01/rdf-schema#label> "Early bird registration"@en .
+<https://w3id.org/seo#EventReception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#EventReception> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#SocialEvent> .
+<https://w3id.org/seo#EventReception> <http://www.w3.org/2000/01/rdf-schema#comment> "The reception event within a scientific event ."@en .
+<https://w3id.org/seo#EventReception> <http://www.w3.org/2000/01/rdf-schema#label> "Event reception"@en .
+<https://w3id.org/seo#Flyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Flyer> <http://www.w3.org/2000/01/rdf-schema#comment> "An announcement or advertisement that is printed on a sheet of paper and given to people."@en .
+<https://w3id.org/seo#Flyer> <http://www.w3.org/2000/01/rdf-schema#label> "Flyer"@en .
+<https://w3id.org/seo#GeneralChair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#GeneralChair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Chair> .
+<https://w3id.org/seo#GeneralChair> <http://www.w3.org/2000/01/rdf-schema#comment> "A person responsible for overseeing and coordinating the whole conference. ."@en .
+<https://w3id.org/seo#GeneralChair> <http://www.w3.org/2000/01/rdf-schema#label> "General chair"@en .
+<https://w3id.org/seo#GetTogetherEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#GetTogetherEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#SocialEvent> .
+<https://w3id.org/seo#GetTogetherEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Socially gather two or more people in one event ."@en .
+<https://w3id.org/seo#GetTogetherEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Get together event"@en .
+<https://w3id.org/seo#GoldSponsorship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#GoldSponsorship> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Sponsorship> .
+<https://w3id.org/seo#GoldSponsorship> <http://www.w3.org/2000/01/rdf-schema#comment> "Sponsorship Package."@en .
+<https://w3id.org/seo#GoldSponsorship> <http://www.w3.org/2000/01/rdf-schema#label> "Gold sponsorship"@en .
+<https://w3id.org/seo#HonorChair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#HonorChair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Chair> .
+<https://w3id.org/seo#HonorChair> <http://www.w3.org/2000/01/rdf-schema#comment> "Chair of the conference ."@en .
+<https://w3id.org/seo#HonorChair> <http://www.w3.org/2000/01/rdf-schema#label> "Honor chair"@en .
+<https://w3id.org/seo#ImportantDates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#ImportantDates> <http://www.w3.org/2000/01/rdf-schema#comment> "Important dates to be noticed such as, abstract deadline, submission deadline, ...etc ."@en .
+<https://w3id.org/seo#ImportantDates> <http://www.w3.org/2000/01/rdf-schema#label> "Important dates"@en .
+<https://w3id.org/seo#In-useTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#In-useTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Track> .
+<https://w3id.org/seo#In-useTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "In-Use track provides researchers to discuss novel research taken to the market."@en .
+<https://w3id.org/seo#In-useTrack> <http://www.w3.org/2000/01/rdf-schema#label> "In-use track"@en .
+<https://w3id.org/seo#IndustrialConference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#IndustrialConference> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#NonAcademicEvent> .
+<https://w3id.org/seo#IndustrialConference> <http://www.w3.org/2000/01/rdf-schema#comment> "A business conference is held for people working in the same company or industry."@en .
+<https://w3id.org/seo#IndustrialConference> <http://www.w3.org/2000/01/rdf-schema#label> "Industrial conference"@en .
+<https://w3id.org/seo#IndustryTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#IndustryTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Track> .
+<https://w3id.org/seo#IndustryTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "The industry track seeks to present research contributions in industrial settings."@en .
+<https://w3id.org/seo#IndustryTrack> <http://www.w3.org/2000/01/rdf-schema#label> "Industry track"@en .
+<https://w3id.org/seo#InvitedSpeakers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#InvitedSpeakers> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/seo#InvitedSpeakers> <http://www.w3.org/2000/01/rdf-schema#comment> "Invited person to give a speech in an event."@en .
+<https://w3id.org/seo#InvitedSpeakers> <http://www.w3.org/2000/01/rdf-schema#label> "Invited speakers"@en .
+<https://w3id.org/seo#Keynote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Keynote> <http://www.w3.org/2000/01/rdf-schema#comment> "A talk that establishes a main underlying the theme of the event." .
+<https://w3id.org/seo#Keynote> <http://www.w3.org/2000/01/rdf-schema#label> "Keynote speech" .
+<https://w3id.org/seo#KeynoteSpeaker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#KeynoteSpeaker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#InvitedSpeakers> .
+<https://w3id.org/seo#KeynoteSpeaker> <http://www.w3.org/2000/01/rdf-schema#comment> "Someone who gives the main address at a formal gathering such as a conference ."@en .
+<https://w3id.org/seo#KeynoteSpeaker> <http://www.w3.org/2000/01/rdf-schema#label> "Keynote speaker"@en .
+<https://w3id.org/seo#LateRegistration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#LateRegistration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Registration> .
+<https://w3id.org/seo#LateRegistration> <http://www.w3.org/2000/01/rdf-schema#comment> "Registration after a specific deadline ."@en .
+<https://w3id.org/seo#LateRegistration> <http://www.w3.org/2000/01/rdf-schema#label> "Late registration"@en .
+<https://w3id.org/seo#LocalOrganisationChair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#LocalOrganisationChair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Chair> .
+<https://w3id.org/seo#LocalOrganisationChair> <http://www.w3.org/2000/01/rdf-schema#comment> "The chair of the local organizers of the event. "@en .
+<https://w3id.org/seo#LocalOrganisationChair> <http://www.w3.org/2000/01/rdf-schema#label> "Local organisation chair"@en .
+<https://w3id.org/seo#OnSiteRegistration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#OnSiteRegistration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Registration> .
+<https://w3id.org/seo#OnSiteRegistration> <http://www.w3.org/2000/01/rdf-schema#comment> "Process of signing up for an event on the day of, or at the site of, the event."@en .
+<https://w3id.org/seo#OnSiteRegistration> <http://www.w3.org/2000/01/rdf-schema#label> "On site registration"@en .
+<https://w3id.org/seo#Organizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Organizer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/seo#Organizer> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who arranges an event or activity. ."@en .
+<https://w3id.org/seo#Organizer> <http://www.w3.org/2000/01/rdf-schema#label> "Organizer"@en .
+<https://w3id.org/seo#PHDSymposium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#PHDSymposium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Symposium> .
+<https://w3id.org/seo#PHDSymposium> <http://www.w3.org/2000/01/rdf-schema#comment> "Event for PHD student to present and receive feedback on their ongoing work."@en .
+<https://w3id.org/seo#PHDSymposium> <http://www.w3.org/2000/01/rdf-schema#label> "PHD symposium"@en .
+<https://w3id.org/seo#PastEvents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#PastEvents> <http://www.w3.org/2000/01/rdf-schema#comment> "Events happened or existed before the present time. "@en .
+<https://w3id.org/seo#PastEvents> <http://www.w3.org/2000/01/rdf-schema#label> "Past events"@en .
+<https://w3id.org/seo#PlatinumSponsorship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#PlatinumSponsorship> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Sponsorship> .
+<https://w3id.org/seo#PlatinumSponsorship> <http://www.w3.org/2000/01/rdf-schema#comment> "Sponsorship Package."@en .
+<https://w3id.org/seo#PlatinumSponsorship> <http://www.w3.org/2000/01/rdf-schema#label> "Platinum sponsorship"@en .
+<https://w3id.org/seo#PosterChair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#PosterChair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Chair> .
+<https://w3id.org/seo#PosterChair> <http://www.w3.org/2000/01/rdf-schema#comment> "The poster chair is responsible for recruiting and selecting poster fair organizers for the fairs that fall under the shared interest category."@en .
+<https://w3id.org/seo#PosterChair> <http://www.w3.org/2000/01/rdf-schema#label> "Poster chair"@en .
+<https://w3id.org/seo#PostersTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#PostersTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Track> .
+<https://w3id.org/seo#PostersTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "Present research contributions as posters."@en .
+<https://w3id.org/seo#PostersTrack> <http://www.w3.org/2000/01/rdf-schema#label> "Posters track"@en .
+<https://w3id.org/seo#ProgramChair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#ProgramChair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Chair> .
+<https://w3id.org/seo#ProgramChair> <http://www.w3.org/2000/01/rdf-schema#comment> "The Program Chair is responsible for working to develop the annual program budget, manage chapter-programming delivery, monitor program quality, manage member satisfaction with programs, and manage all speaker communications. "@en .
+<https://w3id.org/seo#ProgramChair> <http://www.w3.org/2000/01/rdf-schema#label> "Program chair"@en .
+<https://w3id.org/seo#ProgramCommitteeMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#ProgramCommitteeMember> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/seo#ProgramCommitteeMember> <http://www.w3.org/2000/01/rdf-schema#comment> "The program committee is responsible for objectively and thoroughly reviewing all submissions, for submitting timely, informative reviews that provide authors with feedback about their submissions, and for attending the program committee meetings."@en .
+<https://w3id.org/seo#ProgramCommitteeMember> <http://www.w3.org/2000/01/rdf-schema#label> "Program committee member"@en .
+<https://w3id.org/seo#ProgramSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#ProgramSchedule> <http://www.w3.org/2000/01/rdf-schema#comment> "A plan for carrying out a process or procedure, giving lists of intended events and times."@en .
+<https://w3id.org/seo#ProgramSchedule> <http://www.w3.org/2000/01/rdf-schema#label> "Program schedule"@en .
+<https://w3id.org/seo#Publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Publisher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<https://w3id.org/seo#Publisher> <http://www.w3.org/2000/01/rdf-schema#comment> "The publisher of the event proceedings."@en .
+<https://w3id.org/seo#Publisher> <http://www.w3.org/2000/01/rdf-schema#label> "Publisher"@en .
+<https://w3id.org/seo#Registration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Registration> <http://www.w3.org/2000/01/rdf-schema#comment> "The action or process of registering or of being registered."@en .
+<https://w3id.org/seo#Registration> <http://www.w3.org/2000/01/rdf-schema#label> "Registration"@en .
+<https://w3id.org/seo#RegularRegistration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#RegularRegistration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#AuthorRegistration> .
+<https://w3id.org/seo#RegularRegistration> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/seo#StudentRegistration> .
+<https://w3id.org/seo#RegularRegistration> <http://www.w3.org/2000/01/rdf-schema#comment> "Normal registration"@en .
+<https://w3id.org/seo#RegularRegistration> <http://www.w3.org/2000/01/rdf-schema#label> "Regular registration"@en .
+<https://w3id.org/seo#ResearchField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#ResearchField> <http://www.w3.org/2000/01/rdf-schema#comment> "Area of interest."@en .
+<https://w3id.org/seo#ResearchField> <http://www.w3.org/2000/01/rdf-schema#label> "Research field"@en .
+<https://w3id.org/seo#ResearchTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#ResearchTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Track> .
+<https://w3id.org/seo#ResearchTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "The track for fundamental research, innovative technology, and applications concerning the research topic of the event."@en .
+<https://w3id.org/seo#ResearchTrack> <http://www.w3.org/2000/01/rdf-schema#label> "Research track"@en .
+<https://w3id.org/seo#ResourceTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#ResourceTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#Track> .
+<https://w3id.org/seo#ResourceTrack> <http://www.w3.org/2000/01/rdf-schema#comment> "The Resources Track aims to promote the sharing of resources including: datasets, ontologies, vocabularies, ... etc"@en .
+<https://w3id.org/seo#ResourceTrack> <http://www.w3.org/2000/01/rdf-schema#label> "Resource track"@en .
+<https://w3id.org/seo#Reviewer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Reviewer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/seo#Reviewer> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who reviews the submissions and give feedback about the submitted articles."@en .
+<https://w3id.org/seo#Reviewer> <http://www.w3.org/2000/01/rdf-schema#label> "Reviewer"@en .
+<https://w3id.org/seo#SilverSponsorship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#SilverSponsorship> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Sponsorship> .
+<https://w3id.org/seo#SilverSponsorship> <http://www.w3.org/2000/01/rdf-schema#comment> "Sponsorship Package."@en .
+<https://w3id.org/seo#SilverSponsorship> <http://www.w3.org/2000/01/rdf-schema#label> "Silver sponsorship"@en .
+<https://w3id.org/seo#Sponsor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Sponsor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<https://w3id.org/seo#Sponsor> <http://www.w3.org/2000/01/rdf-schema#comment> "The Sponsor of the event (i.e. company, university ... etc.)."@en .
+<https://w3id.org/seo#Sponsor> <http://www.w3.org/2000/01/rdf-schema#label> "Sponsor"@en .
+<https://w3id.org/seo#Sponsorship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Sponsorship> <http://www.w3.org/2000/01/rdf-schema#comment> "Refer to a person or organization with some sort of responsibility for another person or organisation."@en .
+<https://w3id.org/seo#Sponsorship> <http://www.w3.org/2000/01/rdf-schema#label> "Sponsorship"@en .
+<https://w3id.org/seo#SponsorshipChair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#SponsorshipChair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Chair> .
+<https://w3id.org/seo#SponsorshipChair> <http://www.w3.org/2000/01/rdf-schema#comment> "A person responsible for collecting funding from two kinds of sources: granting institutions and corporations. "@en .
+<https://w3id.org/seo#SponsorshipChair> <http://www.w3.org/2000/01/rdf-schema#label> "Sponsorship chair"@en .
+<https://w3id.org/seo#Student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Student> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<https://w3id.org/seo#Student> <http://www.w3.org/2000/01/rdf-schema#comment> "A person enrolled in a school or other educational institution."@en .
+<https://w3id.org/seo#Student> <http://www.w3.org/2000/01/rdf-schema#label> "Student"@en .
+<https://w3id.org/seo#StudentRegistration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#StudentRegistration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#AuthorRegistration> .
+<https://w3id.org/seo#StudentRegistration> <http://www.w3.org/2000/01/rdf-schema#comment> "Students full-time enrolled in a college or university can register as a student for the reduced early career rate."@en .
+<https://w3id.org/seo#StudentRegistration> <http://www.w3.org/2000/01/rdf-schema#label> "Student registration"@en .
+<https://w3id.org/seo#SubmissionGuidelines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#SubmissionGuidelines> <http://www.w3.org/2000/01/rdf-schema#comment> "Instructions for the submission process ."@en .
+<https://w3id.org/seo#SubmissionGuidelines> <http://www.w3.org/2000/01/rdf-schema#label> "Submission guidelines"@en .
+<https://w3id.org/seo#Symposium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#Symposium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#AcademicEvent> .
+<https://w3id.org/seo#Symposium> <http://www.w3.org/2000/01/rdf-schema#comment> "A conference or meeting to discuss a particular subject."@en .
+<https://w3id.org/seo#Symposium> <http://www.w3.org/2000/01/rdf-schema#label> "Symposium"@en .
+<https://w3id.org/seo#SymposiumSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#SymposiumSeries> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/scholarlydata/ontology/conference-ontology.owl#EventSeries> .
+<https://w3id.org/seo#SymposiumSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "A series of symposiums."@en .
+<https://w3id.org/seo#SymposiumSeries> <http://www.w3.org/2000/01/rdf-schema#label> "Symposiums series"@en .
+<https://w3id.org/seo#TravelInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#TravelInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "The information about the travel: date, place, ...etc ."@en .
+<https://w3id.org/seo#TravelInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Travel information"@en .
+<https://w3id.org/seo#TutorialChair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#TutorialChair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Chair> .
+<https://w3id.org/seo#TutorialChair> <http://www.w3.org/2000/01/rdf-schema#comment> "A person responsible for requesting tutorial proposals and making final selections."@en .
+<https://w3id.org/seo#TutorialChair> <http://www.w3.org/2000/01/rdf-schema#label> "Tutorial chair"@en .
+<https://w3id.org/seo#WorkshopChair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/seo#WorkshopChair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/seo#Chair> .
+<https://w3id.org/seo#WorkshopChair> <http://www.w3.org/2000/01/rdf-schema#comment> "The one responsible for collaborating with the workshop chairs for other ACL-affiliated conferences in the given year, in preparing and circulating the Call for Proposals, and in reviewing submissions."@en .
+<https://w3id.org/seo#WorkshopChair> <http://www.w3.org/2000/01/rdf-schema#label> "Workshop chair"@en .

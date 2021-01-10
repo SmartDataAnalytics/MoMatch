@@ -1,0 +1,33 @@
+technically organises,technisch organisiert
+presentation of paper,Präsentation von Papier
+scientifically organised by,wissenschaftlich organisiert
+organised by,organisiert von
+publisher of,Herausgeber
+held in,statt in
+has review,hat abgeben
+reviewer of paper,Rezensent Papier
+author of,Autor
+review of paper,Bewertung von Papier
+review written by,Bewertung gemacht von
+has updated version,hat die aktualisierte version
+paper presented as,paper präsentiert als
+organises,organisiert
+scientifically organises,wissenschaftlich organisiert
+lists event,Listen Veranstaltung
+references,Referenzen
+technically organised by,technisch organisiert
+topic covered by,Thema
+inverse of part of 7,inversen, Teil 7
+has part,hat Teil
+volume contains paper,Band enthält Papier
+written by,geschrieben von
+covers topic,duckt Thema
+event on list,event-on-Liste
+location of,Lage des
+has reviewer,hat Rezensent
+part of,Teil
+has event,hat event
+updated version of,aktualisierte version
+referenced in,verwiesen wird
+paper in volume,Papier im Volumen
+part of event,Teil der Veranstaltung

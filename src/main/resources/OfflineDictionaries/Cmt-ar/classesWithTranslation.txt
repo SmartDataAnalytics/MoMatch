@@ -1,0 +1,30 @@
+رئيس المؤتمر,Conference Chairman
+موضوع المحور,Theme Editor
+مزايدة,Auction
+لاشيء,Nothing
+عضو في اللجنة العلمية,Member of the scientific committee
+النسخة الكاملة من البحث,The full version of the search
+الكاتب، الذي ليس المراجع,The writer, who is not the auditor
+رئيس اللجنة العلمية,Chairman of the scientific committee
+رئيس,President
+وثيقة,Document
+شخص,Someone
+الكاتب المشترك,Cable joint
+المراجع خارجي,References external
+عضو المؤتمر,A member of the conference
+مؤتمر,conference
+أفضلية,Preference
+البحث,Search
+المراجع,Reviewer
+مراجعة فوقية,Review meta
+مراجعة,Review
+قرار,Read
+مشرف,Supervisor
+الرفض,Rejection
+ملخص البحث,Research summary
+المراجع الفوقي,References epitaxial
+الكاتب,Author
+رئيس المرتبطة,President of The Associated
+لجنة العلمية,The committee on scientific
+القبول,Acceptance
+المستخدم,User

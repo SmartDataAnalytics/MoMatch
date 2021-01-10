@@ -1,0 +1,419 @@
+@prefix : <http://sigkdd_nl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://sigkdd_nl> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+:op-0797215-9592306 a owl:ObjectProperty ;
+	rdfs:label "ontwerp"@nl ;
+	rdfs:domain :c-6013467-8243363 ;
+	rdfs:range :c-7751948-8710710 .
+
+:op-1840808-7648812 a owl:ObjectProperty ;
+	rdfs:label "inlichting tot"@nl ;
+	rdfs:domain :c-2254450-4586419 ;
+	rdfs:range :c-5585917-9673412 .
+
+:op-2133551-7749420 a owl:ObjectProperty ;
+	rdfs:label "gezocht door"@nl ;
+	rdfs:domain :c-3231912-8987055 ;
+	rdfs:range :c-6013467-8243363 .
+
+:op-2258860-2134032 a owl:ObjectProperty ;
+	rdfs:label "betaald door"@nl ;
+	rdfs:domain :c-4635808-8917151 ;
+	rdfs:range :c-4964548-2754830 .
+
+:op-2342671-0906328 a owl:ObjectProperty ;
+	rdfs:label "houdt"@nl ;
+	rdfs:range :c-0885540-1905548 ;
+	rdfs:domain :c-6013467-8243363 .
+
+:op-2565845-5104005 a owl:ObjectProperty ;
+	rdfs:label "gehouden door"@nl ;
+	rdfs:domain :c-0885540-1905548 ;
+	rdfs:range :c-6013467-8243363 ;
+	owl:inverseOf :op-2342671-0906328 .
+
+:op-2677692-8466254 a owl:ObjectProperty ;
+	rdfs:label "prijs"@nl ;
+	rdfs:range :c-3611955-1848520 .
+
+:op-2771162-7718100 a owl:ObjectProperty ;
+	rdfs:label "zoeken"@nl ;
+	rdfs:range :c-3231912-8987055 ;
+	rdfs:domain :c-6013467-8243363 ;
+	owl:inverseOf :op-2133551-7749420 .
+
+:op-3729363-8337951 a owl:ObjectProperty ;
+	rdfs:label "gepresenteerd door"@nl ;
+	rdfs:range :c-4828053-8156444 ;
+	rdfs:domain :c-8182503-6500256 ;
+	owl:inverseOf :op-4556485-6777429 .
+
+:op-4556485-6777429 a owl:ObjectProperty ;
+	rdfs:label "presentatie"@nl ;
+	rdfs:domain :c-4828053-8156444 ;
+	rdfs:range :c-8182503-6500256 .
+
+:op-5369253-4963465 a owl:ObjectProperty ;
+	rdfs:label "indienen"@nl ;
+	rdfs:domain :c-2254450-4586419 ;
+	rdfs:range :c-6675660-8952876 .
+
+:op-6157221-7749194 a owl:ObjectProperty ;
+	rdfs:label "betalen"@nl ;
+	rdfs:range :c-4635808-8917151 ;
+	rdfs:domain :c-4964548-2754830 ;
+	owl:inverseOf :op-2258860-2134032 .
+
+:op-7215747-1729532 a owl:ObjectProperty ;
+	rdfs:label "mag verblijven in"@nl ;
+	rdfs:domain :c-4964548-2754830 ;
+	rdfs:range :c-5968683-1644775 .
+
+:op-7708071-3245584 a owl:ObjectProperty ;
+	rdfs:label "verkrijgen"@nl ;
+	rdfs:domain :c-2254450-4586419 ;
+	rdfs:range :c-3611955-1848520 .
+
+:op-8160705-0025502 a owl:ObjectProperty ;
+	rdfs:label "ontworpen door"@nl ;
+	rdfs:range :c-6013467-8243363 ;
+	rdfs:domain :c-7751948-8710710 ;
+	owl:inverseOf :op-0797215-9592306 .
+
+:op-8296380-6365768 a owl:ObjectProperty ;
+	rdfs:label "toegekend door"@nl ;
+	rdfs:domain :c-3611955-1848520 ;
+	owl:inverseOf :op-2677692-8466254 .
+
+:op-9701620-7189823 a owl:ObjectProperty ;
+	rdfs:label "indienen tot"@nl ;
+	rdfs:range :c-7751948-8710710 ;
+	rdfs:domain :c-8182503-6500256 .
+
+:ent-0374047-8212692 a owl:DatatypeProperty ;
+	rdfs:label "email"@nl ;
+	rdfs:domain :c-4964548-2754830 ;
+	rdfs:range xsd:string .
+
+:ent-0559643-8504336 a owl:DatatypeProperty ;
+	rdfs:label "naam van conferentie"@nl ;
+	rdfs:domain :c-0885540-1905548 ;
+	rdfs:range xsd:string .
+
+:ent-0674961-0379638 a owl:DatatypeProperty ;
+	rdfs:label "einde van conferentie"@nl ;
+	rdfs:domain :c-0885540-1905548 ;
+	rdfs:range xsd:dateTime .
+
+:ent-2005392-2721630 a owl:DatatypeProperty ;
+	rdfs:label "stad van conferentie"@nl ;
+	rdfs:domain :c-0885540-1905548 ;
+	rdfs:range xsd:string .
+
+:ent-2135808-5508669 a owl:DatatypeProperty ;
+	rdfs:label "begin van conferentie"@nl ;
+	rdfs:domain :c-0885540-1905548 ;
+	rdfs:range xsd:dateTime .
+
+:ent-4955806-3510068 a owl:DatatypeProperty ;
+	rdfs:label "naam"@nl ;
+	rdfs:domain :c-4964548-2754830 ;
+	rdfs:range xsd:string .
+
+:ent-6239164-0862369 a owl:DatatypeProperty ;
+	rdfs:label "betaalmiddel"@nl ;
+	rdfs:domain :c-4635808-8917151 ;
+	rdfs:range xsd:string .
+
+:ent-6436607-8412789 a owl:DatatypeProperty ;
+	rdfs:label "prijs"@nl ;
+	rdfs:domain :c-4635808-8917151 ;
+	rdfs:range xsd:int .
+
+:ent-7820768-7923190 a owl:DatatypeProperty ;
+	rdfs:label "naam van sponsor"@nl ;
+	rdfs:domain :c-3231912-8987055 ;
+	rdfs:range xsd:string .
+
+:ent-8598822-4553815 a owl:DatatypeProperty ;
+	rdfs:label "land"@nl ;
+	rdfs:domain :c-4964548-2754830 ;
+	rdfs:range xsd:string .
+
+:ent-9514468-6142611 a owl:DatatypeProperty ;
+	rdfs:label "datum"@nl ;
+	rdfs:domain :c-7751948-8710710 ;
+	rdfs:range xsd:dateTime .
+
+:c-0088270-3257121 a owl:Class ;
+	rdfs:label "abstract"@nl ;
+	owl:equivalentClass _:node1e05bstv6x1 .
+
+_:node1e05bstv6x1 a owl:Restriction ;
+	owl:onProperty :op-9701620-7189823 ;
+	owl:someValuesFrom :c-6793756-5864678 .
+
+:c-0088270-3257121 rdfs:subClassOf :c-8182503-6500256 .
+
+:c-0885540-1905548 a owl:Class ;
+	rdfs:label "conferentie"@nl .
+
+:c-1647542-3256640 a owl:Class ;
+	rdfs:label "sponsorbijdrage"@nl ;
+	rdfs:subClassOf :c-4808979-6881064 .
+
+:c-1712115-3636328 a owl:Class ;
+	rdfs:label "lid programmacommissie"@nl ;
+	rdfs:subClassOf :c-1972856-6347020 .
+
+:c-1972856-6347020 a owl:Class ;
+	rdfs:label "organisator"@nl ;
+	rdfs:subClassOf :c-4964548-2754830 .
+
+:c-2254450-4586419 a owl:Class ;
+	rdfs:label "auteur"@nl ;
+	owl:equivalentClass _:node1e05bstv6x2 .
+
+_:node1e05bstv6x2 a owl:Restriction ;
+	owl:onProperty :op-5369253-4963465 ;
+	owl:someValuesFrom :c-6675660-8952876 .
+
+:c-2254450-4586419 rdfs:subClassOf :c-4828053-8156444 , _:node1e05bstv6x3 .
+
+_:node1e05bstv6x3 a owl:Restriction ;
+	owl:onProperty :op-1840808-7648812 ;
+	owl:someValuesFrom :c-5585917-9673412 .
+
+:c-2376070-7069240 a owl:Class ;
+	rdfs:label "organisatiecommissie"@nl ;
+	rdfs:subClassOf :c-6274133-4821320 .
+
+:c-2449314-2099201 a owl:Class ;
+	rdfs:label "platina sponsor"@nl ;
+	rdfs:subClassOf :c-3231912-8987055 .
+
+:c-2866976-2668036 a owl:Class ;
+	rdfs:label "algemeen voorzitter"@nl ;
+	rdfs:subClassOf :c-1972856-6347020 .
+
+:c-2994532-5177238 a owl:Class ;
+	rdfs:label "recensie"@nl ;
+	rdfs:subClassOf :c-8182503-6500256 .
+
+:c-3231912-8987055 a owl:Class ;
+	rdfs:label "sponsor"@nl ;
+	owl:equivalentClass _:node1e05bstv6x4 .
+
+_:node1e05bstv6x4 a owl:Restriction ;
+	owl:onProperty :op-6157221-7749194 ;
+	owl:someValuesFrom :c-1647542-3256640 .
+
+:c-3411960-3868798 a owl:Class ;
+	rdfs:label "hoofdkantoor"@nl ;
+	rdfs:subClassOf :c-5968683-1644775 .
+
+:c-3611955-1848520 a owl:Class ;
+	rdfs:label "prijs"@nl ;
+	owl:equivalentClass _:node1e05bstv6x5 .
+
+_:node1e05bstv6x5 a owl:Restriction ;
+	owl:onProperty :op-8296380-6365768 ;
+	owl:someValuesFrom :c-1972856-6347020 .
+
+:c-3976258-4389918 a owl:Class ;
+	rdfs:label "zilver sponsor"@nl ;
+	rdfs:subClassOf :c-3231912-8987055 .
+
+:c-4066772-8626570 a owl:Class ;
+	rdfs:label "lid organisatiecommissie"@nl ;
+	rdfs:subClassOf :c-1972856-6347020 .
+
+:c-4635808-8917151 a owl:Class ;
+	rdfs:label "registratiekosten"@nl ;
+	rdfs:subClassOf :c-4808979-6881064 .
+
+:c-4808979-6881064 a owl:Class ;
+	rdfs:label "bedrag"@nl .
+
+:c-4828053-8156444 a owl:Class ;
+	rdfs:label "spreker"@nl ;
+	owl:equivalentClass _:node1e05bstv6x6 .
+
+_:node1e05bstv6x6 a owl:Restriction ;
+	owl:onProperty :op-4556485-6777429 ;
+	owl:someValuesFrom :c-8182503-6500256 .
+
+:c-4828053-8156444 rdfs:subClassOf :c-4964548-2754830 .
+
+:c-4918056-1133581 a owl:Class ;
+	rdfs:label "prijs best toegepast artikel"@nl ;
+	rdfs:subClassOf :c-3611955-1848520 .
+
+:c-4950691-7168262 a owl:Class ;
+	rdfs:label "tentoonsteller"@nl ;
+	rdfs:subClassOf :c-3231912-8987055 .
+
+:c-4960132-0765588 a owl:Class ;
+	rdfs:label "gast spreker"@nl ;
+	rdfs:subClassOf :c-4828053-8156444 .
+
+:c-4964548-2754830 a owl:Class ;
+	rdfs:label "persoon"@nl ;
+	owl:equivalentClass _:node1e05bstv6x7 .
+
+_:node1e05bstv6x7 a owl:Restriction ;
+	owl:onProperty :op-6157221-7749194 ;
+	owl:someValuesFrom :c-4635808-8917151 .
+
+:c-4964548-2754830 rdfs:subClassOf owl:Thing , _:node1e05bstv6x8 .
+
+_:node1e05bstv6x8 a owl:Restriction ;
+	owl:onProperty :op-7215747-1729532 ;
+	owl:someValuesFrom :c-6301171-0350928 .
+
+:c-5041214-0529107 a owl:Class ;
+	rdfs:label "best studenten artikel sponsor"@nl ;
+	rdfs:subClassOf :c-3231912-8987055 .
+
+:c-5050746-4121053 a owl:Class ;
+	rdfs:label "toehoorder"@nl ;
+	rdfs:subClassOf :c-4964548-2754830 .
+
+:c-5421890-0237133 a owl:Class ;
+	rdfs:label "registratie SIGMOD lid"@nl ;
+	rdfs:subClassOf :c-4635808-8917151 .
+
+:c-5585917-9673412 a owl:Class ;
+	rdfs:label "deadline inlichting auteur"@nl ;
+	rdfs:subClassOf :c-7751948-8710710 .
+
+:c-5869770-9169809 a owl:Class ;
+	rdfs:label "registratie studenten"@nl ;
+	rdfs:subClassOf :c-4635808-8917151 .
+
+:c-5968683-1644775 a owl:Class ;
+	rdfs:label "plaats"@nl .
+
+:c-6013467-8243363 a owl:Class ;
+	rdfs:label "ACM SIGKDD"@nl ;
+	rdfs:subClassOf owl:Thing , _:node1e05bstv6x9 .
+
+_:node1e05bstv6x9 a owl:Restriction ;
+	owl:onProperty :op-0797215-9592306 ;
+	owl:someValuesFrom :c-7751948-8710710 .
+
+:c-6013467-8243363 rdfs:subClassOf _:node1e05bstv6x10 .
+
+_:node1e05bstv6x10 a owl:Restriction ;
+	owl:onProperty :op-2771162-7718100 ;
+	owl:someValuesFrom :c-3231912-8987055 .
+
+:c-6013467-8243363 rdfs:subClassOf _:node1e05bstv6x11 .
+
+_:node1e05bstv6x11 a owl:Restriction ;
+	owl:onProperty :op-2342671-0906328 ;
+	owl:someValuesFrom :c-0885540-1905548 .
+
+:c-6173128-0624276 a owl:Class ;
+	rdfs:label "registratie geen lid"@nl ;
+	rdfs:subClassOf :c-4635808-8917151 .
+
+:c-6231880-3503382 a owl:Class ;
+	rdfs:label "prijs best onderzoeksartikel"@nl ;
+	rdfs:subClassOf :c-3611955-1848520 .
+
+:c-6234708-4996415 a owl:Class ;
+	rdfs:label "conferentiezaal"@nl ;
+	rdfs:subClassOf :c-5968683-1644775 .
+
+:c-6274133-4821320 a owl:Class ;
+	rdfs:label "commissie"@nl .
+
+:c-6301171-0350928 a owl:Class ;
+	rdfs:label "hotel"@nl ;
+	rdfs:subClassOf :c-5968683-1644775 .
+
+:c-6375150-4550411 a owl:Class ;
+	rdfs:label "voorzitter programmacommissie"@nl ;
+	rdfs:subClassOf :c-1972856-6347020 .
+
+:c-6439682-6886335 a owl:Class ;
+	rdfs:label "auteur van artikel"@nl ;
+	rdfs:subClassOf :c-2254450-4586419 , _:node1e05bstv6x12 .
+
+_:node1e05bstv6x12 a owl:Restriction ;
+	owl:onProperty :op-2677692-8466254 ;
+	owl:someValuesFrom :c-4918056-1133581 .
+
+:c-6439682-6886335 rdfs:subClassOf _:node1e05bstv6x13 .
+
+_:node1e05bstv6x13 a owl:Restriction ;
+	owl:onProperty :op-2677692-8466254 ;
+	owl:someValuesFrom :c-6231880-3503382 .
+
+:c-6596252-9744231 a owl:Class ;
+	rdfs:label "auteur van studenten artikel"@nl ;
+	rdfs:subClassOf :c-2254450-4586419 , _:node1e05bstv6x14 .
+
+_:node1e05bstv6x14 a owl:Restriction ;
+	owl:onProperty :op-2677692-8466254 ;
+	owl:someValuesFrom :c-9682654-1715688 .
+
+:c-6675660-8952876 a owl:Class ;
+	rdfs:label "artikel"@nl ;
+	owl:equivalentClass _:node1e05bstv6x15 .
+
+_:node1e05bstv6x15 a owl:Restriction ;
+	owl:onProperty :op-9701620-7189823 ;
+	owl:someValuesFrom :c-9613134-7598056 .
+
+:c-6675660-8952876 rdfs:subClassOf :c-8182503-6500256 .
+
+:c-6793756-5864678 a owl:Class ;
+	rdfs:label "deadline indiening abstract"@nl ;
+	rdfs:subClassOf :c-7751948-8710710 .
+
+:c-6861301-4279518 a owl:Class ;
+	rdfs:label "webmaster"@nl ;
+	rdfs:subClassOf :c-1972856-6347020 .
+
+:c-6862422-1074285 a owl:Class ;
+	rdfs:label "programmaccommissie"@nl ;
+	rdfs:subClassOf :c-6274133-4821320 .
+
+:c-7022471-1312901 a owl:Class ;
+	rdfs:label "registratie SIGKDD lid"@nl ;
+	rdfs:subClassOf :c-4635808-8917151 .
+
+:c-7751948-8710710 a owl:Class ;
+	rdfs:label "deadline"@nl .
+
+:c-8182503-6500256 a owl:Class ;
+	rdfs:label "document"@nl .
+
+:c-9613134-7598056 a owl:Class ;
+	rdfs:label "deadline indiening artikel"@nl ;
+	rdfs:subClassOf :c-7751948-8710710 .
+
+:c-9626850-3633738 a owl:Class ;
+	rdfs:label "best artikel prijzencommissie"@nl ;
+	rdfs:subClassOf :c-6274133-4821320 .
+
+:c-9682654-1715688 a owl:Class ;
+	rdfs:label "prijs best studenten artikel"@nl ;
+	rdfs:subClassOf :c-3611955-1848520 .
+
+:c-9721516-2947564 a owl:Class ;
+	rdfs:label "brons sponsor"@nl ;
+	rdfs:subClassOf :c-3231912-8987055 .
+
+:c-9909329-2578996 a owl:Class ;
+	rdfs:label "goud sponsor"@nl ;
+	rdfs:subClassOf :c-3231912-8987055 .

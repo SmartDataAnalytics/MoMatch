@@ -1,0 +1,1682 @@
+@prefix : <http://iasted_pt#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix iasted: <http://iasted#> .
+
+<http://iasted_pt> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+:op-0416141-8905935 a owl:ObjectProperty ;
+	rdfs:label "obtem"@pt ;
+	rdfs:range :c-3109258-8619154 ;
+	rdfs:domain :c-9199378-1294992 .
+
+:op-0937704-8390908 a owl:ObjectProperty ;
+	rdfs:label "é enviado depois"@pt ;
+	rdfs:domain :c-3109258-8619154 ;
+	rdfs:range :c-6607687-6999130 .
+
+:op-2607449-4695022 a owl:ObjectProperty ;
+	rdfs:label "é situado dentro"@pt ;
+	rdfs:domain _:node1e05d730mx1 .
+
+_:node1e05d730mx1 a owl:Class ;
+	owl:unionOf _:node1e05d730mx2 .
+
+_:node1e05d730mx2 rdf:first :c-0738384-6523840 ;
+	rdf:rest _:node1e05d730mx3 .
+
+_:node1e05d730mx3 rdf:first :c-4224791-0163677 ;
+	rdf:rest _:node1e05d730mx4 .
+
+_:node1e05d730mx4 rdf:first :c-7233763-7387929 ;
+	rdf:rest rdf:nil .
+
+:op-2607449-4695022 rdfs:range _:node1e05d730mx5 .
+
+_:node1e05d730mx5 a owl:Class ;
+	owl:unionOf _:node1e05d730mx6 .
+
+_:node1e05d730mx6 rdf:first :c-0738384-6523840 ;
+	rdf:rest _:node1e05d730mx7 .
+
+_:node1e05d730mx7 rdf:first :c-3547490-7485262 ;
+	rdf:rest _:node1e05d730mx8 .
+
+_:node1e05d730mx8 rdf:first :c-4224791-0163677 ;
+	rdf:rest _:node1e05d730mx9 .
+
+_:node1e05d730mx9 rdf:first :c-7233763-7387929 ;
+	rdf:rest rdf:nil .
+
+:op-2609853-8891006 a owl:ObjectProperty ;
+	rdfs:label "é pago por"@pt ;
+	rdfs:domain :c-8060988-0888188 ;
+	rdfs:range :c-9199378-1294992 ;
+	owl:inverseOf :op-8319266-8113442 .
+
+:op-3570509-9967022 a owl:ObjectProperty ;
+	rdfs:label "é feito dentro"@pt ;
+	rdfs:domain :c-7173221-6167251 ;
+	rdfs:range _:node1e05d730mx10 .
+
+_:node1e05d730mx10 a owl:Class ;
+	owl:unionOf _:node1e05d730mx11 .
+
+_:node1e05d730mx11 rdf:first :c-4224791-0163677 ;
+	rdf:rest _:node1e05d730mx12 .
+
+_:node1e05d730mx12 rdf:first :c-6607687-6999130 ;
+	rdf:rest rdf:nil .
+
+:op-3637567-3846325 a owl:ObjectProperty ;
+	rdfs:label "assina"@pt ;
+	rdfs:range :c-3109258-8619154 ;
+	rdfs:domain :c-9199378-1294992 .
+
+:op-3677329-7343996 a owl:ObjectProperty ;
+	rdfs:label "é ocupado por"@pt ;
+	rdfs:range :c-9199378-1294992 ;
+	owl:inverseOf :op-7606117-0368770 ;
+	rdfs:domain _:node1e05d730mx13 .
+
+_:node1e05d730mx13 a owl:Class ;
+	owl:unionOf _:node1e05d730mx14 .
+
+_:node1e05d730mx14 rdf:first :c-0738384-6523840 ;
+	rdf:rest _:node1e05d730mx15 .
+
+_:node1e05d730mx15 rdf:first :c-3547490-7485262 ;
+	rdf:rest _:node1e05d730mx16 .
+
+_:node1e05d730mx16 rdf:first :c-7233763-7387929 ;
+	rdf:rest rdf:nil .
+
+:op-3678400-2398046 a owl:ObjectProperty ;
+	rdfs:label "é usado por"@pt ;
+	rdfs:domain :c-3109258-8619154 ;
+	rdfs:range :c-9199378-1294992 .
+
+:op-3706849-9261007 a owl:ObjectProperty ;
+	rdfs:label "de"@pt ;
+	rdfs:domain :c-9199378-1294992 ;
+	rdfs:range _:node1e05d730mx17 .
+
+_:node1e05d730mx17 a owl:Class ;
+	owl:unionOf _:node1e05d730mx18 .
+
+_:node1e05d730mx18 rdf:first :c-3109258-8619154 ;
+	rdf:rest _:node1e05d730mx19 .
+
+_:node1e05d730mx19 rdf:first :c-7173221-6167251 ;
+	rdf:rest rdf:nil .
+
+:op-3842500-8293915 a owl:ObjectProperty ;
+	rdfs:label "é usado para"@pt ;
+	rdfs:domain :c-3109258-8619154 ;
+	rdfs:range _:node1e05d730mx20 .
+
+_:node1e05d730mx20 a owl:Class ;
+	owl:unionOf _:node1e05d730mx21 .
+
+_:node1e05d730mx21 rdf:first :c-7173221-6167251 ;
+	rdf:rest _:node1e05d730mx22 .
+
+_:node1e05d730mx22 rdf:first :c-8060988-0888188 ;
+	rdf:rest rdf:nil .
+
+:op-3885955-3366524 a owl:ObjectProperty ;
+	rdfs:label "é dado para"@pt ;
+	rdfs:domain :c-3109258-8619154 ;
+	rdfs:range :c-9199378-1294992 .
+
+:op-3938751-2752086 a owl:ObjectProperty ;
+	rdfs:label "é enviado antes"@pt ;
+	rdfs:domain :c-3109258-8619154 ;
+	rdfs:range :c-6607687-6999130 .
+
+:op-3991014-7903384 a owl:ObjectProperty ;
+	rdfs:label "está conectado com"@pt ;
+	rdfs:domain _:node1e05d730mx23 .
+
+_:node1e05d730mx23 a owl:Class ;
+	owl:unionOf _:node1e05d730mx24 .
+
+_:node1e05d730mx24 rdf:first :c-7173221-6167251 ;
+	rdf:rest _:node1e05d730mx25 .
+
+_:node1e05d730mx25 rdf:first :c-9199378-1294992 ;
+	rdf:rest rdf:nil .
+
+:op-3991014-7903384 rdfs:range _:node1e05d730mx26 .
+
+_:node1e05d730mx26 a owl:Class ;
+	owl:unionOf _:node1e05d730mx27 .
+
+_:node1e05d730mx27 rdf:first :c-3109258-8619154 ;
+	rdf:rest _:node1e05d730mx28 .
+
+_:node1e05d730mx28 rdf:first :c-4224791-0163677 ;
+	rdf:rest rdf:nil .
+
+:op-4130407-0432077 a owl:ObjectProperty ;
+	rdfs:label "fala em"@pt ;
+	rdfs:domain :c-9199378-1294992 ;
+	rdfs:range _:node1e05d730mx29 .
+
+_:node1e05d730mx29 a owl:Class ;
+	owl:unionOf _:node1e05d730mx30 .
+
+_:node1e05d730mx30 rdf:first :c-4224791-0163677 ;
+	rdf:rest _:node1e05d730mx31 .
+
+_:node1e05d730mx31 rdf:first :c-6607687-6999130 ;
+	rdf:rest rdf:nil .
+
+:op-4872457-9166273 a owl:ObjectProperty ;
+	rdfs:label "é necessário para"@pt ;
+	rdfs:domain :c-3109258-8619154 ;
+	rdfs:range :c-9199378-1294992 ;
+	owl:inverseOf :op-8276616-1882128 .
+
+:op-5008095-1824769 a owl:ObjectProperty ;
+	rdfs:label "é determinado por"@pt ;
+	rdfs:range :c-9199378-1294992 ;
+	owl:inverseOf :op-3706849-9261007 ;
+	rdfs:domain _:node1e05d730mx32 .
+
+_:node1e05d730mx32 a owl:Class ;
+	owl:unionOf _:node1e05d730mx33 .
+
+_:node1e05d730mx33 rdf:first :c-3109258-8619154 ;
+	rdf:rest _:node1e05d730mx34 .
+
+_:node1e05d730mx34 rdf:first :c-7173221-6167251 ;
+	rdf:rest rdf:nil .
+
+:op-5216970-9934918 a owl:ObjectProperty ;
+	rdfs:label "é pago para"@pt ;
+	rdfs:domain :c-8060988-0888188 ;
+	rdfs:range _:node1e05d730mx35 .
+
+_:node1e05d730mx35 a owl:Class ;
+	owl:unionOf _:node1e05d730mx36 .
+
+_:node1e05d730mx36 rdf:first :c-3109258-8619154 ;
+	rdf:rest _:node1e05d730mx37 .
+
+_:node1e05d730mx37 rdf:first :c-7173221-6167251 ;
+	rdf:rest rdf:nil .
+
+:op-5475746-8179331 a owl:ObjectProperty ;
+	rdfs:label "é projetado para"@pt ;
+	rdfs:range _:node1e05d730mx38 .
+
+_:node1e05d730mx38 a owl:Class ;
+	owl:unionOf _:node1e05d730mx39 .
+
+_:node1e05d730mx39 rdf:first :c-7173221-6167251 ;
+	rdf:rest _:node1e05d730mx40 .
+
+_:node1e05d730mx40 rdf:first :c-9199378-1294992 ;
+	rdf:rest rdf:nil .
+
+:op-5475746-8179331 rdfs:domain _:node1e05d730mx41 .
+
+_:node1e05d730mx41 a owl:Class ;
+	owl:unionOf _:node1e05d730mx42 .
+
+_:node1e05d730mx42 rdf:first :c-6607687-6999130 ;
+	rdf:rest _:node1e05d730mx43 .
+
+_:node1e05d730mx43 rdf:first :c-7173221-6167251 ;
+	rdf:rest _:node1e05d730mx44 .
+
+_:node1e05d730mx44 rdf:first :c-8060988-0888188 ;
+	rdf:rest rdf:nil .
+
+:op-5754142-9399187 a owl:ObjectProperty ;
+	rdfs:label "é feito de"@pt ;
+	rdfs:domain :c-3109258-8619154 ;
+	rdfs:range :c-3109258-8619154 .
+
+:op-5953484-1227973 a owl:ObjectProperty ;
+	rdfs:label "prepara"@pt ;
+	rdfs:range :c-3109258-8619154 ;
+	rdfs:domain :c-9199378-1294992 ;
+	owl:inverseOf :op-7471207-3148808 .
+
+:op-6235356-5943771 a owl:ObjectProperty ;
+	rdfs:label "é equipado por"@pt ;
+	rdfs:range :c-3109258-8619154 ;
+	rdfs:domain :c-4224791-0163677 .
+
+:op-6285888-1281403 a owl:ObjectProperty ;
+	rdfs:label "é assinado por"@pt ;
+	rdfs:domain :c-3109258-8619154 ;
+	rdfs:range :c-9199378-1294992 ;
+	owl:inverseOf :op-3637567-3846325 .
+
+:op-6366667-0256142 a owl:ObjectProperty ;
+	rdfs:label "é feito depois"@pt ;
+	rdfs:range :c-6607687-6999130 ;
+	rdfs:domain :c-7173221-6167251 .
+
+:op-6456963-7832039 a owl:ObjectProperty ;
+	rdfs:label "é pago dentro"@pt ;
+	rdfs:range :c-7233763-7387929 ;
+	rdfs:domain :c-8060988-0888188 .
+
+:op-6574746-5327546 a owl:ObjectProperty ;
+	rdfs:label "va por"@pt ;
+	rdfs:domain :c-3109258-8619154 ;
+	rdfs:range :c-7173221-6167251 .
+
+:op-6668953-5982993 a owl:ObjectProperty ;
+	rdfs:label "está presente"@pt ;
+	rdfs:range :c-6607687-6999130 ;
+	rdfs:domain :c-9199378-1294992 .
+
+:op-6884503-9990502 a owl:ObjectProperty ;
+	rdfs:label "é escrito por"@pt ;
+	rdfs:domain :c-3109258-8619154 ;
+	rdfs:range :c-9199378-1294992 .
+
+:op-7471207-3148808 a owl:ObjectProperty ;
+	rdfs:label "é preparado por"@pt ;
+	rdfs:domain :c-3109258-8619154 ;
+	rdfs:range :c-9199378-1294992 .
+
+:op-7606117-0368770 a owl:ObjectProperty ;
+	rdfs:label "ocupa"@pt ;
+	rdfs:domain :c-9199378-1294992 ;
+	rdfs:range _:node1e05d730mx45 .
+
+_:node1e05d730mx45 a owl:Class ;
+	owl:unionOf _:node1e05d730mx46 .
+
+_:node1e05d730mx46 rdf:first :c-0738384-6523840 ;
+	rdf:rest _:node1e05d730mx47 .
+
+_:node1e05d730mx47 rdf:first :c-3547490-7485262 ;
+	rdf:rest _:node1e05d730mx48 .
+
+_:node1e05d730mx48 rdf:first :c-7233763-7387929 ;
+	rdf:rest rdf:nil .
+
+:op-7718702-3844421 a owl:ObjectProperty ;
+	rdfs:label "é enviado por"@pt ;
+	rdfs:domain :c-3109258-8619154 ;
+	rdfs:range :c-9199378-1294992 .
+
+:op-7788266-6987214 a owl:ObjectProperty ;
+	rdfs:label "envia"@pt ;
+	rdfs:range :c-3109258-8619154 ;
+	rdfs:domain :c-9199378-1294992 ;
+	owl:inverseOf :op-7718702-3844421 .
+
+:op-8110988-8498072 a owl:ObjectProperty ;
+	rdfs:label "é visitado por"@pt ;
+	rdfs:range :c-9199378-1294992 ;
+	rdfs:domain _:node1e05d730mx49 .
+
+_:node1e05d730mx49 a owl:Class ;
+	owl:unionOf _:node1e05d730mx50 .
+
+_:node1e05d730mx50 rdf:first :c-0738384-6523840 ;
+	rdf:rest _:node1e05d730mx51 .
+
+_:node1e05d730mx51 rdf:first :c-3547490-7485262 ;
+	rdf:rest _:node1e05d730mx52 .
+
+_:node1e05d730mx52 rdf:first :c-7233763-7387929 ;
+	rdf:rest rdf:nil .
+
+:op-8276616-1882128 a owl:ObjectProperty ;
+	rdfs:label "necessita"@pt ;
+	rdfs:range :c-3109258-8619154 ;
+	rdfs:domain :c-9199378-1294992 .
+
+:op-8319266-8113442 a owl:ObjectProperty ;
+	rdfs:label "paga"@pt ;
+	rdfs:range :c-8060988-0888188 ;
+	rdfs:domain :c-9199378-1294992 .
+
+:op-8771769-4466668 a owl:ObjectProperty ;
+	rdfs:label "é feito antes"@pt ;
+	rdfs:range :c-6607687-6999130 ;
+	rdfs:domain :c-7173221-6167251 .
+
+:op-8963707-0457369 a owl:ObjectProperty ;
+	rdfs:label "está presente dentro"@pt ;
+	rdfs:domain :c-9199378-1294992 ;
+	rdfs:range _:node1e05d730mx53 .
+
+_:node1e05d730mx53 a owl:Class ;
+	owl:unionOf _:node1e05d730mx54 .
+
+_:node1e05d730mx54 rdf:first :c-4224791-0163677 ;
+	rdf:rest _:node1e05d730mx55 .
+
+_:node1e05d730mx55 rdf:first :c-6607687-6999130 ;
+	rdf:rest rdf:nil .
+
+:op-9117260-3934952 a owl:ObjectProperty ;
+	rdfs:label "escreve"@pt ;
+	rdfs:range :c-3109258-8619154 ;
+	rdfs:domain :c-9199378-1294992 ;
+	owl:inverseOf :op-6884503-9990502 .
+
+:op-9130198-5980520 a owl:ObjectProperty ;
+	rdfs:label "é pago com"@pt ;
+	rdfs:range :c-3109258-8619154 ;
+	rdfs:domain :c-8060988-0888188 .
+
+:ent-3762317-3853803 a owl:DatatypeProperty ;
+	rdfs:label "tem a quantia de"@pt ;
+	rdfs:domain :c-8060988-0888188 ;
+	rdfs:range xsd:int .
+
+:ent-3802572-7243140 a owl:DatatypeProperty ;
+	rdfs:label "feito até"@pt ;
+	rdfs:domain :c-3344055-0575075 ;
+	rdfs:range xsd:date .
+
+:ent-5705969-0122810 a owl:DatatypeProperty ;
+	rdfs:label "tem data"@pt ;
+	rdfs:domain :c-7173221-6167251 ;
+	rdfs:range xsd:dateTime .
+
+:c-0017240-3013645 a owl:Class ;
+	rdfs:label "apresentador hospedado no hotel"@pt ;
+	rdfs:subClassOf :c-0716520-6447325 , _:node1e05d730mx56 .
+
+_:node1e05d730mx56 a owl:Class ;
+	owl:intersectionOf _:node1e05d730mx58 .
+
+_:node1e05d730mx58 rdf:first _:node1e05d730mx57 .
+
+_:node1e05d730mx57 a owl:Restriction ;
+	owl:onProperty :op-7606117-0368770 ;
+	owl:someValuesFrom :c-2075414-7243007 .
+
+_:node1e05d730mx58 rdf:rest _:node1e05d730mx60 .
+
+_:node1e05d730mx60 rdf:first _:node1e05d730mx59 .
+
+_:node1e05d730mx59 a owl:Restriction ;
+	owl:onProperty :op-8319266-8113442 ;
+	owl:someValuesFrom :c-1741986-2394347 .
+
+_:node1e05d730mx60 rdf:rest rdf:nil .
+
+:c-0020291-0686348 a owl:Class ;
+	rdfs:label "transferência bancária"@pt ;
+	rdfs:subClassOf :c-4602881-0266304 .
+
+:c-0050564-1532152 a owl:Class ;
+	rdfs:label "recusa de  artigos"@pt ;
+	rdfs:subClassOf :c-6996592-2834023 .
+
+:c-0227339-4163375 a owl:Class ;
+	rdfs:label "data limite de notificação de aceitação"@pt ;
+	rdfs:subClassOf :c-3344055-0575075 .
+
+:c-0337384-3700850 a owl:Class ;
+	rdfs:label "apresentação em powerpoint"@pt ;
+	rdfs:subClassOf :c-2966207-8817752 .
+
+:c-0461576-4081626 a owl:Class ;
+	rdfs:label "patrocínio"@pt ;
+	owl:equivalentClass _:node1e05d730mx61 .
+
+_:node1e05d730mx61 a owl:Restriction ;
+	owl:onProperty :op-2609853-8891006 ;
+	owl:someValuesFrom :c-0903256-0825502 .
+
+:c-0461576-4081626 rdfs:subClassOf :c-8060988-0888188 .
+
+:c-0696433-4343983 a owl:Class ;
+	rdfs:label "atividade da conferência"@pt ;
+	rdfs:subClassOf :c-7173221-6167251 , _:node1e05d730mx62 .
+
+_:node1e05d730mx62 a owl:Restriction ;
+	owl:onProperty :op-3570509-9967022 ;
+	owl:someValuesFrom :c-3691841-3176418 .
+
+:c-0696433-4343983 rdfs:subClassOf _:node1e05d730mx63 .
+
+_:node1e05d730mx63 a owl:Restriction ;
+	owl:onProperty :op-3570509-9967022 ;
+	owl:someValuesFrom :c-7679353-4014713 .
+
+:c-0716520-6447325 a owl:Class ;
+	rdfs:label "delegado"@pt ;
+	owl:equivalentClass _:node1e05d730mx64 .
+
+_:node1e05d730mx64 a owl:Class ;
+	owl:intersectionOf _:node1e05d730mx66 .
+
+_:node1e05d730mx66 rdf:first _:node1e05d730mx65 .
+
+_:node1e05d730mx65 a owl:Restriction ;
+	owl:onProperty :op-6574746-5327546 ;
+	owl:someValuesFrom :c-8130135-1058848 .
+
+_:node1e05d730mx66 rdf:rest _:node1e05d730mx68 .
+
+_:node1e05d730mx68 rdf:first _:node1e05d730mx67 .
+
+_:node1e05d730mx67 a owl:Restriction ;
+	owl:onProperty :op-8963707-0457369 ;
+	owl:someValuesFrom :c-6818597-0088916 .
+
+_:node1e05d730mx68 rdf:rest _:node1e05d730mx70 .
+
+_:node1e05d730mx70 rdf:first _:node1e05d730mx69 .
+
+_:node1e05d730mx69 a owl:Restriction ;
+	owl:onProperty :op-8963707-0457369 ;
+	owl:someValuesFrom :c-7679353-4014713 .
+
+_:node1e05d730mx70 rdf:rest rdf:nil .
+
+:c-0716520-6447325 rdfs:subClassOf :c-9199378-1294992 , _:node1e05d730mx71 .
+
+_:node1e05d730mx71 a owl:Restriction ;
+	owl:onProperty :op-7606117-0368770 ;
+	owl:someValuesFrom :c-4213431-7771558 .
+
+:c-0716520-6447325 rdfs:subClassOf _:node1e05d730mx72 .
+
+_:node1e05d730mx72 a owl:Restriction ;
+	owl:onProperty :op-8319266-8113442 ;
+	owl:someValuesFrom :c-5944074-2970811 .
+
+:c-0716520-6447325 rdfs:subClassOf _:node1e05d730mx73 .
+
+_:node1e05d730mx73 a owl:Restriction ;
+	owl:onProperty :op-7606117-0368770 ;
+	owl:someValuesFrom :c-4647768-6333658 .
+
+:c-0716520-6447325 rdfs:subClassOf _:node1e05d730mx74 .
+
+_:node1e05d730mx74 a owl:Restriction ;
+	owl:onProperty :op-7788266-6987214 ;
+	owl:someValuesFrom :c-3929631-2944817 .
+
+:c-0716520-6447325 rdfs:subClassOf _:node1e05d730mx75 .
+
+_:node1e05d730mx75 a owl:Restriction ;
+	owl:onProperty :op-0416141-8905935 ;
+	owl:someValuesFrom :c-2834047-9966852 .
+
+:c-0716520-6447325 rdfs:subClassOf _:node1e05d730mx76 .
+
+_:node1e05d730mx76 a owl:Restriction ;
+	owl:onProperty :op-7606117-0368770 ;
+	owl:someValuesFrom :c-9062537-4321732 .
+
+:c-0716520-6447325 rdfs:subClassOf _:node1e05d730mx77 .
+
+_:node1e05d730mx77 a owl:Restriction ;
+	owl:onProperty :op-8276616-1882128 ;
+	owl:someValuesFrom :c-8244350-5480833 .
+
+:c-0738384-6523840 a owl:Class ;
+	rdfs:label "cidade"@pt ;
+	rdfs:subClassOf owl:Thing , _:node1e05d730mx78 .
+
+_:node1e05d730mx78 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-3547490-7485262 .
+
+:c-0841300-0696857 a owl:Class ;
+	rdfs:label "modelagem"@pt ;
+	rdfs:subClassOf :c-2516319-3163400 .
+
+:c-0903256-0825502 a owl:Class ;
+	rdfs:label "patrocinador"@pt ;
+	owl:equivalentClass _:node1e05d730mx79 .
+
+_:node1e05d730mx79 a owl:Restriction ;
+	owl:onProperty :op-3706849-9261007 ;
+	owl:someValuesFrom :c-0461576-4081626 .
+
+:c-0903256-0825502 rdfs:subClassOf :c-9199378-1294992 , _:node1e05d730mx80 .
+
+_:node1e05d730mx80 a owl:Restriction ;
+	owl:onProperty :op-7606117-0368770 ;
+	owl:someValuesFrom :c-1793512-5540611 .
+
+:c-0903256-0825502 rdfs:subClassOf _:node1e05d730mx81 .
+
+_:node1e05d730mx81 a owl:Restriction ;
+	owl:onProperty :op-7606117-0368770 ;
+	owl:someValuesFrom :c-4509770-1106612 .
+
+:c-0903256-0825502 rdfs:subClassOf _:node1e05d730mx82 .
+
+_:node1e05d730mx82 a owl:Restriction ;
+	owl:onProperty :op-7606117-0368770 ;
+	owl:someValuesFrom :c-5101505-0314631 .
+
+:c-0942718-3466525 a owl:Class ;
+	rdfs:label "data limite de inscrição"@pt ;
+	rdfs:subClassOf :c-3344055-0575075 .
+
+:c-0949346-9229285 a owl:Class ;
+	rdfs:label "publicação"@pt ;
+	rdfs:subClassOf :c-3109258-8619154 , _:node1e05d730mx83 .
+
+_:node1e05d730mx83 a owl:Restriction ;
+	owl:onProperty :op-5754142-9399187 ;
+	owl:someValuesFrom :c-4221446-7259987 .
+
+:c-1306061-7823219 a owl:Class ;
+	rdfs:label "atividade técnica"@pt ;
+	rdfs:subClassOf :c-0696433-4343983 , _:node1e05d730mx84 .
+
+_:node1e05d730mx84 a owl:Restriction ;
+	owl:onProperty :op-5008095-1824769 ;
+	owl:someValuesFrom :c-2924543-3301540 .
+
+:c-1337715-6779578 a owl:Class ;
+	rdfs:label "gorjeta"@pt ;
+	rdfs:subClassOf :c-8060988-0888188 , _:node1e05d730mx85 .
+
+_:node1e05d730mx85 a owl:Restriction ;
+	owl:onProperty :op-6456963-7832039 ;
+	owl:someValuesFrom :c-8898541-2952110 .
+
+:c-1504405-5165204 a owl:Class ;
+	rdfs:label "apresentador"@pt ;
+	owl:equivalentClass _:node1e05d730mx86 .
+
+_:node1e05d730mx86 a owl:Restriction ;
+	owl:onProperty :op-3706849-9261007 ;
+	owl:someValuesFrom :c-6741791-4745572 .
+
+:c-1504405-5165204 rdfs:subClassOf :c-3578555-8571373 , _:node1e05d730mx87 .
+
+_:node1e05d730mx87 a owl:Restriction ;
+	owl:onProperty :op-4130407-0432077 ;
+	owl:someValuesFrom :c-9474448-4127585 .
+
+:c-1506336-4151508 a owl:Class ;
+	rdfs:label "palestra"@pt ;
+	rdfs:subClassOf :c-0696433-4343983 , _:node1e05d730mx88 .
+
+_:node1e05d730mx88 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-8576620-1222792 .
+
+:c-1518808-3213781 a owl:Class ;
+	rdfs:label "cartão"@pt ;
+	rdfs:subClassOf :c-3109258-8619154 .
+
+:c-1669196-9523944 a owl:Class ;
+	rdfs:label "livro dos anais"@pt ;
+	rdfs:subClassOf :c-0949346-9229285 .
+
+:c-1714411-4288869 a owl:Class ;
+	rdfs:label "autor cd incluído nos anais"@pt ;
+	rdfs:subClassOf :c-3578555-8571373 , _:node1e05d730mx89 .
+
+_:node1e05d730mx89 a owl:Restriction ;
+	owl:onProperty :op-0416141-8905935 ;
+	owl:someValuesFrom :c-5761870-6932280 .
+
+:c-1741986-2394347 a owl:Class ;
+	rdfs:label "preço do hotel"@pt ;
+	rdfs:subClassOf :c-3269010-4371459 , _:node1e05d730mx90 .
+
+_:node1e05d730mx90 a owl:Restriction ;
+	owl:onProperty :op-2609853-8891006 ;
+	owl:someValuesFrom :c-0017240-3013645 .
+
+:c-1793512-5540611 a owl:Class ;
+	rdfs:label "cidade do patrocinador"@pt ;
+	rdfs:subClassOf :c-0738384-6523840 , _:node1e05d730mx91 .
+
+_:node1e05d730mx91 a owl:Restriction ;
+	owl:onProperty :op-3677329-7343996 ;
+	owl:someValuesFrom :c-0903256-0825502 .
+
+:c-1985861-3714136 a owl:Class ;
+	rdfs:label "breve introdução para a sessão do coordenador"@pt ;
+	rdfs:subClassOf :c-7925746-3812370 , _:node1e05d730mx92 .
+
+_:node1e05d730mx92 a owl:Restriction ;
+	owl:onProperty :op-5008095-1824769 ;
+	owl:someValuesFrom :c-3578555-8571373 .
+
+:c-1985861-3714136 rdfs:subClassOf _:node1e05d730mx93 .
+
+_:node1e05d730mx93 a owl:Restriction ;
+	owl:onProperty :op-3885955-3366524 ;
+	owl:someValuesFrom :c-6322695-7429748 .
+
+:c-2075414-7243007 a owl:Class ;
+	rdfs:label "hotel da conferência"@pt ;
+	rdfs:subClassOf :c-7233763-7387929 , _:node1e05d730mx94 .
+
+_:node1e05d730mx94 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-3691841-3176418 .
+
+:c-2075414-7243007 rdfs:subClassOf _:node1e05d730mx95 .
+
+_:node1e05d730mx95 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-0017240-3013645 .
+
+:c-2075414-7243007 rdfs:subClassOf _:node1e05d730mx96 .
+
+_:node1e05d730mx96 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-2307691-2924976 .
+
+:c-2121316-8643216 a owl:Class ;
+	rdfs:label "taxa de inscrição para autor participante livro"@pt ;
+	rdfs:subClassOf :c-5944074-2970811 , _:node1e05d730mx97 .
+
+_:node1e05d730mx97 a owl:Restriction ;
+	owl:onProperty :op-5216970-9934918 ;
+	owl:someValuesFrom :c-1669196-9523944 .
+
+:c-2233419-0302128 a owl:Class ;
+	rdfs:label "apresentação de vídeo"@pt ;
+	rdfs:subClassOf :c-2966207-8817752 .
+
+:c-2237964-8054335 a owl:Class ;
+	rdfs:label "simulação"@pt ;
+	rdfs:subClassOf :c-2516319-3163400 .
+
+:c-2280621-3902255 a owl:Class ;
+	rdfs:label "taxa de inscrição para não-autor"@pt ;
+	rdfs:subClassOf :c-5944074-2970811 , _:node1e05d730mx98 .
+
+_:node1e05d730mx98 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-9224616-9265407 .
+
+:c-2307691-2924976 a owl:Class ;
+	rdfs:label "cidade da conferência"@pt ;
+	rdfs:subClassOf :c-0738384-6523840 , _:node1e05d730mx99 .
+
+_:node1e05d730mx99 a owl:Restriction ;
+	owl:onProperty :op-8110988-8498072 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-2516319-3163400 a owl:Class ;
+	rdfs:label "pesquisa"@pt ;
+	rdfs:subClassOf :c-6996592-2834023 .
+
+:c-2613158-0109942 a owl:Class ;
+	rdfs:label "versão inicial"@pt ;
+	rdfs:subClassOf :c-7599405-4945362 , _:node1e05d730mx100 .
+
+_:node1e05d730mx100 a owl:Restriction ;
+	owl:onProperty :op-6574746-5327546 ;
+	owl:someValuesFrom :c-0050564-1532152 .
+
+:c-2620779-8182745 a owl:Class ;
+	rdfs:label "carro"@pt ;
+	rdfs:subClassOf :c-5245071-7359639 .
+
+:c-2638565-5859194 a owl:Class ;
+	rdfs:label "ônibus"@pt ;
+	rdfs:subClassOf :c-5245071-7359639 .
+
+:c-2716150-5658539 a owl:Class ;
+	rdfs:label "dia da conferência"@pt ;
+	rdfs:subClassOf :c-7679353-4014713 .
+
+:c-2834047-9966852 a owl:Class ;
+	rdfs:label "carta-convite"@pt ;
+	rdfs:subClassOf :c-7925746-3812370 , _:node1e05d730mx101 .
+
+_:node1e05d730mx101 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-2883405-4005620 a owl:Class ;
+	rdfs:label "estudante nao palestrante"@pt ;
+	owl:equivalentClass _:node1e05d730mx102 .
+
+_:node1e05d730mx102 a owl:Restriction ;
+	owl:onProperty :op-8319266-8113442 ;
+	owl:someValuesFrom :c-5457636-0188257 .
+
+:c-2883405-4005620 rdfs:subClassOf :c-9224616-9265407 .
+
+:c-2905208-4922004 a owl:Class ;
+	rdfs:label "lista de emails"@pt ;
+	rdfs:subClassOf :c-7925746-3812370 , _:node1e05d730mx103 .
+
+_:node1e05d730mx103 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-2906738-5275714 a owl:Class ;
+	rdfs:label "tutorial"@pt ;
+	owl:equivalentClass _:node1e05d730mx104 .
+
+_:node1e05d730mx104 a owl:Restriction ;
+	owl:onProperty :op-5008095-1824769 ;
+	owl:someValuesFrom :c-6672345-4478532 .
+
+:c-2906738-5275714 rdfs:subClassOf :c-1506336-4151508 .
+
+:c-2924543-3301540 a owl:Class ;
+	rdfs:label "comissão técnica"@pt ;
+	rdfs:subClassOf :c-0716520-6447325 , _:node1e05d730mx105 .
+
+_:node1e05d730mx105 a owl:Restriction ;
+	owl:onProperty :op-6574746-5327546 ;
+	owl:someValuesFrom :c-1306061-7823219 .
+
+:c-2966207-8817752 a owl:Class ;
+	rdfs:label "apresentação"@pt ;
+	rdfs:subClassOf :c-0696433-4343983 .
+
+:c-3011260-7446845 a owl:Class ;
+	rdfs:label "banquete"@pt ;
+	rdfs:subClassOf :c-9681067-6798485 , _:node1e05d730mx106 .
+
+_:node1e05d730mx106 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom _:node1e05d730mx107 .
+
+_:node1e05d730mx107 a owl:Class ;
+	owl:complementOf :c-3975093-7845557 .
+
+:c-3047732-1481869 a owl:Class ;
+	rdfs:label "formulário de inscrição no hotel"@pt ;
+	rdfs:subClassOf :c-4483594-7384981 , _:node1e05d730mx108 .
+
+_:node1e05d730mx108 a owl:Restriction ;
+	owl:onProperty :op-3938751-2752086 ;
+	owl:someValuesFrom :c-4652744-1447352 .
+
+:c-3109258-8619154 a owl:Class ;
+	rdfs:label "item"@pt .
+
+:c-3262194-0928318 a owl:Class ;
+	rdfs:label "excursionista da conferência"@pt ;
+	owl:equivalentClass _:node1e05d730mx109 .
+
+_:node1e05d730mx109 a owl:Restriction ;
+	owl:onProperty :op-6574746-5327546 ;
+	owl:someValuesFrom :c-6342862-3069550 .
+
+:c-3262194-0928318 rdfs:subClassOf :c-0716520-6447325 .
+
+:c-3266261-2012234 a owl:Class ;
+	rdfs:label "embarque"@pt ;
+	rdfs:subClassOf :c-5715884-7297169 .
+
+:c-3269010-4371459 a owl:Class ;
+	rdfs:label "taxa"@pt ;
+	rdfs:subClassOf :c-8060988-0888188 , _:node1e05d730mx110 .
+
+_:node1e05d730mx110 a owl:Restriction ;
+	owl:onProperty :op-9130198-5980520 ;
+	owl:someValuesFrom _:node1e05d730mx111 .
+
+_:node1e05d730mx111 a owl:Class ;
+	owl:unionOf _:node1e05d730mx112 .
+
+_:node1e05d730mx112 rdf:first :c-4602881-0266304 ;
+	rdf:rest _:node1e05d730mx113 .
+
+_:node1e05d730mx113 rdf:first :c-7827527-5366544 ;
+	rdf:rest rdf:nil .
+
+:c-3344055-0575075 a owl:Class ;
+	rdfs:label "data limite"@pt ;
+	rdfs:subClassOf :c-6607687-6999130 , _:node1e05d730mx114 .
+
+_:node1e05d730mx114 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-3413738-4953469 a owl:Class ;
+	rdfs:label "taxa de inscrição para não-membro"@pt ;
+	rdfs:subClassOf :c-5944074-2970811 , _:node1e05d730mx115 .
+
+_:node1e05d730mx115 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-4123587-5412829 .
+
+:c-3491093-0589183 a owl:Class ;
+	rdfs:label "pausa"@pt ;
+	rdfs:subClassOf :c-0696433-4343983 , _:node1e05d730mx116 .
+
+_:node1e05d730mx116 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-3547490-7485262 a owl:Class ;
+	rdfs:label "estado"@pt .
+
+:c-3578555-8571373 a owl:Class ;
+	rdfs:label "autor"@pt ;
+	rdfs:subClassOf :c-9843688-9466478 , _:node1e05d730mx117 .
+
+_:node1e05d730mx117 a owl:Restriction ;
+	owl:onProperty :op-5953484-1227973 ;
+	owl:someValuesFrom :c-8393788-3707617 .
+
+:c-3578555-8571373 rdfs:subClassOf _:node1e05d730mx118 .
+
+_:node1e05d730mx118 a owl:Restriction ;
+	owl:onProperty :op-3706849-9261007 ;
+	owl:someValuesFrom :c-1985861-3714136 .
+
+:c-3691841-3176418 a owl:Class ;
+	rdfs:label "estado da conferência"@pt ;
+	rdfs:subClassOf :c-3547490-7485262 , _:node1e05d730mx119 .
+
+_:node1e05d730mx119 a owl:Restriction ;
+	owl:onProperty :op-8110988-8498072 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-3692697-5533348 a owl:Class ;
+	rdfs:label "van"@pt ;
+	rdfs:subClassOf :c-5245071-7359639 .
+
+:c-3705141-1162682 a owl:Class ;
+	rdfs:label "taxa de embarque"@pt ;
+	rdfs:subClassOf :c-7899057-3448567 , _:node1e05d730mx120 .
+
+_:node1e05d730mx120 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-3266261-2012234 .
+
+:c-3847594-2213561 a owl:Class ;
+	rdfs:label "membro do iasted"@pt ;
+	owl:equivalentClass _:node1e05d730mx121 .
+
+_:node1e05d730mx121 a owl:Restriction ;
+	owl:onProperty :op-8319266-8113442 ;
+	owl:someValuesFrom :c-9079063-8383287 .
+
+:c-3847594-2213561 rdfs:subClassOf :c-0716520-6447325 .
+
+:c-3929631-2944817 a owl:Class ;
+	rdfs:label "formulário de inscrição"@pt ;
+	rdfs:subClassOf :c-4483594-7384981 , _:node1e05d730mx122 .
+
+_:node1e05d730mx122 a owl:Restriction ;
+	owl:onProperty :op-3938751-2752086 ;
+	owl:someValuesFrom :c-0942718-3466525 .
+
+:c-3929631-2944817 rdfs:subClassOf _:node1e05d730mx123 .
+
+_:node1e05d730mx123 a owl:Restriction ;
+	owl:onProperty :op-7718702-3844421 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-3975093-7845557 a owl:Class ;
+	rdfs:label "apresentador de um dia"@pt ;
+	owl:equivalentClass _:node1e05d730mx124 .
+
+_:node1e05d730mx124 a owl:Restriction ;
+	owl:onProperty :op-6668953-5982993 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-3975093-7845557 rdfs:subClassOf :c-0716520-6447325 .
+
+:c-4123587-5412829 a owl:Class ;
+	rdfs:label "não membro do iasted"@pt ;
+	owl:equivalentClass _:node1e05d730mx125 .
+
+_:node1e05d730mx125 a owl:Restriction ;
+	owl:onProperty :op-8319266-8113442 ;
+	owl:someValuesFrom :c-3413738-4953469 .
+
+:c-4123587-5412829 rdfs:subClassOf :c-0716520-6447325 .
+
+:c-4213431-7771558 a owl:Class ;
+	rdfs:label "estado do apresentador"@pt ;
+	rdfs:subClassOf :c-3547490-7485262 , _:node1e05d730mx126 .
+
+_:node1e05d730mx126 a owl:Restriction ;
+	owl:onProperty :op-3677329-7343996 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-4221446-7259987 a owl:Class ;
+	rdfs:label "versão final"@pt ;
+	rdfs:subClassOf :c-7599405-4945362 , _:node1e05d730mx127 .
+
+_:node1e05d730mx127 a owl:Restriction ;
+	owl:onProperty :op-6574746-5327546 ;
+	owl:someValuesFrom :c-7321415-5032317 .
+
+:c-4224791-0163677 a owl:Class ;
+	rdfs:label "local"@pt ;
+	rdfs:subClassOf owl:Thing , _:node1e05d730mx128 .
+
+_:node1e05d730mx128 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-3691841-3176418 .
+
+:c-4224791-0163677 rdfs:subClassOf _:node1e05d730mx129 .
+
+_:node1e05d730mx129 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-2307691-2924976 .
+
+:c-4483594-7384981 a owl:Class ;
+	rdfs:label "formulário"@pt ;
+	rdfs:subClassOf :c-7925746-3812370 , _:node1e05d730mx130 .
+
+_:node1e05d730mx130 a owl:Restriction ;
+	owl:onProperty :op-3885955-3366524 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-4509770-1106612 a owl:Class ;
+	rdfs:label "estado do patrocinador"@pt ;
+	rdfs:subClassOf :c-3547490-7485262 .
+
+:c-4602881-0266304 a owl:Class ;
+	rdfs:label "documento de pagamento"@pt ;
+	rdfs:subClassOf :c-7925746-3812370 , _:node1e05d730mx131 .
+
+_:node1e05d730mx131 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom _:node1e05d730mx132 .
+
+_:node1e05d730mx132 a owl:Class ;
+	owl:unionOf _:node1e05d730mx133 .
+
+_:node1e05d730mx133 rdf:first :c-3269010-4371459 ;
+	rdf:rest _:node1e05d730mx134 .
+
+_:node1e05d730mx134 rdf:first :c-7899057-3448567 ;
+	rdf:rest rdf:nil .
+
+:c-4647768-6333658 a owl:Class ;
+	rdfs:label "cidade do apresentador"@pt ;
+	rdfs:subClassOf :c-0738384-6523840 , _:node1e05d730mx135 .
+
+_:node1e05d730mx135 a owl:Restriction ;
+	owl:onProperty :op-3677329-7343996 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-4652744-1447352 a owl:Class ;
+	rdfs:label "data limite de reserva de hotel"@pt ;
+	rdfs:subClassOf :c-3344055-0575075 .
+
+:c-4764253-5514026 a owl:Class ;
+	rdfs:label "taxa de viagem extra"@pt ;
+	rdfs:subClassOf :c-3269010-4371459 , _:node1e05d730mx136 .
+
+_:node1e05d730mx136 a owl:Restriction ;
+	owl:onProperty :op-2609853-8891006 ;
+	owl:someValuesFrom :c-3262194-0928318 .
+
+:c-4764253-5514026 rdfs:subClassOf _:node1e05d730mx137 .
+
+_:node1e05d730mx137 a owl:Restriction ;
+	owl:onProperty :op-5216970-9934918 ;
+	owl:someValuesFrom :c-6342862-3069550 .
+
+:c-4908969-4602998 a owl:Class ;
+	rdfs:label "revisor"@pt ;
+	owl:equivalentClass _:node1e05d730mx138 .
+
+_:node1e05d730mx138 a owl:Restriction ;
+	owl:onProperty :op-3706849-9261007 ;
+	owl:someValuesFrom :c-5104475-1911137 .
+
+:c-4908969-4602998 rdfs:subClassOf :c-9843688-9466478 .
+
+:c-5026908-3344875 a owl:Class ;
+	rdfs:label "quarto de hotel"@pt ;
+	rdfs:subClassOf :c-4224791-0163677 , _:node1e05d730mx139 .
+
+_:node1e05d730mx139 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-2075414-7243007 .
+
+:c-5026908-3344875 rdfs:subClassOf _:node1e05d730mx140 .
+
+_:node1e05d730mx140 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-0017240-3013645 .
+
+:c-5101505-0314631 a owl:Class ;
+	rdfs:label "empresa patrocinadora"@pt ;
+	rdfs:subClassOf :c-7233763-7387929 , _:node1e05d730mx141 .
+
+_:node1e05d730mx141 a owl:Restriction ;
+	owl:onProperty :op-3677329-7343996 ;
+	owl:someValuesFrom :c-0903256-0825502 .
+
+:c-5101505-0314631 rdfs:subClassOf _:node1e05d730mx142 .
+
+_:node1e05d730mx142 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-4509770-1106612 .
+
+:c-5101505-0314631 rdfs:subClassOf _:node1e05d730mx143 .
+
+_:node1e05d730mx143 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-1793512-5540611 .
+
+:c-5104475-1911137 a owl:Class ;
+	rdfs:label "revisão"@pt ;
+	rdfs:subClassOf :c-7925746-3812370 , _:node1e05d730mx144 .
+
+_:node1e05d730mx144 a owl:Restriction ;
+	owl:onProperty :op-6884503-9990502 ;
+	owl:someValuesFrom :c-4908969-4602998 .
+
+:c-5245071-7359639 a owl:Class ;
+	rdfs:label "veículo de transporte"@pt ;
+	rdfs:subClassOf :c-3109258-8619154 , _:node1e05d730mx145 .
+
+_:node1e05d730mx145 a owl:Restriction ;
+	owl:onProperty :op-3678400-2398046 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-5254245-5119909 a owl:Class ;
+	rdfs:label "apresentador estudante"@pt ;
+	rdfs:subClassOf :c-1504405-5165204 .
+
+:c-5260394-8832502 a owl:Class ;
+	rdfs:label "discurso de boas vindas"@pt ;
+	rdfs:subClassOf :c-0696433-4343983 .
+
+:c-5337393-8813428 a owl:Class ;
+	rdfs:label "recepção de  artigos"@pt ;
+	rdfs:subClassOf :c-6996592-2834023 .
+
+:c-5396864-5522096 a owl:Class ;
+	rdfs:label "aluguel"@pt ;
+	rdfs:subClassOf :c-6996592-2834023 , _:node1e05d730mx146 .
+
+_:node1e05d730mx146 a owl:Restriction ;
+	owl:onProperty :op-3991014-7903384 ;
+	owl:someValuesFrom :c-2620779-8182745 .
+
+:c-5399266-7231740 a owl:Class ;
+	rdfs:label "formulário de informação aos autores"@pt ;
+	rdfs:subClassOf :c-4483594-7384981 , _:node1e05d730mx147 .
+
+_:node1e05d730mx147 a owl:Restriction ;
+	owl:onProperty :op-0937704-8390908 ;
+	owl:someValuesFrom :c-0227339-4163375 .
+
+:c-5409213-1299271 a owl:Class ;
+	rdfs:label "palestra plenária"@pt ;
+	owl:equivalentClass _:node1e05d730mx148 .
+
+_:node1e05d730mx148 a owl:Restriction ;
+	owl:onProperty :op-5008095-1824769 ;
+	owl:someValuesFrom :c-6158356-0456750 .
+
+:c-5409213-1299271 rdfs:subClassOf :c-1506336-4151508 .
+
+:c-5429347-0302714 a owl:Class ;
+	rdfs:label "equipamento audiovisual"@pt ;
+	rdfs:subClassOf :c-3109258-8619154 , _:node1e05d730mx149 .
+
+_:node1e05d730mx149 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-8576620-1222792 .
+
+:c-5429347-0302714 rdfs:subClassOf _:node1e05d730mx150 .
+
+_:node1e05d730mx150 a owl:Restriction ;
+	owl:onProperty :op-3678400-2398046 ;
+	owl:someValuesFrom :c-9843688-9466478 .
+
+:c-5429347-0302714 rdfs:subClassOf _:node1e05d730mx151 .
+
+_:node1e05d730mx151 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-9474448-4127585 .
+
+:c-5457636-0188257 a owl:Class ;
+	rdfs:label "taxa de inscrição para estudante"@pt ;
+	rdfs:subClassOf :c-5944074-2970811 , _:node1e05d730mx152 .
+
+_:node1e05d730mx152 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom _:node1e05d730mx153 .
+
+_:node1e05d730mx153 a owl:Class ;
+	owl:unionOf _:node1e05d730mx154 .
+
+_:node1e05d730mx154 rdf:first :c-2883405-4005620 ;
+	rdf:rest _:node1e05d730mx155 .
+
+_:node1e05d730mx155 rdf:first :c-5254245-5119909 ;
+	rdf:rest rdf:nil .
+
+:c-5506660-1129164 a owl:Class ;
+	rdfs:label "profissional nao palestrante"@pt ;
+	owl:equivalentClass _:node1e05d730mx156 .
+
+_:node1e05d730mx156 a owl:Restriction ;
+	owl:onProperty :op-8319266-8113442 ;
+	owl:someValuesFrom :c-2280621-3902255 .
+
+:c-5506660-1129164 rdfs:subClassOf :c-9224616-9265407 .
+
+:c-5586639-3139041 a owl:Class ;
+	rdfs:label "data limite para versão final artigo"@pt ;
+	rdfs:subClassOf :c-3344055-0575075 .
+
+:c-5715884-7297169 a owl:Class ;
+	rdfs:label "atividade pós conferência"@pt ;
+	rdfs:subClassOf :c-7173221-6167251 , _:node1e05d730mx157 .
+
+_:node1e05d730mx157 a owl:Restriction ;
+	owl:onProperty :op-6366667-0256142 ;
+	owl:someValuesFrom :c-7679353-4014713 .
+
+:c-5761870-6932280 a owl:Class ;
+	rdfs:label "cd dos anais"@pt ;
+	rdfs:subClassOf :c-0949346-9229285 .
+
+:c-5825956-9376372 a owl:Class ;
+	rdfs:label "computador"@pt ;
+	rdfs:subClassOf :c-5429347-0302714 .
+
+:c-5829729-6696387 a owl:Class ;
+	rdfs:label "data limite de submissão"@pt ;
+	rdfs:subClassOf :c-3344055-0575075 .
+
+:c-5944074-2970811 a owl:Class ;
+	rdfs:label "taxa de inscrição"@pt ;
+	rdfs:subClassOf :c-3269010-4371459 , _:node1e05d730mx158 .
+
+_:node1e05d730mx158 a owl:Restriction ;
+	owl:onProperty :op-5216970-9934918 ;
+	owl:someValuesFrom :c-0696433-4343983 .
+
+:c-5944074-2970811 rdfs:subClassOf _:node1e05d730mx159 .
+
+_:node1e05d730mx159 a owl:Restriction ;
+	owl:onProperty :op-2609853-8891006 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-5974082-4038243 a owl:Class ;
+	rdfs:label "escritório principal"@pt ;
+	rdfs:subClassOf :c-4224791-0163677 .
+
+:c-6158356-0456750 a owl:Class ;
+	rdfs:label "apresentador da palestra plenária"@pt ;
+	owl:equivalentClass _:node1e05d730mx160 .
+
+_:node1e05d730mx160 a owl:Restriction ;
+	owl:onProperty :op-3706849-9261007 ;
+	owl:someValuesFrom :c-2906738-5275714 .
+
+:c-6158356-0456750 rdfs:subClassOf :c-3578555-8571373 , _:node1e05d730mx161 .
+
+_:node1e05d730mx161 a owl:Restriction ;
+	owl:onProperty :op-4130407-0432077 ;
+	owl:someValuesFrom :c-9578874-5980671 .
+
+:c-6214719-2166894 a owl:Class ;
+	rdfs:label "cheque"@pt ;
+	rdfs:subClassOf :c-4602881-0266304 .
+
+:c-6322695-7429748 a owl:Class ;
+	rdfs:label "coordenador da sessão"@pt ;
+	owl:equivalentClass _:node1e05d730mx162 .
+
+_:node1e05d730mx162 a owl:Restriction ;
+	owl:onProperty :op-6574746-5327546 ;
+	owl:someValuesFrom :c-6963190-3913544 .
+
+:c-6322695-7429748 rdfs:subClassOf :c-0716520-6447325 , _:node1e05d730mx163 .
+
+_:node1e05d730mx163 a owl:Restriction ;
+	owl:onProperty :op-0416141-8905935 ;
+	owl:someValuesFrom :c-1985861-3714136 .
+
+:c-6342862-3069550 a owl:Class ;
+	rdfs:label "excursão de dia inteiro"@pt ;
+	rdfs:subClassOf :c-5715884-7297169 , _:node1e05d730mx164 .
+
+_:node1e05d730mx164 a owl:Restriction ;
+	owl:onProperty :op-3570509-9967022 ;
+	owl:someValuesFrom :c-7983646-1668227 .
+
+:c-6342862-3069550 rdfs:subClassOf _:node1e05d730mx165 .
+
+_:node1e05d730mx165 a owl:Restriction ;
+	owl:onProperty :op-3570509-9967022 ;
+	owl:someValuesFrom :c-7415522-7524789 .
+
+:c-6342862-3069550 rdfs:subClassOf _:node1e05d730mx166 .
+
+_:node1e05d730mx166 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-6607687-6999130 a owl:Class ;
+	rdfs:label "tempo"@pt .
+
+:c-6672345-4478532 a owl:Class ;
+	rdfs:label "apresentador de tutorial"@pt ;
+	owl:equivalentClass _:node1e05d730mx167 .
+
+_:node1e05d730mx167 a owl:Restriction ;
+	owl:onProperty :op-3706849-9261007 ;
+	owl:someValuesFrom :c-5409213-1299271 .
+
+:c-6672345-4478532 rdfs:subClassOf :c-3578555-8571373 , _:node1e05d730mx168 .
+
+_:node1e05d730mx168 a owl:Restriction ;
+	owl:onProperty :op-4130407-0432077 ;
+	owl:someValuesFrom :c-9578874-5980671 .
+
+:c-6741791-4745572 a owl:Class ;
+	rdfs:label "sessão"@pt ;
+	rdfs:subClassOf :c-1506336-4151508 , _:node1e05d730mx169 .
+
+_:node1e05d730mx169 a owl:Restriction ;
+	owl:onProperty :op-5008095-1824769 ;
+	owl:someValuesFrom _:node1e05d730mx170 .
+
+_:node1e05d730mx170 a owl:Class ;
+	owl:unionOf _:node1e05d730mx171 .
+
+_:node1e05d730mx171 rdf:first :c-3578555-8571373 ;
+	rdf:rest _:node1e05d730mx172 .
+
+_:node1e05d730mx172 rdf:first :c-6322695-7429748 ;
+	rdf:rest rdf:nil .
+
+:c-6741791-4745572 rdfs:subClassOf _:node1e05d730mx173 .
+
+_:node1e05d730mx173 a owl:Restriction ;
+	owl:onProperty :op-3570509-9967022 ;
+	owl:someValuesFrom :c-9474448-4127585 .
+
+:c-6800615-9192345 a owl:Class ;
+	rdfs:label "quarto simples de hotel"@pt ;
+	rdfs:subClassOf :c-5026908-3344875 .
+
+:c-6818597-0088916 a owl:Class ;
+	rdfs:label "prédio da conferência"@pt ;
+	rdfs:subClassOf :c-7233763-7387929 , _:node1e05d730mx174 .
+
+_:node1e05d730mx174 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-2307691-2924976 .
+
+:c-6818597-0088916 rdfs:subClassOf _:node1e05d730mx175 .
+
+_:node1e05d730mx175 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-3691841-3176418 .
+
+:c-6818597-0088916 rdfs:subClassOf _:node1e05d730mx176 .
+
+_:node1e05d730mx176 a owl:Restriction ;
+	owl:onProperty :op-3677329-7343996 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-6928680-0426658 a owl:Class ;
+	rdfs:label "projetor lcd"@pt ;
+	rdfs:subClassOf :c-5429347-0302714 .
+
+:c-6963190-3913544 a owl:Class ;
+	rdfs:label "apresentação do orador"@pt ;
+	rdfs:subClassOf :c-9798437-3119094 .
+
+:c-6996592-2834023 a owl:Class ;
+	rdfs:label "atividade pré conferência"@pt ;
+	rdfs:subClassOf :c-7173221-6167251 , _:node1e05d730mx177 .
+
+_:node1e05d730mx177 a owl:Restriction ;
+	owl:onProperty :op-8771769-4466668 ;
+	owl:someValuesFrom :c-7679353-4014713 .
+
+:c-7173221-6167251 a owl:Class ;
+	rdfs:label "atividade"@pt .
+
+:c-7233763-7387929 a owl:Class ;
+	rdfs:label "prédio"@pt ;
+	rdfs:subClassOf :c-4224791-0163677 .
+
+:c-7305869-8380204 a owl:Class ;
+	rdfs:label "quarto duplo de hotel"@pt ;
+	rdfs:subClassOf :c-5026908-3344875 .
+
+:c-7321415-5032317 a owl:Class ;
+	rdfs:label "aceitação de artigos"@pt ;
+	rdfs:subClassOf :c-6996592-2834023 .
+
+:c-7415522-7524789 a owl:Class ;
+	rdfs:label "dia da viagem"@pt ;
+	rdfs:subClassOf :c-6607687-6999130 , _:node1e05d730mx178 .
+
+_:node1e05d730mx178 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-7516912-0355004 a owl:Class ;
+	rdfs:label "professor funcionário"@pt ;
+	rdfs:subClassOf :c-1504405-5165204 .
+
+:c-7557181-1810793 a owl:Class ;
+	rdfs:label "palestra do orador"@pt ;
+	rdfs:subClassOf :c-6741791-4745572 .
+
+:c-7599405-4945362 a owl:Class ;
+	rdfs:label "submissão"@pt ;
+	rdfs:subClassOf :c-7925746-3812370 , _:node1e05d730mx179 .
+
+_:node1e05d730mx179 a owl:Restriction ;
+	owl:onProperty :op-6884503-9990502 ;
+	owl:someValuesFrom :c-9843688-9466478 .
+
+:c-7679353-4014713 a owl:Class ;
+	rdfs:label "dias da conferência"@pt ;
+	rdfs:subClassOf :c-6607687-6999130 , _:node1e05d730mx180 .
+
+_:node1e05d730mx180 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-7697429-1686998 a owl:Class ;
+	rdfs:label "lista de presença"@pt ;
+	rdfs:subClassOf :c-7925746-3812370 , _:node1e05d730mx181 .
+
+_:node1e05d730mx181 a owl:Restriction ;
+	owl:onProperty :op-6285888-1281403 ;
+	owl:someValuesFrom :c-8576620-1222792 .
+
+:c-7697429-1686998 rdfs:subClassOf _:node1e05d730mx182 .
+
+_:node1e05d730mx182 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-9474448-4127585 .
+
+:c-7827527-5366544 a owl:Class ;
+	rdfs:label "cartão de crédito"@pt ;
+	rdfs:subClassOf :c-1518808-3213781 , _:node1e05d730mx183 .
+
+_:node1e05d730mx183 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom _:node1e05d730mx184 .
+
+_:node1e05d730mx184 a owl:Class ;
+	owl:unionOf _:node1e05d730mx185 .
+
+_:node1e05d730mx185 rdf:first :c-0461576-4081626 ;
+	rdf:rest _:node1e05d730mx186 .
+
+_:node1e05d730mx186 rdf:first :c-3269010-4371459 ;
+	rdf:rest _:node1e05d730mx187 .
+
+_:node1e05d730mx187 rdf:first :c-7899057-3448567 ;
+	rdf:rest rdf:nil .
+
+:c-7899057-3448567 a owl:Class ;
+	rdfs:label "taxa"@pt ;
+	rdfs:subClassOf :c-8060988-0888188 .
+
+:c-7925746-3812370 a owl:Class ;
+	rdfs:label "documento"@pt ;
+	rdfs:subClassOf :c-3109258-8619154 .
+
+:c-7983646-1668227 a owl:Class ;
+	rdfs:label "cidade da viagem"@pt ;
+	rdfs:subClassOf :c-0738384-6523840 , _:node1e05d730mx188 .
+
+_:node1e05d730mx188 a owl:Restriction ;
+	owl:onProperty :op-8110988-8498072 ;
+	owl:someValuesFrom :c-3262194-0928318 .
+
+:c-8060988-0888188 a owl:Class ;
+	rdfs:label "custo"@pt .
+
+:c-8063478-2533059 a owl:Class ;
+	rdfs:label "táxi"@pt ;
+	rdfs:subClassOf :c-5245071-7359639 .
+
+:c-8130135-1058848 a owl:Class ;
+	rdfs:label "inscrição"@pt ;
+	rdfs:subClassOf :c-0696433-4343983 , _:node1e05d730mx189 .
+
+_:node1e05d730mx189 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-8184533-1782408 a owl:Class ;
+	rdfs:label "taxa sobre valor adicionado"@pt ;
+	rdfs:subClassOf :c-7899057-3448567 .
+
+:c-8244350-5480833 a owl:Class ;
+	rdfs:label "visto"@pt ;
+	rdfs:subClassOf :c-7925746-3812370 , _:node1e05d730mx190 .
+
+_:node1e05d730mx190 a owl:Restriction ;
+	owl:onProperty :op-4872457-9166273 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-8393788-3707617 a owl:Class ;
+	rdfs:label "transparências"@pt ;
+	rdfs:subClassOf :c-7925746-3812370 , _:node1e05d730mx191 .
+
+_:node1e05d730mx191 a owl:Restriction ;
+	owl:onProperty :op-7471207-3148808 ;
+	owl:someValuesFrom :c-9843688-9466478 .
+
+:c-8576620-1222792 a owl:Class ;
+	rdfs:label "ouvinte"@pt ;
+	rdfs:subClassOf :c-0716520-6447325 , _:node1e05d730mx192 .
+
+_:node1e05d730mx192 a owl:Restriction ;
+	owl:onProperty :op-8963707-0457369 ;
+	owl:someValuesFrom _:node1e05d730mx193 .
+
+_:node1e05d730mx193 a owl:Class ;
+	owl:unionOf _:node1e05d730mx194 .
+
+_:node1e05d730mx194 rdf:first :c-9474448-4127585 ;
+	rdf:rest _:node1e05d730mx195 .
+
+_:node1e05d730mx195 rdf:first :c-9578874-5980671 ;
+	rdf:rest rdf:nil .
+
+:c-8576620-1222792 rdfs:subClassOf _:node1e05d730mx196 .
+
+_:node1e05d730mx196 a owl:Restriction ;
+	owl:onProperty :op-3637567-3846325 ;
+	owl:someValuesFrom :c-7697429-1686998 .
+
+:c-8744371-5997436 a owl:Class ;
+	rdfs:label "universidade do apresentador"@pt ;
+	rdfs:subClassOf :c-7233763-7387929 , _:node1e05d730mx197 .
+
+_:node1e05d730mx197 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-4213431-7771558 .
+
+:c-8744371-5997436 rdfs:subClassOf _:node1e05d730mx198 .
+
+_:node1e05d730mx198 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-4647768-6333658 .
+
+:c-8871416-8837648 a owl:Class ;
+	rdfs:label "retroprojetor"@pt ;
+	rdfs:subClassOf :c-5429347-0302714 .
+
+:c-8898541-2952110 a owl:Class ;
+	rdfs:label "restaurante da conferência"@pt ;
+	rdfs:subClassOf :c-7233763-7387929 , _:node1e05d730mx199 .
+
+_:node1e05d730mx199 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-3691841-3176418 .
+
+:c-8898541-2952110 rdfs:subClassOf _:node1e05d730mx200 .
+
+_:node1e05d730mx200 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-2307691-2924976 .
+
+:c-8898541-2952110 rdfs:subClassOf _:node1e05d730mx201 .
+
+_:node1e05d730mx201 a owl:Restriction ;
+	owl:onProperty :op-3677329-7343996 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-9062537-4321732 a owl:Class ;
+	rdfs:label "casa do apresentador"@pt ;
+	rdfs:subClassOf :c-7233763-7387929 , _:node1e05d730mx202 .
+
+_:node1e05d730mx202 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-4647768-6333658 .
+
+:c-9062537-4321732 rdfs:subClassOf _:node1e05d730mx203 .
+
+_:node1e05d730mx203 a owl:Restriction ;
+	owl:onProperty :op-3677329-7343996 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-9062537-4321732 rdfs:subClassOf _:node1e05d730mx204 .
+
+_:node1e05d730mx204 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-4213431-7771558 .
+
+:c-9079063-8383287 a owl:Class ;
+	rdfs:label "taxa de inscrição para membro"@pt ;
+	rdfs:subClassOf :c-5944074-2970811 , _:node1e05d730mx205 .
+
+_:node1e05d730mx205 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-3847594-2213561 .
+
+:c-9199378-1294992 a owl:Class ;
+	rdfs:label "pessoa"@pt .
+
+:c-9224616-9265407 a owl:Class ;
+	rdfs:label "nao palestrante"@pt ;
+	rdfs:subClassOf :c-0716520-6447325 ;
+	owl:disjointWith :c-9843688-9466478 .
+
+:c-9287556-8804145 a owl:Class ;
+	rdfs:label "aeroporto da conferência"@pt ;
+	rdfs:subClassOf :c-7233763-7387929 , _:node1e05d730mx206 .
+
+_:node1e05d730mx206 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-2307691-2924976 .
+
+:c-9287556-8804145 rdfs:subClassOf _:node1e05d730mx207 .
+
+_:node1e05d730mx207 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-3691841-3176418 .
+
+:c-9410140-6805351 a owl:Class ;
+	rdfs:label "taxa de inscrição para autor participante cd"@pt ;
+	rdfs:subClassOf :c-5944074-2970811 , _:node1e05d730mx208 .
+
+_:node1e05d730mx208 a owl:Restriction ;
+	owl:onProperty :op-5216970-9934918 ;
+	owl:someValuesFrom :c-5761870-6932280 .
+
+:c-9474448-4127585 a owl:Class ;
+	rdfs:label "sala da sessão"@pt ;
+	rdfs:subClassOf :c-4224791-0163677 , _:node1e05d730mx209 .
+
+_:node1e05d730mx209 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-6818597-0088916 .
+
+:c-9474448-4127585 rdfs:subClassOf _:node1e05d730mx210 .
+
+_:node1e05d730mx210 a owl:Restriction ;
+	owl:onProperty :op-6235356-5943771 ;
+	owl:someValuesFrom :c-5429347-0302714 .
+
+:c-9578874-5980671 a owl:Class ;
+	rdfs:label "salão da conferência"@pt ;
+	rdfs:subClassOf :c-4224791-0163677 , _:node1e05d730mx211 .
+
+_:node1e05d730mx211 a owl:Restriction ;
+	owl:onProperty :op-2607449-4695022 ;
+	owl:someValuesFrom :c-6818597-0088916 .
+
+:c-9681067-6798485 a owl:Class ;
+	rdfs:label "programa social"@pt ;
+	rdfs:subClassOf :c-0696433-4343983 , _:node1e05d730mx212 .
+
+_:node1e05d730mx212 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-9791158-1461143 a owl:Class ;
+	rdfs:label "fuso horário"@pt .
+
+:c-9798437-3119094 a owl:Class ;
+	rdfs:label "introdução"@pt ;
+	rdfs:subClassOf :c-0696433-4343983 .
+
+:c-9827675-4957201 a owl:Class ;
+	rdfs:label "autor livro incluído nos anais"@pt ;
+	rdfs:subClassOf :c-3578555-8571373 , _:node1e05d730mx213 .
+
+_:node1e05d730mx213 a owl:Restriction ;
+	owl:onProperty :op-0416141-8905935 ;
+	owl:someValuesFrom :c-1669196-9523944 .
+
+:c-9843688-9466478 a owl:Class ;
+	rdfs:label "palestrante"@pt ;
+	rdfs:subClassOf :c-0716520-6447325 , _:node1e05d730mx214 .
+
+_:node1e05d730mx214 a owl:Restriction ;
+	owl:onProperty :op-3706849-9261007 ;
+	owl:someValuesFrom :c-1506336-4151508 .
+
+:c-9843688-9466478 rdfs:subClassOf _:node1e05d730mx215 .
+
+_:node1e05d730mx215 a owl:Restriction ;
+	owl:onProperty :op-9117260-3934952 ;
+	owl:someValuesFrom :c-4221446-7259987 .
+
+:c-9869675-4545165 a owl:Class ;
+	rdfs:label "moeda"@pt .
+
+:c-9928000-4824203 a owl:Class ;
+	rdfs:label "coquetel de recepção"@pt ;
+	rdfs:subClassOf :c-0696433-4343983 , _:node1e05d730mx216 .
+
+_:node1e05d730mx216 a owl:Restriction ;
+	owl:onProperty :op-5475746-8179331 ;
+	owl:someValuesFrom :c-0716520-6447325 .
+
+:c-9987743-7779272 a owl:Class ;
+	rdfs:label "aparelho de vídeo cassete"@pt ;
+	rdfs:subClassOf :c-5429347-0302714 .
+
+iasted:Cancun a owl:NamedIndividual , :c-2307691-2924976 .
+
+iasted:Chichen_Itza a owl:NamedIndividual , :c-7983646-1668227 .
+
+iasted:Mexico a owl:NamedIndividual , :c-3691841-3176418 .
+
+iasted:peso a owl:NamedIndividual , :c-9869675-4545165 .

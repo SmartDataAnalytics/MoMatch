@@ -1,0 +1,525 @@
+@prefix : <http://cmt_de#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://cmt_de> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+:op-0065286-3503316 a owl:ObjectProperty ;
+	rdfs:label "zugewiesen zu"@de ;
+	rdfs:domain :c-0277212-8406046 ;
+	rdfs:range :c-5062955-9564132 .
+
+:op-0136947-6585575 a owl:ObjectProperty ;
+	rdfs:label "virtuelles Treffen veranlasst von"@de ;
+	rdfs:range :c-2600954-3812137 ;
+	rdfs:domain :c-7914897-1988765 .
+
+:op-0603706-6484397 a owl:ObjectProperty ;
+	rdfs:label "zugewiesen von Administrator"@de ;
+	rdfs:range :c-2600954-3812137 ;
+	rdfs:domain :c-5062955-9564132 .
+
+:op-0995455-0619369 a owl:ObjectProperty ;
+	rdfs:label "hat Kriterien zu Gutachten eingefügt"@de ;
+	rdfs:domain :c-2600954-3812137 ;
+	rdfs:range :c-7914897-1988765 .
+
+:op-1108172-2047481 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "hat Gutachten geschrieben"@de ;
+	rdfs:range :c-2036030-6478102 ;
+	rdfs:domain :c-5062955-9564132 .
+
+:op-1123568-3504213 a owl:ObjectProperty ;
+	rdfs:label "Beitragszuordnung abgeschlossen von"@de ;
+	rdfs:range :c-2600954-3812137 ;
+	rdfs:domain :c-7914897-1988765 .
+
+:op-1333090-2653926 a owl:ObjectProperty ;
+	rdfs:label "hat Interessenskonflikt in Bezug auf"@de ;
+	rdfs:range :c-3386094-8929437 ;
+	rdfs:domain :c-9804348-4921383 .
+
+:op-1511461-8135444 a owl:ObjectProperty ;
+	rdfs:label "hat Mitglied"@de ;
+	rdfs:domain :c-3554876-1135672 ;
+	rdfs:range :c-4872876-3932965 ;
+	owl:inverseOf :op-5563137-2349843 .
+
+:op-1671215-9946432 a owl:ObjectProperty ;
+	rdfs:label "druckt Papierausdruck des Mailing-Manifests"@de ;
+	rdfs:domain :c-2600954-3812137 ;
+	rdfs:range :c-7914897-1988765 .
+
+:op-2010665-6629499 a owl:ObjectProperty ;
+	rdfs:label "hat die Zuordnung der Beiträge abgeschlossen"@de ;
+	rdfs:domain :c-2600954-3812137 ;
+	rdfs:range :c-7914897-1988765 ;
+	owl:inverseOf :op-1123568-3504213 .
+
+:op-2369093-6627419 a owl:ObjectProperty ;
+	rdfs:label "Gebotsphase gestartet von"@de ;
+	rdfs:range :c-2600954-3812137 ;
+	rdfs:domain :c-7914897-1988765 .
+
+:op-2406368-4587748 a owl:ObjectProperty ;
+	rdfs:label "bestimme maximale Anzahl an zugewiesenen Beiträgen"@de ;
+	rdfs:domain :c-2600954-3812137 ;
+	rdfs:range :c-4872876-3932965 .
+
+:op-2666186-7725287 a owl:ObjectProperty ;
+	rdfs:label "hat die Zeit des Begutachtens beendet"@de ;
+	rdfs:range :c-2036030-6478102 ;
+	rdfs:domain :c-7606498-1774261 .
+
+:op-2707356-6407444 a owl:ObjectProperty ;
+	rdfs:label "Teilnehmer von"@de ;
+	rdfs:range :c-7914897-1988765 ;
+	rdfs:domain :c-8082317-4346619 .
+
+:op-2899154-8812515 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "gelesen von Meta-Gutachter"@de ;
+	rdfs:domain :c-0277212-8406046 ;
+	rdfs:range :c-5336831-3519560 .
+
+:op-3286624-6409948 a owl:ObjectProperty ;
+	rdfs:label "hat Gegenstandsbereich"@de ;
+	rdfs:domain :c-0277212-8406046 ;
+	rdfs:range :c-7221579-7498183 .
+
+:op-3324750-0695052 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "hinzugefügt von"@de ;
+	rdfs:range :c-2600954-3812137 ;
+	rdfs:domain :c-4872876-3932965 ;
+	owl:inverseOf :op-3728281-3703353 .
+
+:op-3382350-0510939 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "geschrieben von"@de ;
+	rdfs:domain :c-0277212-8406046 ;
+	rdfs:range :c-7511748-5827387 ;
+	owl:inverseOf :op-7761501-2770581 .
+
+:op-3385838-2265419 a owl:ObjectProperty ;
+	rdfs:label "hat Teilnehmer"@de ;
+	rdfs:domain :c-7914897-1988765 ;
+	rdfs:range :c-8082317-4346619 ;
+	owl:inverseOf :op-2707356-6407444 .
+
+:op-3728281-3703353 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "hat hinzugefügt"@de ;
+	rdfs:domain :c-2600954-3812137 ;
+	rdfs:range :c-4872876-3932965 .
+
+:op-4119782-8661590 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "geschrieben von"@de ;
+	rdfs:domain :c-2036030-6478102 ;
+	rdfs:range :c-5062955-9564132 ;
+	owl:inverseOf :op-1108172-2047481 .
+
+:op-4243914-3706839 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "ist entschieden worden als"@de ;
+	rdfs:domain :c-0277212-8406046 ;
+	rdfs:range :c-1092336-2330592 .
+
+:op-4267478-9907556 a owl:ObjectProperty ;
+	rdfs:label "steht in Interessen-Konflikt mit Beitrag"@de ;
+	rdfs:range :c-0277212-8406046 ;
+	rdfs:domain _:node1e05ajannx1 .
+
+_:node1e05ajannx1 a owl:Class ;
+	owl:unionOf _:node1e05ajannx2 .
+
+_:node1e05ajannx2 rdf:first :c-2276280-7516043 ;
+	rdf:rest _:node1e05ajannx3 .
+
+_:node1e05ajannx3 rdf:first :c-5062955-9564132 ;
+	rdf:rest _:node1e05ajannx4 .
+
+_:node1e05ajannx4 rdf:first :c-7511748-5827387 ;
+	rdf:rest rdf:nil .
+
+:op-4369028-9162599 a owl:ObjectProperty ;
+	rdfs:label "hat Beitrag mitverfasst"@de ;
+	rdfs:range :c-0277212-8406046 ;
+	rdfs:domain :c-5403940-4193578 .
+
+:op-4385319-7522274 a owl:ObjectProperty ;
+	rdfs:label "hat die Beitrags-Zuordnungssoftware ausgeführt"@de ;
+	rdfs:domain :c-2600954-3812137 ;
+	rdfs:range :c-7914897-1988765 ;
+	owl:inverseOf :op-4513167-2261392 .
+
+:op-4513167-2261392 a owl:ObjectProperty ;
+	rdfs:label "Beitragszuordnungs-Software ausgeführt von"@de ;
+	rdfs:range :c-2600954-3812137 ;
+	rdfs:domain :c-7914897-1988765 .
+
+:op-5317809-8410933 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "abgewiesen von"@de ;
+	rdfs:domain :c-0277212-8406046 ;
+	rdfs:range :c-2600954-3812137 .
+
+:op-5367618-4635788 a owl:ObjectProperty ;
+	rdfs:label "Papierausdruck des Mailing-Manifests gedruckt von"@de ;
+	rdfs:range :c-2600954-3812137 ;
+	rdfs:domain :c-7914897-1988765 ;
+	owl:inverseOf :op-1671215-9946432 .
+
+:op-5563137-2349843 a owl:ObjectProperty ;
+	rdfs:label "ist Mitglied des Programm-Komitees"@de ;
+	rdfs:range :c-3554876-1135672 ;
+	rdfs:domain :c-4872876-3932965 .
+
+:op-5585072-3196242 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "abgeglichen von"@de ;
+	rdfs:domain :c-2636048-9047841 ;
+	rdfs:range :c-5062955-9564132 .
+
+:op-5588430-7223994 a owl:ObjectProperty ;
+	rdfs:label "hat Beitrag eingesendet"@de ;
+	rdfs:range :c-0277212-8406046 ;
+	rdfs:domain :c-7511748-5827387 .
+
+:op-5944487-2995547 a owl:ObjectProperty ;
+	rdfs:label "hat zugewiesen"@de ;
+	rdfs:domain :c-2600954-3812137 ;
+	rdfs:range :c-5062955-9564132 ;
+	owl:inverseOf :op-0603706-6484397 .
+
+:op-6570223-6428235 a owl:ObjectProperty ;
+	rdfs:label "Details eingefügt von"@de ;
+	rdfs:range :c-2600954-3812137 ;
+	rdfs:domain :c-7914897-1988765 .
+
+:op-6662152-2690641 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "hat Gebot erhalten"@de ;
+	rdfs:domain :c-0277212-8406046 ;
+	rdfs:range :c-2636048-9047841 .
+
+:op-6688188-2661083 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "hat abgeglichen"@de ;
+	rdfs:range :c-2636048-9047841 ;
+	rdfs:domain :c-5062955-9564132 ;
+	owl:inverseOf :op-5585072-3196242 .
+
+:op-6806056-6808473 a owl:ObjectProperty ;
+	rdfs:label "Kriterien zu Gutachten eingefügt von"@de ;
+	rdfs:range :c-2600954-3812137 ;
+	rdfs:domain :c-7914897-1988765 ;
+	owl:inverseOf :op-0995455-0619369 .
+
+:op-6999775-8658617 a owl:ObjectProperty ;
+	rdfs:label "hat Papier gelesen"@de ;
+	rdfs:range :c-0277212-8406046 ;
+	rdfs:domain :c-5062955-9564132 ;
+	owl:inverseOf :op-8860290-4901047 .
+
+:op-7066350-8155982 a owl:ObjectProperty ;
+	rdfs:label "mitverfasst von"@de ;
+	rdfs:domain :c-0277212-8406046 ;
+	rdfs:range :c-5403940-4193578 ;
+	owl:inverseOf :op-4369028-9162599 .
+
+:op-7181260-5606687 a owl:ObjectProperty , owl:FunctionalProperty ;
+	rdfs:label "zugewiesen von Gutachter"@de ;
+	rdfs:range :c-5062955-9564132 ;
+	rdfs:domain :c-5888543-5318130 ;
+	owl:inverseOf :op-8350630-9441009 .
+
+:op-7391170-1595630 a owl:ObjectProperty ;
+	rdfs:label "hat Details eingefügt in Bezug auf"@de ;
+	rdfs:domain :c-2600954-3812137 ;
+	rdfs:range :c-7914897-1988765 ;
+	owl:inverseOf :op-6570223-6428235 .
+
+:op-7761501-2770581 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "hat Beitrag geschrieben"@de ;
+	rdfs:range :c-0277212-8406046 ;
+	rdfs:domain :c-7511748-5827387 .
+
+:op-7851598-8792255 a owl:ObjectProperty , owl:FunctionalProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "akzeptiert von"@de ;
+	rdfs:domain :c-0277212-8406046 ;
+	rdfs:range :c-2600954-3812137 .
+
+:op-8350630-9441009 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "hat zugewiesen"@de ;
+	rdfs:domain :c-5062955-9564132 ;
+	rdfs:range :c-5888543-5318130 .
+
+:op-8743766-4367043 a owl:ObjectProperty ;
+	rdfs:label "hat die Gebotsphase gestartet"@de ;
+	rdfs:domain :c-2600954-3812137 ;
+	rdfs:range :c-7914897-1988765 ;
+	owl:inverseOf :op-2369093-6627419 .
+
+:op-8860290-4901047 a owl:ObjectProperty ;
+	rdfs:label "gelesen von Gutachter"@de ;
+	rdfs:domain :c-0277212-8406046 ;
+	rdfs:range :c-5062955-9564132 .
+
+:op-9131907-0871491 a owl:ObjectProperty ;
+	rdfs:label "ist zugeordnet worden"@de ;
+	rdfs:range :c-0277212-8406046 ;
+	rdfs:domain :c-5062955-9564132 ;
+	owl:inverseOf :op-0065286-3503316 .
+
+:op-9262861-2168864 a owl:ObjectProperty , owl:FunctionalProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "hat akzeptiert"@de ;
+	rdfs:range :c-0277212-8406046 ;
+	rdfs:domain :c-2600954-3812137 ;
+	owl:inverseOf :op-7851598-8792255 .
+
+:op-9668399-9499203 a owl:ObjectProperty ;
+	rdfs:label "hat virtuelles Treffen veranlasst"@de ;
+	rdfs:domain :c-2600954-3812137 ;
+	rdfs:range :c-7914897-1988765 ;
+	owl:inverseOf :op-0136947-6585575 .
+
+:op-9724235-4357611 a owl:ObjectProperty , owl:InverseFunctionalProperty ;
+	rdfs:label "hat Papier abgelehnt"@de ;
+	rdfs:range :c-0277212-8406046 ;
+	rdfs:domain :c-2600954-3812137 ;
+	owl:inverseOf :op-5317809-8410933 .
+
+:ent-2502906-5126965 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "Gutachten pro Beitrag"@de ;
+	rdfs:domain :c-7914897-1988765 ;
+	rdfs:range xsd:int .
+
+:ent-3421629-9074086 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "akzeptiert Hardcopy-Einsendungen"@de ;
+	rdfs:domain :c-7914897-1988765 ;
+	rdfs:range xsd:boolean .
+
+:ent-3493763-1822072 a owl:DatatypeProperty ;
+	rdfs:label "hat Datum"@de ;
+	rdfs:domain :c-7914897-1988765 ;
+	rdfs:range xsd:date .
+
+:ent-4152612-5306614 a owl:DatatypeProperty ;
+	rdfs:label "hat Email"@de ;
+	rdfs:domain :c-9804348-4921383 ;
+	rdfs:range xsd:string .
+
+:ent-5017088-6756639 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "hat Webseite an URL"@de ;
+	rdfs:domain :c-7914897-1988765 ;
+	rdfs:range xsd:anyURI .
+
+:ent-6414249-7356026 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "hat ID"@de ;
+	rdfs:domain :c-0277212-8406046 ;
+	rdfs:range xsd:unsignedLong .
+
+:ent-7027114-8569150 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "maximale Anzahl an zugewiesenen Beiträgen"@de ;
+	rdfs:domain :c-4872876-3932965 ;
+	rdfs:range xsd:int .
+
+:ent-7086815-3431611 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "hat Logo an URL"@de ;
+	rdfs:domain :c-7914897-1988765 ;
+	rdfs:range xsd:anyURI .
+
+:ent-7525433-8535515 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "hat Titel"@de ;
+	rdfs:domain :c-0277212-8406046 ;
+	rdfs:range xsd:string .
+
+:ent-7649389-3921230 a owl:DatatypeProperty , owl:FunctionalProperty ;
+	rdfs:label "hat Namen"@de ;
+	rdfs:range xsd:string ;
+	rdfs:domain _:node1e05ajannx5 .
+
+_:node1e05ajannx5 a owl:Class ;
+	owl:unionOf _:node1e05ajannx6 .
+
+_:node1e05ajannx6 rdf:first :c-7914897-1988765 ;
+	rdf:rest _:node1e05ajannx7 .
+
+_:node1e05ajannx7 rdf:first :c-9804348-4921383 ;
+	rdf:rest rdf:nil .
+
+:c-0277212-8406046 a owl:Class ;
+	rdfs:label "Konferenzbeitrag"@de ;
+	rdfs:subClassOf :c-3386094-8929437 , _:node1e05ajannx8 .
+
+_:node1e05ajannx8 a owl:Restriction ;
+	owl:onProperty :op-8860290-4901047 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0277212-8406046 rdfs:subClassOf _:node1e05ajannx9 .
+
+_:node1e05ajannx9 a owl:Restriction ;
+	owl:onProperty :op-4243914-3706839 ;
+	owl:minCardinality "0"^^xsd:nonNegativeInteger .
+
+:c-0277212-8406046 rdfs:subClassOf _:node1e05ajannx10 .
+
+_:node1e05ajannx10 a owl:Restriction ;
+	owl:onProperty :op-2899154-8812515 ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0277212-8406046 rdfs:subClassOf _:node1e05ajannx11 .
+
+_:node1e05ajannx11 a owl:Restriction ;
+	owl:onProperty :op-4243914-3706839 ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-0277212-8406046 owl:disjointWith :c-2036030-6478102 .
+
+:c-1092336-2330592 a owl:Class ;
+	rdfs:label "Entscheidung"@de ;
+	owl:disjointWith :c-2636048-9047841 , :c-3386094-8929437 , :c-3554876-1135672 , :c-6476451-2581059 , :c-7914897-1988765 , :c-9804348-4921383 .
+
+:c-1105419-5848060 a owl:Class ;
+	rdfs:label "Zurückweisung"@de ;
+	rdfs:subClassOf :c-1092336-2330592 ;
+	owl:disjointWith :c-2310106-7377133 .
+
+:c-1253837-4887221 a owl:Class ;
+	rdfs:label "vollständiger Konferenzbeitrag"@de ;
+	rdfs:subClassOf :c-0277212-8406046 .
+
+:c-2036030-6478102 a owl:Class ;
+	rdfs:label "Gutachten"@de ;
+	rdfs:subClassOf :c-3386094-8929437 .
+
+:c-2276280-7516043 a owl:Class ;
+	rdfs:label "Vorsitzender"@de ;
+	owl:equivalentClass _:node1e05ajannx12 .
+
+_:node1e05ajannx12 a owl:Class ;
+	owl:unionOf _:node1e05ajannx13 .
+
+_:node1e05ajannx13 rdf:first :c-5356419-0853732 ;
+	rdf:rest _:node1e05ajannx14 .
+
+_:node1e05ajannx14 rdf:first :c-7606498-1774261 ;
+	rdf:rest _:node1e05ajannx15 .
+
+_:node1e05ajannx15 rdf:first :c-9309131-3067692 ;
+	rdf:rest rdf:nil .
+
+:c-2276280-7516043 rdfs:subClassOf :c-9804348-4921383 .
+
+:c-2310106-7377133 a owl:Class ;
+	rdfs:label "Akzeptanz"@de ;
+	rdfs:subClassOf :c-1092336-2330592 .
+
+:c-2600954-3812137 a owl:Class ;
+	rdfs:label "Administrator"@de ;
+	rdfs:subClassOf :c-5325416-2794476 .
+
+:c-2636048-9047841 a owl:Class ;
+	rdfs:label "Gebot"@de ;
+	owl:disjointWith :c-3386094-8929437 , :c-3554876-1135672 , :c-6476451-2581059 , :c-7914897-1988765 , :c-9804348-4921383 .
+
+:c-3386094-8929437 a owl:Class ;
+	rdfs:label "Dokument"@de ;
+	owl:disjointWith :c-3554876-1135672 , :c-6476451-2581059 , :c-7914897-1988765 , :c-9804348-4921383 .
+
+:c-3554876-1135672 a owl:Class ;
+	rdfs:label "Programm-Komitee"@de ;
+	owl:disjointWith :c-6476451-2581059 , :c-7914897-1988765 , :c-9804348-4921383 .
+
+:c-4575828-4677716 a owl:Class ;
+	rdfs:label "Verfasser, der kein Gutachter ist"@de ;
+	rdfs:subClassOf :c-7511748-5827387 ;
+	owl:disjointWith :c-4872876-3932965 , :c-5062955-9564132 .
+
+:c-4872876-3932965 a owl:Class ;
+	rdfs:label "Mitglied des Programm-Komitees"@de ;
+	rdfs:subClassOf :c-8082317-4346619 , :c-9804348-4921383 .
+
+:c-5062955-9564132 a owl:Class ;
+	rdfs:label "Gutachter"@de ;
+	rdfs:subClassOf :c-5325416-2794476 , :c-8082317-4346619 ;
+	owl:disjointWith :c-5888543-5318130 .
+
+:c-5325416-2794476 a owl:Class ;
+	rdfs:label "Benutzer"@de ;
+	rdfs:subClassOf :c-9804348-4921383 .
+
+:c-5336831-3519560 a owl:Class ;
+	rdfs:label "Meta-Gutachater (Gutachter der Gutachten begutachtet)"@de ;
+	rdfs:subClassOf :c-5062955-9564132 .
+
+:c-5356419-0853732 a owl:Class ;
+	rdfs:label "Vorsitzender der Konferenz"@de ;
+	rdfs:subClassOf :c-8082317-4346619 ;
+	owl:disjointWith :c-9309131-3067692 .
+
+:c-5403940-4193578 a owl:Class ;
+	rdfs:label "Mitverfasser"@de ;
+	rdfs:subClassOf :c-7511748-5827387 .
+
+:c-5888543-5318130 a owl:Class ;
+	rdfs:label "externer Gutachter"@de ;
+	rdfs:subClassOf :c-9804348-4921383 , _:node1e05ajannx16 .
+
+_:node1e05ajannx16 a owl:Restriction ;
+	owl:onProperty :op-7181260-5606687 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-6476451-2581059 a owl:Class ;
+	rdfs:label "Präferenz"@de ;
+	owl:disjointWith :c-7914897-1988765 , :c-9804348-4921383 .
+
+:c-7221579-7498183 a owl:Class ;
+	rdfs:label "Gegenstandsbereich"@de .
+
+:c-7511748-5827387 a owl:Class ;
+	rdfs:label "Verfasser"@de ;
+	rdfs:subClassOf :c-5325416-2794476 , :c-8082317-4346619 .
+
+:c-7606498-1774261 a owl:Class ;
+	rdfs:label "Vorsitzender des Programm-Komitees"@de ;
+	rdfs:subClassOf :c-4872876-3932965 .
+
+:c-7914897-1988765 a owl:Class ;
+	rdfs:label "Konferenz"@de ;
+	rdfs:subClassOf owl:Thing , _:node1e05ajannx17 .
+
+_:node1e05ajannx17 a owl:Restriction ;
+	owl:onProperty :ent-2502906-5126965 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-7914897-1988765 rdfs:subClassOf _:node1e05ajannx18 .
+
+_:node1e05ajannx18 a owl:Restriction ;
+	owl:onProperty :ent-3493763-1822072 ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+:c-7914897-1988765 rdfs:subClassOf _:node1e05ajannx19 .
+
+_:node1e05ajannx19 a owl:Restriction ;
+	owl:onProperty :ent-7649389-3921230 ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:c-7914897-1988765 owl:disjointWith :c-9804348-4921383 .
+
+:c-8082317-4346619 a owl:Class ;
+	rdfs:label "Teilnehmer einer Konferenz"@de ;
+	rdfs:subClassOf :c-9804348-4921383 .
+
+:c-8330184-9824066 a owl:Class ;
+	rdfs:label "Meta-Gutachten (Gutachten über ein Gutachten)"@de ;
+	rdfs:subClassOf :c-2036030-6478102 .
+
+:c-8450582-0542304 a owl:Class ;
+	rdfs:label "Zusammenfassung eines Konferenzbeitrags"@de ;
+	rdfs:subClassOf :c-0277212-8406046 .
+
+:c-9309131-3067692 a owl:Class ;
+	rdfs:label "stellvertretender Vorsitz"@de ;
+	rdfs:subClassOf :c-8082317-4346619 .
+
+:c-9804348-4921383 a owl:Class ;
+	rdfs:label "Person"@de .

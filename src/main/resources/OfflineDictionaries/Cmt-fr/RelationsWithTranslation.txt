@@ -1,0 +1,60 @@
+URL du logo,URL of the logo
+imprime les courriers de la manifestation,print the letters of the event
+soumet l'article,submitted article
+courriel,e-mail
+URL du site,URL of the site
+lit l'article,read the article
+rejette l'article,rejected the article
+a pour thématique,has topic
+a pour membre de conférence,has a member of conference
+a un conflit d'intérêt à propos de,has a conflict of interest about
+définit le nombre maximum d'articles de,defines the maximum number of items in
+est rejeté par,is rejected by
+a pour membre du comité de programme,a member of the program committee
+la réunion virtuelle activée par,the virtual meeting is enabled by
+écrit l'article,writing the article
+les exemplaires papier des courriers de la manifestation imprimés par,the paper copies of the letters of the event printed by
+est affecté par le relecteur,is assigned by the reviewer
+l'attribution de propositions aux relecteurs est initialisée par,the allocation of proposals to reviewers is initialized by
+est lu par le méta-relecteur,is read by the meta-reviewer
+Membre de comité de programme,Member of program committee
+écrit le rapport d'examen,writing the review report
+est affecté par l'administrateur,is assigned by the administrator
+les détails sont saisis par,the details are entered by
+titre,title
+nombre de rapports d'examen par article,number of test reports per item
+Membre de conférence,Member of conference
+accepte l'article,accepts the article
+est ajouté par,is added by
+saisit les détails de la conférence,captures the details of the conference
+est écrit par,is written by
+exécute les outils d'attribution d'articles de,running the tools for assigning articles
+est assigné à,is assigned to
+co-écrit l'article,co-wrote the article
+est ajusté par,is adjusted by
+ajuste la proposition de relecture,adjusts the proposal for a replay
+met en place la réunion virtuelle,sets up the virtual meeting
+date,date
+est accepté par,is accepted by
+nom,name
+finalise l'attribution d'articles,finalizes the assignment of articles
+l'attribution des articles finalisée par,the allocation of the items finalized by
+signale un conflit d'intérêt pour,reports a conflict of interest for
+affecte le rôle de relecteur à,affects the role of reviewer to
+a pour co-auteur,has co-author
+les outils d'attribution d'articles sont exécutés par,the tools award items are carried out by
+les critères d'évaluation sont remplis par,the evaluation criteria are met by
+a pour auteur,author
+ajoute membre du comité de programme,adds a member of the program committee
+affecte le rôle de relecteur externe à,affects the role of reviewer external to
+identifiant de l'article,identifier of the article
+a été associé à,has been associated with
+a pour proposition de relecture,has the proposal for a replay
+initialise l'attribution de propositions aux relecteurs de,initializes the allocation of proposals to reviewers
+nombre maximum d'articles,maximum number of articles
+accepte les soumissions d'articles au format papier,accepts submissions of articles in paper format
+a pour décision,has the decision
+saisit les critères d'évaluation de,enters the criteria for the evaluation of
+finalise le processus de relecture,finalizes the review process
+AnnotationProperty,AnnotationProperty
+est lu par le relecteur,is read by the reviewer

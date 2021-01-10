@@ -1,0 +1,419 @@
+@prefix : <http://sigkdd_ru#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://sigkdd_ru> a owl:Ontology .
+
+rdfs:label a owl:AnnotationProperty .
+
+:op-0471218-0921309 a owl:ObjectProperty ;
+	rdfs:label "поддерживается"@ru ;
+	rdfs:range :c-1369406-5765307 ;
+	rdfs:domain :c-4937508-9731383 ;
+	owl:inverseOf :op-0685608-3208073 .
+
+:op-0685608-3208073 a owl:ObjectProperty ;
+	rdfs:label "поддерживает"@ru ;
+	rdfs:domain :c-1369406-5765307 ;
+	rdfs:range :c-4937508-9731383 .
+
+:op-0884979-9726744 a owl:ObjectProperty ;
+	rdfs:label "может остановиться в"@ru ;
+	rdfs:domain :c-8053885-8179048 ;
+	rdfs:range :c-8407616-7790313 .
+
+:op-0980818-2513339 a owl:ObjectProperty ;
+	rdfs:label "поиск"@ru ;
+	rdfs:range :c-1306498-5809157 ;
+	rdfs:domain :c-1369406-5765307 ;
+	owl:inverseOf :op-1321518-1201550 .
+
+:op-1321518-1201550 a owl:ObjectProperty ;
+	rdfs:label "кем найден"@ru ;
+	rdfs:domain :c-1306498-5809157 ;
+	rdfs:range :c-1369406-5765307 .
+
+:op-1591956-7034846 a owl:ObjectProperty ;
+	rdfs:label "получает"@ru ;
+	rdfs:domain :c-3644603-6263856 ;
+	rdfs:range :c-5248356-2073184 .
+
+:op-2671341-6657173 a owl:ObjectProperty ;
+	rdfs:label "уведомляет до"@ru ;
+	rdfs:domain :c-3644603-6263856 ;
+	rdfs:range :c-4258464-0478642 .
+
+:op-3431063-8951495 a owl:ObjectProperty ;
+	rdfs:label "кем разработан"@ru ;
+	rdfs:range :c-1369406-5765307 ;
+	rdfs:domain :c-2202329-9318262 ;
+	owl:inverseOf :op-7180266-4560397 .
+
+:op-3651241-2127942 a owl:ObjectProperty ;
+	rdfs:label "отправить до"@ru ;
+	rdfs:range :c-2202329-9318262 ;
+	rdfs:domain :c-6897956-4608801 .
+
+:op-3707645-2961907 a owl:ObjectProperty ;
+	rdfs:label "платит"@ru ;
+	rdfs:range :c-0852932-1171017 ;
+	rdfs:domain :c-8053885-8179048 ;
+	owl:inverseOf :op-6433641-9890624 .
+
+:op-3739078-6291184 a owl:ObjectProperty ;
+	rdfs:label "презентуется"@ru ;
+	rdfs:range :c-4440846-3795121 ;
+	rdfs:domain :c-6897956-4608801 ;
+	owl:inverseOf :op-6739591-5233284 .
+
+:op-6148617-1181935 a owl:ObjectProperty ;
+	rdfs:label "отправить"@ru ;
+	rdfs:domain :c-3644603-6263856 ;
+	rdfs:range :c-4040391-2758114 .
+
+:op-6433641-9890624 a owl:ObjectProperty ;
+	rdfs:label "оплачивается"@ru ;
+	rdfs:domain :c-0852932-1171017 ;
+	rdfs:range :c-8053885-8179048 .
+
+:op-6739591-5233284 a owl:ObjectProperty ;
+	rdfs:label "презентация"@ru ;
+	rdfs:domain :c-4440846-3795121 ;
+	rdfs:range :c-6897956-4608801 .
+
+:op-7180266-4560397 a owl:ObjectProperty ;
+	rdfs:label "дизайн"@ru ;
+	rdfs:domain :c-1369406-5765307 ;
+	rdfs:range :c-2202329-9318262 .
+
+:op-7880278-0006806 a owl:ObjectProperty ;
+	rdfs:label "кем награждён"@ru ;
+	rdfs:domain :c-5248356-2073184 ;
+	owl:inverseOf :op-8024865-2836136 .
+
+:op-8024865-2836136 a owl:ObjectProperty ;
+	rdfs:label "награда"@ru ;
+	rdfs:range :c-5248356-2073184 .
+
+:ent-0573850-7938266 a owl:DatatypeProperty ;
+	rdfs:label "Имя спонсора"@ru ;
+	rdfs:domain :c-1306498-5809157 ;
+	rdfs:range xsd:string .
+
+:ent-1402874-0329256 a owl:DatatypeProperty ;
+	rdfs:label "Название конференции"@ru ;
+	rdfs:domain :c-4937508-9731383 ;
+	rdfs:range xsd:string .
+
+:ent-2915128-1234894 a owl:DatatypeProperty ;
+	rdfs:label "Адрес электронной почты"@ru ;
+	rdfs:domain :c-8053885-8179048 ;
+	rdfs:range xsd:string .
+
+:ent-3486359-6675689 a owl:DatatypeProperty ;
+	rdfs:label "Валюта"@ru ;
+	rdfs:domain :c-0852932-1171017 ;
+	rdfs:range xsd:string .
+
+:ent-5675468-5825158 a owl:DatatypeProperty ;
+	rdfs:label "Число"@ru ;
+	rdfs:domain :c-2202329-9318262 ;
+	rdfs:range xsd:dateTime .
+
+:ent-6229118-5060660 a owl:DatatypeProperty ;
+	rdfs:label "Национальность"@ru ;
+	rdfs:domain :c-8053885-8179048 ;
+	rdfs:range xsd:string .
+
+:ent-7903302-5745383 a owl:DatatypeProperty ;
+	rdfs:label "Цена"@ru ;
+	rdfs:domain :c-0852932-1171017 ;
+	rdfs:range xsd:int .
+
+:ent-8682489-1972064 a owl:DatatypeProperty ;
+	rdfs:label "Начало конференции"@ru ;
+	rdfs:domain :c-4937508-9731383 ;
+	rdfs:range xsd:dateTime .
+
+:ent-8880490-2132205 a owl:DatatypeProperty ;
+	rdfs:label "Имя"@ru ;
+	rdfs:domain :c-8053885-8179048 ;
+	rdfs:range xsd:string .
+
+:ent-9384806-5778989 a owl:DatatypeProperty ;
+	rdfs:label "Окончание конференции"@ru ;
+	rdfs:domain :c-4937508-9731383 ;
+	rdfs:range xsd:dateTime .
+
+:ent-9694011-5214750 a owl:DatatypeProperty ;
+	rdfs:label "Город конференции"@ru ;
+	rdfs:domain :c-4937508-9731383 ;
+	rdfs:range xsd:string .
+
+:c-0025626-3320634 a owl:Class ;
+	rdfs:label "Регистрация SIGKDD членов"@ru ;
+	rdfs:subClassOf :c-0852932-1171017 .
+
+:c-0265743-4796754 a owl:Class ;
+	rdfs:label "Награда за лучшую студенческую статью"@ru ;
+	rdfs:subClassOf :c-5248356-2073184 .
+
+:c-0541082-3736718 a owl:Class ;
+	rdfs:label "Председатель"@ru ;
+	rdfs:subClassOf :c-3563303-7654349 .
+
+:c-0564195-6818797 a owl:Class ;
+	rdfs:label "Автор статьи"@ru ;
+	rdfs:subClassOf :c-3644603-6263856 , _:node1e05di9lpx1 .
+
+_:node1e05di9lpx1 a owl:Restriction ;
+	owl:onProperty :op-8024865-2836136 ;
+	owl:someValuesFrom :c-3593781-9297743 .
+
+:c-0564195-6818797 rdfs:subClassOf _:node1e05di9lpx2 .
+
+_:node1e05di9lpx2 a owl:Restriction ;
+	owl:onProperty :op-8024865-2836136 ;
+	owl:someValuesFrom :c-9835513-7205118 .
+
+:c-0615398-7901077 a owl:Class ;
+	rdfs:label "Главный оффис"@ru ;
+	rdfs:subClassOf :c-8407616-7790313 .
+
+:c-0780196-9612333 a owl:Class ;
+	rdfs:label "Спонсорский взнос"@ru ;
+	rdfs:subClassOf :c-9999806-1846227 .
+
+:c-0852932-1171017 a owl:Class ;
+	rdfs:label "Регистрационный взнос"@ru ;
+	rdfs:subClassOf :c-9999806-1846227 .
+
+:c-1262848-1175471 a owl:Class ;
+	rdfs:label "Организационный комитет"@ru ;
+	rdfs:subClassOf :c-4538817-6844234 .
+
+:c-1300129-2859283 a owl:Class ;
+	rdfs:label "Золотой спонсор"@ru ;
+	rdfs:subClassOf :c-1306498-5809157 .
+
+:c-1306498-5809157 a owl:Class ;
+	rdfs:label "Спонсор"@ru ;
+	owl:equivalentClass _:node1e05di9lpx3 .
+
+_:node1e05di9lpx3 a owl:Restriction ;
+	owl:onProperty :op-3707645-2961907 ;
+	owl:someValuesFrom :c-0780196-9612333 .
+
+:c-1369406-5765307 a owl:Class ;
+	rdfs:label "ACM SIGKDD"@ru ;
+	rdfs:subClassOf owl:Thing , _:node1e05di9lpx4 .
+
+_:node1e05di9lpx4 a owl:Restriction ;
+	owl:onProperty :op-7180266-4560397 ;
+	owl:someValuesFrom :c-2202329-9318262 .
+
+:c-1369406-5765307 rdfs:subClassOf _:node1e05di9lpx5 .
+
+_:node1e05di9lpx5 a owl:Restriction ;
+	owl:onProperty :op-0685608-3208073 ;
+	owl:someValuesFrom :c-4937508-9731383 .
+
+:c-1369406-5765307 rdfs:subClassOf _:node1e05di9lpx6 .
+
+_:node1e05di9lpx6 a owl:Restriction ;
+	owl:onProperty :op-0980818-2513339 ;
+	owl:someValuesFrom :c-1306498-5809157 .
+
+:c-2056662-4244443 a owl:Class ;
+	rdfs:label "Аннотация"@ru ;
+	owl:equivalentClass _:node1e05di9lpx7 .
+
+_:node1e05di9lpx7 a owl:Restriction ;
+	owl:onProperty :op-3651241-2127942 ;
+	owl:someValuesFrom :c-4120420-3108649 .
+
+:c-2056662-4244443 rdfs:subClassOf :c-6897956-4608801 .
+
+:c-2202329-9318262 a owl:Class ;
+	rdfs:label "Последний срок"@ru .
+
+:c-3429784-8210393 a owl:Class ;
+	rdfs:label "Регистация студентов"@ru ;
+	rdfs:subClassOf :c-0852932-1171017 .
+
+:c-3551434-6537120 a owl:Class ;
+	rdfs:label "Приглашённый докладчик"@ru ;
+	rdfs:subClassOf :c-4440846-3795121 .
+
+:c-3563303-7654349 a owl:Class ;
+	rdfs:label "Организатор"@ru ;
+	rdfs:subClassOf :c-8053885-8179048 .
+
+:c-3593781-9297743 a owl:Class ;
+	rdfs:label "Награда за лучшую прикладную статью"@ru ;
+	rdfs:subClassOf :c-5248356-2073184 .
+
+:c-3644603-6263856 a owl:Class ;
+	rdfs:label "Автор"@ru ;
+	owl:equivalentClass _:node1e05di9lpx8 .
+
+_:node1e05di9lpx8 a owl:Restriction ;
+	owl:onProperty :op-6148617-1181935 ;
+	owl:someValuesFrom :c-4040391-2758114 .
+
+:c-3644603-6263856 rdfs:subClassOf :c-4440846-3795121 , _:node1e05di9lpx9 .
+
+_:node1e05di9lpx9 a owl:Restriction ;
+	owl:onProperty :op-2671341-6657173 ;
+	owl:someValuesFrom :c-4258464-0478642 .
+
+:c-3699182-7898662 a owl:Class ;
+	rdfs:label "Комитет по наградам за лучшую статью"@ru ;
+	rdfs:subClassOf :c-4538817-6844234 .
+
+:c-4040391-2758114 a owl:Class ;
+	rdfs:label "Статья"@ru ;
+	owl:equivalentClass _:node1e05di9lpx10 .
+
+_:node1e05di9lpx10 a owl:Restriction ;
+	owl:onProperty :op-3651241-2127942 ;
+	owl:someValuesFrom :c-7662451-2373248 .
+
+:c-4040391-2758114 rdfs:subClassOf :c-6897956-4608801 .
+
+:c-4120420-3108649 a owl:Class ;
+	rdfs:label "Последний срок подачи аннотаций"@ru ;
+	rdfs:subClassOf :c-2202329-9318262 .
+
+:c-4258464-0478642 a owl:Class ;
+	rdfs:label "Последний срок уведомления авторов"@ru ;
+	rdfs:subClassOf :c-2202329-9318262 .
+
+:c-4440846-3795121 a owl:Class ;
+	rdfs:label "Докладчик"@ru ;
+	owl:equivalentClass _:node1e05di9lpx11 .
+
+_:node1e05di9lpx11 a owl:Restriction ;
+	owl:onProperty :op-6739591-5233284 ;
+	owl:someValuesFrom :c-6897956-4608801 .
+
+:c-4440846-3795121 rdfs:subClassOf :c-8053885-8179048 .
+
+:c-4538817-6844234 a owl:Class ;
+	rdfs:label "Комитет"@ru .
+
+:c-4870930-2641350 a owl:Class ;
+	rdfs:label "Слушатель"@ru ;
+	rdfs:subClassOf :c-8053885-8179048 .
+
+:c-4937508-9731383 a owl:Class ;
+	rdfs:label "Конференция"@ru .
+
+:c-5174077-7058393 a owl:Class ;
+	rdfs:label "Конференц-зал"@ru ;
+	rdfs:subClassOf :c-8407616-7790313 .
+
+:c-5248356-2073184 a owl:Class ;
+	rdfs:label "Награда"@ru ;
+	owl:equivalentClass _:node1e05di9lpx12 .
+
+_:node1e05di9lpx12 a owl:Restriction ;
+	owl:onProperty :op-7880278-0006806 ;
+	owl:someValuesFrom :c-3563303-7654349 .
+
+:c-6075916-7712225 a owl:Class ;
+	rdfs:label "Член организационного комитета"@ru ;
+	rdfs:subClassOf :c-3563303-7654349 .
+
+:c-6141105-1310017 a owl:Class ;
+	rdfs:label "Регистрация SIGMOD членов"@ru ;
+	rdfs:subClassOf :c-0852932-1171017 .
+
+:c-6283550-9116038 a owl:Class ;
+	rdfs:label "Платиновый спонсор"@ru ;
+	rdfs:subClassOf :c-1306498-5809157 .
+
+:c-6483629-6007469 a owl:Class ;
+	rdfs:label "Регистрация не членов"@ru ;
+	rdfs:subClassOf :c-0852932-1171017 .
+
+:c-6681174-7986445 a owl:Class ;
+	rdfs:label "Программный комитет"@ru ;
+	rdfs:subClassOf :c-4538817-6844234 .
+
+:c-6897956-4608801 a owl:Class ;
+	rdfs:label "Документ"@ru .
+
+:c-6980696-1685766 a owl:Class ;
+	rdfs:label "Автор статьи студент"@ru ;
+	rdfs:subClassOf :c-3644603-6263856 , _:node1e05di9lpx13 .
+
+_:node1e05di9lpx13 a owl:Restriction ;
+	owl:onProperty :op-8024865-2836136 ;
+	owl:someValuesFrom :c-0265743-4796754 .
+
+:c-7235954-7506769 a owl:Class ;
+	rdfs:label "Бронзовый спонсор"@ru ;
+	rdfs:subClassOf :c-1306498-5809157 .
+
+:c-7313599-4992434 a owl:Class ;
+	rdfs:label "Серебрянный спонсор"@ru ;
+	rdfs:subClassOf :c-1306498-5809157 .
+
+:c-7662451-2373248 a owl:Class ;
+	rdfs:label "Последний срок подачи статей"@ru ;
+	rdfs:subClassOf :c-2202329-9318262 .
+
+:c-7816897-0685255 a owl:Class ;
+	rdfs:label "Экспонент"@ru ;
+	rdfs:subClassOf :c-1306498-5809157 .
+
+:c-8044799-1869156 a owl:Class ;
+	rdfs:label "Член программного комитета"@ru ;
+	rdfs:subClassOf :c-3563303-7654349 .
+
+:c-8053885-8179048 a owl:Class ;
+	rdfs:label "Лицо"@ru ;
+	owl:equivalentClass _:node1e05di9lpx14 .
+
+_:node1e05di9lpx14 a owl:Restriction ;
+	owl:onProperty :op-3707645-2961907 ;
+	owl:someValuesFrom :c-0852932-1171017 .
+
+:c-8053885-8179048 rdfs:subClassOf owl:Thing , _:node1e05di9lpx15 .
+
+_:node1e05di9lpx15 a owl:Restriction ;
+	owl:onProperty :op-0884979-9726744 ;
+	owl:someValuesFrom :c-8297303-8997671 .
+
+:c-8265326-3269019 a owl:Class ;
+	rdfs:label "Спонсор награды за лучшую студенческую статью"@ru ;
+	rdfs:subClassOf :c-1306498-5809157 .
+
+:c-8297303-8997671 a owl:Class ;
+	rdfs:label "Гостиница"@ru ;
+	rdfs:subClassOf :c-8407616-7790313 .
+
+:c-8407616-7790313 a owl:Class ;
+	rdfs:label "Место"@ru .
+
+:c-8884928-5297990 a owl:Class ;
+	rdfs:label "Вебмастер"@ru ;
+	rdfs:subClassOf :c-3563303-7654349 .
+
+:c-8913365-9569801 a owl:Class ;
+	rdfs:label "Программный председатель"@ru ;
+	rdfs:subClassOf :c-3563303-7654349 .
+
+:c-9821471-6522202 a owl:Class ;
+	rdfs:label "Рецензия"@ru ;
+	rdfs:subClassOf :c-6897956-4608801 .
+
+:c-9835513-7205118 a owl:Class ;
+	rdfs:label "Награда за лучшую научную статью"@ru ;
+	rdfs:subClassOf :c-5248356-2073184 .
+
+:c-9999806-1846227 a owl:Class ;
+	rdfs:label "Взнос"@ru .

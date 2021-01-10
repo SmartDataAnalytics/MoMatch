@@ -1,0 +1,396 @@
+<http://cmt_ar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://cmt_ar#op-0077265-3002157> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-0077265-3002157> <http://www.w3.org/2000/01/rdf-schema#label> "لديه عضو"@ar .
+<http://cmt_ar#op-0077265-3002157> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-2220987-5331821> .
+<http://cmt_ar#op-0077265-3002157> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-0077265-3002157> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-5466717-2620633> .
+<http://cmt_ar#op-0124511-1789830> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-0124511-1789830> <http://www.w3.org/2000/01/rdf-schema#label> "تعيين من اجل"@ar .
+<http://cmt_ar#op-0124511-1789830> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-0124511-1789830> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#op-0662627-4814294> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-0662627-4814294> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_ar#op-0662627-4814294> <http://www.w3.org/2000/01/rdf-schema#label> "يضيف"@ar .
+<http://cmt_ar#op-0662627-4814294> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-0662627-4814294> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-7572681-2355237> .
+<http://cmt_ar#op-1026354-7274154> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-1026354-7274154> <http://www.w3.org/2000/01/rdf-schema#label> "احالة أدوات البحث مشغل من قبل"@ar .
+<http://cmt_ar#op-1026354-7274154> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-1026354-7274154> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-1374410-6089444> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-1374410-6089444> <http://www.w3.org/2000/01/rdf-schema#label> "تحديد مجموعة عدد أقصى من الابحاث المسندة"@ar .
+<http://cmt_ar#op-1374410-6089444> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-1374410-6089444> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-7572681-2355237> .
+<http://cmt_ar#op-1512138-2288119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-1512138-2288119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_ar#op-1512138-2288119> <http://www.w3.org/2000/01/rdf-schema#label> "لديه مزايدة"@ar .
+<http://cmt_ar#op-1512138-2288119> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-3101760-6220913> .
+<http://cmt_ar#op-1512138-2288119> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-1906733-2277684> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-1906733-2277684> <http://www.w3.org/2000/01/rdf-schema#label> "عضو في اللجنة العلمية"@ar .
+<http://cmt_ar#op-1906733-2277684> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1232161-0048624> .
+<http://cmt_ar#op-1906733-2277684> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-7572681-2355237> .
+<http://cmt_ar#op-1942381-2978009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-1942381-2978009> <http://www.w3.org/2000/01/rdf-schema#label> "اجتماع الظاهري ممكن من قبل"@ar .
+<http://cmt_ar#op-1942381-2978009> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-1942381-2978009> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-1947892-8022039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-1947892-8022039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#op-1947892-8022039> <http://www.w3.org/2000/01/rdf-schema#label> "تعديله من قبل"@ar .
+<http://cmt_ar#op-1947892-8022039> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-3101760-6220913> .
+<http://cmt_ar#op-1947892-8022039> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#op-2082117-7310815> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-2082117-7310815> <http://www.w3.org/2000/01/rdf-schema#label> "تمكين الاجتماع الظاهري"@ar .
+<http://cmt_ar#op-2082117-7310815> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-2082117-7310815> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-2082117-7310815> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-1942381-2978009> .
+<http://cmt_ar#op-2398058-4371549> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-2398058-4371549> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_ar#op-2398058-4371549> <http://www.w3.org/2000/01/rdf-schema#label> "ضبط"@ar .
+<http://cmt_ar#op-2398058-4371549> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-3101760-6220913> .
+<http://cmt_ar#op-2398058-4371549> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#op-2398058-4371549> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-1947892-8022039> .
+<http://cmt_ar#op-2532909-8512587> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-2532909-8512587> <http://www.w3.org/2000/01/rdf-schema#label> "استكمال احالة البحث"@ar .
+<http://cmt_ar#op-2532909-8512587> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-2532909-8512587> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-2532909-8512587> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-4375254-0101062> .
+<http://cmt_ar#op-2621489-2639155> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-2621489-2639155> <http://www.w3.org/2000/01/rdf-schema#label> "بدء تقديم العطاءات المراجع"@ar .
+<http://cmt_ar#op-2621489-2639155> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-2621489-2639155> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-2621489-2639155> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-6266157-6462507> .
+<http://cmt_ar#op-3146868-7245125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-3146868-7245125> <http://www.w3.org/2000/01/rdf-schema#label> "كاتب مشترك من قبل"@ar .
+<http://cmt_ar#op-3146868-7245125> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-3714057-1039146> .
+<http://cmt_ar#op-3146868-7245125> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-3146868-7245125> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-7987969-7509674> .
+<http://cmt_ar#op-3462160-0135119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-3462160-0135119> <http://www.w3.org/2000/01/rdf-schema#label> "طباعة نسخة من البريد الالكتروني للمظاهرات"@ar .
+<http://cmt_ar#op-3462160-0135119> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-3462160-0135119> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-3738146-7132581> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-3738146-7132581> <http://www.w3.org/2000/01/rdf-schema#label> "تفاصيل مدخلة من قبل"@ar .
+<http://cmt_ar#op-3738146-7132581> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-3738146-7132581> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-3998076-6312950> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-3998076-6312950> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_ar#op-3998076-6312950> <http://www.w3.org/2000/01/rdf-schema#label> "المراجعة كتابية"@ar .
+<http://cmt_ar#op-3998076-6312950> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-3194825-5346027> .
+<http://cmt_ar#op-3998076-6312950> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#op-4249215-9846680> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-4249215-9846680> <http://www.w3.org/2000/01/rdf-schema#label> "يعيين"@ar .
+<http://cmt_ar#op-4249215-9846680> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-4249215-9846680> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#op-4249215-9846680> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-8681941-3178471> .
+<http://cmt_ar#op-4356631-9076520> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-4356631-9076520> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#op-4356631-9076520> <http://www.w3.org/2000/01/rdf-schema#label> "مسند من قبل مراجع"@ar .
+<http://cmt_ar#op-4356631-9076520> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-3945225-6300796> .
+<http://cmt_ar#op-4356631-9076520> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#op-4356631-9076520> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-9524919-6736172> .
+<http://cmt_ar#op-4375254-0101062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-4375254-0101062> <http://www.w3.org/2000/01/rdf-schema#label> "احالة البحث منتهي من قبل"@ar .
+<http://cmt_ar#op-4375254-0101062> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-4375254-0101062> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-4636674-1359847> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-4636674-1359847> <http://www.w3.org/2000/01/rdf-schema#label> "لديه عضو"@ar .
+<http://cmt_ar#op-4636674-1359847> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1232161-0048624> .
+<http://cmt_ar#op-4636674-1359847> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-7572681-2355237> .
+<http://cmt_ar#op-4636674-1359847> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-1906733-2277684> .
+<http://cmt_ar#op-4915323-2210432> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-4915323-2210432> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#op-4915323-2210432> <http://www.w3.org/2000/01/rdf-schema#label> "كتابته من قبل"@ar .
+<http://cmt_ar#op-4915323-2210432> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-4915323-2210432> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-8335305-4555146> .
+<http://cmt_ar#op-4915323-2210432> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-6477014-2447390> .
+<http://cmt_ar#op-5074777-6797175> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-5074777-6797175> <http://www.w3.org/2000/01/rdf-schema#label> "ارسال البحث"@ar .
+<http://cmt_ar#op-5074777-6797175> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-5074777-6797175> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-8335305-4555146> .
+<http://cmt_ar#op-5466717-2620633> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-5466717-2620633> <http://www.w3.org/2000/01/rdf-schema#label> "عضو المؤتمر"@ar .
+<http://cmt_ar#op-5466717-2620633> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-2220987-5331821> .
+<http://cmt_ar#op-5466717-2620633> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-5783340-2574236> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-5783340-2574236> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#op-5783340-2574236> <http://www.w3.org/2000/01/rdf-schema#label> "(... ،تم تقرير (ليكون مقبول، مرفوض"@ar .
+<http://cmt_ar#op-5783340-2574236> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1031803-6530562> .
+<http://cmt_ar#op-5783340-2574236> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-5894858-9261514> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-5894858-9261514> <http://www.w3.org/2000/01/rdf-schema#label> "وقت إنتهاء مراجعة"@ar .
+<http://cmt_ar#op-5894858-9261514> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-0197956-6725851> .
+<http://cmt_ar#op-5894858-9261514> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-3194825-5346027> .
+<http://cmt_ar#op-6147118-8808919> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-6147118-8808919> <http://www.w3.org/2000/01/rdf-schema#label> "نسخة من البريد الالكتروني للمظاهرات مطبوعة من قبل"@ar .
+<http://cmt_ar#op-6147118-8808919> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-6147118-8808919> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-6147118-8808919> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-3462160-0135119> .
+<http://cmt_ar#op-6266157-6462507> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-6266157-6462507> <http://www.w3.org/2000/01/rdf-schema#label> "بدأ تقديم العطاءات المراجع من قبل"@ar .
+<http://cmt_ar#op-6266157-6462507> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-6266157-6462507> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-6389051-2982777> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-6389051-2982777> <http://www.w3.org/2000/01/rdf-schema#label> "معايير مراجعة أدخلت من قبل"@ar .
+<http://cmt_ar#op-6389051-2982777> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-6389051-2982777> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-6389051-2982777> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-9993047-2293020> .
+<http://cmt_ar#op-6438608-6997044> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-6438608-6997044> <http://www.w3.org/2000/01/rdf-schema#label> "تم تعيين"@ar .
+<http://cmt_ar#op-6438608-6997044> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-6438608-6997044> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#op-6438608-6997044> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-0124511-1789830> .
+<http://cmt_ar#op-6477014-2447390> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-6477014-2447390> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_ar#op-6477014-2447390> <http://www.w3.org/2000/01/rdf-schema#label> "كتابة البحث"@ar .
+<http://cmt_ar#op-6477014-2447390> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-6477014-2447390> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-8335305-4555146> .
+<http://cmt_ar#op-6683020-8838246> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-6683020-8838246> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#op-6683020-8838246> <http://www.w3.org/2000/01/rdf-schema#label> "كتابته من قبل"@ar .
+<http://cmt_ar#op-6683020-8838246> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-3194825-5346027> .
+<http://cmt_ar#op-6683020-8838246> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#op-6683020-8838246> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-3998076-6312950> .
+<http://cmt_ar#op-6776481-7922961> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-6776481-7922961> <http://www.w3.org/2000/01/rdf-schema#label> "قراءة البحث"@ar .
+<http://cmt_ar#op-6776481-7922961> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-6776481-7922961> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#op-6776481-7922961> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-7141547-2558957> .
+<http://cmt_ar#op-6823078-4797319> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-6823078-4797319> <http://www.w3.org/2000/01/rdf-schema#label> "تشغيل أدوات احالة البحث"@ar .
+<http://cmt_ar#op-6823078-4797319> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-6823078-4797319> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-6823078-4797319> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-1026354-7274154> .
+<http://cmt_ar#op-6930500-2740802> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-6930500-2740802> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#op-6930500-2740802> <http://www.w3.org/2000/01/rdf-schema#label> "قراءته من قبل مراجع الفوقي"@ar .
+<http://cmt_ar#op-6930500-2740802> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-5605295-3101146> .
+<http://cmt_ar#op-6930500-2740802> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-7141547-2558957> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-7141547-2558957> <http://www.w3.org/2000/01/rdf-schema#label> "قراءته من قبل مراجع"@ar .
+<http://cmt_ar#op-7141547-2558957> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-7141547-2558957> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#op-7376977-4507172> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-7376977-4507172> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_ar#op-7376977-4507172> <http://www.w3.org/2000/01/rdf-schema#label> "بحث مرفوض"@ar .
+<http://cmt_ar#op-7376977-4507172> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-7376977-4507172> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-7376977-4507172> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-8508521-5721137> .
+<http://cmt_ar#op-7547975-1395694> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-7547975-1395694> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#op-7547975-1395694> <http://www.w3.org/2000/01/rdf-schema#label> "أضافته من قبل"@ar .
+<http://cmt_ar#op-7547975-1395694> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-7547975-1395694> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-7572681-2355237> .
+<http://cmt_ar#op-7547975-1395694> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-0662627-4814294> .
+<http://cmt_ar#op-7617874-9671290> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-7617874-9671290> <http://www.w3.org/2000/01/rdf-schema#label> "إدخال التفاصيل حول"@ar .
+<http://cmt_ar#op-7617874-9671290> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-7617874-9671290> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#op-7617874-9671290> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-3738146-7132581> .
+<http://cmt_ar#op-7726218-5131887> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-7726218-5131887> <http://www.w3.org/2000/01/rdf-schema#label> "علامة تضارب المصالح"@ar .
+<http://cmt_ar#op-7726218-5131887> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-7940247-9734251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-7940247-9734251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#op-7940247-9734251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_ar#op-7940247-9734251> <http://www.w3.org/2000/01/rdf-schema#label> "يقبل"@ar .
+<http://cmt_ar#op-7940247-9734251> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-7940247-9734251> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-7940247-9734251> <http://www.w3.org/2002/07/owl#inverseOf> <http://cmt_ar#op-8625931-9644071> .
+<http://cmt_ar#op-7987969-7509674> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-7987969-7509674> <http://www.w3.org/2000/01/rdf-schema#label> "مشترك في الكتابة"@ar .
+<http://cmt_ar#op-7987969-7509674> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-3714057-1039146> .
+<http://cmt_ar#op-7987969-7509674> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-8508521-5721137> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-8508521-5721137> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#op-8508521-5721137> <http://www.w3.org/2000/01/rdf-schema#label> "رفض من قبل"@ar .
+<http://cmt_ar#op-8508521-5721137> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-8508521-5721137> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-8625931-9644071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-8625931-9644071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#op-8625931-9644071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_ar#op-8625931-9644071> <http://www.w3.org/2000/01/rdf-schema#label> "قبوله من قبل"@ar .
+<http://cmt_ar#op-8625931-9644071> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-8625931-9644071> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-8681941-3178471> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-8681941-3178471> <http://www.w3.org/2000/01/rdf-schema#label> "تعيينه من قبل مشرف"@ar .
+<http://cmt_ar#op-8681941-3178471> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-8681941-3178471> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#op-9193814-5047447> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-9193814-5047447> <http://www.w3.org/2000/01/rdf-schema#label> "لديه موضوع المحور"@ar .
+<http://cmt_ar#op-9193814-5047447> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-0625239-2425775> .
+<http://cmt_ar#op-9193814-5047447> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#op-9439554-2925691> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-9439554-2925691> <http://www.w3.org/2000/01/rdf-schema#label> "لديه تضارب في المصالح مع احترام"@ar .
+<http://cmt_ar#op-9439554-2925691> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-9476305-1556488> .
+<http://cmt_ar#op-9439554-2925691> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#op-9524919-6736172> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-9524919-6736172> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://cmt_ar#op-9524919-6736172> <http://www.w3.org/2000/01/rdf-schema#label> "يعيين"@ar .
+<http://cmt_ar#op-9524919-6736172> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-3945225-6300796> .
+<http://cmt_ar#op-9524919-6736172> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#op-9993047-2293020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://cmt_ar#op-9993047-2293020> <http://www.w3.org/2000/01/rdf-schema#label> "إدخال معايير المراجع"@ar .
+<http://cmt_ar#op-9993047-2293020> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-1708774-9125777> .
+<http://cmt_ar#op-9993047-2293020> <http://www.w3.org/2000/01/rdf-schema#range> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#ent-0474024-8645389> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_ar#ent-0474024-8645389> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#ent-0474024-8645389> <http://www.w3.org/2000/01/rdf-schema#label> "لديه عنوان"@ar .
+<http://cmt_ar#ent-0474024-8645389> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#ent-0474024-8645389> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://cmt_ar#ent-0888652-2952644> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_ar#ent-0888652-2952644> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#ent-0888652-2952644> <http://www.w3.org/2000/01/rdf-schema#label> "لديه اسم"@ar .
+<http://cmt_ar#ent-0888652-2952644> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://cmt_ar#ent-1697241-5302844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_ar#ent-1697241-5302844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#ent-1697241-5302844> <http://www.w3.org/2000/01/rdf-schema#label> "مراجعة/تعليقات لكل بحث"@ar .
+<http://cmt_ar#ent-1697241-5302844> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#ent-1697241-5302844> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://cmt_ar#ent-1721348-6878918> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_ar#ent-1721348-6878918> <http://www.w3.org/2000/01/rdf-schema#label> "لديه التاريخ"@ar .
+<http://cmt_ar#ent-1721348-6878918> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#ent-1721348-6878918> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://cmt_ar#ent-4299333-0273163> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_ar#ent-4299333-0273163> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#ent-4299333-0273163> <http://www.w3.org/2000/01/rdf-schema#label> "العدد الأقصى من الابحاث المسندة"@ar .
+<http://cmt_ar#ent-4299333-0273163> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-7572681-2355237> .
+<http://cmt_ar#ent-4299333-0273163> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://cmt_ar#ent-6252776-8181806> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_ar#ent-6252776-8181806> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#ent-6252776-8181806> <http://www.w3.org/2000/01/rdf-schema#label> "تقبل نسخة المرسلات"@ar .
+<http://cmt_ar#ent-6252776-8181806> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#ent-6252776-8181806> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://cmt_ar#ent-6395384-0777412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_ar#ent-6395384-0777412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#ent-6395384-0777412> <http://www.w3.org/2000/01/rdf-schema#label> "لديه الشعار في رابط"@ar .
+<http://cmt_ar#ent-6395384-0777412> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#ent-6395384-0777412> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://cmt_ar#ent-6629428-4947742> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_ar#ent-6629428-4947742> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#ent-6629428-4947742> <http://www.w3.org/2000/01/rdf-schema#label> "لديه معرف"@ar .
+<http://cmt_ar#ent-6629428-4947742> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#ent-6629428-4947742> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#unsignedLong> .
+<http://cmt_ar#ent-6657622-4246440> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_ar#ent-6657622-4246440> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://cmt_ar#ent-6657622-4246440> <http://www.w3.org/2000/01/rdf-schema#label> "لديه موقع على رابط"@ar .
+<http://cmt_ar#ent-6657622-4246440> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#ent-6657622-4246440> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://cmt_ar#ent-9784858-1898461> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://cmt_ar#ent-9784858-1898461> <http://www.w3.org/2000/01/rdf-schema#label> "لديه بريد الكتروني"@ar .
+<http://cmt_ar#ent-9784858-1898461> <http://www.w3.org/2000/01/rdf-schema#domain> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#ent-9784858-1898461> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://cmt_ar#c-0197956-6725851> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-0197956-6725851> <http://www.w3.org/2000/01/rdf-schema#label> "رئيس اللجنة العلمية@ar .
+<http://cmt_ar#c-0197956-6725851> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-7572681-2355237> .
+<http://cmt_ar#c-0471234-6892254> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-0471234-6892254> <http://www.w3.org/2000/01/rdf-schema#label> "لاشيء"@ar .
+<http://cmt_ar#c-0625239-2425775> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-0625239-2425775> <http://www.w3.org/2000/01/rdf-schema#label> "موضوع المحور"@ar .
+<http://cmt_ar#c-0634254-3328105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-0634254-3328105> <http://www.w3.org/2000/01/rdf-schema#label> "رئيس المرتبطة"@ar .
+<http://cmt_ar#c-0634254-3328105> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-2220987-5331821> .
+<http://cmt_ar#c-0634254-3328105> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-9634422-4066717> .
+<http://cmt_ar#c-1031803-6530562> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-1031803-6530562> <http://www.w3.org/2000/01/rdf-schema#label> "قرار"@ar .
+<http://cmt_ar#c-1031803-6530562> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-1232161-0048624> .
+<http://cmt_ar#c-1031803-6530562> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-1776859-6098962> .
+<http://cmt_ar#c-1031803-6530562> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-3101760-6220913> .
+<http://cmt_ar#c-1031803-6530562> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#c-1031803-6530562> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-9476305-1556488> .
+<http://cmt_ar#c-1031803-6530562> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#c-1232161-0048624> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-1232161-0048624> <http://www.w3.org/2000/01/rdf-schema#label> "لجنة العلمية"@ar .
+<http://cmt_ar#c-1232161-0048624> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-1776859-6098962> .
+<http://cmt_ar#c-1232161-0048624> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-3101760-6220913> .
+<http://cmt_ar#c-1232161-0048624> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#c-1232161-0048624> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-9476305-1556488> .
+<http://cmt_ar#c-1232161-0048624> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#c-1708774-9125777> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-1708774-9125777> <http://www.w3.org/2000/01/rdf-schema#label> "مشرف"@ar .
+<http://cmt_ar#c-1708774-9125777> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-4595043-4384026> .
+<http://cmt_ar#c-1753052-0526039> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-1753052-0526039> <http://www.w3.org/2000/01/rdf-schema#label> "ملخص البحث"@ar .
+<http://cmt_ar#c-1753052-0526039> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#c-1776859-6098962> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-1776859-6098962> <http://www.w3.org/2000/01/rdf-schema#label> "أفضلية"@ar .
+<http://cmt_ar#c-1776859-6098962> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-3101760-6220913> .
+<http://cmt_ar#c-1776859-6098962> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#c-1776859-6098962> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-9476305-1556488> .
+<http://cmt_ar#c-1776859-6098962> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#c-2220987-5331821> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-2220987-5331821> <http://www.w3.org/2000/01/rdf-schema#label> "عضو المؤتمر"@ar .
+<http://cmt_ar#c-2220987-5331821> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#c-3101760-6220913> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-3101760-6220913> <http://www.w3.org/2000/01/rdf-schema#label> "مزايدة"@ar .
+<http://cmt_ar#c-3101760-6220913> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-6407650-6197378> .
+<http://cmt_ar#c-3101760-6220913> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-9476305-1556488> .
+<http://cmt_ar#c-3101760-6220913> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#c-3194825-5346027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-3194825-5346027> <http://www.w3.org/2000/01/rdf-schema#label> "مراجعة"@ar .
+<http://cmt_ar#c-3194825-5346027> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-9476305-1556488> .
+<http://cmt_ar#c-3194825-5346027> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#c-3714057-1039146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-3714057-1039146> <http://www.w3.org/2000/01/rdf-schema#label> "الكاتب المشترك"@ar .
+<http://cmt_ar#c-3714057-1039146> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-8335305-4555146> .
+<http://cmt_ar#c-3930288-3644648> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-3930288-3644648> <http://www.w3.org/2000/01/rdf-schema#label> "رئيس"@ar .
+<http://cmt_ar#c-3930288-3644648> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#c-3945225-6300796> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-3945225-6300796> <http://www.w3.org/2000/01/rdf-schema#label> "المراجع خارجي"@ar .
+<http://cmt_ar#c-3945225-6300796> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#c-3945225-6300796> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#c-4595043-4384026> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-4595043-4384026> <http://www.w3.org/2000/01/rdf-schema#label> "المستخدم"@ar .
+<http://cmt_ar#c-4595043-4384026> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#c-4901776-6249690> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-4901776-6249690> <http://www.w3.org/2000/01/rdf-schema#label> "الكاتب، الذي ليس المراجع"@ar .
+<http://cmt_ar#c-4901776-6249690> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-8335305-4555146> .
+<http://cmt_ar#c-4901776-6249690> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#c-4901776-6249690> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-7572681-2355237> .
+<http://cmt_ar#c-5258810-6413397> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-5258810-6413397> <http://www.w3.org/2000/01/rdf-schema#label> "النسخة الكاملة من البحث"@ar .
+<http://cmt_ar#c-5258810-6413397> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-6855502-1595452> .
+<http://cmt_ar#c-5515515-7655801> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-5515515-7655801> <http://www.w3.org/2000/01/rdf-schema#label> "مراجعة فوقية"@ar .
+<http://cmt_ar#c-5515515-7655801> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-3194825-5346027> .
+<http://cmt_ar#c-5605295-3101146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-5605295-3101146> <http://www.w3.org/2000/01/rdf-schema#label> "المراجع الفوقي"@ar .
+<http://cmt_ar#c-5605295-3101146> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-6884283-5550269> .
+<http://cmt_ar#c-6326453-4709586> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-6326453-4709586> <http://www.w3.org/2000/01/rdf-schema#label> "القبول"@ar .
+<http://cmt_ar#c-6326453-4709586> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-1031803-6530562> .
+<http://cmt_ar#c-6326453-4709586> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-8895015-9423071> .
+<http://cmt_ar#c-6407650-6197378> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-6407650-6197378> <http://www.w3.org/2000/01/rdf-schema#label> "مؤتمر"@ar .
+<http://cmt_ar#c-6407650-6197378> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-0471234-6892254> .
+<http://cmt_ar#c-6407650-6197378> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-9476305-1556488> .
+<http://cmt_ar#c-6407650-6197378> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#c-6855502-1595452> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-6855502-1595452> <http://www.w3.org/2000/01/rdf-schema#label> "البحث"@ar .
+<http://cmt_ar#c-6855502-1595452> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-9476305-1556488> .
+<http://cmt_ar#c-6884283-5550269> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-6884283-5550269> <http://www.w3.org/2000/01/rdf-schema#label> "المراجع"@ar .
+<http://cmt_ar#c-6884283-5550269> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-2220987-5331821> .
+<http://cmt_ar#c-6884283-5550269> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-4595043-4384026> .
+<http://cmt_ar#c-7572681-2355237> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-7572681-2355237> <http://www.w3.org/2000/01/rdf-schema#label> "عضو في اللجنة العلمية"@ar .
+<http://cmt_ar#c-7572681-2355237> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-2220987-5331821> .
+<http://cmt_ar#c-7572681-2355237> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#c-8335305-4555146> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-8335305-4555146> <http://www.w3.org/2000/01/rdf-schema#label> "الكاتب"@ar .
+<http://cmt_ar#c-8335305-4555146> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-2220987-5331821> .
+<http://cmt_ar#c-8335305-4555146> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-4595043-4384026> .
+<http://cmt_ar#c-8895015-9423071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-8895015-9423071> <http://www.w3.org/2000/01/rdf-schema#label> "الرفض"@ar .
+<http://cmt_ar#c-8895015-9423071> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-1031803-6530562> .
+<http://cmt_ar#c-9476305-1556488> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-9476305-1556488> <http://www.w3.org/2000/01/rdf-schema#label> "وثيقة"@ar .
+<http://cmt_ar#c-9476305-1556488> <http://www.w3.org/2002/07/owl#disjointWith> <http://cmt_ar#c-9541928-7173577> .
+<http://cmt_ar#c-9541928-7173577> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-9541928-7173577> <http://www.w3.org/2000/01/rdf-schema#label> "شخص"@ar .
+<http://cmt_ar#c-9634422-4066717> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://cmt_ar#c-9634422-4066717> <http://www.w3.org/2000/01/rdf-schema#label> "رئيس المؤتمر"@ar .
+<http://cmt_ar#c-9634422-4066717> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://cmt_ar#c-2220987-5331821> .
