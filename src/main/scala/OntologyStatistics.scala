@@ -25,7 +25,6 @@ class OntologyStatistics(sparkSession: SparkSession) {
 //    val sClass = ontologyTriples.find(None, None, Some(NodeFactory.createURI("http://www.w3.org/2002/07/owl#Class"))).filter(x => x.getSubject.isURI).map(x => x.getSubject.getLocalName).filter(x => x != "Class").distinct()
     val sClass = this.getNumberOfClasses(ontologyTriples)
     println("Number of classes is " + sClass)
-//        sClass.foreach(println(_))
     val listOfPredicates = ontologyTriples.map(x => x.getPredicate.getLocalName).distinct(2) //    println("List of predicates in the ontology: ")
     //    listOfPredicates.foreach(println(_))
   }
