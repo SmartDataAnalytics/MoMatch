@@ -67,7 +67,7 @@ object OntologyMatching {
     ontStat.getAllClasses((O2triples)).foreach(println(_))
 
 
-    ontoMatch.MatchOntologies(O1triples, O2triples,"Ekaw-de", "Conference-de")
+    ontoMatch.MatchOntologies(O1triples, O2triples, "Conference-de", IsCrosslingual = 1)
 
 
 //    println("==========================================================================")
