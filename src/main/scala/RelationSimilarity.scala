@@ -5,8 +5,8 @@ import org.apache.spark.rdd.RDD
 * */ class RelationSimilarity {
 
   /**
-    * Get the similarity between two relations in two different ontologies.*/
-  def GetRelationSimilarity(listOfRelationsInTargetOntology: RDD[(String)], listOfRelationsInSourceOntology: RDD[(String, String)]): RDD[(String, String, String, Double)] = {
+    * Get the similarity between two relations from two ontologies in different natural languages.*/
+  def GetMultilingualRelationSimilarity(listOfRelationsInTargetOntology: RDD[(String)], listOfRelationsInSourceOntology: RDD[(String, String)]): RDD[(String, String, String, Double)] = {
     var crossRelations: RDD[(String, (String, String))] = listOfRelationsInTargetOntology.cartesian(listOfRelationsInSourceOntology)
 //    println("crossRelations"+crossRelations.count())
 //    crossRelations.foreach(println(_))
@@ -18,4 +18,17 @@ import org.apache.spark.rdd.RDD
     sim.distinct(2)
   }
 
+  /**
+    * Get the similarity between two relations from two ontologies in the same natural languages.*/
+  def GetMonolingualRelationSimilarity(listOfRelationsInTargetOntology: RDD[(String)], listOfRelationsInSourceOntology: RDD[String]): RDD[(String, String, Double)] = {
+    var crossRelations: RDD[(String, String)] = listOfRelationsInTargetOntology.cartesian(listOfRelationsInSourceOntology)
+    //    println("crossRelations"+crossRelations.count())
+    //    crossRelations.foreach(println(_))
+    val gS = new GetSimilarity()
+    val p = new PreProcessing()
+    var sim: RDD[(String, String, Double)] = crossRelations.map(x => (x._1, x._2, gS.getSimilarity(p.removeStopWordsFromEnglish(p.splitCamelCase(x._1).toLowerCase), p.removeStopWordsFromEnglish(p.splitCamelCase(x._2).toLowerCase)))).filter(y => y._3 > 0.9)
+    //    println("sim"+sim.count())
+    //    sim.foreach(println(_))
+    sim.distinct(2)
+  }
 }

@@ -52,20 +52,18 @@ class Match(sparkSession1: SparkSession) {
     println("====================================== All relations in O2 ======================================")
     O2Relations.foreach(println(_))
 
-    println("======================================")
-    println("|    Cross-lingual Matching    |")
-    println("======================================")
-    // ####################### Automatic Translation using Yandex API #######################
-    //    val languageTag1: String = O1triples.filter(x=> x.getPredicate.getLocalName == "label").first().getObject.getLiteralLanguage
-    //    println("language tag for O1 is "+languageTag1)
-    //        Translation.translateToEnglish(O1Classes,O1Relations, languageTag1)
-    //    Translation.translateToGerman(O2Classes,O2Relations)
+    this.CrossLingualMatching(O1Name, O2Classes, O2Relations)
+  }
 
+  /**
+    * Get the cross-lingual matching between two ontologies in twi different natural languages.
+    */
+  def CrossLingualMatching(O1Name: String, O2Classes: RDD[String],O2Relations: RDD[(String)])={
     val O1ClassesWithTranslation: RDD[(String, String)] = sparkSession1.sparkContext.textFile("src/main/resources/OfflineDictionaries/"+O1Name+"/classesWithTranslation.txt").map(x => (x.split(",").apply(0), x.split(",").apply(1))) //    println("O1 classes with translation")
     //    O1ClassesWithTranslation.foreach(println(_))
     println("====================================== Classes Similarity ======================================")
     val sim = new ClassSimilarity()
-    val matchedClasses: RDD[(String, String, String, Double)] = sim.GetClassSimilarity(O1ClassesWithTranslation, O2Classes)
+    val matchedClasses: RDD[(String, String, String, Double)] = sim.GetMultilingualClassSimilarity(O1ClassesWithTranslation, O2Classes)
     matchedClasses.foreach(println(_))
     numberOfMatchedClasses = matchedClasses.count().toInt
 
@@ -74,9 +72,8 @@ class Match(sparkSession1: SparkSession) {
     //        O1RelationsWithTranslation.foreach(println(_))
     println("====================================== Relations Similarity ======================================")
     val relSim = new RelationSimilarity()
-    val matchedRelations: RDD[(String, String, String, Double)] = relSim.GetRelationSimilarity(O2Relations, O1RelationsWithTranslation)
+    val matchedRelations: RDD[(String, String, String, Double)] = relSim.GetMultilingualRelationSimilarity(O2Relations, O1RelationsWithTranslation)
     matchedRelations.foreach(println(_))
     numberOfMatchedRelations = matchedRelations.count().toInt
-
   }
 }
