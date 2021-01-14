@@ -6,9 +6,10 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
 
 /*
-* Created by Shimaa 15.oct.2018
+* Created by Shimaa 13.Jan.2021
 * */
-object OntologyMerging {
+
+object OntologyMatching {
   def main(args: Array[String]): Unit = {
 //    val frame = new MOMergGUI("My first try")
 //    frame.setVisible(true)
@@ -21,8 +22,8 @@ object OntologyMerging {
 //    val m = new MOMergGUI()
 //    println(m.s)
     //German ontologies
-//        val O1 = "src/main/resources/EvaluationDataset/German/conference-de.ttl"
-    val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/ms.nt"
+        val O1 = "src/main/resources/EvaluationDataset/German/conference-de.ttl"
+//    val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/ms.nt"
 //    val O1 = "src/main/resources/EvaluationDataset/German/cmt-de.ttl"
 //    val O1 = "src/main/resources/EvaluationDataset/German/confOf-de.ttl"
     //            val O1 = "src/main/resources/EvaluationDataset/German/iasted-de.ttl"
@@ -44,8 +45,8 @@ object OntologyMerging {
 
 //        val O2 = "src/main/resources/CaseStudy/SEO.ttl"
 //    val O2 = "src/main/resources/EvaluationDataset/English/edas-en.ttl"
-//               val O2 = "src/main/resources/EvaluationDataset/English/ekaw-en.ttl"
-    val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt"
+               val O2 = "src/main/resources/EvaluationDataset/English/ekaw-en.ttl"
+//    val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt"
 
     val lang1: Lang = Lang.TURTLE
     val O1triples: RDD[graph.Triple] = sparkSession1.rdf(lang1)(O1).distinct(2)
@@ -53,7 +54,7 @@ object OntologyMerging {
     val runTime = Runtime.getRuntime
 
     val ontStat = new OntologyStatistics(sparkSession1) //    ontStat.getStatistics(O1triples)
-    val ontoMerge = new Merge(sparkSession1)
+    val ontoMatch = new Match(sparkSession1)
 
     println("Statistics for O1 ontology")
     ontStat.getStatistics(O1triples)
@@ -64,29 +65,17 @@ object OntologyMerging {
     ontStat.getStatistics(O2triples)
     println("All classes in O2:")
     ontStat.getAllClasses((O2triples)).foreach(println(_))
-/*
-    //    val multilingualMergedOntology = ontoMerge.MergeOntologies(O1triples, O2triples, offlineDictionaryForO1, offlineDictionaryForO2)
-    //provide the two input ontologies in addition to their offline dictionaries
-    val multilingualMergedOntology: RDD[graph.Triple] = ontoMerge.MergeOntologies(O1triples, O2triples,"Ekaw-de", "Conference-de")
-//val multilingualMergedOntology = ontoMerge.MergeOntologies(O1triples, O2triples,"src/main/resources/OfflineDictionaries/Translations-Edas-en.csv")
 
 
-    println("======================================")
-    println("|            Merged Ontology         |")
-    println("======================================")
-//    multilingualMergedOntology.take(10).foreach(println(_))
+    ontoMatch.MatchOntologies(O1triples, O2triples,"Ekaw-de", "Conference-de")
 
 
+//    println("==========================================================================")
+//    println("|         Quality Assessment for each input and output ontologies        |")
+//    println("==========================================================================")
+//    val quality = new QualityAssessment(sparkSession1)
+//      quality.GetQualityAssessmentSheet(O1triples, O2triples)
 
-    println("Statistics for merged ontology")
-    ontStat.getStatistics(multilingualMergedOntology)
-
-    println("==========================================================================")
-    println("|         Quality Assessment for each input and output ontologies        |")
-    println("==========================================================================")
-    val quality = new QualityAssessment(sparkSession1)
-      quality.GetQualityAssessmentSheet(O1triples, O2triples, multilingualMergedOntology)
-*/
     sparkSession1.stop
   }
 

@@ -73,8 +73,8 @@ public class MOMergGUI extends JFrame{
                 if(returnVal == JFileChooser.APPROVE_OPTION) {
                     selectedFilePath = chooser.getSelectedFile().toString();
                     System.out.println("You chose to open this file: " + selectedFilePath);
-                    OntoMerge Om = new OntoMerge();
-                    Om.OnMerge(selectedFilePath);
+//                    OntoMerge Om = new OntoMerge();
+//                    Om.OnMerge(selectedFilePath);
 
                 }
             }

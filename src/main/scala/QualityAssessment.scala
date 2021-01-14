@@ -7,44 +7,32 @@ import org.apache.spark.sql.SparkSession
 */
 class QualityAssessment(sparkSession: SparkSession) {
   val ontoStat = new OntologyStatistics(sparkSession)
-  val ontoMerge = new Merge(sparkSession)
 
   /**
     * Get the quality assessment sheet for the input and merged ontologies.
     */
-  def GetQualityAssessmentSheet(O1: RDD[graph.Triple], O2: RDD[graph.Triple], Om: RDD[graph.Triple])={
+  def GetQualityAssessmentSheet(O1: RDD[graph.Triple], O2: RDD[graph.Triple])={
     println("Relationship richness for O1 is " + this.RelationshipRichness(O1))
     println("Relationship richness for O2 is " + this.RelationshipRichness(O2))
-    println("Relationship richness for Om is " + this.RelationshipRichness(Om))
     println("==============================================")
     println("Attribute richness for O1 is " + this.AttributeRichness(O1))
     println("Attribute richness for O2 is " + this.AttributeRichness(O2))
-    println("Attribute richness for Om is " + this.AttributeRichness(Om))
     println("==============================================")
     println("Inheritance richness for O1 is " + this.InheritanceRichness(O1))
     println("Inheritance richness for O2 is " + this.InheritanceRichness(O2))
-    println("Inheritance richness for Om is " + this.InheritanceRichness(Om))
     println("==============================================")
     println("Readability for O1 is " + this.Readability(O1))
     println("Readability for O2 is " + this.Readability(O2))
-    println("Readability for Om is " + this.Readability(Om))
     println("==============================================")
     println("Isolated Elements for O1 is " + this.IsolatedElements(O1))
     println("Isolated Elements for O2 is " + this.IsolatedElements(O2))
-    println("Isolated Elements for Om is " + this.IsolatedElements(Om))
     println("==============================================")
     println("Missing Domain Or Range for O1 is " + this.MissingDomainOrRange(O1))
     println("Missing Domain Or Range for O2 is " + this.MissingDomainOrRange(O2))
-    println("Missing Domain Or Range for Om is " + this.MissingDomainOrRange(Om))
     println("==============================================")
     println("Redundancy for O1 is " + this.Redundancy(O1))
     println("Redundancy for O2 is " + this.Redundancy(O2))
-    println("Redundancy for Om is " + this.Redundancy(Om))
     println("==============================================")
-    println("Class coverage for Om is " + this.ClassCoverage(O1, O2, Om, ontoMerge.numberOfMatchedClasses))
-    println("Property coverage for Om is " + this.PropertyCoverage(O1, O2, Om, ontoMerge.numberOfMatchedRelations))
-    println("Compactness for Om is " + this.Compactness(O1, O2, Om))
-
   }
 
   /**

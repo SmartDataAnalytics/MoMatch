@@ -5,13 +5,17 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.storage.StorageLevel
 
-class Merge(sparkSession1: SparkSession) {
+/*
+* Created by Shimaa 14.Jan.2021
+* */
+
+class Match(sparkSession1: SparkSession) {
   var numberOfMatchedClasses = 0
   var numberOfMatchedRelations = 0
   /**
-    * Merge two ontologies in two different natural languages.
+    * Match two ontologies in two different natural languages.
     */
-  def MergeOntologies(O1triples: RDD[graph.Triple], O2triples: RDD[graph.Triple], O2translated: String, O1Name: String): RDD[graph.Triple] = {
+  def MatchOntologies(O1triples: RDD[graph.Triple], O2triples: RDD[graph.Triple], O2translated: String, O1Name: String)= {
     val ontStat = new OntologyStatistics(sparkSession1)
     //    ontStat.getStatistics(O1triples)
     //    ontStat.getStatistics(O2triples)
@@ -55,7 +59,7 @@ class Merge(sparkSession1: SparkSession) {
     //    val languageTag1: String = O1triples.filter(x=> x.getPredicate.getLocalName == "label").first().getObject.getLiteralLanguage
     //    println("language tag for O1 is "+languageTag1)
     //        Translation.translateToEnglish(O1Classes,O1Relations, languageTag1)
-//    Translation.translateToGerman(O2Classes,O2Relations)
+    //    Translation.translateToGerman(O2Classes,O2Relations)
 
     val O1ClassesWithTranslation: RDD[(String, String)] = sparkSession1.sparkContext.textFile("src/main/resources/OfflineDictionaries/"+O1Name+"/classesWithTranslation.txt").map(x => (x.split(",").apply(0), x.split(",").apply(1))) //    println("O1 classes with translation")
     //    O1ClassesWithTranslation.foreach(println(_))
@@ -74,13 +78,5 @@ class Merge(sparkSession1: SparkSession) {
     matchedRelations.foreach(println(_))
     numberOfMatchedRelations = matchedRelations.count().toInt
 
-
-    val om = new MultilingualOntology(sparkSession1)
-    val multilingualMergedOntology: RDD[graph.Triple] = om.GenerateMultilingualOntology(O1ClassesWithTranslation, matchedClasses, matchedRelations, O1RelationsWithTranslation, O1Ontology, O2Ontology, O2translated)
-
-//    multilingualMergedOntology.coalesce(1, shuffle = true).saveAsNTriplesFile("src/main/resources/MultilingualMergedOntology")
-
-
-    multilingualMergedOntology
   }
 }
