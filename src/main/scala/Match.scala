@@ -72,6 +72,7 @@ class Match(sparkSession1: SparkSession) {
     val matchedClasses: RDD[(String, String, String, Double)] = sim.GetMultilingualClassSimilarity(O1ClassesWithTranslation, O2Classes)
     matchedClasses.foreach(println(_))
     numberOfMatchedClasses = matchedClasses.count().toInt
+    println("Number of matched classes = ", numberOfMatchedClasses)
 
 
     val O1RelationsWithTranslation: RDD[(String, String)] = sparkSession1.sparkContext.textFile("src/main/resources/OfflineDictionaries/" + O1Name + "/RelationsWithTranslation.txt").map(x => (x.split(",").apply(0), x.split(",").apply(1))) //        println("O1 relations with translation")
@@ -81,6 +82,7 @@ class Match(sparkSession1: SparkSession) {
     val matchedRelations: RDD[(String, String, String, Double)] = relSim.GetMultilingualRelationSimilarity(O2Relations, O1RelationsWithTranslation)
     matchedRelations.foreach(println(_))
     numberOfMatchedRelations = matchedRelations.count().toInt
+    println("Number of matched relations = ", numberOfMatchedRelations)
   }
 
   /**
@@ -94,6 +96,7 @@ class Match(sparkSession1: SparkSession) {
     val matchedClasses: RDD[(String, String, Double)] = sim.GetMonolingualClassSimilarity(O1Classes, O2Classes)
     matchedClasses.foreach(println(_))
     numberOfMatchedClasses = matchedClasses.count().toInt
+    println("Number of matched classes = ", numberOfMatchedClasses)
 
 
     //    val O1RelationsWithTranslation: RDD[(String, String)] = sparkSession1.sparkContext.textFile("src/main/resources/OfflineDictionaries/"+O1Name+"/RelationsWithTranslation.txt").map(x => (x.split(",").apply(0), x.split(",").apply(1))) //        println("O1 relations with translation")
@@ -103,5 +106,6 @@ class Match(sparkSession1: SparkSession) {
     val matchedRelations: RDD[(String, String, Double)] = relSim.GetMonolingualRelationSimilarity(O2Relations, O2Relations)
     matchedRelations.foreach(println(_))
     numberOfMatchedRelations = matchedRelations.count().toInt
+    println("Number of matched relations = ", numberOfMatchedRelations)
   }
 }
