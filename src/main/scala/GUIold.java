@@ -4,12 +4,9 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import java.awt.*;
 import java.awt.event.*;
-import java.util.*;
-import javax.swing.*;
 
-public class MOMergGUI extends JFrame{
+public class GUIold extends JFrame{
     private JPanel mainPanel;
     private JLabel O1Label;
     private JButton uploadButton;
@@ -24,10 +21,10 @@ public class MOMergGUI extends JFrame{
     public String selectedFilePath;
 
 
-    //    public MOMergGUI(){
+    //    public GUIold(){
 //
 //    }
-    public MOMergGUI(){
+    public GUIold(){
 
 //        super(title);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -96,10 +93,10 @@ public class MOMergGUI extends JFrame{
     }
 
     public static void main(String[] args){
-        JFrame frame = new MOMergGUI();
+        JFrame frame = new GUIold();
         frame.setVisible(true);
 //        OntoMerge Om = new OntoMerge();
-        new MOMergGUI();
+        new GUIold();
 //        Om.OnMerge(gui.selectedFilePath);
 
         // add ItemListener

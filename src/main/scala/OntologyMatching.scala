@@ -10,7 +10,7 @@ import org.apache.spark.sql.SparkSession
 * */
 object OntologyMatching {
   def main(args: Array[String]): Unit = {
-    //    val frame = new MOMergGUI("My first try")
+    //    val frame = new GUIold("My first try")
     //    frame.setVisible(true)
     Logger.getLogger("org").setLevel(Level.OFF)
     Logger.getLogger("akka").setLevel(Level.OFF)
@@ -18,7 +18,7 @@ object OntologyMatching {
       .master("local[*]").config("spark.serializer", "org.apache.spark.serializer.KryoSerializer").getOrCreate()
 
     val startTimeMillis = System.currentTimeMillis()
-    //    val m = new MOMergGUI()
+    //    val m = new GUIold()
     //    println(m.s)
     //================= German ontologies =================
     //        val O1 = "src/main/resources/EvaluationDataset/German/conference-de.ttl"
@@ -40,7 +40,7 @@ object OntologyMatching {
     //              val O1 = "src/main/resources/EvaluationDataset/French/iasted-fr.ttl"
     //              val O1 = "src/main/resources/EvaluationDataset/French/sigkdd-fr.ttl"
     //================= English ontologies =================
-    val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/uo.nt"
+    val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/new/uo.nt"
 
 //    val O2 = "src/main/resources/CaseStudy/SEO.ttl"
 //    val O2 = "src/main/resources/EvaluationDataset/English/edas-en.ttl"
