@@ -176,6 +176,8 @@ class UI extends MainFrame {
   val status2 = new RadioButton("Monolingual matching")
   status1.selected = true // do Cross-lingual matching by default
   val statusGroup: ButtonGroup = new ButtonGroup(status1, status2)
+  val naturalLanguageForO1 = new ComboBox(List("Detect language","English", "German", "French", "Arabic"))
+  val naturalLanguageForO2 = new ComboBox(List("Detect language","English", "German", "French", "Arabic"))
   val gender = new ComboBox(List("don't know", "female", "male"))
   val commentField = new TextArea { rows = 8; lineWrap = true; wordWrap = true }
   val pressMe = new ToggleButton("Press me!")
@@ -191,6 +193,10 @@ class UI extends MainFrame {
       contents += firstOntology
       contents += Swing.HStrut(5)
       contents += Button("Browse") {browseForFirstOntology()}
+      contents += Swing.HStrut(5)
+      contents += new Label("Language")
+      contents += Swing.HStrut(5)
+      contents += naturalLanguageForO1
     }
     contents += Swing.VStrut(5)
     contents += new BoxPanel(Orientation.Horizontal) {
@@ -199,6 +205,10 @@ class UI extends MainFrame {
       contents += secondOntology
       contents += Swing.HStrut(5)
       contents += Button("Browse") {browseForSecondOntology()}
+      contents += Swing.HStrut(5)
+      contents += new Label("Language")
+      contents += Swing.HStrut(5)
+      contents += naturalLanguageForO2
     }
     contents += Swing.VStrut(10)
     contents += new BoxPanel(Orientation.Horizontal) {
@@ -249,8 +259,9 @@ class UI extends MainFrame {
       contents += Swing.HGlue
       contents += Button("Close") { closeAndExit() }
     }
-    for (e <- contents)
+    for (e <- contents){
       e.xLayoutAlignment = 0.0
+    }
     border = Swing.EmptyBorder(10, 10, 10, 10)
   }
 
