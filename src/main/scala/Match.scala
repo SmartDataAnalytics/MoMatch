@@ -15,7 +15,7 @@ class Match(sparkSession1: SparkSession) {
   /**
     * Match two ontologies in two different natural languages.
     */
-  def MatchOntologies(O1triples: RDD[graph.Triple], O2triples: RDD[graph.Triple], O1Name: String, IsCrosslingual: Int) = {
+  def MatchOntologies(O1triples: RDD[graph.Triple], O2triples: RDD[graph.Triple], O1Name: String, IsCrosslingual: Boolean) = {
     val ontStat = new OntologyStatistics(sparkSession1)
     //    ontStat.getStatistics(O1triples)
     //    ontStat.getStatistics(O2triples)
@@ -52,7 +52,7 @@ class Match(sparkSession1: SparkSession) {
     println("====================================== All relations in O2 ======================================")
     O2Relations.foreach(println(_))
 
-    if (IsCrosslingual == 1) {
+    if (IsCrosslingual == true) {
       println("================================ Cross-lingual Matching ======================================")
       this.CrossLingualMatching(O1Name, O2Classes, O2Relations)
     } else {
