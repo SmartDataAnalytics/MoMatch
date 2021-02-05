@@ -10,9 +10,9 @@ class OntologyStatistics(sparkSession: SparkSession) {
     * Get some statistics for the ontology such as number of triples, number of object properties, number of data properties, and number of classes
     */
   def getStatistics(ontologyTriples: RDD[graph.Triple]) = {
-    println("======================================")
-    println("|       Ontology Statistics      |")
-    println("======================================") //    val ontoName = ontologyTriples.filter(x => x.getPredicate.getLocalName == "type" && x.getObject.getLocalName == "Ontology").map(x => x.getSubject.getLocalName).first()
+//    println("======================================")
+//    println("|       Ontology Statistics      |")
+//    println("======================================") //    val ontoName = ontologyTriples.filter(x => x.getPredicate.getLocalName == "type" && x.getObject.getLocalName == "Ontology").map(x => x.getSubject.getLocalName).first()
     //    println("Ontology name is: " + ontoName)
     println("Number of triples in the ontology = " + ontologyTriples.count()) //    ontologyTriples.foreach(println(_))
     val sObjectProperty = ontologyTriples.filter(q => q.getObject.isURI && q.getObject.getLocalName == "ObjectProperty").distinct(2)
