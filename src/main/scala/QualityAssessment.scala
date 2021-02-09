@@ -9,30 +9,16 @@ class QualityAssessment(sparkSession: SparkSession) {
   val ontoStat = new OntologyStatistics(sparkSession)
 
   /**
-    * Get the quality assessment sheet for the input and merged ontologies.
+    * Get the quality assessment sheet for the input ontology.
     */
-  def GetQualityAssessmentSheet(O1: RDD[graph.Triple], O2: RDD[graph.Triple])={
-    println("Relationship richness for O1 is " + this.RelationshipRichness(O1))
-    println("Relationship richness for O2 is " + this.RelationshipRichness(O2))
-    println("==============================================")
-    println("Attribute richness for O1 is " + this.AttributeRichness(O1))
-    println("Attribute richness for O2 is " + this.AttributeRichness(O2))
-    println("==============================================")
-    println("Inheritance richness for O1 is " + this.InheritanceRichness(O1))
-    println("Inheritance richness for O2 is " + this.InheritanceRichness(O2))
-    println("==============================================")
-    println("Readability for O1 is " + this.Readability(O1))
-    println("Readability for O2 is " + this.Readability(O2))
-    println("==============================================")
-    println("Isolated Elements for O1 is " + this.IsolatedElements(O1))
-    println("Isolated Elements for O2 is " + this.IsolatedElements(O2))
-    println("==============================================")
-    println("Missing Domain Or Range for O1 is " + this.MissingDomainOrRange(O1))
-    println("Missing Domain Or Range for O2 is " + this.MissingDomainOrRange(O2))
-    println("==============================================")
-    println("Redundancy for O1 is " + this.Redundancy(O1))
-    println("Redundancy for O2 is " + this.Redundancy(O2))
-    println("==============================================")
+  def GetQualityAssessmentSheet(O: RDD[graph.Triple])={
+    println("Relationship richness = " + this.RelationshipRichness(O))
+    println("Attribute richness = " + this.AttributeRichness(O))
+    println("Inheritance richness = " + this.InheritanceRichness(O))
+    println("Readability = " + this.Readability(O))
+    println("Isolated Elements = " + this.IsolatedElements(O))
+    println("Missing Domain Or Range = " + this.MissingDomainOrRange(O))
+    println("Redundancy = " + this.Redundancy(O))
   }
 
   /**
@@ -67,7 +53,7 @@ class QualityAssessment(sparkSession: SparkSession) {
   def InheritanceRichness(ontologyTriples: RDD[graph.Triple]): Double = {
     val numOfSubClassOf = ontoStat.getNumberOfSubClasses(ontologyTriples)
     val numOfClasses = ontoStat.getNumberOfClasses(ontologyTriples)
-    println("Number of subClassOf "+numOfSubClassOf+" Number of classes "+numOfClasses)
+//    println("Number of subClassOf "+numOfSubClassOf+" Number of classes "+numOfClasses)
     ontoStat.roundNumber(numOfSubClassOf / numOfClasses)
   }
 

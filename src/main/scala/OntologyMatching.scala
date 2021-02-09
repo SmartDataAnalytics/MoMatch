@@ -68,11 +68,13 @@ object OntologyMatching {
     ontoMatch.MatchOntologies(O1triples, O2triples, "Conference-de", IsCrosslingual = false)
 
 
-    //    println("==========================================================================")
-    //    println("|         Quality Assessment for each input and output ontologies        |")
-    //    println("==========================================================================")
-    //    val quality = new QualityAssessment(sparkSession1)
-    //      quality.GetQualityAssessmentSheet(O1triples, O2triples)
+    println("==========================================================================")
+    println("|         Quality Assessment for each input and output ontologies        |")
+    println("==========================================================================")
+    val quality = new QualityAssessment(sparkSession1)
+//    quality.GetQualityAssessmentSheet(O1triples, O2triples)
+    quality.GetQualityAssessmentSheet(O1triples)
+
 
     val endTimeMillis = System.currentTimeMillis()
     val durationMinutes = (endTimeMillis - startTimeMillis) / (1000 * 60)

@@ -1,4 +1,3 @@
-import java.awt.Color
 import java.io.File
 
 import net.sansa_stack.rdf.spark.io._
@@ -12,6 +11,7 @@ import scala.swing.Swing._
 import scala.swing._
 import scala.swing.event._
 
+
 object MoMatchGUI {
   def main(args: Array[String]) {
     val ui = new UI
@@ -20,132 +20,6 @@ object MoMatchGUI {
   }
 }
 
-//class UI extends MainFrame {
-//  title = "MoMatch-Multilingual Ontology Matching"
-//  preferredSize = new Dimension(320, 240)
-//  contents = new BoxPanel(Orientation.Vertical) {
-//    contents += new Label("Look at me!")
-//    contents += Swing.VStrut(10)
-//    contents += Swing.Glue
-//    contents += Button("Press me, please") { println("Thank you") }
-//    contents += Swing.VStrut(5)
-//    contents += Button("Close") { sys.exit(0) }
-//    border = Swing.EmptyBorder(10, 10, 10, 10)
-//  }
-//}
-//class UI extends MainFrame {
-//  val la = new Label("Look at me!")
-//
-//  la.foreground = Color.BLUE
-//  title = "GUI Program #4"
-//
-//  contents = new BoxPanel(Orientation.Vertical) {
-//    contents += la
-//    contents += Swing.VStrut(10)
-//    contents += Swing.Glue
-//    contents += Button("Press me, please") { pressMe() }
-//    contents += Swing.VStrut(5)
-//    contents += Button("Change text") { changeText() }
-//    contents += Swing.VStrut(5)
-//    contents += Button("Close") { closeMe() }
-//    border = Swing.EmptyBorder(10, 10, 10, 10)
-//  }
-//
-//  def pressMe() {
-//    Dialog.showMessage(contents.head, "Thank you!", title="You pressed me")
-//  }
-//
-//  def changeText() {
-//    val r = Dialog.showInput(contents.head, "New label text", initial=la.text)
-//    r match {
-//      case Some(s) => la.text = s
-//      case None =>
-//    }
-//  }
-//
-//  def closeMe() {
-//    val res = Dialog.showConfirmation(contents.head,
-//      "Do you really want to quit?",
-//      optionType=Dialog.Options.YesNo,
-//      title=title)
-//    if (res == Dialog.Result.Ok)
-//      sys.exit(0)
-//  }
-//
-//}
-//class UI extends MainFrame {
-//  def restrictHeight(s: Component) {
-//    s.maximumSize = new Dimension(Short.MaxValue, s.preferredSize.height)
-//  }
-//
-//  title = "MoMatch-Multilingual Ontology Matching"
-//
-//  val firstOntology = new TextField { columns = 32 }
-//  val likeScala = new CheckBox("I like Scala")
-//  likeScala.selected = true
-//  val crosslingualStatus = new RadioButton("학부생")
-//  val monolingualStatus = new RadioButton("대학원생")
-//  val status3 = new RadioButton("교수")
-//  status3.selected = true
-//  val statusGroup1 = new ButtonGroup(crosslingualStatus, monolingualStatus, status3)
-//  val gender = new ComboBox(List("don't know", "female", "male"))
-//  val commentField = new TextArea { rows = 8; lineWrap = true; wordWrap = true }
-//  val pressMe = new ToggleButton("Press me!")
-//  pressMe.selected = true
-//
-//  restrictHeight(firstOntology)
-//  restrictHeight(gender)
-//
-//  contents = new BoxPanel(Orientation.Vertical) {
-//    contents += new BoxPanel(Orientation.Horizontal) {
-//      contents += new Label("My name")
-//      contents += Swing.HStrut(5)
-//      contents += firstOntology
-//    }
-//    contents += Swing.VStrut(5)
-//    contents += likeScala
-//    contents += Swing.VStrut(5)
-//    contents += new BoxPanel(Orientation.Horizontal) {
-//      contents += crosslingualStatus
-//      contents += Swing.HStrut(10)
-//      contents += monolingualStatus
-//      contents += Swing.HStrut(10)
-//      contents += status3
-//    }
-//    contents += Swing.VStrut(5)
-//    contents += new BoxPanel(Orientation.Horizontal) {
-//      contents += new Label("Gender")
-//      contents += Swing.HStrut(20)
-//      contents += gender
-//    }
-//    contents += Swing.VStrut(5)
-//    contents += new Label("Comments")
-//    contents += Swing.VStrut(3)
-//    contents += new ScrollPane(commentField)
-//    contents += Swing.VStrut(5)
-//    contents += new BoxPanel(Orientation.Horizontal) {
-//      contents += pressMe
-//      contents += Swing.HGlue
-//      contents += Button("Close") { reportAndClose() }
-//    }
-//    for (e <- contents)
-//      e.xLayoutAlignment = 0.0
-//    border = Swing.EmptyBorder(10, 10, 10, 10)
-//  }
-//
-//  def reportAndClose() {
-//    println("Your name: " + firstOntology.text)
-//    println("You like Scala: " + likeScala.selected)
-//    println("Undergraduate: " + crosslingualStatus.selected)
-//    println("Graduate: " + monolingualStatus.selected)
-//    println("Professor: " + status3.selected)
-//    println("Gender: " + gender.selection.item +
-//      " (Index: " + gender.selection.index + ")")
-//    println("Comments: " + commentField.text)
-//    println("'Press me' is pressed: " + pressMe.selected)
-//    sys.exit(0)
-//  }
-//}
 class UI extends MainFrame {
   Logger.getLogger("org").setLevel(Level.OFF)
   Logger.getLogger("akka").setLevel(Level.OFF)
@@ -174,17 +48,20 @@ class UI extends MainFrame {
     columns = 32
   }
   secondOntology.editable = false
-  //  val likeScala = new CheckBox("I like Scala")
-  //  likeScala.selected = true
   val crosslingualStatus = new RadioButton("Cross-lingual matching")
   val monolingualStatus = new RadioButton("Monolingual matching")
   crosslingualStatus.selected = true // do Cross-lingual matching by default
   val statusGroup1: ButtonGroup = new ButtonGroup(crosslingualStatus, monolingualStatus)
   val statsForO1 = new RadioButton("Statistics for the first ontology")
   val statsForO2 = new RadioButton("Statistics for the second ontology")
+  statsForO1.selected = true // by default get statistics for O1
   val statsGroup2: ButtonGroup = new ButtonGroup(statsForO1, statsForO2)
   val naturalLanguageForO1 = new ComboBox(List("Detect language", "English", "German", "French", "Arabic"))
   val naturalLanguageForO2 = new ComboBox(List("Detect language", "English", "German", "French", "Arabic"))
+  val qualityAssessmentForO1 = new RadioButton("Quality assessment for the first ontology")
+  val qualityAssessmentForO2 = new RadioButton("Quality assessment for the second ontology")
+  qualityAssessmentForO1.selected = true // do assessment for O1 by default
+  val statusGroup2: ButtonGroup = new ButtonGroup(qualityAssessmentForO1, qualityAssessmentForO2)
   //  val gender = new ComboBox(List("don't know", "female", "male"))
   //  val commentField = new TextArea { rows = 8; lineWrap = true; wordWrap = true }
   //  val pressMe = new ToggleButton("Press me!")
@@ -194,7 +71,8 @@ class UI extends MainFrame {
   //  restrictHeight(gender)
   contents = new BoxPanel(Orientation.Vertical) {
     contents += new BoxPanel(Orientation.Vertical) {
-      border = LineBorder(Color.gray)
+      border = Swing.TitledBorder(Swing.EtchedBorder(Swing.Lowered),"Input ontologies")
+      //      border = LineBorder(Color.gray)
       contents += new BoxPanel(Orientation.Horizontal) {
         border = EmptyBorder(10)
         contents += new Label("First ontology")
@@ -209,7 +87,7 @@ class UI extends MainFrame {
         contents += Swing.HStrut(5)
         contents += naturalLanguageForO1
       }
-      contents += Swing.VStrut(5)
+//      contents += Swing.VStrut(5)
       contents += new BoxPanel(Orientation.Horizontal) {
         border = EmptyBorder(10)
         contents += new Label("Second ontology")
@@ -227,29 +105,23 @@ class UI extends MainFrame {
     }
     contents += Swing.VStrut(10)
 
+    import java.awt.Font
+
+    val myFont = new Font("SansSerif", Font.PLAIN, 10)
     contents += new BoxPanel(Orientation.Vertical) {
-      border = LineBorder(Color.gray)
+      border = Swing.TitledBorder(Swing.EtchedBorder(Swing.Lowered), "Ontology Statistics")
+      //      border = LineBorder(Color.gray)
       contents += new BoxPanel(Orientation.Horizontal) {
         border = EmptyBorder(10)
-        contents += new Label("Ontology Statistics:")
-        contents += Swing.HStrut(5)
-        contents += statsForO1
-        contents += Swing.HStrut(5)
-        contents += statsForO2
-        contents += Swing.HStrut(5)
-        contents += Button("Get statistics") {
-          getStats()
-        }
+        contents += new BorderPanel {
+          add(statsForO1, BorderPanel.Position.West)
+          add(statsForO2, BorderPanel.Position.Center)
+          add(Button("Get statistics") {
+            getStats()
+          }, BorderPanel.Position.East)
       }
-//      contents += Swing.VStrut(5)
-//      contents += new BoxPanel(Orientation.Horizontal) {
-//        border = EmptyBorder(10)
-//        contents += new Label("Statistics for the second ontology:")
-//        contents += Swing.HStrut(5)
-//        contents += Button("Get statistics") {
-//          getStatsForO2()
-//        }
-//      }
+      }
+
     }
 
     //    contents += Swing.VStrut(5)
@@ -257,44 +129,40 @@ class UI extends MainFrame {
     //    contents += Swing.VStrut(5)
     contents += Swing.VStrut(5)
     contents += new BoxPanel(Orientation.Vertical) {
-      border = LineBorder(Color.gray)
+      border = Swing.TitledBorder(Swing.EtchedBorder(Swing.Lowered),"Ontology Matching")
+      //      border = LineBorder(Color.gray)
       contents += new BoxPanel(Orientation.Horizontal) {
         border = EmptyBorder(10)
-        contents += new Label("Matching type:")
-        contents += Swing.HStrut(5)
-        contents += crosslingualStatus //Cross-lingual matching
-        contents += Swing.HStrut(10)
-        contents += monolingualStatus //Monolingual matching
-        //      contents += Swing.HStrut(10)
-        //      contents += status3
-        contents += Swing.HStrut(5)
-        contents += Button("Match") {
-          doMatch()
+        contents += new BorderPanel {
+          add(crosslingualStatus, BorderPanel.Position.West)
+          add(monolingualStatus, BorderPanel.Position.Center)
+          add(Button("Match") {
+            doMatch()
+          }, BorderPanel.Position.East)
         }
       }
     }
-    //    contents += Swing.VStrut(5)
-    //    contents += new BoxPanel(Orientation.Horizontal) {
-    //      contents += Button("Match"){}
-    //    }
-    //    contents += Swing.VStrut(5)
-    //    contents += new BoxPanel(Orientation.Horizontal) {
-    //      contents += new Label("Gender")
-    //      contents += Swing.HStrut(20)
-    //      contents += gender
-    //    }
     contents += Swing.VStrut(5)
-    //    contents += new Label("Comments")
-    //    contents += Swing.VStrut(3)
-    //    contents += new ScrollPane(commentField)
-    //    contents += Swing.VStrut(5)
-    contents += new BoxPanel(Orientation.Horizontal) {
-      //      contents += pressMe
-      contents += Swing.HGlue
-      contents += Button("Close") {
-        closeAndExit()
+    contents += new BoxPanel(Orientation.Vertical) {
+      border = Swing.TitledBorder(Swing.EtchedBorder(Swing.Lowered),"Quality Assessment")
+      //      border = LineBorder(Color.gray)
+      contents += new BoxPanel(Orientation.Horizontal) {
+        border = EmptyBorder(10)
+        contents += new BorderPanel {
+          add(qualityAssessmentForO1, BorderPanel.Position.West)
+          add(qualityAssessmentForO2, BorderPanel.Position.Center)
+          add(Button("Assess") {assess()}, BorderPanel.Position.East)
+        }
       }
     }
+//    contents += Swing.VStrut(10)
+//    contents += new BoxPanel(Orientation.Horizontal) {
+//      contents += Swing.HGlue
+//      contents += Button("Close") {
+//        closeAndExit()
+//      }
+//    }
+
     for (e <- contents) {
       e.xLayoutAlignment = 0.0
     }
@@ -409,6 +277,25 @@ class UI extends MainFrame {
     }
   }
 
+  def assess() {
+    val quality = new QualityAssessment(sparkSession1)
+    if (O1triples.isEmpty() || O2triples.isEmpty()) {
+      val res = Dialog.showMessage(contents.head, "Please select the two ontologies first.", title)
+    } else {
+      if (qualityAssessmentForO1.selected == true){
+        println("===============================================")
+        println("|  Quality assessment for the first ontology  |")
+        println("===============================================")
+        quality.GetQualityAssessmentSheet(O1triples)
+      }
+      else if (qualityAssessmentForO2.selected == true){
+        println("===============================================")
+        println("| Quality assessment for the second ontology  |")
+        println("===============================================")
+        quality.GetQualityAssessmentSheet(O2triples)
+      }
+    }
+  }
   //  def reportAndClose() {
   //    println("Your name: " + firstOntology.text)
   //    println("You like Scala: " + likeScala.selected)
