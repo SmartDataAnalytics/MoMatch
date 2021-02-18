@@ -1,7 +1,9 @@
 import java.io.File
 
 import net.sansa_stack.rdf.spark.io._
+import net.sansa_stack.rdf.spark.model._
 import org.apache.jena.graph
+import org.apache.jena.graph.NodeFactory
 import org.apache.jena.riot.Lang
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
@@ -32,6 +34,8 @@ class UI extends MainFrame {
   var O1triples: RDD[graph.Triple] = sparkSession1.sparkContext.emptyRDD[graph.Triple]
   //  val O2triples: RDD[graph.Triple] = sparkSession1.rdf(lang1)(O2).distinct(2)
   var O2triples: RDD[graph.Triple] = sparkSession1.sparkContext.emptyRDD[graph.Triple]
+  var languageTagForO1 = ""
+  var languageTagForO2 = ""
 
 
   def restrictHeight(s: Component) {
@@ -241,6 +245,37 @@ class UI extends MainFrame {
     } else None
   }
 
+  def getLanguageForO1(): String ={
+    if (naturalLanguageForO1.item == "English"){
+      languageTagForO1 = "en"
+    }
+    else if (naturalLanguageForO1.item == "German"){
+      languageTagForO1 = "de"
+    }
+    else if (naturalLanguageForO1.item == "Arabic"){
+      languageTagForO1 = "ar"
+    }
+    else if (naturalLanguageForO1.item == "French"){
+      languageTagForO1 = "fr"
+    }
+    languageTagForO1
+  }
+  def getLanguageForO2(): String ={
+    if (naturalLanguageForO2.item == "English"){
+      languageTagForO2 = "en"
+    }
+    else if (naturalLanguageForO2.item == "German"){
+      languageTagForO2 = "de"
+    }
+    else if (naturalLanguageForO2.item == "Arabic"){
+      languageTagForO2 = "ar"
+    }
+    else if (naturalLanguageForO2.item == "French"){
+      languageTagForO2 = "fr"
+    }
+    languageTagForO2
+  }
+
   def getStats() {
     val ontStat = new OntologyStatistics(sparkSession1)
     if (O1triples.isEmpty()||O2triples.isEmpty()) {
@@ -265,7 +300,11 @@ class UI extends MainFrame {
     val ontoMatch = new Match(sparkSession1)
     if (O1triples.isEmpty() || O2triples.isEmpty()) {
       val res = Dialog.showMessage(contents.head, "Please select the two ontologies first to be matched!", title)
-    } else {
+    }
+    else if (naturalLanguageForO1.selection.index == 0 || naturalLanguageForO2.selection.index == 0){
+      val res = Dialog.showMessage(contents.head, "Please choose the language of the two ontologies first.", title)
+    }
+    else {
       if (crosslingualStatus.selected == true) {
         val res = Dialog.showMessage(contents.head, "Matching type is " + crosslingualStatus.text, title)
         println("Matching type is: " + crosslingualStatus.text)
@@ -273,7 +312,10 @@ class UI extends MainFrame {
         val res = Dialog.showMessage(contents.head, "Matching type is " + monolingualStatus.text, title)
         println("Matching type is: " + monolingualStatus.text)
       }
-      ontoMatch.MatchOntologies(O1triples, O2triples, "Conference-de", crosslingualStatus.selected)
+      val O1Name = O1triples.find(None, None, Some(NodeFactory.createURI("http://www.w3.org/2002/07/owl#Ontology")))
+        .map(x => x.getSubject.getLocalName).first()
+      println("First ontology name is: "+O1Name.toString())
+      ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, crosslingualStatus.selected)
     }
   }
 

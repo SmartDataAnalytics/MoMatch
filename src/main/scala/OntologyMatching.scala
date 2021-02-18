@@ -1,5 +1,7 @@
 import net.sansa_stack.rdf.spark.io._
+import net.sansa_stack.rdf.spark.model._
 import org.apache.jena.graph
+import org.apache.jena.graph.NodeFactory
 import org.apache.jena.riot.Lang
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
@@ -64,8 +66,11 @@ object OntologyMatching {
     println("All classes in O2:")
     ontStat.getAllClasses((O2triples)).foreach(println(_))
 
+    val O1Name = O1triples.find(None, None, Some(NodeFactory.createURI("http://www.w3.org/2002/07/owl#Ontology")))
+      .map(x => x.getSubject.getLocalName).first()
+    println("First ontology name is: "+O1Name.toString())
 
-    ontoMatch.MatchOntologies(O1triples, O2triples, "Conference-de", IsCrosslingual = false)
+    ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, IsCrosslingual = false)
 
 
     println("==========================================================================")
