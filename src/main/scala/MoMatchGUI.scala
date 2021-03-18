@@ -36,7 +36,7 @@ class UI extends MainFrame {
   var O2triples: RDD[graph.Triple] = sparkSession1.sparkContext.emptyRDD[graph.Triple]
   var languageTagForO1 = ""
   var languageTagForO2 = ""
-
+  val p = new PreProcessing()
 
   def restrictHeight(s: Component) {
     s.maximumSize = new Dimension(Short.MaxValue, s.preferredSize.height)
@@ -222,7 +222,8 @@ class UI extends MainFrame {
         val res = Dialog.showMessage(contents.head, "Please choose an ontology in NTriple format!", title)
       } else {
         O1 = firstOntology.text
-        O1triples = sparkSession1.rdf(lang1)(O1).distinct(2)
+//        O1triples = sparkSession1.rdf(lang1)(O1).distinct(2)
+        O1triples = p.graphPreprocessing(sparkSession1.rdf(lang1)(O1).distinct(2))
         Some(chooser.selectedFile)
       }
     } else None
@@ -239,7 +240,9 @@ class UI extends MainFrame {
         val res = Dialog.showMessage(contents.head, "Please choose an ontology in NTriple format!", title)
       } else {
         O2 = secondOntology.text
-        O2triples = sparkSession1.rdf(lang1)(O2).distinct(2)
+//        O2triples = sparkSession1.rdf(lang1)(O2).distinct(2)
+        O2triples = p.graphPreprocessing(sparkSession1.rdf(lang1)(O2).distinct(2))
+//        O2triples.coalesce(1, shuffle = true).saveAsTextFile("Pre-processedSecondOntology")
         Some(chooser.selectedFile)
       }
     } else None

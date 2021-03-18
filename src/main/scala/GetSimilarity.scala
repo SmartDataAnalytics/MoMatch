@@ -2,8 +2,9 @@ import edu.cmu.lti.lexical_db.NictWordNet
 import edu.cmu.lti.ws4j.impl.Path
 import edu.cmu.lti.ws4j.util.WS4JConfiguration
 import info.debatty.java.stringsimilarity.Jaccard
+import info.debatty.java.stringsimilarity._
 /*
-* Created by Shimaa 6.11.2018
+* Created by Shimaa 17.02.2021
 * */
 class GetSimilarity extends Serializable{
   val db = new NictWordNet with Serializable
@@ -16,18 +17,8 @@ class GetSimilarity extends Serializable{
     var sent2 = processing.sentenceLemmatization(sentence2)
     var sim = this.getJaccardStringSimilarity(sent1, sent2)
 //    var jaccardSim = 1.0
-    if (sim != 1)
-      sim = (this.sentenceSimilarity(sent1,sent2)+this.sentenceSimilarity(sent2,sent1))/2
-//      sim = this.symmetricSentenceSimilarity(sent1,sent2)
-//    else if (sentence1.split(" ").length > 1 && sentence2.split(" ").length >1 && sim == 1)
-//      jaccardSim = this.getJaccardStringSimilarity(sentence1,sentence2)
-//    else if (sentence1.split(" ").length == 1 && sentence2.split(" ").length >1 && sim == 1)
-//      jaccardSim = this.getJaccardStringSimilarity(sentence1,sentence2)
-//    else if (sentence1.split(" ").length > 1 && sentence2.split(" ").length == 1 && sim == 1)
-//      jaccardSim = this.getJaccardStringSimilarity(sentence1,sentence2)
-//    if (jaccardSim != 1.0)
-//      sim = 0.5
-
+//    if (sim != 1)
+//      sim = (this.sentenceSimilarity(sent1,sent2)+this.sentenceSimilarity(sent2,sent1))/2
     sim
   }
 
@@ -37,6 +28,22 @@ class GetSimilarity extends Serializable{
     val j = new Jaccard(3)
     var jaccardSim = j.similarity(s1, s2)
     jaccardSim
+  }
+
+  /**
+    * Get the Levenshtein similarity between two strings.*/
+  def getLevenshteinStringSimilarity(s1: String, s2: String): Double={
+    val l = new Levenshtein()
+    var levenshteinSim = l.distance(s1, s2)
+    levenshteinSim
+  }
+
+  /**
+    * Get the  Jaro-Winkler similarity between two strings.*/
+  def getJaroWinklerStringSimilarity(s1: String, s2: String): Double={
+    val jw = new JaroWinkler()
+    var JaroWinklerSim = jw.similarity(s1, s2)
+    JaroWinklerSim
   }
 //  def getStringSimilarity(s1: String, s2: String): Double={
 //    //    val cos = new Cosine(2)

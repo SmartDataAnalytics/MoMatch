@@ -3,6 +3,8 @@
 //import de.danielnaber.jwordsplitter.GermanWordSplitter
 import edu.stanford.nlp.simple.{Document, Sentence}
 import edu.stanford.nlp.tagger.maxent.MaxentTagger
+import org.apache.jena.graph
+import org.apache.spark.rdd.RDD
 
 
 class PreProcessing extends Serializable{
@@ -30,6 +32,13 @@ class PreProcessing extends Serializable{
 //    ontologyWithSubjectAndObjectLabel
 //
 //  }
+  def graphPreprocessing(Otriples: RDD[graph.Triple]):RDD[graph.Triple]={
+    val o = Otriples.filter(x => x.getSubject.isBlank || x.getObject.isBlank)
+//    o.take(10).foreach(println(_))
+    val preProcessedGraph = Otriples.subtract(o)
+  preProcessedGraph
+}
+
   /**
     * Remove special characters from a string*/
   def stringPreProcessing(term: String): String = {
