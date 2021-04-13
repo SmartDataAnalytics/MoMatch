@@ -1,44 +1,112 @@
+import com.github.vickumar1981.stringdistance.StringDistance._
+import com.github.vickumar1981.stringdistance.impl.{ConstantGap, LinearGap}
 import com.rockymadden.stringmetric._
 import com.rockymadden.stringmetric.phonetic._
 import com.rockymadden.stringmetric.similarity._
+import info.debatty.java.stringsimilarity.Jaccard
+import me.xdrop.fuzzywuzzy.FuzzySearch
+import com.github.vickumar1981.stringdistance.StringConverter._
 
 object Try {
   def main(args: Array[String]): Unit = {
-    //    Dice / Sorensen Metric:
+    println("############################## Sequence-based measures ##############################")
+    //      Jaro Metric:
+    println("Jaro Metric:")
+    println(JaroMetric.compare("dwayne", "duane").head) // 0.8222222222222223
+    println(JaroMetric.compare("jones", "johnson").head) // 0.7904761904761904
+    println(JaroMetric.compare("MARTHA", "MARHTA").head)
+    println(JaroMetric.compare("fvie", "ten").head) // 0.0
+    //    Jaro-Winkler Metric:
+    println("Jaro-Winkler Metric:")
+    println(JaroWinklerMetric.compare("dwayne", "duane").head) // 0.8400000000000001
+    println(JaroWinklerMetric.compare("jones", "johnson").head) // 0.8323809523809523
+    println(JaroWinklerMetric.compare("MARTHA", "MARHTA").head)
+    println(JaroWinklerMetric.compare("fvie", "ten").head) // 0.0
+    //    Levenshtein Metric:
+    println("Levenshtein Metric:")
+    println(LevenshteinMetric.compare("sitting", "kitten").head) // 3
+    println(LevenshteinMetric.compare("cake", "drake").head) // 2
+    println(LevenshteinMetric.compare("example", "samples").head) // 3
+    //      Hamming Metric:
+    println("Hamming Metric:")
+    println(HammingMetric.compare("toned", "roses").head) // 3
+    println(HammingMetric.compare("alex", "john").head) // 4
+    // Needleman Wunsch
+    val needlemanWunsch: Double = NeedlemanWunsch.score("dva", "deeva", ConstantGap())  // 0.667 "martha", "marhta"
+    println("Needleman Wunsch = "+needlemanWunsch)
+//    Simple Ratio
+//    val ratio = FuzzySearch.ratio("mysmilarstring","myawfullysimilarstirng") //72
+//    val ratio = FuzzySearch.ratio("Robert","Rupert") //67
+    val ratio = FuzzySearch.ratio("Sue","sue") //67
+    println("Ratio = " + ratio)
+//    Partial Ratio
+    val partialRation: Int = FuzzySearch.partialRatio("similar", "somewhresimlrbetweenthisstring") //71
+    println("Partial ratio =" + partialRation)
+//    Partial Token Sort
+    val partailTokenSort = FuzzySearch.tokenSortPartialRatio("order words out of","  words out of order") //100
+    println("Partial token sort = "+partailTokenSort)
+    //    Token Sort
+//    val tokenSort = FuzzySearch.tokenSortRatio("order words out of","  words out of order") //100
+    val tokenSort = FuzzySearch.tokenSortRatio("great is scala","java is great") //81
+    println("Token sort = "+tokenSort)
+    // Smith Waterman Similarities
+    val smithWaterman: Double = SmithWaterman.score("cat", "hat", (LinearGap(gapValue = -1), Integer.MAX_VALUE)) //"martha", "marhta"
+    println("Smith Waterman Similarities = "+smithWaterman)
+    val smithWatermanGotoh1: Double = SmithWatermanGotoh.score("cat", "hat", ConstantGap())
+    println("Smith Waterman score = "+smithWatermanGotoh1)
+    println("latest = " +"martha".smithWatermanGotoh("marhta"))
+
+
+    println("############################## Token-based measures ##############################")
+    // Cosine Similarity
+    val cosSimilarity: Double = Cosine.score("hello", "chello")  // 0.935
+    println("Cosine similarity = "+cosSimilarity)
+    println("Cosine similarity = "+Cosine.score("data", "science")) //0.7071067811865475
+     //    Dice / Sorensen Metric:
     println("Dice / Sorensen Metric:")
-    println(DiceSorensenMetric(1).compare("night", "nacht")) // 0.6
-    println(DiceSorensenMetric(1).compare("context", "contact")) // 0.7142857142857143
+    val d: Double = DiceSorensenMetric(1).compare("night", "nacht").head
+    println("Dice similarity = "+d) // 0.6
+    println("Dice similarity = " + DiceSorensenMetric(1).compare("context", "contact").head) // 0.7142857142857143
+    println("Dice similarity = " + DiceSorensenMetric(1).compare("data", "science").head) //0.6666666666666666
+    //    Jaccard Metric:
+    println("Jaccard Metric:")
+    println(JaccardMetric(1).compare("night", "nacht").head) // 0.3
+    println(JaccardMetric(1).compare("context", "contact").head) // 0.35714285714285715
+    val j = new Jaccard(1)
+    var jaccardSim = j.similarity("night", "nacht")
+    println("jaccardSim = "+jaccardSim)
+    //      Overlap Metric:
+    println("Overlap Metric:")
+    println(OverlapMetric(1).compare("night", "nacht").head) // 0.6
+    println(OverlapMetric(1).compare("context", "contact").head) // 0.7142857142857143
+    // Tversky Similarity
+    val tversky: Double = Tversky.score("karolin", "kathrin", 0.5)  // 0.333
+    println("Tversky Similarity = "+tversky)
+    // TfIdf
+
+    //############################## Hybrid-based measures ##############################
+/*
+* GeneralizedJaccard
+MongeElkan
+SoftTfIdf
+*/
+
+    //############################## Phonetic-based measures ##############################
+    //    Soundex Metric:
+    println("Soundex Metric:")
+    println(SoundexMetric.compare("robert", "rupert").head) // true
+    println(SoundexMetric.compare("robert", "rubin").head) // false
+
+//######################################################################################################
     //      Hamming Metric:
     println("Hamming Metric:")
     println(HammingMetric.compare("toned", "roses")) // 3
     println(HammingMetric.compare("1011101", "1001001")) // 2
-    //    Jaccard Metric:
-    println("Jaccard Metric:")
-    println(JaccardMetric(1).compare("night", "nacht")) // 0.3
-    println(JaccardMetric(1).compare("context", "contact")) // 0.35714285714285715
-    //      Jaro Metric:
-    println("Jaro Metric:")
-    println(JaroMetric.compare("dwayne", "duane")) // 0.8222222222222223
-    println(JaroMetric.compare("jones", "johnson")) // 0.7904761904761904
-    println(JaroMetric.compare("fvie", "ten")) // 0.0
-    //    Jaro-Winkler Metric:
-    println("Jaro-Winkler Metric:")
-    println(JaroWinklerMetric.compare("dwayne", "duane")) // 0.8400000000000001
-    println(JaroWinklerMetric.compare("jones", "johnson")) // 0.8323809523809523
-    println(JaroWinklerMetric.compare("fvie", "ten")) // 0.0
-    //    Levenshtein Metric:
-    println("Levenshtein Metric:")
-    println(LevenshteinMetric.compare("sitting", "kitten")) // 3
-    println(LevenshteinMetric.compare("cake", "drake")) // 2
-    //    N-Gram Metric:
+        //    N-Gram Metric:
     println("N-Gram Metric:")
     println(NGramMetric(1).compare("night", "nacht")) // 0.6
     println(NGramMetric(2).compare("night", "nacht")) // 0.25
     println(NGramMetric(2).compare("context", "contact")) // 0.5
-    //      Overlap Metric:
-    println("Overlap Metric:")
-    println(OverlapMetric(1).compare("night", "nacht")) // 0.6
-    println(OverlapMetric(1).compare("context", "contact")) // 0.7142857142857143
     //      Ratcliff/Obershelp Metric:
     println("Ratcliff/Obershelp Metric:")
     println(RatcliffObershelpMetric.compare("aleksander", "alexandre")) // 0.7368421052631579
@@ -81,10 +149,7 @@ object Try {
     println("Refined Soundex Algorithm:")
     println(RefinedSoundexAlgorithm.compute("hairs")) // h093
     println(RefinedSoundexAlgorithm.compute("lambert")) // l7081096
-    //    Soundex Metric:
-    println("Soundex Metric:")
-    println(SoundexMetric.compare("robert", "rupert")) // true
-    println(SoundexMetric.compare("robert", "rubin")) // false
+
     //    Soundex Algorithm:
     println("Soundex Algorithm:")
     println(SoundexAlgorithm.compute("rupert")) // r163
