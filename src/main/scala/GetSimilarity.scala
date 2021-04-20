@@ -15,14 +15,29 @@ class GetSimilarity extends Serializable{
   /**
     * Get the similarity between two sentences using Jaccard or WordNet.*/
   def getSimilarity(sentence1: String, sentence2: String): Double={
-    var sent1 = processing.sentenceLemmatization(sentence1)
-    var sent2 = processing.sentenceLemmatization(sentence2)
-    var sim = this.getJaccardStringSimilarity(sent1, sent2)
-//    var jaccardSim = 1.0
+    val sent1 = processing.sentenceLemmatization(sentence1)
+    val sent2 = processing.sentenceLemmatization(sentence2)
+//    var sim = this.getJaroStringSimilarity(sent1, sent2)
+    var sim = this.getJaroWinklerStringSimilarity(sent1, sent2)
+//    var sim = this.getLevenshteinStringSimilarity(sent1, sent2)
+//    var sim = this.getHammingDistanceSimilarity(sent1, sent2)
+//    var sim = this.getRatioSimilarity(sent1, sent2)
+//    var sim = this.getPartialRatioSimilarity(sent1, sent2)
+//    var sim = this.getPartialTokenSortSimilarity(sent1, sent2)
+//    var sim = this.getTokenSortSimilarity(sent1, sent2)
+//    var sim = this.getCosineSimilarity(sent1, sent2)
+//    var sim = this.getDiceSimilarity(sent1, sent2)
+//    var sim = this.getJaccardStringSimilarity(sent1, sent2)
+//    var sim = this.getOverlapCoefficientStringSimilarity(sent1, sent2)
+//    var sim = this.getTverskyStringSimilarity(sent1, sent2)
+
+
+    //    var jaccardSim = 1.0
 //    if (sim != 1)
 //      sim = (this.sentenceSimilarity(sent1,sent2)+this.sentenceSimilarity(sent2,sent1))/2
     sim
   }
+
   //############################# Sequence-based measures ########################################
   /**
     * Get the Jaro similarity between two strings.*/

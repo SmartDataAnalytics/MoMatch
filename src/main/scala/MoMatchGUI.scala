@@ -318,7 +318,7 @@ class UI extends MainFrame {
       val O1Name = O1triples.find(None, None, Some(NodeFactory.createURI("http://www.w3.org/2002/07/owl#Ontology")))
         .map(x => x.getSubject.getLocalName).first()
       println("First ontology name is: "+O1Name.toString())
-      ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, crosslingualStatus.selected)
+      ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, crosslingualStatus.selected, threshold = 1.0)
     }
   }
 

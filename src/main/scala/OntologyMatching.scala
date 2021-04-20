@@ -21,7 +21,7 @@ object OntologyMatching {
     //    val m = new GUIold()
     //    println(m.s)
     //================= German ontologies =================
-    //        val O1 = "src/main/resources/EvaluationDataset/German/conference-de.ttl"
+    val O1 = "src/main/resources/EvaluationDataset/German/conference-de.ttl"
     //    val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/ms.nt"
     //    val O1 = "src/main/resources/EvaluationDataset/German/cmt-de.ttl"
     //    val O1 = "src/main/resources/EvaluationDataset/German/confOf-de.ttl"
@@ -40,13 +40,13 @@ object OntologyMatching {
     //              val O1 = "src/main/resources/EvaluationDataset/French/iasted-fr.ttl"
     //              val O1 = "src/main/resources/EvaluationDataset/French/sigkdd-fr.ttl"
     //================= English ontologies =================
-    val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/new/uo.nt"
+//    val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/new/uo.nt"
 //    val O1 = "/home/shimaa/MoMatch/oaei_FMA_whole_ontology.nt"
 
 //    val O2 = "src/main/resources/CaseStudy/SEO.ttl"
-//    val O2 = "src/main/resources/EvaluationDataset/English/edas-en.ttl"
+    val O2 = "src/main/resources/EvaluationDataset/English/edas-en.ttl"
 //    val O2 = "src/main/resources/EvaluationDataset/English/ekaw-en.ttl"
-    val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt"
+//    val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt"
 //    val O2 = "/home/shimaa/MoMatch/oaei_NCI_whole_ontology.nt"
 
     val p = new PreProcessing()
@@ -70,12 +70,12 @@ object OntologyMatching {
 //    println("All classes in O2:")
 //    ontStat.getAllClasses((O2triples)).take(10).foreach(println(_))
 
-    val O1Name = "uo"
+    val O1Name = "conference-de"
 //      O1triples.find(None, None, Some(NodeFactory.createURI("http://www.w3.org/2002/07/owl#Ontology")))
 //      .map(x => x.getSubject.getLocalName).first()
     println("First ontology name is: "+O1Name.toString())
 
-    ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, IsCrosslingual = false)
+    ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, IsCrosslingual = true, threshold = 0.90)
 
 /*
     println("==========================================================================")
