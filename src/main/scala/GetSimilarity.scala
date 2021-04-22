@@ -1,4 +1,4 @@
-import com.github.vickumar1981.stringdistance.StringDistance.{Cosine, Tversky}
+import com.github.vickumar1981.stringdistance.StringDistance._
 import com.rockymadden.stringmetric.phonetic.SoundexMetric
 import com.rockymadden.stringmetric.similarity._
 import edu.cmu.lti.lexical_db.NictWordNet
@@ -18,9 +18,9 @@ class GetSimilarity extends Serializable{
     val sent1 = processing.sentenceLemmatization(sentence1)
     val sent2 = processing.sentenceLemmatization(sentence2)
 //    var sim = this.getJaroStringSimilarity(sent1, sent2)
-    var sim = this.getJaroWinklerStringSimilarity(sent1, sent2)
+//    var sim = this.getJaroWinklerStringSimilarity(sent1, sent2)
 //    var sim = this.getLevenshteinStringSimilarity(sent1, sent2)
-//    var sim = this.getHammingDistanceSimilarity(sent1, sent2)
+    var sim = this.getHammingDistanceSimilarity(sent1, sent2)
 //    var sim = this.getRatioSimilarity(sent1, sent2)
 //    var sim = this.getPartialRatioSimilarity(sent1, sent2)
 //    var sim = this.getPartialTokenSortSimilarity(sent1, sent2)
@@ -54,37 +54,41 @@ class GetSimilarity extends Serializable{
   /**
     * Get the Levenshtein similarity between two strings.*/
   def getLevenshteinStringSimilarity(s1: String, s2: String): Double={
-    val levenshteinSim = LevenshteinMetric.compare(s1, s2).head
+//    val levenshteinSim = LevenshteinMetric.compare(s1, s2).head
+    //Computes the normalized Levenshtein similarity score between two strings
+    val levenshteinSim = Levenshtein.score(s1, s2)
     levenshteinSim
   }
   /**
     * Get Hamming distance between two strings.*/
   def getHammingDistanceSimilarity(s1: String, s2: String): Double={
-    val hammDistSim = HammingMetric.compare(s1, s2).head
+//    val hammDistSim = HammingMetric.compare(s1, s2).head
+    //Normalized Hamming
+    val hammDistSim = Hamming.score(s1, s2)
     hammDistSim
   }
   /**
     * Get ratio similarity between two strings.*/
   def getRatioSimilarity(s1: String, s2: String): Double={
-    val ratioSim = FuzzySearch.ratio(s1, s2)
+    val ratioSim = FuzzySearch.ratio(s1, s2)/100
     ratioSim
   }
   /**
     * Get partial ratio similarity between two strings.*/
   def getPartialRatioSimilarity(s1: String, s2: String): Double={
-    val partialRatioSim = FuzzySearch.partialRatio(s1, s2)
+    val partialRatioSim = FuzzySearch.partialRatio(s1, s2)/100
     partialRatioSim
   }
   /**
     * Get partial token sort similarity between two strings.*/
   def getPartialTokenSortSimilarity(s1: String, s2: String): Double={
-    val partialTokenSortSim = FuzzySearch.tokenSortPartialRatio(s1, s2)
+    val partialTokenSortSim = FuzzySearch.tokenSortPartialRatio(s1, s2)/100
     partialTokenSortSim
   }
   /**
     * Get token sort similarity between two strings.*/
   def getTokenSortSimilarity(s1: String, s2: String): Double={
-    val tokenSortSim = FuzzySearch.tokenSortRatio(s1, s2)
+    val tokenSortSim = FuzzySearch.tokenSortRatio(s1, s2)/100
     tokenSortSim
   }
 
