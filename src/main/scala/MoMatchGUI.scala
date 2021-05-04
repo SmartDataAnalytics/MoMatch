@@ -32,7 +32,7 @@ class UI extends MainFrame {
   val lang1: Lang = Lang.TURTLE
   //  val O1triples: RDD[graph.Triple] = sparkSession1.rdf(lang1)(O1).distinct(2)
   var O1triples: RDD[graph.Triple] = sparkSession1.sparkContext.emptyRDD[graph.Triple]
-  //  val O2triples: RDD[graph.Triple] = sparkSession1.rdf(lang1)(O2).distinct(2)
+  //  val O2triples: RDD[graph.Triple] = sparkSession1.rdf(lang1)(O2Classes).distinct(2)
   var O2triples: RDD[graph.Triple] = sparkSession1.sparkContext.emptyRDD[graph.Triple]
   var languageTagForO1 = ""
   var languageTagForO2 = ""
@@ -240,7 +240,7 @@ class UI extends MainFrame {
         val res = Dialog.showMessage(contents.head, "Please choose an ontology in NTriple format!", title)
       } else {
         O2 = secondOntology.text
-//        O2triples = sparkSession1.rdf(lang1)(O2).distinct(2)
+//        O2triples = sparkSession1.rdf(lang1)(O2Classes).distinct(2)
         O2triples = p.graphPreprocessing(sparkSession1.rdf(lang1)(O2).distinct(2))
 //        O2triples.coalesce(1, shuffle = true).saveAsTextFile("Pre-processedSecondOntology")
         Some(chooser.selectedFile)
@@ -318,7 +318,10 @@ class UI extends MainFrame {
       val O1Name = O1triples.find(None, None, Some(NodeFactory.createURI("http://www.w3.org/2002/07/owl#Ontology")))
         .map(x => x.getSubject.getLocalName).first()
       println("First ontology name is: "+O1Name.toString())
-      ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, crosslingualStatus.selected, threshold = 1.0)
+      val O2Name = O2triples.find(None, None, Some(NodeFactory.createURI("http://www.w3.org/2002/07/owl#Ontology")))
+        .map(x => x.getSubject.getLocalName).first()
+      println("Second ontology name is: "+O2Name.toString())
+      ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, O2Name, languageTagForO1, languageTagForO2, crosslingualStatus.selected, threshold = 1.0)
     }
   }
 

@@ -6,7 +6,7 @@ class MultilingualOntology(sparkSession: SparkSession) extends Serializable {
   val gCreate = new GraphCreating()
 
   /**
-    * Generates the multilingual merged ontology from O1 and O2 in two different natural languages.
+    * Generates the multilingual merged ontology from O1 and O2Classes in two different natural languages.
     */
   def GenerateMultilingualOntology(O1ClassesWithTranslation: RDD[(String, String)], matchedClasses: RDD[(String, String, String, Double)], matchedRelations: RDD[(String, String, String, Double)], O1RelationsWithTranslation: RDD[(String, String)], O1Ontology: RDD[(String, String, String)], O2Ontology: RDD[(String, String, String)], O2translated: String): RDD[graph.Triple] = {
 

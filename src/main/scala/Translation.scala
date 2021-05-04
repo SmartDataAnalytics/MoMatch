@@ -45,9 +45,10 @@ object Translation extends Serializable {
 
   /**
     * Detect a language of a sentence.*/
-  def languageDetection(sentence:String)={
-    val lan = tr.detect(sentence)
-    println("The detected language is: "+lan.get.toString)
+  def languageDetection(sentence:String):String={
+    val lan = tr.detect(sentence).get.toString
+    println("The detected language is: "+lan)
+    lan
   }
 
 
