@@ -27,9 +27,9 @@ class GetSimilarity extends Serializable{
 //    var sim = this.getTokenSortSimilarity(sent1, sent2)
 //    var sim = this.getCosineSimilarity(sent1, sent2)
 //    var sim = this.getDiceSimilarity(sent1, sent2)
-    var sim = this.getJaccardStringSimilarity(sent1, sent2)
+//    var sim = this.getJaccardStringSimilarity(sent1, sent2)
 //    var sim = this.getOverlapCoefficientStringSimilarity(sent1, sent2)
-//    var sim = this.getTverskyStringSimilarity(sent1, sent2)
+    var sim = this.getTverskyStringSimilarity(sent1, sent2)
 
 
     //    var jaccardSim = 1.0
