@@ -11,6 +11,7 @@ class ClassSimilarity {
 //    tt.distinct(2)
 //  }
 
+
   /**
     * Get the similarity between two classes from two ontologies in different natural languages (the second ontology in English).*/
   def GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslation: RDD[(String, String)], O2Classes: RDD[String], threshold: Double): RDD[(String, String, String, Double)]={

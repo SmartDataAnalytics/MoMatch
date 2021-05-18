@@ -4,7 +4,6 @@ import org.apache.jena.riot.Lang
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
-
 /*
 * Created by Shimaa 13.Jan.2021
 * */ object OntologyMatching {
@@ -22,22 +21,22 @@ import org.apache.spark.sql.SparkSession
     //================= German ontologies =================
 //    val O1 = "src/main/resources/EvaluationDataset/German/conference-de.ttl"
     //    val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/ms.nt"
-    //        val O1 = "src/main/resources/EvaluationDataset/German/cmt-de.ttl"
-            val O2 = "src/main/resources/EvaluationDataset/German/confOf-de.ttl"
-//                    val O2 = "src/main/resources/EvaluationDataset/German/iasted-de.ttl"
-    //        val O1 = "src/main/resources/EvaluationDataset/German/sigkdd-de.ttl"
+//            val O1 = "src/main/resources/EvaluationDataset/German/cmt-de.ttl"
+            val O1 = "src/main/resources/EvaluationDataset/German/confOf-de.ttl"
+//                    val O1 = "src/main/resources/EvaluationDataset/German/iasted-de.ttl"
+//            val O1 = "src/main/resources/EvaluationDataset/German/sigkdd-de.ttl"
     //================= Arabic ontologies =================
     //        val O1 = "src/main/resources/EvaluationDataset/Arabic/conference-ar.ttl"
     //                val O1 = "src/main/resources/EvaluationDataset/Arabic/cmt-ar.ttl"
-    //                val O1 = "src/main/resources/EvaluationDataset/Arabic/confOf-ar.ttl"
-    //            val O1 = "src/main/resources/EvaluationDataset/Arabic/iasted-ar.ttl"
+//                    val O2 = "src/main/resources/EvaluationDataset/Arabic/confOf-ar.ttl"
+                val O2 = "src/main/resources/EvaluationDataset/Arabic/iasted-ar.ttl"
     //        val O1 = "src/main/resources/EvaluationDataset/Arabic/sigkdd-ar.ttl"
     //================= French ontologies =================
     //                val O1 = "src/main/resources/EvaluationDataset/French/conference-fr.ttl"
     //          val O1 = "src/main/resources/EvaluationDataset/French/cmt-fr.ttl"
 //              val O1 = "src/main/resources/EvaluationDataset/French/confOf-fr.ttl"
 //    val O2 = "src/main/resources/EvaluationDataset/French/confOf-fr.ttl"
-                      val O1 = "src/main/resources/EvaluationDataset/French/iasted-fr.ttl"
+//                      val O1 = "src/main/resources/EvaluationDataset/French/iasted-fr.ttl"
     //              val O1 = "src/main/resources/EvaluationDataset/French/sigkdd-fr.ttl"
     //================= English ontologies =================
     //    val O1 = "src/main/resources/EvaluationDataset/English/conference-en.ttl"
@@ -67,8 +66,7 @@ import org.apache.spark.sql.SparkSession
     //    println("The language of the first ontology is: "+naturalLanguage1)
     //    val naturalLanguage2 = Translation.languageDetection(ontStat.getAllClasses(O2triples).first())
     //    println("The language of the second ontology is: "+naturalLanguage2)
-    val naturalLanguage1 = "German"
-    val naturalLanguage2 = "French"
+
 
     println("Statistics for O1 ontology")
     ontStat.getStatistics(O1triples) //    println("All classes in O1:")
@@ -103,6 +101,8 @@ import org.apache.spark.sql.SparkSession
 //        val O2Relations = ontStat.getAllRelations(O2LabelsBroadcasting, O2triples)//.map(x => p.stringPreProcessing(x._2))
 //        println("O2 relations with codes")
 //        O2Relations.foreach(println(_))
+    val naturalLanguage1 = "German"
+    val naturalLanguage2 = "Arabic"
     val threshold1 = 1.00
     val threshold2 = 0.95
     val threshold3 = 0.90

@@ -15,8 +15,14 @@ class GetSimilarity extends Serializable{
   /**
     * Get the similarity between two sentences using Jaccard or WordNet.*/
   def getSimilarity(sentence1: String, sentence2: String): Double={
-    val sent1 = processing.sentenceLemmatization(sentence1)
-    val sent2 = processing.sentenceLemmatization(sentence2)
+    var sent1 = processing.removeStopWordsFromEnglish(processing.sentenceLemmatization(sentence1))
+    var sent2 = processing.removeStopWordsFromEnglish(processing.sentenceLemmatization(sentence2))
+//    var sent1 = processing.sentenceLemmatization(processing.removeStopWordsFromEnglish(sentence1))
+//    var sent2 = processing.sentenceLemmatization(processing.removeStopWordsFromEnglish(sentence2))
+    if (sent1.isEmpty)
+      sent1 = "null"
+    if (sent2.isEmpty)
+      sent2 = "null"
 //    var sim = this.getJaroStringSimilarity(sent1, sent2)
 //    var sim = this.getJaroWinklerStringSimilarity(sent1, sent2)
 //    var sim = this.getLevenshteinStringSimilarity(sent1, sent2)

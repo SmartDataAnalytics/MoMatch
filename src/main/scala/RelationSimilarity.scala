@@ -4,6 +4,7 @@ import org.apache.spark.rdd.RDD
 * Created by Shimaa Ibrahim 4 November 2019
 * */ class RelationSimilarity {
 
+//
   /**
     * Get the similarity between two relations from two ontologies in different natural languages (the second ontology in English).*/
   def GetRelationSimilarityNonEnglishWithEnglish(O1RelationsWithTranslations: RDD[(String, String)], O2Relations: RDD[(String)], threshold: Double): RDD[(String, String, String, Double)] = {

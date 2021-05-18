@@ -175,7 +175,7 @@ class PreProcessing extends Serializable{
   /**
     * Remove stop words based on a pre-defined list.*/
   def removeStopWordsFromEnglish(sentence: String): String={
-    val stopWords = List("the", "a", "or", "for", "is", "of", "he", "she", "it", "any", "type") //has have
+    val stopWords = List("the", "a", "or", "for", "is", "are", "of", "he", "she", "it", "any", "type", "was", "were") //has have
     sentence.split(" ").filter(!stopWords.contains(_)).mkString(" ")
   }
 }
