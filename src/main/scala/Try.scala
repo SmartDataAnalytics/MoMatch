@@ -6,6 +6,7 @@ import com.rockymadden.stringmetric.similarity._
 import info.debatty.java.stringsimilarity.{Jaccard, NormalizedLevenshtein}
 import me.xdrop.fuzzywuzzy.FuzzySearch
 
+
 object Try {
   def main(args: Array[String]): Unit = {
     val p = new PreProcessing()
@@ -94,7 +95,10 @@ object Try {
     // Tversky Similarity
     val tversky: Double = Tversky.score("karolin", "kathrin", 0.5)  // 0.333
     println("Tversky Similarity = "+tversky)
-    // TfIdf
+
+    //############################## Bag-based measures ##############################
+    // Tf/IDF
+
 
     //############################## Hybrid-based measures ##############################
 /*
@@ -102,7 +106,6 @@ object Try {
 MongeElkan
 SoftTfIdf
 */
-
     //############################## Phonetic-based measures ##############################
     //    Soundex Metric:
     println("Soundex Metric:")

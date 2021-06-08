@@ -38,7 +38,7 @@ import org.apache.spark.storage.StorageLevel
     //    val O1Classes: RDD[(String, String)] = ontStat.retrieveClassesWithCodesAndLabels(O1triples) //applied for ontologies with codes like Multifarm ontologies
     val O1Classes: RDD[String] = ontStat.getAllClasses(O1triples).distinct(2) //applied for ontologies with codes like Multifarm ontologies
     println("====================================== All classes in O1 ======================================")
-    O1Classes.take(10).foreach(println(_))
+    O1Classes.foreach(println(_))
     val O1Labels: Map[Node, graph.Triple] = O1triples.filter(x => x.getPredicate.getLocalName == "label").keyBy(_.getSubject).collect().toMap
     val O1LabelsBroadcasting: Broadcast[Map[Node, graph.Triple]] = sparkSession1.sparkContext.broadcast(O1Labels)
     val O1Relations: RDD[String] = ontStat.getAllRelations(O1LabelsBroadcasting, O1triples).map(x => x._2) //    val O1Relations: RDD[String] = ontStat.getAllRelationsOld(O1triples).map(x => x._1)
@@ -48,11 +48,11 @@ import org.apache.spark.storage.StorageLevel
     val O2Classes: RDD[String] = ontStat.getAllClasses(O2triples).map(x => p.stringPreProcessing(x)).persist(StorageLevel.MEMORY_AND_DISK).distinct(2) //For SEO
     //    val O2Classes: RDD[(String)] = ontStat.retrieveClassesWithCodesAndLabels(O2triples).map(x=>x._2).persist(StorageLevel.MEMORY_AND_DISK) //For Cmt and Multifarm dataset
     println("====================================== All classes in O2Classes ======================================")
-    O2Classes.take(10).foreach(println(_))
-    //          val O2Relations: RDD[(String)] = ontStat.getAllRelationsOld(O2triples).map(x => p.stringPreProcessing(x._1))
+    O2Classes.foreach(println(_))
+              val O2Relations: RDD[(String)] = ontStat.getAllRelationsOld(O2triples).map(x => p.stringPreProcessing(x._1))
     val O2Labels: Map[Node, graph.Triple] = O2triples.filter(x => x.getPredicate.getLocalName == "label").keyBy(_.getSubject).collect().toMap
     val O2LabelsBroadcasting: Broadcast[Map[Node, graph.Triple]] = sparkSession1.sparkContext.broadcast(O2Labels)
-    val O2Relations: RDD[(String)] = ontStat.getAllRelations(O2LabelsBroadcasting, O2triples).map(x => p.stringPreProcessing(x._2))
+//    val O2Relations: RDD[(String)] = ontStat.getAllRelations(O2LabelsBroadcasting, O2triples).map(x => p.stringPreProcessing(x._2))
     println("====================================== All relations in O2Classes ======================================")
     O2Relations.take(10).foreach(println(_))
 

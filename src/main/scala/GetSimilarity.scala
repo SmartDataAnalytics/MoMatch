@@ -5,6 +5,8 @@ import edu.cmu.lti.lexical_db.NictWordNet
 import edu.cmu.lti.ws4j.impl.Path
 import edu.cmu.lti.ws4j.util.WS4JConfiguration
 import me.xdrop.fuzzywuzzy.FuzzySearch
+
+
 /*
 * Created by Shimaa 17.02.2021
 * */
@@ -33,9 +35,10 @@ class GetSimilarity extends Serializable{
 //    var sim = this.getTokenSortSimilarity(sent1, sent2)
 //    var sim = this.getCosineSimilarity(sent1, sent2)
 //    var sim = this.getDiceSimilarity(sent1, sent2)
+
 //    var sim = this.getJaccardStringSimilarity(sent1, sent2)
-//    var sim = this.getOverlapCoefficientStringSimilarity(sent1, sent2)
-    var sim = this.getTverskyStringSimilarity(sent1, sent2)
+    var sim = this.getOverlapCoefficientStringSimilarity(sent1, sent2)
+//    var sim = this.getTverskyStringSimilarity(sent1, sent2)
 
 
     //    var jaccardSim = 1.0
