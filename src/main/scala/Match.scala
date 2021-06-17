@@ -57,10 +57,10 @@ import org.apache.spark.storage.StorageLevel
     O2Relations.take(10).foreach(println(_))
 
     if (IsCrosslingual == true) {
-      //      if (naturalLanguage1 != "English")
-      //        TranslateOntologyResources(O1triples, O1Classes,O1Relations)
-      //      else if (naturalLanguage2 != "English")
-      //        TranslateOntologyResources(O2triples, O2Classes,O2Relations)
+//            if (naturalLanguage1 != "English")
+//              TranslateOntologyResources(O1triples, O1Classes,O1Relations)
+//            else if (naturalLanguage2 != "English")
+//              TranslateOntologyResources(O2triples, O2Classes,O2Relations)
       println("================================ Cross-lingual Matching ======================================")
       this.CrossLingualMatching(O1Name, O1Classes, O1Relations, naturalLanguage1, O2Name, O2Classes, O2Relations, naturalLanguage2, threshold) //      val e = new Evaluation(sparkSession1)
       //      e.Evaluate()
