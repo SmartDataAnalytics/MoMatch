@@ -5,20 +5,21 @@ import org.apache.spark.sql.SparkSession
 /*
 * Created by Shimaa Ibrahim 28 October 2019
 */
-class QualityAssessment(sparkSession: SparkSession) {
+class QualityAssessmentForInputOntology(sparkSession: SparkSession) {
   val ontoStat = new OntologyStatistics(sparkSession)
+  val ontoMatch = new Match(sparkSession)
 
   /**
-    * Get the quality assessment sheet for the input ontology.
+    * Get the quality assessment sheet for the input ontologies.
     */
-  def GetQualityAssessmentSheet(O: RDD[graph.Triple])={
-    println("Relationship richness = " + this.RelationshipRichness(O))
-    println("Attribute richness = " + this.AttributeRichness(O))
-    println("Inheritance richness = " + this.InheritanceRichness(O))
-    println("Readability = " + this.Readability(O))
-    println("Isolated Elements = " + this.IsolatedElements(O))
-    println("Missing Domain Or Range = " + this.MissingDomainOrRange(O))
-    println("Redundancy = " + this.Redundancy(O))
+  def GetQualityAssessmentForOntology(O: RDD[graph.Triple])={
+    println("Relationship richness for O1 is " + this.RelationshipRichness(O))
+    println("Attribute richness for O1 is " + this.AttributeRichness(O))
+    println("Inheritance richness for O1 is " + this.InheritanceRichness(O))
+    println("Readability for O1 is " + this.Readability(O))
+    println("Isolated Elements for O1 is " + this.IsolatedElements(O))
+    println("Missing Domain Or Range for O1 is " + this.MissingDomainOrRange(O))
+    println("Redundancy for O1 is " + this.Redundancy(O))
   }
 
   /**
@@ -101,32 +102,5 @@ class QualityAssessment(sparkSession: SparkSession) {
     ontoStat.roundNumber(1 - (numOfAllClassesWithoutRedundancy / numOfAllClassesWithRedundancy))
   }
 
-  /**
-    * refers  to  how  many  classes  in  the  input  ontologies C1+C2 are preserved in the merged ontology Cm excluding matched classes Cmatch.
-    */
-  def ClassCoverage(O1: RDD[graph.Triple], O2: RDD[graph.Triple], Om: RDD[graph.Triple], numberOfMatchedClasses: Int): Double = {
-    val numOfMergedClasses = ontoStat.getNumberOfClasses(Om)
-    val numOfClassesO1 = ontoStat.getNumberOfClasses(O1)
-    val numOfClassesO2 = ontoStat.getNumberOfClasses(O2)
-    ontoStat.roundNumber(numOfMergedClasses / (numOfClassesO1 + numOfClassesO2 - numberOfMatchedClasses))
-  }
 
-  /**
-    * refers  to  how  many  relations  in  the  input  ontologies P1+P2 are preserved in the merged ontology Pm excluding matched properties Pmatch.
-    */
-  def PropertyCoverage(O1: RDD[graph.Triple], O2: RDD[graph.Triple], Om: RDD[graph.Triple], numberOfMatchedProperties: Int): Double = {
-    val numOfMergedProperties = ontoStat.getAllProperties(Om).count().toDouble
-    val numOfPropertiesO1 = ontoStat.getAllProperties(O1).count().toDouble
-    val numOfPropertiesO2 = ontoStat.getAllProperties(O2).count().toDouble
-    ontoStat.roundNumber(numOfMergedProperties / (numOfPropertiesO1 + numOfPropertiesO2 - numberOfMatchedProperties))
-  }
-
-  /** refers  to  how  much  the  size  of  the  merged  ontology compared to the input ontologies.
-    * The smaller size of merged ontology, themore the ontology is compacted,
-    * e.g. if some resources are removed in order to avoid redundant resources in the merged ontology.
-    */
-  def Compactness(O1: RDD[graph.Triple], O2: RDD[graph.Triple], Om: RDD[graph.Triple]): Double = {
-    ontoStat.roundNumber(ontoStat.getAllResources(Om).count().toDouble / (ontoStat.getAllResources(O1).count().toDouble + ontoStat.getAllResources(O2).count().toDouble))
-
-  }
 }

@@ -13,6 +13,7 @@ import org.apache.spark.rdd.RDD
 //    crossRelations.foreach(println(_))
     val gS = new GetSimilarity()
     val p = new PreProcessing()
+    var y = crossRelations.map(z => (z._1._1,z._1._2))
     var sim: RDD[(String, String, String, Double)] = crossRelations.map(x => (x._1._1, x._1._2, x._2,
       gS.getSimilarity(p.removeStopWordsFromEnglish(p.splitCamelCase(x._1._2).toLowerCase),
         p.removeStopWordsFromEnglish(p.splitCamelCase(x._2).toLowerCase)))).filter(y => y._4 >= threshold)

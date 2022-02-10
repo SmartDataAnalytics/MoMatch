@@ -326,7 +326,7 @@ class UI extends MainFrame {
   }
 
   def assess() {
-    val quality = new QualityAssessment(sparkSession1)
+    val quality = new QualityAssessmentForInputOntology(sparkSession1)
     if (O1triples.isEmpty() || O2triples.isEmpty()) {
       val res = Dialog.showMessage(contents.head, "Please select the two ontologies first.", title)
     } else {
@@ -334,13 +334,13 @@ class UI extends MainFrame {
         println("===============================================")
         println("|  Quality assessment for the first ontology  |")
         println("===============================================")
-        quality.GetQualityAssessmentSheet(O1triples)
+        quality.GetQualityAssessmentForOntology(O1triples)
       }
       else if (qualityAssessmentForO2.selected == true){
         println("===============================================")
         println("| Quality assessment for the second ontology  |")
         println("===============================================")
-        quality.GetQualityAssessmentSheet(O2triples)
+        quality.GetQualityAssessmentForOntology(O2triples)
       }
     }
   }

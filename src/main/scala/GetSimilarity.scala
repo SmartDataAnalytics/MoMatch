@@ -27,7 +27,7 @@ class GetSimilarity extends Serializable{
       sent2 = "null"
 //    var sim = this.getJaroStringSimilarity(sent1, sent2)
 //    var sim = this.getJaroWinklerStringSimilarity(sent1, sent2)
-    var sim = this.getLevenshteinStringSimilarity(sent1, sent2)
+//    var sim = this.getLevenshteinStringSimilarity(sent1, sent2)
 //    var sim = this.getHammingDistanceSimilarity(sent1, sent2)
 //    var sim = this.getRatioSimilarity(sent1, sent2)
 //    var sim = this.getPartialRatioSimilarity(sent1, sent2)
@@ -37,7 +37,7 @@ class GetSimilarity extends Serializable{
 //    var sim = this.getDiceSimilarity(sent1, sent2)
 
 //    var sim = this.getJaccardStringSimilarity(sent1, sent2)
-//    var sim = this.getOverlapCoefficientStringSimilarity(sent1, sent2)
+    var sim = this.getOverlapCoefficientStringSimilarity(sent1, sent2)
 //    var sim = this.getTverskyStringSimilarity(sent1, sent2)
 
 

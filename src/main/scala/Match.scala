@@ -10,6 +10,7 @@ import org.apache.spark.storage.StorageLevel
 * */ class Match(sparkSession1: SparkSession) {
   var numberOfMatchedClasses = 0
   var numberOfMatchedRelations = 0
+  var numberOfAllMatchedResources = 0
   var matchedClasses = sparkSession1.sparkContext.emptyRDD[(String, String, String, Double)]
   var matchedRelations = sparkSession1.sparkContext.emptyRDD[(String, String, String, Double)]
   var matchedNonEnglishClasses = sparkSession1.sparkContext.emptyRDD[(String, String, String, String, Double)]
@@ -142,7 +143,8 @@ import org.apache.spark.storage.StorageLevel
       numberOfMatchedRelations = matchedNonEnglishRelations.count().toInt
       println("Number of matched relations = "+ numberOfMatchedRelations)
     }
-    println("Number of all matched resources = "+ (numberOfMatchedClasses+numberOfMatchedRelations))
+    numberOfAllMatchedResources = numberOfMatchedClasses + numberOfMatchedRelations
+    println("Number of all matched resources = "+ (numberOfAllMatchedResources))
 
   }
 
@@ -169,6 +171,7 @@ import org.apache.spark.storage.StorageLevel
     matchedMonolingualRelations.foreach(println(_))
     numberOfMatchedRelations = matchedMonolingualRelations.count().toInt
     println("Number of matched relations = ", numberOfMatchedRelations)
-    println("Number of all matched resources = ",numberOfMatchedClasses+numberOfMatchedRelations)
+    numberOfAllMatchedResources = numberOfMatchedClasses + numberOfMatchedRelations
+    println("Number of all matched resources = "+ (numberOfAllMatchedResources))
   }
 }
