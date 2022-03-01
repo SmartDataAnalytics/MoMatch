@@ -41,7 +41,8 @@ import org.apache.spark.sql.SparkSession
     //                      val O1 = "src/main/resources/EvaluationDataset/French/iasted-fr.ttl"
     //              val O1 = "src/main/resources/EvaluationDataset/French/sigkdd-fr.ttl"
     //================= Chinese ontologies =================
-    val O1 = "src/main/resources/EvaluationDataset/Chinese/conference-cn.ttl" //================= Russian ontologies =================
+    val O1 = "src/main/resources/EvaluationDataset/Chinese/conference-cn.ttl"
+    //================= Russian ontologies =================
     //    val O1 = "src/main/resources/EvaluationDataset/Russian/conference-ru.ttl"
     //================= English ontologies =================
     //    val O1 = "src/main/resources/EvaluationDataset/English/conference-en.ttl"

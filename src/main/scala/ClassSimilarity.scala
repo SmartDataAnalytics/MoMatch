@@ -31,6 +31,10 @@ class ClassSimilarity {
     val gS = new GetSimilarity()
     val t = O1Classes.cartesian(O2ClassesWithTranslation)
     val tt: RDD[(String, String, String, Double)] = t.map(x => (x._1, x._2._1, x._2._2, gS.getSimilarity(x._1.toLowerCase, x._2._2.toLowerCase))).filter(y => y._4 >= threshold) //    tt.foreach(println(_))
+    numOfC1_match = tt.map(x => x._1).distinct().count()
+    numOfC2_match = tt.map(x => x._2).distinct().count()
+    println(" numOfC1_match = "+ numOfC1_match)
+    println("numOfC2_match = "+ numOfC2_match)
     tt.distinct(2)
   }
 
@@ -40,6 +44,10 @@ class ClassSimilarity {
     val gS = new GetSimilarity()
     val t = O1ClassesWithTranslation.cartesian(O2ClassesWithTranslation)
     val tt: RDD[(String, String, String, String, Double)] = t.map(x => (x._1._1, x._1._2, x._2._1, x._2._2, gS.getSimilarity(x._1._2.toLowerCase, x._2._2.toLowerCase))).filter(y => y._5 >= threshold) //    tt.foreach(println(_))
+    numOfC1_match = tt.map(x => x._1).distinct().count()
+    numOfC2_match = tt.map(x => x._3).distinct().count()
+    println(" numOfC1_match = "+ numOfC1_match)
+    println("numOfC2_match = "+ numOfC2_match)
     tt.distinct(2)
   }
 
@@ -48,7 +56,11 @@ class ClassSimilarity {
   def GetMonolingualClassSimilarity(O1: RDD[String], O2: RDD[String], threshold: Double): RDD[(String, String, Double)] = {
     val gS = new GetSimilarity()
     val t = O1.cartesian(O2)
-    val tt = t.map(x => (x._1, x._2, gS.getSimilarity(x._1.toLowerCase, x._2.toLowerCase))).filter(y => y._3 >= threshold) // tt.foreach(println(_))
+    val tt: RDD[(String, String, Double)] = t.map(x => (x._1, x._2, gS.getSimilarity(x._1.toLowerCase, x._2.toLowerCase))).filter(y => y._3 >= threshold) // tt.foreach(println(_))
+    numOfC1_match = tt.map(x => x._1).distinct().count()
+    numOfC2_match = tt.map(x => x._2).distinct().count()
+    println(" numOfC1_match = "+ numOfC1_match)
+    println("numOfC2_match = "+ numOfC2_match)
     tt.distinct(2)
   }
 

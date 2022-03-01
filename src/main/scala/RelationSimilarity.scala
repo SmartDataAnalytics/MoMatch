@@ -38,6 +38,10 @@ import org.apache.spark.rdd.RDD
     var sim: RDD[(String, String, String, Double)] = crossRelations.map(x => (x._1, x._2._1, x._2._2, gS.getSimilarity(p.removeStopWordsFromEnglish(p.splitCamelCase(x._1).toLowerCase), p.removeStopWordsFromEnglish(p.splitCamelCase(x._2._2).toLowerCase)))).filter(y => y._4 >= threshold)
     //    println("sim"+sim.count())
     //    sim.foreach(println(_))
+    numOfRel1_match = sim.map(x => x._1).distinct().count()
+    numOfRel2_match = sim.map(x => x._2).distinct().count()
+    println("numOfRel1_match = "+ numOfRel1_match)
+    println("numOfRel2_match = "+ numOfRel2_match)
     sim.distinct(2)
   }
   /**
@@ -53,6 +57,10 @@ import org.apache.spark.rdd.RDD
         p.removeStopWordsFromEnglish(p.splitCamelCase(x._2._2).toLowerCase)))).filter(y => y._5 >= threshold)
     //    println("sim"+sim.count())
     //    sim.foreach(println(_))
+    numOfRel1_match = sim.map(x => x._1).distinct().count()
+    numOfRel2_match = sim.map(x => x._3).distinct().count()
+    println("numOfRel1_match = "+ numOfRel1_match)
+    println("numOfRel2_match = "+ numOfRel2_match)
     sim.distinct(2)
   }
 
@@ -67,6 +75,10 @@ import org.apache.spark.rdd.RDD
     var sim: RDD[(String, String, Double)] = crossRelations.map(x => (x._1, x._2, gS.getSimilarity(p.removeStopWordsFromEnglish(p.splitCamelCase(x._1).toLowerCase), p.removeStopWordsFromEnglish(p.splitCamelCase(x._2).toLowerCase)))).filter(y => y._3 > threshold)
     //    println("sim"+sim.count())
     //    sim.foreach(println(_))
+    numOfRel1_match = sim.map(x => x._1).distinct().count()
+    numOfRel2_match = sim.map(x => x._2).distinct().count()
+    println("numOfRel1_match = "+ numOfRel1_match)
+    println("numOfRel2_match = "+ numOfRel2_match)
     sim.distinct(2)
   }
 }
