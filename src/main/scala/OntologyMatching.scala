@@ -123,7 +123,9 @@ import org.apache.spark.sql.SparkSession
     Oquality.GetQualityAssessmentForOntology(O1triples)
     println("Quality Assessment for O2:")
     Oquality.GetQualityAssessmentForOntology(O2triples)
-    println("Quality Assessment for the matching process")
+    println("==========================================================================")
+    println("|         Quality Assessment for the matching process        |")
+    println("==========================================================================")
     Mquality.GetQualityAssessmentForMatching(O1triples,O2triples)
 
 

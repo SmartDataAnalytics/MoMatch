@@ -11,6 +11,8 @@ import org.apache.spark.storage.StorageLevel
   var numberOfMatchedClasses = 0
   var numberOfMatchedRelations = 0
   var numberOfAllMatchedResources = 0
+  var R_O1_match: Double = 0.0
+  var R_O2_match: Double = 0.0
   var matchedClasses = sparkSession1.sparkContext.emptyRDD[(String, String, String, Double)]
   var matchedRelations = sparkSession1.sparkContext.emptyRDD[(String, String, String, Double)]
   var matchedNonEnglishClasses = sparkSession1.sparkContext.emptyRDD[(String, String, String, String, Double)]
@@ -80,7 +82,7 @@ import org.apache.spark.storage.StorageLevel
   }
 
   /**
-    * Get the cross-lingual matching between two ontologies in twi different natural languages.
+    * Get the cross-lingual matching between two ontologies in tw0 different natural languages.
     */
   def CrossLingualMatching(O1Name: String, O1Classes: RDD[String], O1Relations: RDD[String], naturalLanguage1: String, O2Name: String, O2Classes: RDD[String], O2Relations: RDD[(String)], naturalLanguage2: String, threshold: Double) = {
     println("Threshold = "+ threshold)
@@ -88,7 +90,7 @@ import org.apache.spark.storage.StorageLevel
     var O1RelationsWithTranslations: RDD[(String, String)] = sparkSession1.sparkContext.emptyRDD[(String, String)]
     var O2ClassesWithTranslations: RDD[(String, String)] = sparkSession1.sparkContext.emptyRDD[(String, String)]
     var O2RelationsWithTranslations: RDD[(String, String)] = sparkSession1.sparkContext.emptyRDD[(String, String)]
-    val sim = new ClassSimilarity()
+    val classSim = new ClassSimilarity()
     val relSim = new RelationSimilarity()
 
     if (naturalLanguage1 != "English") {
@@ -107,20 +109,23 @@ import org.apache.spark.storage.StorageLevel
     }
 
     if (naturalLanguage1 != "English" && naturalLanguage2 == "English") {
-      println("====================================== Classes Similarity Non-English X English ======================================") //    val matchedClasses: RDD[(String, String, String, Double)] = sim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes)
-      matchedClasses = sim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes, threshold)
+      println("====================================== Classes Similarity Non-English X English ======================================") //    val matchedClasses: RDD[(String, String, String, Double)] = classSim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes)
+      matchedClasses = classSim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes, threshold)
       matchedClasses.foreach(println(_))
       numberOfMatchedClasses = matchedClasses.count().toInt
       println("Number of matched classes = "+ numberOfMatchedClasses)
-
-      println("====================================== Relations Similarity Non-English X English======================================") //    val matchedRelations: RDD[(String, String, String, Double)] = relSim.GetRelationSimilarityNonEnglishWithEnglish(O2Relations, O1RelationsWithTranslations)
+          println("====================================== Relations Similarity Non-English X English======================================") //    val matchedRelations: RDD[(String, String, String, Double)] = relSim.GetRelationSimilarityNonEnglishWithEnglish(O2Relations, O1RelationsWithTranslations)
       matchedRelations = relSim.GetRelationSimilarityNonEnglishWithEnglish(O1RelationsWithTranslations, O2Relations, threshold)
       matchedRelations.foreach(println(_))
       numberOfMatchedRelations = matchedRelations.count().toInt
       println("Number of matched relations = "+ numberOfMatchedRelations)
+      R_O1_match = classSim.numOfC1_match + relSim.numOfRel1_match
+      println("R_O1_match " + R_O1_match)
+      R_O2_match = classSim.numOfC2_match + relSim.numOfRel2_match
+      println("R_O2_match " + R_O2_match)
     } else if (naturalLanguage1 == "English" && naturalLanguage2 != "English") {
-      println("====================================== Classes Similarity English X non-English======================================") //    val matchedClasses: RDD[(String, String, String, Double)] = sim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes)
-      matchedClasses = sim.GetClassSimilarityEnglishWithNonEnglish(O1Classes, O2ClassesWithTranslations, threshold)
+      println("====================================== Classes Similarity English X non-English======================================") //    val matchedClasses: RDD[(String, String, String, Double)] = classSim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes)
+      matchedClasses = classSim.GetClassSimilarityEnglishWithNonEnglish(O1Classes, O2ClassesWithTranslations, threshold)
       matchedClasses.foreach(println(_))
       numberOfMatchedClasses = matchedClasses.count().toInt
       println("Number of matched classes = "+ numberOfMatchedClasses)
@@ -131,8 +136,8 @@ import org.apache.spark.storage.StorageLevel
       numberOfMatchedRelations = matchedRelations.count().toInt
       println("Number of matched relations = "+ numberOfMatchedRelations)
     } else if (naturalLanguage1 != "English" && naturalLanguage2 != "English") {
-      println("======================================multi Classes Similarity ======================================") //    val matchedClasses: RDD[(String, String, String, Double)] = sim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes)
-      matchedNonEnglishClasses = sim.GetMultilingualClassSimilarity(O1ClassesWithTranslations, O2ClassesWithTranslations, threshold)
+      println("======================================multi Classes Similarity ======================================") //    val matchedClasses: RDD[(String, String, String, Double)] = classSim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes)
+      matchedNonEnglishClasses = classSim.GetMultilingualClassSimilarity(O1ClassesWithTranslations, O2ClassesWithTranslations, threshold)
       matchedNonEnglishClasses.foreach(println(_))
       numberOfMatchedClasses = matchedNonEnglishClasses.count().toInt
       println("Number of matched classes = "+ numberOfMatchedClasses)

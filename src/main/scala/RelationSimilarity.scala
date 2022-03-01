@@ -3,6 +3,8 @@ import org.apache.spark.rdd.RDD
 /*
 * Created by Shimaa Ibrahim 4 November 2019
 * */ class RelationSimilarity {
+  var numOfRel1_match = 0.0
+  var numOfRel2_match = 0.0
 
 //
   /**
@@ -19,6 +21,10 @@ import org.apache.spark.rdd.RDD
         p.removeStopWordsFromEnglish(p.splitCamelCase(x._2).toLowerCase)))).filter(y => y._4 >= threshold)
 //    println("sim"+sim.count())
 //    sim.foreach(println(_))
+    numOfRel1_match = sim.map(x => x._1).distinct().count()
+    numOfRel2_match = sim.map(x => x._3).distinct().count()
+    println("numOfRel1_match = "+ numOfRel1_match)
+    println("numOfRel2_match = "+ numOfRel2_match)
     sim.distinct(2)
   }
   /**
