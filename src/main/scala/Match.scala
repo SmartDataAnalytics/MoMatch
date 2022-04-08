@@ -50,13 +50,13 @@ import org.apache.spark.storage.StorageLevel
 
     val O2Classes: RDD[String] = ontStat.getAllClasses(O2triples).map(x => p.stringPreProcessing(x)).persist(StorageLevel.MEMORY_AND_DISK).distinct(2) //For SEO
     //    val O2Classes: RDD[(String)] = ontStat.retrieveClassesWithCodesAndLabels(O2triples).map(x=>x._2).persist(StorageLevel.MEMORY_AND_DISK) //For Cmt and Multifarm dataset
-    println("====================================== All classes in O2Classes ======================================")
+    println("====================================== All classes in O2 ======================================")
     O2Classes.foreach(println(_))
-              val O2Relations: RDD[(String)] = ontStat.getAllRelationsOld(O2triples).map(x => p.stringPreProcessing(x._1))
+    val O2Relations: RDD[(String)] = ontStat.getAllRelationsOld(O2triples).map(x => p.stringPreProcessing(x._1)) // for ontologies with local names such as SEO
     val O2Labels: Map[Node, graph.Triple] = O2triples.filter(x => x.getPredicate.getLocalName == "label").keyBy(_.getSubject).collect().toMap
     val O2LabelsBroadcasting: Broadcast[Map[Node, graph.Triple]] = sparkSession1.sparkContext.broadcast(O2Labels)
-//    val O2Relations: RDD[(String)] = ontStat.getAllRelations(O2LabelsBroadcasting, O2triples).map(x => p.stringPreProcessing(x._2))
-    println("====================================== All relations in O2Classes ======================================")
+//    val O2Relations: RDD[(String)] = ontStat.getAllRelations(O2LabelsBroadcasting, O2triples).map(x => p.stringPreProcessing(x._2))//was x._2
+    println("====================================== All relations in O2 ======================================")
     O2Relations.take(10).foreach(println(_))
 
     if (IsCrosslingual == true) {
@@ -92,12 +92,16 @@ import org.apache.spark.storage.StorageLevel
     var O2RelationsWithTranslations: RDD[(String, String)] = sparkSession1.sparkContext.emptyRDD[(String, String)]
     val classSim = new ClassSimilarity()
     val relSim = new RelationSimilarity()
+    val O1ClassesWithTranslationPath = "src/main/resources/OfflineDictionaries/" + O1Name + "/classesWithTranslation.txt"
+    val O1RelationsWithTranslationPath = "src/main/resources/OfflineDictionaries/" + O1Name + "/RelationsWithTranslation.txt"
+//    val O1ClassesWithTranslationPath = "src/main/resources/MachineTranslationEffect/GoogleTranslation/" + O1Name + "/classesWithTranslation.txt"
+//    val O1RelationsWithTranslationPath = "src/main/resources/MachineTranslationEffect/GoogleTranslation/" + O1Name + "/RelationsWithTranslation.txt"
 
     if (naturalLanguage1 != "English") {
       println("Translate first ontology:")
-      O1ClassesWithTranslations = sparkSession1.sparkContext.textFile("src/main/resources/OfflineDictionaries/" + O1Name + "/classesWithTranslation.txt")
+      O1ClassesWithTranslations = sparkSession1.sparkContext.textFile(O1ClassesWithTranslationPath)
         .map(x => (x.split(",").apply(0), x.split(",").apply(1)))
-      O1RelationsWithTranslations = sparkSession1.sparkContext.textFile("src/main/resources/OfflineDictionaries/" + O1Name + "/RelationsWithTranslation.txt")
+      O1RelationsWithTranslations = sparkSession1.sparkContext.textFile(O1RelationsWithTranslationPath)
         .map(x => (x.split(",").apply(0), x.split(",").apply(1)))
     }
     if (naturalLanguage2 != "English") {

@@ -116,7 +116,7 @@ object Translation extends Serializable {
 //  }
 
 //  /**
-//    * Translate classes and relations to Arabic.*/
+////    * Translate classes and relations to Arabic.*/
 //  def translateToArabic(Oclasses: RDD[String], Orelations: RDD[String])={
 //    val classesWithTranslation = Oclasses.map(x => (x,this.yandexTranslationToArabic(x)))
 //    println("=====================")

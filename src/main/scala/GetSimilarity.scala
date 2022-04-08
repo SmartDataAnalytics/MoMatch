@@ -17,6 +17,8 @@ class GetSimilarity extends Serializable{
   /**
     * Get the similarity between two sentences using Jaccard or WordNet.*/
   def getSimilarity(sentence1: String, sentence2: String): Double={
+//    var sent1 = processing.removeStopWordsFromEnglish(sentence1)
+//    var sent2 = processing.removeStopWordsFromEnglish(sentence2)
     var sent1 = processing.removeStopWordsFromEnglish(processing.sentenceLemmatization(sentence1))
     var sent2 = processing.removeStopWordsFromEnglish(processing.sentenceLemmatization(sentence2))
 //    var sent1 = processing.sentenceLemmatization(processing.removeStopWordsFromEnglish(sentence1))
@@ -39,11 +41,11 @@ class GetSimilarity extends Serializable{
     var sim = this.getJaccardStringSimilarity(sent1, sent2)
 //    var sim = this.getOverlapCoefficientStringSimilarity(sent1, sent2)
 //    var sim = this.getTverskyStringSimilarity(sent1, sent2)
-
+//    var sim = (this.wordnetSimilarity(sent1,sent2)+this.wordnetSimilarity(sent2,sent1))/2
 
     //    var jaccardSim = 1.0
 //    if (sim != 1)
-//      sim = (this.sentenceSimilarity(sent1,sent2)+this.sentenceSimilarity(sent2,sent1))/2
+//      sim = (this.wordnetSimilarity(sent1,sent2)+this.wordnetSimilarity(sent2,sent1))/2
     sim
   }
 
@@ -217,7 +219,7 @@ def getPathSimilarity(word1: String, word2: String): Double={
 }
   /**
     * Get the similarity between two sentences using path similarity in WordNet.*/
-  def sentenceSimilarity(sentence1: String, sentence2: String): Double={
+  def wordnetSimilarity(sentence1: String, sentence2: String): Double={
     var simScoure = 0.0
     var count = 0.0
     var s = 0.0
@@ -248,8 +250,8 @@ def getPathSimilarity(word1: String, word2: String): Double={
   def symmetricSentenceSimilarity(sentence1: String, sentence2: String): Double ={
 //    var sent1 = processing.sentenceLemmatization(sentence1)
 //    var sent2 = processing.sentenceLemmatization(sentence2)
-    var sim = (sentenceSimilarity(sentence1,sentence2) + sentenceSimilarity(sentence2,sentence1))/2
-//    var sim = (sentenceSimilarity(sent1,sent2) + sentenceSimilarity(sent2,sent1))/2
+    var sim = (wordnetSimilarity(sentence1,sentence2) + wordnetSimilarity(sentence2,sentence1))/2
+//    var sim = (wordnetSimilarity(sent1,sent2) + wordnetSimilarity(sent2,sent1))/2
     sim
   }
 

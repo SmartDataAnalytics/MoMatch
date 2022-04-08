@@ -10,7 +10,7 @@ import me.xdrop.fuzzywuzzy.FuzzySearch
 object Try {
   def main(args: Array[String]): Unit = {
     val p = new PreProcessing()
-    println("Sentense lemmatization: "+ p.sentenceLemmatization("activity taking place after conference"))
+    println("Sentense lemmatization: "+ p.sentenceLemmatization("activity taking place after conference better"))
     println("############################## Sequence-based measures ##############################")
     //      Jaro Metric:
     println("Jaro Metric:")

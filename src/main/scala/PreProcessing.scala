@@ -165,10 +165,9 @@ class PreProcessing extends Serializable{
   def sentenceLemmatization (sentence1: String):String={
     val doc = new Document(sentence1)
     var sent: Sentence = doc.sentences.get(0)
-//    var lemmas = this.stringPreProcessing(sent.lemmas.toString.split(",").mkString).replaceAll(" +", " ")
     var lemmas = this.stringPreProcessing(sent.lemmas.toString.split(",").mkString).replaceAll(" +", " ")
 
-    //    println("Lemmatization for "+ sent + " is "+ lemmas)
+//        println("Lemmatization for "+ sent + " is "+ lemmas)
     lemmas
   }
 
