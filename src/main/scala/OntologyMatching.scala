@@ -20,7 +20,7 @@ import org.apache.spark.sql.SparkSession
     //    val m = new GUIold()
     //    println(m.s)
     //================= German ontologies =================
-            val O1 = "src/main/resources/EvaluationDataset/German/conference-de.ttl"
+//            val O1 = "src/main/resources/EvaluationDataset/German/conference-de.ttl"
     //    val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/ms.nt"
     //            val O1 = "src/main/resources/EvaluationDataset/German/cmt-de.ttl"
     //            val O1 = "src/main/resources/EvaluationDataset/German/confOf-de.ttl"
@@ -46,8 +46,8 @@ import org.apache.spark.sql.SparkSession
     //    val O1 = "src/main/resources/EvaluationDataset/Russian/conference-ru.ttl"
     //================= English ontologies =================
 //        val O2 = "src/main/resources/EvaluationDataset/English/conference-en.ttl"
-    val O2 = "src/main/resources/CaseStudy/SEO.ttl"
-    //    val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/new/uo.nt"
+//    val O2 = "src/main/resources/CaseStudy/SEO.ttl"
+        val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/new/po.nt"
     //    val O1 = "/home/shimaa/MoMatch/oaei_FMA_whole_ontology.nt"
 //        val O2Classes = "src/main/resources/CaseStudy/SEO.ttl"
     //    val O2Classes = "src/main/resources/EvaluationDataset/English/conference-en.ttl"
@@ -55,6 +55,7 @@ import org.apache.spark.sql.SparkSession
     //    val O2Classes = "src/main/resources/EvaluationDataset/English/iasted-en.ttl"
 //            val O2 = "src/main/resources/EvaluationDataset/English/edas-en.ttl"
 //    val O2 = "src/main/resources/EvaluationDataset/English/ekaw-en.ttl"
+val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt"
     //    val O2Classes = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt"
     //    val O2Classes = "/home/shimaa/MoMatch/oaei_NCI_whole_ontology.nt"
     //    val O2Classes = "src/main/resources/EvaluationDataset/German/confOf-de.ttl"
@@ -106,7 +107,7 @@ import org.apache.spark.sql.SparkSession
     //            val O2Relations = ontStat.getAllRelations(O2LabelsBroadcasting, O2triples)//.map(x => p.stringPreProcessing(x._2))
     //            println("O2 relations with codes")
     //            O2Relations.foreach(println(_))
-    val naturalLanguage1 = "German"
+    val naturalLanguage1 = "English"
     val naturalLanguage2 = "English"
     val threshold1 = 1.00
     val threshold2 = 0.95
@@ -114,7 +115,7 @@ import org.apache.spark.sql.SparkSession
     val threshold4 = 0.85
     val threshold5 = 0.80
 
-    ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, O2Name, naturalLanguage1, naturalLanguage2, IsCrosslingual = true, threshold = threshold3)
+    ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, O2Name, naturalLanguage1, naturalLanguage2, IsCrosslingual = false, threshold = threshold3)
 
     println("==========================================================================")
     println("|         Quality Assessment for input ontologies        |")

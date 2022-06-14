@@ -44,7 +44,8 @@ import org.apache.spark.storage.StorageLevel
     O1Classes.foreach(println(_))
     val O1Labels: Map[Node, graph.Triple] = O1triples.filter(x => x.getPredicate.getLocalName == "label").keyBy(_.getSubject).collect().toMap
     val O1LabelsBroadcasting: Broadcast[Map[Node, graph.Triple]] = sparkSession1.sparkContext.broadcast(O1Labels)
-    val O1Relations: RDD[String] = ontStat.getAllRelations(O1LabelsBroadcasting, O1triples).map(x => x._2) //    val O1Relations: RDD[String] = ontStat.getAllRelationsOld(O1triples).map(x => x._1)
+    val O1Relations: RDD[String] = ontStat.getAllRelations(O1LabelsBroadcasting, O1triples).map(x => x._2)
+    //    val O1Relations: RDD[String] = ontStat.getAllRelationsOld(O1triples).map(x => x._1)
     println("====================================== All relations in O1 ======================================")
     O1Relations.take(10).foreach(println(_))
 
@@ -52,10 +53,10 @@ import org.apache.spark.storage.StorageLevel
     //    val O2Classes: RDD[(String)] = ontStat.retrieveClassesWithCodesAndLabels(O2triples).map(x=>x._2).persist(StorageLevel.MEMORY_AND_DISK) //For Cmt and Multifarm dataset
     println("====================================== All classes in O2 ======================================")
     O2Classes.foreach(println(_))
-    val O2Relations: RDD[(String)] = ontStat.getAllRelationsOld(O2triples).map(x => p.stringPreProcessing(x._1)) // for ontologies with local names such as SEO
+//    val O2Relations: RDD[(String)] = ontStat.getAllRelationsOld(O2triples).map(x => p.stringPreProcessing(x._1)) // for ontologies with local names such as SEO
     val O2Labels: Map[Node, graph.Triple] = O2triples.filter(x => x.getPredicate.getLocalName == "label").keyBy(_.getSubject).collect().toMap
     val O2LabelsBroadcasting: Broadcast[Map[Node, graph.Triple]] = sparkSession1.sparkContext.broadcast(O2Labels)
-//    val O2Relations: RDD[(String)] = ontStat.getAllRelations(O2LabelsBroadcasting, O2triples).map(x => p.stringPreProcessing(x._2))//was x._2
+    val O2Relations: RDD[(String)] = ontStat.getAllRelations(O2LabelsBroadcasting, O2triples).map(x => p.stringPreProcessing(x._2))//was x._2
     println("====================================== All relations in O2 ======================================")
     O2Relations.take(10).foreach(println(_))
 
