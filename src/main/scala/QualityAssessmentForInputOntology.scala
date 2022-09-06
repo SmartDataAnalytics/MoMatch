@@ -13,13 +13,13 @@ class QualityAssessmentForInputOntology(sparkSession: SparkSession) {
     * Get the quality assessment sheet for the input ontologies.
     */
   def GetQualityAssessmentForOntology(O: RDD[graph.Triple])={
-    println("Relationship richness for O1 is " + this.RelationshipRichness(O))
-    println("Attribute richness for O1 is " + this.AttributeRichness(O))
-    println("Inheritance richness for O1 is " + this.InheritanceRichness(O))
-    println("Readability for O1 is " + this.Readability(O))
-    println("Isolated Elements for O1 is " + this.IsolatedElements(O))
-    println("Missing Domain Or Range for O1 is " + this.MissingDomainOrRange(O))
-    println("Redundancy for O1 is " + this.Redundancy(O))
+    println("Relationship richness for O is " + this.RelationshipRichness(O))
+    println("Attribute richness for O is " + this.AttributeRichness(O))
+    println("Inheritance richness for O is " + this.InheritanceRichness(O))
+    println("Readability for O is " + this.Readability(O))
+    println("Isolated Elements for O is " + this.IsolatedElements(O))
+    println("Missing Domain Or Range for O is " + this.MissingDomainOrRange(O))
+    println("Redundancy for O is " + this.Redundancy(O))
   }
 
   /**
@@ -66,7 +66,7 @@ class QualityAssessmentForInputOntology(sparkSession: SparkSession) {
   def Readability(ontologyTriples: RDD[graph.Triple]): Double = {
     val numOfHRD = ontoStat.getNumberOfHRD(ontologyTriples)
 //    val numOfTriples = ontologyTriples.distinct().count()
-    val numOfResources = ontoStat.getAllResources(ontologyTriples).count().toDouble
+    val numOfResources = ontoStat.getAllSchemaResources(ontologyTriples).count().toDouble
     ontoStat.roundNumber(numOfHRD / numOfResources)
   }
 
@@ -96,10 +96,17 @@ class QualityAssessmentForInputOntology(sparkSession: SparkSession) {
     * refers to how many redundant resources exist.
     */
   def Redundancy(O: RDD[graph.Triple]): Double = {
-    val numOfAllClassesWithRedundancy = ontoStat.getAllClasses(O).count().toDouble
-    val numOfAllClassesWithoutRedundancy = ontoStat.getNumberOfClasses(O)
+    val numOfAllClasses = ontoStat.getAllClasses(O).count().toDouble
+    val numOfAllClassesWithoutRedundancy = ontoStat.getAllClasses(O).distinct().count().toDouble
 
-    ontoStat.roundNumber(1 - (numOfAllClassesWithoutRedundancy / numOfAllClassesWithRedundancy))
+//    ontoStat.roundNumber(1 - (numOfAllClassesWithoutRedundancy / numOfAllClassesWithRedundancy))
+    val redundantClasses: Double = numOfAllClasses - numOfAllClassesWithoutRedundancy
+    println("Redundant classes = " + redundantClasses + " number of all classes with redundancy = "+numOfAllClasses)
+//    ontoStat.roundNumber(redundantClasses / numOfAllClasses)
+    val redundancyRatio = ((redundantClasses / numOfAllClasses)* 1000).round / 1000.toDouble
+//    println("round value = "+redundancyRatio)
+    redundancyRatio
+
   }
 
 

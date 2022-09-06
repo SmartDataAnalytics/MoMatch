@@ -47,16 +47,20 @@ import org.apache.spark.sql.SparkSession
     //================= English ontologies =================
 //        val O2 = "src/main/resources/EvaluationDataset/English/conference-en.ttl"
 //    val O2 = "src/main/resources/CaseStudy/SEO.ttl"
-        val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/new/po.nt"
-    //    val O1 = "/home/shimaa/MoMatch/oaei_FMA_whole_ontology.nt"
+//        val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/new/uo.nt"
+      val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/New-version-Sept-2022/UO.ttl"
+
+      //    val O1 = "/home/shimaa/MoMatch/oaei_FMA_whole_ontology.nt"
 //        val O2Classes = "src/main/resources/CaseStudy/SEO.ttl"
     //    val O2Classes = "src/main/resources/EvaluationDataset/English/conference-en.ttl"
 //    val O2 = "src/main/resources/EvaluationDataset/English/confOf-en.ttl"
     //    val O2Classes = "src/main/resources/EvaluationDataset/English/iasted-en.ttl"
 //            val O2 = "src/main/resources/EvaluationDataset/English/edas-en.ttl"
 //    val O2 = "src/main/resources/EvaluationDataset/English/ekaw-en.ttl"
-val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt"
-    //    val O2Classes = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt"
+//val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt"
+      val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/New-version-Sept-2022/SEP.ttl"
+
+      //        val O2Classes = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt"
     //    val O2Classes = "/home/shimaa/MoMatch/oaei_NCI_whole_ontology.nt"
     //    val O2Classes = "src/main/resources/EvaluationDataset/German/confOf-de.ttl"
     val p = new PreProcessing()
@@ -77,7 +81,7 @@ val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt
     println("Statistics for O1 ontology")
     ontStat.getStatistics(O1triples) //    println("All classes in O1:")
     //    ontStat.getAllClasses((O1triples)).take(10).foreach(println(_))
-    println("Statistics for O2Classes ontology")
+    println("Statistics for O2 ontology")
     ontStat.getStatistics(O2triples) //    println("All classes in O2Classes:")
     //    ontStat.getAllClasses((O2triples)).take(10).foreach(println(_))
     val O1Name = O1.split('/').last.split('.').head //      O1triples.find(None, None, Some(NodeFactory.createURI("http://www.w3.org/2002/07/owl#Ontology")))
@@ -109,13 +113,23 @@ val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt
     //            O2Relations.foreach(println(_))
     val naturalLanguage1 = "English"
     val naturalLanguage2 = "English"
+    var IsCrosslingual = true
     val threshold1 = 1.00
     val threshold2 = 0.95
     val threshold3 = 0.90
     val threshold4 = 0.85
     val threshold5 = 0.80
 
-    ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, O2Name, naturalLanguage1, naturalLanguage2, IsCrosslingual = false, threshold = threshold3)
+    if (naturalLanguage1 == naturalLanguage2)
+        {
+            IsCrosslingual = false
+            println("Type of matching is Monolingual")
+        }
+      else
+        println("Type of matching is Cross-lingual")
+
+
+    ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, O2Name, naturalLanguage1, naturalLanguage2, IsCrosslingual, threshold = threshold3)
 
     println("==========================================================================")
     println("|         Quality Assessment for input ontologies        |")

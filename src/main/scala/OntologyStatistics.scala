@@ -15,7 +15,7 @@ class OntologyStatistics(sparkSession: SparkSession) {
 //    println("======================================")
     //    val ontoName = ontologyTriples.filter(x => x.getPredicate.getLocalName == "type" && x.getObject.getLocalName == "Ontology").map(x => x.getSubject.getLocalName).first()
     //    println("Ontology name is: " + ontoName)
-    println("Number of all resources = " + this.getAllResources(ontologyTriples).count())
+    println("Number of all resources = " + this.getAllSchemaResources(ontologyTriples).count())
     println("Number of triples in the ontology = " + ontologyTriples.count()) //    ontologyTriples.foreach(println(_))
     val sObjectProperty = ontologyTriples.filter(q => q.getObject.isURI && q.getObject.getLocalName == "ObjectProperty").distinct(2)
     println("Number of object properties is " + sObjectProperty.count()) //    sObjectProperty.foreach(println(_))
@@ -80,13 +80,21 @@ val numOfClasses = ontologyTriples.find(None, None, Some(NodeFactory.createURI("
   }
 
   /**
-    *  Get all classes and all properties in the ontology.
+    *  Get number of all object properties in the ontology.
     */
-  def getAllResources(ontologyTriples: RDD[graph.Triple]): RDD[String] = {
+  def getAllObjectProperties(ontologyTriples: RDD[graph.Triple]): RDD[String] = {
+    val allObjProperties: RDD[String] = ontologyTriples.filter(q => q.getObject.isURI && (q.getObject.getLocalName == "ObjectProperty")).map(x => x.getSubject.getLocalName).distinct(2)
+    allObjProperties
+  }
+
+  /**
+    *  Get all classes and all properties in the ontology schema.
+    */
+  def getAllSchemaResources(ontologyTriples: RDD[graph.Triple]): RDD[String] = {
     val allClasses = ontologyTriples.find(None, None, Some(NodeFactory.createURI("http://www.w3.org/2002/07/owl#Class"))).filter(x => x.getSubject.isURI).map(x => x.getSubject.getLocalName).filter(x => x != "Class").distinct()
 //    val allClasses = this.getAllClasses(ontologyTriples).filter(x => x.toLowerCase != "class").distinct()
-    val allProperties = this.getAllProperties(ontologyTriples)
-    allClasses.union(allProperties)
+    val allObjProperties = this.getAllObjectProperties(ontologyTriples)
+    allClasses.union(allObjProperties)
   }
 
   /**
