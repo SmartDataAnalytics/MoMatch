@@ -44,9 +44,10 @@ import org.apache.spark.storage.StorageLevel
     O1Classes.foreach(println(_))
     val O1Labels: Map[Node, graph.Triple] = O1triples.filter(x => x.getPredicate.getLocalName == "label").keyBy(_.getSubject).collect().toMap
     val O1LabelsBroadcasting: Broadcast[Map[Node, graph.Triple]] = sparkSession1.sparkContext.broadcast(O1Labels)
-    val O1Relations: RDD[String] = ontStat.getAllRelations(O1LabelsBroadcasting, O1triples).map(x => x._2) //    val O1Relations: RDD[String] = ontStat.getAllRelationsOld(O1triples).map(x => x._1)
+//    val O1Relations: RDD[String] = ontStat.getAllRelations(O1LabelsBroadcasting, O1triples).map(x => x._2)
+        val O1Relations: RDD[String] = ontStat.getAllRelationsOld(O1triples).map(x => p.stringPreProcessing(x._1)) // for ontologies with local names such as SEO
     println("====================================== All relations in O1 ======================================")
-    O1Relations.take(10).foreach(println(_))
+    O1Relations.foreach(println(_))
 
     val O2Classes: RDD[String] = ontStat.getAllClasses(O2triples).map(x => p.stringPreProcessing(x)).persist(StorageLevel.MEMORY_AND_DISK).distinct(2) //For SEO
     //    val O2Classes: RDD[(String)] = ontStat.retrieveClassesWithCodesAndLabels(O2triples).map(x=>x._2).persist(StorageLevel.MEMORY_AND_DISK) //For Cmt and Multifarm dataset
@@ -109,11 +110,23 @@ import org.apache.spark.storage.StorageLevel
       println("====================================== Classes Similarity Non-English X English ======================================") //    val matchedClasses: RDD[(String, String, String, Double)] = classSim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes)
       matchedClasses = classSim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes, threshold)
       matchedClasses.foreach(println(_))
+
+      matchedClasses.map{case(a, b, c, d) =>
+        var line = a.toString + "," + b.toString + "," + c.toString + "," + d.toString
+        line
+      }.coalesce(1, shuffle = true).saveAsTextFile("src/main/resources/MatchingOutput/MatchedClasses")
+
       numberOfMatchedClasses = matchedClasses.count().toInt
       println("Number of matched classes = " + numberOfMatchedClasses)
-      println("====================================== Relations Similarity Non-English X English======================================") //    val matchedRelations: RDD[(String, String, String, Double)] = relSim.GetRelationSimilarityNonEnglishWithEnglish(O2Relations, O1RelationsWithTranslations)
+      println("=================================== Relations Similarity Non-English X English======================================") //    val matchedRelations: RDD[(String, String, String, Double)] = relSim.GetRelationSimilarityNonEnglishWithEnglish(O2Relations, O1RelationsWithTranslations)
       matchedRelations = relSim.GetRelationSimilarityNonEnglishWithEnglish(O1RelationsWithTranslations, O2Relations, threshold)
       matchedRelations.foreach(println(_))
+
+      matchedRelations.map{case(a, b, c, d) =>
+        var line = a.toString + "," + b.toString + "," + c.toString + "," + d.toString
+        line
+      }.coalesce(1, shuffle = true).saveAsTextFile("src/main/resources/MatchingOutput/MatchedRelations")
+
       numberOfMatchedRelations = matchedRelations.count().toInt
       println("Number of matched relations = " + numberOfMatchedRelations)
       R_O1_match = classSim.numOfC1_match + relSim.numOfRel1_match
@@ -125,12 +138,24 @@ import org.apache.spark.storage.StorageLevel
       println("====================================== Classes Similarity English X non-English======================================") //    val matchedClasses: RDD[(String, String, String, Double)] = classSim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes)
       matchedClasses = classSim.GetClassSimilarityEnglishWithNonEnglish(O1Classes, O2ClassesWithTranslations, threshold)
       matchedClasses.foreach(println(_))
+
+      matchedClasses.map{case(a, b, c, d) =>
+        var line = a.toString + "," + b.toString + "," + c.toString + "," + d.toString
+        line
+      }.coalesce(1, shuffle = true).saveAsTextFile("src/main/resources/MatchingOutput/MatchedClasses")
+
       numberOfMatchedClasses = matchedClasses.count().toInt
       println("Number of matched classes = " + numberOfMatchedClasses)
 
       println("====================================== Relations Similarity English X non-English======================================") //    val matchedRelations: RDD[(String, String, String, Double)] = relSim.GetRelationSimilarityNonEnglishWithEnglish(O2Relations, O1RelationsWithTranslations)
       matchedRelations = relSim.GetRelationSimilarityEnglishWithNonEnglish(O2RelationsWithTranslations, O1Relations, threshold)
       matchedRelations.foreach(println(_))
+
+      matchedRelations.map{case(a, b, c, d) =>
+        var line = a.toString + "," + b.toString + "," + c.toString + "," + d.toString
+        line
+      }.coalesce(1, shuffle = true).saveAsTextFile("src/main/resources/MatchingOutput/MatchedRelations")
+
       numberOfMatchedRelations = matchedRelations.count().toInt
       println("Number of matched relations = " + numberOfMatchedRelations)
     }
@@ -138,12 +163,24 @@ import org.apache.spark.storage.StorageLevel
       println("======================================multi Classes Similarity ======================================") //    val matchedClasses: RDD[(String, String, String, Double)] = classSim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes)
       matchedNonEnglishClasses = classSim.GetMultilingualClassSimilarity(O1ClassesWithTranslations, O2ClassesWithTranslations, threshold)
       matchedNonEnglishClasses.foreach(println(_))
+
+      matchedNonEnglishClasses.map{case(a, b, c, d, e) =>
+        var line = a.toString + "," + b.toString + "," + c.toString + "," + d.toString + "," + e.toString
+        line
+      }.coalesce(1, shuffle = true).saveAsTextFile("src/main/resources/MatchingOutput/MatchedClasses")
+
       numberOfMatchedClasses = matchedNonEnglishClasses.count().toInt
       println("Number of matched classes = " + numberOfMatchedClasses)
 
       println("======================================multi Relations Similarity ======================================") //    val matchedRelations: RDD[(String, String, String, Double)] = relSim.GetRelationSimilarityNonEnglishWithEnglish(O2Relations, O1RelationsWithTranslations)
       matchedNonEnglishRelations = relSim.GetMultilingualRelationSimilarity(O1RelationsWithTranslations, O2RelationsWithTranslations, threshold)
       matchedNonEnglishRelations.foreach(println(_))
+
+      matchedNonEnglishRelations.map{case(a, b, c, d, e) =>
+        var line = a.toString + "," + b.toString + "," + c.toString + "," + d.toString + "," + e.toString
+        line
+      }.coalesce(1, shuffle = true).saveAsTextFile("src/main/resources/MatchingOutput/MatchedRelations")
+
       numberOfMatchedRelations = matchedNonEnglishRelations.count().toInt
       println("Number of matched relations = " + numberOfMatchedRelations)
     }
@@ -167,6 +204,10 @@ import org.apache.spark.storage.StorageLevel
     println("Number of matched classes = ", numberOfMatchedClasses)
 
 
+    matchedMonolingualClasses.map{case(a, b, c) =>
+      var line = a.toString + "," + b.toString + "," + c.toString
+      line
+    }.coalesce(1, shuffle = true).saveAsTextFile("src/main/resources/MatchingOutput/MatchedClasses")
     //    val O1RelationsWithTranslation: RDD[(String, String)] = sparkSession1.sparkContext.textFile("src/main/resources/OfflineDictionaries/"+O1Name+"/RelationsWithTranslation.txt").map(x => (x.split(",").apply(0), x.split(",").apply(1))) //        println("O1 relations with translation")
     //    //        O1RelationsWithTranslation.foreach(println(_))
     println("====================================== Relations Similarity ======================================")
@@ -175,6 +216,12 @@ import org.apache.spark.storage.StorageLevel
     matchedMonolingualRelations.foreach(println(_))
     numberOfMatchedRelations = matchedMonolingualRelations.count().toInt
     println("Number of matched relations = ", numberOfMatchedRelations)
+
+    matchedMonolingualRelations.map{case(a, b, c) =>
+      var line = a.toString + "," + b.toString + "," + c.toString
+      line
+    }.coalesce(1, shuffle = true).saveAsTextFile("src/main/resources/MatchingOutput/MatchedRelations")
+
     numberOfAllMatchedResources = numberOfMatchedClasses + numberOfMatchedRelations
     println("Number of all matched resources = " + (numberOfAllMatchedResources))
 

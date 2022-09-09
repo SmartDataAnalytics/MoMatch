@@ -28,7 +28,7 @@ import org.apache.spark.sql.SparkSession
     */
   def MatchCoverage(O1: RDD[graph.Triple], O2: RDD[graph.Triple]): Double = {
     val matchCoverage = (ontoMatch.R_O1_match + ontoMatch.R_O2_match) / (ontoStat.getAllSchemaResources(O1).count().toDouble + ontoStat.getAllSchemaResources(O2).count().toDouble)
-    println("R1-match = "+ ontoMatch.R_O1_match + "R1-match = "+ontoMatch.R_O2_match + " all resources in O1 = "+ ontoStat.getAllSchemaResources(O1).count() + " all resources in O2 = " + ontoStat.getAllSchemaResources(O2).count())
+    println("R1-match = "+ ontoMatch.R_O1_match + "R2-match = "+ontoMatch.R_O2_match + " all resources in O1 = "+ ontoStat.getAllSchemaResources(O1).count() + " all resources in O2 = " + ontoStat.getAllSchemaResources(O2).count())
     ontoStat.roundNumber(matchCoverage)
 //    matchCoverage
   }
