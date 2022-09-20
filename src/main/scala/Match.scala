@@ -26,13 +26,8 @@ import org.apache.spark.storage.StorageLevel
     val ontStat = new OntologyStatistics(sparkSession1)
     //    ontStat.getStatistics(O1triples)
     //    ontStat.getStatistics(O2triples)
-    val ontoRebuild = new OntologyRebuilding(sparkSession1)
     val p = new PreProcessing()
 
-
-    val O1Ontology: RDD[(String, String, String)] = ontoRebuild.RebuildOntology(O1triples)
-    //    val tOntology = ontoRebuild.RebuildOntologyWithoutCodes(O2triples)
-    val O2Ontology = ontoRebuild.RebuildOntology(O2triples)
 
     println("======================================")
     println("|     Resources Extraction     |")
@@ -44,8 +39,8 @@ import org.apache.spark.storage.StorageLevel
     O1Classes.foreach(println(_))
     val O1Labels: Map[Node, graph.Triple] = O1triples.filter(x => x.getPredicate.getLocalName == "label").keyBy(_.getSubject).collect().toMap
     val O1LabelsBroadcasting: Broadcast[Map[Node, graph.Triple]] = sparkSession1.sparkContext.broadcast(O1Labels)
-//    val O1Relations: RDD[String] = ontStat.getAllRelations(O1LabelsBroadcasting, O1triples).map(x => x._2)
-        val O1Relations: RDD[String] = ontStat.getAllRelationsOld(O1triples).map(x => p.stringPreProcessing(x._1)) // for ontologies with local names such as SEO
+    val O1Relations: RDD[String] = ontStat.getAllRelations(O1LabelsBroadcasting, O1triples).map(x => x._2)
+//        val O1Relations: RDD[String] = ontStat.getAllRelationsOld(O1triples).map(x => p.stringPreProcessing(x._1)) // for ontologies with local names such as SEO
     println("====================================== All relations in O1 ======================================")
     O1Relations.foreach(println(_))
 
@@ -53,9 +48,10 @@ import org.apache.spark.storage.StorageLevel
     //    val O2Classes: RDD[(String)] = ontStat.retrieveClassesWithCodesAndLabels(O2triples).map(x=>x._2).persist(StorageLevel.MEMORY_AND_DISK) //For Cmt and Multifarm dataset
     println("====================================== All classes in O2 ======================================")
     O2Classes.foreach(println(_))
-    val O2Relations: RDD[(String)] = ontStat.getAllRelationsOld(O2triples).map(x => p.stringPreProcessing(x._1)) // for ontologies with local names such as SEO
+//    val O2Relations: RDD[(String)] = ontStat.getAllRelationsOld(O2triples).map(x => p.stringPreProcessing(x._1)) // for ontologies with local names such as SEO
     val O2Labels: Map[Node, graph.Triple] = O2triples.filter(x => x.getPredicate.getLocalName == "label").keyBy(_.getSubject).collect().toMap
-    val O2LabelsBroadcasting: Broadcast[Map[Node, graph.Triple]] = sparkSession1.sparkContext.broadcast(O2Labels) //    val O2Relations: RDD[(String)] = ontStat.getAllRelations(O2LabelsBroadcasting, O2triples).map(x => p.stringPreProcessing(x._2))//was x._2
+    val O2LabelsBroadcasting: Broadcast[Map[Node, graph.Triple]] = sparkSession1.sparkContext.broadcast(O2Labels)
+        val O2Relations: RDD[(String)] = ontStat.getAllRelations(O2LabelsBroadcasting, O2triples).map(x => p.stringPreProcessing(x._2))//was x._2
     println("====================================== All relations in O2 ======================================")
     O2Relations.take(10).foreach(println(_))
 
@@ -158,6 +154,11 @@ import org.apache.spark.storage.StorageLevel
 
       numberOfMatchedRelations = matchedRelations.count().toInt
       println("Number of matched relations = " + numberOfMatchedRelations)
+      println("Number of matched relations = " + numberOfMatchedRelations)
+      R_O1_match = classSim.numOfC1_match + relSim.numOfRel1_match
+      println("R_O1_match " + R_O1_match)
+      R_O2_match = classSim.numOfC2_match + relSim.numOfRel2_match
+      println("R_O2_match " + R_O2_match)
     }
     else if (naturalLanguage1 != "English" && naturalLanguage2 != "English") {
       println("======================================multi Classes Similarity ======================================") //    val matchedClasses: RDD[(String, String, String, Double)] = classSim.GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslations, O2Classes)
@@ -183,6 +184,11 @@ import org.apache.spark.storage.StorageLevel
 
       numberOfMatchedRelations = matchedNonEnglishRelations.count().toInt
       println("Number of matched relations = " + numberOfMatchedRelations)
+      println("Number of matched relations = " + numberOfMatchedRelations)
+      R_O1_match = classSim.numOfC1_match + relSim.numOfRel1_match
+      println("R_O1_match " + R_O1_match)
+      R_O2_match = classSim.numOfC2_match + relSim.numOfRel2_match
+      println("R_O2_match " + R_O2_match)
     }
     numberOfAllMatchedResources = numberOfMatchedClasses + numberOfMatchedRelations
     println("Number of all matched resources = " + (numberOfAllMatchedResources))

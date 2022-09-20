@@ -23,7 +23,7 @@ import org.apache.spark.sql.SparkSession
 //            val O1 = "src/main/resources/EvaluationDataset/German/conference-de.ttl"
     //    val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/ms.nt"
     //            val O1 = "src/main/resources/EvaluationDataset/German/cmt-de.ttl"
-    //            val O1 = "src/main/resources/EvaluationDataset/German/confOf-de.ttl"
+                val O1 = "src/main/resources/EvaluationDataset/German/confOf-de.ttl"
     //    val O1 = "src/main/resources/EvaluationDataset/German/iasted-de.ttl"
     //            val O1 = "src/main/resources/EvaluationDataset/German/sigkdd-de.ttl"
     //    val O2 = "src/main/resources/EvaluationDataset/German/Ekaw-de.ttl"
@@ -31,7 +31,7 @@ import org.apache.spark.sql.SparkSession
 //                val O1 = "src/main/resources/EvaluationDataset/Arabic/conference-ar.ttl"
     //                val O1 = "src/main/resources/EvaluationDataset/Arabic/cmt-ar.ttl"
 //        val O1 = "src/main/resources/EvaluationDataset/Arabic/confOf-ar.ttl"
-    //                val O2 = "src/main/resources/EvaluationDataset/Arabic/iasted-ar.ttl"
+                    val O2 = "src/main/resources/EvaluationDataset/Arabic/iasted-ar.ttl"
     //        val O1 = "src/main/resources/EvaluationDataset/Arabic/sigkdd-ar.ttl"
     //================= French ontologies =================
     //                    val O1 = "src/main/resources/EvaluationDataset/French/conference-fr.ttl"
@@ -43,22 +43,22 @@ import org.apache.spark.sql.SparkSession
     //================= Chinese ontologies =================
 //    val O1 = "src/main/resources/EvaluationDataset/Chinese/conference-cn.ttl"
     //================= Russian ontologies =================
-    //    val O1 = "src/main/resources/EvaluationDataset/Russian/conference-ru.ttl"
+//        val O1 = "src/main/resources/EvaluationDataset/Russian/conference-ru.ttl"
     //================= English ontologies =================
 //        val O2 = "src/main/resources/EvaluationDataset/English/conference-en.ttl"
 //    val O2 = "src/main/resources/CaseStudy/SEO.ttl"
 //        val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/new/uo.nt"
-      val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/New-version-Sept-2022/UO.ttl"
+//      val O1 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/New-version-Sept-2022/ms-new.ttl"
 
       //    val O1 = "/home/shimaa/MoMatch/oaei_FMA_whole_ontology.nt"
 //        val O2Classes = "src/main/resources/CaseStudy/SEO.ttl"
     //    val O2Classes = "src/main/resources/EvaluationDataset/English/conference-en.ttl"
 //    val O2 = "src/main/resources/EvaluationDataset/English/confOf-en.ttl"
-    //    val O2Classes = "src/main/resources/EvaluationDataset/English/iasted-en.ttl"
+//        val O2Classes = "src/main/resources/EvaluationDataset/English/iasted-en.ttl"
 //            val O2 = "src/main/resources/EvaluationDataset/English/edas-en.ttl"
 //    val O2 = "src/main/resources/EvaluationDataset/English/ekaw-en.ttl"
 //val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt"
-      val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/New-version-Sept-2022/SEP.ttl"
+//      val O2 = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/New-version-Sept-2022/SEP.ttl"
 
       //        val O2Classes = "/home/shimaa/MoMatch/src/main/resources/OntologyMatchingTask/owlapi.nt"
     //    val O2Classes = "/home/shimaa/MoMatch/oaei_NCI_whole_ontology.nt"
@@ -111,8 +111,8 @@ import org.apache.spark.sql.SparkSession
     //            val O2Relations = ontStat.getAllRelations(O2LabelsBroadcasting, O2triples)//.map(x => p.stringPreProcessing(x._2))
     //            println("O2 relations with codes")
     //            O2Relations.foreach(println(_))
-    val naturalLanguage1 = "English"
-    val naturalLanguage2 = "English"
+    val naturalLanguage1 = "German"
+    val naturalLanguage2 = "Arabic"
     var IsCrosslingual = true
     val threshold1 = 1.00
     val threshold2 = 0.95
