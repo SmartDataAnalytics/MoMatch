@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: commons-codec:commons-codec:1.16-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.16-SNAPSHOT/commons-codec-1.16-20210606.144639-53.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.16-SNAPSHOT/commons-codec-1.16-20220914.151143-88.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.16-SNAPSHOT/commons-codec-1.16-20210606.144639-53-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.16-SNAPSHOT/commons-codec-1.16-20220914.151143-88-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.16-SNAPSHOT/commons-codec-1.16-20210606.144639-53-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.16-SNAPSHOT/commons-codec-1.16-20220914.151143-88-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

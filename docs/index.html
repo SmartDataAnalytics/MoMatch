@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoMatch</title>
+    <script src="./src/html-table-of-contents.js"
+            type="text/javascript">
+    </script>
+    <link rel="stylesheet" type="text/css" href="MoMatchstyle.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body onload="htmlTableOfContents();">
+<p style="font-size:300%;">
+    <b>MoMatch - Multilingual Ontology Matching</b>
+</p>
+<h1>Content</h1>
+
+<div id="toc">
+</div>
+<h2>Overview</h2>
+<p>MoMatch is an approach for matching ontologies in different natural languages. MoMatch uses machine translation and various string similarity techniques to identify correspondences across different ontologies. MoMatch uses the Quality Assessment Suite for Ontologies <a href="https://github.com/SmartDataAnalytics/qaso">QASO</a> that comprises 15 metrics in which eight metrics for assessing the quality of the matching process and seven for assessing ontologies quality.<br>
+</p>
+
+<h2>Architecture</h2>
+<p>The following figure shows MoMatch’s architecture:</p>
+<figure>
+    <img src="PICs/MoMatch-Architecture.jpg" alt="Architecture" class="center">
+    <figcaption>Fig.1. MoMatch Architecture</figcaption>
+</figure>
+<p>The input is two ontologies which can be either in two different natural languages or in the same language. The output is the alignments between the input ontologies in addition to the assessment sheet for the input ontologies and the resultant alignment.</p>
+<p>MoMatch is comprised of four phases:</p>
+<ul>
+    <li><b>Resource Extraction</b>: extracts resources (classes and properties) of the input ontologies.</li>
+    <li><b>Translation</b>: translates the extracted resources into a common natural language.</li>
+    <li><b>Pre-processing</b>: cleans and prepares the translated resources for the matching phase by employing a variety of NLP techniques.</li>
+    <li><b>Matching</b>: identifies alignments (matched resources) between the two input ontologies.</li>
+</ul>
+
+<h2>Source code and documentation</h2>
+<p>The latest code is available in a public repository in <a href="https://github.com/SmartDataAnalytics/MoMatch">GitHub</a>.
+    A description for each configurable parameter and function can be found <a href="DocumentationIndex.html">here</a>.</p>
+
+<h2>Installation</h2>
+<p>All implementations are based on <a href="https://www.scala-lang.org/download/2.11.11.html">Scala 2.11.11</a> and <a
+        href="https://spark.apache.org/news/spark-2-3-1-released.html">Apache Spark 2.3.1.</a>. After installing them,
+    download MoMatch using:</p>
+<div style="background-color:black;color:white;padding:20px;">git clone https://github.com/SmartDataAnalytics/MoMatch.git <br> cd
+    MoMatch <br> mvn clean package
+</div>
+<p>After you are done with the configurations mentioned above, you will be able to open the project. The following
+    figure shows MoMatch
+    in <a href="https://www.jetbrains.com/idea">IntelliJ</a>.</p>
+<figure>
+    <img src="PICs/MoMatch-in-Intillij.png" alt="intelliJ" class="center">
+    <figcaption>Fig.2. MoMatch in IntelliJ</figcaption>
+</figure>
+<p>You can start with running the <I>MoMatchGUL.scala</I> class to open the GUI (as shown in figure 3).</p>
+    <figure>
+    <img src="PICs/MoMatchGUI.jpg" alt="intelliJ" class="center">
+<figcaption>Fig.3. MoMatch GUI</figcaption>
+</figure>
+
+<h2>Example</h2>
+<p>The following example scenario describes the matching process of the two ontologies: Conference and ConfOf in German and Arabic respectively, from the <a
+        href="https://www.irit.fr/recherches/MELODI/multifarm/">MultiFarm</a> dataset, in addition to the quality assessment for the ontologies and the matching results. First, the user selects the two ontologies, in Turtle, and their languages. MoMatch reads the two input ontologies and generates RDD representation of them. MoMatch uses <a
+        href="https://github.com/SANSA-Stack/SANSA-RDF">SANSA-RDF library</a> with <a href="https://jena.apache.org/">Apache Jena framework</a> to parse and manipulate the input ontologies (as RDF triples) in a distributed manner. The user can get statistics about the input ontologies as follows:
+<div style="background-color:black;color:white;padding:20px;">
+<pre class="code">
+    <code>First ontology name is: conference-de</code>
+    <code>Second ontology name is: confOf-ar</code>
+    <code>===============================================</code>
+    <code>|     Statistics for the first ontology       |</code>
+    <code>===============================================</code>
+    <code>Number of all resources = 105"</code>
+    <code>Number of triples in the ontology = 509</code>
+    <code>Number of object properties is 46</code>
+    <code>Number of annotation properties is 1</code>
+    <code>Number of Datatype properties is 18</code>
+    <code>Number of classes is 60.0</code>
+
+    <code>===============================================</code>
+    <code>|     Statistics for the second ontology       |</code>
+    <code>===============================================</code>
+    <code>Number of all resources = 52"</code>
+    <code>Number of triples in the ontology = 321</code>
+    <code>Number of object properties is 13</code>
+    <code>Number of annotation properties is 1</code>
+    <code>Number of Datatype properties is 23</code>
+    <code>Number of classes is 38.0</code>
+</pre>
+</div>
+
+Second, the user should select the type of matching (cross-lingual or monolingual). MoMatch identifies the correspondeces between the input ontologies according to the matching type. The output is as follows:
+<div style="background-color:black;color:white;padding:20px;">
+<pre class="code">
+    <code>Matching type is: Cross-lingual matching</code>
+    <code>Language for the first ontology is:German</code>
+    <code>Language for the second ontology is:Arabic</code>
+    <code>===============================================</code>
+    <code>|               Matched classes               |</code>
+    <code>===============================================</code>
+    <code>(Organisation,Organization,منظمة,Organization,1.0)</code>
+    <code>(Tutorium,Tutorial,البرنامج التعليمي,Tutorial,1.0)</code>
+    <code>(eingereichter Beitrag,any contribution,مساهمة,The contribution of,1.0)</code>
+    <code>(Thema,Topic,الموضوع,Topic,1.0)</code>
+    <code>(Workshop,Workshop,ورشة عمل,Workshop,1.0)</code>
+    <code>(Konferenz,Conference,مؤتمر,conference,1.0)</code>
+    <code>Number of matched classes = 6</code>
+    <code>===============================================</code>
+    <code>|             Matched properties              |</code>
+    <code>===============================================</code>
+    <code>(hat Vornamen,has a first name,لديه الاسم الأول,have the first name,1.0)</code>
+    <code>(hat Nachnamen,has last name,لديه اللقب,Has the last name,1.0)</code>
+    <code>(hat Zusammenfassung,has summary,لديه ملخص,Has a summary,1.0)</code>
+    <code>Number of matched relations = 3</code>
+</pre>
+</div>
+
+Finally, the user can get quality of the two input ontologies and the matching results using the quality metric suit <a
+        href="https://github.com/SmartDataAnalytics/qaso">QASO</a> as shown in the following output:
+
+<div style="background-color:black;color:white;padding:20px;">
+<pre class="code">
+    <code>===============================================</code>
+    <code>|  Quality assessment for the first ontology  |</code>
+    <code>===============================================</code>
+    <code>Relationship richness for O is 0.48</code>
+    <code>Attribute richness for O is 0.78</code>
+    <code>Inheritance richness for O is 0.83</code>
+    <code>Readability for O is 1.17</code>
+    <code>Isolated Elements for O is 0.11</code>
+    <code>Missing Domain Or Range for O is 0.02</code>
+    <code>Redundancy for O is 0.0</code>
+    <code>===============================================</code>
+    <code>|  Quality assessment for the second ontology |</code>
+    <code>===============================================</code>
+    <code>Relationship richness for O is 0.28</code>
+    <code>Attribute richness for O is 0.33</code>
+    <code>Inheritance richness for O is 0.85</code>
+    <code>Readability for O is 1.44</code>
+    <code>Isolated Elements for O is 0.07</code>
+    <code>Missing Domain Or Range for O is 0.03</code>
+    <code>Redundancy for O is 0.0</code>
+    <code>===============================================</code>
+    <code>| Quality assessment for the matching results |</code>
+    <code>===============================================</code>
+    <code>Degree of overlapping is 6.0%</code>
+    <code>Match coverage is 0.11</code>
+    <code>Match ratio is 1.0</code>
+</pre>
+</div>
+</body>
+</html>

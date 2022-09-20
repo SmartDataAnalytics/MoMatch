@@ -1,0 +1,65 @@
+#toc .h1 {
+    text-indent: .25in;
+}
+#toc .h2 {
+    text-indent: .5in;
+}
+#toc .h3 {
+    text-indent: .75in;
+}
+#toc .h4 {
+    text-indent: 1in;
+}
+#toc .h5 {
+    text-indent: 1.25in;
+}
+#toc .h6 {
+    text-indent: 1.5in;
+}
+figure figcaption {
+    /*border: 1px dotted blue;*/
+    text-align: center;
+}
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+body {
+    color: black;
+}
+h1 {
+    color: #183377;
+}
+h2 {
+    color: #183377;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+pre.code {
+    white-space: pre-wrap;
+}
+pre.code:before {
+    counter-reset: listing;
+}
+pre.code code {
+    counter-increment: listing;
+}
+pre.code code::before {
+    content: counter(listing) ". ";
+    display: inline-block;
+    /*width: 8em;         !* doesn't work *!*/
+    /*padding-left: auto; !* doesn't work *!*/
+    /*margin-left: auto;  !* doesn't work *!*/
+    text-align: left;  /* doesn't work */
+}
+pre.example script {
+    display:block;
+    overflow-x: auto;
+}
+/*.separated thead tr th { border:1px solid black; padding: .2em; }*/
+/*.separated tbody tr td { border:1px solid black; text-align: center; }*/
+/*.separated tbody tr td.r { text-align: right; padding: .5em; }*/
+.grammar td { font-family: monospace;}
+.grammar-literal { color: gray;}

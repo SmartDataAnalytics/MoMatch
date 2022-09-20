@@ -1,0 +1,1 @@
+Index.PACKAGES = {"com" : [], "com.github" : [], "com.github.vickumar1981" : [], "com.github.vickumar1981.stringdistance" : []};
