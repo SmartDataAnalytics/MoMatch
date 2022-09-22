@@ -166,69 +166,69 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="RelationSimilarity#GetMonolingualRelationSimilarity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GetMonolingualRelationSimilarity(listOfRelationsInTargetOntology:org.apache.spark.rdd.RDD[String],listOfRelationsInSourceOntology:org.apache.spark.rdd.RDD[String],threshold:Double):org.apache.spark.rdd.RDD[(String,String,Double)]"></a>
-      <a id="GetMonolingualRelationSimilarity(RDD[String],RDD[String],Double):RDD[(String,String,Double)]"></a>
+      <a id="GetMonolingualRelationSimilarity(listOfRelationsInTargetOntology:org.apache.spark.rdd.RDD[String],listOfRelationsInSourceOntology:org.apache.spark.rdd.RDD[String],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,Double)]"></a>
+      <a id="GetMonolingualRelationSimilarity(RDD[String],RDD[String],Double,String):RDD[(String,String,Double)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">GetMonolingualRelationSimilarity</span><span class="params">(<span name="listOfRelationsInTargetOntology">listOfRelationsInTargetOntology: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="listOfRelationsInSourceOntology">listOfRelationsInSourceOntology: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+        <span class="name">GetMonolingualRelationSimilarity</span><span class="params">(<span name="listOfRelationsInTargetOntology">listOfRelationsInTargetOntology: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="listOfRelationsInSourceOntology">listOfRelationsInSourceOntology: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>, <span name="stringMeasure">stringMeasure: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="DocumentationIndex.html#RelationSimilarity@GetMonolingualRelationSimilarity(listOfRelationsInTargetOntology:org.apache.spark.rdd.RDD[String],listOfRelationsInSourceOntology:org.apache.spark.rdd.RDD[String],threshold:Double):org.apache.spark.rdd.RDD[(String,String,Double)]" title="Permalink" target="_top">
+      <a href="DocumentationIndex.html#RelationSimilarity@GetMonolingualRelationSimilarity(listOfRelationsInTargetOntology:org.apache.spark.rdd.RDD[String],listOfRelationsInSourceOntology:org.apache.spark.rdd.RDD[String],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,Double)]" title="Permalink" target="_top">
         <img src="lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Get the similarity between two relations from two ontologies in the same natural languages.</p>
     </li><li name="RelationSimilarity#GetMultilingualRelationSimilarity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GetMultilingualRelationSimilarity(O1RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],O2RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],threshold:Double):org.apache.spark.rdd.RDD[(String,String,String,String,Double)]"></a>
-      <a id="GetMultilingualRelationSimilarity(RDD[(String,String)],RDD[(String,String)],Double):RDD[(String,String,String,String,Double)]"></a>
+      <a id="GetMultilingualRelationSimilarity(O1RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],O2RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,String,String,Double)]"></a>
+      <a id="GetMultilingualRelationSimilarity(RDD[(String,String)],RDD[(String,String)],Double,String):RDD[(String,String,String,String,Double)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">GetMultilingualRelationSimilarity</span><span class="params">(<span name="O1RelationsWithTranslations">O1RelationsWithTranslations: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="O2RelationsWithTranslations">O2RelationsWithTranslations: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+        <span class="name">GetMultilingualRelationSimilarity</span><span class="params">(<span name="O1RelationsWithTranslations">O1RelationsWithTranslations: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="O2RelationsWithTranslations">O2RelationsWithTranslations: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>, <span name="stringMeasure">stringMeasure: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="DocumentationIndex.html#RelationSimilarity@GetMultilingualRelationSimilarity(O1RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],O2RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],threshold:Double):org.apache.spark.rdd.RDD[(String,String,String,String,Double)]" title="Permalink" target="_top">
+      <a href="DocumentationIndex.html#RelationSimilarity@GetMultilingualRelationSimilarity(O1RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],O2RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,String,String,Double)]" title="Permalink" target="_top">
         <img src="lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Get the similarity between two relations from two ontologies in different natural languages (Non-English ontologies).</p>
     </li><li name="RelationSimilarity#GetRelationSimilarityEnglishWithNonEnglish" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GetRelationSimilarityEnglishWithNonEnglish(O2RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],O1Relations:org.apache.spark.rdd.RDD[String],threshold:Double):org.apache.spark.rdd.RDD[(String,String,String,Double)]"></a>
-      <a id="GetRelationSimilarityEnglishWithNonEnglish(RDD[(String,String)],RDD[String],Double):RDD[(String,String,String,Double)]"></a>
+      <a id="GetRelationSimilarityEnglishWithNonEnglish(O2RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],O1Relations:org.apache.spark.rdd.RDD[String],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,String,Double)]"></a>
+      <a id="GetRelationSimilarityEnglishWithNonEnglish(RDD[(String,String)],RDD[String],Double,String):RDD[(String,String,String,Double)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">GetRelationSimilarityEnglishWithNonEnglish</span><span class="params">(<span name="O2RelationsWithTranslations">O2RelationsWithTranslations: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="O1Relations">O1Relations: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+        <span class="name">GetRelationSimilarityEnglishWithNonEnglish</span><span class="params">(<span name="O2RelationsWithTranslations">O2RelationsWithTranslations: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="O1Relations">O1Relations: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>, <span name="stringMeasure">stringMeasure: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="DocumentationIndex.html#RelationSimilarity@GetRelationSimilarityEnglishWithNonEnglish(O2RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],O1Relations:org.apache.spark.rdd.RDD[String],threshold:Double):org.apache.spark.rdd.RDD[(String,String,String,Double)]" title="Permalink" target="_top">
+      <a href="DocumentationIndex.html#RelationSimilarity@GetRelationSimilarityEnglishWithNonEnglish(O2RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],O1Relations:org.apache.spark.rdd.RDD[String],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,String,Double)]" title="Permalink" target="_top">
         <img src="lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Get the similarity between two relations from two ontologies in different natural languages (the first ontology in English).</p>
     </li><li name="RelationSimilarity#GetRelationSimilarityNonEnglishWithEnglish" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GetRelationSimilarityNonEnglishWithEnglish(O1RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],O2Relations:org.apache.spark.rdd.RDD[String],threshold:Double):org.apache.spark.rdd.RDD[(String,String,String,Double)]"></a>
-      <a id="GetRelationSimilarityNonEnglishWithEnglish(RDD[(String,String)],RDD[String],Double):RDD[(String,String,String,Double)]"></a>
+      <a id="GetRelationSimilarityNonEnglishWithEnglish(O1RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],O2Relations:org.apache.spark.rdd.RDD[String],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,String,Double)]"></a>
+      <a id="GetRelationSimilarityNonEnglishWithEnglish(RDD[(String,String)],RDD[String],Double,String):RDD[(String,String,String,Double)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">GetRelationSimilarityNonEnglishWithEnglish</span><span class="params">(<span name="O1RelationsWithTranslations">O1RelationsWithTranslations: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="O2Relations">O2Relations: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+        <span class="name">GetRelationSimilarityNonEnglishWithEnglish</span><span class="params">(<span name="O1RelationsWithTranslations">O1RelationsWithTranslations: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="O2Relations">O2Relations: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>, <span name="stringMeasure">stringMeasure: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="DocumentationIndex.html#RelationSimilarity@GetRelationSimilarityNonEnglishWithEnglish(O1RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],O2Relations:org.apache.spark.rdd.RDD[String],threshold:Double):org.apache.spark.rdd.RDD[(String,String,String,Double)]" title="Permalink" target="_top">
+      <a href="DocumentationIndex.html#RelationSimilarity@GetRelationSimilarityNonEnglishWithEnglish(O1RelationsWithTranslations:org.apache.spark.rdd.RDD[(String,String)],O2Relations:org.apache.spark.rdd.RDD[String],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,String,Double)]" title="Permalink" target="_top">
         <img src="lib/permalink.png" alt="Permalink" />
       </a>
     </span>

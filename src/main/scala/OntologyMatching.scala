@@ -114,6 +114,7 @@ import org.apache.spark.sql.SparkSession
     val naturalLanguage1 = "German"
     val naturalLanguage2 = "Arabic"
     var IsCrosslingual = true
+    val stringMeasure = "Jaccard"
     val threshold1 = 1.00
     val threshold2 = 0.95
     val threshold3 = 0.90
@@ -129,7 +130,7 @@ import org.apache.spark.sql.SparkSession
         println("Type of matching is Cross-lingual")
 
 
-    ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, O2Name, naturalLanguage1, naturalLanguage2, IsCrosslingual, threshold = threshold3)
+    ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, O2Name, naturalLanguage1, naturalLanguage2, IsCrosslingual, threshold = threshold3, stringMeasure)
 
     println("==========================================================================")
     println("|         Quality Assessment for input ontologies        |")

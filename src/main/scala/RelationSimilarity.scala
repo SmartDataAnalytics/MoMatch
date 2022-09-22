@@ -9,7 +9,7 @@ import org.apache.spark.rdd.RDD
 //
   /**
     * Get the similarity between two relations from two ontologies in different natural languages (the second ontology in English).*/
-  def GetRelationSimilarityNonEnglishWithEnglish(O1RelationsWithTranslations: RDD[(String, String)], O2Relations: RDD[(String)], threshold: Double): RDD[(String, String, String, Double)] = {
+  def GetRelationSimilarityNonEnglishWithEnglish(O1RelationsWithTranslations: RDD[(String, String)], O2Relations: RDD[(String)], threshold: Double, stringMeasure: String): RDD[(String, String, String, Double)] = {
     var crossRelations = O1RelationsWithTranslations.cartesian(O2Relations)
 //    println("crossRelations"+crossRelations.count())
 //    crossRelations.foreach(println(_))
@@ -21,7 +21,7 @@ import org.apache.spark.rdd.RDD
 //        p.removeStopWordsFromEnglish(p.splitCamelCase(x._2).toLowerCase)))).filter(y => y._4 >= threshold)
 var sim: RDD[(String, String, String, Double)] = crossRelations.map(x => (x._1._1, x._1._2, x._2,
   gS.getSimilarity(p.splitCamelCase(x._1._2).toLowerCase,
-    p.splitCamelCase(x._2).toLowerCase))).filter(y => y._4 >= threshold)
+    p.splitCamelCase(x._2).toLowerCase,stringMeasure))).filter(y => y._4 >= threshold)
 
 //    println("sim"+sim.count())
 //    sim.foreach(println(_))
@@ -33,13 +33,13 @@ var sim: RDD[(String, String, String, Double)] = crossRelations.map(x => (x._1._
   }
   /**
     * Get the similarity between two relations from two ontologies in different natural languages (the first ontology in English).*/
-  def GetRelationSimilarityEnglishWithNonEnglish(O2RelationsWithTranslations: RDD[(String, String)], O1Relations: RDD[(String)], threshold: Double): RDD[(String, String, String, Double)] = {
+  def GetRelationSimilarityEnglishWithNonEnglish(O2RelationsWithTranslations: RDD[(String, String)], O1Relations: RDD[(String)], threshold: Double,stringMeasure: String): RDD[(String, String, String, Double)] = {
     var crossRelations: RDD[(String, (String, String))] = O1Relations.cartesian(O2RelationsWithTranslations)
     //    println("crossRelations"+crossRelations.count())
     //    crossRelations.foreach(println(_))
     val gS = new GetSimilarity()
     val p = new PreProcessing()
-    var sim: RDD[(String, String, String, Double)] = crossRelations.map(x => (x._1, x._2._1, x._2._2, gS.getSimilarity(p.removeStopWordsFromEnglish(p.splitCamelCase(x._1).toLowerCase), p.removeStopWordsFromEnglish(p.splitCamelCase(x._2._2).toLowerCase)))).filter(y => y._4 >= threshold)
+    var sim: RDD[(String, String, String, Double)] = crossRelations.map(x => (x._1, x._2._1, x._2._2, gS.getSimilarity(p.removeStopWordsFromEnglish(p.splitCamelCase(x._1).toLowerCase), p.removeStopWordsFromEnglish(p.splitCamelCase(x._2._2).toLowerCase),stringMeasure))).filter(y => y._4 >= threshold)
     //    println("sim"+sim.count())
     //    sim.foreach(println(_))
     numOfRel1_match = sim.map(x => x._1).distinct().count()
@@ -50,7 +50,7 @@ var sim: RDD[(String, String, String, Double)] = crossRelations.map(x => (x._1._
   }
   /**
     * Get the similarity between two relations from two ontologies in different natural languages (Non-English ontologies).*/
-  def GetMultilingualRelationSimilarity(O1RelationsWithTranslations: RDD[(String, String)], O2RelationsWithTranslations: RDD[(String, String)], threshold: Double): RDD[(String,String, String, String, Double)] = {
+  def GetMultilingualRelationSimilarity(O1RelationsWithTranslations: RDD[(String, String)], O2RelationsWithTranslations: RDD[(String, String)], threshold: Double,stringMeasure: String): RDD[(String,String, String, String, Double)] = {
     var crossRelations = O1RelationsWithTranslations.cartesian(O2RelationsWithTranslations)
     //    println("crossRelations"+crossRelations.count())
     //    crossRelations.foreach(println(_))
@@ -58,7 +58,7 @@ var sim: RDD[(String, String, String, Double)] = crossRelations.map(x => (x._1._
     val p = new PreProcessing()
     var sim: RDD[(String, String, String, String, Double)] = crossRelations.map(x => (x._1._1, x._1._2, x._2._1, x._2._2,
       gS.getSimilarity(p.removeStopWordsFromEnglish(p.splitCamelCase(x._1._2).toLowerCase),
-        p.removeStopWordsFromEnglish(p.splitCamelCase(x._2._2).toLowerCase)))).filter(y => y._5 >= threshold)
+        p.removeStopWordsFromEnglish(p.splitCamelCase(x._2._2).toLowerCase),stringMeasure))).filter(y => y._5 >= threshold)
     //    println("sim"+sim.count())
     //    sim.foreach(println(_))
     numOfRel1_match = sim.map(x => x._1).distinct().count()
@@ -70,13 +70,13 @@ var sim: RDD[(String, String, String, Double)] = crossRelations.map(x => (x._1._
 
   /**
     * Get the similarity between two relations from two ontologies in the same natural languages.*/
-  def GetMonolingualRelationSimilarity(listOfRelationsInTargetOntology: RDD[(String)], listOfRelationsInSourceOntology: RDD[String], threshold: Double): RDD[(String, String, Double)] = {
+  def GetMonolingualRelationSimilarity(listOfRelationsInTargetOntology: RDD[(String)], listOfRelationsInSourceOntology: RDD[String], threshold: Double,stringMeasure: String): RDD[(String, String, Double)] = {
     var crossRelations: RDD[(String, String)] = listOfRelationsInTargetOntology.cartesian(listOfRelationsInSourceOntology)
     //    println("crossRelations"+crossRelations.count())
     //    crossRelations.foreach(println(_))
     val gS = new GetSimilarity()
     val p = new PreProcessing()
-    var sim: RDD[(String, String, Double)] = crossRelations.map(x => (x._1, x._2, gS.getSimilarity(p.removeStopWordsFromEnglish(p.splitCamelCase(x._1).toLowerCase), p.removeStopWordsFromEnglish(p.splitCamelCase(x._2).toLowerCase)))).filter(y => y._3 > threshold)
+    var sim: RDD[(String, String, Double)] = crossRelations.map(x => (x._1, x._2, gS.getSimilarity(p.removeStopWordsFromEnglish(p.splitCamelCase(x._1).toLowerCase), p.removeStopWordsFromEnglish(p.splitCamelCase(x._2).toLowerCase),stringMeasure))).filter(y => y._3 > threshold)
     //    println("sim"+sim.count())
     //    sim.foreach(println(_))
     numOfRel1_match = sim.map(x => x._1).distinct().count()

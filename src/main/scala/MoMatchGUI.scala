@@ -49,6 +49,9 @@ class UI extends MainFrame {
     columns = 32
   }
   secondOntology.editable = false
+  val threshold = new TextField {
+    columns = 5
+  }
   val crosslingualStatus = new RadioButton("Cross-lingual matching")
   val monolingualStatus = new RadioButton("Monolingual matching")
   crosslingualStatus.selected = true // do Cross-lingual matching by default
@@ -57,20 +60,14 @@ class UI extends MainFrame {
   val statsForO2 = new RadioButton("Statistics for the second ontology")
   statsForO1.selected = true // by default get statistics for O1
   val statsGroup2: ButtonGroup = new ButtonGroup(statsForO1, statsForO2)
-  val naturalLanguageForO1 = new ComboBox(List("Detect language", "English", "German", "French", "Arabic", "Chinese", "Czech", "Dutch", "Portuguese", "Russian", "Spanish"))
-  val naturalLanguageForO2 = new ComboBox(List("Detect language", "English", "German", "French", "Arabic", "Chinese", "Czech", "Dutch", "Portuguese", "Russian", "Spanish"))
+  val naturalLanguageForO1 = new ComboBox(List("Select language", "English", "German", "French", "Arabic", "Chinese", "Czech", "Dutch", "Portuguese", "Russian", "Spanish"))
+  val naturalLanguageForO2 = new ComboBox(List("Select language", "English", "German", "French", "Arabic", "Chinese", "Czech", "Dutch", "Portuguese", "Russian", "Spanish"))
+  val similarityMeasureComboBox = new ComboBox(List("Select similarity measure", "Cosine","Dice", "Hamming distance", "Jaccard", "Jaro", "Jaro Winkler", "Levenshtein", "Overlap coefficient", "Partial ratio", "Partial token sort", "Ratio", "Token sort", "Tversky Index"))
   val qualityAssessmentForO1 = new RadioButton("Quality assessment for the first ontology")
   val qualityAssessmentForO2 = new RadioButton("Quality assessment for the second ontology")
   val qualityAssessmentForMatchingResults = new RadioButton("Quality assessment for the matching results")
   qualityAssessmentForO1.selected = true // do assessment for O1 by default
   val statusGroup2: ButtonGroup = new ButtonGroup(qualityAssessmentForO1, qualityAssessmentForO2, qualityAssessmentForMatchingResults)
-  //  val gender = new ComboBox(List("don't know", "female", "male"))
-  //  val commentField = new TextArea { rows = 8; lineWrap = true; wordWrap = true }
-  //  val pressMe = new ToggleButton("Press me!")
-  //  pressMe.selected = false
-  //  restrictHeight(firstOntology)
-  //  restrictHeight(secondOntology)
-  //  restrictHeight(gender)
   contents = new BoxPanel(Orientation.Vertical) {
     contents += new BoxPanel(Orientation.Vertical) {
       border = Swing.TitledBorder(Swing.EtchedBorder(Swing.Lowered),"Input ontologies")
@@ -135,9 +132,21 @@ class UI extends MainFrame {
       //      border = LineBorder(Color.gray)
       contents += new BoxPanel(Orientation.Horizontal) {
         border = EmptyBorder(10)
+        contents += new Label("Similarity measure")
+        contents += Swing.HStrut(5)
+        contents += similarityMeasureComboBox
+        contents += Swing.HStrut(10)
+        contents += new Label("Threshold")
+        contents += Swing.HStrut(5)
+        contents += threshold
+      }
+      contents += new BoxPanel(Orientation.Horizontal) {
+        border = EmptyBorder(10)
+
         contents += new BorderPanel {
           add(crosslingualStatus, BorderPanel.Position.West)
           add(monolingualStatus, BorderPanel.Position.Center)
+//          add(similarityMeasureComboBox, BorderPanel.Position.East)
           add(Button("Match") {
             doMatch()
           }, BorderPanel.Position.East)
@@ -317,6 +326,7 @@ class UI extends MainFrame {
     }
     else Dialog.showMessage(contents.head, "Please select statistics for the first or the second ontology!!", title)
   }
+
   val ontoMatch = new Match(sparkSession1)
   def doMatch() {
     if (O1triples.isEmpty() || O2triples.isEmpty()) {
@@ -341,7 +351,8 @@ class UI extends MainFrame {
       println("First ontology name is: "+O1Name.toString())
       val O2Name = O2.split('/').last.split('.').head
       println("Second ontology name is: "+O2Name.toString())
-      ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, O2Name, naturalLanguageForO1.item, naturalLanguageForO2.item, crosslingualStatus.selected, threshold = 0.90)
+
+      ontoMatch.MatchOntologies(O1triples, O2triples, O1Name, O2Name, naturalLanguageForO1.item, naturalLanguageForO2.item, crosslingualStatus.selected, threshold.text.toDouble, similarityMeasureComboBox.item)
 
     }
   }

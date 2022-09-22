@@ -166,69 +166,69 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="ClassSimilarity#GetClassSimilarityEnglishWithNonEnglish" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GetClassSimilarityEnglishWithNonEnglish(O1Classes:org.apache.spark.rdd.RDD[String],O2ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],threshold:Double):org.apache.spark.rdd.RDD[(String,String,String,Double)]"></a>
-      <a id="GetClassSimilarityEnglishWithNonEnglish(RDD[String],RDD[(String,String)],Double):RDD[(String,String,String,Double)]"></a>
+      <a id="GetClassSimilarityEnglishWithNonEnglish(O1Classes:org.apache.spark.rdd.RDD[String],O2ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,String,Double)]"></a>
+      <a id="GetClassSimilarityEnglishWithNonEnglish(RDD[String],RDD[(String,String)],Double,String):RDD[(String,String,String,Double)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">GetClassSimilarityEnglishWithNonEnglish</span><span class="params">(<span name="O1Classes">O1Classes: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="O2ClassesWithTranslation">O2ClassesWithTranslation: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+        <span class="name">GetClassSimilarityEnglishWithNonEnglish</span><span class="params">(<span name="O1Classes">O1Classes: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="O2ClassesWithTranslation">O2ClassesWithTranslation: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>, <span name="stringMeasure">stringMeasure: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="DocumentationIndex.html#ClassSimilarity@GetClassSimilarityEnglishWithNonEnglish(O1Classes:org.apache.spark.rdd.RDD[String],O2ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],threshold:Double):org.apache.spark.rdd.RDD[(String,String,String,Double)]" title="Permalink" target="_top">
+      <a href="DocumentationIndex.html#ClassSimilarity@GetClassSimilarityEnglishWithNonEnglish(O1Classes:org.apache.spark.rdd.RDD[String],O2ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,String,Double)]" title="Permalink" target="_top">
         <img src="lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Get the similarity between two classes from two ontologies in different natural languages (the first ontology in English).</p>
     </li><li name="ClassSimilarity#GetClassSimilarityNonEnglishWithEnglish" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],O2Classes:org.apache.spark.rdd.RDD[String],threshold:Double):org.apache.spark.rdd.RDD[(String,String,String,Double)]"></a>
-      <a id="GetClassSimilarityNonEnglishWithEnglish(RDD[(String,String)],RDD[String],Double):RDD[(String,String,String,Double)]"></a>
+      <a id="GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],O2Classes:org.apache.spark.rdd.RDD[String],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,String,Double)]"></a>
+      <a id="GetClassSimilarityNonEnglishWithEnglish(RDD[(String,String)],RDD[String],Double,String):RDD[(String,String,String,Double)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">GetClassSimilarityNonEnglishWithEnglish</span><span class="params">(<span name="O1ClassesWithTranslation">O1ClassesWithTranslation: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="O2Classes">O2Classes: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+        <span class="name">GetClassSimilarityNonEnglishWithEnglish</span><span class="params">(<span name="O1ClassesWithTranslation">O1ClassesWithTranslation: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="O2Classes">O2Classes: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>, <span name="stringMeasure">stringMeasure: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="DocumentationIndex.html#ClassSimilarity@GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],O2Classes:org.apache.spark.rdd.RDD[String],threshold:Double):org.apache.spark.rdd.RDD[(String,String,String,Double)]" title="Permalink" target="_top">
+      <a href="DocumentationIndex.html#ClassSimilarity@GetClassSimilarityNonEnglishWithEnglish(O1ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],O2Classes:org.apache.spark.rdd.RDD[String],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,String,Double)]" title="Permalink" target="_top">
         <img src="lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Get the similarity between two classes from two ontologies in different natural languages (the second ontology in English).</p>
     </li><li name="ClassSimilarity#GetMonolingualClassSimilarity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GetMonolingualClassSimilarity(O1:org.apache.spark.rdd.RDD[String],O2:org.apache.spark.rdd.RDD[String],threshold:Double):org.apache.spark.rdd.RDD[(String,String,Double)]"></a>
-      <a id="GetMonolingualClassSimilarity(RDD[String],RDD[String],Double):RDD[(String,String,Double)]"></a>
+      <a id="GetMonolingualClassSimilarity(O1:org.apache.spark.rdd.RDD[String],O2:org.apache.spark.rdd.RDD[String],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,Double)]"></a>
+      <a id="GetMonolingualClassSimilarity(RDD[String],RDD[String],Double,String):RDD[(String,String,Double)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">GetMonolingualClassSimilarity</span><span class="params">(<span name="O1">O1: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="O2">O2: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+        <span class="name">GetMonolingualClassSimilarity</span><span class="params">(<span name="O1">O1: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="O2">O2: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>, <span name="stringMeasure">stringMeasure: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="DocumentationIndex.html#ClassSimilarity@GetMonolingualClassSimilarity(O1:org.apache.spark.rdd.RDD[String],O2:org.apache.spark.rdd.RDD[String],threshold:Double):org.apache.spark.rdd.RDD[(String,String,Double)]" title="Permalink" target="_top">
+      <a href="DocumentationIndex.html#ClassSimilarity@GetMonolingualClassSimilarity(O1:org.apache.spark.rdd.RDD[String],O2:org.apache.spark.rdd.RDD[String],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,Double)]" title="Permalink" target="_top">
         <img src="lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Get the similarity between two classes from two ontologies in the same natural languages.</p>
     </li><li name="ClassSimilarity#GetMultilingualClassSimilarity" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="GetMultilingualClassSimilarity(O1ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],O2ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],threshold:Double):org.apache.spark.rdd.RDD[(String,String,String,String,Double)]"></a>
-      <a id="GetMultilingualClassSimilarity(RDD[(String,String)],RDD[(String,String)],Double):RDD[(String,String,String,String,Double)]"></a>
+      <a id="GetMultilingualClassSimilarity(O1ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],O2ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,String,String,Double)]"></a>
+      <a id="GetMultilingualClassSimilarity(RDD[(String,String)],RDD[(String,String)],Double,String):RDD[(String,String,String,String,Double)]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">GetMultilingualClassSimilarity</span><span class="params">(<span name="O1ClassesWithTranslation">O1ClassesWithTranslation: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="O2ClassesWithTranslation">O2ClassesWithTranslation: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
+        <span class="name">GetMultilingualClassSimilarity</span><span class="params">(<span name="O1ClassesWithTranslation">O1ClassesWithTranslation: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="O2ClassesWithTranslation">O2ClassesWithTranslation: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>, <span name="threshold">threshold: <span class="extype" name="scala.Double">Double</span></span>, <span name="stringMeasure">stringMeasure: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.apache.spark.rdd.RDD">RDD</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Double">Double</span>)]</span>
       </span>
       </h4><span class="permalink">
-      <a href="DocumentationIndex.html#ClassSimilarity@GetMultilingualClassSimilarity(O1ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],O2ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],threshold:Double):org.apache.spark.rdd.RDD[(String,String,String,String,Double)]" title="Permalink" target="_top">
+      <a href="DocumentationIndex.html#ClassSimilarity@GetMultilingualClassSimilarity(O1ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],O2ClassesWithTranslation:org.apache.spark.rdd.RDD[(String,String)],threshold:Double,stringMeasure:String):org.apache.spark.rdd.RDD[(String,String,String,String,Double)]" title="Permalink" target="_top">
         <img src="lib/permalink.png" alt="Permalink" />
       </a>
     </span>

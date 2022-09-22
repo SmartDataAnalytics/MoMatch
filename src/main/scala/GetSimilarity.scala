@@ -14,38 +14,99 @@ class GetSimilarity extends Serializable{
   val db = new NictWordNet with Serializable
   val processing = new PreProcessing()
 
+//  /**
+//    * Get the similarity between two sentences using Jaccard or WordNet.*/
+//  def getSimilarity(sentence1: String, sentence2: String): Double={
+////    var sent1 = processing.removeStopWordsFromEnglish(sentence1)
+////    var sent2 = processing.removeStopWordsFromEnglish(sentence2)
+//    var sent1 = processing.removeStopWordsFromEnglish(processing.sentenceLemmatization(sentence1))
+//    var sent2 = processing.removeStopWordsFromEnglish(processing.sentenceLemmatization(sentence2))
+////    var sent1 = processing.sentenceLemmatization(processing.removeStopWordsFromEnglish(sentence1))
+////    var sent2 = processing.sentenceLemmatization(processing.removeStopWordsFromEnglish(sentence2))
+//    if (sent1.isEmpty)
+//      sent1 = "null"
+//    if (sent2.isEmpty)
+//      sent2 = "null"
+////    var sim = this.getJaroStringSimilarity(sent1, sent2)
+////    var sim = this.getJaroWinklerStringSimilarity(sent1, sent2)
+////    var sim = this.getLevenshteinStringSimilarity(sent1, sent2)
+////    var sim = this.getHammingDistanceSimilarity(sent1, sent2)
+////    var sim = this.getRatioSimilarity(sent1, sent2)
+////    var sim = this.getPartialRatioSimilarity(sent1, sent2)
+////    var sim = this.getPartialTokenSortSimilarity(sent1, sent2)
+////    var sim = this.getTokenSortSimilarity(sent1, sent2)
+////    var sim = this.getCosineSimilarity(sent1, sent2)
+////    var sim = this.getDiceSimilarity(sent1, sent2)
+//
+//    var sim = this.getJaccardStringSimilarity(sent1, sent2)
+////    var sim = this.getOverlapCoefficientStringSimilarity(sent1, sent2)
+////    var sim = this.getTverskyStringSimilarity(sent1, sent2)
+////    var sim = (this.wordnetSimilarity(sent1,sent2)+this.wordnetSimilarity(sent2,sent1))/2
+//
+//    //    var jaccardSim = 1.0
+////    if (sim != 1)
+////      sim = (this.wordnetSimilarity(sent1,sent2)+this.wordnetSimilarity(sent2,sent1))/2
+//    sim
+//  }
   /**
-    * Get the similarity between two sentences using Jaccard or WordNet.*/
-  def getSimilarity(sentence1: String, sentence2: String): Double={
-//    var sent1 = processing.removeStopWordsFromEnglish(sentence1)
-//    var sent2 = processing.removeStopWordsFromEnglish(sentence2)
+    * Get the similarity between two sentences using a given similarity measure.*/
+  def getSimilarity(sentence1: String, sentence2: String, similarityMeasure: String): Double={
+    //    var sent1 = processing.removeStopWordsFromEnglish(sentence1)
+    //    var sent2 = processing.removeStopWordsFromEnglish(sentence2)
     var sent1 = processing.removeStopWordsFromEnglish(processing.sentenceLemmatization(sentence1))
     var sent2 = processing.removeStopWordsFromEnglish(processing.sentenceLemmatization(sentence2))
-//    var sent1 = processing.sentenceLemmatization(processing.removeStopWordsFromEnglish(sentence1))
-//    var sent2 = processing.sentenceLemmatization(processing.removeStopWordsFromEnglish(sentence2))
+    //    var sent1 = processing.sentenceLemmatization(processing.removeStopWordsFromEnglish(sentence1))
+    //    var sent2 = processing.sentenceLemmatization(processing.removeStopWordsFromEnglish(sentence2))
     if (sent1.isEmpty)
       sent1 = "null"
     if (sent2.isEmpty)
       sent2 = "null"
-//    var sim = this.getJaroStringSimilarity(sent1, sent2)
-//    var sim = this.getJaroWinklerStringSimilarity(sent1, sent2)
-//    var sim = this.getLevenshteinStringSimilarity(sent1, sent2)
-//    var sim = this.getHammingDistanceSimilarity(sent1, sent2)
-//    var sim = this.getRatioSimilarity(sent1, sent2)
-//    var sim = this.getPartialRatioSimilarity(sent1, sent2)
-//    var sim = this.getPartialTokenSortSimilarity(sent1, sent2)
-//    var sim = this.getTokenSortSimilarity(sent1, sent2)
-//    var sim = this.getCosineSimilarity(sent1, sent2)
-//    var sim = this.getDiceSimilarity(sent1, sent2)
+    var sim: Double = 0.0
+    if (similarityMeasure == "Jaro")
+      sim = this.getJaroStringSimilarity(sent1, sent2)
+    else if (similarityMeasure == "JaroWinkler")
+      sim = this.getJaroWinklerStringSimilarity(sent1, sent2)
+    else if (similarityMeasure == "Levenshtein")
+      sim = this.getLevenshteinStringSimilarity(sent1, sent2)
+    else if (similarityMeasure == "Hamming Distance")
+      sim = this.getHammingDistanceSimilarity(sent1, sent2)
+    else if (similarityMeasure == "Ratio")
+      sim = this.getRatioSimilarity(sent1, sent2)
+    else if (similarityMeasure == "Partial Ratio")
+      sim = this.getPartialRatioSimilarity(sent1, sent2)
+    else if (similarityMeasure == "Partial Token Sort")
+      sim = this.getPartialTokenSortSimilarity(sent1, sent2)
+    else if (similarityMeasure == "Token Sort")
+      sim = this.getTokenSortSimilarity(sent1, sent2)
+    else if (similarityMeasure == "Cosine")
+      sim = this.getCosineSimilarity(sent1, sent2)
+    else if (similarityMeasure == "Dice")
+      sim = this.getDiceSimilarity(sent1, sent2)
+    else if (similarityMeasure == "Jaccard")
+      sim = this.getJaccardStringSimilarity(sent1, sent2)
+    else if (similarityMeasure == "Overlap Coefficient")
+      sim = this.getOverlapCoefficientStringSimilarity(sent1, sent2)
+    else if (similarityMeasure == "Tversky")
+      sim = this.getTverskyStringSimilarity(sent1, sent2)
+    //    var sim = this.getJaroStringSimilarity(sent1, sent2)
+    //    var sim = this.getJaroWinklerStringSimilarity(sent1, sent2)
+    //    var sim = this.getLevenshteinStringSimilarity(sent1, sent2)
+    //    var sim = this.getHammingDistanceSimilarity(sent1, sent2)
+    //    var sim = this.getRatioSimilarity(sent1, sent2)
+    //    var sim = this.getPartialRatioSimilarity(sent1, sent2)
+    //    var sim = this.getPartialTokenSortSimilarity(sent1, sent2)
+    //    var sim = this.getTokenSortSimilarity(sent1, sent2)
+    //    var sim = this.getCosineSimilarity(sent1, sent2)
+    //    var sim = this.getDiceSimilarity(sent1, sent2)
 
-    var sim = this.getJaccardStringSimilarity(sent1, sent2)
-//    var sim = this.getOverlapCoefficientStringSimilarity(sent1, sent2)
-//    var sim = this.getTverskyStringSimilarity(sent1, sent2)
-//    var sim = (this.wordnetSimilarity(sent1,sent2)+this.wordnetSimilarity(sent2,sent1))/2
+    //var sim = this.getJaccardStringSimilarity(sent1, sent2)
+    //    var sim = this.getOverlapCoefficientStringSimilarity(sent1, sent2)
+    //    var sim = this.getTverskyStringSimilarity(sent1, sent2)
+    //    var sim = (this.wordnetSimilarity(sent1,sent2)+this.wordnetSimilarity(sent2,sent1))/2
 
     //    var jaccardSim = 1.0
-//    if (sim != 1)
-//      sim = (this.wordnetSimilarity(sent1,sent2)+this.wordnetSimilarity(sent2,sent1))/2
+    //    if (sim != 1)
+    //      sim = (this.wordnetSimilarity(sent1,sent2)+this.wordnetSimilarity(sent2,sent1))/2
     sim
   }
 
